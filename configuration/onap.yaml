@@ -30,14 +30,14 @@ jenkins:
   timeout: 30.0
 
 # =============================================================================
-# CI-Management Integration
+# JJB Attribution
 # =============================================================================
-# CI-Management integration is ENABLED by default
+# JJB Attribution is ENABLED by default
 # The ci-management URL is automatically derived from Gerrit host:
 #   https://gerrit.onap.org/r/ci-management
 # 
-# This provides 99%+ accurate Jenkins job allocation using authoritative
-# JJB definitions instead of fuzzy matching.
+# This provides 99%+ accurate Jenkins job attribution using authoritative
+# JJB (Jenkins Job Builder) configuration files instead of fuzzy matching.
 #
 # No configuration needed - it just works! ✨
 

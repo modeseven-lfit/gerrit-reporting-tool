@@ -19,14 +19,14 @@ import httpx
 
 from .base_client import BaseAPIClient
 
-# Optional CI-Management integration
+# Optional JJB Attribution integration
 try:
-    from ci_management import CIManagementParser, CIManagementRepoManager
-    CI_MANAGEMENT_AVAILABLE = True
+    from jjb_attribution import JJBAttribution, JJBRepoManager
+    JJB_ATTRIBUTION_AVAILABLE = True
 except ImportError:
-    CI_MANAGEMENT_AVAILABLE = False
-    CIManagementParser = None  # type: ignore
-    CIManagementRepoManager = None  # type: ignore
+    JJB_ATTRIBUTION_AVAILABLE = False
+    JJBAttribution = None  # type: ignore
+    JJBRepoManager = None  # type: ignore
 
 
 class JenkinsAPIClient(BaseAPIClient):
@@ -38,7 +38,8 @@ class JenkinsAPIClient(BaseAPIClient):
 
     Features:
     - Auto-discovery of API base path
-    - Job-to-project matching with scoring algorithm
+    - JJB Attribution for authoritative job-to-project mapping
+    - Job-to-project matching with scoring algorithm (fallback)
     - Caching of all jobs data for performance
     - Build status and history retrieval
     - Duplicate job allocation prevention
@@ -49,7 +50,7 @@ class JenkinsAPIClient(BaseAPIClient):
         host: str,
         timeout: float = 30.0,
         stats: Optional[Any] = None,
-        ci_management_config: Optional[Dict[str, Any]] = None,
+        jjb_config: Optional[Dict[str, Any]] = None,
         gerrit_host: Optional[str] = None
     ):
         """
@@ -59,11 +60,11 @@ class JenkinsAPIClient(BaseAPIClient):
             host: Jenkins hostname
             timeout: Request timeout in seconds
             stats: Statistics tracker object
-            ci_management_config: Optional CI-Management configuration with keys:
+            jjb_config: Optional JJB Attribution configuration with keys:
                 - url: Git URL for ci-management repository (auto-derived from gerrit_host if not provided)
                 - branch: Branch to use (default: master)
                 - cache_dir: Directory for caching repos (default: /tmp)
-                - enabled: Enable CI-Management integration (default: True if config provided)
+                - enabled: Enable JJB Attribution (default: True if config provided)
             gerrit_host: Gerrit hostname (used to auto-derive ci-management URL)
         """
         self.host = host
@@ -76,45 +77,45 @@ class JenkinsAPIClient(BaseAPIClient):
         self.logger = logging.getLogger(__name__)
         self.gerrit_host = gerrit_host
 
-        # CI-Management integration
-        self.ci_management_parser: Optional[Any] = None
-        self.ci_management_enabled = False
+        # JJB Attribution integration
+        self.jjb_attribution: Optional[Any] = None
+        self.jjb_attribution_enabled = False
         
-        if ci_management_config and ci_management_config.get("enabled", True):
-            self._initialize_ci_management(ci_management_config, gerrit_host)
+        if jjb_config and jjb_config.get("enabled", True):
+            self._initialize_jjb_attribution(jjb_config, gerrit_host)
 
         self.client = httpx.Client(timeout=timeout)
 
         # Discover the correct API base path
         self._discover_api_base_path()
 
-    def _initialize_ci_management(
+    def _initialize_jjb_attribution(
         self, 
         config: Dict[str, Any],
         gerrit_host: Optional[str] = None
     ) -> None:
         """
-        Initialize CI-Management parser for authoritative job allocation.
+        Initialize JJB Attribution for authoritative job allocation.
         
         Automatically derives ci-management URL from Gerrit host if not explicitly provided.
         
         Args:
-            config: CI-Management configuration dictionary
+            config: JJB Attribution configuration dictionary
             gerrit_host: Gerrit hostname for auto-deriving ci-management URL
         """
-        if not CI_MANAGEMENT_AVAILABLE:
+        if not JJB_ATTRIBUTION_AVAILABLE:
             self.logger.warning(
-                "CI-Management modules not available - install ci_management package. "
+                "JJB Attribution modules not available. "
                 "Falling back to fuzzy matching."
             )
             return
         
         try:
-            self.logger.info("Initializing CI-Management integration...")
+            self.logger.debug("Initializing JJB Attribution...")
             
             # Setup repository manager
             cache_dir = Path(config.get("cache_dir", "/tmp"))
-            repo_mgr = CIManagementRepoManager(cache_dir)
+            repo_mgr = JJBRepoManager(cache_dir)
             
             # Get ci-management URL (auto-derive from Gerrit host if not provided)
             ci_mgmt_url = config.get("url")
@@ -122,12 +123,12 @@ class JenkinsAPIClient(BaseAPIClient):
                 if gerrit_host:
                     # Auto-derive: ci-management is standard on all Gerrit servers
                     ci_mgmt_url = f"https://{gerrit_host}/r/ci-management"
-                    self.logger.info(
+                    self.logger.debug(
                         f"Auto-derived ci-management URL from Gerrit host: {ci_mgmt_url}"
                     )
                 else:
-                    self.logger.warning(
-                        "CI-Management URL not provided and Gerrit host unknown. "
+                    self.logger.debug(
+                        "ci-management URL not provided and Gerrit host unknown. "
                         "Falling back to fuzzy matching."
                     )
                     return
@@ -136,24 +137,24 @@ class JenkinsAPIClient(BaseAPIClient):
             ci_mgmt_path, global_jjb_path = repo_mgr.ensure_repos(ci_mgmt_url, branch)
             
             # Initialize parser
-            self.ci_management_parser = CIManagementParser(ci_mgmt_path, global_jjb_path)
-            self.ci_management_parser.load_templates()
+            self.jjb_attribution = JJBAttribution(ci_mgmt_path, global_jjb_path)
+            self.jjb_attribution.load_templates()
             
             # Get summary
-            summary = self.ci_management_parser.get_project_summary()
+            summary = self.jjb_attribution.get_project_summary()
             self.logger.info(
-                f"✓ CI-Management initialized: {summary['gerrit_projects']} projects, "
-                f"{summary['total_jobs']} jobs"
+                f"JJB Attribution enabled: {summary['gerrit_projects']} projects, "
+                f"{summary['total_jobs']} jobs from ci-management"
             )
-            self.ci_management_enabled = True
+            self.jjb_attribution_enabled = True
             
         except Exception as e:
             self.logger.warning(
-                f"Failed to initialize CI-Management: {e}. "
+                f"Failed to initialize JJB Attribution: {e}. "
                 f"Falling back to fuzzy matching."
             )
-            self.ci_management_parser = None
-            self.ci_management_enabled = False
+            self.jjb_attribution = None
+            self.jjb_attribution_enabled = False
 
     def __enter__(self):
         """Enter context manager."""
@@ -285,8 +286,14 @@ class JenkinsAPIClient(BaseAPIClient):
         """
         Get jobs related to a specific Gerrit project with duplicate prevention.
 
-        Uses CI-Management parser for authoritative job allocation when available,
-        otherwise falls back to fuzzy matching algorithm.
+        Uses hybrid approach combining JJB Attribution (authoritative) and fuzzy 
+        matching (fallback) to maximize job attribution coverage.
+
+        Strategy:
+        1. Try JJB Attribution first (authoritative from ci-management)
+        2. Also try fuzzy matching to catch legacy/manual jobs not in JJB
+        3. Combine results, deduplicating by job name
+        4. Return all matched jobs
 
         Args:
             project_name: Name of the Gerrit project (e.g., "foo/bar")
@@ -303,26 +310,76 @@ class JenkinsAPIClient(BaseAPIClient):
         """
         self.logger.debug(f"Looking for Jenkins jobs for project: {project_name}")
         
-        # Try CI-Management first if enabled
-        if self.ci_management_enabled and self.ci_management_parser:
+        all_jobs = []
+        job_names_found = set()  # Track to avoid duplicates
+        
+        # Try JJB Attribution first if enabled
+        jjb_jobs = []
+        if self.jjb_attribution_enabled and self.jjb_attribution:
             try:
-                return self._get_jobs_via_ci_management(project_name, allocated_jobs)
+                jjb_jobs = self._get_jobs_via_jjb_attribution(project_name, allocated_jobs)
+                for job in jjb_jobs:
+                    job_name = job.get("name")
+                    if job_name and job_name not in job_names_found:
+                        all_jobs.append(job)
+                        job_names_found.add(job_name)
+                
+                if jjb_jobs:
+                    self.logger.debug(
+                        f"JJB Attribution found {len(jjb_jobs)} jobs for {project_name}"
+                    )
             except Exception as e:
                 self.logger.warning(
-                    f"CI-Management lookup failed for {project_name}: {e}. "
-                    f"Falling back to fuzzy matching."
+                    f"JJB Attribution lookup failed for {project_name}: {e}. "
+                    f"Will rely on fuzzy matching only."
                 )
         
-        # Fallback to fuzzy matching
-        return self._get_jobs_via_fuzzy_matching(project_name, allocated_jobs)
+        # Always try fuzzy matching to catch legacy/manual jobs not in JJB
+        # This is especially important for projects with mixed job sources
+        try:
+            fuzzy_jobs = self._get_jobs_via_fuzzy_matching(project_name, allocated_jobs)
+            
+            # Add fuzzy matches that aren't already found via JJB
+            fuzzy_added = 0
+            for job in fuzzy_jobs:
+                job_name = job.get("name")
+                if job_name and job_name not in job_names_found:
+                    all_jobs.append(job)
+                    job_names_found.add(job_name)
+                    fuzzy_added += 1
+            
+            if fuzzy_added > 0:
+                self.logger.debug(
+                    f"Fuzzy matching added {fuzzy_added} additional jobs for {project_name} "
+                    f"(total: {len(all_jobs)})"
+                )
+        except Exception as e:
+            self.logger.warning(
+                f"Fuzzy matching failed for {project_name}: {e}"
+            )
+        
+        # Log summary of hybrid approach
+        if all_jobs:
+            sources = []
+            if jjb_jobs:
+                sources.append(f"{len(jjb_jobs)} JJB")
+            if len(all_jobs) > len(jjb_jobs):
+                sources.append(f"{len(all_jobs) - len(jjb_jobs)} fuzzy")
+            
+            self.logger.info(
+                f"Hybrid matching for {project_name}: {len(all_jobs)} jobs "
+                f"({', '.join(sources)})"
+            )
+        
+        return all_jobs
 
-    def _get_jobs_via_ci_management(
+    def _get_jobs_via_jjb_attribution(
         self,
         project_name: str,
         allocated_jobs: Set[str]
     ) -> List[Dict[str, Any]]:
         """
-        Get jobs using CI-Management authoritative definitions.
+        Get jobs using JJB Attribution authoritative definitions.
         
         Args:
             project_name: Name of the Gerrit project
@@ -331,22 +388,22 @@ class JenkinsAPIClient(BaseAPIClient):
         Returns:
             List of job detail dictionaries
         """
-        self.logger.debug(f"Using CI-Management for project: {project_name}")
+        self.logger.debug(f"Using JJB Attribution for project: {project_name}")
         
         # Get expected job names from ci-management
-        expected_jobs = self.ci_management_parser.parse_project_jobs(project_name)
+        expected_jobs = self.jjb_attribution.parse_project_jobs(project_name)
         
         # Filter out unresolved template variables
         resolved_jobs = [j for j in expected_jobs if '{' not in j]
         
         if not resolved_jobs:
             self.logger.debug(
-                f"No resolved jobs found in CI-Management for {project_name}"
+                f"No resolved jobs found in JJB for {project_name}"
             )
             return []
         
         self.logger.debug(
-            f"CI-Management expects {len(resolved_jobs)} jobs for {project_name}"
+            f"JJB expects {len(resolved_jobs)} jobs for {project_name}"
         )
         
         # Get all Jenkins jobs
@@ -378,10 +435,11 @@ class JenkinsAPIClient(BaseAPIClient):
                 job_details = self.get_job_details(expected_job)
                 if job_details:
                     project_jobs.append(job_details)
-                    allocated_jobs.add(expected_job)
+                    # NOTE: Do NOT add to allocated_jobs here - that's done by
+                    # JenkinsAllocationContext.allocate_jobs() to avoid double-allocation
                     matched_count += 1
                     self.logger.debug(
-                        f"✓ Matched CI-Management job '{expected_job}' to {project_name}"
+                        f"✓ Matched JJB job '{expected_job}' to {project_name}"
                     )
                 else:
                     self.logger.warning(
@@ -389,12 +447,12 @@ class JenkinsAPIClient(BaseAPIClient):
                     )
             else:
                 self.logger.debug(
-                    f"Job '{expected_job}' defined in CI-Management but not found in Jenkins"
+                    f"Job '{expected_job}' defined in JJB but not found in Jenkins"
                 )
         
         accuracy = (matched_count / len(resolved_jobs) * 100) if resolved_jobs else 0
-        self.logger.info(
-            f"CI-Management: Found {matched_count}/{len(resolved_jobs)} jobs "
+        self.logger.debug(
+            f"JJB: {matched_count}/{len(resolved_jobs)} jobs "
             f"({accuracy:.1f}%) for {project_name}"
         )
         
@@ -464,15 +522,15 @@ class JenkinsAPIClient(BaseAPIClient):
             job_details = self.get_job_details(job_name)
             if job_details:
                 project_jobs.append(job_details)
-                # Mark job as allocated
-                allocated_jobs.add(job_name)
+                # NOTE: Do NOT add to allocated_jobs here - that's done by
+                # JenkinsAllocationContext.allocate_jobs() to avoid double-allocation
                 self.logger.debug(
-                    f"Allocated Jenkins job '{job_name}' to project '{project_name}' (score: {score})"
+                    f"Matched Jenkins job '{job_name}' to project '{project_name}' (score: {score})"
                 )
             else:
                 self.logger.warning(f"Failed to get details for Jenkins job: {job_name}")
 
-        self.logger.info(
+        self.logger.debug(
             f"Fuzzy matching: Found {len(project_jobs)} Jenkins jobs for project {project_name}"
         )
         return project_jobs

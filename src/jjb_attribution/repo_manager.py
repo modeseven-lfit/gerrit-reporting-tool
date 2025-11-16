@@ -2,7 +2,7 @@
 Repository manager for ci-management and global-jjb.
 
 This module handles cloning, caching, and updating of git repositories needed
-for CI-Management integration.
+for JJB Attribution.
 """
 
 import logging
@@ -14,9 +14,9 @@ from typing import Optional, Tuple
 logger = logging.getLogger(__name__)
 
 
-class CIManagementRepoManager:
+class JJBRepoManager:
     """
-    Manage cloning and caching of ci-management repositories.
+    Manage cloning and caching of ci-management repositories for JJB Attribution.
     
     This class handles:
     - Cloning repositories if they don't exist
@@ -64,7 +64,7 @@ class CIManagementRepoManager:
         Raises:
             RuntimeError: If repositories cannot be cloned or accessed
         """
-        logger.info("Ensuring CI-Management repositories are available...")
+        logger.debug("Ensuring ci-management repositories are available...")
         
         # Ensure ci-management repository
         ci_mgmt_path = self._ensure_repo(
@@ -82,7 +82,7 @@ class CIManagementRepoManager:
             "global-jjb",
         )
         
-        logger.info(
+        logger.debug(
             f"Repositories ready: ci-management={ci_mgmt_path}, global-jjb={global_jjb_path}"
         )
         
@@ -177,7 +177,7 @@ class CIManagementRepoManager:
             )
             
             if result.returncode == 0:
-                logger.info(f"Successfully updated {name} repository")
+                logger.debug(f"Successfully updated {name} repository")
                 logger.debug(f"Git pull output: {result.stdout.strip()}")
             else:
                 logger.warning(
@@ -231,7 +231,7 @@ class CIManagementRepoManager:
             )
             
             if result.returncode == 0:
-                logger.info(f"Successfully cloned {name} repository")
+                logger.debug(f"Successfully cloned {name} repository")
             else:
                 error_msg = f"Failed to clone {name} from {url}: {result.stderr.strip()}"
                 logger.error(error_msg)
@@ -310,7 +310,7 @@ class CIManagementRepoManager:
                         continue
                 
                 if should_remove:
-                    logger.info(f"Removing cached repository: {repo_dir}")
+                    logger.debug(f"Removing cached repository: {repo_dir}")
                     try:
                         import shutil
                         shutil.rmtree(repo_dir)

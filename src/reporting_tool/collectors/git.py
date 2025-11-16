@@ -169,11 +169,11 @@ class GitDataCollector:
             # Environment variable takes precedence - enables Jenkins integration
             timeout = jenkins_config.get("timeout", 30.0)
             try:
-                # Get CI-Management configuration if available
-                ci_mgmt_config = jenkins_config.get("ci_management")
-                if not ci_mgmt_config:
-                    # Check top-level config for ci_management
-                    ci_mgmt_config = self.config.get("ci_management")
+                # Get JJB Attribution configuration if available
+                jjb_config = jenkins_config.get("jjb_attribution")
+                if not jjb_config:
+                    # Check top-level config for jjb_attribution (or legacy ci_management)
+                    jjb_config = self.config.get("jjb_attribution") or self.config.get("ci_management")
                 
                 # Get Gerrit host for auto-deriving ci-management URL
                 gerrit_host = gerrit_config.get("host") if gerrit_config.get("enabled", False) else None
@@ -181,7 +181,7 @@ class GitDataCollector:
                 self.jenkins_client = JenkinsAPIClient(
                     jenkins_host, 
                     timeout,
-                    ci_management_config=ci_mgmt_config,
+                    jjb_config=jjb_config,
                     gerrit_host=gerrit_host
                 )
                 self.logger.info(
@@ -201,11 +201,11 @@ class GitDataCollector:
 
             if host:
                 try:
-                    # Get CI-Management configuration if available
-                    ci_mgmt_config = jenkins_config.get("ci_management")
-                    if not ci_mgmt_config:
-                        # Check top-level config for ci_management
-                        ci_mgmt_config = self.config.get("ci_management")
+                    # Get JJB Attribution configuration if available
+                    jjb_config = jenkins_config.get("jjb_attribution")
+                    if not jjb_config:
+                        # Check top-level config for jjb_attribution (or legacy ci_management)
+                        jjb_config = self.config.get("jjb_attribution") or self.config.get("ci_management")
                     
                     # Get Gerrit host for auto-deriving ci-management URL
                     gerrit_host = gerrit_config.get("host") if gerrit_config.get("enabled", False) else None
@@ -213,7 +213,7 @@ class GitDataCollector:
                     self.jenkins_client = JenkinsAPIClient(
                         host, 
                         timeout,
-                        ci_management_config=ci_mgmt_config,
+                        jjb_config=jjb_config,
                         gerrit_host=gerrit_host
                     )
                     self.logger.info(
@@ -497,7 +497,11 @@ class GitDataCollector:
             # Add Jenkins job information if available
             if self.jenkins_client:
                 jenkins_jobs = self._get_jenkins_jobs_for_repo(gerrit_project)
-
+                
+                self.logger.info(
+                    f"JENKINS_DEBUG: _get_jenkins_jobs_for_repo returned {len(jenkins_jobs)} jobs for {gerrit_project}"
+                )
+                
                 # Store computed status for each job for consistent access
                 enriched_jobs = []
                 for job in jenkins_jobs:
@@ -511,11 +515,17 @@ class GitDataCollector:
                         enriched_job["status"] = "unknown"
                         enriched_jobs.append(enriched_job)
 
+                self.logger.info(
+                    f"JENKINS_DEBUG: Storing {len(enriched_jobs)} enriched jobs for {gerrit_project}"
+                )
+
                 repo_data["jenkins"] = {
                     "jobs": enriched_jobs,
                     "job_count": len(enriched_jobs),
                     "has_jobs": len(enriched_jobs) > 0,
                 }
+                
+                self.logger.info(f"JENKINS_DEBUG: repo_data['jenkins']['job_count'] = {repo_data['jenkins']['job_count']}")
             unique_contributors = repo_data["unique_contributors"]
             for window in self.time_windows:
                 contributor_set = unique_contributors[window]
@@ -561,7 +571,10 @@ class GitDataCollector:
             jobs = self.jenkins_client.get_jobs_for_project(
                 repo_name, self.jenkins_allocation_context.allocated_jobs
             )
-
+            
+            self.logger.info(
+                f"JENKINS_DEBUG: get_jobs_for_project returned {len(jobs) if jobs else 0} jobs for {repo_name}"
+            )
             if jobs:
                 self.logger.debug(
                     f"Found {len(jobs)} Jenkins jobs for {repo_name}: {[job.get('name') for job in jobs]}"
@@ -571,7 +584,9 @@ class GitDataCollector:
                 # Cache the allocated results
                 self.jenkins_allocation_context.cache_jobs(repo_name, allocated)
                 return list(allocated)
+                self.logger.info(f"JENKINS_DEBUG: allocate_jobs returned {len(allocated)} jobs for {repo_name}")
             else:
+                self.logger.info(f"JENKINS_DEBUG: Returning {len(allocated)} allocated jobs for {repo_name}")
                 # Cache empty result
                 self.jenkins_allocation_context.cache_jobs(repo_name, [])
                 return []

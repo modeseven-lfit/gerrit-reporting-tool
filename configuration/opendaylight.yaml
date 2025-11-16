@@ -26,13 +26,13 @@ jenkins:
   timeout: 30.0
 
 # =============================================================================
-# CI-Management Integration
+# JJB Attribution
 # =============================================================================
 # OpenDaylight uses a NON-STANDARD location for JJB definitions
-# CI-Management is CRITICAL for OpenDaylight due to complex multi-stream jobs
+# JJB Attribution is CRITICAL for OpenDaylight due to complex multi-stream jobs
 # Expected improvement: 47% → 99%+ accuracy
-ci_management:
-  # CI-Management is enabled by default
+jjb_attribution:
+  # JJB Attribution is enabled by default
   # OpenDaylight uses "releng/builder" instead of standard "ci-management"
   # Must explicitly override the URL:
   url: "https://git.opendaylight.org/gerrit/releng/builder"

@@ -198,12 +198,15 @@ jenkins:
   timeout: 30.0
 
 # =============================================================================
-# CI-Management Integration
+# JJB Attribution
 # =============================================================================
-# CI-Management provides authoritative Jenkins job definitions via JJB
+# JJB Attribution provides authoritative Jenkins job-to-project mapping
+# using Jenkins Job Builder (JJB) configuration files from ci-management
 # When enabled, replaces fuzzy matching with exact job allocation
-ci_management:
-  # Enable CI-Management integration for accurate job allocation
+#
+# NOTE: Legacy 'ci_management' key is still supported for backward compatibility
+jjb_attribution:
+  # Enable JJB Attribution for accurate job allocation
   # Automatically derives ci-management URL from Gerrit host configuration
   enabled: true
   

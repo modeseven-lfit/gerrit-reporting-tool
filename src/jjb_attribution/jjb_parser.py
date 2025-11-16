@@ -1,9 +1,9 @@
 """
-Jenkins Job Builder (JJB) Parser for CI-Management repositories.
+Jenkins Job Builder (JJB) Attribution Parser.
 
 This module parses JJB YAML files from ci-management repositories to extract
 job definitions and map them to Gerrit projects. It provides accurate Jenkins
-job allocation based on the authoritative source of truth.
+job attribution based on authoritative JJB configuration files.
 """
 
 import logging
@@ -15,6 +15,56 @@ from typing import Any, Optional
 import yaml
 
 logger = logging.getLogger(__name__)
+
+
+# Register JJB-specific YAML tags to prevent warnings
+# These tags are used in JJB templates but we don't need to process them
+def _jjb_tag_constructor(loader, node):
+    """
+    Constructor for JJB-specific YAML tags.
+    
+    Jenkins Job Builder uses custom YAML tags like !include-raw-escape: and !j2:
+    for including shell scripts and Jinja2 templates. These tags cause warnings
+    when parsed with standard yaml.safe_load() because they're not recognized.
+    
+    This constructor handles these tags gracefully by returning their values as-is.
+    We don't need to process these tags for job name extraction - we only need
+    the job-template definitions and project configurations.
+    
+    Supported tags:
+    - !include-raw: - Include raw shell script
+    - !include-raw-escape: - Include shell script with escaping
+    - !include: - Generic include
+    - !j2: - Jinja2 template processing
+    - !j2-yaml: - Jinja2 with YAML output
+    
+    Args:
+        loader: YAML loader instance
+        node: YAML node to construct
+        
+    Returns:
+        Constructed value based on node type
+    """
+    # Return the node value as-is (we don't need to process these)
+    if isinstance(node, yaml.ScalarNode):
+        return loader.construct_scalar(node)
+    elif isinstance(node, yaml.SequenceNode):
+        return loader.construct_sequence(node)
+    elif isinstance(node, yaml.MappingNode):
+        return loader.construct_mapping(node)
+    return None
+
+
+# Register all JJB custom tags
+yaml.SafeLoader.add_constructor('!include-raw:', _jjb_tag_constructor)
+yaml.SafeLoader.add_constructor('!include-raw-escape:', _jjb_tag_constructor)
+yaml.SafeLoader.add_constructor('!include-raw-escape', _jjb_tag_constructor)
+yaml.SafeLoader.add_constructor('!include:', _jjb_tag_constructor)
+yaml.SafeLoader.add_constructor('!include', _jjb_tag_constructor)
+yaml.SafeLoader.add_constructor('!j2:', _jjb_tag_constructor)
+yaml.SafeLoader.add_constructor('!j2', _jjb_tag_constructor)
+yaml.SafeLoader.add_constructor('!j2-yaml:', _jjb_tag_constructor)
+yaml.SafeLoader.add_constructor('!j2-yaml', _jjb_tag_constructor)
 
 
 @dataclass
@@ -43,13 +93,13 @@ class JJBProject:
         return f"JJBProject(name={self.name}, gerrit={self.gerrit_project}, jobs={len(self.jobs)})"
 
 
-class CIManagementParser:
+class JJBAttribution:
     """
-    Parser for ci-management Jenkins Job Builder (JJB) definitions.
+    Parser for Jenkins Job Builder (JJB) attribution.
 
     This class parses JJB YAML files to extract job definitions and map them
-    to Gerrit projects, enabling accurate Jenkins job allocation based on the
-    authoritative ci-management repository.
+    to Gerrit projects, enabling accurate Jenkins job attribution based on
+    authoritative JJB configuration files from ci-management repositories.
     """
 
     def __init__(self, ci_management_path: Path, global_jjb_path: Path):
@@ -66,6 +116,7 @@ class CIManagementParser:
 
         # Cache for parsed data
         self._templates: dict[str, dict[str, Any]] = {}
+        self._job_groups: dict[str, list[str]] = {}
         self._project_cache: dict[str, list[JJBProject]] = {}
         self._gerrit_to_jjb_map: dict[str, Path] = {}
 
@@ -75,41 +126,58 @@ class CIManagementParser:
         if not self.global_jjb_path.exists():
             logger.warning(f"Global-JJB path does not exist: {self.global_jjb_path}")
 
-        logger.info(f"Initialized CIManagementParser with ci-management: {self.ci_management_path}")
+        logger.debug(f"Initialized JJBAttribution with ci-management: {self.ci_management_path}")
 
     def load_templates(self) -> None:
         """
-        Load JJB templates from global-jjb.
+        Load JJB templates and job-groups from both global-jjb and ci-management.
 
-        Parses all YAML files in global-jjb to extract job-template definitions
-        with their name patterns.
+        Parses all YAML files in global-jjb and ci-management to extract job-template 
+        definitions and job-group definitions for accurate job expansion.
+        
+        Templates from ci-management override those from global-jjb if they have the same name.
         """
-        logger.info("Loading JJB templates from global-jjb...")
+        logger.info("Loading JJB templates and job-groups...")
 
-        if not self.global_jjb_path.exists():
-            logger.warning("Global-JJB path does not exist, skipping template loading")
-            return
+        # Load from global-jjb first
+        if self.global_jjb_path.exists():
+            jjb_templates_path = self.global_jjb_path / "jjb"
+            if jjb_templates_path.exists():
+                template_files = list(jjb_templates_path.glob("*.yaml")) + list(
+                    jjb_templates_path.glob("*.yml")
+                )
+                logger.info(f"Found {len(template_files)} template files in global-jjb")
 
-        jjb_templates_path = self.global_jjb_path / "jjb"
-        if not jjb_templates_path.exists():
-            logger.warning(f"JJB templates path does not exist: {jjb_templates_path}")
-            return
+                for template_file in template_files:
+                    try:
+                        self._load_template_file(template_file)
+                    except Exception as e:
+                        logger.warning(f"Failed to load template file {template_file}: {e}")
+            else:
+                logger.warning(f"JJB templates path does not exist: {jjb_templates_path}")
+        else:
+            logger.warning("Global-JJB path does not exist, skipping global-jjb templates")
 
-        template_files = list(jjb_templates_path.glob("*.yaml")) + list(
-            jjb_templates_path.glob("*.yml")
-        )
-        logger.info(f"Found {len(template_files)} template files in global-jjb")
+        # Load from ci-management (these override global-jjb if same name)
+        if self.jjb_path.exists():
+            # Load top-level template files (e.g., global-templates-java.yaml)
+            ci_template_files = list(self.jjb_path.glob("global-templates-*.yaml")) + list(
+                self.jjb_path.glob("global-templates-*.yml")
+            )
+            logger.info(f"Found {len(ci_template_files)} global template files in ci-management")
 
-        for template_file in template_files:
-            try:
-                self._load_template_file(template_file)
-            except Exception as e:
-                logger.warning(f"Failed to load template file {template_file}: {e}")
+            for template_file in ci_template_files:
+                try:
+                    self._load_template_file(template_file)
+                except Exception as e:
+                    logger.warning(f"Failed to load template file {template_file}: {e}")
+        else:
+            logger.warning(f"CI-Management JJB path does not exist: {self.jjb_path}")
 
-        logger.info(f"Loaded {len(self._templates)} job templates")
+        logger.info(f"Loaded {len(self._templates)} job templates and {len(self._job_groups)} job groups")
 
     def _load_template_file(self, template_file: Path) -> None:
-        """Load templates from a single YAML file."""
+        """Load templates and job-groups from a single YAML file."""
         try:
             with open(template_file, "r", encoding="utf-8") as f:
                 data = yaml.safe_load(f)
@@ -118,14 +186,31 @@ class CIManagementParser:
                 return
 
             for item in data:
-                if isinstance(item, dict) and "job-template" in item:
-                    template = item["job-template"]
-                    template_id = template.get("id")
-                    template_name = template.get("name")
+                if isinstance(item, dict):
+                    # Load job-template definitions
+                    if "job-template" in item:
+                        template = item["job-template"]
+                        template_id = template.get("id")
+                        template_name = template.get("name")
 
-                    if template_id:
-                        self._templates[template_id] = template
-                        logger.debug(f"Loaded template: {template_id} -> {template_name}")
+                        # Store by id if available, otherwise by name
+                        if template_id:
+                            self._templates[template_id] = template
+                            logger.debug(f"Loaded template by id: {template_id} -> {template_name}")
+                        elif template_name:
+                            self._templates[template_name] = template
+                            logger.debug(f"Loaded template by name: {template_name}")
+                    
+                    # Load job-group definitions
+                    elif "job-group" in item:
+                        job_group = item["job-group"]
+                        group_name = job_group.get("name")
+                        jobs_list = job_group.get("jobs", [])
+                        
+                        if group_name and jobs_list:
+                            # Store the list of job templates in this group
+                            self._job_groups[group_name] = jobs_list
+                            logger.debug(f"Loaded job-group: {group_name} with {len(jobs_list)} jobs")
 
         except yaml.YAMLError as e:
             logger.warning(f"YAML error in {template_file}: {e}")
@@ -287,7 +372,7 @@ class CIManagementParser:
                     if jjb_project:
                         projects.append(jjb_project)
 
-            logger.info(f"Parsed {len(projects)} project blocks from {jjb_file}")
+            logger.debug(f"Parsed {len(projects)} project blocks from {jjb_file}")
 
         except yaml.YAMLError as e:
             logger.error(f"YAML error parsing {jjb_file}: {e}")
@@ -311,13 +396,26 @@ class CIManagementParser:
             jobs_list = project_block.get("jobs", [])
             for job_item in jobs_list:
                 if isinstance(job_item, str):
-                    # Simple job reference: "gerrit-maven-verify"
-                    job_def = JJBJobDefinition(
-                        template_name=job_item,
-                        project_name=project_name,
-                        parameters=project_block,
-                    )
-                    jjb_project.jobs.append(job_def)
+                    # Check if this is a job-group reference
+                    expanded_jobs = self._expand_job_group(job_item, project_name, project_block)
+                    
+                    if expanded_jobs:
+                        # This was a job-group, add all expanded jobs
+                        for expanded_template in expanded_jobs:
+                            job_def = JJBJobDefinition(
+                                template_name=expanded_template,
+                                project_name=project_name,
+                                parameters=project_block,
+                            )
+                            jjb_project.jobs.append(job_def)
+                    else:
+                        # Simple job reference: "gerrit-maven-verify"
+                        job_def = JJBJobDefinition(
+                            template_name=job_item,
+                            project_name=project_name,
+                            parameters=project_block,
+                        )
+                        jjb_project.jobs.append(job_def)
 
                 elif isinstance(job_item, dict):
                     # Job with parameters: {"gerrit-maven-stage": {"sign-artifacts": true}}
@@ -326,12 +424,25 @@ class CIManagementParser:
                         if isinstance(params, dict):
                             merged_params.update(params)
 
-                        job_def = JJBJobDefinition(
-                            template_name=template_name,
-                            project_name=project_name,
-                            parameters=merged_params,
-                        )
-                        jjb_project.jobs.append(job_def)
+                        # Check if this is a job-group reference
+                        expanded_jobs = self._expand_job_group(template_name, project_name, merged_params)
+                        
+                        if expanded_jobs:
+                            # This was a job-group, add all expanded jobs
+                            for expanded_template in expanded_jobs:
+                                job_def = JJBJobDefinition(
+                                    template_name=expanded_template,
+                                    project_name=project_name,
+                                    parameters=merged_params,
+                                )
+                                jjb_project.jobs.append(job_def)
+                        else:
+                            job_def = JJBJobDefinition(
+                                template_name=template_name,
+                                project_name=project_name,
+                                parameters=merged_params,
+                            )
+                            jjb_project.jobs.append(job_def)
 
             return jjb_project
 
@@ -350,6 +461,38 @@ class CIManagementParser:
                 job_names.extend(expanded)
 
         return job_names
+
+    def _expand_job_group(self, job_name: str, project_name: str, params: dict[str, Any]) -> list[str]:
+        """
+        Expand a job-group reference to its component job templates.
+        
+        Job groups in JJB are defined like:
+        - job-group:
+            name: "{project-name}-gerrit-docker-jobs"
+            jobs:
+              - gerrit-docker-verify
+              - gerrit-docker-merge
+        
+        When a project references "{project-name}-gerrit-docker-jobs", we need to:
+        1. Check if the job_name (with template variables) matches a job-group name
+        2. Return the list of job templates in that group
+        
+        Args:
+            job_name: Job name that might be a job-group reference (e.g., "{project-name}-gerrit-docker-jobs")
+            project_name: Project name to substitute into the pattern
+            params: Parameters for variable substitution
+            
+        Returns:
+            List of job template names if this is a job-group, empty list otherwise
+        """
+        # Check if this job name (potentially with template variables) matches a job-group
+        # Job-groups are stored with their template names like "{project-name}-gerrit-docker-jobs"
+        if job_name in self._job_groups:
+            logger.debug(f"Expanding job-group: {job_name} -> {self._job_groups[job_name]}")
+            return self._job_groups[job_name]
+        
+        # Not a job-group
+        return []
 
     def _expand_job_template(self, job_def: JJBJobDefinition) -> list[str]:
         """
@@ -384,13 +527,16 @@ class CIManagementParser:
             for stream_item in streams:
                 if isinstance(stream_item, str):
                     stream_name = stream_item
+                    stream_vars = {}
                 elif isinstance(stream_item, dict):
                     stream_name = list(stream_item.keys())[0]
+                    # Extract nested variables from the stream dictionary
+                    stream_vars = stream_item[stream_name] if isinstance(stream_item[stream_name], dict) else {}
                 else:
                     continue
 
-                # Create a copy of params with stream value
-                stream_params = {**params, "stream": stream_name}
+                # Create a copy of params with stream value and merge nested stream variables
+                stream_params = {**params, "stream": stream_name, **stream_vars}
                 expanded = self._substitute_variables(pattern, stream_params)
                 job_names.append(expanded)
         else:
@@ -409,6 +555,11 @@ class CIManagementParser:
 
         for var in variables:
             value = params.get(var, f"{{{var}}}")  # Keep placeholder if not found
+            
+            # Skip list/dict values - they need stream expansion
+            if isinstance(value, (list, dict)):
+                continue
+                
             if isinstance(value, str):
                 result = result.replace(f"{{{var}}}", value)
             elif isinstance(value, (int, float, bool)):
