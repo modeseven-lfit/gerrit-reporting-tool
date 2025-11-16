@@ -51,8 +51,8 @@ class DataAggregator:
             "active_days", 1095
         )
 
-        # Primary time window for rankings (usually last_365_days)
-        primary_window = "last_365_days"
+        # Primary time window for rankings (usually last_365)
+        primary_window = "last_365"
 
         # Classify repositories by unified activity status
         current_repos = []

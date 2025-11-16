@@ -258,13 +258,13 @@ class JenkinsAPIClient(BaseAPIClient):
                 project_jobs.append(job_details)
                 # Mark job as allocated
                 allocated_jobs.add(job_name)
-                self.logger.info(
+                self.logger.debug(
                     f"Allocated Jenkins job '{job_name}' to project '{project_name}' (score: {score})"
                 )
             else:
                 self.logger.warning(f"Failed to get details for Jenkins job: {job_name}")
 
-        self.logger.info(
+        self.logger.debug(
             f"Found {len(project_jobs)} Jenkins jobs for project {project_name}"
         )
         return project_jobs

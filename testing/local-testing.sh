@@ -314,9 +314,10 @@ show_summary() {
     echo ""
     
     log_info "Clone Directories:"
-    for project_data in $(jq -c '.[]' "${PROJECTS_JSON}"); do
-        local project=$(echo "$project_data" | jq -r '.project')
-        local gerrit=$(echo "$project_data" | jq -r '.gerrit // empty')
+    # Use a while loop with proper quoting to avoid jq parsing errors
+    jq -c '.[]' "${PROJECTS_JSON}" 2>/dev/null | while IFS= read -r project_data; do
+        local project=$(echo "$project_data" | jq -r '.project // "Unknown"' 2>/dev/null)
+        local gerrit=$(echo "$project_data" | jq -r '.gerrit // empty' 2>/dev/null)
         
         if [ -n "${gerrit}" ]; then
             local clone_dir="${CLONE_BASE_DIR}/${gerrit}"
@@ -336,7 +337,7 @@ show_summary() {
         if [ -d "${project_dir}" ]; then
             local project_name=$(basename "${project_dir}")
             echo "  ${project_name} reports:"
-            ls -lh "${project_dir}" | tail -n +2 | awk '{print "    " $9 " (" $5 ")"}'
+            ls -lh "${project_dir}" 2>/dev/null | tail -n +2 | awk '{print "    " $9 " (" $5 ")"}'
             echo ""
         fi
     done

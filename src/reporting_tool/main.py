@@ -251,6 +251,10 @@ def setup_logging(
         force=True,
     )
 
+    # Reduce noise from HTTP libraries
+    logging.getLogger("httpx").setLevel(logging.WARNING)
+    logging.getLogger("httpcore").setLevel(logging.WARNING)
+
     return logging.getLogger(__name__)
 
 

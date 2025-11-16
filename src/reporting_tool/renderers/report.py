@@ -304,10 +304,10 @@ class ReportRenderer:
 
         for repo in all_repos:
             name = repo.get("gerrit_project", "Unknown")
-            commits_1y = repo.get("commit_counts", {}).get("last_365_days", 0)
-            loc_1y = repo.get("loc_stats", {}).get("last_365_days", {}).get("net", 0)
+            commits_1y = repo.get("commit_counts", {}).get("last_365", 0)
+            loc_1y = repo.get("loc_stats", {}).get("last_365", {}).get("net", 0)
             contributors_1y = repo.get("unique_contributors", {}).get(
-                "last_365_days", 0
+                "last_365", 0
             )
             days_since = repo.get("days_since_last_commit")
             if days_since is None:
@@ -941,8 +941,8 @@ class ReportRenderer:
         # Sort by commits first, then by LOC as secondary sort
         all_contributors.sort(
             key=lambda x: (
-                x.get("commits", {}).get("last_365_days", 0),
-                x.get("lines_net", {}).get("last_365_days", 0),
+                x.get("commits", {}).get("last_365", 0),
+                x.get("lines_net", {}).get("last_365", 0),
             ),
             reverse=True,
         )
@@ -960,14 +960,14 @@ class ReportRenderer:
             name = contributor.get("name", "Unknown")
             email = contributor.get("email", "")
             domain = contributor.get("domain", "")
-            commits_1y = contributor.get("commits", {}).get("last_365_days", 0)
-            loc_1y = contributor.get("lines_net", {}).get("last_365_days", 0)
-            lines_added_1y = contributor.get("lines_added", {}).get("last_365_days", 0)
+            commits_1y = contributor.get("commits", {}).get("last_365", 0)
+            loc_1y = contributor.get("lines_net", {}).get("last_365", 0)
+            lines_added_1y = contributor.get("lines_added", {}).get("last_365", 0)
             lines_removed_1y = contributor.get("lines_removed", {}).get(
-                "last_365_days", 0
+                "last_365", 0
             )
             delta_loc_1y = abs(lines_added_1y) + abs(lines_removed_1y)
-            repos_1y = contributor.get("repositories_count", {}).get("last_365_days", 0)
+            repos_1y = contributor.get("repositories_count", {}).get("last_365", 0)
 
             # Calculate average LOC per commit
             if commits_1y > 0:
@@ -1009,9 +1009,9 @@ class ReportRenderer:
             name = contributor.get("name", "Unknown")
             email = contributor.get("email", "")
             domain = contributor.get("domain", "")
-            commits_1y = contributor.get("commits", {}).get("last_365_days", 0)
-            loc_1y = contributor.get("lines_net", {}).get("last_365_days", 0)
-            repos_1y = contributor.get("repositories_count", {}).get("last_365_days", 0)
+            commits_1y = contributor.get("commits", {}).get("last_365", 0)
+            loc_1y = contributor.get("lines_net", {}).get("last_365", 0)
+            repos_1y = contributor.get("repositories_count", {}).get("last_365", 0)
 
             # Use just the name without email for privacy
             display_name = name
@@ -1053,12 +1053,12 @@ class ReportRenderer:
         for i, org in enumerate(top_orgs, 1):
             domain = org.get("domain", "Unknown")
             contributors = org.get("contributor_count", 0)
-            commits_1y = org.get("commits", {}).get("last_365_days", 0)
-            loc_1y = org.get("lines_net", {}).get("last_365_days", 0)
-            lines_added_1y = org.get("lines_added", {}).get("last_365_days", 0)
-            lines_removed_1y = org.get("lines_removed", {}).get("last_365_days", 0)
+            commits_1y = org.get("commits", {}).get("last_365", 0)
+            loc_1y = org.get("lines_net", {}).get("last_365", 0)
+            lines_added_1y = org.get("lines_added", {}).get("last_365", 0)
+            lines_removed_1y = org.get("lines_removed", {}).get("last_365", 0)
             delta_loc_1y = abs(lines_added_1y) + abs(lines_removed_1y)
-            repos_1y = org.get("repositories_count", {}).get("last_365_days", 0)
+            repos_1y = org.get("repositories_count", {}).get("last_365", 0)
 
             # Calculate average LOC per commit
             if commits_1y > 0:
@@ -1083,7 +1083,7 @@ class ReportRenderer:
         # Sort repositories by primary metric (commits in last year)
         sorted_repos = sorted(
             repositories,
-            key=lambda r: r.get("commit_counts", {}).get("last_365_days", 0),
+            key=lambda r: r.get("commit_counts", {}).get("last_365", 0),
             reverse=True,
         )
 

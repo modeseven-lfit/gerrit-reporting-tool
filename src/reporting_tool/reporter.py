@@ -99,7 +99,7 @@ class RepositoryReporter:
         if success:
             if api_stats:
                 api_stats.record_info_master(True)
-            self.logger.info("✅ Successfully cloned info-master repository")
+            self.logger.debug("✅ Successfully cloned info-master repository")
             # Register cleanup handler
             atexit.register(self._cleanup_info_master_repo)
             return info_master_path
@@ -140,7 +140,7 @@ class RepositoryReporter:
         # This is cloned to a temporary directory to avoid it appearing in the report
         info_master_path = self._clone_info_master_repo()
         if info_master_path:
-            self.logger.info(f"Info-master repository available at: {info_master_path}")
+            self.logger.debug(f"Info-master repository available at: {info_master_path}")
         else:
             self.logger.warning(
                 "Info-master repository not available - continuing without it"
@@ -343,7 +343,7 @@ class RepositoryReporter:
         if not repos_path.exists():
             raise FileNotFoundError(f"Repository path does not exist: {repos_path}")
 
-        self.logger.info(f"Discovering repositories recursively under: {repos_path}")
+        self.logger.debug(f"Discovering repositories recursively under: {repos_path}")
 
         repo_dirs: list[Path] = []
         access_errors = 0
