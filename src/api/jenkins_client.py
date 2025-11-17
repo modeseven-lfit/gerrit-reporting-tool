@@ -248,16 +248,16 @@ class JenkinsAPIClient(BaseAPIClient):
 
         try:
             url = f"{self.base_url}{self.api_base_path}?tree=jobs[name,url,color,buildable,disabled]"
-            self.logger.info(f"Fetching Jenkins jobs from: {url}")
+            self.logger.debug(f"Fetching Jenkins jobs from: {url}")
             response = self.client.get(url)
 
-            self.logger.info(f"Jenkins API response: {response.status_code}")
+            self.logger.debug(f"Jenkins API response: {response.status_code}")
             if response.status_code == 200:
                 if self.stats:
                     self.stats.record_success("jenkins")
                 data = response.json()
                 job_count = len(data.get("jobs", []))
-                self.logger.info(f"Found {job_count} Jenkins jobs (cached for reuse)")
+                self.logger.debug(f"Found {job_count} Jenkins jobs (cached for reuse)")
 
                 # Cache the data
                 self._jobs_cache = data
@@ -366,7 +366,7 @@ class JenkinsAPIClient(BaseAPIClient):
             if len(all_jobs) > len(jjb_jobs):
                 sources.append(f"{len(all_jobs) - len(jjb_jobs)} fuzzy")
             
-            self.logger.info(
+            self.logger.debug(
                 f"Hybrid matching for {project_name}: {len(all_jobs)} jobs "
                 f"({', '.join(sources)})"
             )
