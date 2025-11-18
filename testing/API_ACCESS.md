@@ -9,7 +9,7 @@ This document explains how to enable API integrations (GitHub, Gerrit, Jenkins) 
 
 ## Overview
 
-The reporting tool can collect data from multiple sources:
+The reporting tool can collect data from several sources:
 
 1. **Git repositories** (local) - ✅ Always available
 2. **INFO.yaml files** (cloned from info-master) - ✅ Always available
@@ -17,9 +17,9 @@ The reporting tool can collect data from multiple sources:
 4. **Gerrit API** - ⚠️ Requires configuration
 5. **Jenkins API** - ⚠️ Requires configuration
 
-By default, the tool only uses local git data and INFO.yaml files. To get workflow status, CI/CD information, and other API-based data, you need to configure API access.
+By default, the tool uses local git data and INFO.yaml files. To get workflow status, CI/CD information, and other API-based data, you need to configure API access.
 
-## Quick Check: Are APIs Being Used?
+## Quick Check: API Usage Status
 
 Look for these indicators in the output:
 
@@ -39,18 +39,18 @@ Look for these indicators in the output:
 [INFO] Analysis complete: 179 repositories, 0 errors
 ```
 
-If you only see git analysis and no API calls, the APIs are disabled or not configured.
+If you see git analysis and no API calls, the APIs are disabled or not configured.
 
 ## Why Your Reports Were Fast
 
 If your reports generated in ~10-20 seconds for hundreds of repositories:
 
-- ✅ Only local git analysis was performed
-- ❌ No GitHub API calls were made
-- ❌ No Gerrit API calls were made
-- ❌ No Jenkins API calls were made
+- ✅ Local git analysis completed
+- ❌ GitHub API calls did not occur
+- ❌ Gerrit API calls did not occur
+- ❌ Jenkins API calls did not occur
 
-With full API access enabled, reports take significantly longer (several minutes) because the tool:
+With full API access enabled, reports take much longer (a few minutes) because the tool:
 
 - Queries GitHub for workflow status on each repository
 - Queries Gerrit for repository metadata
@@ -155,7 +155,7 @@ uv run reporting-tool generate \
 1. Go to <https://github.com/settings/tokens>
 2. Click "Generate new token" → "Generate new token (classic)"
 3. Select scopes:
-   - `repo` (for private repos) or `public_repo` (for public only)
+   - `repo` (for private repos) or `public_repo` (for public repos)
    - `workflow` (to read workflow status)
 4. Click "Generate token"
 5. Copy the token (starts with `ghp_`)
@@ -178,7 +178,7 @@ Gerrit API is typically open for read access on public servers. No authenticatio
 - `gerrit.onap.org`
 - `git.opendaylight.org`
 
-If authentication is required:
+If authentication becomes necessary:
 
 ```bash
 export GERRIT_USERNAME="your-username"
@@ -192,7 +192,7 @@ Jenkins API is typically open for read access on public servers. No authenticati
 - `jenkins.onap.org`
 - `jenkins.opendaylight.org`
 
-If authentication is required:
+If authentication becomes necessary:
 
 ```bash
 export JENKINS_USERNAME="your-username"
@@ -269,7 +269,7 @@ cd reporting-tool/testing
 ### Gerrit API
 
 - ✅ Project metadata
-- ✅ Repository state (active/read-only/hidden)
+- ✅ Repository state (active/read-restricted/hidden)
 - ✅ Parent project information
 - ✅ Branch information
 - ✅ Access controls
@@ -298,7 +298,7 @@ cd reporting-tool/testing
 
 ### "Analysis complete" but no API calls
 
-**Cause:** APIs are disabled in configuration or no tokens provided
+**Cause:** Configuration has disabled APIs or no tokens provided
 
 **Solution:**
 
@@ -308,13 +308,13 @@ cd reporting-tool/testing
 
 ### "GitHub API rate limit exceeded"
 
-**Cause:** Too many API calls without authentication
+**Cause:** Too frequent API calls without authentication
 
 **Solution:**
 
 1. Set `GITHUB_TOKEN` for 5000 req/hour limit
 2. Enable caching: `--cache` flag
-3. Reduce number of repositories being analyzed
+3. Reduce number of repositories under analysis
 
 ### "Connection refused" or "Timeout"
 
@@ -336,9 +336,9 @@ cd reporting-tool/testing
        timeout: 60.0
    ```
 
-### APIs are called but data missing
+### API Calls Complete But Data Missing
 
-**Cause:** API calls failing silently or returning no data
+**Cause:** API calls fail quietly or return no data
 
 **Solution:**
 
@@ -357,7 +357,7 @@ With all APIs enabled:
 
 **Why the difference?**
 
-- Each repository may require multiple API calls
+- Each repository may require several API calls
 - Network latency for API requests
 - Rate limiting delays
 - API server response times

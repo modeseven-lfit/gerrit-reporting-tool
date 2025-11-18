@@ -56,7 +56,7 @@ done
 
 **Solution:**
 
-1. Check if the environment variable is set:
+1. Check the environment variable:
 
    ```bash
    echo $LF_GERRIT_INFO_MASTER_SSH_KEY
@@ -92,7 +92,7 @@ done
 ```
 
 **Impact:**
-Reports will only use local git data and will NOT include:
+Reports will use local git data and will NOT include:
 
 - GitHub workflow status
 - Gerrit metadata
@@ -131,8 +131,8 @@ This is a **WARNING**, not an error. The reporting tool tries to match Jenkins j
 
 **Impact:**
 
-- Reports will still generate successfully
-- Unallocated jobs are listed for manual review
+- Reports will still generate without errors
+- Unallocated jobs appear in the report for manual review
 - The tool provides suggestions for which projects they might belong to
 
 **Action:**
@@ -158,10 +158,10 @@ Some repositories may be:
 - Submodules or references to external repos
 
 **Impact:**
-These repositories are tracked but excluded from commit statistics.
+These repositories appear in tracking but do not count toward commit statistics.
 
 **Action:**
-This is informational only. No action required unless you expect these repositories to have commits.
+This is informational. No action required unless you expect these repositories to have commits.
 
 ---
 
@@ -169,8 +169,8 @@ This is informational only. No action required unless you expect these repositor
 
 **Symptoms:**
 
-- Takes several minutes to generate reports
-- Many HTTP requests logged
+- Takes a few minutes to generate reports
+- Numerous HTTP requests logged
 
 **Causes:**
 
@@ -189,7 +189,7 @@ This is informational only. No action required unless you expect these repositor
 2. **Use cached clones:** The script skips re-cloning if directories exist
 
    ```bash
-   # Clones are cached at:
+   # Clones exist in cache at:
    /tmp/gerrit.onap.org
    /tmp/git.opendaylight.org
    ```
@@ -209,9 +209,9 @@ fatal: Could not read from remote repository.
 
 **Causes:**
 
-- SSH key not configured correctly
+- SSH key not configured properly
 - SSH key not added to Gerrit
-- Wrong SSH key being used
+- Wrong SSH key in use
 
 **Solution:**
 

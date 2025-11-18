@@ -1,3 +1,8 @@
+<!--
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2025 The Linux Foundation
+-->
+
 # INFO.yaml Server Filtering
 
 > **Problem**: Multiple projects showing duplicate entries from different LF organizations
@@ -29,7 +34,7 @@ When generating reports for a specific project (e.g., ONAP), the INFO.yaml commi
 
 The info-master repository contains INFO.yaml files for **all** Linux Foundation projects, organized by Gerrit server:
 
-```
+```text
 info-master/
 ├── gerrit.onap.org/          <- ONAP projects only
 │   ├── .github/
