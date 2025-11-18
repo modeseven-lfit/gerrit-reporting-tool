@@ -170,7 +170,7 @@ This is informational. No action required unless you expect these repositories t
 **Symptoms:**
 
 - Takes 3-5 minutes to generate reports
-- Many HTTP requests logged
+- Hundreds of HTTP requests logged
 
 **Causes:**
 

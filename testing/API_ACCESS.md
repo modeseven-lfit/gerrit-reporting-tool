@@ -357,7 +357,7 @@ With all APIs enabled:
 
 **Why the difference?**
 
-- Each repository may require many API calls
+- Each repository may require 5-10 API calls
 - Network latency for API requests
 - Rate limiting delays
 - API server response times
