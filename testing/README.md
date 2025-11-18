@@ -29,7 +29,7 @@ The `local-testing.sh` script automates the following workflow:
 - **git** - Git version control system
 
   ```bash
-  # Usually pre-installed on most systems
+  # Pre-installed on most systems
   git --version
   ```
 
@@ -63,11 +63,11 @@ The script will automatically:
 
 - Check for `LF_GERRIT_INFO_MASTER_SSH_KEY` environment variable first
 - Fall back to `~/.ssh/gerrit.linuxfoundation.org` if not set
-- Exit with error if neither is found
+- Exit with error if the script cannot find either location
 
 ### Disk Space
 
-Ensure you have sufficient disk space in `/tmp`:
+Ensure you have enough disk space in `/tmp`:
 
 - **ONAP**: ~50-100 GB (varies based on number of active repositories)
 - **OpenDaylight**: ~10-20 GB (varies based on number of active repositories)
@@ -80,7 +80,7 @@ df -h /tmp
 
 ### API Access (Optional but Recommended)
 
-By default, reports only use **local git data**. To include GitHub workflow status, Gerrit metadata, and Jenkins CI/CD information, you need to configure API access.
+By default, reports use **local git data**. To include GitHub workflow status, Gerrit metadata, and Jenkins CI/CD information, you need to configure API access.
 
 **Quick setup:**
 
@@ -90,7 +90,7 @@ export GITHUB_TOKEN="ghp_xxxxxxxxxxxxxxxxxxxx"
 
 **📖 See [API_ACCESS.md](API_ACCESS.md) for complete API configuration guide**
 
-Without API tokens, reports will be very fast (~10-20 seconds) but will **NOT** include:
+Without API tokens, reports will be fast (~10-20 seconds) but will **NOT** include:
 
 - ✗ GitHub workflow status
 - ✗ Gerrit repository metadata
@@ -123,9 +123,9 @@ The script will:
 **Notes:**
 
 - The script uses project metadata from `projects.json` to configure Gerrit/Jenkins hosts automatically
-- SSH key is required for info-master access (see SSH Key Configuration above)
-- The script preserves existing cloned repositories to save time on subsequent runs
-- Report directories are always cleaned and regenerated
+- SSH key required for info-master access (see SSH Key Configuration above)
+- The script preserves existing cloned repositories to save time on later runs
+- The script cleans and regenerates report directories
 - The script will warn you if API integrations are not configured
 - See [API_ACCESS.md](API_ACCESS.md) to enable GitHub/Gerrit/Jenkins API access
 
@@ -133,7 +133,7 @@ The script will:
 
 After successful execution, you'll have:
 
-```
+```bash
 /tmp/
 ├── gerrit.onap.org/              # Cloned ONAP repositories
 │   ├── aai/
@@ -216,7 +216,7 @@ The script uses these `gerrit-clone` options:
 - `--move-conflicting` - Move conflicting files to allow nested repos
 - `--verbose` - Show detailed progress
 
-To modify these, edit the `clone_onap()` and `clone_opendaylight()` functions in the script.
+To change these, edit the `clone_onap()` and `clone_opendaylight()` functions in the script.
 
 ### reporting-tool Options
 
@@ -225,7 +225,7 @@ The script uses these `reporting-tool` options:
 - `--cache` - Enable caching for better performance
 - `--workers 4` - Use 4 concurrent workers
 
-To modify these, edit the `generate_onap_report()` and `generate_opendaylight_report()` functions.
+To change these, edit the `generate_onap_report()` and `generate_opendaylight_report()` functions.
 
 ## Reviewing Reports
 
@@ -323,7 +323,7 @@ If cloning fails:
 
 If report generation fails:
 
-1. **Verify repositories were cloned**:
+1. **Verify repository cloning**:
 
    ```bash
    ls -la /tmp/gerrit.onap.org/
@@ -379,7 +379,7 @@ If you run out of disk space:
 
 You can run individual steps manually:
 
-#### 1. Clone ONAP only
+#### 1. Clone ONAP
 
 ```bash
 uvx gerrit-clone clone \
@@ -391,7 +391,7 @@ uvx gerrit-clone clone \
     --verbose
 ```
 
-#### 2. Clone OpenDaylight only
+#### 2. Clone OpenDaylight
 
 ```bash
 uvx gerrit-clone clone \
@@ -403,7 +403,7 @@ uvx gerrit-clone clone \
     --verbose
 ```
 
-#### 3. Generate ONAP report only
+#### 3. Generate ONAP report
 
 ```bash
 cd reporting-tool
@@ -415,7 +415,7 @@ uv run reporting-tool generate \
     --workers 4
 ```
 
-#### 4. Generate OpenDaylight report only
+#### 4. Generate OpenDaylight report
 
 ```bash
 cd reporting-tool
@@ -448,7 +448,7 @@ cd reporting-tool/testing
 
 ### Automatic Cleanup
 
-The script automatically cleans up **report directories only** at the start of each run. Cloned repositories are preserved and reused to save time. To force a fresh clone, manually delete the repository directories first:
+The script cleans up **report directories** at the start of each run. The script preserves and reuses cloned repositories to save time. To force a fresh clone, remove the cached directories:
 
 ```bash
 rm -rf /tmp/gerrit.onap.org
@@ -457,11 +457,11 @@ rm -rf /tmp/git.opendaylight.org
 
 ## Advanced Usage
 
-### Test with Additional Projects
+### Test with More Projects
 
-The script currently processes ONAP and Opendaylight by default. To test other projects:
+The script processes ONAP and Opendaylight by default. To test other projects:
 
-1. **Edit `local-testing.sh`** and modify the projects array:
+1. **Edit `local-testing.sh`** and change the projects array:
 
    ```bash
    # Change this line in the main() function:
@@ -501,14 +501,14 @@ uvx gerrit-clone clone \
 
 ### Different Report Formats
 
-Generate only specific report formats:
+Generate specific report formats:
 
 ```bash
 uv run reporting-tool generate \
     --project "ONAP" \
     --repos-path /tmp/gerrit.onap.org \
     --output-dir /tmp/reports/onap \
-    --formats json markdown  # Only JSON and Markdown
+    --formats json markdown  # Generate JSON and Markdown formats
 ```
 
 ## Performance Tips
@@ -537,7 +537,7 @@ uv run reporting-tool generate \
    --workers 8
    ```
 
-5. **Reuse cloned repositories** - The script automatically preserves cloned repos between runs, saving significant time on subsequent executions.
+5. **Reuse cloned repositories** - The script automatically preserves cloned repos between runs, saving significant time on later executions.
 
 6. **Enable API access** - Set `GITHUB_TOKEN` and other API credentials for complete data. See [API_ACCESS.md](API_ACCESS.md).
 
@@ -554,7 +554,7 @@ The `projects.json` file contains metadata for all supported Linux Foundation pr
 - **LF Broadband** - gerrit.lfbroadband.org, jenkins.lfbroadband.org
 - **Linux Foundation** - gerrit.linuxfoundation.org
 
-This metadata is used to automatically configure API endpoints for each project.
+This metadata automatically configures API endpoints for each project.
 
 ## See Also
 

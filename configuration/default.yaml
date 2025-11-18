@@ -184,7 +184,8 @@ html_tables:
 # Gerrit API Integration
 # =============================================================================
 gerrit:
-  enabled: false
+  # Enabled by default - specify host in project config or via environment
+  enabled: true
   host: ""  # e.g., "gerrit.o-ran-sc.org"
   base_url: ""  # optional - will auto-discover if not specified
   timeout: 30.0
@@ -193,7 +194,8 @@ gerrit:
 # Jenkins API Integration
 # =============================================================================
 jenkins:
-  enabled: false
+  # Enabled by default - specify host in project config or via environment
+  enabled: true
   host: ""  # e.g., "jenkins.o-ran-sc.org"
   timeout: 30.0
 
@@ -211,12 +213,14 @@ jjb_attribution:
   enabled: true
 
   # Git URL for the ci-management repository (OPTIONAL)
-  # If not provided, automatically derived as: https://{gerrit_host}/r/ci-management
+  # If not provided, automatically derived as:
+  #   https://{gerrit_host}/r/ci-management
   # Only override if your ci-management repo has a non-standard location
   # Examples:
   #   - https://gerrit.onap.org/r/ci-management (auto-derived)
   #   - https://gerrit.o-ran-sc.org/r/ci-management (auto-derived)
-  #   - https://git.opendaylight.org/gerrit/releng/builder (OpenDaylight uses different name)
+  #   - https://git.opendaylight.org/gerrit/releng/builder
+  #     (OpenDaylight uses different name)
   url: ""
 
   # Branch to use (typically "master" or "main")
@@ -234,6 +238,7 @@ jjb_attribution:
 # INFO.yaml Collection
 # =============================================================================
 # INFO.yaml collection from info-master repository
+# Enabled by default for comprehensive project metadata
 info_yaml:
   # Enable INFO.yaml committer report generation
   enabled: true
@@ -242,11 +247,11 @@ info_yaml:
   # Uncomment and set this for local development only - do not use in CI/CD
   # local_path: "testing/info-master"  # Path to cloned info-master repository
 
-  # Option 2: Clone from remote URL
+  # Option 2: Clone from remote URL (AUTO-DERIVED if not specified)
   # (used if local_path is not set or doesn't exist)
-  # In CI/CD, the workflow clones to ./info-master and the script
-  # will find it automatically
-  clone_url: "https://gerrit.linuxfoundation.org/infra/releng/info-master"
+  # Default: https://gerrit.linuxfoundation.org/infra/releng/info-master
+  # Override only if using a different info-master location
+  clone_url: ""
 
   # Exclude archived/read-only Gerrit projects from the INFO.yaml table
   # When true (default), projects with Gerrit state READ_ONLY or
@@ -273,17 +278,20 @@ info_yaml:
 # =============================================================================
 extensions:
   # GitHub API integration for workflow status
+  # Enabled by default for comprehensive CI/CD workflow analysis
   github_api:
     enabled: true
     token: ""  # Will use CLASSIC_READ_ONLY_PAT_TOKEN env var if not set
     timeout: 30.0
     include_issues: false
     include_prs: false
-    # GitHub organization mapping for Gerrit mirrors
-    # Maps Gerrit host to GitHub organization name
-    # Used to construct GitHub API URLs for repositories mirrored
-    # from Gerrit
-    github_org: ""  # e.g., "onap" for gerrit.onap.org repos
+    # GitHub organization mapping for Gerrit mirrors (AUTO-DERIVED)
+    # Automatically derived from gerrit.host
+    # Example: gerrit.onap.org -> "onap",
+    #          gerrit.o-ran-sc.org -> "o-ran-sc"
+    # Override only if your organization name differs from the Gerrit
+    # host pattern
+    github_org: ""
 
   # Language analysis (future)
   language_analysis:

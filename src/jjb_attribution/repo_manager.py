@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2025 The Linux Foundation
+
 """
 Repository manager for ci-management and global-jjb.
 
@@ -9,7 +12,7 @@ import logging
 import subprocess
 import time
 from pathlib import Path
-from typing import Optional, Tuple
+from typing import Any, Optional, Tuple
 
 logger = logging.getLogger(__name__)
 
@@ -327,7 +330,7 @@ class JJBRepoManager:
         Returns:
             Dictionary with cache statistics
         """
-        info = {
+        info: dict[str, Any] = {
             "cache_dir": str(self.cache_dir),
             "exists": self.cache_dir.exists(),
             "repositories": [],

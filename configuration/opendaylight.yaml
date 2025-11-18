@@ -2,8 +2,20 @@
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
+# =============================================================================
 # OpenDaylight Project Configuration
-# Only defines values that differ from default.yaml
+# =============================================================================
+# Minimal project-specific configuration for OpenDaylight.
+# Most settings are auto-derived from the Gerrit host or use sensible defaults.
+#
+# Auto-derived settings:
+#   - github_org: Not applicable (no GitHub mirror)
+#   - info_yaml.clone_url: standard LF location
+#
+# Non-standard settings:
+#   - jjb_attribution.url: Uses "releng/builder" instead of "ci-management"
+#   - activity_thresholds: Customized for OpenDaylight's release cycle
+# =============================================================================
 
 # Project identifier
 project: OpenDaylight
@@ -12,39 +24,32 @@ project: OpenDaylight
 # Gerrit API Integration
 # =============================================================================
 gerrit:
-  enabled: true
   host: "git.opendaylight.org"
-  base_url: ""  # Will auto-discover
-  timeout: 30.0
 
 # =============================================================================
 # Jenkins API Integration
 # =============================================================================
 jenkins:
-  enabled: true
   host: "jenkins.opendaylight.org"
-  timeout: 30.0
 
 # =============================================================================
 # JJB Attribution
 # =============================================================================
 # OpenDaylight uses a NON-STANDARD location for JJB definitions
-# JJB Attribution is CRITICAL for OpenDaylight due to complex multi-stream jobs
-# Expected improvement: 47% → 99%+ accuracy
+# Must explicitly override the URL (standard would be ci-management)
 jjb_attribution:
-  # JJB Attribution is enabled by default
-  # OpenDaylight uses "releng/builder" instead of standard "ci-management"
-  # Must explicitly override the URL:
   url: "https://git.opendaylight.org/gerrit/releng/builder"
 
 # =============================================================================
 # Performance Settings
 # =============================================================================
 performance:
-  max_workers: 8
   cache: true
 
-# Activity thresholds - customized for OpenDaylight's release cycle
+# =============================================================================
+# Activity Thresholds
+# =============================================================================
+# Customized for OpenDaylight's release cycle (~6 month releases)
 activity_thresholds:
   current_days: 183      # ✅ Current: ~6 months (365/2)
   active_days: 548       # ☑️ Active: ~18 months (183-548 days)

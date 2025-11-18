@@ -1,3 +1,8 @@
+<!--
+SPDX-License-Identifier: Apache-2.0
+SPDX-FileCopyrightText: 2025 The Linux Foundation
+-->
+
 # Troubleshooting Guide
 
 ## Common Issues and Solutions
@@ -6,7 +11,7 @@
 
 **Symptoms:**
 
-```
+```text
 jq: parse error: Unfinished string at EOF at line 2, column 0
 jq: parse error: Invalid numeric literal at line 1, column 10
 ```
@@ -44,14 +49,14 @@ done
 
 **Symptoms:**
 
-```
+```bash
 [ERROR] SSH key not found at /Users/username/.ssh/gerrit.linuxfoundation.org
 [ERROR] Please ensure your SSH key is properly configured
 ```
 
 **Solution:**
 
-1. Check if the environment variable is set:
+1. Check the environment variable:
 
    ```bash
    echo $LF_GERRIT_INFO_MASTER_SSH_KEY
@@ -80,14 +85,14 @@ done
 
 **Symptoms:**
 
-```
+```text
 [WARNING] ==========================================
 [WARNING] ⚠️  NO API INTEGRATIONS CONFIGURED
 [WARNING] ==========================================
 ```
 
 **Impact:**
-Reports will only use local git data and will NOT include:
+Reports will use local git data and will NOT include:
 
 - GitHub workflow status
 - Gerrit metadata
@@ -112,7 +117,7 @@ export JENKINS_TOKEN="your-api-token"
 
 **Symptoms:**
 
-```
+```text
 [ERROR] CRITICAL: Jenkins job allocation issues detected:
 [ERROR]   - CRITICAL ERROR: Found 8 unallocated project Jenkins jobs
 ```
@@ -126,8 +131,8 @@ This is a **WARNING**, not an error. The reporting tool tries to match Jenkins j
 
 **Impact:**
 
-- Reports will still generate successfully
-- Unallocated jobs are listed for manual review
+- Reports will still generate without errors
+- Unallocated jobs appear in the report for manual review
 - The tool provides suggestions for which projects they might belong to
 
 **Action:**
@@ -139,7 +144,7 @@ Review the suggestions in the output and update project metadata if needed. This
 
 **Symptoms:**
 
-```
+```bash
 [INFO] Repositories with NO commits: 34
 [INFO] Sample repositories with NO commits:
 [INFO]   - integration/simulators/nf-simulator/pm-https-server
@@ -153,10 +158,10 @@ Some repositories may be:
 - Submodules or references to external repos
 
 **Impact:**
-These repositories are tracked but excluded from commit statistics.
+These repositories appear in tracking but do not count toward commit statistics.
 
 **Action:**
-This is informational only. No action required unless you expect these repositories to have commits.
+This is informational. No action required unless you expect these repositories to have commits.
 
 ---
 
@@ -164,8 +169,8 @@ This is informational only. No action required unless you expect these repositor
 
 **Symptoms:**
 
-- Takes several minutes to generate reports
-- Many HTTP requests logged
+- Takes 3-5 minutes to generate reports
+- Hundreds of HTTP requests logged
 
 **Causes:**
 
@@ -184,7 +189,7 @@ This is informational only. No action required unless you expect these repositor
 2. **Use cached clones:** The script skips re-cloning if directories exist
 
    ```bash
-   # Clones are cached at:
+   # Clones exist in cache at:
    /tmp/gerrit.onap.org
    /tmp/git.opendaylight.org
    ```
@@ -197,16 +202,16 @@ This is informational only. No action required unless you expect these repositor
 
 **Symptoms:**
 
-```
+```bash
 Permission denied (publickey).
 fatal: Could not read from remote repository.
 ```
 
 **Causes:**
 
-- SSH key not configured correctly
+- SSH key not configured properly
 - SSH key not added to Gerrit
-- Wrong SSH key being used
+- Wrong SSH key in use
 
 **Solution:**
 
@@ -240,7 +245,7 @@ fatal: Could not read from remote repository.
 
 **Symptoms:**
 
-```
+```bash
 uvx: command not found
 jq: command not found
 ```

@@ -15,7 +15,7 @@ The testing script now uses a centralized project metadata file (`projects.json`
 - Jenkins server hostnames
 - GitHub organization names
 
-This eliminates hardcoded server URLs and makes it easy to test multiple Linux Foundation projects.
+This eliminates hardcoded server URLs and makes it easy to test different Linux Foundation projects.
 
 ## Project Metadata
 
@@ -154,7 +154,7 @@ These environment variables are then used by the reporting tool to:
 
 ## SSH Key Configuration
 
-### Why SSH Keys Are Needed
+### Why SSH Keys Are Necessary
 
 The reporting tool needs SSH access to clone the `info-master` repository from `gerrit.linuxfoundation.org`. This repository contains INFO.yaml files with project metadata and committer information.
 
@@ -198,7 +198,7 @@ export LF_GERRIT_INFO_MASTER_SSH_KEY="$(cat ~/.ssh/id_rsa)"
 
 ### Automatic SSH Configuration
 
-When a local SSH key is found, the script automatically configures SSH:
+When the script finds a local SSH key, it automatically configures SSH:
 
 ```bash
 # Creates ~/.ssh/config entry:
@@ -211,7 +211,7 @@ Host gerrit.linuxfoundation.org
     UserKnownHostsFile /dev/null
 ```
 
-This allows seamless SSH access to Gerrit without additional configuration.
+This allows seamless SSH access to Gerrit without extra configuration.
 
 ### Testing SSH Access
 
@@ -223,15 +223,15 @@ ssh -p 29418 gerrit.linuxfoundation.org gerrit version
 
 Expected output:
 
-```
+```bash
 gerrit version 3.x.x
 ```
 
 ### Error Handling
 
-If no SSH key is found, the script exits with a clear error message:
+If the script cannot find an SSH key, it exits with a clear error message:
 
-```
+```bash
 [ERROR] ❌ SSH key not found: /Users/username/.ssh/gerrit.linuxfoundation.org
 
 To fix this:
@@ -321,7 +321,7 @@ done
 **Benefits:**
 
 - ✅ Single function handles all projects
-- ✅ Easy to add new projects (edit JSON only)
+- ✅ Easy to add new projects (edit JSON file)
 - ✅ Centralized configuration
 - ✅ Consistent handling across projects
 - ✅ Automatic API configuration

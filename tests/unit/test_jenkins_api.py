@@ -262,7 +262,8 @@ class TestGetJobsForProject:
 
         assert len(result) == 1
         assert result[0]["name"] == "test-project"
-        assert "test-project" in allocated
+        # Note: allocated_jobs is no longer modified by get_jobs_for_project
+        # Job allocation is now handled by JenkinsAllocationContext.allocate_jobs()
 
     def test_get_jobs_prefix_match(self, jenkins_client):
         """Test finding jobs with prefix match."""
@@ -759,4 +760,8 @@ class TestIntegrationScenarios:
         result = jenkins_client.get_jobs_for_project("test/project", allocated)
 
         assert len(result) >= 1
-        assert "test-project-verify" in allocated
+        # Note: allocated_jobs is no longer modified by get_jobs_for_project
+        # Job allocation is now handled by JenkinsAllocationContext.allocate_jobs()
+        # Just verify that jobs were returned
+        job_names = [j["name"] for j in result]
+        assert "test-project-verify" in job_names

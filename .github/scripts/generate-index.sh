@@ -356,13 +356,23 @@ fi
 # Get current timestamp
 CURRENT_TIME=$(date -u +"%Y-%m-%d %H:%M UTC")
 
-# Replace placeholders
-sed -i "s|TITLE_PLACEHOLDER|$PAGE_TITLE|g" "$REPORT_DIR/index.html"
-sed -i "s|SUBTITLE_PLACEHOLDER|$PAGE_SUBTITLE|g" "$REPORT_DIR/index.html"
-sed -i "s|TIMESTAMP_PLACEHOLDER|$CURRENT_TIME|g" "$REPORT_DIR/index.html"
-sed -i "s|ENVIRONMENT_BADGE_PLACEHOLDER|$ENV_BADGE|g" "$REPORT_DIR/index.html"
-sed -i "s|REPORT_COUNT_PLACEHOLDER|$report_count|g" "$REPORT_DIR/index.html"
-sed -i "s|REPORTS_CONTENT_PLACEHOLDER|$(echo "$REPORTS_HTML" | sed 's/[\/&]/\\&/g')|" "$REPORT_DIR/index.html"
+# Replace placeholders - use a temp file for complex HTML replacement
+sed "s|TITLE_PLACEHOLDER|$PAGE_TITLE|g" "$REPORT_DIR/index.html" | \
+sed "s|SUBTITLE_PLACEHOLDER|$PAGE_SUBTITLE|g" | \
+sed "s|TIMESTAMP_PLACEHOLDER|$CURRENT_TIME|g" | \
+sed "s|ENVIRONMENT_BADGE_PLACEHOLDER|$ENV_BADGE|g" | \
+sed "s|REPORT_COUNT_PLACEHOLDER|$report_count|g" > "$REPORT_DIR/index.html.tmp"
+
+# Replace the REPORTS_CONTENT_PLACEHOLDER using awk for better handling of multiline content
+awk -v reports="$REPORTS_HTML" '{
+  if ($0 ~ /REPORTS_CONTENT_PLACEHOLDER/) {
+    print reports
+  } else {
+    print $0
+  }
+}' "$REPORT_DIR/index.html.tmp" > "$REPORT_DIR/index.html"
+
+rm "$REPORT_DIR/index.html.tmp"
 
 echo "✅ Index page generated: $REPORT_DIR/index.html"
 
