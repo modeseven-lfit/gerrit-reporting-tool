@@ -23,7 +23,7 @@ reporting-tool generate \
   --repos-path ./repos
 ```
 
-**→ [Full Quick Start Guide](docs/QUICK_START.md)**
+
 
 ---
 
@@ -53,7 +53,6 @@ reporting-tool generate \
 
 - **[Configuration Guide](docs/CONFIGURATION.md)** - All configuration options (GitHub API, INFO.yaml, performance)
 - **[Configuration Merging](docs/CONFIGURATION_MERGING.md)** - How project configs inherit and override defaults
-- **[CI-Management Integration](docs/CI_MANAGEMENT_INTEGRATION.md)** - Authoritative Jenkins job allocation using JJB definitions
 - **[Deployment Guide](docs/DEPLOYMENT.md)** - Production deployment and operations
 - **[CI/CD Integration](docs/CI_CD_INTEGRATION.md)** - GitHub Actions, GitLab CI, and automation
 
@@ -62,7 +61,6 @@ reporting-tool generate \
 - **[Performance Guide](docs/PERFORMANCE.md)** - Optimization, caching, and scaling
 - **[Feature Discovery](docs/FEATURE_DISCOVERY_GUIDE.md)** - Understanding automatic feature detection
 - **[INFO.yaml Reporting](docs/INFO_YAML_REPORTING.md)** - Project metadata and committer activity tracking
-- **[CI-Management Integration](docs/CI_MANAGEMENT_INTEGRATION.md)** - Replace fuzzy matching with authoritative job allocation
 - **[Troubleshooting](docs/TROUBLESHOOTING.md)** - Problem solving and debugging
 
 ### 👨‍💻 Development
@@ -116,8 +114,6 @@ reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org
 
 > **Note:** The `--repos-path` should point to the directory created by `gerrit-clone-action`, which uses the Gerrit server hostname as the directory name (e.g., `./gerrit.o-ran-sc.org` for O-RAN-SC, `./gerrit.onap.org` for ONAP).
 
-**→ [More Examples](docs/USAGE_EXAMPLES.md)**
-
 ---
 
 ## 📊 Output Formats
@@ -150,7 +146,7 @@ reports/
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-**→ [Full CI/CD Integration Guide](docs/CI_CD_INTEGRATION.md)**
+
 
 ---
 
@@ -159,8 +155,6 @@ reports/
 - **Python**: 3.10+ (supports 3.10, 3.11, 3.12, 3.13)
 - **Dependencies**: PyYAML, httpx, Jinja2, typer, rich
 - **Optional**: GitHub token for API features
-
-**→ [Complete Requirements](docs/PRODUCTION_DEPLOYMENT_GUIDE.md#requirements)**
 
 ---
 
@@ -178,8 +172,6 @@ reports/
 | **CI/CD Setup** | [docs/CI_CD_INTEGRATION.md](docs/CI_CD_INTEGRATION.md) |
 | **Developer Guide** | [docs/DEVELOPER_GUIDE.md](docs/DEVELOPER_GUIDE.md) |
 
-**→ [Complete Documentation Index](docs/INDEX.md)**
-
 ---
 
 ## 💡 Quick Tips
@@ -196,7 +188,6 @@ reports/
 
 - **Documentation**: [Complete Index](docs/INDEX.md)
 - **Issues**: [GitHub Issues](https://github.com/modeseven-lfit/reporting-tool/issues)
-- **Changelog**: [CHANGELOG.md](CHANGELOG.md)
 
 ---
 
@@ -206,4 +197,4 @@ Apache-2.0 License - Copyright 2025 The Linux Foundation
 
 ---
 
-**Ready to get started?** → [Getting Started Guide](docs/GETTING_STARTED.md)
+

@@ -644,7 +644,7 @@ pytest -n 4 --maxfail=10 --tb=short
 - [pytest-xdist Documentation](https://pytest-xdist.readthedocs.io/)
 - [pytest-rerunfailures Documentation](https://github.com/pytest-dev/pytest-rerunfailures)
 - [Test Writing Guide](TEST_WRITING_GUIDE.md)
-- [Test Isolation Guide](TEST_ISOLATION.md)
+- Test Isolation Guide
 - [Enhanced Error Messages Guide](ENHANCED_ERRORS_GUIDE.md)
 
 ---

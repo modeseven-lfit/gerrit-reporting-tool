@@ -237,7 +237,7 @@ env:
 ## Related Documentation
 
 - [SETUP.md](../SETUP.md) - Complete setup guide
-- [GITHUB_TOKEN_REQUIREMENTS.md](GITHUB_TOKEN_REQUIREMENTS.md) - Token requirements and permissions
+- GITHUB_TOKEN_REQUIREMENTS.md - Token requirements and permissions
 - [API_ACCESS.md](../testing/API_ACCESS.md) - API access configuration
 - [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Common issues and solutions
 

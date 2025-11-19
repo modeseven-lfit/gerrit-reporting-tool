@@ -1276,12 +1276,12 @@ reporting-tool generate \
 
 Need more examples? Check these guides:
 
-- [CLI Guide](CLI_GUIDE.md) - Complete CLI documentation
-- [CLI Reference](CLI_REFERENCE.md) - All command options
-- [CLI Cheat Sheet](CLI_CHEAT_SHEET.md) - Quick reference
-- [Integration Patterns](INTEGRATION_PATTERNS.md) - CI/CD and automation
+- CLI Guide - Complete CLI documentation
+- CLI Reference - All command options
+- CLI Cheat Sheet - Quick reference
+- Integration Patterns - CI/CD and automation
 - [Feature Discovery Guide](FEATURE_DISCOVERY_GUIDE.md) - Feature details
-- [Configuration Wizard Guide](CONFIG_WIZARD_GUIDE.md) - Setup walkthrough
+- Configuration Wizard Guide - Setup walkthrough
 
 ---
 

@@ -535,10 +535,10 @@ All tests pass at 100% and demonstrate real-world usage patterns.
 
 ## See Also
 
-- [Test Reliability Phase 4 Summary](../phase14/STEP3_PHASE4_SUMMARY.md)
-- [Test Utilities API](../test_utils.py)
+- Test Reliability Phase 4 Summary
+- Test Utilities API
 - [Test Writing Guide](TEST_WRITING_GUIDE.md)
-- [Testing Guide](../TESTING_GUIDE.md)
+- Testing Guide
 
 ---
 

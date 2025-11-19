@@ -610,8 +610,8 @@ pytest tests/property --hypothesis-seed=12345
 ### Internal Documentation
 
 - [Property Tests README](../../tests/property/README.md)
-- [Step 6 Completion Summary](../sessions/PHASE_11_STEP_6_COMPLETE.md)
-- [Phase 11 Progress](../../PHASE_11_PROGRESS.md)
+- Step 6 Completion Summary
+- Phase 11 Progress
 
 ### External Resources
 

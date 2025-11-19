@@ -73,7 +73,7 @@ This guide provides step-by-step instructions for deploying the Repository Repor
 Before Starting Deployment:
 
 - [ ] Read this entire guide
-- [ ] Review [PRODUCTION_READINESS.md](PRODUCTION_READINESS.md)
+- [ ] Review PRODUCTION_READINESS.md
 - [ ] Identify deployment window (recommended: off-peak hours)
 - [ ] Notify stakeholders of deployment schedule
 - [ ] Prepare rollback plan
@@ -170,10 +170,10 @@ Jenkins Access (if applicable):
 ### ✅ Documentation Review
 
 - [ ] [README.md](../README.md) - Project overview
-- [ ] [CLI_QUICK_START.md](CLI_QUICK_START.md) - Quick start guide
-- [ ] [CLI_REFERENCE.md](CLI_REFERENCE.md) - CLI reference
+- [ ] CLI_QUICK_START.md - Quick start guide
+- [ ] CLI_REFERENCE.md - CLI reference
 - [ ] [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Problem resolution
-- [ ] [PRODUCTION_READINESS.md](PRODUCTION_READINESS.md) - Validation report
+- [ ] PRODUCTION_READINESS.md - Validation report
 
 ### ✅ Team Readiness
 
@@ -2423,8 +2423,8 @@ curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/user
 1. Check Documentation:
 
 - [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
-- [CLI_FAQ.md](CLI_FAQ.md)
-- [ERROR_HANDLING_BEST_PRACTICES.md](ERROR_HANDLING_BEST_PRACTICES.md)
+- CLI_FAQ.md
+- ERROR_HANDLING_BEST_PRACTICES.md
 
 2. Search Issues:
 
@@ -2940,7 +2940,7 @@ This deployment guide is a living document. If you find issues, have suggestions
 3. **Share in Slack:** #project-reports channel
 
 Questions about this guide?
-See [CLI_FAQ.md](CLI_FAQ.md) or create an issue.
+See CLI_FAQ.md or create an issue.
 
 ---
 

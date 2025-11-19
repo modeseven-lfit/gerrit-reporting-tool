@@ -398,7 +398,7 @@ Adjust CSS variables in `theme.css` to customize:
 
 ## Preview
 
-![Theme Preview](preview.png)
+!Theme Preview
 ```
 
 ### Step 5: Test Your Theme

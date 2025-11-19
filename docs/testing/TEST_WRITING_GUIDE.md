@@ -1171,8 +1171,8 @@ class TestRepositoryAnalysis:
 
 - [Test Prerequisites](TEST_PREREQUISITES.md)
 - [Enhanced Error Messages Guide](ENHANCED_ERRORS_GUIDE.md)
-- [Testing Guide](../TESTING_GUIDE.md)
-- [Test Reliability Plan](../phase14/TEST_RELIABILITY_PLAN.md)
+- Testing Guide
+- Test Reliability Plan
 
 ---
 

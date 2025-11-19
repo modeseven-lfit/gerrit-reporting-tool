@@ -1010,9 +1010,9 @@ Solution:
 ### Documentation
 
 - [Test README](../tests/README.md)
-- [Performance Tests](../tests/performance/README.md)
+- Performance Tests
 - [CI/CD Integration](./CI_CD_INTEGRATION.md)
-- [Coverage Report](./TEST_COVERAGE_REPORT.md)
+- Coverage Report
 
 ### External Links
 

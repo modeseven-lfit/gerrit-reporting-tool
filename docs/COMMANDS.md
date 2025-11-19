@@ -240,7 +240,7 @@ What it does:
 
 **Output:** Creates `config/{project}.yaml`
 
-**See also:** [Configuration Wizard Guide](CONFIG_WIZARD_GUIDE.md)
+**See also:** Configuration Wizard Guide
 
 ---
 
@@ -855,7 +855,7 @@ Debug slow runs:
 -vv  # Shows timing breakdown and bottlenecks
 ```text
 
-**See also:** [Performance Guide](PERFORMANCE_GUIDE.md)
+**See also:** Performance Guide
 
 ---
 
@@ -1243,7 +1243,7 @@ reporting-tool list-features
 
 ## See Also
 
-- [Quick Start Guide](QUICK_START.md) - Getting started tutorial
+- Quick Start Guide - Getting started tutorial
 - [Configuration Guide](CONFIGURATION.md) - Config file reference
 - [Usage Examples](USAGE_EXAMPLES.md) - Common workflows
 - [Troubleshooting Guide](TROUBLESHOOTING.md) - Detailed error solutions

@@ -256,15 +256,15 @@ See [CI/CD Integration Guide](../docs/CI_CD_INTEGRATION.md) for details.
 
 ### Comprehensive Guides
 
-- **[Testing Guide](../docs/TESTING_GUIDE.md)** - Complete testing documentation
-- **[Test Coverage Report](../docs/TEST_COVERAGE_REPORT.md)** - Coverage analysis
+- **Testing Guide** - Complete testing documentation
+- **Test Coverage Report** - Coverage analysis
 - **[CI/CD Integration](../docs/CI_CD_INTEGRATION.md)** - Automated testing setup
-- **[Performance Tests](performance/README.md)** - Performance testing guide
+- **Performance Tests** - Performance testing guide
 
 ### Quick References
 
-- **[Phase 11 Progress](../PHASE_11_PROGRESS.md)** - Test expansion progress
-- **[GitHub Workflows](../.github/workflows/README.md)** - Workflow documentation
+- **Phase 11 Progress** - Test expansion progress
+- **GitHub Workflows** - Workflow documentation
 
 ---
 
@@ -799,9 +799,9 @@ Priority areas for improvement:
 
 ### Internal Documentation
 
-- [Testing Guide](../docs/TESTING_GUIDE.md) - Comprehensive testing guide
-- [Phase 11 Plan](../docs/PHASE_11_TEST_COVERAGE_PLAN.md) - Test coverage plan
-- [Coverage Report](../docs/TEST_COVERAGE_REPORT.md) - Coverage analysis
+- Testing Guide - Comprehensive testing guide
+- Phase 11 Plan - Test coverage plan
+- Coverage Report - Coverage analysis
 
 ### Test Utilities
 

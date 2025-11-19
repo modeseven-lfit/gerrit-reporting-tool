@@ -902,7 +902,7 @@ Solutions:
 See Also:
 
 - [Parallel Execution Guide](testing/PARALLEL_EXECUTION.md)
-- [CLI FAQ: Performance](CLI_FAQ.md#performance)
+- CLI FAQ: Performance
 
 ---
 
@@ -982,7 +982,7 @@ Solutions:
 
 See Also:
 
-- [CLI FAQ: When to use caching](CLI_FAQ.md#when-should-i-use-caching)
+- CLI FAQ: When to use caching
 
 ---
 
@@ -1163,8 +1163,8 @@ exit 1
 
 See Also:
 
-- [CLI Reference: Exit Codes](CLI_REFERENCE.md#exit-codes) - Detailed exit code documentation
-- [CLI FAQ: Error Handling](CLI_FAQ.md#error-handling) - Common error scenarios
+- CLI Reference: Exit Codes - Detailed exit code documentation
+- CLI FAQ: Error Handling - Common error scenarios
 
 ---
 
@@ -1249,9 +1249,9 @@ uv sync  # Recommended
 
 ### 1. Check Documentation
 
-- [CLI Reference](CLI_REFERENCE.md)
+- CLI Reference
 - [Configuration Guide](CONFIGURATION.md)
-- [Quick Start](QUICK_START.md)
+- Quick Start
 
 ### 2. Use Built-in Diagnostics
 
@@ -1289,21 +1289,21 @@ This troubleshooting guide works with other documentation:
 
 ### Quick Reference Guides
 
-- **[CLI FAQ](CLI_FAQ.md)** - Quick answers to 60+ common questions
-- **[CLI Quick Start](CLI_QUICK_START.md)** - Visual troubleshooting decision tree
-- **[CLI Cheat Sheet](CLI_CHEAT_SHEET.md)** - Quick command reference
+- **CLI FAQ** - Quick answers to 60+ common questions
+- **CLI Quick Start** - Visual troubleshooting decision tree
+- **CLI Cheat Sheet** - Quick command reference
 
 ### Detailed Guides
 
-- **[CLI Guide](CLI_GUIDE.md#troubleshooting)** - Comprehensive troubleshooting workflows
-- **[CLI Reference](CLI_REFERENCE.md#exit-codes)** - Complete exit code documentation
-- **[GitHub API Error Logging](../GITHUB_API_ERROR_LOGGING.md)** - API-specific troubleshooting
+- **CLI Guide** - Comprehensive troubleshooting workflows
+- **CLI Reference** - Complete exit code documentation
+- **GitHub API Error Logging** - API-specific troubleshooting
 
 ### Setup & Configuration
 
 - **[Setup Guide](../SETUP.md)** - Initial setup troubleshooting
-- **[Configuration Wizard](CONFIG_WIZARD_GUIDE.md)** - Configuration help
-- **[GitHub Token Requirements](../GITHUB_TOKEN_REQUIREMENTS.md)** - Token troubleshooting
+- **Configuration Wizard** - Configuration help
+- **GitHub Token Requirements** - Token troubleshooting
 
 ### Test Suite
 
@@ -1312,7 +1312,7 @@ This troubleshooting guide works with other documentation:
 
 ### Navigation
 
-Start at **[CLI Documentation Hub](CLI_README.md)** for all CLI documentation.
+Start at **CLI Documentation Hub** for all CLI documentation.
 
 ---
 

@@ -228,7 +228,7 @@ To customize the analysis:
        - readthedocs
    ```
 
-For detailed configuration options, see [Configuration Guide](docs/CONFIG_WIZARD_GUIDE.md).
+For detailed configuration options, see Configuration Guide.
 
 ## Artifacts
 
@@ -314,7 +314,7 @@ schedule:
 4. **Permission errors**: Verify repository permissions and secrets
 5. **Grey workflow status in reports**: Check your GitHub token environment variable
    (`GITHUB_TOKEN` by default, or `CLASSIC_READ_ONLY_PAT_TOKEN` for CI) exists
-   and is a Classic PAT with required scopes (see [GitHub Token Requirements](./GITHUB_TOKEN_REQUIREMENTS.md))
+   and is a Classic PAT with required scopes (see GitHub Token Requirements)
 6. **Report publishing failures**: Check `GERRIT_REPORTS_PAT_TOKEN` exists and has
    Contents: Read and write permissions for `modeseven-lfit/gerrit-reports`
 
@@ -335,19 +335,19 @@ schedule:
      --dry-run
    ```
 
-5. For GitHub API issues, see [GitHub Token Requirements](docs/GITHUB_TOKEN_REQUIREMENTS.md)
-6. For configuration issues, see [Configuration Guide](docs/CONFIG_WIZARD_GUIDE.md)
+5. For GitHub API issues, see GitHub Token Requirements
+6. For configuration issues, see Configuration Guide
 7. For general troubleshooting, see [Troubleshooting Guide](docs/TROUBLESHOOTING.md)
 
 ## Further Documentation
 
 For more detailed information:
 
-- **[Quick Start Guide](docs/QUICK_START.md)** - Get started in 5 minutes
-- **[CLI Guide](docs/CLI_GUIDE.md)** - Complete CLI reference
-- **[Configuration Guide](docs/CONFIG_WIZARD_GUIDE.md)** - Configuration options
+- **Quick Start Guide** - Get started in 5 minutes
+- **CLI Guide** - Complete CLI reference
+- **Configuration Guide** - Configuration options
 - **[CI/CD Integration](docs/CI_CD_INTEGRATION.md)** - GitHub Actions setup
-- **[Performance Guide](docs/PERFORMANCE_GUIDE.md)** - Optimization tips
+- **Performance Guide** - Optimization tips
 - **[Troubleshooting](docs/TROUBLESHOOTING.md)** - Common issues and solutions
 - **[Documentation Index](docs/INDEX.md)** - Complete documentation hub
 

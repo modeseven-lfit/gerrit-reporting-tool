@@ -799,7 +799,7 @@ python -m memory_profiler generate_reports.py
 ### Internal Documentation
 
 - [Thread Safety Audit](./thread_safety_audit.md) - Detailed audit of all components
-- [Phase 7 Plan](../../PHASE_7_CONCURRENCY_PLAN.md) - Implementation roadmap
+- Phase 7 Plan - Implementation roadmap
 - [Profiling Script](../../scripts/profile_performance.py) - Performance measurement tool
 
 ### External Resources

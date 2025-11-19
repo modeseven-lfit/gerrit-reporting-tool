@@ -315,7 +315,7 @@ pytest -n auto -v | head -5
 
 - **Full Guide:** [PARALLEL_EXECUTION.md](PARALLEL_EXECUTION.md)
 - **Test Writing:** [TEST_WRITING_GUIDE.md](TEST_WRITING_GUIDE.md)
-- **Isolation:** [TEST_ISOLATION.md](TEST_ISOLATION.md)
+- **Isolation:** TEST_ISOLATION.md
 - **pytest-xdist:** <https://pytest-xdist.readthedocs.io/>
 
 ---

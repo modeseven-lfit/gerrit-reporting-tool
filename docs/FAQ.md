@@ -819,7 +819,7 @@ Token requirements:
 
 - **Scope:** `repo` (for private repos) or `public_repo` (for public repos)
 - **Type:** Classic token or fine-grained token
-- **See:** [GITHUB_TOKEN_REQUIREMENTS.md](../GITHUB_TOKEN_REQUIREMENTS.md)
+- **See:** GITHUB_TOKEN_REQUIREMENTS.md
 
 ---
 
@@ -947,15 +947,15 @@ reporting-tool generate --project test --repos-path ./repos --quiet 2>&1 | tee r
 
 ## See Also
 
-- [CLI Reference](CLI_REFERENCE.md) - Complete command documentation
-- [CLI Guide](CLI_GUIDE.md) - Comprehensive user guide
-- [CLI Cheat Sheet](CLI_CHEAT_SHEET.md) - Quick reference
+- CLI Reference - Complete command documentation
+- CLI Guide - Comprehensive user guide
+- CLI Cheat Sheet - Quick reference
 - [Usage Examples](USAGE_EXAMPLES.md) - Real-world scenarios
-- [Configuration Wizard Guide](CONFIG_WIZARD_GUIDE.md) - Configuration help
+- Configuration Wizard Guide - Configuration help
 
 ---
 
 **Last Updated:** 2025-01-26
 **Version:** 2.0 (Phase 14)
 
-**Have more questions?** Open an issue or check the [CLI Guide](CLI_GUIDE.md) for detailed information.
+**Have more questions?** Open an issue or check the CLI Guide for detailed information.

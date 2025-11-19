@@ -1554,9 +1554,9 @@ The Repository Reporting System provides comprehensive performance optimization 
 
 ### Further Reading
 
-- [Phase 10 Implementation Plan](PHASE_10_PERFORMANCE_PLAN.md)
-- [Performance Testing Guide](../tests/test_performance_README.md)
-- [CLI Reference](CLI_REFERENCE.md)
+- Phase 10 Implementation Plan
+- Performance Testing Guide
+- CLI Reference
 - [Troubleshooting Guide](TROUBLESHOOTING.md)
 
 ---
@@ -1564,7 +1564,7 @@ The Repository Reporting System provides comprehensive performance optimization 
 Questions or Issues?
 
 - Check the [Troubleshooting](#troubleshooting) section
-- Review [Session Summaries](sessions/)
+- Review Session Summaries
 - Submit an issue on GitHub
 
 ---

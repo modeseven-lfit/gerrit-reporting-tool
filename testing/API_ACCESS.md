@@ -371,6 +371,6 @@ With all APIs enabled:
 ## See Also
 
 - [Configuration Guide](../docs/CONFIGURATION.md)
-- [GitHub Token Requirements](../GITHUB_TOKEN_REQUIREMENTS.md)
+- GitHub Token Requirements
 - [API Integration Documentation](../docs/CI_CD_INTEGRATION.md)
 - [Performance Guide](../docs/PERFORMANCE.md)

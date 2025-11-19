@@ -703,10 +703,10 @@ reporting-tool generate --config config/my-project.yaml --dry-run
 
 ### Further Reading
 
-- **[CLI Reference](CLI_REFERENCE.md)** - All command-line options
-- **[Quick Start Guide](QUICK_START.md)** - Complete getting started guide
+- **CLI Reference** - All command-line options
+- **Quick Start Guide** - Complete getting started guide
 - **[Troubleshooting](TROUBLESHOOTING.md)** - Common issues and solutions
-- **[Configuration Schema](../config/README.md)** - YAML configuration details
+- **Configuration Schema** - YAML configuration details
 
 ---
 

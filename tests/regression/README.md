@@ -490,9 +490,9 @@ git diff tests/regression/__snapshots__/
 
 ### Internal Documentation
 
-- [Phase 11 Progress](../../PHASE_11_PROGRESS.md)
+- Phase 11 Progress
 - [Test Infrastructure](../README.md)
-- [Known Issues Log](../../docs/KNOWN_ISSUES.md)
+- Known Issues Log
 
 ### External Resources
 

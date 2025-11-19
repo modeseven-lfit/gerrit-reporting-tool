@@ -774,8 +774,8 @@ result = collector.collect(
 ## Related Documentation
 
 - [Configuration Guide](CONFIGURATION.md)
-- [Git Collection](GIT_COLLECTION.md)
-- [Report Rendering](RENDERING.md)
+- Git Collection
+- Report Rendering
 - [Testing Guide](../tests/README.md)
 
 ## Support
