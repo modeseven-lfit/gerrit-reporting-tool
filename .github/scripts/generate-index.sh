@@ -356,12 +356,40 @@ fi
 # Get current timestamp
 CURRENT_TIME=$(date -u +"%Y-%m-%d %H:%M UTC")
 
+# Debug output
+echo "DEBUG: PAGE_TITLE='$PAGE_TITLE'"
+echo "DEBUG: PAGE_SUBTITLE='$PAGE_SUBTITLE'"
+echo "DEBUG: CURRENT_TIME='$CURRENT_TIME'"
+echo "DEBUG: ENV_BADGE='$ENV_BADGE'"
+echo "DEBUG: report_count='$report_count'"
+
 # Create a safe temporary file
 TMP_FILE=$(mktemp)
 TMP_FILE2=$(mktemp)
 
+echo "DEBUG: TMP_FILE='$TMP_FILE'"
+echo "DEBUG: TMP_FILE2='$TMP_FILE2'"
+echo "DEBUG: Source file='$REPORT_DIR/index.html'"
+
+# Verify source file exists
+if [ ! -f "$REPORT_DIR/index.html" ]; then
+  echo "ERROR: Source file $REPORT_DIR/index.html does not exist!"
+  exit 1
+fi
+
 # Copy the template to temp file
 cp "$REPORT_DIR/index.html" "$TMP_FILE"
+
+# Verify copy succeeded
+if [ ! -s "$TMP_FILE" ]; then
+  echo "ERROR: Failed to copy template to temp file or file is empty!"
+  ls -lah "$REPORT_DIR/index.html"
+  ls -lah "$TMP_FILE"
+  exit 1
+fi
+
+echo "DEBUG: Source file size: $(wc -c < "$REPORT_DIR/index.html") bytes"
+echo "DEBUG: Temp file size: $(wc -c < "$TMP_FILE") bytes"
 
 # Replace placeholders one at a time with proper escaping
 # Escape special characters that could break sed
@@ -370,12 +398,42 @@ PAGE_SUBTITLE_ESC=$(printf '%s' "$PAGE_SUBTITLE" | sed 's/[&/\]/\\&/g; s/|/\\|/g
 CURRENT_TIME_ESC=$(printf '%s' "$CURRENT_TIME" | sed 's/[&/\]/\\&/g; s/|/\\|/g')
 ENV_BADGE_ESC=$(printf '%s' "$ENV_BADGE" | sed 's/[&/\]/\\&/g; s/|/\\|/g')
 
+echo "DEBUG: PAGE_TITLE_ESC='$PAGE_TITLE_ESC'"
+echo "DEBUG: PAGE_SUBTITLE_ESC='$PAGE_SUBTITLE_ESC'"
+echo "DEBUG: CURRENT_TIME_ESC='$CURRENT_TIME_ESC'"
+echo "DEBUG: ENV_BADGE_ESC='$ENV_BADGE_ESC'"
+
 # Replace each placeholder (use unique placeholder names to avoid substring conflicts)
-sed "s|PAGE_TITLE_PLACEHOLDER|${PAGE_TITLE_ESC}|g" "$TMP_FILE" > "$TMP_FILE2"
-sed "s|PAGE_SUBTITLE_PLACEHOLDER|${PAGE_SUBTITLE_ESC}|g" "$TMP_FILE2" > "$TMP_FILE"
-sed "s|GENERATED_TIMESTAMP_PLACEHOLDER|${CURRENT_TIME_ESC}|g" "$TMP_FILE" > "$TMP_FILE2"
-sed "s|ENVIRONMENT_BADGE_PLACEHOLDER|${ENV_BADGE_ESC}|g" "$TMP_FILE2" > "$TMP_FILE"
-sed "s|REPORT_COUNT_PLACEHOLDER|${report_count}|g" "$TMP_FILE" > "$TMP_FILE2"
+echo "DEBUG: Running sed command 1..."
+sed "s|PAGE_TITLE_PLACEHOLDER|${PAGE_TITLE_ESC}|g" "$TMP_FILE" > "$TMP_FILE2" || {
+  echo "ERROR: sed command 1 failed with exit code $?"
+  echo "DEBUG: Command was: sed \"s|PAGE_TITLE_PLACEHOLDER|\${PAGE_TITLE_ESC}|g\" \"$TMP_FILE\""
+  exit 1
+}
+
+echo "DEBUG: Running sed command 2..."
+sed "s|PAGE_SUBTITLE_PLACEHOLDER|${PAGE_SUBTITLE_ESC}|g" "$TMP_FILE2" > "$TMP_FILE" || {
+  echo "ERROR: sed command 2 failed"
+  exit 1
+}
+
+echo "DEBUG: Running sed command 3..."
+sed "s|GENERATED_TIMESTAMP_PLACEHOLDER|${CURRENT_TIME_ESC}|g" "$TMP_FILE" > "$TMP_FILE2" || {
+  echo "ERROR: sed command 3 failed"
+  exit 1
+}
+
+echo "DEBUG: Running sed command 4..."
+sed "s|ENVIRONMENT_BADGE_PLACEHOLDER|${ENV_BADGE_ESC}|g" "$TMP_FILE2" > "$TMP_FILE" || {
+  echo "ERROR: sed command 4 failed"
+  exit 1
+}
+
+echo "DEBUG: Running sed command 5..."
+sed "s|REPORT_COUNT_PLACEHOLDER|${report_count}|g" "$TMP_FILE" > "$TMP_FILE2" || {
+  echo "ERROR: sed command 5 failed"
+  exit 1
+}
 
 # Replace the REPORTS_CONTENT_PLACEHOLDER using awk for better handling of multiline content
 awk -v reports="$REPORTS_HTML" '{
