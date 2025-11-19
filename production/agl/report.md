@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: AGL
 
-**Generated:** November 19, 2025 at 00:42 UTC
+**Generated:** November 19, 2025 at 08:46 UTC
 **Schema Version:** 1.0.0
 
 ## 📈 Global Summary
@@ -407,33 +407,33 @@
 | 265 | Yan | 0 | +0 | 0 | - | 4 | fujitsu.com |
 | 266 | Yaniv Mordekhay | 0 | +0 | 0 | - | 1 | github.com |
 | 267 | Yannick Gicquel | 0 | +0 | 0 | - | 7 | iot.bzh |
-| 268 | Yevgeny Hong | 0 | +0 | 0 | - | 3 | drimaes.com |
-| 269 | Yordan Dimitrov | 0 | +0 | 0 | - | 4 | gmail.com |
-| 270 | Yoshiki Ito | 0 | +0 | 0 | - | 2 | panasonic.com |
-| 271 | Yuichi Kusakabe | 0 | +0 | 0 | - | 1 | denso-ten.com |
-| 272 | Yuichi Kusakabe | 0 | +0 | 0 | - | 2 | fujitsu.com |
-| 273 | Yury Asheshov | 0 | +0 | 0 | - | 1 | k2l.de |
-| 274 | Yuta Doi | 0 | +0 | 0 | - | 4 | co.jp |
-| 275 | Yuya Ono | 0 | +0 | 0 | - | 1 | co.jp |
-| 276 | Zac Nelson | 0 | +0 | 0 | - | 1 | ford.com |
-| 277 | Zhang Nan | 0 | +0 | 0 | - | 3 | fujitsu.com |
-| 278 | ZhongLu | 0 | +0 | 0 | - | 2 | fujitsu.com |
-| 279 | Zhou Mingying | 0 | +0 | 0 | - | 4 | fujitsu.com |
-| 280 | Zhou Mingying | 0 | +0 | 0 | - | 3 | fujitsu.com |
-| 281 | amanarora_09 | 0 | +0 | 0 | - | 2 | gmail.com |
-| 282 | bearrito | 0 | +0 | 0 | - | 1 | gmail.com |
-| 283 | berni155 | 0 | +0 | 0 | - | 1 | gmail.com |
-| 284 | brian avery | 0 | +0 | 0 | - | 1 | intel.com |
-| 285 | build.automotivelinux.org | 0 | +0 | 0 | - | 6 | automotivelinux.org |
-| 286 | chintsung | 0 | +0 | 0 | - | 1 | gmail.com |
-| 287 | dch | 0 | +0 | 0 | - | 1 | co.uk |
-| 288 | dch | 0 | +0 | 0 | - | 1 | metaswitch.com |
-| 289 | dsouzahansenfrancis | 0 | +0 | 0 | - | 1 | crosschasm.com |
-| 290 | duerpei | 0 | +0 | 0 | - | 15 | fujitsu.com |
-| 291 | fulup | 0 | +0 | 0 | - | 3 | iot.bzh |
-| 292 | fulup | 0 | +0 | 0 | - | 1 | vannes.iot |
-| 293 | heartsucker | 0 | +0 | 0 | - | 1 | autistici.org |
-| 294 | hkojima | 0 | +0 | 0 | - | 1 | mentor.com |
+| 268 | Yordan Dimitrov | 0 | +0 | 0 | - | 4 | gmail.com |
+| 269 | Yoshiki Ito | 0 | +0 | 0 | - | 2 | panasonic.com |
+| 270 | Yuichi Kusakabe | 0 | +0 | 0 | - | 1 | denso-ten.com |
+| 271 | Yuichi Kusakabe | 0 | +0 | 0 | - | 2 | fujitsu.com |
+| 272 | Yury Asheshov | 0 | +0 | 0 | - | 1 | k2l.de |
+| 273 | Yuta Doi | 0 | +0 | 0 | - | 4 | co.jp |
+| 274 | Yuya Ono | 0 | +0 | 0 | - | 1 | co.jp |
+| 275 | Zac Nelson | 0 | +0 | 0 | - | 1 | ford.com |
+| 276 | Zhang Nan | 0 | +0 | 0 | - | 3 | fujitsu.com |
+| 277 | ZhongLu | 0 | +0 | 0 | - | 2 | fujitsu.com |
+| 278 | Zhou Mingying | 0 | +0 | 0 | - | 4 | fujitsu.com |
+| 279 | Zhou Mingying | 0 | +0 | 0 | - | 3 | fujitsu.com |
+| 280 | amanarora_09 | 0 | +0 | 0 | - | 2 | gmail.com |
+| 281 | bearrito | 0 | +0 | 0 | - | 1 | gmail.com |
+| 282 | berni155 | 0 | +0 | 0 | - | 1 | gmail.com |
+| 283 | brian avery | 0 | +0 | 0 | - | 1 | intel.com |
+| 284 | build.automotivelinux.org | 0 | +0 | 0 | - | 6 | automotivelinux.org |
+| 285 | chintsung | 0 | +0 | 0 | - | 1 | gmail.com |
+| 286 | dch | 0 | +0 | 0 | - | 1 | co.uk |
+| 287 | dch | 0 | +0 | 0 | - | 1 | metaswitch.com |
+| 288 | dsouzahansenfrancis | 0 | +0 | 0 | - | 1 | crosschasm.com |
+| 289 | duerpei | 0 | +0 | 0 | - | 15 | fujitsu.com |
+| 290 | fulup | 0 | +0 | 0 | - | 3 | iot.bzh |
+| 291 | fulup | 0 | +0 | 0 | - | 1 | vannes.iot |
+| 292 | heartsucker | 0 | +0 | 0 | - | 1 | autistici.org |
+| 293 | hkojima | 0 | +0 | 0 | - | 1 | mentor.com |
+| 294 | hongyevgeny | 0 | +0 | 0 | - | 3 | drimaes.com |
 | 295 | hupeng | 0 | +0 | 0 | - | 1 | gmail.com |
 | 296 | isotes | 0 | +0 | 0 | - | 1 | gmail.com |
 | 297 | khilman | 0 | +0 | 0 | - | 1 | github.com |
@@ -472,7 +472,7 @@
 |----------------|---------|---------|--------------|---------------|------------------|--------|
 | AGL/meta-agl | 96 | +6840 | 8 | 13 | 2025-11-06 | ✅ |
 | AGL/meta-agl-demo | 59 | -11250 | 5 | 64 | 2025-09-16 | ✅ |
-| AGL/meta-agl-devel | 59 | -6368 | 7 | 11 | 2025-11-08 | ✅ |
+| AGL/meta-agl-devel | 59 | -6368 | 7 | 12 | 2025-11-07 | ✅ |
 | AGL/AGL-repo | 30 | -8254 | 5 | 27 | 2025-10-23 | ✅ |
 | ci-management | 28 | +822 | 1 | 126 | 2025-07-16 | ✅ |
 | src/agl-compositor | 14 | +42 | 1 | 179 | 2025-05-24 | ✅ |
@@ -510,7 +510,7 @@
 | src/qtquickcontrols2-agl-style | 1 | +10 | 1 | 364 | 2024-11-20 | ✅ |
 | src/window-management-client-grpc | 1 | +0 | 1 | 364 | 2024-11-20 | ✅ |
 | AGL | 0 | +0 | 0 | 752 | 2023-10-29 | ☑️ |
-| AGL/lava-docker | 0 | +0 | 0 | 1,729 | 2021-02-24 | 🛑 |
+| AGL/lava-docker | 0 | +0 | 0 | 1,730 | 2021-02-23 | 🛑 |
 | AGL/meta-agl-cluster-demo | 0 | +0 | 0 | 644 | 2024-02-14 | ☑️ |
 | AGL/meta-agl-extra | 0 | +0 | 0 | 644 | 2024-02-14 | ☑️ |
 | AGL/meta-agl-refhw | 0 | +0 | 0 | 448 | 2024-08-28 | ☑️ |
@@ -607,7 +607,7 @@
 | src | 0 | +0 | 0 | 1,860 | 2020-10-16 | 🛑 |
 | src/agl-js-api | 0 | +0 | 0 | 1,833 | 2020-11-12 | 🛑 |
 | src/agl-shell-activator | 0 | +0 | 0 | 663 | 2024-01-26 | ☑️ |
-| src/agl-test-framework | 0 | +0 | 0 | 615 | 2024-03-14 | ☑️ |
+| src/agl-test-framework | 0 | +0 | 0 | 616 | 2024-03-13 | ☑️ |
 | src/agl-yocto-kernel-meta | 0 | +0 | 0 | 644 | 2024-02-14 | ☑️ |
 | src/app-framework-binder | 0 | +0 | 0 | 644 | 2024-02-14 | ☑️ |
 | src/app-framework-demo | 0 | +0 | 0 | 644 | 2024-02-14 | ☑️ |
@@ -732,183 +732,183 @@
 | apps/messaging | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | apps/mediaplayer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | apps/ondemandnavi | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| apps/phone | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | apps/radio | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| apps/phone | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | src/agl-vss-proxy | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | src/agl-demo-control-panel | python | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | src/qtquickcontrols2-agl-style | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | src/window-management-client-grpc | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| src/xds/xds-common | go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/virtio/adapter_app | c_cpp | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | src/virtio/virtio_driver | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | src/xds/xds-cli | go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/virtio/adapter_app | c_cpp | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| src/xds/xds-common | go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/xds/xds-docs | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/xds/xds-gdb | go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/meta-agl-cluster-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/xds/xds-server | go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| AGL/meta-agl-extra | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| AGL/lava-docker | python | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | AGL/meta-agl-telematics-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/meta-agl-refhw | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| AGL/lava-docker | python | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| AGL/meta-agl-extra | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-cluster-demo-gauges | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-bluetooth-map | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-bluetooth-pbap | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-can-high-level-viwi | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-cloudproxy | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-bluetooth | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-geoclue | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-geofence | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-cloudproxy | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-data-persistence | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-gps | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-geofence | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-helloworld | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-harvester | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-gps | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-identity-agent | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-iiodevices | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-inputmethod | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| apps/agl-service-mediaplayer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-homescreen | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-mediascanner | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-inputmethod | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| apps/agl-service-iiodevices | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-navigation | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-nfc | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-platform-info | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-mediascanner | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-mediaplayer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-network | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-platform-info | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-poi | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-steering-wheel | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-nfc | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-taskmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-steering-wheel | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-telephony | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-unicens-controller | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-soundmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-voice-high | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-voiceagent | python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-voice-high-capabilities | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-voiceagent | python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-voice-high | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-soundmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-weather | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-telematics-demo-recorder | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/alexa-viewer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-xds-monitoring | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-windowmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/als-meter-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-afb-helpers-submodule | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-unicens | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/aroundview | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/camera-gstreamer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-windowmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-afb-test | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/chromium | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/controls | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/demo3-camera | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/camera-gstreamer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-templates | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/demo3-camera | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/controls | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-controller-submodule | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-dashboard | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/demo3-hvac | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/demo3-settings | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-unicens | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-homescreen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-launcher | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-warehouse | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/demo3-hvac | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/demo3-settings | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-tachometer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/flutter-dashboard | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-hvac | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/flutter-dashboard | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-homescreen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/flutter-navigation | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-mediaplayer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/flutter-navigation | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/flutter-speechrecognition-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/homescreen-demo-ci | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-background | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/flutter-speechrecognition-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-dashboard | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-hvac | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/html5-homescreen | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/html5-mediaplayer | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-launcher | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/mixer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/html5-mixer | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/html5-mediaplayer | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/html5-homescreen | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-settings | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/html5-mixer | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/mixer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/mominavi | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/momiscreen | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/momiweather | c_cpp | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | apps/navigation | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/onscreenapp | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/momiplayer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/onscreenapp | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/poi-yelp | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/restriction-screen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/settings-log-utils | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/videoplayer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/taskmanager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/voiceagent-demo | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| apps/taskmanager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/waltham-receiver | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/webapp-samples | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/agl-js-api | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/agl-shell-activator | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-signal-composer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/agl-test-framework | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/agl-yocto-kernel-meta | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/app-framework-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/applaunchd | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/bluez-glib | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/connman-glib | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/cynagoauth | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/app-framework-main | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| src/cynagora | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/cmake-apps-module | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/demo3-qtquickcontrols | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/homescreen-demo-ci | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| src/drm-lease-manager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/cmake-apps-module | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/demo3-warehouse-server | maven | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/app-framework-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/inputeventmanager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/drm-lease-manager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-signal-composer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/cynagora | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/homescreen-demo-ci | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/hvac-demo-microcontroller | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| src/inputeventmanager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/libaglnavigation | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libagl-compositor | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/libafb-helpers | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/libaglnavigation | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/libhomescreen | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libcloudproxy | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/libhomescreen | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libqthomescreen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libqtsoundmanager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/librefop | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libsoundmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/librefop | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/libappcontroller | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/log-utils | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/low-level-can-generator | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/nss-localuser | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/native-shell-client | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/most | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/libappcontroller | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/nss-localuser | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/pipewire-ic-ipc | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/qa-test-misc | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/qtaglextras | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/pipewire-ic-ipc | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/pyagl | python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/qtaglextras | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/qtquickcontrols2-agl | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/snips-inference-agl | python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/steering-wheel-microcontroller | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| src/vod-server | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/rasa-model-agl | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/app-framework-binder | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| src/steering-wheel-microcontroller | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| src/snips-model-agl | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-can-low-level | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/vod-server | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/waltham-transmitter-plugin | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/weston-ivi-plugins | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/windowmanager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/xds | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| src/weston-ivi-plugins | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/agl-inputmethod-qt-plugin | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| staging/incar-wireless-monitor | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/libsoundmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/snips-model-agl | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/app-framework-binder | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | staging/qlibhomescreen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| staging/incar-wireless-monitor | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/persistent-storage-api | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | staging/qlibsoundmanager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/release-upload | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| staging/rba | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| staging/new-apps | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/toyota | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| staging/rba | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| staging/xdg-launcher | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | zzz_acl/AGL_acl | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | zzz_acl/noreplication | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| staging/soundmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| staging/xdg-launcher | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| staging/new-apps | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | zzz_acl/src_acl | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | zzz_acl/staging_acl | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | AGL | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| staging/soundmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| docs-webtemplate | c_cpp | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | staging | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | z_sandbox | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | zzz_acl | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| docs-webtemplate | c_cpp | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | docs-sources | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | staging/basesystem | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-can-low-level | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/rba-tool | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/vehicle2cloud-communication | gradle | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | src/virtio/qemu | c_cpp | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
