@@ -3,13 +3,18 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 -->
 
-# 📊 Repository Reporting System
+# 📊 Linux Foundation Project Reporting System
 
 > Comprehensive multi-repository analysis tool for Linux Foundation projects
 
-Generate detailed reports on Git activity, contributor patterns, CI/CD workflows, and development practices across repositories.
+Generate detailed reports on Gerrit projects, contributor activity, Jenkins
+jobs, GitHub CI/CD workflows, and development practices across repositories.
 
 ---
+
+## 🗒️ Published Reports
+
+https://modeseven-lfit.github.io/reporting-tool/
 
 ## ⚡ Quick Start
 
@@ -22,8 +27,6 @@ reporting-tool generate \
   --project my-project \
   --repos-path ./repos
 ```
-
-
 
 ---
 
@@ -121,10 +124,10 @@ reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org
 ```text
 reports/
   <PROJECT>/
-    ├── report_raw.json           # Complete dataset (canonical)
-    ├── report.md                 # Markdown report (readable)
-    ├── report.html               # Interactive HTML (sortable tables)
-    ├── config_resolved.json      # Applied configuration
+    ├── report_raw.json              # Complete dataset (canonical)
+    ├── report.md                    # Markdown report (readable)
+    ├── report.html                  # Interactive HTML (sortable tables)
+    ├── config_resolved.json         # Applied configuration
     └── <PROJECT>_report_bundle.zip  # Complete bundle
 ```
 
@@ -196,5 +199,3 @@ reports/
 Apache-2.0 License - Copyright 2025 The Linux Foundation
 
 ---
-
-
