@@ -129,7 +129,22 @@ def load_configuration(
     project_config = None
     project_path = None
 
-    if config_dir.exists() and config_dir.is_dir():
+    # Try loading by filename first (with .yaml and .config extensions)
+    project_lower = project.lower()
+    for extension in ['.yaml', '.config']:
+        candidate_path = config_dir / f"{project_lower}{extension}"
+        if candidate_path.exists():
+            try:
+                project_config = load_yaml_config(candidate_path)
+                project_path = candidate_path
+                logger.debug(f"Loaded project configuration from {candidate_path}")
+                break
+            except Exception as e:
+                logger.debug(f"Failed to load {candidate_path}: {e}")
+                continue
+
+    # If not found by filename, search for project-specific configuration by matching 'project' field
+    if project_config is None and config_dir.exists() and config_dir.is_dir():
         # Files to skip (not project configurations)
         skip_files = {
             default_config_name,
