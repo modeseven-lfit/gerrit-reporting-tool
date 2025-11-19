@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: O-RAN-SC
 
-**Generated:** November 19, 2025 at 10:19 UTC
+**Generated:** November 19, 2025 at 10:41 UTC
 **Schema Version:** 1.0.0
 
 ## 📈 Global Summary
@@ -363,7 +363,7 @@
 | pti/rtp | 47 | +71096 | 2 | 140 | 2025-07-02 | ✅ |
 | portal/aiml-dashboard | 41 | +158 | 8 | 27 | 2025-10-23 | ✅ |
 | aiml-fw/athp/pipeline-components | 35 | +1367 | 6 | 27 | 2025-10-23 | ✅ |
-| pti/o2 | 35 | +2466 | 4 | 0 | 2025-11-19 | ✅ |
+| pti/o2 | 35 | +2466 | 4 | 1 | 2025-11-18 | ✅ |
 | aiml-fw/athp/sdk/model-storage | 26 | +695 | 6 | 27 | 2025-10-23 | ✅ |
 | nonrtric | 26 | +368 | 5 | 4 | 2025-11-15 | ✅ |
 | nonrtric/plt/a1policymanagementservice | 25 | +10444 | 5 | 41 | 2025-10-09 | ✅ |
@@ -373,9 +373,9 @@
 | sim/a1-interface | 15 | +114 | 5 | 4 | 2025-11-15 | ✅ |
 | aiml-fw/athp/sdk/feature-store | 14 | +170 | 6 | 27 | 2025-10-23 | ✅ |
 | aiml-fw/athp/tps/kubeflow-adapter | 14 | +62 | 7 | 27 | 2025-10-23 | ✅ |
-| aiml-fw/athp/data-extraction | 13 | +137 | 6 | 8 | 2025-11-11 | ✅ |
+| aiml-fw/athp/data-extraction | 13 | +137 | 6 | 9 | 2025-11-10 | ✅ |
 | it/tifg | 10 | +11688 | 3 | 112 | 2025-07-30 | ✅ |
-| nonrtric/plt/informationcoordinatorservice | 9 | +44 | 3 | 1 | 2025-11-18 | ✅ |
+| nonrtric/plt/informationcoordinatorservice | 9 | +44 | 3 | 2 | 2025-11-17 | ✅ |
 | sim/o1-ofhmp-interfaces | 8 | +82057 | 4 | 46 | 2025-10-04 | ✅ |
 | smo/o2 | 7 | +3360 | 2 | 128 | 2025-07-14 | ✅ |
 | doc | 6 | +81 | 2 | 131 | 2025-07-11 | ✅ |
@@ -395,9 +395,9 @@
 | ric-plt/submgr | 3 | +0 | 1 | 7 | 2025-11-12 | ✅ |
 | sim/ns3-o-ran-e2 | 3 | +306 | 1 | 60 | 2025-09-20 | ✅ |
 | .github | 2 | +1 | 1 | 354 | 2024-11-30 | ✅ |
-| aiml-fw/apm/analysis-module | 2 | +12 | 1 | 54 | 2025-09-26 | ✅ |
-| aiml-fw/apm/influx-wrapper | 2 | +12 | 1 | 54 | 2025-09-26 | ✅ |
-| aiml-fw/apm/monitoring-server | 2 | +12 | 2 | 54 | 2025-09-26 | ✅ |
+| aiml-fw/apm/analysis-module | 2 | +12 | 1 | 55 | 2025-09-25 | ✅ |
+| aiml-fw/apm/influx-wrapper | 2 | +12 | 1 | 55 | 2025-09-25 | ✅ |
+| aiml-fw/apm/monitoring-server | 2 | +12 | 2 | 55 | 2025-09-25 | ✅ |
 | nonrtric/plt/dmaapmediatorproducer | 2 | +50 | 2 | 54 | 2025-09-26 | ✅ |
 | nonrtric/plt/helmmanager | 2 | +48 | 2 | 54 | 2025-09-26 | ✅ |
 | nonrtric/plt/sdnca1controller | 2 | +45 | 2 | 4 | 2025-11-15 | ✅ |
@@ -548,36 +548,36 @@
 | it/dev | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-app/ad-cell | python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-app/ccc | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| it/otf | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-app/bouncer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| it/otf | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-app/hw-go | go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
-| ric-app/hw-python | python | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
-| ric-app/hw-rust | docker | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | ric-app/ad | python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-app/hw-rust | docker | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| ric-app/hw-python | python | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-app/lp | python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-app/kpimon-go | go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-app/ric-sdk-py | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ric-app/qp-aimlfw | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-app/rc | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-app/mc | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-app/ts | docker | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-plt/alarm-cpp | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-app/hw | docker | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| ric-plt/alarm-cpp | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| ric-app/mc | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-app/rc | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-app/ts | docker | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/asn1-documents | None | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-app/qp | python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/demo1 | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ric-plt/jaegeradapter | None | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
-| ric-plt/nodeb-rnib | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/ric-test | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ric-plt/libe2ap | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-plt/nodeb-rnib | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/ricctl | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ric-plt/sdlgo | go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-plt/ricdms | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-plt/sdlgo | go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-plt/stslgo | go | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ric-plt/sdlpy | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/streaming-protobufs | None | ❌ | ❌ | ✅ | ❌ | ❌ | 🛑 |
-| ric-plt/sdl | c_cpp | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-plt/tracelibgo | go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
+| ric-plt/sdl | c_cpp | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-plt/tracelibcpp | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-plt/utils | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | sim/e2-interface-data | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
