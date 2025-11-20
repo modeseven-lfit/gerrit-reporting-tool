@@ -322,7 +322,7 @@ jobs:
             echo "⚠️ GitHub API integration disabled"
           fi
 
-          uv run reporting-tool generate \
+          uv run gerrit-reporting-tool generate \
             --project "$project" \
             --repos-path "./${{ matrix.gerrit }}" \
             --output-dir "./reports" \

@@ -17,10 +17,10 @@ Reporting Tool - Refactored Architecture
 
 ```bash
 # Basic usage
-reporting-tool generate --project myproject --repos-path ./repos
+gerrit-reporting-tool generate --project myproject --repos-path ./repos
 
 # With options
-reporting-tool generate \
+gerrit-reporting-tool generate \
   --project myproject \
   --repos-path ./repos \
   --output-dir ./reports \
@@ -38,7 +38,7 @@ from pathlib import Path
 sys.path.insert(0, 'src')
 
 # Import components
-from reporting_tool.reporter import RepositoryReporter
+from gerrit_reporting_tool.reporter import RepositoryReporter
 import logging
 
 # Setup
@@ -71,7 +71,7 @@ report_data = reporter.analyze_repositories(Path('./repos'))
 ### Directory Layout
 
 ```text
-reporting-tool/
+gerrit-reporting-tool/
 ├── generate_reports.py          # Main entry point
 ├── configuration/               # Config files
 │   ├── template.config
@@ -81,7 +81,7 @@ reporting-tool/
     │   ├── github_client.py
     │   ├── gerrit_client.py
     │   └── jenkins_client.py
-    ├── reporting_tool/          # Core system
+    ├── gerrit_reporting_tool/          # Core system
     │   ├── reporter.py          # ⭐ Main orchestrator
     │   ├── config.py
     │   ├── collectors/
@@ -105,7 +105,7 @@ reporting-tool/
 
 ### Adding a New Feature Detector
 
-1. **Edit:** `src/reporting_tool/features/registry.py`
+1. **Edit:** `src/gerrit_reporting_tool/features/registry.py`
 2. **Add method:** `def _detect_my_feature(self, repo_path: Path) -> bool:`
 3. **Register in:** `self.feature_detectors` dict in `__init__`
 4. **Test:** Verify detection logic works
@@ -125,7 +125,7 @@ self.feature_detectors = {
 
 ### Adding a New Aggregation
 
-1. **Edit:** `src/reporting_tool/aggregators/data.py`
+1. **Edit:** `src/gerrit_reporting_tool/aggregators/data.py`
 2. **Add method:** `def compute_my_rollup(self, data: list) -> dict:`
 3. **Call from:** `aggregate_global_data()` or create new public method
 
@@ -139,7 +139,7 @@ def compute_my_rollup(self, repos: list[dict]) -> dict:
 
 ### Adding a New Output Format
 
-1. **Edit:** `src/reporting_tool/renderers/report.py`
+1. **Edit:** `src/gerrit_reporting_tool/renderers/report.py`
 2. **Add method:** `def render_my_format(self, data: dict, path: Path) -> None:`
 3. **Call from:** `RepositoryReporter.generate_reports()`
 
@@ -180,7 +180,7 @@ class MyServiceAPIClient:
 ```bash
 # Test individual module imports
 python3 -c "import sys; sys.path.insert(0, 'src'); \
-  from reporting_tool.reporter import RepositoryReporter; \
+  from gerrit_reporting_tool.reporter import RepositoryReporter; \
   print('✅ Import successful')"
 ```text
 
@@ -188,18 +188,18 @@ python3 -c "import sys; sys.path.insert(0, 'src'); \
 
 ```bash
 # Run diagnostics (if available)
-python3 -m pylint src/reporting_tool/
-python3 -m mypy src/reporting_tool/
+python3 -m pylint src/gerrit_reporting_tool/
+python3 -m mypy src/gerrit_reporting_tool/
 ```
 
 ### Functional Testing
 
 ```bash
 # Validate configuration
-reporting-tool generate --project test --repos-path ./test-repos --validate-only
+gerrit-reporting-tool generate --project test --repos-path ./test-repos --validate-only
 
 # Test with small dataset
-reporting-tool generate --project test --repos-path ./test-repos --verbose
+gerrit-reporting-tool generate --project test --repos-path ./test-repos --verbose
 ```text
 
 ---
@@ -272,22 +272,22 @@ repository = {
 
 ```python
 # Full orchestration
-from reporting_tool.reporter import RepositoryReporter
+from gerrit_reporting_tool.reporter import RepositoryReporter
 
 # Data collection
-from reporting_tool.collectors import GitDataCollector
+from gerrit_reporting_tool.collectors import GitDataCollector
 
 # Feature detection
-from reporting_tool.features import FeatureRegistry
+from gerrit_reporting_tool.features import FeatureRegistry
 
 # Aggregation
-from reporting_tool.aggregators import DataAggregator
+from gerrit_reporting_tool.aggregators import DataAggregator
 
 # Rendering
-from reporting_tool.renderers import ReportRenderer
+from gerrit_reporting_tool.renderers import ReportRenderer
 
 # Configuration
-from reporting_tool.config import (
+from gerrit_reporting_tool.config import (
     load_configuration,
     save_resolved_config,
     compute_config_digest
@@ -369,9 +369,9 @@ export GITHUB_STEP_SUMMARY="/path/to/summary.md"
 ### Enable Verbose Logging
 
 ```bash
-reporting-tool generate --project test --repos-path ./repos --verbose
+gerrit-reporting-tool generate --project test --repos-path ./repos --verbose
 # or
-reporting-tool generate --project test --repos-path ./repos --log-level DEBUG
+gerrit-reporting-tool generate --project test --repos-path ./repos --log-level DEBUG
 ```
 
 ### Check API Statistics
@@ -433,7 +433,7 @@ print(f"Errors: {len(data['errors'])}")
 ### RepositoryReporter
 
 **Purpose:** Main orchestration
-**Location:** `src/reporting_tool/reporter.py`
+**Location:** `src/gerrit_reporting_tool/reporter.py`
 
 ```python
 reporter = RepositoryReporter(config, logger)
@@ -444,7 +444,7 @@ files = reporter.generate_reports(repos_path, output_dir)
 ### GitDataCollector
 
 **Purpose:** Git metrics collection
-**Location:** `src/reporting_tool/collectors/git.py`
+**Location:** `src/gerrit_reporting_tool/collectors/git.py`
 
 ```python
 collector = GitDataCollector(config, time_windows, logger)
@@ -454,7 +454,7 @@ metrics = collector.collect_repo_git_metrics(repo_path)
 ### FeatureRegistry
 
 **Purpose:** Feature detection
-**Location:** `src/reporting_tool/features/registry.py`
+**Location:** `src/gerrit_reporting_tool/features/registry.py`
 
 ```python
 registry = FeatureRegistry(config, logger)
@@ -464,7 +464,7 @@ features = registry.detect_features(repo_path)
 ### DataAggregator
 
 **Purpose:** Data aggregation
-**Location:** `src/reporting_tool/aggregators/data.py`
+**Location:** `src/gerrit_reporting_tool/aggregators/data.py`
 
 ```python
 aggregator = DataAggregator(config, logger)
@@ -476,7 +476,7 @@ summaries = aggregator.aggregate_global_data(repos)
 ### ReportRenderer
 
 **Purpose:** Report generation
-**Location:** `src/reporting_tool/renderers/report.py`
+**Location:** `src/gerrit_reporting_tool/renderers/report.py`
 
 ```python
 renderer = ReportRenderer(config, logger)
@@ -506,10 +506,10 @@ renderer.render_html_report(markdown, html_path)
 config["performance"]["max_workers"] = 4  # or 1 for sequential
 
 # Disable HTML generation
-reporting-tool generate ... --no-html
+gerrit-reporting-tool generate ... --no-html
 
 # Disable ZIP bundling
-reporting-tool generate ... --no-zip
+gerrit-reporting-tool generate ... --no-zip
 ```
 
 ### Custom Time Windows
@@ -568,7 +568,7 @@ INFOYamlCollector
 ### Using the Collector
 
 ```python
-from src.reporting_tool.collectors.info_yaml.collector import InfoYamlCollector
+from src.gerrit_reporting_tool.collectors.info_yaml.collector import InfoYamlCollector
 
 # Initialize
 collector = InfoYamlCollector(
@@ -593,7 +593,7 @@ for project in projects:
 Parse individual INFO.yaml files:
 
 ```python
-from src.reporting_tool.collectors.info_yaml.parser import InfoYamlParser
+from src.gerrit_reporting_tool.collectors.info_yaml.parser import InfoYamlParser
 
 parser = InfoYamlParser()
 
@@ -618,7 +618,7 @@ print([c.name for c in project.committers])
 Enrich projects with Git activity data:
 
 ```python
-from src.reporting_tool.collectors.info_yaml.enricher import InfoYamlEnricher
+from src.gerrit_reporting_tool.collectors.info_yaml.enricher import InfoYamlEnricher
 
 enricher = InfoYamlEnricher(
     activity_windows={"current": 365, "active": 1095},
@@ -648,7 +648,7 @@ print(f"Valid URLs: {stats['url_validation']['valid_urls']}")
 Validate URLs (sync and async):
 
 ```python
-from src.reporting_tool.collectors.info_yaml.validator import (
+from src.gerrit_reporting_tool.collectors.info_yaml.validator import (
     URLValidator,
     validate_urls_async,
     validate_urls_sync,
@@ -673,7 +673,7 @@ results = validate_urls_sync(urls, use_async=True, max_concurrent=20)
 Match committers to Git authors:
 
 ```python
-from src.reporting_tool.collectors.info_yaml.matcher import CommitterMatcher
+from src.gerrit_reporting_tool.collectors.info_yaml.matcher import CommitterMatcher
 
 matcher = CommitterMatcher()
 
@@ -694,7 +694,7 @@ if match:
 Track performance metrics:
 
 ```python
-from src.reporting_tool.collectors.info_yaml.metrics import MetricsCollector
+from src.gerrit_reporting_tool.collectors.info_yaml.metrics import MetricsCollector
 
 collector = MetricsCollector()
 
@@ -721,11 +721,11 @@ metrics_dict = metrics.to_dict()
 Multi-level caching (memory + disk):
 
 ```python
-from src.reporting_tool.collectors.info_yaml.cache import create_info_yaml_cache
+from src.gerrit_reporting_tool.collectors.info_yaml.cache import create_info_yaml_cache
 
 # Create cache
 cache = create_info_yaml_cache(
-    cache_dir="/var/cache/reporting-tool",
+    cache_dir="/var/cache/gerrit-reporting-tool",
     max_memory_entries=1000,
     ttl=3600,  # 1 hour
     enable_disk_cache=True,
@@ -805,7 +805,7 @@ Example test structure:
 
 ```python
 import pytest
-from src.reporting_tool.collectors.info_yaml.parser import InfoYamlParser
+from src.gerrit_reporting_tool.collectors.info_yaml.parser import InfoYamlParser
 
 def test_parse_valid_yaml():
     """Test parsing a valid INFO.yaml file."""
@@ -828,7 +828,7 @@ def test_parse_valid_yaml():
 @pytest.mark.asyncio
 async def test_async_url_validation():
     """Test async URL validation."""
-    from src.reporting_tool.collectors.info_yaml.validator import URLValidator
+    from src.gerrit_reporting_tool.collectors.info_yaml.validator import URLValidator
 
     validator = URLValidator()
     is_valid, error = await validator.validate_async("https://example.com")

@@ -93,12 +93,12 @@ The tool automatically filters INFO.yaml data by detecting the Gerrit server fro
 
 ```bash
 # Analyzing ONAP repositories
-reporting-tool generate --project ONAP --repos-path ./gerrit.onap.org
+gerrit-reporting-tool generate --project ONAP --repos-path ./gerrit.onap.org
 # → Detects server: gerrit.onap.org
 # → Shows only ONAP projects
 
 # Analyzing OpenDaylight repositories
-reporting-tool generate --project ODL --repos-path ./git.opendaylight.org
+gerrit-reporting-tool generate --project ODL --repos-path ./git.opendaylight.org
 # → Detects server: git.opendaylight.org
 # → Shows only OpenDaylight projects
 ```
@@ -138,7 +138,7 @@ output:
 
 ```python
 from pathlib import Path
-from reporting_tool.collectors.info_yaml import INFOYamlCollector
+from gerrit_reporting_tool.collectors.info_yaml import INFOYamlCollector
 from rendering.info_yaml_renderer import InfoYamlRenderer
 from domain.info_yaml import ProjectInfo
 
@@ -239,4 +239,4 @@ Issues or questions? Check:
 
 1. [Troubleshooting section](INFO_YAML_REPORTING.md#troubleshooting)
 2. Integration tests in `tests/integration/test_info_yaml_reporting_integration.py`
-3. Enable debug logging: `logging.getLogger("reporting_tool.collectors.info_yaml").setLevel(logging.DEBUG)`
+3. Enable debug logging: `logging.getLogger("gerrit_reporting_tool.collectors.info_yaml").setLevel(logging.DEBUG)`

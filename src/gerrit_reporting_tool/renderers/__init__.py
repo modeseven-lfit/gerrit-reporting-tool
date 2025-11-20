@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-Report renderers for the reporting-tool package.
+Report renderers for the gerrit-reporting-tool package.
 
 This package contains modules for rendering repository metrics and
 aggregated data into various output formats:

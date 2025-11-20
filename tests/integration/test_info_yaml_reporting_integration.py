@@ -18,10 +18,10 @@ from typing import Any
 import pytest
 
 from domain.info_yaml import ProjectInfo
+from gerrit_reporting_tool.collectors.info_yaml import INFOYamlCollector
+from gerrit_reporting_tool.renderers.report import ReportRenderer
+from gerrit_reporting_tool.reporter import RepositoryReporter
 from rendering.info_yaml_renderer import InfoYamlRenderer
-from reporting_tool.collectors.info_yaml import INFOYamlCollector
-from reporting_tool.renderers.report import ReportRenderer
-from reporting_tool.reporter import RepositoryReporter
 
 
 @pytest.fixture

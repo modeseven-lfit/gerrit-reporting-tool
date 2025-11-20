@@ -36,11 +36,12 @@ from unittest.mock import MagicMock, patch
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
+from reporting_tool.main import APIStatistics
+from reporting_tool.reporter import RepositoryReporter
+
 from api.gerrit_client import GerritAPIClient
 from api.github_client import GitHubAPIClient
 from api.jenkins_client import JenkinsAPIClient
-from reporting_tool.main import APIStatistics
-from reporting_tool.reporter import RepositoryReporter
 
 
 class Colors:

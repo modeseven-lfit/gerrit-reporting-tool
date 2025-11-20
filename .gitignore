@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 # Auto-generated version file
-src/reporting_tool/_version.py
+src/gerrit_reporting_tool/_version.py
 
 testing/ONAP
 testing/reports

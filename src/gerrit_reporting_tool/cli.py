@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-Modern CLI interface using Typer for reporting-tool.
+Modern CLI interface using Typer for gerrit-reporting-tool.
 
 This module provides a rich, user-friendly command-line interface with:
 - Type-safe argument parsing
@@ -26,7 +26,7 @@ from typing_extensions import Annotated
 
 # Initialize Typer app with rich formatting
 app = typer.Typer(
-    name="reporting-tool",
+    name="gerrit-reporting-tool",
     help="📊 Comprehensive Multi-Repository Analysis Tool",
     add_completion=True,
     rich_markup_mode="rich",
@@ -65,8 +65,8 @@ class ExitCode(int, Enum):
 def version_callback(value: bool):
     """Show version and exit."""
     if value:
-        from reporting_tool import __version__
-        rprint(f"[bold cyan]reporting-tool[/bold cyan] version [green]{__version__}[/green]")
+        from gerrit_reporting_tool import __version__
+        rprint(f"[bold cyan]gerrit-reporting-tool[/bold cyan] version [green]{__version__}[/green]")
         raise typer.Exit()
 
 
@@ -226,25 +226,25 @@ def generate(
     \b
     Examples:
         # Basic usage
-        reporting-tool generate --project my-project --repos-path ./repos
+        gerrit-reporting-tool generate --project my-project --repos-path ./repos
 
         # With custom configuration
-        reporting-tool generate -p my-project -r ./repos --config-dir ./config
+        gerrit-reporting-tool generate -p my-project -r ./repos --config-dir ./config
 
         # Validate without running
-        reporting-tool generate -p my-project -r ./repos --dry-run
+        gerrit-reporting-tool generate -p my-project -r ./repos --dry-run
 
         # Generate only HTML with verbose output
-        reporting-tool generate -p my-project -r ./repos -f html -vv
+        gerrit-reporting-tool generate -p my-project -r ./repos -f html -vv
 
         # With caching and parallel processing
-        reporting-tool generate -p my-project -r ./repos --cache --workers 8
+        gerrit-reporting-tool generate -p my-project -r ./repos --cache --workers 8
 
         # CI environment with custom token variable
-        reporting-tool generate -p my-project -r ./repos --github-token-env CLASSIC_READ_ONLY_PAT_TOKEN
+        gerrit-reporting-tool generate -p my-project -r ./repos --github-token-env CLASSIC_READ_ONLY_PAT_TOKEN
     """
     # Import here to avoid circular imports and speed up CLI loading
-    from reporting_tool.main import main as reporting_main
+    from gerrit_reporting_tool.main import main as reporting_main
     from argparse import Namespace
 
     # Validate required arguments
@@ -299,7 +299,8 @@ def generate(
 
 
 # Note: validate command removed - not yet implemented
-# Use 'reporting-tool generate --dry-run' for configuration validation
+# Use 'gerrit-reporting-tool generate --dry-run' for configuration validation
+
 
 
 @app.callback(invoke_without_command=True)
@@ -324,7 +325,7 @@ def main(
 
     \b
     🚀 Quick Start:
-        reporting-tool generate --project my-project --repos-path ./repos
+        gerrit-reporting-tool generate --project my-project --repos-path ./repos
 
     \b
     📖 Main Command:
@@ -332,7 +333,7 @@ def main(
 
     \b
     🐛 Report Issues:
-        https://github.com/lfit/reporting-tool/issues
+        https://github.com/lfit/gerrit-reporting-tool/issues
     """
     if ctx.invoked_subcommand is None:
         # No subcommand provided, show help

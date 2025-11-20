@@ -115,7 +115,7 @@ filtered_projects = [
 1. **User runs report generation**:
 
    ```bash
-   reporting-tool generate --project ONAP --repos-path ./gerrit.onap.org
+   gerrit-reporting-tool generate --project ONAP --repos-path ./gerrit.onap.org
    ```
 
 2. **Server detection** (automatic):
@@ -272,7 +272,7 @@ pytest tests/integration/test_info_yaml_reporting_integration.py::TestReporterIn
 ### ONAP Report
 
 ```bash
-reporting-tool generate \
+gerrit-reporting-tool generate \
   --project ONAP \
   --repos-path ./gerrit.onap.org
 
@@ -285,7 +285,7 @@ reporting-tool generate \
 ### OpenDaylight Report
 
 ```bash
-reporting-tool generate \
+gerrit-reporting-tool generate \
   --project OpenDaylight \
   --repos-path ./git.opendaylight.org
 
@@ -298,7 +298,7 @@ reporting-tool generate \
 ### O-RAN-SC Report
 
 ```bash
-reporting-tool generate \
+gerrit-reporting-tool generate \
   --project O-RAN-SC \
   --repos-path ./gerrit.o-ran-sc.org
 

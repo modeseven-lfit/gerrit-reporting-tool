@@ -87,7 +87,7 @@ The following files are **NOT** project configurations and are skipped during pr
 4. **Test the configuration**:
 
    ```bash
-   python -m reporting_tool.main --project "My Project" --validate-only
+   python -m gerrit_reporting_tool.main --project "My Project" --validate-only
    ```
 
 ## Common Configuration Options
@@ -132,7 +132,7 @@ jjb_attribution:
 All configuration files are validated against the schema. To check if a configuration is valid:
 
 ```bash
-python -m reporting_tool.main --project "Your Project" --validate-only
+python -m gerrit_reporting_tool.main --project "Your Project" --validate-only
 ```
 
 ## See Also

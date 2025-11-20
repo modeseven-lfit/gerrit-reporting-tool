@@ -15,14 +15,14 @@ The reporting tool now supports configurable GitHub token environment variable n
 
 ```bash
 export GITHUB_TOKEN="ghp_your_token_here"
-reporting-tool generate --project my-project --repos-path ./repos
+gerrit-reporting-tool generate --project my-project --repos-path ./repos
 ```
 
 ### CI Environment (CLASSIC_READ_ONLY_PAT_TOKEN)
 
 ```bash
 export CLASSIC_READ_ONLY_PAT_TOKEN="ghp_your_token_here"
-reporting-tool generate --project my-project --repos-path ./repos \
+gerrit-reporting-tool generate --project my-project --repos-path ./repos \
   --github-token-env CLASSIC_READ_ONLY_PAT_TOKEN
 ```
 
@@ -30,7 +30,7 @@ reporting-tool generate --project my-project --repos-path ./repos \
 
 ```bash
 export MY_GITHUB_TOKEN="ghp_your_token_here"
-reporting-tool generate --project my-project --repos-path ./repos \
+gerrit-reporting-tool generate --project my-project --repos-path ./repos \
   --github-token-env MY_GITHUB_TOKEN
 ```
 
@@ -62,7 +62,7 @@ reporting-tool generate --project my-project --repos-path ./repos \
 
 ```yaml
 - name: Generate Report
-  run: reporting-tool generate --project ONAP --repos-path ./repos
+  run: gerrit-reporting-tool generate --project ONAP --repos-path ./repos
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -72,7 +72,7 @@ reporting-tool generate --project my-project --repos-path ./repos \
 ```yaml
 generate_report:
   script:
-    - reporting-tool generate
+    - gerrit-reporting-tool generate
         --project my-project
         --repos-path ./repos
         --github-token-env CI_GITHUB_TOKEN
@@ -85,7 +85,7 @@ generate_report:
 ```groovy
 withCredentials([string(credentialsId: 'github-token', variable: 'GH_TOKEN')]) {
     sh '''
-        reporting-tool generate \
+        gerrit-reporting-tool generate \
             --project my-project \
             --repos-path ./repos \
             --github-token-env GH_TOKEN

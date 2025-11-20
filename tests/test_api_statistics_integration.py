@@ -26,10 +26,10 @@ import pytest
 from api.gerrit_client import GerritAPIClient
 from api.github_client import GitHubAPIClient
 from api.jenkins_client import JenkinsAPIClient
-from reporting_tool.collectors.git import GitDataCollector
-from reporting_tool.features.registry import FeatureRegistry
-from reporting_tool.main import APIStatistics
-from reporting_tool.reporter import RepositoryReporter
+from gerrit_reporting_tool.collectors.git import GitDataCollector
+from gerrit_reporting_tool.features.registry import FeatureRegistry
+from gerrit_reporting_tool.main import APIStatistics
+from gerrit_reporting_tool.reporter import RepositoryReporter
 
 
 class TestAPIStatisticsWiring:

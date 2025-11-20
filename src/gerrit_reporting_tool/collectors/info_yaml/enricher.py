@@ -15,8 +15,8 @@ import logging
 from typing import Any, Dict, List, Optional, Tuple
 
 from domain.info_yaml import CommitterInfo, ProjectInfo
-from reporting_tool.collectors.info_yaml.matcher import CommitterMatcher
-from reporting_tool.collectors.info_yaml.validator import URLValidator
+from gerrit_reporting_tool.collectors.info_yaml.matcher import CommitterMatcher
+from gerrit_reporting_tool.collectors.info_yaml.validator import URLValidator
 
 logger = logging.getLogger(__name__)
 

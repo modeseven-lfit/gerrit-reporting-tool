@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-Data collectors for the reporting-tool package.
+Data collectors for the gerrit-reporting-tool package.
 
 This package contains modules for collecting data from various sources:
 - Git repositories (commits, contributors, activity metrics)

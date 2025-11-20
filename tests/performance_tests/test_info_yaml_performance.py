@@ -22,8 +22,8 @@ import pytest
 from domain.author_metrics import AuthorMetrics
 from domain.info_yaml import ProjectInfo
 from domain.repository_metrics import RepositoryMetrics
+from gerrit_reporting_tool.collectors.info_yaml import INFOYamlCollector, InfoYamlEnricher
 from rendering.info_yaml_renderer import InfoYamlRenderer
-from reporting_tool.collectors.info_yaml import INFOYamlCollector, InfoYamlEnricher
 
 
 @pytest.fixture

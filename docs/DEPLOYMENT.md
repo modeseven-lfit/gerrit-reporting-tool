@@ -299,7 +299,7 @@ mkdir -p config/production
 
 ```bash
 # Generate configuration template
-reporting-tool init --template --project PRODUCTION
+gerrit-reporting-tool init --template --project PRODUCTION
 
 # This creates: config/PRODUCTION.yaml
 ls -la config/PRODUCTION.yaml
@@ -372,7 +372,7 @@ include:
 
 ```bash
 # Test configuration syntax
-reporting-tool generate --config config/PRODUCTION.yaml --dry-run
+gerrit-reporting-tool generate --config config/PRODUCTION.yaml --dry-run
 
 # Expected output:
 # ✅ Configuration valid
@@ -446,7 +446,7 @@ git clone https://github.com/octocat/Hello-World.git
 
 # Run report generation
 cd /opt/project-reports
-reporting-tool generate \
+gerrit-reporting-tool generate \
   --project TEST \
   --repos-path /tmp/test-repos \
   --output-format text \
@@ -501,7 +501,7 @@ grep -i "error\|failed" TEST-report.txt
 export REPOS_PATH="/data/repositories"
 
 # Run report generation
-reporting-tool generate \
+gerrit-reporting-tool generate \
   --project PRODUCTION \
   --repos-path $REPOS_PATH \
   --config config/PRODUCTION.yaml
@@ -572,7 +572,7 @@ cd "$INSTALL_DIR"
 
 # Run report generation
 echo "=== Report Generation Started: $(date) ===" | tee -a "$LOG_FILE"
-reporting-tool generate \
+gerrit-reporting-tool generate \
   --project PRODUCTION \
   --config config/PRODUCTION.yaml \
   2>&1 | tee -a "$LOG_FILE"
@@ -848,7 +848,7 @@ jobs:
           PROJECT: ${{ github.event.inputs.project || 'PRODUCTION' }}
           WORKERS: ${{ github.event.inputs.workers || '8' }}
         run: |
-          reporting-tool generate \
+          gerrit-reporting-tool generate \
             --project "$PROJECT" \
             --repos-path repos \
             --workers "$WORKERS" \
@@ -1065,13 +1065,13 @@ workers: 8
 
 ```bash
 # Production
-reporting-tool generate --config config/PRODUCTION.yaml
+gerrit-reporting-tool generate --config config/PRODUCTION.yaml
 
 # Staging
-reporting-tool generate --config config/STAGING.yaml
+gerrit-reporting-tool generate --config config/STAGING.yaml
 
 # Development
-reporting-tool generate --config config/development.yaml
+gerrit-reporting-tool generate --config config/development.yaml
 ```text
 
 4. Version Control Configs (Without Secrets)
@@ -1091,7 +1091,7 @@ Validate Before Deployment:
 
 ```bash
 # Dry run
-reporting-tool generate \
+gerrit-reporting-tool generate \
   --config config/PRODUCTION.yaml \
   --dry-run
 
@@ -1181,7 +1181,7 @@ HashiCorp Vault:
 export GITHUB_TOKEN=$(vault kv get -field=token secret/github)
 
 # Use in script
-reporting-tool generate ...
+gerrit-reporting-tool generate ...
 ```text
 
 AWS Secrets Manager:
@@ -1197,7 +1197,7 @@ export GITHUB_TOKEN=$(aws secretsmanager get-secret-value \
   --output text)
 
 # Use in script
-reporting-tool generate ...
+gerrit-reporting-tool generate ...
 ```
 
 Azure Key Vault:
@@ -1214,7 +1214,7 @@ export GITHUB_TOKEN=$(az keyvault secret show \
   --output tsv)
 
 # Use in script
-reporting-tool generate ...
+gerrit-reporting-tool generate ...
 ```text
 
 ### Secret Rotation
@@ -1439,7 +1439,7 @@ python -c "import yaml; yaml.safe_load(open('config/PRODUCTION.yaml'))" || exit 
 echo "✅ Configuration valid YAML"
 
 # Dry run
-reporting-tool generate --config config/PRODUCTION.yaml --dry-run || exit 1
+gerrit-reporting-tool generate --config config/PRODUCTION.yaml --dry-run || exit 1
 echo "✅ Configuration accepted"
 
 echo "✅ Configuration validation PASSED"
@@ -1487,7 +1487,7 @@ echo "✅ Test repository cloned"
 
 # Generate report
 cd /opt/project-reports
-reporting-tool generate \
+gerrit-reporting-tool generate \
   --project SMOKE_TEST \
   --repos-path /tmp/smoke-test \
   --output-format text \
@@ -1514,7 +1514,7 @@ Test 5: Full Feature Test
 echo "=== Smoke Test 5: Full Features ==="
 
 # Generate all formats
-reporting-tool generate \
+gerrit-reporting-tool generate \
   --project FEATURE_TEST \
   --repos-path /tmp/smoke-test \
   --output-format all \
@@ -1933,7 +1933,7 @@ uv sync  # Recommended
 # or: pip install .
 
 # 4. Verify
-reporting-tool --version
+gerrit-reporting-tool --version
 ./run-all-smoke-tests.sh
 
 # 5. Restart scheduled jobs
@@ -1949,10 +1949,10 @@ Method 2: Configuration Rollback
 cp config/PRODUCTION.yaml.backup config/PRODUCTION.yaml
 
 # 2. Verify configuration
-reporting-tool generate --config config/PRODUCTION.yaml --dry-run
+gerrit-reporting-tool generate --config config/PRODUCTION.yaml --dry-run
 
 # 3. Test
-reporting-tool generate --project TEST --repos-path /tmp/test
+gerrit-reporting-tool generate --project TEST --repos-path /tmp/test
 ```
 
 Method 3: GitHub Actions Rollback
@@ -2023,10 +2023,10 @@ Step-by-Step Rollback:
    ./run-all-smoke-tests.sh
 
    # Check version
-   reporting-tool --version
+   gerrit-reporting-tool --version
 
    # Test report generation
-   reporting-tool generate --project TEST --repos-path /tmp/test
+   gerrit-reporting-tool generate --project TEST --repos-path /tmp/test
    ```
 
 5. **Restore Services**
@@ -2258,7 +2258,7 @@ chmod 755 /data/reports
 
 # Or use different directory
 mkdir -p ~/reports
-reporting-tool generate --output-path ~/reports
+gerrit-reporting-tool generate --output-path ~/reports
 ```text
 
 Issue 5: GitHub API Rate Limit
@@ -2287,10 +2287,10 @@ Solution:
 ```bash
 # Wait for reset (shown in rate limit response)
 # Or use caching to reduce API calls
-reporting-tool generate --cache-enabled
+gerrit-reporting-tool generate --cache-enabled
 
 # Or reduce workers
-reporting-tool generate --workers 4
+gerrit-reporting-tool generate --workers 4
 
 # Check when limit resets
 date -d @$(curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/rate_limit | jq '.rate.reset')
@@ -2324,11 +2324,11 @@ Solution:
 
 ```bash
 # Reduce workers
-reporting-tool generate --workers 2
+gerrit-reporting-tool generate --workers 2
 
 # Process in batches
-reporting-tool generate --repos-path /data/repos/batch1
-reporting-tool generate --repos-path /data/repos/batch2
+gerrit-reporting-tool generate --repos-path /data/repos/batch1
+gerrit-reporting-tool generate --repos-path /data/repos/batch2
 
 # Or increase system memory
 ```text
@@ -2393,10 +2393,10 @@ Application Health:
 
 ```bash
 # Verify installation
-reporting-tool --version
+gerrit-reporting-tool --version
 
 # Run dry-run
-reporting-tool generate --config config/PRODUCTION.yaml --dry-run
+gerrit-reporting-tool generate --config config/PRODUCTION.yaml --dry-run
 
 # Check dependencies
 pip list
@@ -2434,7 +2434,7 @@ curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/user
 3. Enable Debug Logging:
 
 ```bash
-reporting-tool generate \
+gerrit-reporting-tool generate \
   --log-level DEBUG \
   --project TEST \
   2>&1 | tee debug.log
@@ -2574,7 +2574,7 @@ uv sync  # Recommended
 ./run-all-smoke-tests.sh
 
 # 5. Test with real data
-reporting-tool generate --project TEST --repos-path /tmp/test
+gerrit-reporting-tool generate --project TEST --repos-path /tmp/test
 
 # 6. If successful, deploy
 # Restart cron/systemd as needed
@@ -2651,7 +2651,7 @@ tar -xzf /backup/project-reports/backup-20250129_120000.tar.gz
 cp -r backup-20250129_120000/config/* /opt/project-reports/config/
 
 # Verify
-reporting-tool generate --config config/PRODUCTION.yaml --dry-run
+gerrit-reporting-tool generate --config config/PRODUCTION.yaml --dry-run
 ```
 
 ---
@@ -2674,7 +2674,7 @@ Group=project-reports
 WorkingDirectory=/opt/project-reports
 Environment="PATH=/opt/project-reports/venv/bin"
 EnvironmentFile=/opt/project-reports/.env
-ExecStart=/opt/project-reports/venv/bin/reporting-tool generate --project PRODUCTION --config config/PRODUCTION.yaml
+ExecStart=/opt/project-reports/venv/bin/gerrit-reporting-tool generate --project PRODUCTION --config config/PRODUCTION.yaml
 StandardOutput=append:/opt/project-reports/logs/service.log
 StandardError=append:/opt/project-reports/logs/service.log
 TimeoutSec=3600
@@ -2825,8 +2825,8 @@ export WORKERS=4
 export CACHE_ENABLED=false  # Disable caching if memory-constrained
 
 # Or process in batches
-reporting-tool generate --repos-path /data/repos/batch1
-reporting-tool generate --repos-path /data/repos/batch2
+gerrit-reporting-tool generate --repos-path /data/repos/batch1
+gerrit-reporting-tool generate --repos-path /data/repos/batch2
 ```
 
 Disk I/O Optimization:

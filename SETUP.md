@@ -65,10 +65,10 @@ a different environment variable name (e.g., for CI/CD compatibility), use the
 
 ```bash
 # Use default GITHUB_TOKEN
-reporting-tool generate --project my-project --repos-path ./repos
+gerrit-reporting-tool generate --project my-project --repos-path ./repos
 
 # Use custom environment variable for CI
-reporting-tool generate --project my-project --repos-path ./repos \
+gerrit-reporting-tool generate --project my-project --repos-path ./repos \
   --github-token-env CLASSIC_READ_ONLY_PAT_TOKEN
 ```
 
@@ -172,10 +172,10 @@ Runs automatically on pull requests that modify reporting code.
 
 ## Report Generation
 
-The workflow uses the `reporting-tool` CLI to generate comprehensive repository analysis reports:
+The workflow uses the `gerrit-reporting-tool` CLI to generate comprehensive repository analysis reports:
 
 ```bash
-uv run reporting-tool generate \
+uv run gerrit-reporting-tool generate \
   --project "$project" \
   --repos-path "./gerrit-server-clone" \
   --config-dir "./configuration" \
@@ -328,7 +328,7 @@ schedule:
    pip install -e .
 
    # Run a test report
-   reporting-tool generate \
+   gerrit-reporting-tool generate \
      --project test-project \
      --repos-path ./test-repos \
      --dry-run

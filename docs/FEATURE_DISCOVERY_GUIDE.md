@@ -12,7 +12,7 @@ Quick Reference for Repository Reporting System Feature Discovery
 > **⚠️ NOTICE:** The `list-features` command described in this guide is **not yet implemented**.
 >
 > Features are automatically detected during report generation and included in the generated reports.
-> To see what features were detected, run `reporting-tool generate` and review the output reports.
+> To see what features were detected, run `gerrit-reporting-tool generate` and review the output reports.
 
 ---
 
@@ -28,7 +28,7 @@ The Repository Reporting System automatically detects features in your repositor
 
 ```bash
 # This command is not yet available
-# reporting-tool list-features
+# gerrit-reporting-tool list-features
 ```
 
 Would show all available features organized by categories:
@@ -45,7 +45,7 @@ Would show all available features organized by categories:
 
 ```bash
 # This command is not yet available
-# reporting-tool list-features --detail <feature-name>
+# gerrit-reporting-tool list-features --detail <feature-name>
 ```
 
 Would display:
@@ -128,10 +128,10 @@ Would display:
 
 ```bash
 # Basic list
-reporting-tool list-features
+gerrit-reporting-tool list-features
 
 # With configuration file info
-reporting-tool list-features --verbose
+gerrit-reporting-tool list-features --verbose
 ```text
 
 Output:
@@ -156,7 +156,7 @@ Total: 24 features across 7 categories
 ### Example 2: Learn About Dependabot
 
 ```bash
-reporting-tool list-features --detail dependabot
+gerrit-reporting-tool list-features --detail dependabot
 ```
 
 Output:
@@ -195,7 +195,7 @@ Feature: dependabot
 ### Example 3: Learn About Docker Feature
 
 ```bash
-reporting-tool list-features --detail docker
+gerrit-reporting-tool list-features --detail docker
 ```text
 
 Output:
@@ -240,7 +240,7 @@ Feature: docker
 ### Example 4: Check Unknown Feature
 
 ```bash
-reporting-tool list-features --detail unknown-feature
+gerrit-reporting-tool list-features --detail unknown-feature
 ```
 
 Output:
@@ -307,26 +307,26 @@ Each feature includes a real-world configuration example that you can use as a t
 
 ```bash
 # Check what features would help
-reporting-tool list-features --detail pytest
-reporting-tool list-features --detail pre-commit
-reporting-tool list-features --detail coverage
+gerrit-reporting-tool list-features --detail pytest
+gerrit-reporting-tool list-features --detail pre-commit
+gerrit-reporting-tool list-features --detail coverage
 ```text
 
 ### Java Project Example
 
 ```bash
 # Learn about Java features
-reporting-tool list-features --detail maven
-reporting-tool list-features --detail junit
-reporting-tool list-features --detail sonarqube
+gerrit-reporting-tool list-features --detail maven
+gerrit-reporting-tool list-features --detail junit
+gerrit-reporting-tool list-features --detail sonarqube
 ```
 
 ### JavaScript Project Example
 
 ```bash
 # Explore JS/Node features
-reporting-tool list-features --detail npm
-reporting-tool list-features --detail github-actions
+gerrit-reporting-tool list-features --detail npm
+gerrit-reporting-tool list-features --detail github-actions
 ```text
 
 ---
@@ -355,8 +355,8 @@ Feature discovery commands work without `--project` or `--repos-path`:
 
 ```bash
 # These work without full setup
-reporting-tool list-features
-reporting-tool list-features --detail docker
+gerrit-reporting-tool list-features
+gerrit-reporting-tool list-features --detail docker
 ```
 
 ---

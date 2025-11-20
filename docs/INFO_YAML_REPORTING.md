@@ -299,7 +299,7 @@ When Git metrics are available, the INFO.yaml collector enriches committer data:
 ### Example Integration
 
 ```python
-from reporting_tool.collectors import GitDataCollector, INFOYamlCollector
+from gerrit_reporting_tool.collectors import GitDataCollector, INFOYamlCollector
 
 # Collect Git metrics
 git_collector = GitDataCollector(config, time_windows, logger)
@@ -336,7 +336,7 @@ info_data = info_collector.collect(info_master_path)
 
 ```python
 from pathlib import Path
-from reporting_tool.collectors.info_yaml import INFOYamlCollector
+from gerrit_reporting_tool.collectors.info_yaml import INFOYamlCollector
 
 # Configure collector
 config = {
@@ -364,7 +364,7 @@ for project in result['projects']:
 ### With Git Enrichment
 
 ```python
-from reporting_tool.collectors import GitDataCollector, INFOYamlCollector
+from gerrit_reporting_tool.collectors import GitDataCollector, INFOYamlCollector
 
 # Collect Git metrics first
 git_collector = GitDataCollector(config, time_windows, logger)
@@ -573,7 +573,7 @@ Enable debug logging:
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger("reporting_tool.collectors.info_yaml")
+logger = logging.getLogger("gerrit_reporting_tool.collectors.info_yaml")
 logger.setLevel(logging.DEBUG)
 ```
 
@@ -737,7 +737,7 @@ directory name and filters INFO.yaml data accordingly:
 
 ```bash
 # Analyzing ONAP repositories
-reporting-tool generate --project ONAP --repos-path ./gerrit.onap.org
+gerrit-reporting-tool generate --project ONAP --repos-path ./gerrit.onap.org
 
 # INFO.yaml collection will:
 # - Detect server: gerrit.onap.org

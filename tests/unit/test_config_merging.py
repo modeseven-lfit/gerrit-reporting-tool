@@ -9,7 +9,7 @@ to ensure project configurations properly override default values while
 inheriting all non-overridden values.
 """
 
-from reporting_tool.config import (
+from gerrit_reporting_tool.config import (
     deep_merge_dicts,
     load_configuration,
 )

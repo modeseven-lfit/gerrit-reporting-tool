@@ -13,7 +13,7 @@ The `local-testing.sh` script automates the following workflow:
 
 1. **Check for existing repositories** - Reuses already cloned repositories if present
 2. **Clone repositories** (if needed) from Gerrit servers using `gerrit-clone` CLI tool
-3. **Generate reports** using the `reporting-tool` on the cloned repositories
+3. **Generate reports** using the `gerrit-reporting-tool` on the cloned repositories
 4. **Output results** to `/tmp/reports` for manual review
 
 ## Prerequisites
@@ -103,7 +103,7 @@ With API tokens, reports take longer (~5-10 minutes) but include complete data.
 Run the testing script:
 
 ```bash
-cd reporting-tool/testing
+cd gerrit-reporting-tool/testing
 ./local-testing.sh
 ```
 
@@ -218,9 +218,9 @@ The script uses these `gerrit-clone` options:
 
 To change these, edit the `clone_onap()` and `clone_opendaylight()` functions in the script.
 
-### reporting-tool Options
+### gerrit-reporting-tool Options
 
-The script uses these `reporting-tool` options:
+The script uses these `gerrit-reporting-tool` options:
 
 - `--cache` - Enable caching for better performance
 - `--workers 4` - Use 4 concurrent workers
@@ -338,10 +338,10 @@ If report generation fails:
 
 3. **Run with verbose output** - Already enabled in the script
 
-4. **Check the reporting-tool dependencies**:
+4. **Check the gerrit-reporting-tool dependencies**:
 
    ```bash
-   cd reporting-tool
+   cd gerrit-reporting-tool
    uv sync
    ```
 
@@ -406,8 +406,8 @@ uvx gerrit-clone clone \
 #### 3. Generate ONAP report
 
 ```bash
-cd reporting-tool
-uv run reporting-tool generate \
+cd gerrit-reporting-tool
+uv run gerrit-reporting-tool generate \
     --project "ONAP" \
     --repos-path /tmp/gerrit.onap.org \
     --output-dir /tmp/reports \
@@ -418,8 +418,8 @@ uv run reporting-tool generate \
 #### 4. Generate OpenDaylight report
 
 ```bash
-cd reporting-tool
-uv run reporting-tool generate \
+cd gerrit-reporting-tool
+uv run gerrit-reporting-tool generate \
     --project "OpenDaylight" \
     --repos-path /tmp/git.opendaylight.org \
     --output-dir /tmp/reports \
@@ -442,7 +442,7 @@ rm -rf /tmp/reports
 Or use the cleanup script:
 
 ```bash
-cd reporting-tool/testing
+cd gerrit-reporting-tool/testing
 ./cleanup.sh
 ```
 
@@ -477,8 +477,8 @@ The script processes ONAP and Opendaylight by default. To test other projects:
        --path-prefix /tmp/gerrit.o-ran-sc.org
 
    # Generate report
-   cd reporting-tool
-   uv run reporting-tool generate \
+   cd gerrit-reporting-tool
+   uv run gerrit-reporting-tool generate \
        --project "O-RAN-SC" \
        --repos-path /tmp/gerrit.o-ran-sc.org \
        --output-dir /tmp/reports
@@ -504,7 +504,7 @@ uvx gerrit-clone clone \
 Generate specific report formats:
 
 ```bash
-uv run reporting-tool generate \
+uv run gerrit-reporting-tool generate \
     --project "ONAP" \
     --repos-path /tmp/gerrit.onap.org \
     --output-dir /tmp/reports/onap \
@@ -560,6 +560,6 @@ This metadata automatically configures API endpoints for each project.
 
 - [API Access Configuration](API_ACCESS.md) - **Enable GitHub/Gerrit/Jenkins APIs**
 - [gerrit-clone documentation](https://github.com/lfreleng-actions/gerrit-clone-action)
-- [reporting-tool documentation](../README.md)
+- [gerrit-reporting-tool documentation](../README.md)
 - [Configuration guide](../docs/CONFIGURATION.md)
 - [Performance guide](../docs/PERFORMANCE.md)

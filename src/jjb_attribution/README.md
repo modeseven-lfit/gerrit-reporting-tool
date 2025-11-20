@@ -125,7 +125,7 @@ Expected Job Names (7):
 Run the test script to see the parser in action:
 
 ```bash
-cd reporting-tool
+cd gerrit-reporting-tool
 python3 scripts/test_jjb_parser.py
 ```
 
