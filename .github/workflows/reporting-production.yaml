@@ -542,9 +542,92 @@ jobs:
             echo ""
           } >> "$GITHUB_STEP_SUMMARY"
 
+  copy-to-gerrit-reports:
+    name: "Copy Artifacts to gerrit-reports Repository"
+    needs: [verify, analyze]
+    if: |
+      always() &&
+      needs.verify.result == 'success' &&
+      (github.event_name == 'schedule' ||
+       github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 15
+    steps:
+      # Harden the runner
+      # yamllint disable-line rule:line-length
+      - uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
+        with:
+          egress-policy: "audit"
+
+      - name: "Checkout repository for scripts"
+        # yamllint disable-line rule:line-length
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: "Download all report artifacts"
+        # yamllint disable-line rule:line-length
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
+        with:
+          pattern: "reports-*"
+          path: ./downloaded-artifacts
+          merge-multiple: false
+        continue-on-error: false
+
+      - name: "Download all raw data artifacts"
+        # yamllint disable-line rule:line-length
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
+        with:
+          pattern: "raw-data-*"
+          path: ./downloaded-artifacts
+          merge-multiple: false
+        continue-on-error: false
+
+      - name: "Generate date folder name"
+        id: date
+        shell: bash
+        run: |
+          DATE_FOLDER=$(date -u +%Y-%m-%d)
+          echo "folder=${DATE_FOLDER}" >> "$GITHUB_OUTPUT"
+          echo "Date folder: ${DATE_FOLDER}"
+
+      - name: "Copy artifacts to gerrit-reports repository"
+        shell: bash
+        env:
+          GERRIT_REPORTS_PAT_TOKEN: ${{ secrets.GERRIT_REPORTS_PAT_TOKEN }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+        run: |
+          chmod +x .github/scripts/copy-to-gerrit-reports.sh
+          .github/scripts/copy-to-gerrit-reports.sh \
+            "${{ steps.date.outputs.folder }}" \
+            "./downloaded-artifacts" \
+            "modeseven-lfit/gerrit-reports" \
+            "$GERRIT_REPORTS_PAT_TOKEN"
+
+      - name: "Generate job summary"
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "## 📦 Artifacts Copied to gerrit-reports"
+            echo ""
+            echo "**Date Folder:** ${{ steps.date.outputs.folder }}"
+            echo "**Target Repository:** modeseven-lfit/gerrit-reports"
+            echo "**Status:** ${{ job.status }}"
+            echo ""
+            echo "### 🔗 View in Repository"
+            echo ""
+            repo="modeseven-lfit/gerrit-reports"
+            date_folder="${{ steps.date.outputs.folder }}"
+            url="https://github.com/${repo}/tree/main"
+            echo "${url}/data/artifacts/${date_folder}"
+            echo ""
+          } >> "$GITHUB_STEP_SUMMARY"
+
   summary:
     name: "Generate Summary"
-    needs: [verify, analyze, publish]
+    needs: [verify, analyze, publish, copy-to-gerrit-reports]
     if: always()
     runs-on: ubuntu-latest
     permissions:
@@ -571,5 +654,7 @@ jobs:
             echo "- **Verify:** ${{ needs.verify.result }}"
             echo "- **Analyze:** ${{ needs.analyze.result }}"
             echo "- **Publish:** ${{ needs.publish.result }}"
+            copy_result="${{ needs.copy-to-gerrit-reports.result }}"
+            echo "- **Copy to gerrit-reports:** ${copy_result}"
             echo ""
           } >> "$GITHUB_STEP_SUMMARY"
