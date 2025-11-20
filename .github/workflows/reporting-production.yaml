@@ -382,7 +382,7 @@ jobs:
           if-no-files-found: warn
 
   publish:
-    name: "Publish to GitHub Pages"
+    name: "Publish GitHub Pages"
     needs: [verify, analyze]
     if: always() && needs.verify.result == 'success'
     runs-on: ubuntu-latest
@@ -543,7 +543,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
   copy-to-gerrit-reports:
-    name: "Copy Artifacts to gerrit-reports Repository"
+    name: "Transfer/Copy Artifacts"
     needs: [verify, analyze]
     if: |
       always() &&
@@ -591,6 +591,37 @@ jobs:
           echo "folder=${DATE_FOLDER}" >> "$GITHUB_OUTPUT"
           echo "Date folder: ${DATE_FOLDER}"
 
+      - name: "Debug: Show downloaded artifacts"
+        shell: bash
+        run: |
+          echo "=== Current directory ==="
+          pwd
+          echo ""
+          echo "=== Contents of current directory ==="
+          ls -la
+          echo ""
+          echo "=== Contents of ./downloaded-artifacts ==="
+          if [ -d "./downloaded-artifacts" ]; then
+            ls -la ./downloaded-artifacts/
+            echo ""
+            echo "=== First level subdirectories ==="
+            find ./downloaded-artifacts -maxdepth 1 -type d
+            echo ""
+            echo "=== All files (first 50) ==="
+            find ./downloaded-artifacts -type f | head -50
+            echo ""
+            echo "=== Total file count ==="
+            find ./downloaded-artifacts -type f | wc -l
+          else
+            echo "ERROR: ./downloaded-artifacts directory does not exist!"
+          fi
+
+      - name: "Install dependencies (jq)"
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
       - name: "Copy artifacts to gerrit-reports repository"
         shell: bash
         env:
@@ -598,8 +629,8 @@ jobs:
           GITHUB_RUN_ID: ${{ github.run_id }}
           GITHUB_EVENT_NAME: ${{ github.event_name }}
         run: |
-          chmod +x .github/scripts/copy-to-gerrit-reports.sh
-          .github/scripts/copy-to-gerrit-reports.sh \
+          chmod +x .github/scripts/copy-api.sh
+          .github/scripts/copy-api.sh \
             "${{ steps.date.outputs.folder }}" \
             "./downloaded-artifacts" \
             "modeseven-lfit/gerrit-reports" \
