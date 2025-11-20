@@ -117,41 +117,68 @@ PROJECTS_PROCESSED=0
 # Process each project's artifacts
 log_info "Processing artifacts from: ${ARTIFACTS_DIR}"
 
+# Debug: Show directory structure
+log_info "Directory structure:"
+find "${ARTIFACTS_DIR}" -maxdepth 2 -type d 2>/dev/null | head -20 || true
+
 # Look for report artifacts (reports-*)
-for report_dir in "${ARTIFACTS_DIR}"/reports-*; do
-    if [ ! -d "$report_dir" ]; then
+# GitHub Actions download-artifact creates nested dirs: downloaded-artifacts/reports-X/reports-X/files
+for artifact_dir in "${ARTIFACTS_DIR}"/reports-*; do
+    if [ ! -d "$artifact_dir" ]; then
         continue
     fi
 
-    PROJECT_NAME=$(basename "$report_dir" | sed 's/^reports-//')
-    PROJECTS_PROCESSED=$((PROJECTS_PROCESSED + 1))
+    PROJECT_NAME=$(basename "$artifact_dir" | sed 's/^reports-//')
 
+    # Check if there's a nested directory with the same name (GitHub Actions behavior)
+    if [ -d "${artifact_dir}/reports-${PROJECT_NAME}" ]; then
+        report_dir="${artifact_dir}/reports-${PROJECT_NAME}"
+    else
+        report_dir="$artifact_dir"
+    fi
+
+    # Skip if no files in the actual report directory
+    if [ -z "$(ls -A "$report_dir" 2>/dev/null)" ]; then
+        log_warning "No files found in ${report_dir}"
+        continue
+    fi
+
+    PROJECTS_PROCESSED=$((PROJECTS_PROCESSED + 1))
     log_info "Processing project: ${PROJECT_NAME}"
 
     PROJECT_TARGET="${TARGET_BASE}/reports-${PROJECT_NAME}"
     mkdir -p "$PROJECT_TARGET"
 
     # Copy all files from the report directory
-    if [ -n "$(ls -A "$report_dir" 2>/dev/null)" ]; then
-        cp -r "${report_dir}"/* "$PROJECT_TARGET/" 2>/dev/null || true
+    cp -r "${report_dir}"/* "$PROJECT_TARGET/" 2>/dev/null || true
 
-        # Count files copied
-        FILE_COUNT=$(find "$PROJECT_TARGET" -type f | wc -l)
-        FILES_COPIED=$((FILES_COPIED + FILE_COUNT))
+    # Count files copied
+    FILE_COUNT=$(find "$PROJECT_TARGET" -type f | wc -l)
+    FILES_COPIED=$((FILES_COPIED + FILE_COUNT))
 
-        log_success "Copied ${FILE_COUNT} files for ${PROJECT_NAME}"
-    else
-        log_warning "No files found in ${report_dir}"
-    fi
+    log_success "Copied ${FILE_COUNT} files for ${PROJECT_NAME}"
 done
 
 # Look for raw data artifacts (raw-data-*)
-for raw_dir in "${ARTIFACTS_DIR}"/raw-data-*; do
-    if [ ! -d "$raw_dir" ]; then
+for artifact_dir in "${ARTIFACTS_DIR}"/raw-data-*; do
+    if [ ! -d "$artifact_dir" ]; then
         continue
     fi
 
-    PROJECT_NAME=$(basename "$raw_dir" | sed 's/^raw-data-//')
+    PROJECT_NAME=$(basename "$artifact_dir" | sed 's/^raw-data-//')
+
+    # Check if there's a nested directory with the same name (GitHub Actions behavior)
+    if [ -d "${artifact_dir}/raw-data-${PROJECT_NAME}" ]; then
+        raw_dir="${artifact_dir}/raw-data-${PROJECT_NAME}"
+    else
+        raw_dir="$artifact_dir"
+    fi
+
+    # Skip if no files
+    if [ -z "$(ls -A "$raw_dir" 2>/dev/null)" ]; then
+        log_warning "No raw data files found in ${raw_dir}"
+        continue
+    fi
 
     log_info "Processing raw data for: ${PROJECT_NAME}"
 
@@ -159,17 +186,13 @@ for raw_dir in "${ARTIFACTS_DIR}"/raw-data-*; do
     mkdir -p "$PROJECT_TARGET"
 
     # Copy raw data files (JSON files)
-    if [ -n "$(ls -A "$raw_dir" 2>/dev/null)" ]; then
-        cp -r "${raw_dir}"/* "$PROJECT_TARGET/" 2>/dev/null || true
+    cp -r "${raw_dir}"/* "$PROJECT_TARGET/" 2>/dev/null || true
 
-        # Count JSON files
-        JSON_COUNT=$(find "$raw_dir" -name "*.json" -type f | wc -l)
-        FILES_COPIED=$((FILES_COPIED + JSON_COUNT))
+    # Count JSON files
+    JSON_COUNT=$(find "$raw_dir" -name "*.json" -type f | wc -l)
+    FILES_COPIED=$((FILES_COPIED + JSON_COUNT))
 
-        log_success "Copied ${JSON_COUNT} raw data files for ${PROJECT_NAME}"
-    else
-        log_warning "No raw data files found in ${raw_dir}"
-    fi
+    log_success "Copied ${JSON_COUNT} raw data files for ${PROJECT_NAME}"
 done
 
 # Check if we actually copied anything
