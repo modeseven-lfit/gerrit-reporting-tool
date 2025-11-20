@@ -28,11 +28,12 @@ Usage:
 
 For more information:
     - Documentation: https://reporting-tool.readthedocs.io
-    - GitHub: https://github.com/modeseven-lfit/reporting-tool
+    - GitHub: https://github.com/lfit/reporting-tool
     - License: Apache-2.0
 """
 
-__version__ = "1.0.0"
+from reporting_tool._version import __version__
+
 __author__ = "The Linux Foundation"
 __license__ = "Apache-2.0"
 

@@ -316,7 +316,7 @@ schedule:
    (`GITHUB_TOKEN` by default, or `CLASSIC_READ_ONLY_PAT_TOKEN` for CI) exists
    and is a Classic PAT with required scopes (see GitHub Token Requirements)
 6. **Report publishing failures**: Check `GERRIT_REPORTS_PAT_TOKEN` exists and has
-   Contents: Read and write permissions for `modeseven-lfit/gerrit-reports`
+   Contents: Read and write permissions for `lfit/gerrit-reports`
 
 ### Debugging
 

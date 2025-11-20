@@ -14,7 +14,7 @@ jobs, GitHub CI/CD workflows, and development practices across repositories.
 
 ## 🗒️ Published Reports
 
-<https://modeseven-lfit.github.io/reporting-tool/>
+<https://lfit.github.io/reporting-tool/>
 
 ## ⚡ Quick Start
 
@@ -107,7 +107,7 @@ reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org
 ## 🎯 Common Use Cases
 
 | Use Case | Command |
-|----------|---------|
+| -------- | ------- |
 | **Basic report (O-RAN-SC)** | `reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org` |
 | **Basic report (ONAP)** | `reporting-tool generate --project ONAP --repos-path ./gerrit.onap.org` |
 | **With caching** | `reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org --cache --workers 8` |
@@ -194,7 +194,7 @@ reporting-tool generate --project my-project --repos-path ./repos
 ## 📖 Key Documentation Files
 
 | Topic | Document |
-|-------|----------|
+| ----- | -------- |
 | **Getting Started** | [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md) |
 | **Commands** | [docs/COMMANDS.md](docs/COMMANDS.md) |
 | **FAQ** | [docs/FAQ.md](docs/FAQ.md) |
@@ -220,7 +220,7 @@ reporting-tool generate --project my-project --repos-path ./repos
 ## 🤝 Support
 
 - **Documentation**: [Complete Index](docs/INDEX.md)
-- **Issues**: [GitHub Issues](https://github.com/modeseven-lfit/reporting-tool/issues)
+- **Issues**: [GitHub Issues](https://github.com/lfit/reporting-tool/issues)
 
 ---
 

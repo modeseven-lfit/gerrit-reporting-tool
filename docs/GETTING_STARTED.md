@@ -424,7 +424,7 @@ reporting-tool generate \
 
 - [FAQ](FAQ.md) - Frequently asked questions
 - [Troubleshooting Guide](TROUBLESHOOTING.md) - Common issues
-- [GitHub Issues](https://github.com/modeseven-lfit/reporting-tool/issues) - Report bugs
+- [GitHub Issues](https://github.com/lfit/reporting-tool/issues) - Report bugs
 
 ---
 
@@ -458,7 +458,7 @@ reporting-tool generate \
 Quick links to all documentation:
 
 | Category | Document | Description |
-|----------|----------|-------------|
+| -------- | -------- | ----------- |
 | **Getting Started** | [Getting Started](GETTING_STARTED.md) | You are here! |
 | **Reference** | [Commands](COMMANDS.md) | Complete command reference |
 | | [FAQ](FAQ.md) | Common questions |
