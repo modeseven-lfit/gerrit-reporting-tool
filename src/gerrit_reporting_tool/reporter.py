@@ -255,14 +255,9 @@ class RepositoryReporter:
             # Validate allocation and report any issues
             validation_issues = self.git_collector.validate_jenkins_job_allocation()
             if validation_issues:
-                self.logger.error("CRITICAL: Jenkins job allocation issues detected:")
+                self.logger.warning("Jenkins job allocation information:")
                 for issue in validation_issues:
-                    self.logger.error(f"  - {issue}")
-
-                # Infrastructure jobs are not fatal - only log as warning
-                self.logger.warning(
-                    "Some Jenkins jobs could not be allocated, but continuing with report generation"
-                )
+                    self.logger.debug(f"  - {issue}")
 
                 # Get final counts for reporting
                 allocation_summary = (
@@ -284,6 +279,14 @@ class RepositoryReporter:
 
             # Add allocation data to report for debugging
             report_data["jenkins_allocation"] = allocation_summary
+
+            # Get unallocated job names for the report
+            if allocation_summary.get("unallocated_jobs", 0) > 0:
+                all_jobs = self.git_collector.jenkins_allocation_context.get_all_jobs()
+                all_job_names = {job.get("name", "") for job in all_jobs.get("jobs", [])}
+                allocated_job_names = set(allocation_summary.get("allocated_job_names", []))
+                unallocated_job_names = sorted(all_job_names - allocated_job_names)
+                report_data["jenkins_allocation"]["unallocated_job_names"] = unallocated_job_names
 
             # Add orphaned jobs data to report
             orphaned_summary = self.git_collector.get_orphaned_jenkins_jobs_summary()

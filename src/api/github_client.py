@@ -117,7 +117,7 @@ class GitHubAPIClient(BaseAPIClient):
         """
         try:
             url = f"/repos/{owner}/{repo}/actions/workflows"
-            self.logger.info(f"🔍 Querying GitHub API: {owner}/{repo} (URL: {url})")
+            self.logger.debug(f"🔍 Querying GitHub API: {owner}/{repo} (URL: {url})")
             response = self.client.get(url)
 
             if response.status_code == 401:

@@ -897,6 +897,28 @@ class ReportRenderer:
         lines.extend(
             ["", f"**Total:** {len(repos_with_cicd)} repositories with CI/CD jobs"]
         )
+
+        # Add unallocated Jenkins jobs section if available
+        if has_any_jenkins:
+            jenkins_allocation = data.get("jenkins_allocation", {})
+            unallocated_job_names = jenkins_allocation.get("unallocated_job_names", [])
+
+            if unallocated_job_names:
+                lines.extend([
+                    "",
+                    "### ⏭️ Unallocated Jenkins jobs",
+                    "",
+                    "The Jenkins jobs below could not be directly attributed to a specific Gerrit project. The list/content of this table may change over time, as improvements are made to the matching heuristics.",
+                    "",
+                    f"**Total unallocated Jenkins jobs:** {len(unallocated_job_names)}",
+                    "",
+                    "| Jenkins job |",
+                    "|-------------|"
+                ])
+
+                for job_name in unallocated_job_names:
+                    lines.append(f"| {job_name} |")
+
         return "\n".join(lines)
 
     def _generate_contributors_section(self, data: dict[str, Any]) -> str:
