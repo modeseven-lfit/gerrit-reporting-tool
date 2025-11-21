@@ -118,18 +118,32 @@ contains an array of project configurations:
 [
   {
     "project": "O-RAN-SC",
+    "slug": "oran",
     "gerrit": "gerrit.o-ran-sc.org",
     "jenkins": "jenkins.o-ran-sc.org",
     "github": "o-ran-sc"
   },
   {
     "project": "ONAP",
+    "slug": "onap",
     "gerrit": "gerrit.onap.org",
     "jenkins": "jenkins.onap.org",
     "github": "onap"
   }
 ]
 ```
+
+**Required Fields:**
+
+- `project`: Full project name (can contain spaces and capitals)
+- `slug`: Short, lowercase identifier used for artifact naming (no spaces)
+- `gerrit`: Gerrit server hostname
+
+**Optional Fields:**
+
+- `jenkins`: Jenkins server hostname
+- `github`: GitHub organization name
+- `jjb_attribution`: JJB repository configuration (for Opendaylight)
 
 #### Setting up the Variable
 

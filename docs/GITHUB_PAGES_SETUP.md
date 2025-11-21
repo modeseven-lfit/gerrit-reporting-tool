@@ -50,12 +50,18 @@ The new reporting system publishes reports directly to GitHub Pages on this repo
      [
        {
          "project": "Project Name",
+         "slug": "project-name",
          "gerrit": "gerrit.example.org",
          "jenkins": "jenkins.example.org",
          "github": "github-org-name"
        }
      ]
      ```
+
+     **Required fields:**
+     - `project`: Full project name
+     - `slug`: Short identifier for artifact naming (lowercase, no spaces)
+     - `gerrit`: Gerrit server hostname
 
 ---
 

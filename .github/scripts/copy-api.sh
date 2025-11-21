@@ -231,10 +231,10 @@ fi
 
 # Process each project's artifacts (reports-*)
 while IFS= read -r -d '' artifact_dir; do
-    PROJECT_NAME=$(basename "$artifact_dir" | sed 's/^reports-//')
+    SLUG=$(basename "$artifact_dir" | sed 's/^reports-//')
 
     log_info "Found artifact directory: ${artifact_dir}"
-    log_info "Project name: ${PROJECT_NAME}"
+    log_info "Project slug: ${SLUG}"
 
     # Skip if no files in the report directory
     if [ -z "$(ls -A "$artifact_dir" 2>/dev/null)" ]; then
@@ -243,13 +243,13 @@ while IFS= read -r -d '' artifact_dir; do
     fi
 
     PROJECTS_PROCESSED=$((PROJECTS_PROCESSED + 1))
-    log_info "Processing project: ${PROJECT_NAME}"
+    log_info "Processing project: ${SLUG}"
 
     # Upload all files from this directory
     while IFS= read -r -d '' file; do
         # Get relative path from artifact_dir
         rel_path="${file#"${artifact_dir}"/}"
-        remote_path="${TARGET_BASE}/reports-${PROJECT_NAME}/${rel_path}"
+        remote_path="${TARGET_BASE}/reports-${SLUG}/${rel_path}"
 
         log_info "  Uploading: ${rel_path}"
 
@@ -263,13 +263,13 @@ while IFS= read -r -d '' artifact_dir; do
         sleep 0.1
     done < <(find "$artifact_dir" -type f -print0 2>/dev/null)
 
-    log_success "Processed ${PROJECT_NAME}"
+    log_success "Processed ${SLUG}"
 
 done < <(find "${ARTIFACTS_DIR}" -maxdepth 1 -type d -name "reports-*" -print0 2>/dev/null)
 
 # Process raw data artifacts (raw-data-*)
 while IFS= read -r -d '' artifact_dir; do
-    PROJECT_NAME=$(basename "$artifact_dir" | sed 's/^raw-data-//')
+    SLUG=$(basename "$artifact_dir" | sed 's/^raw-data-//')
 
     log_info "Found raw data directory: ${artifact_dir}"
 
@@ -279,13 +279,13 @@ while IFS= read -r -d '' artifact_dir; do
         continue
     fi
 
-    log_info "Processing raw data for: ${PROJECT_NAME}"
+    log_info "Processing raw data for: ${SLUG}"
 
     # Upload all files from this directory
     while IFS= read -r -d '' file; do
         # Get relative path from artifact_dir
         rel_path="${file#"${artifact_dir}"/}"
-        remote_path="${TARGET_BASE}/reports-${PROJECT_NAME}/${rel_path}"
+        remote_path="${TARGET_BASE}/reports-${SLUG}/${rel_path}"
 
         log_info "  Uploading: ${rel_path}"
 
@@ -299,7 +299,7 @@ while IFS= read -r -d '' artifact_dir; do
         sleep 0.1
     done < <(find "$artifact_dir" -type f -print0 2>/dev/null)
 
-    log_success "Processed raw data for ${PROJECT_NAME}"
+    log_success "Processed raw data for ${SLUG}"
 
 done < <(find "${ARTIFACTS_DIR}" -maxdepth 1 -type d -name "raw-data-*" -print0 2>/dev/null)
 
@@ -332,7 +332,7 @@ Generated on: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
 
 This directory contains report artifacts for ${PROJECTS_PROCESSED} projects.
 
-Each project has a subdirectory named \`reports-<PROJECT_NAME>\` containing:
+Each project has a subdirectory named \`reports-<slug>\` containing:
 - Report HTML files and assets
 - Raw JSON data files (\`report_raw.json\`, \`config_resolved.json\`, \`metadata.json\`)
 
@@ -343,10 +343,10 @@ Each project has a subdirectory named \`reports-<PROJECT_NAME>\` containing:
 # List all project directories (from what we processed)
 for artifact_dir in "${ARTIFACTS_DIR}"/reports-*; do
     if [ -d "$artifact_dir" ]; then
-        PROJECT_NAME=$(basename "$artifact_dir" | sed 's/^reports-//')
+        SLUG=$(basename "$artifact_dir" | sed 's/^reports-//')
         FILE_COUNT=$(find "$artifact_dir" -type f 2>/dev/null | wc -l | tr -d ' ')
         README_CONTENT="${README_CONTENT}
-- **${PROJECT_NAME}**: ${FILE_COUNT} files"
+- **${SLUG}**: ${FILE_COUNT} files"
     fi
 done
 

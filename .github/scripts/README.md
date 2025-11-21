@@ -103,13 +103,13 @@ gerrit-reports/
     └── artifacts/
         └── 2025-01-20/
             ├── README.md                    # Metadata and summary
-            ├── reports-ONAP/
+            ├── reports-onap/
             │   ├── report.html
             │   ├── report.md
             │   ├── report_raw.json
             │   ├── config_resolved.json
             │   └── metadata.json
-            └── reports-ProjectName/
+            └── reports-odl/
                 └── ...
 ```
 
@@ -174,11 +174,11 @@ output_dir/
 ├── summary.json                    # Download summary
 ├── run-123456/
 │   ├── run-metadata.json          # Workflow run info
-│   ├── raw-data-project1/
+│   ├── raw-data-onap/
 │   │   ├── report_raw.json
 │   │   ├── config_resolved.json
 │   │   └── metadata.json
-│   └── raw-data-project2/
+│   └── raw-data-oran/
 │       └── ...
 └── run-123457/
     └── ...

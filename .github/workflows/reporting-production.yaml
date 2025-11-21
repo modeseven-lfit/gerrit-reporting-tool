@@ -146,8 +146,9 @@ jobs:
 
           # Validate required fields
           if ! echo "$projects_json" | \
-            jq -e 'all(.project and .gerrit)' > /dev/null; then
-            echo "::error::Each project must have 'project' and 'gerrit'"
+            jq -e 'all(.project and .gerrit and .slug)' > /dev/null; then
+            echo "::error::Each project must have 'project', 'gerrit',"
+            echo "'slug' fields"
             exit 1
           fi
 
@@ -165,7 +166,7 @@ jobs:
             echo ""
           } >> "$GITHUB_STEP_SUMMARY"
           echo "$projects_json" | \
-            jq -r '.[] | "- **\(.project):** `\(.gerrit)`"' >> \
+            jq -r '.[] | "- **\(.project):** `\(.gerrit)` [\(.slug)]"' >> \
             "$GITHUB_STEP_SUMMARY"
 
   analyze:
@@ -321,6 +322,7 @@ jobs:
           cat > "$report_dir/metadata.json" <<EOF
           {
             "project": "$project",
+            "slug": "${{ matrix.slug }}",
             "gerrit_server": "${{ matrix.gerrit }}",
             "jenkins_server": "${{ matrix.jenkins }}",
             "github_org": "${{ matrix.github }}",
@@ -341,7 +343,7 @@ jobs:
         # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
         with:
-          name: raw-data-${{ matrix.project }}
+          name: raw-data-${{ matrix.slug }}
           path: |
             ./reports/${{ matrix.project }}/report_raw.json
             ./reports/${{ matrix.project }}/config_resolved.json
@@ -355,7 +357,7 @@ jobs:
         # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
         with:
-          name: reports-${{ matrix.project }}
+          name: reports-${{ matrix.slug }}
           path: ./reports/${{ matrix.project }}/
           retention-days: 90
           if-no-files-found: warn
@@ -366,7 +368,7 @@ jobs:
         # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
         with:
-          name: clone-manifest-${{ matrix.project }}
+          name: clone-manifest-${{ matrix.slug }}
           path: "./${{ matrix.gerrit }}/clone-manifest.json"
           retention-days: 90
           if-no-files-found: warn
@@ -376,7 +378,7 @@ jobs:
         # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
         with:
-          name: clone-log-${{ matrix.project }}
+          name: clone-log-${{ matrix.slug }}
           path: "./${{ matrix.gerrit }}.log"
           retention-days: 90
           if-no-files-found: warn
@@ -441,13 +443,10 @@ jobs:
               continue
             fi
 
-            project_name=$(basename "$artifact_dir" | \
-              sed 's/^reports-//')
-            slug=$(echo "$project_name" | \
-              tr '[:upper:]' '[:lower:]' | \
-              sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//')
+            # Extract slug from artifact directory name (reports-{slug})
+            slug=$(basename "$artifact_dir" | sed 's/^reports-//')
 
-            echo "Processing: $project_name -> $slug"
+            echo "Processing artifact: reports-$slug"
 
             # Create project directory at root level
             target_dir="$slug"
@@ -471,7 +470,7 @@ jobs:
             fi
 
             report_count=$((report_count + 1))
-            echo "  ✅ Prepared $project_name"
+            echo "  ✅ Prepared $slug"
           done
 
           echo "REPORT_COUNT=$report_count" >> "$GITHUB_ENV"
@@ -657,7 +656,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
   summary:
-    name: "Generate Summary"
+    name: "Workflow Summary"
     needs: [verify, analyze, publish, copy-to-gerrit-reports]
     if: always()
     runs-on: ubuntu-latest
@@ -674,6 +673,20 @@ jobs:
       - name: "Generate workflow summary"
         shell: bash
         run: |
+          # Helper function to convert result to emoji
+          result_emoji() {
+            case "$1" in
+              success) echo "✅" ;;
+              failure) echo "❌" ;;
+              cancelled) echo "⚠️" ;;
+              skipped) echo "⏭️" ;;
+              *) echo "❓" ;;
+            esac
+          }
+
+          # Parse projects JSON to get slugs
+          projects_json='${{ vars.PROJECTS_JSON }}'
+
           {
             echo "## 📊 Production Report Generation Complete"
             echo ""
@@ -682,10 +695,34 @@ jobs:
             echo ""
             echo "### Job Results"
             echo ""
-            echo "- **Verify:** ${{ needs.verify.result }}"
-            echo "- **Analyze:** ${{ needs.analyze.result }}"
-            echo "- **Publish:** ${{ needs.publish.result }}"
-            copy_result="${{ needs.copy-to-gerrit-reports.result }}"
-            echo "- **Copy to gerrit-reports:** ${copy_result}"
+            echo "- **Verify:** $(result_emoji '${{ needs.verify.result }}')"
+            echo "- **Analyze:** $(result_emoji \
+              '${{ needs.analyze.result }}')"
+            echo "- **Publish:** $(result_emoji \
+              '${{ needs.publish.result }}')"
+            echo "- **Copy:** $(result_emoji \
+              '${{ needs.copy-to-gerrit-reports.result }}')"
             echo ""
+
+            # Add links to project reports if publish succeeded
+            if [ "${{ needs.publish.result }}" = "success" ]; then
+              echo "### 📑 Project Reports"
+              echo ""
+              owner="${{ github.repository_owner }}"
+              repo="${{ github.event.repository.name }}"
+              base_url="https://${owner}.github.io/${repo}"
+
+              # Parse and display each project with link
+              echo "$projects_json" | \
+                jq -r '.[] | "\(.project)|\(.slug)"' | \
+                while IFS='|' read -r project_name slug; do
+                report_url="${base_url}/${slug}/report.html"
+                data_url="${base_url}/${slug}/report_raw.json"
+                echo "- **${project_name}:** [View Report](${report_url})" \
+                  "• [Raw Data](${data_url})"
+              done
+              echo ""
+              echo "**Index:** [View All Reports](${base_url}/)"
+              echo ""
+            fi
           } >> "$GITHUB_STEP_SUMMARY"

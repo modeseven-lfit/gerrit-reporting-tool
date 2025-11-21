@@ -52,11 +52,17 @@ https://<owner>.github.io/<repo>/pr-preview/<pr-number>/
 [
   {
     "project": "Project Name",
+    "slug": "project-name",
     "gerrit": "gerrit.example.org",
     "jenkins": "jenkins.example.org",
     "github": "github-org"
   }
 ]
+```
+
+**Required:** `project`, `slug`, `gerrit`
+**Optional:** `jenkins`, `github`, `jjb_attribution`
+
 ```text
 
 ---
