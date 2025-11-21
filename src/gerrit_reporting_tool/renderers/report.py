@@ -908,7 +908,9 @@ class ReportRenderer:
                     "",
                     "### ⏭️ Unallocated Jenkins jobs",
                     "",
-                    "The Jenkins jobs below could not be directly attributed to a specific Gerrit project. The list/content of this table may change over time, as improvements are made to the matching heuristics.",
+                    "The Jenkins jobs below could not be directly attributed to a specific Gerrit project.",
+                    "",
+                    "**Note:** this table may change over time, as improvements are made to the matching heuristics.",
                     "",
                     f"**Total unallocated Jenkins jobs:** {len(unallocated_job_names)}",
                     "",
@@ -1220,17 +1222,15 @@ class ReportRenderer:
             "",
             f"**Total Orphaned Jobs:** {total_orphaned}",
             "",
-            "These Jenkins jobs belong to archived or read-only Gerrit projects and should likely be removed:",
+            "These Jenkins jobs belong to archived or read-only Gerrit projects; audit them and consider removal.",
             "",
         ]
 
         # Detailed table
         lines.extend(
             [
-                "### Detailed Job Listing",
-                "",
-                "| Job Name | Gerrit Project | Project State |",
-                "|----------|----------------|---------------|",
+                "| Job Name | Gerrit Project |",
+                "|----------|----------------|",
             ]
         )
 
@@ -1239,19 +1239,9 @@ class ReportRenderer:
 
         for job_name, job_info in sorted_jobs:
             project_name = job_info.get("project_name", "Unknown")
-            state = job_info.get("state", "UNKNOWN")
-            score = job_info.get("score", 0)
-
-            # Color-code based on state
-            if state == "READ_ONLY":
-                state_display = f"🔒 {state}"
-            elif state == "HIDDEN":
-                state_display = f"👻 {state}"
-            else:
-                state_display = f"❓ {state}"
 
             lines.append(
-                f"| {job_name} | {project_name} | {state_display} |"
+                f"| {job_name} | {project_name} |"
             )
 
         lines.extend(
@@ -1589,6 +1579,7 @@ class ReportRenderer:
                     is_cicd_jobs = False
                     is_all_repositories = False
                     is_global_summary = False
+                    is_orphaned_jobs = False
                     if has_headers and i < len(lines):
                         table_header = line.lower()
                         if (
@@ -1600,9 +1591,15 @@ class ReportRenderer:
                         elif "gerrit project" in table_header and (
                             "github workflows" in table_header
                             or "jenkins jobs" in table_header
-                            or "project state" in table_header
                         ):
                             is_cicd_jobs = True
+                        elif (
+                            "job name" in table_header
+                            and "gerrit project" in table_header
+                            and len([c for c in table_header if c == "|"]) == 3
+                        ):
+                            # Orphaned jobs table (2 columns only)
+                            is_orphaned_jobs = True
                         elif (
                             "gerrit project" in table_header
                             and "commits" in table_header
@@ -1627,6 +1624,8 @@ class ReportRenderer:
                         )
                     elif is_cicd_jobs:
                         table_class = ' class="sortable no-pagination cicd-jobs-table"'
+                    elif is_orphaned_jobs:
+                        table_class = ' class="sortable no-search no-pagination"'
                     elif is_all_repositories:
                         table_class = ' class="sortable"'
                     elif is_global_summary:
