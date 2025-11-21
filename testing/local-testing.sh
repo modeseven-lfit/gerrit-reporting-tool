@@ -240,13 +240,17 @@ clone_project() {
     local clone_dir="${CLONE_BASE_DIR}/${gerrit_host}"
 
     if [ -d "${clone_dir}" ]; then
-        log_info "${project_name} repositories already exist at ${clone_dir}, skipping clone"
+        log_warning "${project_name} repositories already exist at ${clone_dir}"
+        log_warning "To re-clone with fresh data, delete the directory first:"
+        log_warning "  rm -rf ${clone_dir}"
+        log_info "Skipping clone, using existing repositories"
         return 0
     fi
 
     log_info "Cloning ${project_name} repositories from ${gerrit_host} to ${clone_dir}..."
 
-    if gerrit-clone-action \
+    # Use gerrit-clone (the CLI tool) instead of gerrit-clone-action (the GitHub Action)
+    if gerrit-clone clone \
         --host "${gerrit_host}" \
         --path-prefix "${clone_dir}" \
         --skip-archived \
@@ -276,6 +280,11 @@ generate_project_report() {
         log_error "${project_name} clone directory not found: ${clone_dir}"
         return 1
     fi
+
+    # Count repositories in clone directory
+    local repo_count
+    repo_count=$(find "${clone_dir}" -maxdepth 2 -name ".git" -type d 2>/dev/null | wc -l | tr -d ' ')
+    log_info "Found ${repo_count} repositories in ${clone_dir}"
 
     cd "${REPO_ROOT}"
 
@@ -398,6 +407,11 @@ main() {
     # Step 6: Clone repositories
     log_info "Step 1/2: Cloning Gerrit Repositories"
     log_info "------------------------------------------"
+    echo ""
+    log_info "💡 To get fresh/complete data, delete existing clone directories first:"
+    log_info "   rm -rf /tmp/gerrit.onap.org"
+    log_info "   rm -rf /tmp/git.opendaylight.org"
+    echo ""
     for project in "${projects[@]}"; do
         local gerrit_host
         gerrit_host=$(get_project_info "${project}" "gerrit")

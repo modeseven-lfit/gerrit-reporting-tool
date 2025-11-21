@@ -193,22 +193,6 @@ log_info "Setting up for GitHub API upload to ${REMOTE_REPO}..."
 TARGET_BASE="data/artifacts/${DATE_FOLDER}"
 log_info "Target base directory: ${TARGET_BASE}"
 
-# Check if target directory already exists by trying to get README
-EXISTING_README=$(get_file_sha "${TARGET_BASE}/README.md")
-
-if [ -n "$EXISTING_README" ]; then
-    log_warning "Target directory already exists: ${TARGET_BASE}"
-
-    # Check if this is a manual workflow run
-    if [ "${GITHUB_EVENT_NAME:-}" = "workflow_dispatch" ]; then
-        log_warning "Manual workflow invocation detected - skipping upload to avoid overwriting existing data"
-        log_info "If you need to update the reports, please manually delete the existing folder in the target repository first"
-        exit 0
-    else
-        log_warning "Scheduled run detected - will overwrite existing data"
-    fi
-fi
-
 # Track progress
 FILES_COPIED=0
 PROJECTS_PROCESSED=0
@@ -240,6 +224,23 @@ while IFS= read -r -d '' artifact_dir; do
     if [ -z "$(ls -A "$artifact_dir" 2>/dev/null)" ]; then
         log_warning "No files found in ${artifact_dir}"
         continue
+    fi
+
+    # Check if this specific project's directory already exists in the target repo
+    PROJECT_TARGET_DIR="${TARGET_BASE}/reports-${SLUG}"
+    EXISTING_PROJECT=$(get_file_sha "${PROJECT_TARGET_DIR}/README.md" 2>/dev/null || get_file_sha "${PROJECT_TARGET_DIR}/index.html" 2>/dev/null || echo "")
+
+    if [ -n "$EXISTING_PROJECT" ]; then
+        log_warning "Target directory already exists for project ${SLUG}: ${PROJECT_TARGET_DIR}"
+
+        # Check if this is a manual workflow run
+        if [ "${GITHUB_EVENT_NAME:-}" = "workflow_dispatch" ]; then
+            log_warning "Manual workflow invocation detected - skipping ${SLUG} to avoid overwriting existing data"
+            log_info "If you need to update the reports for ${SLUG}, please manually delete the existing folder in the target repository first"
+            continue
+        else
+            log_warning "Scheduled run detected - will overwrite existing data for ${SLUG}"
+        fi
     fi
 
     PROJECTS_PROCESSED=$((PROJECTS_PROCESSED + 1))
@@ -279,6 +280,23 @@ while IFS= read -r -d '' artifact_dir; do
         continue
     fi
 
+    # Check if this specific project's directory already exists in the target repo
+    PROJECT_TARGET_DIR="${TARGET_BASE}/reports-${SLUG}"
+    EXISTING_PROJECT=$(get_file_sha "${PROJECT_TARGET_DIR}/README.md" 2>/dev/null || get_file_sha "${PROJECT_TARGET_DIR}/index.html" 2>/dev/null || echo "")
+
+    if [ -n "$EXISTING_PROJECT" ]; then
+        log_warning "Target directory already exists for project ${SLUG}: ${PROJECT_TARGET_DIR}"
+
+        # Check if this is a manual workflow run
+        if [ "${GITHUB_EVENT_NAME:-}" = "workflow_dispatch" ]; then
+            log_warning "Manual workflow invocation detected - skipping raw data for ${SLUG} to avoid overwriting existing data"
+            log_info "If you need to update the raw data for ${SLUG}, please manually delete the existing folder in the target repository first"
+            continue
+        else
+            log_warning "Scheduled run detected - will overwrite existing raw data for ${SLUG}"
+        fi
+    fi
+
     log_info "Processing raw data for: ${SLUG}"
 
     # Upload all files from this directory
@@ -304,9 +322,12 @@ while IFS= read -r -d '' artifact_dir; do
 done < <(find "${ARTIFACTS_DIR}" -maxdepth 1 -type d -name "raw-data-*" -print0 2>/dev/null)
 
 # Check if we actually copied anything
-if [ $FILES_COPIED -eq 0 ]; then
-    log_error "No files were copied from artifacts"
+if [ $FILES_COPIED -eq 0 ] && [ $PROJECTS_PROCESSED -eq 0 ]; then
+    log_error "No files were copied from artifacts and no projects were processed"
     exit 1
+elif [ $FILES_COPIED -eq 0 ] && [ $PROJECTS_PROCESSED -gt 0 ]; then
+    log_warning "No new files were copied (all projects may have been skipped due to existing data)"
+    log_info "This is expected for manual runs when data already exists"
 fi
 
 log_success "Total files uploaded: ${FILES_COPIED}"
