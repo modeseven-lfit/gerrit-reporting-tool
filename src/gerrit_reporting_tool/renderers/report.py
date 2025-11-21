@@ -929,7 +929,10 @@ class ReportRenderer:
             data.get("summaries", {}).get("counts", {}).get("total_authors", 0)
         )
 
-        sections = ["## 👥 Top Contributors (Last Year)"]
+        sections = ["## 👥 Top Contributors"]
+        sections.append("")
+        sections.append("The data presented in the table below covers the past twelve month period.")
+        sections.append("")
         sections.append(f"**Contributors Found:** {total_authors:,}")
 
         # Generate consolidated table with all contributors
@@ -1103,7 +1106,10 @@ class ReportRenderer:
             data.get("summaries", {}).get("counts", {}).get("total_organizations", 0)
         )
 
-        lines = ["## 🏢 Top Organizations (Last Year)"]
+        lines = ["## 🏢 Top Organizations"]
+        lines.append("")
+        lines.append("The data presented in the table below covers the past twelve month period.")
+        lines.append("")
         lines.append(f"**Organizations Found:** {total_orgs:,}")
         lines.append("")
         lines.append(
@@ -1210,7 +1216,7 @@ class ReportRenderer:
         jobs = orphaned_data.get("jobs", {})
 
         lines = [
-            "## 🏚️ Orphaned Jenkins Jobs (Archived Projects)",
+            "## 🏚️ Orphaned Jenkins Jobs",
             "",
             f"**Total Orphaned Jobs:** {total_orphaned}",
             "",
@@ -1218,21 +1224,13 @@ class ReportRenderer:
             "",
         ]
 
-        # Summary by project state
-        if by_state:
-            lines.append("### Summary by Project State")
-            lines.append("")
-            for state, count in sorted(by_state.items()):
-                lines.append(f"- **{state}:** {count} jobs")
-            lines.append("")
-
         # Detailed table
         lines.extend(
             [
                 "### Detailed Job Listing",
                 "",
-                "| Job Name | Gerrit Project | Project State | Match Score |",
-                "|----------|----------------|---------------|-------------|",
+                "| Job Name | Gerrit Project | Project State |",
+                "|----------|----------------|---------------|",
             ]
         )
 
@@ -1253,14 +1251,13 @@ class ReportRenderer:
                 state_display = f"❓ {state}"
 
             lines.append(
-                f"| `{job_name}` | `{project_name}` | {state_display} | {score} |"
+                f"| {job_name} | {project_name} | {state_display} |"
             )
 
         lines.extend(
             [
                 "",
-                "**Recommendation:** Review these jobs and remove them if they are no longer needed, ",
-                "since their associated Gerrit projects are archived or read-only.",
+                "**Recommendation:** review these jobs and remove them if they are no longer needed.",
                 "",
             ]
         )
@@ -1603,6 +1600,7 @@ class ReportRenderer:
                         elif "gerrit project" in table_header and (
                             "github workflows" in table_header
                             or "jenkins jobs" in table_header
+                            or "project state" in table_header
                         ):
                             is_cicd_jobs = True
                         elif (
