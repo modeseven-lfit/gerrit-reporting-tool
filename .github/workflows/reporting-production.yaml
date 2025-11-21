@@ -282,11 +282,29 @@ jobs:
             if [[ "$CLASSIC_READ_ONLY_PAT_TOKEN" =~ [[:space:]] ]]; then
               echo "⚠️  WARNING: Token contains whitespace characters!"
               # Try to trim whitespace
-              export CLASSIC_READ_ONLY_PAT_TOKEN=$(echo "$CLASSIC_READ_ONLY_PAT_TOKEN" | tr -d '[:space:]')
+              trimmed_token=""
+              trimmed_token=$(echo "$CLASSIC_READ_ONLY_PAT_TOKEN" | tr -d '[:space:]')
+              export CLASSIC_READ_ONLY_PAT_TOKEN="$trimmed_token"
               echo "🔧 Token trimmed, new length: ${#CLASSIC_READ_ONLY_PAT_TOKEN}"
             fi
+
+            # Verify token is accessible in environment for Python
+            echo "🔍 Environment variable CLASSIC_READ_ONLY_PAT_TOKEN is set"
+
+            # Test GitHub API access directly
+            echo "🔍 Testing GitHub API access..."
+            response=""
+            response=$(curl -s -H "Authorization: Bearer ${CLASSIC_READ_ONLY_PAT_TOKEN}" \
+              "https://api.github.com/user" | jq -r '.login // .message // "ERROR"')
+            echo "🔍 GitHub API test response: ${response}"
           else
-            echo "⚠️ GitHub API integration disabled"
+            echo "⚠️ GitHub API integration disabled - CLASSIC_READ_ONLY_PAT_TOKEN not set"
+          fi
+
+          if [ -n "$GITHUB_ORG" ]; then
+            echo "🔍 GITHUB_ORG environment variable: ${GITHUB_ORG}"
+          else
+            echo "🔍 GITHUB_ORG environment variable: NOT SET (will auto-derive)"
           fi
 
           uv run gerrit-reporting-tool generate \

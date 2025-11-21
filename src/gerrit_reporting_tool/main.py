@@ -78,6 +78,8 @@ class APIStatistics:
             "jenkins": {"success": 0, "errors": {}},
             "info_master": {"success": False, "error": None},
         }
+        self.github_org: str = ""
+        self.github_org_source: str = ""
 
     def record_success(self, api_type: str) -> None:
         """Record a successful API call."""
@@ -101,6 +103,11 @@ class APIStatistics:
         self.stats["info_master"]["success"] = success
         if error:
             self.stats["info_master"]["error"] = error
+
+    def set_github_org(self, github_org: str, source: str = "") -> None:
+        """Set the GitHub organization being used for API queries."""
+        self.github_org = github_org
+        self.github_org_source = source
 
     def get_total_calls(self, api_type: str) -> int:
         """Get total number of API calls (success + errors)."""
@@ -192,6 +199,13 @@ class APIStatistics:
                 # GitHub API
                 if self.get_total_calls("github") > 0:
                     f.write("### GitHub API\n")
+                    if self.github_org:
+                        source_display = ""
+                        if self.github_org_source == "environment_variable":
+                            source_display = " (from PROJECTS_JSON)"
+                        elif self.github_org_source == "auto_derived":
+                            source_display = " (auto-derived)"
+                        f.write(f"- **Organization:** `{self.github_org}`{source_display}\n")
                     f.write(f"- ✅ Successful calls: {self.stats['github']['success']}\n")
                     total_errors = self.get_total_errors("github")
                     if total_errors > 0:
@@ -341,6 +355,9 @@ def main(args=None) -> int:
             # Store in config for all components to use
             config["github"] = github_org
             config["_github_org_source"] = github_org_source
+
+            # Store in API stats for reporting
+            api_stats.set_github_org(github_org, github_org_source)
 
             # Log what we determined
             if github_org_source == "auto_derived":

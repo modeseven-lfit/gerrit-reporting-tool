@@ -117,6 +117,7 @@ class GitHubAPIClient(BaseAPIClient):
         """
         try:
             url = f"/repos/{owner}/{repo}/actions/workflows"
+            self.logger.info(f"🔍 Querying GitHub API: {owner}/{repo} (URL: {url})")
             response = self.client.get(url)
 
             if response.status_code == 401:
@@ -199,7 +200,7 @@ class GitHubAPIClient(BaseAPIClient):
 
             elif response.status_code == 404:
                 self._record_error("github", 404)
-                self.logger.debug(f"Repository {owner}/{repo} not found or no access")
+                self.logger.warning(f"❌ Repository {owner}/{repo} not found (404) - may not exist on GitHub or token lacks access")
                 return []
 
             else:

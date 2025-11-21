@@ -412,7 +412,7 @@ Each project has a subdirectory named \`reports-<slug>\` containing:
 "
 
 # List all processed projects sorted by project name
-if [ ${#PROJECT_NAMES[@]} -gt 0 ]; then
+if [ -n "${PROJECT_NAMES+x}" ] && [ ${#PROJECT_NAMES[@]} -gt 0 ]; then
     # Create a temporary array for sorting
     declare -a SORTED_PROJECTS
 
