@@ -77,12 +77,24 @@ jobs:
         env:
           CLASSIC_READ_ONLY_PAT_TOKEN: >-
             ${{ secrets.CLASSIC_READ_ONLY_PAT_TOKEN }}
+          GERRIT_REPORTS_PAT_TOKEN: >-
+            ${{ secrets.GERRIT_REPORTS_PAT_TOKEN }}
           LF_GERRIT_INFO_MASTER_SSH_KEY: >-
             ${{ secrets.LF_GERRIT_INFO_MASTER_SSH_KEY }}
+        # yamllint disable rule:line-length
         run: |
           validation_failed=false
 
-          echo "🔐 Validating required secrets..."
+          # SHA1 of empty string - used to detect empty secrets
+          EMPTY_SHA1="da39a3ee5e6b4b0d3255bfef95601890afd80709"
+
+          echo "🔐 Secrets Validation"
+          echo ""
+
+          # Function to compute SHA1 without trailing newline
+          compute_sha1() {
+            printf "%s" "$1" | sha1sum | awk '{print $1}'
+          }
 
           # Check CLASSIC_READ_ONLY_PAT_TOKEN
           if [ -z "$CLASSIC_READ_ONLY_PAT_TOKEN" ]; then
@@ -90,7 +102,30 @@ jobs:
             echo "❌ CLASSIC_READ_ONLY_PAT_TOKEN: MISSING"
             validation_failed=true
           else
-            echo "✅ CLASSIC_READ_ONLY_PAT_TOKEN: Present"
+            token_sha1=$(compute_sha1 "$CLASSIC_READ_ONLY_PAT_TOKEN")
+            if [ "$token_sha1" = "$EMPTY_SHA1" ]; then
+              echo "::error::CLASSIC_READ_ONLY_PAT_TOKEN is empty"
+              echo "❌ CLASSIC_READ_ONLY_PAT_TOKEN: EMPTY"
+              validation_failed=true
+            else
+              echo "✅ CLASSIC_READ_ONLY_PAT_TOKEN: $token_sha1"
+            fi
+          fi
+
+          # Check GERRIT_REPORTS_PAT_TOKEN
+          if [ -z "$GERRIT_REPORTS_PAT_TOKEN" ]; then
+            echo "::error::GERRIT_REPORTS_PAT_TOKEN secret is not set"
+            echo "❌ GERRIT_REPORTS_PAT_TOKEN: MISSING"
+            validation_failed=true
+          else
+            gerrit_token_sha1=$(compute_sha1 "$GERRIT_REPORTS_PAT_TOKEN")
+            if [ "$gerrit_token_sha1" = "$EMPTY_SHA1" ]; then
+              echo "::error::GERRIT_REPORTS_PAT_TOKEN is empty"
+              echo "❌ GERRIT_REPORTS_PAT_TOKEN: EMPTY"
+              validation_failed=true
+            else
+              echo "✅ GERRIT_REPORTS_PAT_TOKEN: $gerrit_token_sha1"
+            fi
           fi
 
           # Check LF_GERRIT_INFO_MASTER_SSH_KEY (warning only)
@@ -98,23 +133,35 @@ jobs:
             echo "::warning::LF_GERRIT_INFO_MASTER_SSH_KEY secret not set"
             echo "⚠️  LF_GERRIT_INFO_MASTER_SSH_KEY: MISSING (HTTPS fallback)"
           else
-            echo "✅ LF_GERRIT_INFO_MASTER_SSH_KEY: Present"
+            ssh_key_sha1=$(compute_sha1 "$LF_GERRIT_INFO_MASTER_SSH_KEY")
+            if [ "$ssh_key_sha1" = "$EMPTY_SHA1" ]; then
+              echo "::warning::LF_GERRIT_INFO_MASTER_SSH_KEY is empty"
+              echo "⚠️  LF_GERRIT_INFO_MASTER_SSH_KEY: EMPTY (HTTPS fallback)"
+            else
+              echo "✅ LF_GERRIT_INFO_MASTER_SSH_KEY: $ssh_key_sha1"
+            fi
           fi
 
           # Write summary
           {
             echo "### 🔐 Secrets Validation"
             echo ""
-            if [ -n "$CLASSIC_READ_ONLY_PAT_TOKEN" ]; then
-              echo "- ✅ **CLASSIC_READ_ONLY_PAT_TOKEN:** Present"
+            if [ -n "$CLASSIC_READ_ONLY_PAT_TOKEN" ] && [ "${token_sha1:-$EMPTY_SHA1}" != "$EMPTY_SHA1" ]; then
+              echo "- ✅ **CLASSIC_READ_ONLY_PAT_TOKEN:** \`${token_sha1}\`"
             else
-              echo "- ❌ **CLASSIC_READ_ONLY_PAT_TOKEN:** MISSING"
+              echo "- ❌ **CLASSIC_READ_ONLY_PAT_TOKEN:** MISSING or EMPTY"
             fi
 
-            if [ -n "$LF_GERRIT_INFO_MASTER_SSH_KEY" ]; then
-              echo "- ✅ **LF_GERRIT_INFO_MASTER_SSH_KEY:** Present"
+            if [ -n "$GERRIT_REPORTS_PAT_TOKEN" ] && [ "${gerrit_token_sha1:-$EMPTY_SHA1}" != "$EMPTY_SHA1" ]; then
+              echo "- ✅ **GERRIT_REPORTS_PAT_TOKEN:** \`${gerrit_token_sha1}\`"
             else
-              echo "- ⚠️ **LF_GERRIT_INFO_MASTER_SSH_KEY:** MISSING"
+              echo "- ❌ **GERRIT_REPORTS_PAT_TOKEN:** MISSING or EMPTY"
+            fi
+
+            if [ -n "$LF_GERRIT_INFO_MASTER_SSH_KEY" ] && [ "${ssh_key_sha1:-$EMPTY_SHA1}" != "$EMPTY_SHA1" ]; then
+              echo "- ✅ **LF_GERRIT_INFO_MASTER_SSH_KEY:** \`${ssh_key_sha1}\`"
+            else
+              echo "- ⚠️ **LF_GERRIT_INFO_MASTER_SSH_KEY:** MISSING or EMPTY (HTTPS fallback)"
             fi
             echo ""
           } >> "$GITHUB_STEP_SUMMARY"
@@ -124,7 +171,9 @@ jobs:
             exit 1
           fi
 
+          echo ""
           echo "✅ All required secrets validated"
+        # yamllint enable rule:line-length
 
       - name: "Parse and validate PROJECTS_JSON"
         id: parse-projects
