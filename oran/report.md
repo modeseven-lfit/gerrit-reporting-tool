@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: O-RAN-SC
 
-**Generated:** November 22, 2025 at 07:12 UTC
+**Generated:** November 22, 2025 at 09:54 UTC
 **Schema Version:** 1.0.0
 
 ## 📈 Global Summary
@@ -81,7 +81,7 @@ The data presented in the table below covers the past 365 days.
 | Rank | Contributor | Commits | LOC | Δ LOC | Avg LOC/Commit | Repositories | Organization |
 |------|-------------|---------|-----|-------|----------------|--------------|--------------|
 | 1 | aravind.est | 159 | +3875 | 28085 | +24.4 | 19 | est.tech |
-| 2 | JohnKeeney | 134 | +1006 | 14718 | +7.5 | 21 | est.tech |
+| 2 | John Keeney | 134 | +1006 | 14718 | +7.5 | 21 | est.tech |
 | 3 | subhash kumar singh | 115 | +1811 | 2217 | +15.7 | 25 | samsung.com |
 | 4 | ashishj1729 | 75 | +2970 | 9002 | +39.6 | 9 | samsung.com |
 | 5 | Ravi Pendurty | 72 | +215762 | 265612 | +2996.7 | 5 | highstreet-technologies.com |
@@ -113,7 +113,7 @@ The data presented in the table below covers the past 365 days.
 | 31 | Jaehyung | 4 | +383 | 495 | +95.8 | 3 | ac.kr |
 | 32 | offina | 4 | +40 | 86 | +10.0 | 3 | offina.ai |
 | 33 | raviteja.karumuri | 4 | +35 | 41 | +8.8 | 4 | est.tech |
-| 34 | takahashi-tsc | 4 | +27 | 65 | +6.8 | 3 | nec.com |
+| 34 | Toshiaki Takahashi | 4 | +27 | 65 | +6.8 | 3 | nec.com |
 | 35 | Eric Ball | 4 | -8 | 80 | -2.0 | 5 | linuxfoundation.org |
 | 36 | Ashutosh Mishra | 3 | +3333 | 3355 | +1111.0 | 1 | nec.com |
 | 37 | Andrea Lacava | 3 | +306 | 688 | +102.0 | 1 | gmail.com |
@@ -153,158 +153,158 @@ The data presented in the table below covers the past 365 days.
 | 71 | Alexandre Huff | 0 | +0 | 0 | - | 8 | edu.br |
 | 72 | Alexandre Huff | 0 | +0 | 0 | - | 1 | gmail.com |
 | 73 | Alok Bhatt | 0 | +0 | 0 | - | 5 | hcl.com |
-| 74 | Amichai | 0 | +0 | 0 | - | 3 | att.com |
-| 75 | Andrew Grimberg | 0 | +0 | 0 | - | 25 | linuxfoundation.org |
-| 76 | Anssi Mannila | 0 | +0 | 0 | - | 5 | nokia.com |
-| 77 | Anupama P | 0 | +0 | 0 | - | 1 | nokia.com |
-| 78 | Anusha Nalluri | 0 | +0 | 0 | - | 1 | hcl.com |
-| 79 | Aric Gardner | 0 | +0 | 0 | - | 35 | linuxfoundation.org |
-| 80 | Arif Hussain | 0 | +0 | 0 | - | 2 | xoriant.com |
-| 81 | Arnaldo Hernandez | 0 | +0 | 0 | - | 1 | gmail.com |
-| 82 | Ashwin Sridharan | 0 | +0 | 0 | - | 1 | att.com |
+| 74 | Andrew Grimberg | 0 | +0 | 0 | - | 25 | linuxfoundation.org |
+| 75 | Anssi Mannila | 0 | +0 | 0 | - | 5 | nokia.com |
+| 76 | Anupama P | 0 | +0 | 0 | - | 1 | nokia.com |
+| 77 | Anusha Nalluri | 0 | +0 | 0 | - | 1 | hcl.com |
+| 78 | Aric Gardner | 0 | +0 | 0 | - | 35 | linuxfoundation.org |
+| 79 | Arif Hussain | 0 | +0 | 0 | - | 2 | xoriant.com |
+| 80 | Arnaldo Hernandez | 0 | +0 | 0 | - | 1 | gmail.com |
+| 81 | Ashwin Sridharan | 0 | +0 | 0 | - | 1 | att.com |
+| 82 | Ayumu Ueha | 0 | +0 | 0 | - | 1 | fujitsu.com |
 | 83 | Ayumu Ueha | 0 | +0 | 0 | - | 1 | fujitsu.com |
-| 84 | Ayumu Ueha | 0 | +0 | 0 | - | 1 | fujitsu.com |
-| 85 | Balaji Shankaran | 0 | +0 | 0 | - | 1 | radisys.com |
-| 86 | Balint Uveges | 0 | +0 | 0 | - | 2 | nokia.com |
-| 87 | Bengt Thuree | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 88 | Bharath Balasubramanian | 0 | +0 | 0 | - | 1 | att.com |
-| 89 | Bin Yang | 0 | +0 | 0 | - | 3 | windriver.com |
-| 90 | Bin Yang | 0 | +0 | 0 | - | 1 | windriver.com |
-| 91 | BjornMagnussonXA | 0 | +0 | 0 | - | 9 | est.tech |
-| 92 | Brad Davis | 0 | +0 | 0 | - | 1 | kumunetworks.com |
-| 93 | Brian Freeman | 0 | +0 | 0 | - | 1 | att.com |
-| 94 | Byonggon Chun | 0 | +0 | 0 | - | 1 | samsung.com |
-| 95 | Chandru | 0 | +0 | 0 | - | 3 | hcl.com |
-| 96 | Chen, Jackie (jv246a) | 0 | +0 | 0 | - | 2 | att.com |
-| 97 | Chengwei Wang | 0 | +0 | 0 | - | 1 | att.com |
-| 98 | Claudio D. Gasparini | 0 | +0 | 0 | - | 1 | att.com |
-| 99 | Cretella, Alexander (ac803y) | 0 | +0 | 0 | - | 1 | att.com |
-| 100 | DW Talton | 0 | +0 | 0 | - | 9 | linuxfoundation.org |
-| 101 | Daniel Pono Takamori | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 102 | Deepanshu Karnwal | 0 | +0 | 0 | - | 4 | hcl.com |
-| 103 | DenisGNoonan | 0 | +0 | 0 | - | 6 | est.tech |
-| 104 | E. Scott Daniels | 0 | +0 | 0 | - | 3 | att.com |
-| 105 | E. Scott Daniels | 0 | +0 | 0 | - | 11 | att.com |
-| 106 | Fabio Palumbo | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 107 | Fuss, Areli (af732p) | 0 | +0 | 0 | - | 4 | att.com |
-| 108 | HariomGupta(HCL) | 0 | +0 | 0 | - | 1 | hcl.com |
-| 109 | Harry Tran | 0 | +0 | 0 | - | 2 | att.com |
-| 110 | Heewon Park | 0 | +0 | 0 | - | 3 | samsung.com |
-| 111 | Heinonen Arvo | 0 | +0 | 0 | - | 1 | nokia.com |
-| 112 | Henrik Andersson | 0 | +0 | 0 | - | 18 | est.tech |
-| 113 | Hila Anina | 0 | +0 | 0 | - | 2 | att.com |
-| 114 | Himanshu Puorhit | 0 | +0 | 0 | - | 2 | gslab.com |
-| 115 | Houa Yang | 0 | +0 | 0 | - | 5 | linuxfoundation.org |
-| 116 | Irina | 0 | +0 | 0 | - | 3 | att.com |
-| 117 | Jack Lucas | 0 | +0 | 0 | - | 1 | att.com |
-| 118 | James Li | 0 | +0 | 0 | - | 1 | gmail.com |
-| 119 | JiWonOck | 0 | +0 | 0 | - | 1 | gmail.com |
-| 120 | Joao F. Santos | 0 | +0 | 0 | - | 1 | vt.edu |
-| 121 | Johannes Becker | 0 | +0 | 0 | - | 1 | caur.us |
-| 122 | Juha Hyttinen | 0 | +0 | 0 | - | 8 | nokia.com |
-| 123 | Karl Koch | 0 | +0 | 0 | - | 1 | telekom.de |
-| 124 | Katri Turunen | 0 | +0 | 0 | - | 1 | nokia.com |
-| 125 | Kim Do Young | 0 | +0 | 0 | - | 2 | gmail.com |
-| 126 | Koichi Edagawa | 0 | +0 | 0 | - | 1 | nec.com |
-| 127 | Konstantinos Archangelof | 0 | +0 | 0 | - | 1 | nokia.com |
-| 128 | Konstantinos Papastergiou | 0 | +0 | 0 | - | 1 | telekom.de |
-| 129 | Lathish | 0 | +0 | 0 | - | 4 | est.tech |
-| 130 | Lathish | 0 | +0 | 0 | - | 1 | gmail.com |
-| 131 | Litao Gao | 0 | +0 | 0 | - | 1 | windriver.com |
-| 132 | Lott, Christopher (cl778h) | 0 | +0 | 0 | - | 23 | att.com |
-| 133 | Louis Li | 0 | +0 | 0 | - | 1 | gmail.com |
-| 134 | Luis Farias | 0 | +0 | 0 | - | 1 | intel.com |
-| 135 | Mahesh Jethanandani | 0 | +0 | 0 | - | 5 | gmail.com |
-| 136 | Manish Goregaokar | 0 | +0 | 0 | - | 1 | gmail.com |
-| 137 | Manoop Talasila | 0 | +0 | 0 | - | 1 | att.com |
-| 138 | Marco Tallskog | 0 | +0 | 0 | - | 3 | nokia.com |
-| 139 | Markku Virtanen | 0 | +0 | 0 | - | 1 | nokia.com |
-| 140 | Matti Hiltunen | 0 | +0 | 0 | - | 3 | att.com |
-| 141 | Michael Dürre | 0 | +0 | 0 | - | 2 | highstreet-technologies.com |
-| 142 | Mohamed Abukar | 0 | +0 | 0 | - | 12 | nokia.com |
-| 143 | Mohammad Arif Belgaumkar | 0 | +0 | 0 | - | 3 | parallelwireless.com |
-| 144 | NITIN GUPTA | 0 | +0 | 0 | - | 2 | yahoo.com |
-| 145 | Nhat Anh | 0 | +0 | 0 | - | 1 | gmail.com |
-| 146 | Nicolas Hu | 0 | +0 | 0 | - | 1 | att.com |
-| 147 | PatrikBuhr | 0 | +0 | 0 | - | 11 | est.tech |
-| 148 | Peng Cao | 0 | +0 | 0 | - | 1 | intel.com |
-| 149 | Peter Szilagyi | 0 | +0 | 0 | - | 2 | nokia.com |
-| 150 | Petri Ovaska | 0 | +0 | 0 | - | 3 | nokia.com |
-| 151 | Radoslaw Chmiel | 0 | +0 | 0 | - | 1 | samsung.com |
-| 152 | Rahul Banerji | 0 | +0 | 0 | - | 5 | samsung.com |
-| 153 | RahulBanerji | 0 | +0 | 0 | - | 1 | gmail.com |
-| 154 | Rakshith Pai | 0 | +0 | 0 | - | 1 | nokia.com |
-| 155 | RehanRaza | 0 | +0 | 0 | - | 6 | est.tech |
-| 156 | Rohan Patel | 0 | +0 | 0 | - | 1 | att.com |
-| 157 | Rolf Badorek | 0 | +0 | 0 | - | 3 | nokia.com |
-| 158 | Ron Shacham | 0 | +0 | 0 | - | 7 | att.com |
-| 159 | Roni Riska | 0 | +0 | 0 | - | 8 | nokia.com |
-| 160 | Roni Riska | 0 | +0 | 0 | - | 1 | nsn-intra.net |
-| 161 | Sangama Mahesh Gunasekaran | 0 | +0 | 0 | - | 1 | nokia.com |
-| 162 | Sangeetha KR | 0 | +0 | 0 | - | 2 | hcl.com |
-| 163 | Sangwi Kang | 0 | +0 | 0 | - | 1 | ac.kr |
-| 164 | Saravanan B | 0 | +0 | 0 | - | 1 | samsung.com |
-| 165 | Sarkar, Anand (as0481) | 0 | +0 | 0 | - | 1 | att.com |
-| 166 | Satish Inakoti | 0 | +0 | 0 | - | 1 | nokia.com |
-| 167 | Seshu Kumar Mudiganti | 0 | +0 | 0 | - | 1 | windriver.com |
-| 168 | Sohyeon Kim | 0 | +0 | 0 | - | 1 | naver.com |
-| 169 | Sri ram | 0 | +0 | 0 | - | 1 | hcl.com |
-| 170 | Sridhar K. N. Rao | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 171 | Suchismita Jena | 0 | +0 | 0 | - | 2 | nokia.com |
-| 172 | Sungjin Lee | 0 | +0 | 0 | - | 3 | gmail.com |
-| 173 | Timo Tietavainen | 0 | +0 | 0 | - | 21 | nokia.com |
-| 174 | Timothy Ebido | 0 | +0 | 0 | - | 1 | samsung.com |
-| 175 | Tommy Carpenter | 0 | +0 | 0 | - | 7 | att.com |
-| 176 | Tommy Carpenter | 0 | +0 | 0 | - | 4 | att.com |
-| 177 | Tuan Nguyen | 0 | +0 | 0 | - | 3 | gmail.com |
-| 178 | Vanessa Valderrama | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 179 | Varada Varad | 0 | +0 | 0 | - | 1 | samsung.com |
-| 180 | Vidhu | 0 | +0 | 0 | - | 1 | hcl.com |
-| 181 | Xiaohua Zhang | 0 | +0 | 0 | - | 3 | chinamobile.com |
-| 182 | Xiaohua Zhang | 0 | +0 | 0 | - | 1 | windriver.com |
-| 183 | YCJict | 0 | +0 | 0 | - | 1 | ac.cn |
-| 184 | Yaki Ratz | 0 | +0 | 0 | - | 3 | att.com |
-| 185 | Yingying Wang | 0 | +0 | 0 | - | 1 | chinamobile.com |
-| 186 | YongchaoWu | 0 | +0 | 0 | - | 3 | est.tech |
-| 187 | Youhwan Seol | 0 | +0 | 0 | - | 5 | samsung.com |
-| 188 | Yueh-Huan | 0 | +0 | 0 | - | 1 | gmail.com |
-| 189 | Zhe | 0 | +0 | 0 | - | 5 | att.com |
-| 190 | Zhimin | 0 | +0 | 0 | - | 1 | intel.com |
-| 191 | aa7133@att.com | 0 | +0 | 0 | - | 1 | att.com |
-| 192 | aditverm | 0 | +0 | 0 | - | 3 | nokia.com |
-| 193 | ambrishest | 0 | +0 | 0 | - | 5 | est.tech |
-| 194 | amit.sarnath | 0 | +0 | 0 | - | 2 | hcl.com |
-| 195 | anhnghcl | 0 | +0 | 0 | - | 1 | hcl.com |
-| 196 | barveankit | 0 | +0 | 0 | - | 1 | radisys.com |
-| 197 | bhanuchandra | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
-| 198 | cor5in | 0 | +0 | 0 | - | 2 | ac.kr |
-| 199 | cschowdam | 0 | +0 | 0 | - | 1 | commscope.com |
-| 200 | czichy | 0 | +0 | 0 | - | 37 | nokia.com |
-| 201 | d k | 0 | +0 | 0 | - | 1 | att.com |
-| 202 | dave kormann | 0 | +0 | 0 | - | 4 | att.com |
-| 203 | dhirajverma | 0 | +0 | 0 | - | 5 | nokia.com |
-| 204 | dliu5 | 0 | +0 | 0 | - | 2 | windriver.com |
-| 205 | ec472j | 0 | +0 | 0 | - | 1 | att.com |
-| 206 | ecaiyanlinux | 0 | +0 | 0 | - | 6 | est.tech |
-| 207 | ehietala | 0 | +0 | 0 | - | 1 | nokia.com |
-| 208 | gautamk189 | 0 | +0 | 0 | - | 1 | hcl.com |
-| 209 | halil.cakal | 0 | +0 | 0 | - | 14 | est.tech |
-| 210 | himeshshukla | 0 | +0 | 0 | - | 2 | hcl.com |
-| 211 | hoejoo.lee | 0 | +0 | 0 | - | 6 | samsung.com |
-| 212 | hyuksun98 | 0 | +0 | 0 | - | 2 | ac.kr |
-| 213 | ib565x | 0 | +0 | 0 | - | 1 | att.com |
-| 214 | inni-iii | 0 | +0 | 0 | - | 1 | nate.com |
-| 215 | is005q | 0 | +0 | 0 | - | 5 | att.com |
-| 216 | jinwei.fan | 0 | +0 | 0 | - | 1 | samsung.com |
-| 217 | josephthaliath | 0 | +0 | 0 | - | 10 | samsung.com |
-| 218 | kalnagy | 0 | +0 | 0 | - | 2 | nokia.com |
-| 219 | kk4281@att.com | 0 | +0 | 0 | - | 1 | att.com |
-| 220 | knowpd | 0 | +0 | 0 | - | 1 | att.com |
-| 221 | ksun1 | 0 | +0 | 0 | - | 1 | windriver.com |
-| 222 | ktimoney | 0 | +0 | 0 | - | 16 | est.tech |
-| 223 | lal.harshita | 0 | +0 | 0 | - | 2 | radisys.com |
-| 224 | lj1412 | 0 | +0 | 0 | - | 1 | att.com |
-| 225 | m10802821 | 0 | +0 | 0 | - | 1 | edu.tw |
+| 84 | Balaji Shankaran | 0 | +0 | 0 | - | 1 | radisys.com |
+| 85 | Balint Uveges | 0 | +0 | 0 | - | 2 | nokia.com |
+| 86 | Bengt Thuree | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 87 | Bharath Balasubramanian | 0 | +0 | 0 | - | 1 | att.com |
+| 88 | Bin Yang | 0 | +0 | 0 | - | 3 | windriver.com |
+| 89 | Bin Yang | 0 | +0 | 0 | - | 1 | windriver.com |
+| 90 | BjornMagnussonXA | 0 | +0 | 0 | - | 9 | est.tech |
+| 91 | Brad Davis | 0 | +0 | 0 | - | 1 | kumunetworks.com |
+| 92 | Brian Freeman | 0 | +0 | 0 | - | 1 | att.com |
+| 93 | Byonggon Chun | 0 | +0 | 0 | - | 1 | samsung.com |
+| 94 | Chandru | 0 | +0 | 0 | - | 3 | hcl.com |
+| 95 | Chen, Jackie (jv246a) | 0 | +0 | 0 | - | 2 | att.com |
+| 96 | Chengwei Wang | 0 | +0 | 0 | - | 1 | att.com |
+| 97 | Claudio D. Gasparini | 0 | +0 | 0 | - | 1 | att.com |
+| 98 | Cretella, Alexander (ac803y) | 0 | +0 | 0 | - | 1 | att.com |
+| 99 | DW Talton | 0 | +0 | 0 | - | 9 | linuxfoundation.org |
+| 100 | Daniel Pono Takamori | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 101 | Deepanshu Karnwal | 0 | +0 | 0 | - | 4 | hcl.com |
+| 102 | DenisGNoonan | 0 | +0 | 0 | - | 6 | est.tech |
+| 103 | E. Scott Daniels | 0 | +0 | 0 | - | 3 | att.com |
+| 104 | E. Scott Daniels | 0 | +0 | 0 | - | 11 | att.com |
+| 105 | Fabio Palumbo | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 106 | Fuss, Areli (af732p) | 0 | +0 | 0 | - | 4 | att.com |
+| 107 | HariomGupta(HCL) | 0 | +0 | 0 | - | 1 | hcl.com |
+| 108 | Harry Tran | 0 | +0 | 0 | - | 2 | att.com |
+| 109 | Heewon Park | 0 | +0 | 0 | - | 3 | samsung.com |
+| 110 | Heinonen Arvo | 0 | +0 | 0 | - | 1 | nokia.com |
+| 111 | Hila Anina | 0 | +0 | 0 | - | 2 | att.com |
+| 112 | Himanshu Puorhit | 0 | +0 | 0 | - | 2 | gslab.com |
+| 113 | Houa Yang | 0 | +0 | 0 | - | 5 | linuxfoundation.org |
+| 114 | Irina | 0 | +0 | 0 | - | 3 | att.com |
+| 115 | Jack Lucas | 0 | +0 | 0 | - | 1 | att.com |
+| 116 | James Li | 0 | +0 | 0 | - | 1 | gmail.com |
+| 117 | JiWonOck | 0 | +0 | 0 | - | 1 | gmail.com |
+| 118 | Joao F. Santos | 0 | +0 | 0 | - | 1 | vt.edu |
+| 119 | Johannes Becker | 0 | +0 | 0 | - | 1 | caur.us |
+| 120 | Juha Hyttinen | 0 | +0 | 0 | - | 8 | nokia.com |
+| 121 | Karl Koch | 0 | +0 | 0 | - | 1 | telekom.de |
+| 122 | Katri Turunen | 0 | +0 | 0 | - | 1 | nokia.com |
+| 123 | Kim Do Young | 0 | +0 | 0 | - | 2 | gmail.com |
+| 124 | Koichi Edagawa | 0 | +0 | 0 | - | 1 | nec.com |
+| 125 | Konstantinos Archangelof | 0 | +0 | 0 | - | 1 | nokia.com |
+| 126 | Konstantinos Papastergiou | 0 | +0 | 0 | - | 1 | telekom.de |
+| 127 | Lathish | 0 | +0 | 0 | - | 4 | est.tech |
+| 128 | Lathish | 0 | +0 | 0 | - | 1 | gmail.com |
+| 129 | Litao Gao | 0 | +0 | 0 | - | 1 | windriver.com |
+| 130 | Lott, Christopher (cl778h) | 0 | +0 | 0 | - | 23 | att.com |
+| 131 | Louis Li | 0 | +0 | 0 | - | 1 | gmail.com |
+| 132 | Luis Farias | 0 | +0 | 0 | - | 1 | intel.com |
+| 133 | Mahesh Jethanandani | 0 | +0 | 0 | - | 5 | gmail.com |
+| 134 | Manish Goregaokar | 0 | +0 | 0 | - | 1 | gmail.com |
+| 135 | Manoop Talasila | 0 | +0 | 0 | - | 1 | att.com |
+| 136 | Marco Tallskog | 0 | +0 | 0 | - | 3 | nokia.com |
+| 137 | Markku Virtanen | 0 | +0 | 0 | - | 1 | nokia.com |
+| 138 | Matti Hiltunen | 0 | +0 | 0 | - | 3 | att.com |
+| 139 | Michael Dürre | 0 | +0 | 0 | - | 2 | highstreet-technologies.com |
+| 140 | Mohamed Abukar | 0 | +0 | 0 | - | 12 | nokia.com |
+| 141 | NITIN GUPTA | 0 | +0 | 0 | - | 2 | yahoo.com |
+| 142 | Nhat Anh | 0 | +0 | 0 | - | 1 | gmail.com |
+| 143 | Nicolas Hu | 0 | +0 | 0 | - | 1 | att.com |
+| 144 | PatrikBuhr | 0 | +0 | 0 | - | 11 | est.tech |
+| 145 | Peng Cao | 0 | +0 | 0 | - | 1 | intel.com |
+| 146 | Peter Szilagyi | 0 | +0 | 0 | - | 2 | nokia.com |
+| 147 | Petri Ovaska | 0 | +0 | 0 | - | 3 | nokia.com |
+| 148 | Radoslaw Chmiel | 0 | +0 | 0 | - | 1 | samsung.com |
+| 149 | Rahul Banerji | 0 | +0 | 0 | - | 5 | samsung.com |
+| 150 | RahulBanerji | 0 | +0 | 0 | - | 1 | gmail.com |
+| 151 | Rakshith Pai | 0 | +0 | 0 | - | 1 | nokia.com |
+| 152 | RehanRaza | 0 | +0 | 0 | - | 6 | est.tech |
+| 153 | Rohan Patel | 0 | +0 | 0 | - | 1 | att.com |
+| 154 | Rolf Badorek | 0 | +0 | 0 | - | 3 | nokia.com |
+| 155 | Ron Shacham | 0 | +0 | 0 | - | 7 | att.com |
+| 156 | Roni Riska | 0 | +0 | 0 | - | 8 | nokia.com |
+| 157 | Roni Riska | 0 | +0 | 0 | - | 1 | nsn-intra.net |
+| 158 | Sangama Mahesh Gunasekaran | 0 | +0 | 0 | - | 1 | nokia.com |
+| 159 | Sangeetha KR | 0 | +0 | 0 | - | 2 | hcl.com |
+| 160 | Sangwi Kang | 0 | +0 | 0 | - | 1 | ac.kr |
+| 161 | Saravanan B | 0 | +0 | 0 | - | 1 | samsung.com |
+| 162 | Sarkar, Anand (as0481) | 0 | +0 | 0 | - | 1 | att.com |
+| 163 | Satish Inakoti | 0 | +0 | 0 | - | 1 | nokia.com |
+| 164 | Seshu Kumar Mudiganti | 0 | +0 | 0 | - | 1 | windriver.com |
+| 165 | Sohyeon Kim | 0 | +0 | 0 | - | 1 | naver.com |
+| 166 | Sri ram | 0 | +0 | 0 | - | 1 | hcl.com |
+| 167 | Sridhar K. N. Rao | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 168 | Suchismita Jena | 0 | +0 | 0 | - | 2 | nokia.com |
+| 169 | Sungjin Lee | 0 | +0 | 0 | - | 3 | gmail.com |
+| 170 | Timo Tietavainen | 0 | +0 | 0 | - | 21 | nokia.com |
+| 171 | Timothy Ebido | 0 | +0 | 0 | - | 1 | samsung.com |
+| 172 | Tommy Carpenter | 0 | +0 | 0 | - | 7 | att.com |
+| 173 | Tommy Carpenter | 0 | +0 | 0 | - | 4 | att.com |
+| 174 | Tuan Nguyen | 0 | +0 | 0 | - | 3 | gmail.com |
+| 175 | Vanessa Valderrama | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 176 | Varada Varad | 0 | +0 | 0 | - | 1 | samsung.com |
+| 177 | Vidhu | 0 | +0 | 0 | - | 1 | hcl.com |
+| 178 | Xiaohua Zhang | 0 | +0 | 0 | - | 3 | chinamobile.com |
+| 179 | Xiaohua Zhang | 0 | +0 | 0 | - | 1 | windriver.com |
+| 180 | YCJict | 0 | +0 | 0 | - | 1 | ac.cn |
+| 181 | Yaki Ratz | 0 | +0 | 0 | - | 3 | att.com |
+| 182 | Yingying Wang | 0 | +0 | 0 | - | 1 | chinamobile.com |
+| 183 | YongchaoWu | 0 | +0 | 0 | - | 3 | est.tech |
+| 184 | Youhwan Seol | 0 | +0 | 0 | - | 5 | samsung.com |
+| 185 | Yueh-Huan | 0 | +0 | 0 | - | 1 | gmail.com |
+| 186 | Zhe | 0 | +0 | 0 | - | 5 | att.com |
+| 187 | Zhimin | 0 | +0 | 0 | - | 1 | intel.com |
+| 188 | aa7133@att.com | 0 | +0 | 0 | - | 1 | att.com |
+| 189 | aditverm | 0 | +0 | 0 | - | 3 | nokia.com |
+| 190 | ambrishest | 0 | +0 | 0 | - | 5 | est.tech |
+| 191 | amit.sarnath | 0 | +0 | 0 | - | 2 | hcl.com |
+| 192 | anhnghcl | 0 | +0 | 0 | - | 1 | hcl.com |
+| 193 | as761j | 0 | +0 | 0 | - | 3 | att.com |
+| 194 | barveankit | 0 | +0 | 0 | - | 1 | radisys.com |
+| 195 | bhanuchandra | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
+| 196 | cor5in | 0 | +0 | 0 | - | 2 | ac.kr |
+| 197 | cschowdam | 0 | +0 | 0 | - | 1 | commscope.com |
+| 198 | czichy | 0 | +0 | 0 | - | 37 | nokia.com |
+| 199 | d k | 0 | +0 | 0 | - | 1 | att.com |
+| 200 | dave kormann | 0 | +0 | 0 | - | 4 | att.com |
+| 201 | dhirajverma | 0 | +0 | 0 | - | 5 | nokia.com |
+| 202 | dliu5 | 0 | +0 | 0 | - | 2 | windriver.com |
+| 203 | ec472j | 0 | +0 | 0 | - | 1 | att.com |
+| 204 | ecaiyanlinux | 0 | +0 | 0 | - | 6 | est.tech |
+| 205 | ehietala | 0 | +0 | 0 | - | 1 | nokia.com |
+| 206 | elinuxhenrik | 0 | +0 | 0 | - | 18 | est.tech |
+| 207 | gautamk189 | 0 | +0 | 0 | - | 1 | hcl.com |
+| 208 | halil.cakal | 0 | +0 | 0 | - | 14 | est.tech |
+| 209 | himeshshukla | 0 | +0 | 0 | - | 2 | hcl.com |
+| 210 | hoejoo.lee | 0 | +0 | 0 | - | 6 | samsung.com |
+| 211 | hyuksun98 | 0 | +0 | 0 | - | 2 | ac.kr |
+| 212 | ib565x | 0 | +0 | 0 | - | 1 | att.com |
+| 213 | inni-iii | 0 | +0 | 0 | - | 1 | nate.com |
+| 214 | is005q | 0 | +0 | 0 | - | 5 | att.com |
+| 215 | jinwei.fan | 0 | +0 | 0 | - | 1 | samsung.com |
+| 216 | josephthaliath | 0 | +0 | 0 | - | 10 | samsung.com |
+| 217 | kalnagy | 0 | +0 | 0 | - | 2 | nokia.com |
+| 218 | kk4281@att.com | 0 | +0 | 0 | - | 1 | att.com |
+| 219 | knowpd | 0 | +0 | 0 | - | 1 | att.com |
+| 220 | ksun1 | 0 | +0 | 0 | - | 1 | windriver.com |
+| 221 | ktimoney | 0 | +0 | 0 | - | 16 | est.tech |
+| 222 | lal.harshita | 0 | +0 | 0 | - | 2 | radisys.com |
+| 223 | lj1412 | 0 | +0 | 0 | - | 1 | att.com |
+| 224 | m10802821 | 0 | +0 | 0 | - | 1 | edu.tw |
+| 225 | mabelgaumkar1 | 0 | +0 | 0 | - | 3 | parallelwireless.com |
 | 226 | manoj1 | 0 | +0 | 0 | - | 5 | nokia.com |
 | 227 | maximesson | 0 | +0 | 0 | - | 3 | est.tech |
 | 228 | minhac.lee | 0 | +0 | 0 | - | 6 | samsung.com |
@@ -377,7 +377,7 @@ The data presented in the table below covers the past 365 days.
 | nonrtric | 26 | +368 | 5 | 7 | 2025-11-15 | ✅ |
 | nonrtric/plt/a1policymanagementservice | 24 | +10444 | 5 | 44 | 2025-10-09 | ✅ |
 | o-du/l2 | 24 | +109048 | 4 | 161 | 2025-06-14 | ✅ |
-| nonrtric/plt/sme | 18 | +314 | 4 | 44 | 2025-10-09 | ✅ |
+| nonrtric/plt/sme | 18 | +314 | 4 | 45 | 2025-10-08 | ✅ |
 | aiml-fw/athp/data-extraction | 16 | +375 | 6 | 5 | 2025-11-17 | ✅ |
 | nonrtric/plt/ranpm | 16 | +2163 | 3 | 4 | 2025-11-18 | ✅ |
 | sim/a1-interface | 15 | +114 | 5 | 7 | 2025-11-15 | ✅ |
@@ -419,7 +419,7 @@ The data presented in the table below covers the past 365 days.
 | aiml-fw/awmf/cli | 1 | +12 | 1 | 57 | 2025-09-26 | ✅ |
 | ric-plt/vespamgr | 1 | +0 | 1 | 10 | 2025-11-12 | ✅ |
 | smo/o1 | 1 | +9 | 1 | 207 | 2025-04-29 | ✅ |
-| aiml-fw | 0 | +0 | 0 | 575 | 2024-04-26 | ☑️ |
+| aiml-fw | 0 | +0 | 0 | 576 | 2024-04-25 | ☑️ |
 | aiml-fw/aihp/tps/kserve-adapter | 0 | +0 | 0 | 1,152 | 2022-09-27 | 🛑 |
 | aiml-fw/apm/monitoring-agent | 0 | +0 | 0 | 389 | 2024-10-29 | ☑️ |
 | com/golog | 0 | +0 | 0 | 570 | 2024-05-01 | ☑️ |
@@ -434,7 +434,7 @@ The data presented in the table below covers the past 365 days.
 | ric-app/ccc | 0 | +0 | 0 | 799 | 2023-09-15 | ☑️ |
 | ric-app/hw | 0 | +0 | 0 | 1,729 | 2021-02-27 | 🛑 |
 | ric-app/hw-go | 0 | +0 | 0 | 1,072 | 2022-12-16 | ☑️ |
-| ric-app/hw-python | 0 | +0 | 0 | 1,071 | 2022-12-17 | ☑️ |
+| ric-app/hw-python | 0 | +0 | 0 | 1,072 | 2022-12-16 | ☑️ |
 | ric-app/hw-rust | 0 | +0 | 0 | 512 | 2024-06-28 | ☑️ |
 | ric-app/kpimon-go | 0 | +0 | 0 | 548 | 2024-05-23 | ☑️ |
 | ric-app/lp | 0 | +0 | 0 | 570 | 2024-05-01 | ☑️ |
@@ -443,7 +443,7 @@ The data presented in the table below covers the past 365 days.
 | ric-app/qp-aimlfw | 0 | +0 | 0 | 1,073 | 2022-12-15 | ☑️ |
 | ric-app/rc | 0 | +0 | 0 | 928 | 2023-05-09 | ☑️ |
 | ric-app/ric-sdk-py | 0 | +0 | 0 | 1,731 | 2021-02-25 | 🛑 |
-| ric-app/ts | 0 | +0 | 0 | 1,040 | 2023-01-17 | ☑️ |
+| ric-app/ts | 0 | +0 | 0 | 1,041 | 2023-01-16 | ☑️ |
 | ric-plt/alarm-cpp | 0 | +0 | 0 | 570 | 2024-05-01 | ☑️ |
 | ric-plt/asn1-documents | 0 | +0 | 0 | 813 | 2023-09-01 | ☑️ |
 | ric-plt/dbaas/hiredis-vip | 0 | +0 | 0 | 662 | 2024-01-30 | ☑️ |
@@ -456,16 +456,16 @@ The data presented in the table below covers the past 365 days.
 | ric-plt/ricctl | 0 | +0 | 0 | 1,485 | 2021-10-29 | 🛑 |
 | ric-plt/ricdms | 0 | +0 | 0 | 662 | 2024-01-30 | ☑️ |
 | ric-plt/sdl | 0 | +0 | 0 | 570 | 2024-05-01 | ☑️ |
-| ric-plt/sdlgo | 0 | +0 | 0 | 568 | 2024-05-03 | ☑️ |
+| ric-plt/sdlgo | 0 | +0 | 0 | 569 | 2024-05-02 | ☑️ |
 | ric-plt/sdlpy | 0 | +0 | 0 | 570 | 2024-05-01 | ☑️ |
-| ric-plt/streaming-protobufs | 0 | +0 | 0 | 1,520 | 2021-09-24 | 🛑 |
+| ric-plt/streaming-protobufs | 0 | +0 | 0 | 1,521 | 2021-09-23 | 🛑 |
 | ric-plt/stslgo | 0 | +0 | 0 | 1,159 | 2022-09-20 | 🛑 |
 | ric-plt/tracelibcpp | 0 | +0 | 0 | 1,908 | 2020-09-01 | 🛑 |
 | ric-plt/tracelibgo | 0 | +0 | 0 | 569 | 2024-05-02 | ☑️ |
 | ric-plt/utils | 0 | +0 | 0 | 1,939 | 2020-08-01 | 🛑 |
 | ric-plt/xapp-frame | 0 | +0 | 0 | 560 | 2024-05-11 | ☑️ |
 | ric-plt/xapp-frame-cpp | 0 | +0 | 0 | 570 | 2024-05-01 | ☑️ |
-| ric-plt/xapp-frame-py | 0 | +0 | 0 | 568 | 2024-05-03 | ☑️ |
+| ric-plt/xapp-frame-py | 0 | +0 | 0 | 569 | 2024-05-02 | ☑️ |
 | scp/oam/modeling | 0 | +0 | 0 | 959 | 2023-04-08 | ☑️ |
 | scp/ocu/5gnr | 0 | +0 | 0 | 1,980 | 2020-06-21 | 🛑 |
 | scp/ric-app/kpimon | 0 | +0 | 0 | 1,746 | 2021-02-10 | 🛑 |
@@ -517,28 +517,28 @@ The data presented in the table below covers the past 365 days.
 | portal/nonrtric-controlpanel | maven | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | nonrtric/rapp/orufhrecovery | None | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/a1 | go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
-| ric-plt/alarm-go | go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/appmgr | go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
-| ric-plt/dbaas | None | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| ric-plt/alarm-go | go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/e2 | None | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| ric-plt/dbaas | None | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/o1 | docker | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/e2mgr | None | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/rtmgr | go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/submgr | go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | sim/ns3-o-ran-e2 | c_cpp | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
-| nonrtric/plt/helmmanager | maven | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
-| nonrtric/plt/sdnca1controller | maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| nonrtric/rapp/healthcheck | docker | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | nonrtric/plt/dmaapmediatorproducer | go | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| nonrtric/rapp/healthcheck | docker | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| nonrtric/plt/sdnca1controller | maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| nonrtric/plt/helmmanager | maven | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | nonrtric/rapp/ransliceassurance | None | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | o-du/phy | docker | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/ric-dep | None | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/xapp-frame-rust | rust | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | .github | None | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | aiml-fw/apm/analysis-module | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| aiml-fw/apm/monitoring-server | go | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aiml-fw/apm/influx-wrapper | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aiml-fw/awmf/cli | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| aiml-fw/apm/monitoring-server | go | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aiml-fw/aihp/ips/kserve-adapter | docker | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/vespamgr | go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | smo/o1 | None | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
@@ -555,49 +555,49 @@ The data presented in the table below covers the past 365 days.
 | com/log | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | com/pylog | None | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | it/dev | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| it/otf | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-app/ad-cell | python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-app/ccc | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| it/otf | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-app/bouncer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-app/hw-go | go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-app/hw-python | python | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-app/hw-rust | docker | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| ric-app/kpimon-go | go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| ric-app/hw | docker | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-app/ad | python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-app/ric-sdk-py | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ric-app/qp-aimlfw | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-app/ts | docker | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-plt/alarm-cpp | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| ric-app/rc | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-app/kpimon-go | go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-app/lp | python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-plt/asn1-documents | None | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
+| ric-app/qp-aimlfw | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-app/ric-sdk-py | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| ric-app/rc | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-plt/alarm-cpp | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-app/mc | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-app/hw | docker | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| ric-plt/asn1-documents | None | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
+| ric-app/ts | docker | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/demo1 | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ric-app/qp | python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/jaegeradapter | None | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
-| ric-plt/ricctl | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ric-plt/ric-test | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ric-plt/libe2ap | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/nodeb-rnib | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-plt/ricctl | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| ric-plt/libe2ap | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/ricdms | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/stslgo | go | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| ric-plt/sdlpy | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-plt/streaming-protobufs | None | ❌ | ❌ | ✅ | ❌ | ❌ | 🛑 |
-| ric-plt/tracelibcpp | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-plt/sdlgo | go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
+| ric-plt/streaming-protobufs | None | ❌ | ❌ | ✅ | ❌ | ❌ | 🛑 |
+| ric-plt/sdlpy | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/sdl | c_cpp | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
-| ric-plt/utils | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-plt/tracelibgo | go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
+| ric-plt/tracelibcpp | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| ric-plt/utils | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | sim/e2-interface-data | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| ric-plt/xapp-frame | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/xapp-frame-cpp | docker | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| smo/pkg | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ric-plt/xapp-frame-py | python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| smo/pkg | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | aiml-fw | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| sim/o1-interface | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | sim/e2-interface | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| ric-plt/xapp-frame | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | smo/ves | maven | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| sim/o1-interface | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 
 ## 🏁 Deployed CI/CD Jobs
 
@@ -715,7 +715,7 @@ The data presented in the table below covers the past 365 days.
 | smo/o1 | <a href="https://github.com/o-ran-sc/smo-o1/actions/workflows/gerrit-merge.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-merge.yaml</span></a> | 1 | <a href="https://jenkins.o-ran-sc.org/job/smo-o1-release-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">smo-o1-release-release-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-o1-release-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">smo-o1-release-release-verify-master</span></a> | 2 |
 | smo/o2 |  | 0 | <a href="https://jenkins.o-ran-sc.org/job/smo-o2-cli-sonar/" target="_blank"><span class="status-failure jenkins-status">smo-o2-cli-sonar</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-o2-release-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">smo-o2-release-release-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-o2-release-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">smo-o2-release-release-verify-master</span></a> | 3 |
 | smo/pkg |  | 0 | <a href="https://jenkins.o-ran-sc.org/job/smo-pkg-info-yaml-verify/" target="_blank"><span class="status-unknown jenkins-status">smo-pkg-info-yaml-verify</span></a> | 1 |
-| smo/teiv | <a href="https://github.com/o-ran-sc/smo-teiv/actions/workflows/gerrit-merge.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-merge.yaml</span></a> | 1 | <a href="https://jenkins.o-ran-sc.org/job/smo-teiv-info-yaml-verify/" target="_blank"><span class="status-success jenkins-status">smo-teiv-info-yaml-verify</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-clm-j-release/" target="_blank"><span class="status-failure jenkins-status">smo-teiv-maven-clm-j-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-clm-k-release/" target="_blank"><span class="status-failure jenkins-status">smo-teiv-maven-clm-k-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-clm-l-release/" target="_blank"><span class="status-failure jenkins-status">smo-teiv-maven-clm-l-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-clm-master/" target="_blank"><span class="status-building jenkins-status">smo-teiv-maven-clm-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-merge-j-release/" target="_blank"><span class="status-success jenkins-status">smo-teiv-maven-docker-merge-j-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-merge-k-release/" target="_blank"><span class="status-success jenkins-status">smo-teiv-maven-docker-merge-k-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-merge-l-release/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-docker-merge-l-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">smo-teiv-maven-docker-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-stage-j-release/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-docker-stage-j-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-stage-k-release/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-docker-stage-k-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-stage-l-release/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-docker-stage-l-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">smo-teiv-maven-docker-stage-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-verify-j-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-docker-verify-j-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-verify-k-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-docker-verify-k-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-verify-l-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-docker-verify-l-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-verify-master-mvn39-openjdk17/" target="_blank"><span class="status-success jenkins-status">smo-teiv-maven-docker-verify-master-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-stage-j-release/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-stage-j-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-stage-k-release/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-stage-k-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-stage-l-release/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-stage-l-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">smo-teiv-maven-stage-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-deps-j-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-verify-deps-j-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-deps-k-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-verify-deps-k-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-deps-l-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-verify-deps-l-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-deps-master-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-verify-deps-master-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-j-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-verify-j-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-k-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-verify-k-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-l-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-verify-l-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-master-mvn39-openjdk17/" target="_blank"><span class="status-success jenkins-status">smo-teiv-maven-verify-master-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-release-merge-master/" target="_blank"><span class="status-success jenkins-status">smo-teiv-release-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-release-verify-master/" target="_blank"><span class="status-success jenkins-status">smo-teiv-release-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-sonar/" target="_blank"><span class="status-failure jenkins-status">smo-teiv-sonar</span></a> | 32 |
+| smo/teiv | <a href="https://github.com/o-ran-sc/smo-teiv/actions/workflows/gerrit-merge.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-merge.yaml</span></a> | 1 | <a href="https://jenkins.o-ran-sc.org/job/smo-teiv-info-yaml-verify/" target="_blank"><span class="status-success jenkins-status">smo-teiv-info-yaml-verify</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-clm-j-release/" target="_blank"><span class="status-failure jenkins-status">smo-teiv-maven-clm-j-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-clm-k-release/" target="_blank"><span class="status-failure jenkins-status">smo-teiv-maven-clm-k-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-clm-l-release/" target="_blank"><span class="status-failure jenkins-status">smo-teiv-maven-clm-l-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">smo-teiv-maven-clm-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-merge-j-release/" target="_blank"><span class="status-success jenkins-status">smo-teiv-maven-docker-merge-j-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-merge-k-release/" target="_blank"><span class="status-success jenkins-status">smo-teiv-maven-docker-merge-k-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-merge-l-release/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-docker-merge-l-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">smo-teiv-maven-docker-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-stage-j-release/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-docker-stage-j-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-stage-k-release/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-docker-stage-k-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-stage-l-release/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-docker-stage-l-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">smo-teiv-maven-docker-stage-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-verify-j-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-docker-verify-j-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-verify-k-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-docker-verify-k-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-verify-l-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-docker-verify-l-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-docker-verify-master-mvn39-openjdk17/" target="_blank"><span class="status-success jenkins-status">smo-teiv-maven-docker-verify-master-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-stage-j-release/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-stage-j-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-stage-k-release/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-stage-k-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-stage-l-release/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-stage-l-release</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">smo-teiv-maven-stage-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-deps-j-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-verify-deps-j-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-deps-k-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-verify-deps-k-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-deps-l-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-verify-deps-l-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-deps-master-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-verify-deps-master-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-j-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-verify-j-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-k-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-verify-k-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-l-release-mvn39-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">smo-teiv-maven-verify-l-release-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-maven-verify-master-mvn39-openjdk17/" target="_blank"><span class="status-success jenkins-status">smo-teiv-maven-verify-master-mvn39-openjdk17</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-release-merge-master/" target="_blank"><span class="status-success jenkins-status">smo-teiv-release-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-release-verify-master/" target="_blank"><span class="status-success jenkins-status">smo-teiv-release-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-teiv-sonar/" target="_blank"><span class="status-failure jenkins-status">smo-teiv-sonar</span></a> | 32 |
 | smo/ves | <a href="https://github.com/o-ran-sc/smo-ves/actions/workflows/gerrit-novote-merge.yaml" target="_blank"><span class="status-no-runs workflow-status">gerrit-novote-merge.yaml</span></a> | 1 | <a href="https://jenkins.o-ran-sc.org/job/smo-ves-cli-sonar/" target="_blank"><span class="status-failure jenkins-status">smo-ves-cli-sonar</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-ves-collector-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">smo-ves-collector-docker-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-ves-collector-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">smo-ves-collector-docker-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-ves-dmaap-adapter-docker-merge-master/" target="_blank"><span class="status-failure jenkins-status">smo-ves-dmaap-adapter-docker-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-ves-dmaap-adapter-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">smo-ves-dmaap-adapter-docker-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-ves-influxdb-connector-docker-merge-master/" target="_blank"><span class="status-failure jenkins-status">smo-ves-influxdb-connector-docker-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-ves-influxdb-connector-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">smo-ves-influxdb-connector-docker-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-ves-post-config-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">smo-ves-post-config-docker-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-ves-post-config-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">smo-ves-post-config-docker-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-ves-release-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">smo-ves-release-release-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-ves-release-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">smo-ves-release-release-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/smo-ves-tox-nexus-iq-clm/" target="_blank"><span class="status-failure jenkins-status">smo-ves-tox-nexus-iq-clm</span></a> | 12 |
 
 **Total:** 111 repositories with CI/CD jobs
