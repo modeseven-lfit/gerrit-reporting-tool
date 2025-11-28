@@ -1,0 +1,16 @@
+{
+  "project": "ONAP",
+  "slug": "onap",
+  "gerrit_server": "gerrit.onap.org",
+  "jenkins_server": "jenkins.onap.org",
+  "github_org": "",
+  "generated_at": "2025-11-28T16:38:02Z",
+  "workflow_run_id": "19769457560",
+  "workflow_run_number": "12",
+  "workflow_run_attempt": "1",
+  "git_sha": "ffdc22eb1928f1a114259a1f3c423aa2f23473d3",
+  "git_ref": "project-type-detection",
+  "pr_number": 19,
+  "pr_author": "ModeSevenIndustrialSolutions",
+  "environment": "previews"
+}
