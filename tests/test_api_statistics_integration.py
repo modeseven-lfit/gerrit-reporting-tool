@@ -104,7 +104,7 @@ class TestAPIStatisticsWiring:
         logger = MagicMock()
         api_stats = APIStatistics()
 
-        with patch("reporting_tool.collectors.git.GerritAPIClient") as mock_gerrit:
+        with patch("gerrit_reporting_tool.collectors.git.GerritAPIClient") as mock_gerrit:
             mock_instance = MagicMock()
             mock_gerrit.return_value = mock_instance
             mock_instance.get_all_projects.return_value = {}
@@ -128,7 +128,7 @@ class TestAPIStatisticsWiring:
 
         with (
             patch.dict(os.environ, {"JENKINS_HOST": "jenkins.example.org"}),
-            patch("reporting_tool.collectors.git.JenkinsAPIClient") as mock_jenkins,
+            patch("gerrit_reporting_tool.collectors.git.JenkinsAPIClient") as mock_jenkins,
         ):
             mock_instance = MagicMock()
             mock_jenkins.return_value = mock_instance
@@ -154,7 +154,7 @@ class TestAPIStatisticsWiring:
         logger = MagicMock()
         api_stats = APIStatistics()
 
-        with patch("reporting_tool.collectors.git.JenkinsAPIClient") as mock_jenkins:
+        with patch("gerrit_reporting_tool.collectors.git.JenkinsAPIClient") as mock_jenkins:
             mock_instance = MagicMock()
             mock_jenkins.return_value = mock_instance
             mock_instance.get_all_jobs.return_value = {"jobs": []}
@@ -180,7 +180,7 @@ class TestAPIStatisticsWiring:
 
         with (
             patch.dict(os.environ, {"GITHUB_TOKEN": "fake-token"}),
-            patch("reporting_tool.features.registry.GitHubAPIClient") as mock_github,
+            patch("gerrit_reporting_tool.features.registry.GitHubAPIClient") as mock_github,
         ):
             mock_instance = MagicMock()
             mock_github.return_value = mock_instance
@@ -431,7 +431,7 @@ class TestAPIStatisticsGuarantees:
         logger = MagicMock()
 
         # Without api_stats - should log warning or fail
-        with patch("reporting_tool.collectors.git.GerritAPIClient") as mock_gerrit:
+        with patch("gerrit_reporting_tool.collectors.git.GerritAPIClient") as mock_gerrit:
             mock_instance = MagicMock()
             mock_gerrit.return_value = mock_instance
             mock_instance.get_all_projects.return_value = {}

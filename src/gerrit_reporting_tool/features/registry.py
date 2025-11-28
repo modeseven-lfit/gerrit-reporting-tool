@@ -379,33 +379,50 @@ class FeatureRegistry:
             }
 
         project_types = {
-            "maven": ["pom.xml"],
-            "gradle": [
+            "Maven": ["pom.xml"],
+            "Gradle": [
                 "build.gradle",
                 "build.gradle.kts",
                 "gradle.properties",
                 "settings.gradle",
             ],
-            "node": ["package.json"],
-            "python": [
+            "JavaScript": ["package.json", "*.js", "*.mjs", "*.cjs"],
+            "TypeScript": ["tsconfig.json", "*.ts", "*.tsx"],
+            "Node": ["package.json"],
+            "Python": [
                 "pyproject.toml",
                 "requirements.txt",
                 "setup.py",
                 "setup.cfg",
                 "Pipfile",
                 "poetry.lock",
+                "*.py",
             ],
-            "docker": ["Dockerfile", "docker-compose.yml", "docker-compose.yaml"],
-            "go": ["go.mod", "go.sum"],
-            "rust": ["Cargo.toml", "Cargo.lock"],
-            "java": ["build.xml", "ivy.xml"],  # Ant
-            "c_cpp": ["Makefile", "CMakeLists.txt", "configure.ac", "configure.in"],
-            "dotnet": ["*.csproj", "*.sln", "project.json", "*.vbproj", "*.fsproj"],
-            "ruby": ["Gemfile", "Rakefile", "*.gemspec"],
-            "php": ["composer.json", "composer.lock"],
-            "scala": ["build.sbt", "project/build.properties"],
-            "swift": ["Package.swift"],
-            "kotlin": ["build.gradle.kts"],
+            "Dockerfile": ["Dockerfile", "*.dockerfile", "docker-compose.yml", "docker-compose.yaml"],
+            "Go": ["go.mod", "go.sum", "*.go"],
+            "Rust": ["Cargo.toml", "Cargo.lock", "*.rs"],
+            "Java": ["build.xml", "ivy.xml", "*.java"],  # Ant
+            "C++": ["*.cpp", "*.hpp", "*.cc", "*.hh", "*.cxx", "*.hxx", "CMakeLists.txt"],
+            "C": ["*.c", "*.h"],
+            ".NET": ["*.csproj", "*.sln", "project.json", "*.vbproj", "*.fsproj"],
+            "Ruby": ["Gemfile", "Rakefile", "*.gemspec", "*.rb"],
+            "PHP": ["composer.json", "composer.lock", "*.php"],
+            "Scala": ["build.sbt", "project/build.properties", "*.scala"],
+            "Swift": ["Package.swift", "*.swift"],
+            "Kotlin": ["*.kt", "*.kts"],
+            "Groovy": ["*.groovy", "Jenkinsfile", "*.gradle"],
+            "Smarty": ["*.tpl", "smarty.conf", "*.smarty"],
+            "EJS": ["*.ejs", "*.ect"],
+            "Robot Framework": ["*.robot", "*.resource"],
+            "D": ["*.d", "*.di"],
+            "SCSS": ["*.scss"],
+            "HTML": ["*.html", "*.htm"],
+            "CSS": ["*.css"],
+            "HCL": ["*.hcl", "*.tf", "*.tfvars"],
+            "Clojure": ["*.clj", "*.cljs", "*.cljc", "*.edn"],
+            "Erlang": ["*.erl", "*.hrl", "rebar.config"],
+            "Lua": ["*.lua"],
+            "PLpgSQL": ["*.pgsql", "*.sql"],
         }
 
         detected_types = []
