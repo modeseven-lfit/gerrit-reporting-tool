@@ -386,8 +386,8 @@ class FeatureRegistry:
                 "gradle.properties",
                 "settings.gradle",
             ],
-            "JavaScript": ["package.json", "*.js", "*.mjs", "*.cjs"],
-            "TypeScript": ["tsconfig.json", "*.ts", "*.tsx"],
+            "JavaScript": ["package.json", "**/*.js", "**/*.mjs", "**/*.cjs"],
+            "TypeScript": ["tsconfig.json", "**/*.ts", "**/*.tsx"],
             "Node": ["package.json"],
             "Python": [
                 "pyproject.toml",
@@ -396,33 +396,35 @@ class FeatureRegistry:
                 "setup.cfg",
                 "Pipfile",
                 "poetry.lock",
-                "*.py",
+                "**/*.py",
             ],
-            "Dockerfile": ["Dockerfile", "*.dockerfile", "docker-compose.yml", "docker-compose.yaml"],
-            "Go": ["go.mod", "go.sum", "*.go"],
-            "Rust": ["Cargo.toml", "Cargo.lock", "*.rs"],
-            "Java": ["build.xml", "ivy.xml", "*.java"],  # Ant
-            "C++": ["*.cpp", "*.hpp", "*.cc", "*.hh", "*.cxx", "*.hxx", "CMakeLists.txt"],
-            "C": ["*.c", "*.h"],
-            ".NET": ["*.csproj", "*.sln", "project.json", "*.vbproj", "*.fsproj"],
-            "Ruby": ["Gemfile", "Rakefile", "*.gemspec", "*.rb"],
-            "PHP": ["composer.json", "composer.lock", "*.php"],
-            "Scala": ["build.sbt", "project/build.properties", "*.scala"],
-            "Swift": ["Package.swift", "*.swift"],
-            "Kotlin": ["*.kt", "*.kts"],
-            "Groovy": ["*.groovy", "Jenkinsfile", "*.gradle"],
-            "Smarty": ["*.tpl", "smarty.conf", "*.smarty"],
-            "EJS": ["*.ejs", "*.ect"],
-            "Robot Framework": ["*.robot", "*.resource"],
-            "D": ["*.d", "*.di"],
-            "SCSS": ["*.scss"],
-            "HTML": ["*.html", "*.htm"],
-            "CSS": ["*.css"],
-            "HCL": ["*.hcl", "*.tf", "*.tfvars"],
-            "Clojure": ["*.clj", "*.cljs", "*.cljc", "*.edn"],
-            "Erlang": ["*.erl", "*.hrl", "rebar.config"],
-            "Lua": ["*.lua"],
-            "PLpgSQL": ["*.pgsql", "*.sql"],
+            "Dockerfile": ["Dockerfile", "**/*.dockerfile", "docker-compose.yml", "docker-compose.yaml"],
+            "Shell": ["**/*.sh", "**/*.bash", "**/*.zsh", "**/*.ksh"],
+            "Go": ["go.mod", "go.sum", "**/*.go"],
+            "Rust": ["Cargo.toml", "Cargo.lock", "**/*.rs"],
+            "Java": ["**/*.java"],
+            "Java/Ant": ["build.xml", "ivy.xml"],
+            "C++": ["**/*.cpp", "**/*.hpp", "**/*.cc", "**/*.hh", "**/*.cxx", "**/*.hxx", "CMakeLists.txt"],
+            "C": ["**/*.c", "**/*.h"],
+            ".NET": ["**/*.csproj", "**/*.sln", "project.json", "**/*.vbproj", "**/*.fsproj"],
+            "Ruby": ["Gemfile", "Rakefile", "**/*.gemspec", "**/*.rb"],
+            "PHP": ["composer.json", "composer.lock", "**/*.php"],
+            "Scala": ["build.sbt", "project/build.properties", "**/*.scala"],
+            "Swift": ["Package.swift", "**/*.swift"],
+            "Kotlin": ["**/*.kt", "**/*.kts"],
+            "Groovy": ["**/*.groovy", "Jenkinsfile", "**/*.gradle"],
+            "Smarty": ["**/*.tpl", "smarty.conf", "**/*.smarty"],
+            "EJS": ["**/*.ejs", "**/*.ect"],
+            "Robot Framework": ["**/*.robot", "**/*.resource"],
+            "D": ["**/*.d", "**/*.di"],
+            "SCSS": ["**/*.scss"],
+            "HTML": ["**/*.html", "**/*.htm"],
+            "CSS": ["**/*.css"],
+            "HCL": ["**/*.hcl", "**/*.tf", "**/*.tfvars"],
+            "Clojure": ["**/*.clj", "**/*.cljs", "**/*.cljc", "**/*.edn"],
+            "Erlang": ["**/*.erl", "**/*.hrl", "rebar.config"],
+            "Lua": ["**/*.lua"],
+            "PLpgSQL": ["**/*.pgsql", "**/*.sql"],
         }
 
         detected_types = []
@@ -449,6 +451,73 @@ class FeatureRegistry:
                     {"type": project_type, "files": matches, "confidence": len(matches)}
                 )
                 confidence_scores[project_type] = len(matches)
+
+        # Post-process to create combined Java/Maven and Java/Gradle types
+        has_maven = "Maven" in confidence_scores
+        has_gradle = "Gradle" in confidence_scores
+        has_java = "Java" in confidence_scores
+        has_java_ant = "Java/Ant" in confidence_scores
+
+        # If we have Java files with Maven or Gradle, create combined types
+        if has_java and has_maven:
+            # Combine Java + Maven confidence
+            combined_confidence = confidence_scores.get("Java", 0) + confidence_scores.get("Maven", 0)
+            detected_types.append(
+                {"type": "Java/Maven", "files": [], "confidence": combined_confidence}
+            )
+            confidence_scores["Java/Maven"] = combined_confidence
+            # Remove individual entries
+            detected_types = [t for t in detected_types if t["type"] not in ["Java", "Maven"]]
+            confidence_scores.pop("Java", None)
+            confidence_scores.pop("Maven", None)
+        elif has_maven and not has_java:
+            # Maven without Java files, rename to Java/Maven
+            for t in detected_types:
+                if t["type"] == "Maven":
+                    t["type"] = "Java/Maven"
+            if "Maven" in confidence_scores:
+                confidence_scores["Java/Maven"] = confidence_scores.pop("Maven")
+
+        if has_java and has_gradle:
+            # Combine Java + Gradle confidence
+            combined_confidence = confidence_scores.get("Java", 0) + confidence_scores.get("Gradle", 0)
+            detected_types.append(
+                {"type": "Java/Gradle", "files": [], "confidence": combined_confidence}
+            )
+            confidence_scores["Java/Gradle"] = combined_confidence
+            # Remove individual entries
+            detected_types = [t for t in detected_types if t["type"] not in ["Java", "Gradle"]]
+            confidence_scores.pop("Java", None)
+            confidence_scores.pop("Gradle", None)
+        elif has_gradle and not has_java:
+            # Gradle without Java files, rename to Java/Gradle
+            for t in detected_types:
+                if t["type"] == "Gradle":
+                    t["type"] = "Java/Gradle"
+            if "Gradle" in confidence_scores:
+                confidence_scores["Java/Gradle"] = confidence_scores.pop("Gradle")
+
+        # Apply priority boosts for certain project types
+        repo_name_lower = repo_name.lower()
+
+        # Boost Dockerfile priority if found at root
+        if "Dockerfile" in confidence_scores:
+            dockerfile_at_root = (repo_path / "Dockerfile").exists()
+            docker_compose_at_root = (repo_path / "docker-compose.yml").exists() or (repo_path / "docker-compose.yaml").exists()
+            if dockerfile_at_root or docker_compose_at_root:
+                # Boost by 50% if Dockerfile/docker-compose at root
+                confidence_scores["Dockerfile"] = int(confidence_scores["Dockerfile"] * 1.5)
+
+        # Boost Robot Framework priority for test-related repos
+        if "Robot Framework" in confidence_scores:
+            if "test" in repo_name_lower or "testsuite" in repo_name_lower:
+                # Boost by 100% for test repos
+                confidence_scores["Robot Framework"] = int(confidence_scores["Robot Framework"] * 2.0)
+
+        # Boost Shell priority if many shell scripts found
+        if "Shell" in confidence_scores and confidence_scores["Shell"] >= 5:
+            # Boost shell if we found 5+ shell scripts
+            confidence_scores["Shell"] = int(confidence_scores["Shell"] * 1.3)
 
         # Determine primary type (highest confidence)
         primary_type = None
