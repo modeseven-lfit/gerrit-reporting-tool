@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: AGL
 
-**Generated:** November 29, 2025 at 07:13 UTC
+**Generated:** November 30, 2025 at 07:13 UTC
 **Schema Version:** 1.0.0
 
 ## 📈 Global Summary
@@ -16,8 +16,8 @@
 | Active Gerrit Projects | 166 | 77.9% |
 | Inactive Gerrit Projects | 17 | 8.0% |
 | No Apparent Commits | 3 | 1.4% |
-| Total Commits | 323 | - |
-| Total Lines of Code | 25.7K | - |
+| Total Commits | 318 | - |
+| Total Lines of Code | 25.3K | - |
 
 ## 🏢 Top Organizations
 
@@ -28,96 +28,96 @@ The data presented in the table below covers the past 365 days.
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 |------|--------------|--------------|---------|-----|-------|----------------|---------------------|
 | 1 | konsulko.com | 13 | 108 | -9884 | 25498 | -91.5 | 101 |
-| 2 | linuxfoundation.org | 8 | 79 | -7121 | 11229 | -90.1 | 208 |
+| 2 | linuxfoundation.org | 8 | 78 | -7510 | 10810 | -96.3 | 208 |
 | 3 | co.jp | 18 | 56 | +581 | 16827 | +10.4 | 39 |
-| 4 | collabora.com | 7 | 44 | +2472 | 2798 | +56.2 | 43 |
+| 4 | collabora.com | 7 | 41 | +2485 | 2769 | +60.6 | 43 |
 | 5 | panasonic.com | 5 | 16 | +723 | 2085 | +45.2 | 28 |
 | 6 | gmail.com | 50 | 11 | -25 | 951 | -2.3 | 50 |
 | 7 | virtualopensystems.com | 4 | 8 | +1390 | 3900 | +173.8 | 7 |
-| 8 | seafarix.com | 1 | 1 | +0 | 2 | +0.0 | 1 |
-| 9 | 6b3797ab1e90 | 1 | 0 | +0 | 0 | - | 2 |
-| 10 | ac.uk | 1 | 0 | +0 | 0 | - | 1 |
-| 11 | aclimalabs.com | 1 | 0 | +0 | 0 | - | 1 |
-| 12 | adit-jv.com | 11 | 0 | +0 | 0 | - | 10 |
-| 13 | advancedtelematic.com | 2 | 0 | +0 | 0 | - | 4 |
-| 14 | alps.com | 3 | 0 | +0 | 0 | - | 2 |
-| 15 | alps.cz | 1 | 0 | +0 | 0 | - | 1 |
-| 16 | amazon.com | 4 | 0 | +0 | 0 | - | 6 |
-| 17 | asvito.es | 1 | 0 | +0 | 0 | - | 7 |
-| 18 | autistici.org | 1 | 0 | +0 | 0 | - | 1 |
-| 19 | automotivelinux.org | 2 | 0 | +0 | 0 | - | 9 |
-| 20 | baylibre.com | 7 | 0 | +0 | 0 | - | 9 |
-| 21 | berkeley.edu | 1 | 0 | +0 | 0 | - | 1 |
-| 22 | bocklage.com | 1 | 0 | +0 | 0 | - | 1 |
-| 23 | breizhme.net | 1 | 0 | +0 | 0 | - | 1 |
-| 24 | co.uk | 5 | 0 | +0 | 0 | - | 6 |
-| 25 | com.au | 1 | 0 | +0 | 0 | - | 2 |
-| 26 | crosschasm.com | 2 | 0 | +0 | 0 | - | 1 |
-| 27 | d-fine.com | 1 | 0 | +0 | 0 | - | 3 |
-| 28 | daimler.com | 1 | 0 | +0 | 0 | - | 1 |
-| 29 | denso-ten.com | 1 | 0 | +0 | 0 | - | 1 |
-| 30 | denx.de | 1 | 0 | +0 | 0 | - | 1 |
-| 31 | drimaes.com | 1 | 0 | +0 | 0 | - | 3 |
-| 32 | elecsyscorp.com | 1 | 0 | +0 | 0 | - | 1 |
-| 33 | ford.com | 1 | 0 | +0 | 0 | - | 1 |
-| 34 | fridu.net | 2 | 0 | +0 | 0 | - | 5 |
-| 35 | fujitsu.com | 18 | 0 | +0 | 0 | - | 83 |
-| 36 | github.com | 11 | 0 | +0 | 0 | - | 8 |
-| 37 | gmx.de | 1 | 0 | +0 | 0 | - | 4 |
-| 38 | google.com | 3 | 0 | +0 | 0 | - | 1 |
-| 39 | googlemail.com | 1 | 0 | +0 | 0 | - | 1 |
-| 40 | grammer.com | 1 | 0 | +0 | 0 | - | 2 |
-| 41 | here.com | 1 | 0 | +0 | 0 | - | 1 |
-| 42 | hitachi.com | 1 | 0 | +0 | 0 | - | 1 |
-| 43 | hms.se | 1 | 0 | +0 | 0 | - | 1 |
-| 44 | ics.com | 2 | 0 | +0 | 0 | - | 3 |
-| 45 | igalia.com | 9 | 0 | +0 | 0 | - | 15 |
-| 46 | ikravets.com | 1 | 0 | +0 | 0 | - | 1 |
-| 47 | innoseis.com | 1 | 0 | +0 | 0 | - | 1 |
-| 48 | intel.com | 4 | 0 | +0 | 0 | - | 4 |
-| 49 | iot.bzh | 23 | 0 | +0 | 0 | - | 80 |
-| 50 | irdeto.com | 1 | 0 | +0 | 0 | - | 1 |
-| 51 | jaguarlandrover.com | 1 | 0 | +0 | 0 | - | 1 |
-| 52 | k2l.de | 2 | 0 | +0 | 0 | - | 2 |
-| 53 | kapsi.fi | 3 | 0 | +0 | 0 | - | 1 |
-| 54 | kpit.com | 1 | 0 | +0 | 0 | - | 1 |
-| 55 | kylemanna.com | 1 | 0 | +0 | 0 | - | 1 |
-| 56 | lge.com | 1 | 0 | +0 | 0 | - | 1 |
-| 57 | linaro.org | 2 | 0 | +0 | 0 | - | 2 |
-| 58 | linux.com | 1 | 0 | +0 | 0 | - | 2 |
-| 59 | live.fr | 1 | 0 | +0 | 0 | - | 2 |
-| 60 | localhost.localdomain | 1 | 0 | +0 | 0 | - | 1 |
-| 61 | lorient.iot | 1 | 0 | +0 | 0 | - | 1 |
-| 62 | luminatewireless.com | 1 | 0 | +0 | 0 | - | 1 |
-| 63 | luzny.cz | 1 | 0 | +0 | 0 | - | 1 |
-| 64 | mentor.com | 4 | 0 | +0 | 0 | - | 7 |
-| 65 | mera.com | 2 | 0 | +0 | 0 | - | 4 |
-| 66 | metaswitch.com | 1 | 0 | +0 | 0 | - | 1 |
-| 67 | microchip.com | 2 | 0 | +0 | 0 | - | 7 |
-| 68 | miraclelinux.com | 1 | 0 | +0 | 0 | - | 1 |
-| 69 | msn.com | 1 | 0 | +0 | 0 | - | 1 |
-| 70 | mxcrypt.com | 1 | 0 | +0 | 0 | - | 1 |
-| 71 | nexty-ele.com | 3 | 0 | +0 | 0 | - | 38 |
-| 72 | nonadev.net | 1 | 0 | +0 | 0 | - | 4 |
-| 73 | nttd-mse.com | 1 | 0 | +0 | 0 | - | 1 |
-| 74 | nxp.com | 1 | 0 | +0 | 0 | - | 1 |
-| 75 | oe | 1 | 0 | +0 | 0 | - | 1 |
-| 76 | opensynergy.com | 2 | 0 | +0 | 0 | - | 11 |
-| 77 | orioninc.com | 3 | 0 | +0 | 0 | - | 4 |
-| 78 | pm.me | 1 | 0 | +0 | 0 | - | 1 |
-| 79 | podsvirov.pro | 1 | 0 | +0 | 0 | - | 1 |
-| 80 | priv.at | 1 | 0 | +0 | 0 | - | 1 |
-| 81 | qbc.io | 1 | 0 | +0 | 0 | - | 2 |
-| 82 | qq.com | 1 | 0 | +0 | 0 | - | 1 |
-| 83 | qt.io | 3 | 0 | +0 | 0 | - | 15 |
-| 84 | radiosound.com | 1 | 0 | +0 | 0 | - | 2 |
-| 85 | recurse.ca | 1 | 0 | +0 | 0 | - | 1 |
-| 86 | renesas.com | 7 | 0 | +0 | 0 | - | 12 |
-| 87 | reutlingen-university.de | 1 | 0 | +0 | 0 | - | 3 |
-| 88 | rhubarbtech.com | 2 | 0 | +0 | 0 | - | 1 |
-| 89 | rosen-group.com | 1 | 0 | +0 | 0 | - | 1 |
-| 90 | samsung.com | 1 | 0 | +0 | 0 | - | 4 |
-| 91 | sancloud.com | 1 | 0 | +0 | 0 | - | 2 |
+| 8 | 6b3797ab1e90 | 1 | 0 | +0 | 0 | - | 2 |
+| 9 | ac.uk | 1 | 0 | +0 | 0 | - | 1 |
+| 10 | aclimalabs.com | 1 | 0 | +0 | 0 | - | 1 |
+| 11 | adit-jv.com | 11 | 0 | +0 | 0 | - | 10 |
+| 12 | advancedtelematic.com | 2 | 0 | +0 | 0 | - | 4 |
+| 13 | alps.com | 3 | 0 | +0 | 0 | - | 2 |
+| 14 | alps.cz | 1 | 0 | +0 | 0 | - | 1 |
+| 15 | amazon.com | 4 | 0 | +0 | 0 | - | 6 |
+| 16 | asvito.es | 1 | 0 | +0 | 0 | - | 7 |
+| 17 | autistici.org | 1 | 0 | +0 | 0 | - | 1 |
+| 18 | automotivelinux.org | 2 | 0 | +0 | 0 | - | 9 |
+| 19 | baylibre.com | 7 | 0 | +0 | 0 | - | 9 |
+| 20 | berkeley.edu | 1 | 0 | +0 | 0 | - | 1 |
+| 21 | bocklage.com | 1 | 0 | +0 | 0 | - | 1 |
+| 22 | breizhme.net | 1 | 0 | +0 | 0 | - | 1 |
+| 23 | co.uk | 5 | 0 | +0 | 0 | - | 6 |
+| 24 | com.au | 1 | 0 | +0 | 0 | - | 2 |
+| 25 | crosschasm.com | 2 | 0 | +0 | 0 | - | 1 |
+| 26 | d-fine.com | 1 | 0 | +0 | 0 | - | 3 |
+| 27 | daimler.com | 1 | 0 | +0 | 0 | - | 1 |
+| 28 | denso-ten.com | 1 | 0 | +0 | 0 | - | 1 |
+| 29 | denx.de | 1 | 0 | +0 | 0 | - | 1 |
+| 30 | drimaes.com | 1 | 0 | +0 | 0 | - | 3 |
+| 31 | elecsyscorp.com | 1 | 0 | +0 | 0 | - | 1 |
+| 32 | ford.com | 1 | 0 | +0 | 0 | - | 1 |
+| 33 | fridu.net | 2 | 0 | +0 | 0 | - | 5 |
+| 34 | fujitsu.com | 18 | 0 | +0 | 0 | - | 83 |
+| 35 | github.com | 11 | 0 | +0 | 0 | - | 8 |
+| 36 | gmx.de | 1 | 0 | +0 | 0 | - | 4 |
+| 37 | google.com | 3 | 0 | +0 | 0 | - | 1 |
+| 38 | googlemail.com | 1 | 0 | +0 | 0 | - | 1 |
+| 39 | grammer.com | 1 | 0 | +0 | 0 | - | 2 |
+| 40 | here.com | 1 | 0 | +0 | 0 | - | 1 |
+| 41 | hitachi.com | 1 | 0 | +0 | 0 | - | 1 |
+| 42 | hms.se | 1 | 0 | +0 | 0 | - | 1 |
+| 43 | ics.com | 2 | 0 | +0 | 0 | - | 3 |
+| 44 | igalia.com | 9 | 0 | +0 | 0 | - | 15 |
+| 45 | ikravets.com | 1 | 0 | +0 | 0 | - | 1 |
+| 46 | innoseis.com | 1 | 0 | +0 | 0 | - | 1 |
+| 47 | intel.com | 4 | 0 | +0 | 0 | - | 4 |
+| 48 | iot.bzh | 23 | 0 | +0 | 0 | - | 80 |
+| 49 | irdeto.com | 1 | 0 | +0 | 0 | - | 1 |
+| 50 | jaguarlandrover.com | 1 | 0 | +0 | 0 | - | 1 |
+| 51 | k2l.de | 2 | 0 | +0 | 0 | - | 2 |
+| 52 | kapsi.fi | 3 | 0 | +0 | 0 | - | 1 |
+| 53 | kpit.com | 1 | 0 | +0 | 0 | - | 1 |
+| 54 | kylemanna.com | 1 | 0 | +0 | 0 | - | 1 |
+| 55 | lge.com | 1 | 0 | +0 | 0 | - | 1 |
+| 56 | linaro.org | 2 | 0 | +0 | 0 | - | 2 |
+| 57 | linux.com | 1 | 0 | +0 | 0 | - | 2 |
+| 58 | live.fr | 1 | 0 | +0 | 0 | - | 2 |
+| 59 | localhost.localdomain | 1 | 0 | +0 | 0 | - | 1 |
+| 60 | lorient.iot | 1 | 0 | +0 | 0 | - | 1 |
+| 61 | luminatewireless.com | 1 | 0 | +0 | 0 | - | 1 |
+| 62 | luzny.cz | 1 | 0 | +0 | 0 | - | 1 |
+| 63 | mentor.com | 4 | 0 | +0 | 0 | - | 7 |
+| 64 | mera.com | 2 | 0 | +0 | 0 | - | 4 |
+| 65 | metaswitch.com | 1 | 0 | +0 | 0 | - | 1 |
+| 66 | microchip.com | 2 | 0 | +0 | 0 | - | 7 |
+| 67 | miraclelinux.com | 1 | 0 | +0 | 0 | - | 1 |
+| 68 | msn.com | 1 | 0 | +0 | 0 | - | 1 |
+| 69 | mxcrypt.com | 1 | 0 | +0 | 0 | - | 1 |
+| 70 | nexty-ele.com | 3 | 0 | +0 | 0 | - | 38 |
+| 71 | nonadev.net | 1 | 0 | +0 | 0 | - | 4 |
+| 72 | nttd-mse.com | 1 | 0 | +0 | 0 | - | 1 |
+| 73 | nxp.com | 1 | 0 | +0 | 0 | - | 1 |
+| 74 | oe | 1 | 0 | +0 | 0 | - | 1 |
+| 75 | opensynergy.com | 2 | 0 | +0 | 0 | - | 11 |
+| 76 | orioninc.com | 3 | 0 | +0 | 0 | - | 4 |
+| 77 | pm.me | 1 | 0 | +0 | 0 | - | 1 |
+| 78 | podsvirov.pro | 1 | 0 | +0 | 0 | - | 1 |
+| 79 | priv.at | 1 | 0 | +0 | 0 | - | 1 |
+| 80 | qbc.io | 1 | 0 | +0 | 0 | - | 2 |
+| 81 | qq.com | 1 | 0 | +0 | 0 | - | 1 |
+| 82 | qt.io | 3 | 0 | +0 | 0 | - | 15 |
+| 83 | radiosound.com | 1 | 0 | +0 | 0 | - | 2 |
+| 84 | recurse.ca | 1 | 0 | +0 | 0 | - | 1 |
+| 85 | renesas.com | 7 | 0 | +0 | 0 | - | 12 |
+| 86 | reutlingen-university.de | 1 | 0 | +0 | 0 | - | 3 |
+| 87 | rhubarbtech.com | 2 | 0 | +0 | 0 | - | 1 |
+| 88 | rosen-group.com | 1 | 0 | +0 | 0 | - | 1 |
+| 89 | samsung.com | 1 | 0 | +0 | 0 | - | 4 |
+| 90 | sancloud.com | 1 | 0 | +0 | 0 | - | 2 |
+| 91 | seafarix.com | 1 | 0 | +0 | 0 | - | 1 |
 | 92 | siemens.com | 1 | 0 | +0 | 0 | - | 1 |
 | 93 | spiteful.org | 1 | 0 | +0 | 0 | - | 1 |
 | 94 | synapse.com | 1 | 0 | +0 | 0 | - | 1 |
@@ -150,9 +150,9 @@ The data presented in the table below covers the past 365 days.
 | Rank | Contributor | Commits | LOC | Δ LOC | Avg LOC/Commit | Repositories | Organization |
 |------|-------------|---------|-----|-------|----------------|--------------|--------------|
 | 1 | Scott Murray | 108 | -9884 | 25498 | -91.5 | 96 | konsulko.com |
-| 2 | Jan-Simon Moeller | 79 | -7121 | 11229 | -90.1 | 208 | linuxfoundation.org |
+| 2 | Jan-Simon Moeller | 78 | -7510 | 10810 | -96.3 | 208 | linuxfoundation.org |
 | 3 | Naoto Yamaguchi | 55 | +550 | 16796 | +10.0 | 14 | co.jp |
-| 4 | Marius Vlad | 43 | +2436 | 2762 | +56.7 | 37 | collabora.com |
+| 4 | Marius Vlad | 40 | +2449 | 2733 | +61.2 | 37 | collabora.com |
 | 5 | Kenta | 16 | +723 | 2085 | +45.2 | 3 | panasonic.com |
 | 6 | Timos Ampelikiotis | 8 | +1390 | 3900 | +173.8 | 5 | virtualopensystems.com |
 | 7 | Saalim Quadri | 5 | +16 | 556 | +3.2 | 4 | gmail.com |
@@ -163,235 +163,235 @@ The data presented in the table below covers the past 365 days.
 | 12 | Ahmed Adel Wafdy | 1 | +30 | 32 | +30.0 | 1 | gmail.com |
 | 13 | Yudi Fu | 1 | +23 | 43 | +23.0 | 1 | gmail.com |
 | 14 | Anuj Solanki | 1 | +1 | 19 | +1.0 | 10 | gmail.com |
-| 15 | Tomi Leppänen | 1 | +0 | 2 | +0.0 | 1 | seafarix.com |
-| 16 | 8000ff | 0 | +0 | 0 | - | 6 | gmail.com |
-| 17 | Adam Parker | 0 | +0 | 0 | - | 1 | gmail.com |
-| 18 | Alice Ferrazzi | 0 | +0 | 0 | - | 1 | miraclelinux.com |
-| 19 | Alice Ferrazzi | 0 | +0 | 0 | - | 1 | co.jp |
-| 20 | Alistair Francis | 0 | +0 | 0 | - | 3 | wdc.com |
-| 21 | Andre Moreira Magalhaes (andrunko) | 0 | +0 | 0 | - | 2 | co.uk |
-| 22 | Andreas Müller | 0 | +0 | 0 | - | 1 | googlemail.com |
-| 23 | Andrew Grimberg | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 24 | Andrew Ruder | 0 | +0 | 0 | - | 1 | elecsyscorp.com |
-| 25 | Andrey Shamanin | 0 | +0 | 0 | - | 4 | orioninc.com |
-| 26 | Andriy Tryshnivskyy | 0 | +0 | 0 | - | 3 | opensynergy.com |
-| 27 | Angelos Mouzakitis | 0 | +0 | 0 | - | 5 | virtualopensystems.com |
-| 28 | Anh Nguyen | 0 | +0 | 0 | - | 1 | renesas.com |
-| 29 | Anil Belur | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 30 | Anmol Anmol | 0 | +0 | 0 | - | 1 | gmail.com |
-| 31 | Antia Puentes | 0 | +0 | 0 | - | 12 | igalia.com |
-| 32 | Anton Gerasimov | 0 | +0 | 0 | - | 4 | advancedtelematic.com |
-| 33 | Anton Gerasimov | 0 | +0 | 0 | - | 1 | gmail.com |
-| 34 | Anton Gerasimov | 0 | +0 | 0 | - | 1 | here.com |
-| 35 | Anusha Gugale | 0 | +0 | 0 | - | 6 | adit-jv.com |
-| 36 | Arnaud Ferraris | 0 | +0 | 0 | - | 6 | collabora.com |
-| 37 | Arthur Guyader | 0 | +0 | 0 | - | 3 | iot.bzh |
-| 38 | Ashok Sidipotu | 0 | +0 | 0 | - | 5 | collabora.com |
-| 39 | Bechir Mghirbi | 0 | +0 | 0 | - | 2 | grammer.com |
-| 40 | Benjamin Kamath | 0 | +0 | 0 | - | 1 | synapse.com |
-| 41 | Bocklage, Jens | 0 | +0 | 0 | - | 7 | mentor.com |
-| 42 | Builder | 0 | +0 | 0 | - | 2 | 6b3797ab1e90 |
-| 43 | Carlos Alberto Lopez Perez | 0 | +0 | 0 | - | 1 | igalia.com |
-| 44 | Changhyeok Bae | 0 | +0 | 0 | - | 7 | gmail.com |
-| 45 | Changhyeok Bae | 0 | +0 | 0 | - | 1 | daimler.com |
-| 46 | Christian Gromm | 0 | +0 | 0 | - | 6 | microchip.com |
-| 47 | Christoph Rahn | 0 | +0 | 0 | - | 1 | rosen-group.com |
-| 48 | Christopher Peplin | 0 | +0 | 0 | - | 1 | rhubarbtech.com |
-| 49 | Christopher Peplin | 0 | +0 | 0 | - | 1 | uberatc.com |
-| 50 | Christopher Peplin | 0 | +0 | 0 | - | 1 | rhubarbtech.com |
-| 51 | Clément Bénier | 0 | +0 | 0 | - | 19 | iot.bzh |
-| 52 | Constantine Grantcharov | 0 | +0 | 0 | - | 1 | trustpointinnovation.com |
-| 53 | Corentin LABBE | 0 | +0 | 0 | - | 6 | baylibre.com |
-| 54 | Corentin Le Gall | 0 | +0 | 0 | - | 1 | iot.bzh |
-| 55 | Corentin Le Gall | 0 | +0 | 0 | - | 1 | lorient.iot |
-| 56 | CorentinLGS | 0 | +0 | 0 | - | 8 | gmail.com |
-| 57 | CorentinLGS | 0 | +0 | 0 | - | 2 | github.com |
-| 58 | Damian Hobson-Garcia | 0 | +0 | 0 | - | 5 | co.jp |
-| 59 | Daniel Stone | 0 | +0 | 0 | - | 2 | collabora.com |
-| 60 | David Lewin | 0 | +0 | 0 | - | 1 | baylibre.com |
-| 61 | Dennis Field | 0 | +0 | 0 | - | 2 | radiosound.com |
-| 62 | Denys Dmytriyenko | 0 | +0 | 0 | - | 9 | konsulko.com |
-| 63 | Dmitry Yudenich | 0 | +0 | 0 | - | 1 | orioninc.com |
-| 64 | Dominig ar Foll | 0 | +0 | 0 | - | 1 | fridu.net |
-| 65 | Dominig ar Foll Intel Open Source | 0 | +0 | 0 | - | 5 | fridu.net |
-| 66 | Dominik Wawrzonek | 0 | +0 | 0 | - | 1 | ics.com |
-| 67 | Duy Dang | 0 | +0 | 0 | - | 1 | renesas.com |
-| 68 | Edi Feschiyan | 0 | +0 | 0 | - | 9 | konsulko.com |
-| 69 | Edi Feschiyan | 0 | +0 | 0 | - | 1 | pm.me |
-| 70 | Edi Feschiyan | 0 | +0 | 0 | - | 1 | github.com |
-| 71 | Ehsan Takalloo | 0 | +0 | 0 | - | 1 | gmail.com |
-| 72 | Eric | 0 | +0 | 0 | - | 1 | github.com |
-| 73 | Eric Marsman | 0 | +0 | 0 | - | 1 | gmail.com |
-| 74 | Erik Wilde | 0 | +0 | 0 | - | 1 | berkeley.edu |
-| 75 | Evgeniy Didin | 0 | +0 | 0 | - | 2 | synopsys.com |
-| 76 | Fabian Scheler | 0 | +0 | 0 | - | 1 | siemens.com |
-| 77 | Farshid Monhaseri | 0 | +0 | 0 | - | 2 | gmail.com |
-| 78 | Felipe Erias | 0 | +0 | 0 | - | 1 | igalia.com |
-| 79 | Forlot Romain [IoT.bzh] | 0 | +0 | 0 | - | 9 | iot.bzh |
-| 80 | Frederic Marec | 0 | +0 | 0 | - | 51 | iot.bzh |
-| 81 | Frode Isaksen | 0 | +0 | 0 | - | 2 | baylibre.com |
-| 82 | Fulup Ar Foll | 0 | +0 | 0 | - | 10 | iot.bzh |
-| 83 | Fulup Ar Foll | 0 | +0 | 0 | - | 1 | breizhme.net |
-| 84 | Fumiya Kohzu | 0 | +0 | 0 | - | 2 | panasonic.com |
-| 85 | Gaykawadpk | 0 | +0 | 0 | - | 1 | kpit.com |
-| 86 | Geoffroy Van Cutsem | 0 | +0 | 0 | - | 1 | intel.com |
-| 87 | Gerrit Code Review | 0 | +0 | 0 | - | 4 | automotivelinux.org |
-| 88 | Guillaume Lager | 0 | +0 | 0 | - | 1 | innoseis.com |
-| 89 | Guy Lunardi | 0 | +0 | 0 | - | 1 | co.uk |
-| 90 | Guy Lunardi | 0 | +0 | 0 | - | 1 | gmail.com |
-| 91 | Hammad Ahmed | 0 | +0 | 0 | - | 1 | irdeto.com |
-| 92 | Harald Seiler | 0 | +0 | 0 | - | 1 | denx.de |
-| 93 | Harunobu Kurokawa | 0 | +0 | 0 | - | 11 | renesas.com |
-| 94 | Hau Vo | 0 | +0 | 0 | - | 3 | renesas.com |
-| 95 | Henrique Ferreiro | 0 | +0 | 0 | - | 1 | igalia.com |
-| 96 | Hiroki Koga | 0 | +0 | 0 | - | 1 | co.jp |
-| 97 | Hiroyuki Ishii | 0 | +0 | 0 | - | 4 | panasonic.com |
-| 98 | Howard Abbey | 0 | +0 | 0 | - | 1 | yahoo.com |
-| 99 | Huangjinhui | 0 | +0 | 0 | - | 1 | fujitsu.com |
-| 100 | Humberto Alfonso Díaz | 0 | +0 | 0 | - | 7 | asvito.es |
-| 101 | Indivara Weerasuriya | 0 | +0 | 0 | - | 1 | qt.io |
-| 102 | Ivan Kravets | 0 | +0 | 0 | - | 1 | ikravets.com |
-| 103 | Jacobo Aragunde Pérez | 0 | +0 | 0 | - | 12 | igalia.com |
-| 104 | Jakub Luzny | 0 | +0 | 0 | - | 1 | luzny.cz |
-| 105 | James Simon | 0 | +0 | 0 | - | 1 | amazon.com |
-| 106 | Jan-Simon Möller | 0 | +0 | 0 | - | 4 | gmx.de |
-| 107 | Jens Bocklage | 0 | +0 | 0 | - | 1 | bocklage.com |
-| 108 | Jens Steinhauser | 0 | +0 | 0 | - | 1 | gmail.com |
-| 109 | Jeremy Phelps | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 110 | Jerome Brunet | 0 | +0 | 0 | - | 1 | baylibre.com |
-| 111 | Jessica Wagantall | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 112 | Jiu Shanheng | 0 | +0 | 0 | - | 1 | qt.io |
-| 113 | Johann CAHIER | 0 | +0 | 0 | - | 5 | iot.bzh |
-| 114 | Johnny O'Connor | 0 | +0 | 0 | - | 1 | gmail.com |
-| 115 | Jonathan Aillet | 0 | +0 | 0 | - | 7 | iot.bzh |
-| 116 | Jose Dapena Paz | 0 | +0 | 0 | - | 10 | igalia.com |
-| 117 | Jose Dapena Paz | 0 | +0 | 0 | - | 1 | lge.com |
-| 118 | José Bollo | 0 | +0 | 0 | - | 59 | iot.bzh |
-| 119 | José Bollo | 0 | +0 | 0 | - | 4 | nonadev.net |
-| 120 | Julian Bouzas | 0 | +0 | 0 | - | 1 | collabora.com |
-| 121 | Julie Jeongeun Kim | 0 | +0 | 0 | - | 1 | igalia.com |
-| 122 | Julien Massot | 0 | +0 | 0 | - | 1 | iot.bzh |
-| 123 | Justin DeMartino | 0 | +0 | 0 | - | 1 | gmail.com |
-| 124 | Jérémy Fanguède | 0 | +0 | 0 | - | 1 | virtualopensystems.com |
-| 125 | Karthik Ramanan | 0 | +0 | 0 | - | 1 | ti.com |
-| 126 | Kazumasa Mitsunari | 0 | +0 | 0 | - | 22 | co.jp |
-| 127 | Kazumasa Mitsunari | 0 | +0 | 0 | - | 3 | co.jp |
-| 128 | Kengo Ibe | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 129 | Kenji Hosokawa | 0 | +0 | 0 | - | 3 | adit-jv.com |
-| 130 | Kenshi Kawaguchi | 0 | +0 | 0 | - | 1 | recurse.ca |
-| 131 | Kent Ryhorchuk | 0 | +0 | 0 | - | 1 | xeralux.com |
-| 132 | Kevin Hilman | 0 | +0 | 0 | - | 6 | baylibre.com |
-| 133 | Khouloud Touil | 0 | +0 | 0 | - | 5 | baylibre.com |
-| 134 | Kien Dinh | 0 | +0 | 0 | - | 2 | intel.com |
-| 135 | Konstantin Podsvirov | 0 | +0 | 0 | - | 1 | podsvirov.pro |
-| 136 | Kotaro Hashimoto | 0 | +0 | 0 | - | 3 | co.jp |
-| 137 | Kyle Manna | 0 | +0 | 0 | - | 1 | kylemanna.com |
-| 138 | Leon Anavi | 0 | +0 | 0 | - | 8 | konsulko.com |
-| 139 | Leonid Lazarev | 0 | +0 | 0 | - | 3 | orioninc.com |
-| 140 | Leonid Lazarev | 0 | +0 | 0 | - | 1 | mera.com |
-| 141 | Li Xiaoming | 0 | +0 | 0 | - | 66 | fujitsu.com |
-| 142 | Li Xiaoming | 0 | +0 | 0 | - | 1 | github.com |
-| 143 | LiPengKun | 0 | +0 | 0 | - | 1 | alps.com |
-| 144 | Lisandro Pérez Meyer | 0 | +0 | 0 | - | 3 | ics.com |
-| 145 | Liu Wenlong | 0 | +0 | 0 | - | 2 | fujitsu.com |
-| 146 | Loc Nguyen | 0 | +0 | 0 | - | 1 | renesas.com |
-| 147 | Lorenzo Tilve | 0 | +0 | 0 | - | 10 | igalia.com |
-| 148 | Loys Ollivier | 0 | +0 | 0 | - | 3 | baylibre.com |
-| 149 | Loïc Collignon | 0 | +0 | 0 | - | 18 | iot.bzh |
-| 150 | Ludwig Schwiedrzik | 0 | +0 | 0 | - | 3 | d-fine.com |
-| 151 | Malik Talha | 0 | +0 | 0 | - | 8 | gmail.com |
-| 152 | Manuel Bachmann | 0 | +0 | 0 | - | 5 | iot.bzh |
-| 153 | Manuel Bachmann | 0 | +0 | 0 | - | 4 | iot.bzh |
-| 154 | Marcus Fritzsch | 0 | +0 | 0 | - | 1 | mentor.com |
-| 155 | Mark Farrugia | 0 | +0 | 0 | - | 2 | com.au |
-| 156 | Martin Donath | 0 | +0 | 0 | - | 1 | gmail.com |
-| 157 | Martin Kelly | 0 | +0 | 0 | - | 4 | xevo.com |
-| 158 | Matt Porter | 0 | +0 | 0 | - | 10 | konsulko.com |
-| 159 | Matt Ranostay | 0 | +0 | 0 | - | 46 | konsulko.com |
-| 160 | Matthew Vick | 0 | +0 | 0 | - | 1 | jaguarlandrover.com |
-| 161 | Max Tomago | 0 | +0 | 0 | - | 1 | co.uk |
-| 162 | Maxim Khitrov | 0 | +0 | 0 | - | 1 | mxcrypt.com |
-| 163 | Michael Haberler | 0 | +0 | 0 | - | 1 | priv.at |
-| 164 | Michael Teyfel | 0 | +0 | 0 | - | 2 | adit-jv.com |
-| 165 | Michele Paolino | 0 | +0 | 0 | - | 5 | virtualopensystems.com |
-| 166 | Mihail Grigorov | 0 | +0 | 0 | - | 1 | konsulko.com |
-| 167 | Mikhail Durnev | 0 | +0 | 0 | - | 2 | mentor.com |
-| 168 | Milan Srdinko | 0 | +0 | 0 | - | 1 | alps.cz |
-| 169 | Ming Zhao | 0 | +0 | 0 | - | 1 | luminatewireless.com |
-| 170 | Minori Yasumura | 0 | +0 | 0 | - | 3 | co.jp |
-| 171 | Mohamed Amir | 0 | +0 | 0 | - | 1 | co.jp |
-| 172 | Naoko Tanibata | 0 | +0 | 0 | - | 2 | adit-jv.com |
-| 173 | Naoko Tanibata | 0 | +0 | 0 | - | 1 | adit-jv.com |
-| 174 | Naoto YAMAGUCHI | 0 | +0 | 0 | - | 5 | co.jp |
-| 175 | Nathan Illerbrun | 0 | +0 | 0 | - | 2 | gmail.com |
-| 176 | Naveen Bobbili | 0 | +0 | 0 | - | 3 | amazon.com |
-| 177 | Nedeljko Miljevic | 0 | +0 | 0 | - | 1 | windriver.com |
-| 178 | Nicolas Colomer | 0 | +0 | 0 | - | 1 | viadeoteam.com |
-| 179 | Nobuhiko Tanibata | 0 | +0 | 0 | - | 1 | adit-jv.com |
-| 180 | Nobuhiko Tanibata | 0 | +0 | 0 | - | 1 | co.jp |
-| 181 | NuoHan Qiao | 0 | +0 | 0 | - | 2 | fujitsu.com |
-| 182 | Oleg Zhurakivskyy | 0 | +0 | 0 | - | 2 | intel.com |
-| 183 | Oleksii Bidnichenko | 0 | +0 | 0 | - | 1 | gmail.com |
-| 184 | Oliver Lee | 0 | +0 | 0 | - | 1 | gmail.com |
-| 185 | OpenEmbedded | 0 | +0 | 0 | - | 1 | oe |
-| 186 | Ouyang Jun | 0 | +0 | 0 | - | 3 | fujitsu.com |
-| 187 | Pantelis Antoniou | 0 | +0 | 0 | - | 1 | konsulko.com |
-| 188 | Parth Dode | 0 | +0 | 0 | - | 2 | gmail.com |
-| 189 | Patrick Vacek | 0 | +0 | 0 | - | 4 | gmail.com |
-| 190 | Patryk Mungai | 0 | +0 | 0 | - | 1 | renesas.com |
-| 191 | Paul Barker | 0 | +0 | 0 | - | 2 | sancloud.com |
-| 192 | Paul Barker | 0 | +0 | 0 | - | 4 | co.uk |
-| 193 | Paul Barker | 0 | +0 | 0 | - | 4 | konsulko.com |
-| 194 | Pavel Ilin | 0 | +0 | 0 | - | 1 | gmail.com |
+| 15 | 8000ff | 0 | +0 | 0 | - | 6 | gmail.com |
+| 16 | Adam Parker | 0 | +0 | 0 | - | 1 | gmail.com |
+| 17 | Alice Ferrazzi | 0 | +0 | 0 | - | 1 | miraclelinux.com |
+| 18 | Alice Ferrazzi | 0 | +0 | 0 | - | 1 | co.jp |
+| 19 | Alistair Francis | 0 | +0 | 0 | - | 3 | wdc.com |
+| 20 | Andre Moreira Magalhaes (andrunko) | 0 | +0 | 0 | - | 2 | co.uk |
+| 21 | Andreas Müller | 0 | +0 | 0 | - | 1 | googlemail.com |
+| 22 | Andrew Grimberg | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 23 | Andrew Ruder | 0 | +0 | 0 | - | 1 | elecsyscorp.com |
+| 24 | Andrey Shamanin | 0 | +0 | 0 | - | 4 | orioninc.com |
+| 25 | Andriy Tryshnivskyy | 0 | +0 | 0 | - | 3 | opensynergy.com |
+| 26 | Angelos Mouzakitis | 0 | +0 | 0 | - | 5 | virtualopensystems.com |
+| 27 | Anh Nguyen | 0 | +0 | 0 | - | 1 | renesas.com |
+| 28 | Anil Belur | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 29 | Anmol Anmol | 0 | +0 | 0 | - | 1 | gmail.com |
+| 30 | Antia Puentes | 0 | +0 | 0 | - | 12 | igalia.com |
+| 31 | Anton Gerasimov | 0 | +0 | 0 | - | 4 | advancedtelematic.com |
+| 32 | Anton Gerasimov | 0 | +0 | 0 | - | 1 | gmail.com |
+| 33 | Anton Gerasimov | 0 | +0 | 0 | - | 1 | here.com |
+| 34 | Anusha Gugale | 0 | +0 | 0 | - | 6 | adit-jv.com |
+| 35 | Arnaud Ferraris | 0 | +0 | 0 | - | 6 | collabora.com |
+| 36 | Arthur Guyader | 0 | +0 | 0 | - | 3 | iot.bzh |
+| 37 | Ashok Sidipotu | 0 | +0 | 0 | - | 5 | collabora.com |
+| 38 | Bechir Mghirbi | 0 | +0 | 0 | - | 2 | grammer.com |
+| 39 | Benjamin Kamath | 0 | +0 | 0 | - | 1 | synapse.com |
+| 40 | Bocklage, Jens | 0 | +0 | 0 | - | 7 | mentor.com |
+| 41 | Builder | 0 | +0 | 0 | - | 2 | 6b3797ab1e90 |
+| 42 | Carlos Alberto Lopez Perez | 0 | +0 | 0 | - | 1 | igalia.com |
+| 43 | Changhyeok Bae | 0 | +0 | 0 | - | 7 | gmail.com |
+| 44 | Changhyeok Bae | 0 | +0 | 0 | - | 1 | daimler.com |
+| 45 | Christian Gromm | 0 | +0 | 0 | - | 6 | microchip.com |
+| 46 | Christoph Rahn | 0 | +0 | 0 | - | 1 | rosen-group.com |
+| 47 | Christopher Peplin | 0 | +0 | 0 | - | 1 | rhubarbtech.com |
+| 48 | Christopher Peplin | 0 | +0 | 0 | - | 1 | uberatc.com |
+| 49 | Christopher Peplin | 0 | +0 | 0 | - | 1 | rhubarbtech.com |
+| 50 | Clément Bénier | 0 | +0 | 0 | - | 19 | iot.bzh |
+| 51 | Constantine Grantcharov | 0 | +0 | 0 | - | 1 | trustpointinnovation.com |
+| 52 | Corentin LABBE | 0 | +0 | 0 | - | 6 | baylibre.com |
+| 53 | Corentin Le Gall | 0 | +0 | 0 | - | 1 | iot.bzh |
+| 54 | Corentin Le Gall | 0 | +0 | 0 | - | 1 | lorient.iot |
+| 55 | CorentinLGS | 0 | +0 | 0 | - | 8 | gmail.com |
+| 56 | CorentinLGS | 0 | +0 | 0 | - | 2 | github.com |
+| 57 | Damian Hobson-Garcia | 0 | +0 | 0 | - | 5 | co.jp |
+| 58 | Daniel Stone | 0 | +0 | 0 | - | 2 | collabora.com |
+| 59 | David Lewin | 0 | +0 | 0 | - | 1 | baylibre.com |
+| 60 | Dennis Field | 0 | +0 | 0 | - | 2 | radiosound.com |
+| 61 | Denys Dmytriyenko | 0 | +0 | 0 | - | 9 | konsulko.com |
+| 62 | Dmitry Yudenich | 0 | +0 | 0 | - | 1 | orioninc.com |
+| 63 | Dominig ar Foll | 0 | +0 | 0 | - | 1 | fridu.net |
+| 64 | Dominig ar Foll Intel Open Source | 0 | +0 | 0 | - | 5 | fridu.net |
+| 65 | Dominik Wawrzonek | 0 | +0 | 0 | - | 1 | ics.com |
+| 66 | Duy Dang | 0 | +0 | 0 | - | 1 | renesas.com |
+| 67 | Edi Feschiyan | 0 | +0 | 0 | - | 9 | konsulko.com |
+| 68 | Edi Feschiyan | 0 | +0 | 0 | - | 1 | pm.me |
+| 69 | Edi Feschiyan | 0 | +0 | 0 | - | 1 | github.com |
+| 70 | Ehsan Takalloo | 0 | +0 | 0 | - | 1 | gmail.com |
+| 71 | Eric | 0 | +0 | 0 | - | 1 | github.com |
+| 72 | Eric Marsman | 0 | +0 | 0 | - | 1 | gmail.com |
+| 73 | Erik Wilde | 0 | +0 | 0 | - | 1 | berkeley.edu |
+| 74 | Evgeniy Didin | 0 | +0 | 0 | - | 2 | synopsys.com |
+| 75 | Fabian Scheler | 0 | +0 | 0 | - | 1 | siemens.com |
+| 76 | Farshid Monhaseri | 0 | +0 | 0 | - | 2 | gmail.com |
+| 77 | Felipe Erias | 0 | +0 | 0 | - | 1 | igalia.com |
+| 78 | Forlot Romain [IoT.bzh] | 0 | +0 | 0 | - | 9 | iot.bzh |
+| 79 | Frederic Marec | 0 | +0 | 0 | - | 51 | iot.bzh |
+| 80 | Frode Isaksen | 0 | +0 | 0 | - | 2 | baylibre.com |
+| 81 | Fulup Ar Foll | 0 | +0 | 0 | - | 10 | iot.bzh |
+| 82 | Fulup Ar Foll | 0 | +0 | 0 | - | 1 | breizhme.net |
+| 83 | Fumiya Kohzu | 0 | +0 | 0 | - | 2 | panasonic.com |
+| 84 | Gaykawadpk | 0 | +0 | 0 | - | 1 | kpit.com |
+| 85 | Geoffroy Van Cutsem | 0 | +0 | 0 | - | 1 | intel.com |
+| 86 | Gerrit Code Review | 0 | +0 | 0 | - | 4 | automotivelinux.org |
+| 87 | Guillaume Lager | 0 | +0 | 0 | - | 1 | innoseis.com |
+| 88 | Guy Lunardi | 0 | +0 | 0 | - | 1 | co.uk |
+| 89 | Guy Lunardi | 0 | +0 | 0 | - | 1 | gmail.com |
+| 90 | Hammad Ahmed | 0 | +0 | 0 | - | 1 | irdeto.com |
+| 91 | Harald Seiler | 0 | +0 | 0 | - | 1 | denx.de |
+| 92 | Harunobu Kurokawa | 0 | +0 | 0 | - | 11 | renesas.com |
+| 93 | Hau Vo | 0 | +0 | 0 | - | 3 | renesas.com |
+| 94 | Henrique Ferreiro | 0 | +0 | 0 | - | 1 | igalia.com |
+| 95 | Hiroki Koga | 0 | +0 | 0 | - | 1 | co.jp |
+| 96 | Hiroyuki Ishii | 0 | +0 | 0 | - | 4 | panasonic.com |
+| 97 | Howard Abbey | 0 | +0 | 0 | - | 1 | yahoo.com |
+| 98 | Huangjinhui | 0 | +0 | 0 | - | 1 | fujitsu.com |
+| 99 | Humberto Alfonso Díaz | 0 | +0 | 0 | - | 7 | asvito.es |
+| 100 | Indivara Weerasuriya | 0 | +0 | 0 | - | 1 | qt.io |
+| 101 | Ivan Kravets | 0 | +0 | 0 | - | 1 | ikravets.com |
+| 102 | Jacobo Aragunde Pérez | 0 | +0 | 0 | - | 12 | igalia.com |
+| 103 | Jakub Luzny | 0 | +0 | 0 | - | 1 | luzny.cz |
+| 104 | James Simon | 0 | +0 | 0 | - | 1 | amazon.com |
+| 105 | Jan-Simon Möller | 0 | +0 | 0 | - | 4 | gmx.de |
+| 106 | Jens Bocklage | 0 | +0 | 0 | - | 1 | bocklage.com |
+| 107 | Jens Steinhauser | 0 | +0 | 0 | - | 1 | gmail.com |
+| 108 | Jeremy Phelps | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 109 | Jerome Brunet | 0 | +0 | 0 | - | 1 | baylibre.com |
+| 110 | Jessica Wagantall | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 111 | Jiu Shanheng | 0 | +0 | 0 | - | 1 | qt.io |
+| 112 | Johann CAHIER | 0 | +0 | 0 | - | 5 | iot.bzh |
+| 113 | Johnny O'Connor | 0 | +0 | 0 | - | 1 | gmail.com |
+| 114 | Jonathan Aillet | 0 | +0 | 0 | - | 7 | iot.bzh |
+| 115 | Jose Dapena Paz | 0 | +0 | 0 | - | 10 | igalia.com |
+| 116 | Jose Dapena Paz | 0 | +0 | 0 | - | 1 | lge.com |
+| 117 | José Bollo | 0 | +0 | 0 | - | 59 | iot.bzh |
+| 118 | José Bollo | 0 | +0 | 0 | - | 4 | nonadev.net |
+| 119 | Julian Bouzas | 0 | +0 | 0 | - | 1 | collabora.com |
+| 120 | Julie Jeongeun Kim | 0 | +0 | 0 | - | 1 | igalia.com |
+| 121 | Julien Massot | 0 | +0 | 0 | - | 1 | iot.bzh |
+| 122 | Justin DeMartino | 0 | +0 | 0 | - | 1 | gmail.com |
+| 123 | Jérémy Fanguède | 0 | +0 | 0 | - | 1 | virtualopensystems.com |
+| 124 | Karthik Ramanan | 0 | +0 | 0 | - | 1 | ti.com |
+| 125 | Kazumasa Mitsunari | 0 | +0 | 0 | - | 22 | co.jp |
+| 126 | Kazumasa Mitsunari | 0 | +0 | 0 | - | 3 | co.jp |
+| 127 | Kengo Ibe | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 128 | Kenji Hosokawa | 0 | +0 | 0 | - | 3 | adit-jv.com |
+| 129 | Kenshi Kawaguchi | 0 | +0 | 0 | - | 1 | recurse.ca |
+| 130 | Kent Ryhorchuk | 0 | +0 | 0 | - | 1 | xeralux.com |
+| 131 | Kevin Hilman | 0 | +0 | 0 | - | 6 | baylibre.com |
+| 132 | Khouloud Touil | 0 | +0 | 0 | - | 5 | baylibre.com |
+| 133 | Kien Dinh | 0 | +0 | 0 | - | 2 | intel.com |
+| 134 | Konstantin Podsvirov | 0 | +0 | 0 | - | 1 | podsvirov.pro |
+| 135 | Kotaro Hashimoto | 0 | +0 | 0 | - | 3 | co.jp |
+| 136 | Kyle Manna | 0 | +0 | 0 | - | 1 | kylemanna.com |
+| 137 | Leon Anavi | 0 | +0 | 0 | - | 8 | konsulko.com |
+| 138 | Leonid Lazarev | 0 | +0 | 0 | - | 3 | orioninc.com |
+| 139 | Leonid Lazarev | 0 | +0 | 0 | - | 1 | mera.com |
+| 140 | Li Xiaoming | 0 | +0 | 0 | - | 66 | fujitsu.com |
+| 141 | Li Xiaoming | 0 | +0 | 0 | - | 1 | github.com |
+| 142 | LiPengKun | 0 | +0 | 0 | - | 1 | alps.com |
+| 143 | Lisandro Pérez Meyer | 0 | +0 | 0 | - | 3 | ics.com |
+| 144 | Liu Wenlong | 0 | +0 | 0 | - | 2 | fujitsu.com |
+| 145 | Loc Nguyen | 0 | +0 | 0 | - | 1 | renesas.com |
+| 146 | Lorenzo Tilve | 0 | +0 | 0 | - | 10 | igalia.com |
+| 147 | Loys Ollivier | 0 | +0 | 0 | - | 3 | baylibre.com |
+| 148 | Loïc Collignon | 0 | +0 | 0 | - | 18 | iot.bzh |
+| 149 | Ludwig Schwiedrzik | 0 | +0 | 0 | - | 3 | d-fine.com |
+| 150 | Malik Talha | 0 | +0 | 0 | - | 8 | gmail.com |
+| 151 | Manuel Bachmann | 0 | +0 | 0 | - | 5 | iot.bzh |
+| 152 | Manuel Bachmann | 0 | +0 | 0 | - | 4 | iot.bzh |
+| 153 | Marcus Fritzsch | 0 | +0 | 0 | - | 1 | mentor.com |
+| 154 | Mark Farrugia | 0 | +0 | 0 | - | 2 | com.au |
+| 155 | Martin Donath | 0 | +0 | 0 | - | 1 | gmail.com |
+| 156 | Martin Kelly | 0 | +0 | 0 | - | 4 | xevo.com |
+| 157 | Matt Porter | 0 | +0 | 0 | - | 10 | konsulko.com |
+| 158 | Matt Ranostay | 0 | +0 | 0 | - | 46 | konsulko.com |
+| 159 | Matthew Vick | 0 | +0 | 0 | - | 1 | jaguarlandrover.com |
+| 160 | Max Tomago | 0 | +0 | 0 | - | 1 | co.uk |
+| 161 | Maxim Khitrov | 0 | +0 | 0 | - | 1 | mxcrypt.com |
+| 162 | Michael Haberler | 0 | +0 | 0 | - | 1 | priv.at |
+| 163 | Michael Teyfel | 0 | +0 | 0 | - | 2 | adit-jv.com |
+| 164 | Michele Paolino | 0 | +0 | 0 | - | 5 | virtualopensystems.com |
+| 165 | Mihail Grigorov | 0 | +0 | 0 | - | 1 | konsulko.com |
+| 166 | Mikhail Durnev | 0 | +0 | 0 | - | 2 | mentor.com |
+| 167 | Milan Srdinko | 0 | +0 | 0 | - | 1 | alps.cz |
+| 168 | Ming Zhao | 0 | +0 | 0 | - | 1 | luminatewireless.com |
+| 169 | Minori Yasumura | 0 | +0 | 0 | - | 3 | co.jp |
+| 170 | Mohamed Amir | 0 | +0 | 0 | - | 1 | co.jp |
+| 171 | Naoko Tanibata | 0 | +0 | 0 | - | 2 | adit-jv.com |
+| 172 | Naoko Tanibata | 0 | +0 | 0 | - | 1 | adit-jv.com |
+| 173 | Naoto YAMAGUCHI | 0 | +0 | 0 | - | 5 | co.jp |
+| 174 | Nathan Illerbrun | 0 | +0 | 0 | - | 2 | gmail.com |
+| 175 | Naveen Bobbili | 0 | +0 | 0 | - | 3 | amazon.com |
+| 176 | Nedeljko Miljevic | 0 | +0 | 0 | - | 1 | windriver.com |
+| 177 | Nicolas Colomer | 0 | +0 | 0 | - | 1 | viadeoteam.com |
+| 178 | Nobuhiko Tanibata | 0 | +0 | 0 | - | 1 | adit-jv.com |
+| 179 | Nobuhiko Tanibata | 0 | +0 | 0 | - | 1 | co.jp |
+| 180 | NuoHan Qiao | 0 | +0 | 0 | - | 2 | fujitsu.com |
+| 181 | Oleg Zhurakivskyy | 0 | +0 | 0 | - | 2 | intel.com |
+| 182 | Oleksii Bidnichenko | 0 | +0 | 0 | - | 1 | gmail.com |
+| 183 | Oliver Lee | 0 | +0 | 0 | - | 1 | gmail.com |
+| 184 | OpenEmbedded | 0 | +0 | 0 | - | 1 | oe |
+| 185 | Ouyang Jun | 0 | +0 | 0 | - | 3 | fujitsu.com |
+| 186 | Pantelis Antoniou | 0 | +0 | 0 | - | 1 | konsulko.com |
+| 187 | Parth Dode | 0 | +0 | 0 | - | 2 | gmail.com |
+| 188 | Patrick Vacek | 0 | +0 | 0 | - | 4 | gmail.com |
+| 189 | Patryk Mungai | 0 | +0 | 0 | - | 1 | renesas.com |
+| 190 | Paul Barker | 0 | +0 | 0 | - | 2 | sancloud.com |
+| 191 | Paul Barker | 0 | +0 | 0 | - | 4 | co.uk |
+| 192 | Paul Barker | 0 | +0 | 0 | - | 4 | konsulko.com |
+| 193 | Pavel Ilin | 0 | +0 | 0 | - | 1 | gmail.com |
+| 194 | Petteri Aimonen | 0 | +0 | 0 | - | 1 | kapsi.fi |
 | 195 | Petteri Aimonen | 0 | +0 | 0 | - | 1 | kapsi.fi |
 | 196 | Petteri Aimonen | 0 | +0 | 0 | - | 1 | kapsi.fi |
-| 197 | Petteri Aimonen | 0 | +0 | 0 | - | 1 | kapsi.fi |
-| 198 | Phil Wise | 0 | +0 | 0 | - | 3 | advancedtelematic.com |
-| 199 | Philippe Coval | 0 | +0 | 0 | - | 4 | samsung.com |
-| 200 | Philippe Mazet | 0 | +0 | 0 | - | 1 | nxp.com |
-| 201 | Phong Tran | 0 | +0 | 0 | - | 5 | gmail.com |
-| 202 | Pierre MARZIN | 0 | +0 | 0 | - | 4 | iot.bzh |
-| 203 | Piotr Sikora | 0 | +0 | 0 | - | 1 | google.com |
-| 204 | Prakash Buddhiraja | 0 | +0 | 0 | - | 1 | amazon.com |
-| 205 | Qiu Tingting | 0 | +0 | 0 | - | 11 | fujitsu.com |
-| 206 | Raquel Medina | 0 | +0 | 0 | - | 48 | konsulko.com |
-| 207 | Riku Nomoto | 0 | +0 | 0 | - | 2 | co.jp |
-| 208 | Riku.Nomoto | 0 | +0 | 0 | - | 2 | woven-planet.global |
-| 209 | Risto Avila | 0 | +0 | 0 | - | 2 | theqtcompany.com |
-| 210 | Roger Zanoni | 0 | +0 | 0 | - | 8 | igalia.com |
-| 211 | Romain Forlot | 0 | +0 | 0 | - | 45 | iot.bzh |
-| 212 | Ronan Le Martret | 0 | +0 | 0 | - | 29 | iot.bzh |
-| 213 | Rongrong Yuan | 0 | +0 | 0 | - | 1 | fujitsu.com |
-| 214 | Ryan Day | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 215 | Ryan Oberholzer | 0 | +0 | 0 | - | 1 | github.com |
-| 216 | Sahaj Sarup | 0 | +0 | 0 | - | 1 | linaro.org |
-| 217 | Saman Mahmoodi | 0 | +0 | 0 | - | 2 | gmail.com |
-| 218 | Scott Murray | 0 | +0 | 0 | - | 1 | spiteful.org |
-| 219 | Scott Rifenbark | 0 | +0 | 0 | - | 10 | gmail.com |
-| 220 | Sebastien D | 0 | +0 | 0 | - | 6 | gmail.com |
-| 221 | Sebastien Douheret | 0 | +0 | 0 | - | 26 | iot.bzh |
-| 222 | Shankho Boron Ghosh | 0 | +0 | 0 | - | 3 | gmail.com |
-| 223 | Shoichi Hiramatsu | 0 | +0 | 0 | - | 1 | co.jp |
-| 224 | Shotaro Uchida | 0 | +0 | 0 | - | 1 | amazon.com |
-| 225 | Shuhei AKETA | 0 | +0 | 0 | - | 1 | woven-planet.global |
-| 226 | Stan Hu | 0 | +0 | 0 | - | 1 | aclimalabs.com |
-| 227 | Stephane Desneux | 0 | +0 | 0 | - | 28 | iot.bzh |
-| 228 | Stephen Lawrence | 0 | +0 | 0 | - | 1 | renesas.com |
-| 229 | Stoyan Bogdanov | 0 | +0 | 0 | - | 2 | konsulko.com |
-| 230 | Suchinton Chakravarty | 0 | +0 | 0 | - | 3 | gmail.com |
-| 231 | Tadao Tanikawa | 0 | +0 | 0 | - | 24 | panasonic.com |
-| 232 | Takashi Matsuzawa | 0 | +0 | 0 | - | 4 | xevo.com |
-| 233 | Takashi Yamamiya | 0 | +0 | 0 | - | 1 | xevo.com |
-| 234 | Tasuku Suzuki | 0 | +0 | 0 | - | 2 | qbc.io |
-| 235 | Tasuku Suzuki | 0 | +0 | 0 | - | 14 | qt.io |
-| 236 | Tetsuro Komatsu | 0 | +0 | 0 | - | 1 | github.com |
-| 237 | Thierry Bultel | 0 | +0 | 0 | - | 12 | iot.bzh |
-| 238 | Thomas Walzer | 0 | +0 | 0 | - | 3 | reutlingen-university.de |
-| 239 | Tobba | 0 | +0 | 0 | - | 1 | gmail.com |
-| 240 | Tobias Jahnke | 0 | +0 | 0 | - | 5 | microchip.com |
-| 241 | Tobias Olausson | 0 | +0 | 0 | - | 1 | hms.se |
-| 242 | Tom Rini | 0 | +0 | 0 | - | 6 | konsulko.com |
-| 243 | Tom Roeder | 0 | +0 | 0 | - | 1 | google.com |
+| 197 | Phil Wise | 0 | +0 | 0 | - | 3 | advancedtelematic.com |
+| 198 | Philippe Coval | 0 | +0 | 0 | - | 4 | samsung.com |
+| 199 | Philippe Mazet | 0 | +0 | 0 | - | 1 | nxp.com |
+| 200 | Phong Tran | 0 | +0 | 0 | - | 5 | gmail.com |
+| 201 | Pierre MARZIN | 0 | +0 | 0 | - | 4 | iot.bzh |
+| 202 | Piotr Sikora | 0 | +0 | 0 | - | 1 | google.com |
+| 203 | Prakash Buddhiraja | 0 | +0 | 0 | - | 1 | amazon.com |
+| 204 | Qiu Tingting | 0 | +0 | 0 | - | 11 | fujitsu.com |
+| 205 | Raquel Medina | 0 | +0 | 0 | - | 48 | konsulko.com |
+| 206 | Riku Nomoto | 0 | +0 | 0 | - | 2 | co.jp |
+| 207 | Riku.Nomoto | 0 | +0 | 0 | - | 2 | woven-planet.global |
+| 208 | Risto Avila | 0 | +0 | 0 | - | 2 | theqtcompany.com |
+| 209 | Roger Zanoni | 0 | +0 | 0 | - | 8 | igalia.com |
+| 210 | Romain Forlot | 0 | +0 | 0 | - | 45 | iot.bzh |
+| 211 | Ronan Le Martret | 0 | +0 | 0 | - | 29 | iot.bzh |
+| 212 | Rongrong Yuan | 0 | +0 | 0 | - | 1 | fujitsu.com |
+| 213 | Ryan Day | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 214 | Ryan Oberholzer | 0 | +0 | 0 | - | 1 | github.com |
+| 215 | Sahaj Sarup | 0 | +0 | 0 | - | 1 | linaro.org |
+| 216 | Saman Mahmoodi | 0 | +0 | 0 | - | 2 | gmail.com |
+| 217 | Scott Murray | 0 | +0 | 0 | - | 1 | spiteful.org |
+| 218 | Scott Rifenbark | 0 | +0 | 0 | - | 10 | gmail.com |
+| 219 | Sebastien D | 0 | +0 | 0 | - | 6 | gmail.com |
+| 220 | Sebastien Douheret | 0 | +0 | 0 | - | 26 | iot.bzh |
+| 221 | Shankho Boron Ghosh | 0 | +0 | 0 | - | 3 | gmail.com |
+| 222 | Shoichi Hiramatsu | 0 | +0 | 0 | - | 1 | co.jp |
+| 223 | Shotaro Uchida | 0 | +0 | 0 | - | 1 | amazon.com |
+| 224 | Shuhei AKETA | 0 | +0 | 0 | - | 1 | woven-planet.global |
+| 225 | Stan Hu | 0 | +0 | 0 | - | 1 | aclimalabs.com |
+| 226 | Stephane Desneux | 0 | +0 | 0 | - | 28 | iot.bzh |
+| 227 | Stephen Lawrence | 0 | +0 | 0 | - | 1 | renesas.com |
+| 228 | Stoyan Bogdanov | 0 | +0 | 0 | - | 2 | konsulko.com |
+| 229 | Suchinton Chakravarty | 0 | +0 | 0 | - | 3 | gmail.com |
+| 230 | Tadao Tanikawa | 0 | +0 | 0 | - | 24 | panasonic.com |
+| 231 | Takashi Matsuzawa | 0 | +0 | 0 | - | 4 | xevo.com |
+| 232 | Takashi Yamamiya | 0 | +0 | 0 | - | 1 | xevo.com |
+| 233 | Tasuku Suzuki | 0 | +0 | 0 | - | 2 | qbc.io |
+| 234 | Tasuku Suzuki | 0 | +0 | 0 | - | 14 | qt.io |
+| 235 | Tetsuro Komatsu | 0 | +0 | 0 | - | 1 | github.com |
+| 236 | Thierry Bultel | 0 | +0 | 0 | - | 12 | iot.bzh |
+| 237 | Thomas Walzer | 0 | +0 | 0 | - | 3 | reutlingen-university.de |
+| 238 | Tobba | 0 | +0 | 0 | - | 1 | gmail.com |
+| 239 | Tobias Jahnke | 0 | +0 | 0 | - | 5 | microchip.com |
+| 240 | Tobias Olausson | 0 | +0 | 0 | - | 1 | hms.se |
+| 241 | Tom Rini | 0 | +0 | 0 | - | 6 | konsulko.com |
+| 242 | Tom Roeder | 0 | +0 | 0 | - | 1 | google.com |
+| 243 | Tomi Leppänen | 0 | +0 | 0 | - | 1 | seafarix.com |
 | 244 | Tomoki Sekiyama | 0 | +0 | 0 | - | 1 | hitachi.com |
 | 245 | Toshi Umemura | 0 | +0 | 0 | - | 1 | co.jp |
 | 246 | Toshiaki Isogai | 0 | +0 | 0 | - | 1 | nttd-mse.com |
@@ -415,61 +415,61 @@ The data presented in the table below covers the past 365 days.
 | 264 | Yan | 0 | +0 | 0 | - | 4 | fujitsu.com |
 | 265 | Yaniv Mordekhay | 0 | +0 | 0 | - | 1 | github.com |
 | 266 | Yannick Gicquel | 0 | +0 | 0 | - | 7 | iot.bzh |
-| 267 | Yordan Dimitrov | 0 | +0 | 0 | - | 4 | gmail.com |
-| 268 | Yoshiki Ito | 0 | +0 | 0 | - | 2 | panasonic.com |
-| 269 | Yuichi Kusakabe | 0 | +0 | 0 | - | 1 | denso-ten.com |
-| 270 | Yuichi Kusakabe | 0 | +0 | 0 | - | 2 | fujitsu.com |
-| 271 | Yury Asheshov | 0 | +0 | 0 | - | 1 | k2l.de |
-| 272 | Yuta Doi | 0 | +0 | 0 | - | 4 | co.jp |
-| 273 | Yuya Ono | 0 | +0 | 0 | - | 1 | co.jp |
-| 274 | Zac Nelson | 0 | +0 | 0 | - | 1 | ford.com |
-| 275 | Zhang Nan | 0 | +0 | 0 | - | 3 | fujitsu.com |
-| 276 | ZhongLu | 0 | +0 | 0 | - | 2 | fujitsu.com |
-| 277 | Zhou Mingying | 0 | +0 | 0 | - | 4 | fujitsu.com |
-| 278 | Zhou Mingying | 0 | +0 | 0 | - | 3 | fujitsu.com |
-| 279 | aakash-s45 | 0 | +0 | 0 | - | 3 | gmail.com |
-| 280 | amanarora9848 | 0 | +0 | 0 | - | 2 | gmail.com |
-| 281 | bearrito | 0 | +0 | 0 | - | 1 | gmail.com |
-| 282 | berni155 | 0 | +0 | 0 | - | 1 | gmail.com |
-| 283 | brian avery | 0 | +0 | 0 | - | 1 | intel.com |
-| 284 | build.automotivelinux.org | 0 | +0 | 0 | - | 6 | automotivelinux.org |
-| 285 | chintsung | 0 | +0 | 0 | - | 1 | gmail.com |
-| 286 | dch | 0 | +0 | 0 | - | 1 | co.uk |
-| 287 | dch | 0 | +0 | 0 | - | 1 | metaswitch.com |
-| 288 | dsouzahansenfrancis | 0 | +0 | 0 | - | 1 | crosschasm.com |
-| 289 | duerpei | 0 | +0 | 0 | - | 15 | fujitsu.com |
-| 290 | fulup | 0 | +0 | 0 | - | 3 | iot.bzh |
-| 291 | fulup | 0 | +0 | 0 | - | 1 | vannes.iot |
-| 292 | heartsucker | 0 | +0 | 0 | - | 1 | autistici.org |
-| 293 | hkojima | 0 | +0 | 0 | - | 1 | mentor.com |
-| 294 | hongyevgeny | 0 | +0 | 0 | - | 3 | drimaes.com |
-| 295 | hritikchouhan | 0 | +0 | 0 | - | 6 | gmail.com |
-| 296 | hupeng | 0 | +0 | 0 | - | 1 | gmail.com |
-| 297 | isotes | 0 | +0 | 0 | - | 1 | gmail.com |
-| 298 | khilman | 0 | +0 | 0 | - | 1 | github.com |
-| 299 | liuyahui | 0 | +0 | 0 | - | 6 | fujitsu.com |
-| 300 | maratsabitov | 0 | +0 | 0 | - | 4 | mera.com |
-| 301 | mgiannikouris | 0 | +0 | 0 | - | 1 | crosschasm.com |
-| 302 | mudcam | 0 | +0 | 0 | - | 2 | live.fr |
-| 303 | nathani | 0 | +0 | 0 | - | 2 | validmanufacturing.com |
-| 304 | qinshulei | 0 | +0 | 0 | - | 1 | qq.com |
-| 305 | ronan | 0 | +0 | 0 | - | 2 | gmail.com |
-| 306 | ronan@iot.bzh | 0 | +0 | 0 | - | 4 | iot.bzh |
-| 307 | rwoberholzer | 0 | +0 | 0 | - | 1 | gmail.com |
-| 308 | sdx | 0 | +0 | 0 | - | 1 | iot.bzh |
-| 309 | seigot | 0 | +0 | 0 | - | 3 | gmail.com |
-| 310 | shi ce | 0 | +0 | 0 | - | 3 | fujitsu.com |
-| 311 | srimaldia | 0 | +0 | 0 | - | 2 | alps.com |
-| 312 | supriyasirbi | 0 | +0 | 0 | - | 1 | gmail.com |
-| 313 | tjahnk | 0 | +0 | 0 | - | 1 | github.com |
-| 314 | tkummermehr | 0 | +0 | 0 | - | 1 | k2l.de |
-| 315 | tte_zheng_wenlong | 0 | +0 | 0 | - | 2 | co.jp |
-| 316 | user | 0 | +0 | 0 | - | 1 | localhost.localdomain |
-| 317 | walzert | 0 | +0 | 0 | - | 1 | github.com |
-| 318 | wang_zhiqiang | 0 | +0 | 0 | - | 16 | nexty-ele.com |
-| 319 | wanglu | 0 | +0 | 0 | - | 3 | nexty-ele.com |
-| 320 | wangludong | 0 | +0 | 0 | - | 1 | msn.com |
-| 321 | wminer | 0 | +0 | 0 | - | 5 | linuxfoundation.org |
+| 267 | Yoshiki Ito | 0 | +0 | 0 | - | 2 | panasonic.com |
+| 268 | Yuichi Kusakabe | 0 | +0 | 0 | - | 1 | denso-ten.com |
+| 269 | Yuichi Kusakabe | 0 | +0 | 0 | - | 2 | fujitsu.com |
+| 270 | Yury Asheshov | 0 | +0 | 0 | - | 1 | k2l.de |
+| 271 | Yuta Doi | 0 | +0 | 0 | - | 4 | co.jp |
+| 272 | Yuya Ono | 0 | +0 | 0 | - | 1 | co.jp |
+| 273 | Zac Nelson | 0 | +0 | 0 | - | 1 | ford.com |
+| 274 | Zhang Nan | 0 | +0 | 0 | - | 3 | fujitsu.com |
+| 275 | ZhongLu | 0 | +0 | 0 | - | 2 | fujitsu.com |
+| 276 | Zhou Mingying | 0 | +0 | 0 | - | 4 | fujitsu.com |
+| 277 | Zhou Mingying | 0 | +0 | 0 | - | 3 | fujitsu.com |
+| 278 | aakash-s45 | 0 | +0 | 0 | - | 3 | gmail.com |
+| 279 | amanarora9848 | 0 | +0 | 0 | - | 2 | gmail.com |
+| 280 | bearrito | 0 | +0 | 0 | - | 1 | gmail.com |
+| 281 | berni155 | 0 | +0 | 0 | - | 1 | gmail.com |
+| 282 | brian avery | 0 | +0 | 0 | - | 1 | intel.com |
+| 283 | build.automotivelinux.org | 0 | +0 | 0 | - | 6 | automotivelinux.org |
+| 284 | chintsung | 0 | +0 | 0 | - | 1 | gmail.com |
+| 285 | dch | 0 | +0 | 0 | - | 1 | co.uk |
+| 286 | dch | 0 | +0 | 0 | - | 1 | metaswitch.com |
+| 287 | dsouzahansenfrancis | 0 | +0 | 0 | - | 1 | crosschasm.com |
+| 288 | duerpei | 0 | +0 | 0 | - | 15 | fujitsu.com |
+| 289 | fulup | 0 | +0 | 0 | - | 3 | iot.bzh |
+| 290 | fulup | 0 | +0 | 0 | - | 1 | vannes.iot |
+| 291 | heartsucker | 0 | +0 | 0 | - | 1 | autistici.org |
+| 292 | hkojima | 0 | +0 | 0 | - | 1 | mentor.com |
+| 293 | hongyevgeny | 0 | +0 | 0 | - | 3 | drimaes.com |
+| 294 | hritikchouhan | 0 | +0 | 0 | - | 6 | gmail.com |
+| 295 | hupeng | 0 | +0 | 0 | - | 1 | gmail.com |
+| 296 | isotes | 0 | +0 | 0 | - | 1 | gmail.com |
+| 297 | khilman | 0 | +0 | 0 | - | 1 | github.com |
+| 298 | liuyahui | 0 | +0 | 0 | - | 6 | fujitsu.com |
+| 299 | maratsabitov | 0 | +0 | 0 | - | 4 | mera.com |
+| 300 | mgiannikouris | 0 | +0 | 0 | - | 1 | crosschasm.com |
+| 301 | mudcam | 0 | +0 | 0 | - | 2 | live.fr |
+| 302 | nathani | 0 | +0 | 0 | - | 2 | validmanufacturing.com |
+| 303 | qinshulei | 0 | +0 | 0 | - | 1 | qq.com |
+| 304 | ronan | 0 | +0 | 0 | - | 2 | gmail.com |
+| 305 | ronan@iot.bzh | 0 | +0 | 0 | - | 4 | iot.bzh |
+| 306 | rwoberholzer | 0 | +0 | 0 | - | 1 | gmail.com |
+| 307 | sdx | 0 | +0 | 0 | - | 1 | iot.bzh |
+| 308 | seigot | 0 | +0 | 0 | - | 3 | gmail.com |
+| 309 | shi ce | 0 | +0 | 0 | - | 3 | fujitsu.com |
+| 310 | srimaldia | 0 | +0 | 0 | - | 2 | alps.com |
+| 311 | supriyasirbi | 0 | +0 | 0 | - | 1 | gmail.com |
+| 312 | tjahnk | 0 | +0 | 0 | - | 1 | github.com |
+| 313 | tkummermehr | 0 | +0 | 0 | - | 1 | k2l.de |
+| 314 | tte_zheng_wenlong | 0 | +0 | 0 | - | 2 | co.jp |
+| 315 | user | 0 | +0 | 0 | - | 1 | localhost.localdomain |
+| 316 | walzert | 0 | +0 | 0 | - | 1 | github.com |
+| 317 | wang_zhiqiang | 0 | +0 | 0 | - | 16 | nexty-ele.com |
+| 318 | wanglu | 0 | +0 | 0 | - | 3 | nexty-ele.com |
+| 319 | wangludong | 0 | +0 | 0 | - | 1 | msn.com |
+| 320 | wminer | 0 | +0 | 0 | - | 5 | linuxfoundation.org |
+| 321 | ydimitrov | 0 | +0 | 0 | - | 4 | gmail.com |
 | 322 | ydimitrov | 0 | +0 | 0 | - | 1 | ac.uk |
 | 323 | yidongmiao | 0 | +0 | 0 | - | 2 | alps.com |
 | 324 | ynakamura | 0 | +0 | 0 | - | 1 | adit-jv.com |
@@ -480,216 +480,216 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 |----------------|---------|---------|--------------|---------------|------------------|--------|
-| AGL/meta-agl | 92 | +6892 | 8 | 1 | 2025-11-28 | ✅ |
-| AGL/meta-agl-demo | 54 | -9147 | 6 | 31 | 2025-10-29 | ✅ |
-| AGL/meta-agl-devel | 52 | -7468 | 7 | 2 | 2025-11-27 | ✅ |
-| AGL/AGL-repo | 29 | -8361 | 5 | 5 | 2025-11-24 | ✅ |
-| ci-management | 28 | +822 | 1 | 136 | 2025-07-16 | ✅ |
-| src/agl-compositor | 11 | +0 | 1 | 189 | 2025-05-24 | ✅ |
-| apps/flutter-ics-homescreen | 8 | +76 | 5 | 6 | 2025-11-23 | ✅ |
-| apps/agl-service-hvac | 6 | +11 | 2 | 39 | 2025-10-21 | ✅ |
-| src/uhmi-agl-wm | 6 | +2699 | 3 | 262 | 2025-03-12 | ✅ |
-| AGL/documentation | 5 | +117 | 2 | 4 | 2025-11-25 | ✅ |
-| apps/agl-service-audiomixer | 4 | +31 | 1 | 39 | 2025-10-21 | ✅ |
-| src/virtio/virtio-loopback-adapter | 4 | +449 | 1 | 317 | 2025-01-16 | ✅ |
-| src/cluster-refgui | 3 | +20 | 1 | 188 | 2025-05-25 | ✅ |
-| AGL/releng-scripts | 2 | +84 | 1 | 24 | 2025-11-05 | ✅ |
-| apps/flutter-ros-demo | 2 | +5 | 2 | 19 | 2025-11-10 | ✅ |
-| apps/tbtnavi | 2 | -14 | 1 | 322 | 2025-01-11 | ✅ |
-| src/agl-dbc | 2 | +437 | 1 | 204 | 2025-05-09 | ✅ |
-| src/libqtappfw | 2 | +99 | 1 | 39 | 2025-10-21 | ✅ |
-| src/qa-testdefinitions | 2 | +3 | 1 | 345 | 2024-12-19 | ✅ |
-| src/virtio/virtio-loopback-driver | 2 | +939 | 1 | 317 | 2025-01-16 | ✅ |
-| apps/agl-cluster-demo-dashboard | 1 | +341 | 1 | 204 | 2025-05-09 | ✅ |
-| apps/agl-cluster-demo-receiver | 1 | +46 | 1 | 352 | 2024-12-12 | ✅ |
-| apps/agl-qt-cluster-demo-receiver | 1 | +0 | 1 | 203 | 2025-05-10 | ✅ |
-| apps/agl-service-radio | 1 | -2 | 1 | 218 | 2025-04-25 | ✅ |
-| apps/flutter-instrument-cluster | 1 | +51 | 1 | 39 | 2025-10-21 | ✅ |
-| src/agl-demo-control-panel | 1 | +0 | 1 | 198 | 2025-05-15 | ✅ |
-| src/agl-vss-proxy | 1 | +6 | 1 | 268 | 2025-03-06 | ✅ |
-| AGL | 0 | +0 | 0 | 762 | 2023-10-29 | ☑️ |
-| AGL/lava-docker | 0 | +0 | 0 | 1,739 | 2021-02-24 | 🛑 |
-| AGL/meta-agl-cluster-demo | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| AGL/meta-agl-extra | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| AGL/meta-agl-refhw | 0 | +0 | 0 | 458 | 2024-08-28 | ☑️ |
-| AGL/meta-agl-telematics-demo | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps | 0 | +0 | 0 | 762 | 2023-10-29 | ☑️ |
-| apps/agl-cluster-demo-gauges | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-bluetooth | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-bluetooth-map | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-bluetooth-pbap | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-can-high-level-viwi | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-can-low-level | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-cloudproxy | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-data-persistence | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-geoclue | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-geofence | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-gps | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-harvester | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-helloworld | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-homescreen | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-identity-agent | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-iiodevices | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-inputmethod | 0 | +0 | 0 | 1,835 | 2020-11-20 | 🛑 |
-| apps/agl-service-mediaplayer | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-mediascanner | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-navigation | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-network | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-nfc | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-platform-info | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-poi | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-signal-composer | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-soundmanager | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-steering-wheel | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-taskmanager | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-telephony | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-unicens | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-unicens-controller | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-voice-high | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-voice-high-capabilities | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-voiceagent | 0 | +0 | 0 | 424 | 2024-10-01 | ☑️ |
-| apps/agl-service-weather | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-windowmanager | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-service-xds-monitoring | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/agl-telematics-demo-recorder | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/alexa-viewer | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/als-meter-demo | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/app-afb-helpers-submodule | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/app-afb-test | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/app-controller-submodule | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/app-templates | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/aroundview | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/camera-gstreamer | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/chromium | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/controls | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/dashboard | 0 | +0 | 0 | 374 | 2024-11-20 | ☑️ |
-| apps/demo3-camera | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/demo3-dashboard | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/demo3-homescreen | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/demo3-hvac | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/demo3-launcher | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/demo3-settings | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/demo3-tachometer | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/demo3-warehouse | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/flutter-dashboard | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/flutter-homescreen | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/flutter-hvac | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/flutter-mediaplayer | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/flutter-navigation | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/flutter-speechrecognition-demo | 0 | +0 | 0 | 415 | 2024-10-10 | ☑️ |
-| apps/homescreen | 0 | +0 | 0 | 374 | 2024-11-20 | ☑️ |
-| apps/homescreen-demo-ci | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/html5-background | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/html5-dashboard | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/html5-homescreen | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/html5-hvac | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/html5-launcher | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/html5-mediaplayer | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/html5-mixer | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/html5-settings | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/hvac | 0 | +0 | 0 | 374 | 2024-11-20 | ☑️ |
-| apps/launcher | 0 | +0 | 0 | 374 | 2024-11-20 | ☑️ |
-| apps/mediaplayer | 0 | +0 | 0 | 374 | 2024-11-20 | ☑️ |
-| apps/messaging | 0 | +0 | 0 | 374 | 2024-11-20 | ☑️ |
-| apps/mixer | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/mominavi | 0 | +0 | 0 | 415 | 2024-10-10 | ☑️ |
-| apps/momiplayer | 0 | +0 | 0 | 412 | 2024-10-13 | ☑️ |
-| apps/momiscreen | 0 | +0 | 0 | 412 | 2024-10-13 | ☑️ |
-| apps/momiweather | 0 | +0 | 0 | 412 | 2024-10-13 | ☑️ |
-| apps/navigation | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/ondemandnavi | 0 | +0 | 0 | 374 | 2024-11-20 | ☑️ |
-| apps/onscreenapp | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/phone | 0 | +0 | 0 | 374 | 2024-11-20 | ☑️ |
-| apps/poi-yelp | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/radio | 0 | +0 | 0 | 374 | 2024-11-20 | ☑️ |
-| apps/restriction-screen | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/settings | 0 | +0 | 0 | 371 | 2024-11-23 | ☑️ |
-| apps/settings-log-utils | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/taskmanager | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/videoplayer | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/voiceagent-demo | 0 | +0 | 0 | 1,192 | 2022-08-25 | 🛑 |
-| apps/waltham-receiver | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| apps/webapp-samples | 0 | +0 | 0 | 1,248 | 2022-06-30 | 🛑 |
-| docs-sources | 0 | +0 | 0 | 1,990 | 2020-06-18 | 🛑 |
-| docs-webtemplate | 0 | +0 | 0 | 2,093 | 2020-03-07 | 🛑 |
-| src | 0 | +0 | 0 | 1,870 | 2020-10-16 | 🛑 |
-| src/agl-js-api | 0 | +0 | 0 | 1,843 | 2020-11-12 | 🛑 |
-| src/agl-shell-activator | 0 | +0 | 0 | 673 | 2024-01-26 | ☑️ |
-| src/agl-test-framework | 0 | +0 | 0 | 626 | 2024-03-13 | ☑️ |
-| src/agl-yocto-kernel-meta | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/app-framework-binder | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/app-framework-demo | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/app-framework-main | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/applaunchd | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/bluez-glib | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/cmake-apps-module | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/connman-glib | 0 | +0 | 0 | 416 | 2024-10-09 | ☑️ |
-| src/cynagoauth | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/cynagora | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/demo3-qtquickcontrols | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/demo3-warehouse-server | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/drm-lease-manager | 0 | +0 | 0 | 467 | 2024-08-19 | ☑️ |
-| src/homescreen-demo-ci | 0 | +0 | 0 | 1,894 | 2020-09-22 | 🛑 |
-| src/hvac-demo-microcontroller | 0 | +0 | 0 | 603 | 2024-04-05 | ☑️ |
-| src/inputeventmanager | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/libafb-helpers | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/libagl-compositor | 0 | +0 | 0 | 1,964 | 2020-07-14 | 🛑 |
-| src/libaglnavigation | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/libappcontroller | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/libcloudproxy | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/libhomescreen | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/libqthomescreen | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/libqtsoundmanager | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/librefop | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/libsoundmanager | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/log-utils | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/low-level-can-generator | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/most | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/native-shell-client | 0 | +0 | 0 | 603 | 2024-04-05 | ☑️ |
-| src/nss-localuser | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/pipewire-ic-ipc | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/pyagl | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/qa-test-misc | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/qtaglextras | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/qtquickcontrols2-agl | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/qtquickcontrols2-agl-style | 0 | +0 | 0 | 374 | 2024-11-20 | ☑️ |
-| src/rasa-model-agl | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/snips-inference-agl | 0 | +0 | 0 | 418 | 2024-10-07 | ☑️ |
-| src/snips-model-agl | 0 | +0 | 0 | 467 | 2024-08-19 | ☑️ |
-| src/steering-wheel-microcontroller | 0 | +0 | 0 | 1,184 | 2022-09-02 | 🛑 |
-| src/virtio/adapter_app | 0 | +0 | 0 | 752 | 2023-11-08 | ☑️ |
-| src/virtio/qemu | 0 | +0 | 0 | 780 | 2023-10-11 | ☑️ |
-| src/virtio/virtio_driver | 0 | +0 | 0 | 800 | 2023-09-21 | ☑️ |
-| src/vod-server | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/waltham-transmitter-plugin | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/weston-ivi-plugins | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/window-management-client-grpc | 0 | +0 | 0 | 374 | 2024-11-20 | ☑️ |
-| src/windowmanager | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/xds | 0 | +0 | 0 | 1,898 | 2020-09-18 | 🛑 |
-| src/xds/xds-cli | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/xds/xds-common | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/xds/xds-docs | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/xds/xds-gdb | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| src/xds/xds-server | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| staging | 0 | +0 | 0 | 1,893 | 2020-09-23 | 🛑 |
-| staging/agl-inputmethod-qt-plugin | 0 | +0 | 0 | 1,835 | 2020-11-20 | 🛑 |
-| staging/basesystem | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| staging/incar-wireless-monitor | 0 | +0 | 0 | 648 | 2024-02-20 | ☑️ |
-| staging/libsoundmanager | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| staging/new-apps | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| staging/persistent-storage-api | 0 | +0 | 0 | 585 | 2024-04-23 | ☑️ |
-| staging/qlibhomescreen | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| staging/qlibsoundmanager | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| staging/rba | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| staging/rba-tool | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| staging/release-upload | 0 | +0 | 0 | 2,117 | 2020-02-12 | 🛑 |
-| staging/soundmanager | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| staging/toyota | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| staging/vehicle2cloud-communication | 0 | +0 | 0 | 798 | 2023-09-23 | ☑️ |
-| staging/xdg-launcher | 0 | +0 | 0 | 654 | 2024-02-14 | ☑️ |
-| z_sandbox | 0 | +0 | 0 | 3,727 | 2015-09-16 | 🛑 |
-| zzz_acl/src_acl | 0 | +0 | 0 | 762 | 2023-10-29 | ☑️ |
-| zzz_acl/staging_acl | 0 | +0 | 0 | 3,539 | 2016-03-22 | 🛑 |
+| AGL/meta-agl | 91 | +6890 | 8 | 2 | 2025-11-28 | ✅ |
+| AGL/meta-agl-demo | 53 | -9147 | 6 | 32 | 2025-10-29 | ✅ |
+| AGL/meta-agl-devel | 52 | -7468 | 7 | 3 | 2025-11-27 | ✅ |
+| AGL/AGL-repo | 29 | -8361 | 5 | 6 | 2025-11-24 | ✅ |
+| ci-management | 27 | +433 | 1 | 137 | 2025-07-16 | ✅ |
+| src/agl-compositor | 11 | +0 | 1 | 190 | 2025-05-24 | ✅ |
+| apps/flutter-ics-homescreen | 7 | +76 | 4 | 7 | 2025-11-23 | ✅ |
+| apps/agl-service-hvac | 6 | +11 | 2 | 40 | 2025-10-21 | ✅ |
+| src/uhmi-agl-wm | 6 | +2699 | 3 | 263 | 2025-03-12 | ✅ |
+| AGL/documentation | 5 | +117 | 2 | 5 | 2025-11-25 | ✅ |
+| apps/agl-service-audiomixer | 4 | +31 | 1 | 40 | 2025-10-21 | ✅ |
+| src/virtio/virtio-loopback-adapter | 4 | +449 | 1 | 318 | 2025-01-16 | ✅ |
+| src/cluster-refgui | 3 | +20 | 1 | 189 | 2025-05-25 | ✅ |
+| AGL/releng-scripts | 2 | +84 | 1 | 25 | 2025-11-05 | ✅ |
+| apps/flutter-ros-demo | 2 | +5 | 2 | 20 | 2025-11-10 | ✅ |
+| src/agl-dbc | 2 | +437 | 1 | 205 | 2025-05-09 | ✅ |
+| src/libqtappfw | 2 | +99 | 1 | 40 | 2025-10-21 | ✅ |
+| src/qa-testdefinitions | 2 | +3 | 1 | 346 | 2024-12-19 | ✅ |
+| src/virtio/virtio-loopback-driver | 2 | +939 | 1 | 318 | 2025-01-16 | ✅ |
+| apps/agl-cluster-demo-dashboard | 1 | +341 | 1 | 205 | 2025-05-09 | ✅ |
+| apps/agl-cluster-demo-receiver | 1 | +46 | 1 | 353 | 2024-12-12 | ✅ |
+| apps/agl-qt-cluster-demo-receiver | 1 | +0 | 1 | 204 | 2025-05-10 | ✅ |
+| apps/agl-service-radio | 1 | -2 | 1 | 219 | 2025-04-25 | ✅ |
+| apps/flutter-instrument-cluster | 1 | +51 | 1 | 40 | 2025-10-21 | ✅ |
+| apps/tbtnavi | 1 | +1 | 1 | 323 | 2025-01-11 | ✅ |
+| src/agl-demo-control-panel | 1 | +0 | 1 | 199 | 2025-05-15 | ✅ |
+| src/agl-vss-proxy | 1 | +6 | 1 | 269 | 2025-03-06 | ✅ |
+| AGL | 0 | +0 | 0 | 763 | 2023-10-29 | ☑️ |
+| AGL/lava-docker | 0 | +0 | 0 | 1,740 | 2021-02-24 | 🛑 |
+| AGL/meta-agl-cluster-demo | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| AGL/meta-agl-extra | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| AGL/meta-agl-refhw | 0 | +0 | 0 | 459 | 2024-08-28 | ☑️ |
+| AGL/meta-agl-telematics-demo | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps | 0 | +0 | 0 | 763 | 2023-10-29 | ☑️ |
+| apps/agl-cluster-demo-gauges | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-bluetooth | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-bluetooth-map | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-bluetooth-pbap | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-can-high-level-viwi | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-can-low-level | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-cloudproxy | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-data-persistence | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-geoclue | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-geofence | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-gps | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-harvester | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-helloworld | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-homescreen | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-identity-agent | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-iiodevices | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-inputmethod | 0 | +0 | 0 | 1,836 | 2020-11-20 | 🛑 |
+| apps/agl-service-mediaplayer | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-mediascanner | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-navigation | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-network | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-nfc | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-platform-info | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-poi | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-signal-composer | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-soundmanager | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-steering-wheel | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-taskmanager | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-telephony | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-unicens | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-unicens-controller | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-voice-high | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-voice-high-capabilities | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-voiceagent | 0 | +0 | 0 | 425 | 2024-10-01 | ☑️ |
+| apps/agl-service-weather | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-windowmanager | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-service-xds-monitoring | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/agl-telematics-demo-recorder | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/alexa-viewer | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/als-meter-demo | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/app-afb-helpers-submodule | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/app-afb-test | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/app-controller-submodule | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/app-templates | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/aroundview | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/camera-gstreamer | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/chromium | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/controls | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/dashboard | 0 | +0 | 0 | 375 | 2024-11-20 | ☑️ |
+| apps/demo3-camera | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/demo3-dashboard | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/demo3-homescreen | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/demo3-hvac | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/demo3-launcher | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/demo3-settings | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/demo3-tachometer | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/demo3-warehouse | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/flutter-dashboard | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/flutter-homescreen | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/flutter-hvac | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/flutter-mediaplayer | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/flutter-navigation | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/flutter-speechrecognition-demo | 0 | +0 | 0 | 416 | 2024-10-10 | ☑️ |
+| apps/homescreen | 0 | +0 | 0 | 375 | 2024-11-20 | ☑️ |
+| apps/homescreen-demo-ci | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/html5-background | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/html5-dashboard | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/html5-homescreen | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/html5-hvac | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/html5-launcher | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/html5-mediaplayer | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/html5-mixer | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/html5-settings | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/hvac | 0 | +0 | 0 | 375 | 2024-11-20 | ☑️ |
+| apps/launcher | 0 | +0 | 0 | 375 | 2024-11-20 | ☑️ |
+| apps/mediaplayer | 0 | +0 | 0 | 375 | 2024-11-20 | ☑️ |
+| apps/messaging | 0 | +0 | 0 | 375 | 2024-11-20 | ☑️ |
+| apps/mixer | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/mominavi | 0 | +0 | 0 | 416 | 2024-10-10 | ☑️ |
+| apps/momiplayer | 0 | +0 | 0 | 413 | 2024-10-13 | ☑️ |
+| apps/momiscreen | 0 | +0 | 0 | 413 | 2024-10-13 | ☑️ |
+| apps/momiweather | 0 | +0 | 0 | 413 | 2024-10-13 | ☑️ |
+| apps/navigation | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/ondemandnavi | 0 | +0 | 0 | 375 | 2024-11-20 | ☑️ |
+| apps/onscreenapp | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/phone | 0 | +0 | 0 | 375 | 2024-11-20 | ☑️ |
+| apps/poi-yelp | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/radio | 0 | +0 | 0 | 375 | 2024-11-20 | ☑️ |
+| apps/restriction-screen | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/settings | 0 | +0 | 0 | 372 | 2024-11-23 | ☑️ |
+| apps/settings-log-utils | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/taskmanager | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/videoplayer | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/voiceagent-demo | 0 | +0 | 0 | 1,193 | 2022-08-25 | 🛑 |
+| apps/waltham-receiver | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| apps/webapp-samples | 0 | +0 | 0 | 1,249 | 2022-06-30 | 🛑 |
+| docs-sources | 0 | +0 | 0 | 1,991 | 2020-06-18 | 🛑 |
+| docs-webtemplate | 0 | +0 | 0 | 2,094 | 2020-03-07 | 🛑 |
+| src | 0 | +0 | 0 | 1,871 | 2020-10-16 | 🛑 |
+| src/agl-js-api | 0 | +0 | 0 | 1,844 | 2020-11-12 | 🛑 |
+| src/agl-shell-activator | 0 | +0 | 0 | 674 | 2024-01-26 | ☑️ |
+| src/agl-test-framework | 0 | +0 | 0 | 627 | 2024-03-13 | ☑️ |
+| src/agl-yocto-kernel-meta | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/app-framework-binder | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/app-framework-demo | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/app-framework-main | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/applaunchd | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/bluez-glib | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/cmake-apps-module | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/connman-glib | 0 | +0 | 0 | 417 | 2024-10-09 | ☑️ |
+| src/cynagoauth | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/cynagora | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/demo3-qtquickcontrols | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/demo3-warehouse-server | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/drm-lease-manager | 0 | +0 | 0 | 468 | 2024-08-19 | ☑️ |
+| src/homescreen-demo-ci | 0 | +0 | 0 | 1,895 | 2020-09-22 | 🛑 |
+| src/hvac-demo-microcontroller | 0 | +0 | 0 | 604 | 2024-04-05 | ☑️ |
+| src/inputeventmanager | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/libafb-helpers | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/libagl-compositor | 0 | +0 | 0 | 1,965 | 2020-07-14 | 🛑 |
+| src/libaglnavigation | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/libappcontroller | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/libcloudproxy | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/libhomescreen | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/libqthomescreen | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/libqtsoundmanager | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/librefop | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/libsoundmanager | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/log-utils | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/low-level-can-generator | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/most | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/native-shell-client | 0 | +0 | 0 | 604 | 2024-04-05 | ☑️ |
+| src/nss-localuser | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/pipewire-ic-ipc | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/pyagl | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/qa-test-misc | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/qtaglextras | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/qtquickcontrols2-agl | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/qtquickcontrols2-agl-style | 0 | +0 | 0 | 375 | 2024-11-20 | ☑️ |
+| src/rasa-model-agl | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/snips-inference-agl | 0 | +0 | 0 | 419 | 2024-10-07 | ☑️ |
+| src/snips-model-agl | 0 | +0 | 0 | 468 | 2024-08-19 | ☑️ |
+| src/steering-wheel-microcontroller | 0 | +0 | 0 | 1,185 | 2022-09-02 | 🛑 |
+| src/virtio/adapter_app | 0 | +0 | 0 | 753 | 2023-11-08 | ☑️ |
+| src/virtio/qemu | 0 | +0 | 0 | 781 | 2023-10-11 | ☑️ |
+| src/virtio/virtio_driver | 0 | +0 | 0 | 801 | 2023-09-21 | ☑️ |
+| src/vod-server | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/waltham-transmitter-plugin | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/weston-ivi-plugins | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/window-management-client-grpc | 0 | +0 | 0 | 375 | 2024-11-20 | ☑️ |
+| src/windowmanager | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/xds | 0 | +0 | 0 | 1,899 | 2020-09-18 | 🛑 |
+| src/xds/xds-cli | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/xds/xds-common | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/xds/xds-docs | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/xds/xds-gdb | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| src/xds/xds-server | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| staging | 0 | +0 | 0 | 1,894 | 2020-09-23 | 🛑 |
+| staging/agl-inputmethod-qt-plugin | 0 | +0 | 0 | 1,836 | 2020-11-20 | 🛑 |
+| staging/basesystem | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| staging/incar-wireless-monitor | 0 | +0 | 0 | 649 | 2024-02-20 | ☑️ |
+| staging/libsoundmanager | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| staging/new-apps | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| staging/persistent-storage-api | 0 | +0 | 0 | 586 | 2024-04-23 | ☑️ |
+| staging/qlibhomescreen | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| staging/qlibsoundmanager | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| staging/rba | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| staging/rba-tool | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| staging/release-upload | 0 | +0 | 0 | 2,118 | 2020-02-12 | 🛑 |
+| staging/soundmanager | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| staging/toyota | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| staging/vehicle2cloud-communication | 0 | +0 | 0 | 799 | 2023-09-23 | ☑️ |
+| staging/xdg-launcher | 0 | +0 | 0 | 655 | 2024-02-14 | ☑️ |
+| z_sandbox | 0 | +0 | 0 | 3,728 | 2015-09-16 | 🛑 |
+| zzz_acl/src_acl | 0 | +0 | 0 | 763 | 2023-10-29 | ☑️ |
+| zzz_acl/staging_acl | 0 | +0 | 0 | 3,540 | 2016-03-22 | 🛑 |
 
 **Total:** 210 repositories
 
@@ -725,7 +725,6 @@ The data presented in the table below covers the past 365 days.
 | src/virtio/virtio-loopback-driver | C | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | AGL/releng-scripts | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | apps/flutter-ros-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| apps/tbtnavi | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | src/agl-dbc | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | src/libqtappfw | C | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | src/qa-testdefinitions | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
@@ -734,6 +733,7 @@ The data presented in the table below covers the past 365 days.
 | apps/agl-qt-cluster-demo-receiver | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | apps/agl-service-radio | C | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | apps/flutter-instrument-cluster | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| apps/tbtnavi | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | src/agl-vss-proxy | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | src/agl-demo-control-panel | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | src/virtio/virtio_driver | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
@@ -749,13 +749,13 @@ The data presented in the table below covers the past 365 days.
 | AGL/meta-agl-refhw | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/meta-agl-telematics-demo | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-cluster-demo-gauges | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-bluetooth-map | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-bluetooth | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-bluetooth-map | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-bluetooth-pbap | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-can-high-level-viwi | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-cloudproxy | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-data-persistence | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-geoclue | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-data-persistence | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-geofence | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-gps | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-harvester | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -764,36 +764,36 @@ The data presented in the table below covers the past 365 days.
 | apps/agl-service-inputmethod | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | apps/agl-service-iiodevices | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-mediaplayer | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-navigation | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-mediascanner | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-homescreen | HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-navigation | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-network | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-nfc | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-homescreen | HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-platform-info | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-poi | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-steering-wheel | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-taskmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-can-low-level | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-telephony | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-taskmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-soundmanager | HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-signal-composer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-telephony | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-unicens-controller | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-signal-composer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-unicens | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-voiceagent | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-voice-high | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-weather | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-telematics-demo-recorder | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-weather | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-voice-high | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/alexa-viewer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-voice-high-capabilities | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-xds-monitoring | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-afb-helpers-submodule | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-windowmanager | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/als-meter-demo | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-controller-submodule | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/camera-gstreamer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/app-templates | D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/als-meter-demo | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-afb-test | Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/aroundview | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/camera-gstreamer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/app-templates | D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/chromium | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/controls | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/dashboard | TypeScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -802,8 +802,8 @@ The data presented in the table below covers the past 365 days.
 | apps/demo3-hvac | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-launcher | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-homescreen | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/demo3-settings | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-tachometer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/demo3-settings | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-warehouse | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-dashboard | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-hvac | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -811,21 +811,21 @@ The data presented in the table below covers the past 365 days.
 | apps/flutter-navigation | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-speechrecognition-demo | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-homescreen | Groovy | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/homescreen | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-background | SCSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/html5-dashboard | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/homescreen | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/homescreen-demo-ci | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/html5-dashboard | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-homescreen | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/html5-mediaplayer | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-hvac | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/html5-mixer | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-launcher | SCSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/html5-mediaplayer | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/html5-mixer | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-settings | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/hvac | TypeScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/launcher | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/messaging | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/mediaplayer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/mominavi | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/mediaplayer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/mixer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/momiplayer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/momiscreen | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -834,8 +834,8 @@ The data presented in the table below covers the past 365 days.
 | apps/navigation | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/onscreenapp | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/phone | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/restriction-screen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/poi-yelp | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/restriction-screen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/radio | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/voiceagent-demo | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | apps/settings | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -850,32 +850,32 @@ The data presented in the table below covers the past 365 days.
 | src/applaunchd | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/bluez-glib | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/app-framework-main | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| src/connman-glib | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/agl-test-framework | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/connman-glib | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/cynagoauth | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/cmake-apps-module | D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/app-framework-binder | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | src/demo3-qtquickcontrols | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/app-framework-binder | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | src/cynagora | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/homescreen-demo-ci | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/hvac-demo-microcontroller | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | src/drm-lease-manager | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/libagl-compositor | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/inputeventmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/libafb-helpers | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/libagl-compositor | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/libaglnavigation | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/libafb-helpers | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libappcontroller | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libqthomescreen | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libhomescreen | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libcloudproxy | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libqtsoundmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libsoundmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/log-utils | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/librefop | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/log-utils | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/low-level-can-generator | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/most | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/native-shell-client | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/nss-localuser | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/most | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/pipewire-ic-ipc | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/pyagl | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/qa-test-misc | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -888,8 +888,8 @@ The data presented in the table below covers the past 365 days.
 | src/snips-inference-agl | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/vod-server | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/waltham-transmitter-plugin | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/weston-ivi-plugins | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/snips-model-agl | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/weston-ivi-plugins | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/window-management-client-grpc | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/windowmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/agl-inputmethod-qt-plugin | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
@@ -904,8 +904,8 @@ The data presented in the table below covers the past 365 days.
 | staging/rba | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/xdg-launcher | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | zzz_acl/AGL_acl | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| zzz_acl/noreplication | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | staging/soundmanager | HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| zzz_acl/noreplication | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | zzz_acl/src_acl | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | zzz_acl/staging_acl | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/xds | Go | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
