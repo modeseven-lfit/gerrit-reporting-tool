@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: O-RAN-SC
 
-**Generated:** November 30, 2025 at 07:13 UTC
+**Generated:** December 01, 2025 at 07:18 UTC
 **Schema Version:** 1.0.0
 
 ## 📈 Global Summary
@@ -12,8 +12,8 @@
 | Metric | Count | Percentage |
 |--------|-------|------------|
 | Total Gerrit Projects | 116 | 100% |
-| Current Gerrit Projects | 59 | 50.9% |
-| Active Gerrit Projects | 40 | 34.5% |
+| Current Gerrit Projects | 58 | 50.0% |
+| Active Gerrit Projects | 41 | 35.3% |
 | Inactive Gerrit Projects | 17 | 14.7% |
 | No Apparent Commits | 0 | 0.0% |
 | Total Commits | 1.2K | - |
@@ -359,122 +359,122 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 |----------------|---------|---------|--------------|---------------|------------------|--------|
-| it/dep | 138 | +3022 | 9 | 5 | 2025-11-25 | ✅ |
-| aiml-fw/awmf/tm | 110 | +1921 | 17 | 5 | 2025-11-25 | ✅ |
-| nonrtric/plt/rappmanager | 98 | +10228 | 5 | 2 | 2025-11-28 | ✅ |
-| aiml-fw/aimlfw-dep | 85 | +2307 | 18 | 9 | 2025-11-21 | ✅ |
-| oam/oam-controller | 78 | +212551 | 5 | 3 | 2025-11-27 | ✅ |
-| oam | 56 | +4346 | 4 | 72 | 2025-09-19 | ✅ |
-| smo/teiv | 55 | +60579 | 4 | 2 | 2025-11-28 | ✅ |
-| aiml-fw/awmf/modelmgmtservice | 52 | +2011 | 11 | 19 | 2025-11-11 | ✅ |
-| it/test | 51 | +355 | 3 | 172 | 2025-06-11 | ✅ |
-| ci-management | 48 | +185 | 12 | 82 | 2025-09-09 | ✅ |
-| pti/rtp | 47 | +71096 | 2 | 151 | 2025-07-02 | ✅ |
-| portal/aiml-dashboard | 41 | +158 | 8 | 38 | 2025-10-23 | ✅ |
-| aiml-fw/athp/pipeline-components | 35 | +1367 | 6 | 38 | 2025-10-23 | ✅ |
-| pti/o2 | 35 | +2466 | 4 | 11 | 2025-11-19 | ✅ |
-| nonrtric | 26 | +368 | 5 | 15 | 2025-11-15 | ✅ |
-| aiml-fw/athp/sdk/model-storage | 25 | +633 | 6 | 38 | 2025-10-23 | ✅ |
-| nonrtric/plt/a1policymanagementservice | 24 | +10444 | 5 | 52 | 2025-10-09 | ✅ |
-| o-du/l2 | 22 | +108864 | 4 | 169 | 2025-06-14 | ✅ |
-| nonrtric/plt/sme | 18 | +314 | 4 | 52 | 2025-10-09 | ✅ |
-| nonrtric/plt/ranpm | 16 | +2163 | 3 | 12 | 2025-11-18 | ✅ |
-| aiml-fw/athp/data-extraction | 15 | +372 | 6 | 13 | 2025-11-17 | ✅ |
-| sim/a1-interface | 15 | +114 | 5 | 15 | 2025-11-15 | ✅ |
-| aiml-fw/athp/tps/kubeflow-adapter | 13 | +59 | 7 | 38 | 2025-10-23 | ✅ |
-| aiml-fw/athp/sdk/feature-store | 10 | +131 | 5 | 38 | 2025-10-23 | ✅ |
-| it/tifg | 10 | +11688 | 3 | 123 | 2025-07-30 | ✅ |
-| nonrtric/plt/informationcoordinatorservice | 9 | +44 | 3 | 12 | 2025-11-18 | ✅ |
-| sim/o1-ofhmp-interfaces | 8 | +82057 | 4 | 57 | 2025-10-04 | ✅ |
-| smo/o2 | 7 | +3360 | 2 | 139 | 2025-07-14 | ✅ |
-| doc | 6 | +81 | 2 | 142 | 2025-07-11 | ✅ |
-| nonrtric/plt/rappcatalogue | 5 | +66 | 2 | 12 | 2025-11-18 | ✅ |
-| nonrtric/plt/dmaapadapter | 4 | +50 | 3 | 12 | 2025-11-18 | ✅ |
-| portal/nonrtric-controlpanel | 4 | +70 | 3 | 15 | 2025-11-15 | ✅ |
-| nonrtric/rapp/orufhrecovery | 3 | +71 | 2 | 65 | 2025-09-26 | ✅ |
-| ric-plt/a1 | 3 | +0 | 1 | 18 | 2025-11-12 | ✅ |
-| ric-plt/alarm-go | 3 | +0 | 1 | 18 | 2025-11-12 | ✅ |
-| ric-plt/appmgr | 3 | +8 | 1 | 18 | 2025-11-12 | ✅ |
-| ric-plt/conflictmgr | 3 | +15 | 2 | 321 | 2025-01-13 | ✅ |
-| ric-plt/dbaas | 3 | +0 | 1 | 18 | 2025-11-12 | ✅ |
-| ric-plt/e2 | 3 | +0 | 1 | 18 | 2025-11-12 | ✅ |
-| ric-plt/e2mgr | 3 | +11 | 1 | 18 | 2025-11-12 | ✅ |
-| ric-plt/o1 | 3 | +7 | 1 | 18 | 2025-11-12 | ✅ |
-| ric-plt/rtmgr | 3 | +5 | 1 | 18 | 2025-11-12 | ✅ |
-| ric-plt/submgr | 3 | +0 | 1 | 18 | 2025-11-12 | ✅ |
-| sim/ns3-o-ran-e2 | 3 | +306 | 1 | 71 | 2025-09-20 | ✅ |
-| nonrtric/plt/dmaapmediatorproducer | 2 | +50 | 2 | 65 | 2025-09-26 | ✅ |
-| nonrtric/plt/helmmanager | 2 | +48 | 2 | 65 | 2025-09-26 | ✅ |
-| nonrtric/plt/sdnca1controller | 2 | +45 | 2 | 15 | 2025-11-15 | ✅ |
-| nonrtric/rapp/healthcheck | 2 | +51 | 2 | 65 | 2025-09-26 | ✅ |
-| nonrtric/rapp/ransliceassurance | 2 | +73 | 2 | 65 | 2025-09-26 | ✅ |
-| o-du/phy | 2 | +9 | 1 | 319 | 2025-01-15 | ✅ |
-| ric-plt/ric-dep | 2 | +342 | 1 | 163 | 2025-06-20 | ✅ |
-| ric-plt/xapp-frame-rust | 2 | +0 | 1 | 200 | 2025-05-14 | ✅ |
-| aiml-fw/apm/analysis-module | 1 | +12 | 1 | 65 | 2025-09-26 | ✅ |
-| aiml-fw/apm/influx-wrapper | 1 | +12 | 1 | 65 | 2025-09-26 | ✅ |
-| aiml-fw/apm/monitoring-server | 1 | +12 | 1 | 65 | 2025-09-26 | ✅ |
-| aiml-fw/awmf/cli | 1 | +12 | 1 | 65 | 2025-09-26 | ✅ |
-| ric-plt/vespamgr | 1 | +0 | 1 | 18 | 2025-11-12 | ✅ |
-| smo/o1 | 1 | +9 | 1 | 215 | 2025-04-29 | ✅ |
-| .github | 0 | +0 | 0 | 365 | 2024-11-30 | ✅ |
-| aiml-fw | 0 | +0 | 0 | 583 | 2024-04-26 | ☑️ |
-| aiml-fw/aihp/ips/kserve-adapter | 0 | +0 | 0 | 367 | 2024-11-28 | ☑️ |
-| aiml-fw/aihp/tps/kserve-adapter | 0 | +0 | 0 | 1,160 | 2022-09-27 | 🛑 |
-| aiml-fw/apm/monitoring-agent | 0 | +0 | 0 | 397 | 2024-10-29 | ☑️ |
-| com/golog | 0 | +0 | 0 | 578 | 2024-05-01 | ☑️ |
-| com/gs-lite | 0 | +0 | 0 | 1,716 | 2021-03-20 | 🛑 |
-| com/log | 0 | +0 | 0 | 578 | 2024-05-01 | ☑️ |
-| com/pylog | 0 | +0 | 0 | 578 | 2024-05-01 | ☑️ |
-| it/dev | 0 | +0 | 0 | 578 | 2024-05-01 | ☑️ |
-| it/otf | 0 | +0 | 0 | 1,572 | 2021-08-11 | 🛑 |
-| ric-app/ad | 0 | +0 | 0 | 584 | 2024-04-25 | ☑️ |
-| ric-app/ad-cell | 0 | +0 | 0 | 404 | 2024-10-22 | ☑️ |
-| ric-app/bouncer | 0 | +0 | 0 | 885 | 2023-06-29 | ☑️ |
-| ric-app/ccc | 0 | +0 | 0 | 807 | 2023-09-15 | ☑️ |
-| ric-app/hw | 0 | +0 | 0 | 1,737 | 2021-02-27 | 🛑 |
-| ric-app/hw-go | 0 | +0 | 0 | 1,080 | 2022-12-16 | ☑️ |
-| ric-app/hw-python | 0 | +0 | 0 | 1,079 | 2022-12-17 | ☑️ |
-| ric-app/hw-rust | 0 | +0 | 0 | 520 | 2024-06-28 | ☑️ |
-| ric-app/kpimon-go | 0 | +0 | 0 | 556 | 2024-05-23 | ☑️ |
-| ric-app/lp | 0 | +0 | 0 | 578 | 2024-05-01 | ☑️ |
-| ric-app/mc | 0 | +0 | 0 | 579 | 2024-04-30 | ☑️ |
-| ric-app/qp | 0 | +0 | 0 | 584 | 2024-04-25 | ☑️ |
-| ric-app/qp-aimlfw | 0 | +0 | 0 | 1,081 | 2022-12-15 | ☑️ |
-| ric-app/rc | 0 | +0 | 0 | 936 | 2023-05-09 | ☑️ |
-| ric-app/ric-sdk-py | 0 | +0 | 0 | 1,739 | 2021-02-25 | 🛑 |
-| ric-app/ts | 0 | +0 | 0 | 1,048 | 2023-01-17 | ☑️ |
-| ric-plt/alarm-cpp | 0 | +0 | 0 | 578 | 2024-05-01 | ☑️ |
-| ric-plt/asn1-documents | 0 | +0 | 0 | 821 | 2023-09-01 | ☑️ |
-| ric-plt/dbaas/hiredis-vip | 0 | +0 | 0 | 670 | 2024-01-30 | ☑️ |
-| ric-plt/demo1 | 0 | +0 | 0 | 2,213 | 2019-11-09 | 🛑 |
-| ric-plt/jaegeradapter | 0 | +0 | 0 | 578 | 2024-05-01 | ☑️ |
-| ric-plt/lib/rmr | 0 | +0 | 0 | 578 | 2024-05-01 | ☑️ |
-| ric-plt/libe2ap | 0 | +0 | 0 | 578 | 2024-05-01 | ☑️ |
-| ric-plt/nodeb-rnib | 0 | +0 | 0 | 578 | 2024-05-01 | ☑️ |
-| ric-plt/ric-test | 0 | +0 | 0 | 2,213 | 2019-11-09 | 🛑 |
-| ric-plt/ricctl | 0 | +0 | 0 | 1,493 | 2021-10-29 | 🛑 |
-| ric-plt/ricdms | 0 | +0 | 0 | 670 | 2024-01-30 | ☑️ |
-| ric-plt/sdl | 0 | +0 | 0 | 578 | 2024-05-01 | ☑️ |
-| ric-plt/sdlgo | 0 | +0 | 0 | 576 | 2024-05-03 | ☑️ |
-| ric-plt/sdlpy | 0 | +0 | 0 | 578 | 2024-05-01 | ☑️ |
-| ric-plt/streaming-protobufs | 0 | +0 | 0 | 1,528 | 2021-09-24 | 🛑 |
-| ric-plt/stslgo | 0 | +0 | 0 | 1,167 | 2022-09-20 | 🛑 |
-| ric-plt/tracelibcpp | 0 | +0 | 0 | 1,916 | 2020-09-01 | 🛑 |
-| ric-plt/tracelibgo | 0 | +0 | 0 | 577 | 2024-05-02 | ☑️ |
-| ric-plt/utils | 0 | +0 | 0 | 1,947 | 2020-08-01 | 🛑 |
-| ric-plt/xapp-frame | 0 | +0 | 0 | 568 | 2024-05-11 | ☑️ |
-| ric-plt/xapp-frame-cpp | 0 | +0 | 0 | 578 | 2024-05-01 | ☑️ |
-| ric-plt/xapp-frame-py | 0 | +0 | 0 | 576 | 2024-05-03 | ☑️ |
-| scp/oam/modeling | 0 | +0 | 0 | 967 | 2023-04-08 | ☑️ |
-| scp/ocu/5gnr | 0 | +0 | 0 | 1,988 | 2020-06-21 | 🛑 |
-| scp/ric-app/kpimon | 0 | +0 | 0 | 1,754 | 2021-02-10 | 🛑 |
-| scp/ric-app/ssp | 0 | +0 | 0 | 1,872 | 2020-10-15 | 🛑 |
-| sim/e2-interface | 0 | +0 | 0 | 544 | 2024-06-04 | ☑️ |
-| sim/e2-interface-data | 0 | +0 | 0 | 1,842 | 2020-11-14 | 🛑 |
-| sim/o1-interface | 0 | +0 | 0 | 521 | 2024-06-27 | ☑️ |
-| smo/pkg | 0 | +0 | 0 | 1,334 | 2022-04-06 | 🛑 |
-| smo/ves | 0 | +0 | 0 | 596 | 2024-04-13 | ☑️ |
+| it/dep | 138 | +3022 | 9 | 6 | 2025-11-25 | ✅ |
+| aiml-fw/awmf/tm | 110 | +1921 | 17 | 6 | 2025-11-25 | ✅ |
+| nonrtric/plt/rappmanager | 98 | +10228 | 5 | 3 | 2025-11-28 | ✅ |
+| aiml-fw/aimlfw-dep | 85 | +2307 | 18 | 10 | 2025-11-21 | ✅ |
+| oam/oam-controller | 78 | +212551 | 5 | 4 | 2025-11-27 | ✅ |
+| oam | 56 | +4346 | 4 | 73 | 2025-09-19 | ✅ |
+| smo/teiv | 55 | +60579 | 4 | 3 | 2025-11-28 | ✅ |
+| aiml-fw/awmf/modelmgmtservice | 52 | +2011 | 11 | 20 | 2025-11-11 | ✅ |
+| it/test | 51 | +355 | 3 | 173 | 2025-06-11 | ✅ |
+| ci-management | 48 | +185 | 12 | 83 | 2025-09-09 | ✅ |
+| pti/rtp | 47 | +71096 | 2 | 152 | 2025-07-02 | ✅ |
+| portal/aiml-dashboard | 41 | +158 | 8 | 39 | 2025-10-23 | ✅ |
+| aiml-fw/athp/pipeline-components | 35 | +1367 | 6 | 39 | 2025-10-23 | ✅ |
+| pti/o2 | 35 | +2466 | 4 | 12 | 2025-11-19 | ✅ |
+| nonrtric | 26 | +368 | 5 | 16 | 2025-11-15 | ✅ |
+| aiml-fw/athp/sdk/model-storage | 25 | +633 | 6 | 39 | 2025-10-23 | ✅ |
+| nonrtric/plt/a1policymanagementservice | 24 | +10444 | 5 | 53 | 2025-10-09 | ✅ |
+| o-du/l2 | 22 | +108864 | 4 | 170 | 2025-06-14 | ✅ |
+| nonrtric/plt/sme | 18 | +314 | 4 | 53 | 2025-10-09 | ✅ |
+| nonrtric/plt/ranpm | 16 | +2163 | 3 | 13 | 2025-11-18 | ✅ |
+| aiml-fw/athp/data-extraction | 15 | +372 | 6 | 14 | 2025-11-17 | ✅ |
+| sim/a1-interface | 15 | +114 | 5 | 16 | 2025-11-15 | ✅ |
+| aiml-fw/athp/tps/kubeflow-adapter | 13 | +59 | 7 | 39 | 2025-10-23 | ✅ |
+| aiml-fw/athp/sdk/feature-store | 10 | +131 | 5 | 39 | 2025-10-23 | ✅ |
+| it/tifg | 10 | +11688 | 3 | 124 | 2025-07-30 | ✅ |
+| nonrtric/plt/informationcoordinatorservice | 9 | +44 | 3 | 13 | 2025-11-18 | ✅ |
+| sim/o1-ofhmp-interfaces | 8 | +82057 | 4 | 58 | 2025-10-04 | ✅ |
+| smo/o2 | 7 | +3360 | 2 | 140 | 2025-07-14 | ✅ |
+| doc | 6 | +81 | 2 | 143 | 2025-07-11 | ✅ |
+| nonrtric/plt/rappcatalogue | 5 | +66 | 2 | 13 | 2025-11-18 | ✅ |
+| nonrtric/plt/dmaapadapter | 4 | +50 | 3 | 13 | 2025-11-18 | ✅ |
+| portal/nonrtric-controlpanel | 4 | +70 | 3 | 16 | 2025-11-15 | ✅ |
+| nonrtric/rapp/orufhrecovery | 3 | +71 | 2 | 66 | 2025-09-26 | ✅ |
+| ric-plt/a1 | 3 | +0 | 1 | 19 | 2025-11-12 | ✅ |
+| ric-plt/alarm-go | 3 | +0 | 1 | 19 | 2025-11-12 | ✅ |
+| ric-plt/appmgr | 3 | +8 | 1 | 19 | 2025-11-12 | ✅ |
+| ric-plt/conflictmgr | 3 | +15 | 2 | 322 | 2025-01-13 | ✅ |
+| ric-plt/dbaas | 3 | +0 | 1 | 19 | 2025-11-12 | ✅ |
+| ric-plt/e2 | 3 | +0 | 1 | 19 | 2025-11-12 | ✅ |
+| ric-plt/e2mgr | 3 | +11 | 1 | 19 | 2025-11-12 | ✅ |
+| ric-plt/o1 | 3 | +7 | 1 | 19 | 2025-11-12 | ✅ |
+| ric-plt/rtmgr | 3 | +5 | 1 | 19 | 2025-11-12 | ✅ |
+| ric-plt/submgr | 3 | +0 | 1 | 19 | 2025-11-12 | ✅ |
+| sim/ns3-o-ran-e2 | 3 | +306 | 1 | 72 | 2025-09-20 | ✅ |
+| nonrtric/plt/dmaapmediatorproducer | 2 | +50 | 2 | 66 | 2025-09-26 | ✅ |
+| nonrtric/plt/helmmanager | 2 | +48 | 2 | 66 | 2025-09-26 | ✅ |
+| nonrtric/plt/sdnca1controller | 2 | +45 | 2 | 16 | 2025-11-15 | ✅ |
+| nonrtric/rapp/healthcheck | 2 | +51 | 2 | 66 | 2025-09-26 | ✅ |
+| nonrtric/rapp/ransliceassurance | 2 | +73 | 2 | 66 | 2025-09-26 | ✅ |
+| o-du/phy | 2 | +9 | 1 | 320 | 2025-01-15 | ✅ |
+| ric-plt/ric-dep | 2 | +342 | 1 | 164 | 2025-06-20 | ✅ |
+| ric-plt/xapp-frame-rust | 2 | +0 | 1 | 201 | 2025-05-14 | ✅ |
+| aiml-fw/apm/analysis-module | 1 | +12 | 1 | 66 | 2025-09-26 | ✅ |
+| aiml-fw/apm/influx-wrapper | 1 | +12 | 1 | 66 | 2025-09-26 | ✅ |
+| aiml-fw/apm/monitoring-server | 1 | +12 | 1 | 66 | 2025-09-26 | ✅ |
+| aiml-fw/awmf/cli | 1 | +12 | 1 | 66 | 2025-09-26 | ✅ |
+| ric-plt/vespamgr | 1 | +0 | 1 | 19 | 2025-11-12 | ✅ |
+| smo/o1 | 1 | +9 | 1 | 216 | 2025-04-29 | ✅ |
+| .github | 0 | +0 | 0 | 366 | 2024-11-30 | ☑️ |
+| aiml-fw | 0 | +0 | 0 | 584 | 2024-04-26 | ☑️ |
+| aiml-fw/aihp/ips/kserve-adapter | 0 | +0 | 0 | 368 | 2024-11-28 | ☑️ |
+| aiml-fw/aihp/tps/kserve-adapter | 0 | +0 | 0 | 1,161 | 2022-09-27 | 🛑 |
+| aiml-fw/apm/monitoring-agent | 0 | +0 | 0 | 398 | 2024-10-29 | ☑️ |
+| com/golog | 0 | +0 | 0 | 579 | 2024-05-01 | ☑️ |
+| com/gs-lite | 0 | +0 | 0 | 1,717 | 2021-03-20 | 🛑 |
+| com/log | 0 | +0 | 0 | 579 | 2024-05-01 | ☑️ |
+| com/pylog | 0 | +0 | 0 | 579 | 2024-05-01 | ☑️ |
+| it/dev | 0 | +0 | 0 | 579 | 2024-05-01 | ☑️ |
+| it/otf | 0 | +0 | 0 | 1,573 | 2021-08-11 | 🛑 |
+| ric-app/ad | 0 | +0 | 0 | 585 | 2024-04-25 | ☑️ |
+| ric-app/ad-cell | 0 | +0 | 0 | 405 | 2024-10-22 | ☑️ |
+| ric-app/bouncer | 0 | +0 | 0 | 886 | 2023-06-29 | ☑️ |
+| ric-app/ccc | 0 | +0 | 0 | 808 | 2023-09-15 | ☑️ |
+| ric-app/hw | 0 | +0 | 0 | 1,738 | 2021-02-27 | 🛑 |
+| ric-app/hw-go | 0 | +0 | 0 | 1,081 | 2022-12-16 | ☑️ |
+| ric-app/hw-python | 0 | +0 | 0 | 1,080 | 2022-12-17 | ☑️ |
+| ric-app/hw-rust | 0 | +0 | 0 | 521 | 2024-06-28 | ☑️ |
+| ric-app/kpimon-go | 0 | +0 | 0 | 557 | 2024-05-23 | ☑️ |
+| ric-app/lp | 0 | +0 | 0 | 579 | 2024-05-01 | ☑️ |
+| ric-app/mc | 0 | +0 | 0 | 580 | 2024-04-30 | ☑️ |
+| ric-app/qp | 0 | +0 | 0 | 585 | 2024-04-25 | ☑️ |
+| ric-app/qp-aimlfw | 0 | +0 | 0 | 1,082 | 2022-12-15 | ☑️ |
+| ric-app/rc | 0 | +0 | 0 | 937 | 2023-05-09 | ☑️ |
+| ric-app/ric-sdk-py | 0 | +0 | 0 | 1,740 | 2021-02-25 | 🛑 |
+| ric-app/ts | 0 | +0 | 0 | 1,049 | 2023-01-17 | ☑️ |
+| ric-plt/alarm-cpp | 0 | +0 | 0 | 579 | 2024-05-01 | ☑️ |
+| ric-plt/asn1-documents | 0 | +0 | 0 | 822 | 2023-09-01 | ☑️ |
+| ric-plt/dbaas/hiredis-vip | 0 | +0 | 0 | 671 | 2024-01-30 | ☑️ |
+| ric-plt/demo1 | 0 | +0 | 0 | 2,214 | 2019-11-09 | 🛑 |
+| ric-plt/jaegeradapter | 0 | +0 | 0 | 579 | 2024-05-01 | ☑️ |
+| ric-plt/lib/rmr | 0 | +0 | 0 | 579 | 2024-05-01 | ☑️ |
+| ric-plt/libe2ap | 0 | +0 | 0 | 579 | 2024-05-01 | ☑️ |
+| ric-plt/nodeb-rnib | 0 | +0 | 0 | 579 | 2024-05-01 | ☑️ |
+| ric-plt/ric-test | 0 | +0 | 0 | 2,214 | 2019-11-09 | 🛑 |
+| ric-plt/ricctl | 0 | +0 | 0 | 1,494 | 2021-10-29 | 🛑 |
+| ric-plt/ricdms | 0 | +0 | 0 | 671 | 2024-01-30 | ☑️ |
+| ric-plt/sdl | 0 | +0 | 0 | 579 | 2024-05-01 | ☑️ |
+| ric-plt/sdlgo | 0 | +0 | 0 | 577 | 2024-05-03 | ☑️ |
+| ric-plt/sdlpy | 0 | +0 | 0 | 579 | 2024-05-01 | ☑️ |
+| ric-plt/streaming-protobufs | 0 | +0 | 0 | 1,529 | 2021-09-24 | 🛑 |
+| ric-plt/stslgo | 0 | +0 | 0 | 1,168 | 2022-09-20 | 🛑 |
+| ric-plt/tracelibcpp | 0 | +0 | 0 | 1,917 | 2020-09-01 | 🛑 |
+| ric-plt/tracelibgo | 0 | +0 | 0 | 578 | 2024-05-02 | ☑️ |
+| ric-plt/utils | 0 | +0 | 0 | 1,948 | 2020-08-01 | 🛑 |
+| ric-plt/xapp-frame | 0 | +0 | 0 | 569 | 2024-05-11 | ☑️ |
+| ric-plt/xapp-frame-cpp | 0 | +0 | 0 | 579 | 2024-05-01 | ☑️ |
+| ric-plt/xapp-frame-py | 0 | +0 | 0 | 577 | 2024-05-03 | ☑️ |
+| scp/oam/modeling | 0 | +0 | 0 | 968 | 2023-04-08 | ☑️ |
+| scp/ocu/5gnr | 0 | +0 | 0 | 1,989 | 2020-06-21 | 🛑 |
+| scp/ric-app/kpimon | 0 | +0 | 0 | 1,755 | 2021-02-10 | 🛑 |
+| scp/ric-app/ssp | 0 | +0 | 0 | 1,873 | 2020-10-15 | 🛑 |
+| sim/e2-interface | 0 | +0 | 0 | 545 | 2024-06-04 | ☑️ |
+| sim/e2-interface-data | 0 | +0 | 0 | 1,843 | 2020-11-14 | 🛑 |
+| sim/o1-interface | 0 | +0 | 0 | 522 | 2024-06-27 | ☑️ |
+| smo/pkg | 0 | +0 | 0 | 1,335 | 2022-04-06 | 🛑 |
+| smo/ves | 0 | +0 | 0 | 597 | 2024-04-13 | ☑️ |
 
 **Total:** 116 repositories
 
@@ -515,13 +515,13 @@ The data presented in the table below covers the past 365 days.
 | nonrtric/plt/dmaapadapter | Java/Maven | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | portal/nonrtric-controlpanel | TypeScript | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | nonrtric/rapp/orufhrecovery | Go | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
-| ric-plt/alarm-go | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/a1 | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/conflictmgr | Go | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| ric-plt/alarm-go | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/appmgr | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/dbaas | C++ | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
-| ric-plt/o1 | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/e2 | C | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| ric-plt/o1 | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/rtmgr | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/submgr | C | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/e2mgr | C | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
@@ -534,9 +534,9 @@ The data presented in the table below covers the past 365 days.
 | o-du/phy | C | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/ric-dep | Smarty | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/xapp-frame-rust | Rust | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| aiml-fw/apm/analysis-module | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| aiml-fw/apm/influx-wrapper | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aiml-fw/apm/monitoring-server | Go | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| aiml-fw/apm/influx-wrapper | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| aiml-fw/apm/analysis-module | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aiml-fw/awmf/cli | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | ric-plt/vespamgr | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | smo/o1 | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
@@ -550,9 +550,9 @@ The data presented in the table below covers the past 365 days.
 | scp/ric-app/ssp | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | scp/ric-app/kpimon | C | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | com/golog | Go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
-| com/pylog | Python | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | com/gs-lite | C | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | com/log | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| com/pylog | Python | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | it/dev | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-app/ad-cell | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-app/ad | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
@@ -568,33 +568,33 @@ The data presented in the table below covers the past 365 days.
 | ric-app/qp-aimlfw | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-app/ric-sdk-py | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ric-app/qp | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-app/mc | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/alarm-cpp | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| ric-app/mc | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-app/ts | C++ | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-plt/asn1-documents | Python | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-app/rc | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-plt/asn1-documents | Python | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-plt/demo1 | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ric-plt/jaegeradapter | Python | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
-| ric-plt/nodeb-rnib | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/libe2ap | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-plt/nodeb-rnib | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/ric-test | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ric-plt/ricctl | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ric-plt/ricdms | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/sdlgo | Go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-plt/sdlpy | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-plt/streaming-protobufs | Go | ❌ | ❌ | ✅ | ❌ | ❌ | 🛑 |
 | ric-plt/stslgo | Go | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| ric-plt/streaming-protobufs | Go | ❌ | ❌ | ✅ | ❌ | ❌ | 🛑 |
 | ric-plt/tracelibcpp | C++ | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-plt/tracelibgo | Go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-plt/sdl | C++ | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-plt/utils | C++ | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| ric-plt/xapp-frame-cpp | C++ | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-plt/xapp-frame | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | sim/e2-interface-data | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| ric-plt/xapp-frame-cpp | C++ | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/xapp-frame-py | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-plt/xapp-frame | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | smo/pkg | Python | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | sim/e2-interface | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| .github | None | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
+| .github | None | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | sim/o1-interface | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | smo/ves | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | aiml-fw | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -621,7 +621,7 @@ The data presented in the table below covers the past 365 days.
 | aiml-fw/athp/tps/kubeflow-adapter | <a href="https://github.com/o-ran-sc/aiml-fw-athp-tps-kubeflow-adapter/actions/workflows/gerrit-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-verify.yaml</span></a> | 1 | <a href="https://jenkins.o-ran-sc.org/job/aiml-fw-athp-tps-kubeflow-adapter-docker-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">aiml-fw-athp-tps-kubeflow-adapter-docker-docker-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/aiml-fw-athp-tps-kubeflow-adapter-docker-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">aiml-fw-athp-tps-kubeflow-adapter-docker-docker-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/aiml-fw-athp-tps-kubeflow-adapter-release-merge-master/" target="_blank"><span class="status-success jenkins-status">aiml-fw-athp-tps-kubeflow-adapter-release-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/aiml-fw-athp-tps-kubeflow-adapter-release-verify-master/" target="_blank"><span class="status-success jenkins-status">aiml-fw-athp-tps-kubeflow-adapter-release-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/aiml-fw-athp-tps-kubeflow-adapter-tox-sonarqube/" target="_blank"><span class="status-success jenkins-status">aiml-fw-athp-tps-kubeflow-adapter-tox-sonarqube</span></a> | 5 |
 | aiml-fw/awmf/modelmgmtservice | <a href="https://github.com/o-ran-sc/aiml-fw-awmf-modelmgmtservice/actions/workflows/gerrit-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-verify.yaml</span></a> | 1 | <a href="https://jenkins.o-ran-sc.org/job/aiml-fw-awmf-modelmgmtservice-docker-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">aiml-fw-awmf-modelmgmtservice-docker-docker-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/aiml-fw-awmf-modelmgmtservice-docker-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">aiml-fw-awmf-modelmgmtservice-docker-docker-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/aiml-fw-awmf-modelmgmtservice-release-merge-master/" target="_blank"><span class="status-success jenkins-status">aiml-fw-awmf-modelmgmtservice-release-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/aiml-fw-awmf-modelmgmtservice-release-verify-master/" target="_blank"><span class="status-success jenkins-status">aiml-fw-awmf-modelmgmtservice-release-verify-master</span></a> | 4 |
 | aiml-fw/awmf/tm | <a href="https://github.com/o-ran-sc/aiml-fw-awmf-tm/actions/workflows/gerrit-merge.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-merge.yaml</span></a><br><a href="https://github.com/o-ran-sc/aiml-fw-awmf-tm/actions/workflows/gerrit-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-verify.yaml</span></a> | 2 | <a href="https://jenkins.o-ran-sc.org/job/aiml-fw-awmf-tm-docker-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">aiml-fw-awmf-tm-docker-docker-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/aiml-fw-awmf-tm-docker-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">aiml-fw-awmf-tm-docker-docker-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/aiml-fw-awmf-tm-release-merge-master/" target="_blank"><span class="status-success jenkins-status">aiml-fw-awmf-tm-release-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/aiml-fw-awmf-tm-release-verify-master/" target="_blank"><span class="status-success jenkins-status">aiml-fw-awmf-tm-release-verify-master</span></a> | 4 |
-| ci-management | <a href="https://github.com/o-ran-sc/ci-management/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-no-runs workflow-status">call-github2gerrit.yaml</span></a><br><a href="https://github.com/o-ran-sc/ci-management/actions/workflows/gerrit-ci-management-merge.yaml" target="_blank"><span class="status-success workflow-status">gerrit-ci-management-merge.yaml</span></a><br><a href="https://github.com/o-ran-sc/ci-management/actions/workflows/gerrit-ci-management-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-ci-management-verify.yaml</span></a> | 3 | <a href="https://jenkins.o-ran-sc.org/job/ci-management-bldr-ubuntu16-c-go-docker-merge-master/" target="_blank"><span class="status-failure jenkins-status">ci-management-bldr-ubuntu16-c-go-docker-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-bldr-ubuntu16-c-go-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">ci-management-bldr-ubuntu16-c-go-docker-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-jenkins-cfg-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-jenkins-cfg-verify</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-jenkins-sandbox-cleanup/" target="_blank"><span class="status-failure jenkins-status">ci-management-jenkins-sandbox-cleanup</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-jjb-deploy-job/" target="_blank"><span class="status-success jenkins-status">ci-management-jjb-deploy-job</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-openstack-cron/" target="_blank"><span class="status-success jenkins-status">ci-management-openstack-cron</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-7-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-7-builder</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-7-docker/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-7-docker</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-8-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-8-builder</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-8-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-cs-8-builder</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-8-devstack/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-cs-8-devstack</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-8-devstack-pre-pip-yoga/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-cs-8-devstack-pre-pip-yoga</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-8-docker/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-centos-cs-8-docker</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-9-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-centos-cs-9-builder</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-9-devstack/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-centos-cs-9-devstack</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-9-devstack-pre-pip-yoga/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-centos-cs-9-devstack-pre-pip-yoga</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-9-docker/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-centos-cs-9-docker</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-18.04-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-18.04-builder</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-18.04-docker/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-18.04-docker</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-20.04-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-20.04-builder</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-20.04-devstack/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-20.04-devstack</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-20.04-docker/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-20.04-docker</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-22.04-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-ubuntu-22.04-builder</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-22.04-devstack/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-ubuntu-22.04-devstack</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-22.04-docker/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-ubuntu-22.04-docker</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-verify</span></a> | 26 |
+| ci-management | <a href="https://github.com/o-ran-sc/ci-management/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-no-runs workflow-status">call-github2gerrit.yaml</span></a><br><a href="https://github.com/o-ran-sc/ci-management/actions/workflows/gerrit-ci-management-merge.yaml" target="_blank"><span class="status-success workflow-status">gerrit-ci-management-merge.yaml</span></a><br><a href="https://github.com/o-ran-sc/ci-management/actions/workflows/gerrit-ci-management-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-ci-management-verify.yaml</span></a> | 3 | <a href="https://jenkins.o-ran-sc.org/job/ci-management-bldr-ubuntu16-c-go-docker-merge-master/" target="_blank"><span class="status-failure jenkins-status">ci-management-bldr-ubuntu16-c-go-docker-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-bldr-ubuntu16-c-go-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">ci-management-bldr-ubuntu16-c-go-docker-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-jenkins-cfg-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-jenkins-cfg-verify</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-jenkins-sandbox-cleanup/" target="_blank"><span class="status-failure jenkins-status">ci-management-jenkins-sandbox-cleanup</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-jjb-deploy-job/" target="_blank"><span class="status-success jenkins-status">ci-management-jjb-deploy-job</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-openstack-cron/" target="_blank"><span class="status-success jenkins-status">ci-management-openstack-cron</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-7-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-7-builder</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-7-docker/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-7-docker</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-8-builder/" target="_blank"><span class="status-failure jenkins-status">ci-management-packer-merge-centos-8-builder</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-8-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-cs-8-builder</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-8-devstack/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-cs-8-devstack</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-8-devstack-pre-pip-yoga/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-cs-8-devstack-pre-pip-yoga</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-8-docker/" target="_blank"><span class="status-failure jenkins-status">ci-management-packer-merge-centos-cs-8-docker</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-9-builder/" target="_blank"><span class="status-building jenkins-status">ci-management-packer-merge-centos-cs-9-builder</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-9-devstack/" target="_blank"><span class="status-failure jenkins-status">ci-management-packer-merge-centos-cs-9-devstack</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-9-devstack-pre-pip-yoga/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-centos-cs-9-devstack-pre-pip-yoga</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-centos-cs-9-docker/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-centos-cs-9-docker</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-18.04-builder/" target="_blank"><span class="status-failure jenkins-status">ci-management-packer-merge-ubuntu-18.04-builder</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-18.04-docker/" target="_blank"><span class="status-failure jenkins-status">ci-management-packer-merge-ubuntu-18.04-docker</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-20.04-builder/" target="_blank"><span class="status-failure jenkins-status">ci-management-packer-merge-ubuntu-20.04-builder</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-20.04-devstack/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-20.04-devstack</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-20.04-docker/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-20.04-docker</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-22.04-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-ubuntu-22.04-builder</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-22.04-devstack/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-ubuntu-22.04-devstack</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-merge-ubuntu-22.04-docker/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-ubuntu-22.04-docker</span></a><br><a href="https://jenkins.o-ran-sc.org/job/ci-management-packer-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-verify</span></a> | 26 |
 | com/golog | <a href="https://github.com/o-ran-sc/com-golog/actions/workflows/gerrit-novote-merge.yaml" target="_blank"><span class="status-no-runs workflow-status">gerrit-novote-merge.yaml</span></a> | 1 | <a href="https://jenkins.o-ran-sc.org/job/com-golog-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">com-golog-docker-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/com-golog-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">com-golog-release-merge-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/com-golog-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">com-golog-release-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/com-golog-sonar-prescan-script/" target="_blank"><span class="status-failure jenkins-status">com-golog-sonar-prescan-script</span></a> | 4 |
 | com/gs-lite |  | 0 | <a href="https://jenkins.o-ran-sc.org/job/com-gs-lite-info-yaml-verify/" target="_blank"><span class="status-success jenkins-status">com-gs-lite-info-yaml-verify</span></a> | 1 |
 | com/log | <a href="https://github.com/o-ran-sc/com-log/actions/workflows/gerrit-novote-merge.yaml" target="_blank"><span class="status-no-runs workflow-status">gerrit-novote-merge.yaml</span></a> | 1 | <a href="https://jenkins.o-ran-sc.org/job/com-log-autotools-sonarqube/" target="_blank"><span class="status-failure jenkins-status">com-log-autotools-sonarqube</span></a><br><a href="https://jenkins.o-ran-sc.org/job/com-log-autotools-verify-master/" target="_blank"><span class="status-success jenkins-status">com-log-autotools-verify-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/com-log-deb-autotools-packagecloud-stage-master/" target="_blank"><span class="status-success jenkins-status">com-log-deb-autotools-packagecloud-stage-master</span></a><br><a href="https://jenkins.o-ran-sc.org/job/com-log-packagecloud-release-merge/" target="_blank"><span class="status-success jenkins-status">com-log-packagecloud-release-merge</span></a><br><a href="https://jenkins.o-ran-sc.org/job/com-log-packagecloud-release-verify/" target="_blank"><span class="status-success jenkins-status">com-log-packagecloud-release-verify</span></a><br><a href="https://jenkins.o-ran-sc.org/job/com-log-rpm-autotools-packagecloud-stage-master/" target="_blank"><span class="status-success jenkins-status">com-log-rpm-autotools-packagecloud-stage-master</span></a> | 6 |
@@ -739,7 +739,7 @@ This report shows project information from INFO.yaml files, including lifecycle 
 
 | Project | Creation Date | Lifecycle State | Project Lead | Committers |
 |---------|---------------|-----------------|--------------|------------|
-| <a href="https://jira.o-ran-sc.org/" target="_blank">.github</a> | 2023-07-26 | Incubation | <span style="color: green;" title="✅ Current - commits within last 365 days">Andrew Grimberg</span> | <span style="color: green;" title="✅ Current - commits within last 365 days">Vanessa Valderrama</span><br><span style="color: green;" title="✅ Current - commits within last 365 days">Eric Ball</span><br><span style="color: green;" title="✅ Current - commits within last 365 days">Anil Belur</span><br><span style="color: green;" title="✅ Current - commits within last 365 days">Kevin Sandi</span><br><span style="color: green;" title="✅ Current - commits within last 365 days">Mahesh Jethanandani</span><br><span style="color: green;" title="✅ Current - commits within last 365 days">John Keeney</span><br><span style="color: green;" title="✅ Current - commits within last 365 days">Martin Skorupski</span><br><span style="color: green;" title="✅ Current - commits within last 365 days">Alex Stancu</span><br><span style="color: green;" title="✅ Current - commits within last 365 days">Hoejoo Lee</span><br><span style="color: green;" title="✅ Current - commits within last 365 days">Jackie Huang</span><br><span style="color: green;" title="✅ Current - commits within last 365 days">Jessica Wagantall</span> |
+| <a href="https://jira.o-ran-sc.org/" target="_blank">.github</a> | 2023-07-26 | Incubation | <span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Andrew Grimberg</span> | <span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Vanessa Valderrama</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Eric Ball</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Anil Belur</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Kevin Sandi</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Mahesh Jethanandani</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">John Keeney</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Martin Skorupski</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Alex Stancu</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Hoejoo Lee</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Jackie Huang</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Jessica Wagantall</span> |
 | <a href="https://jira.o-ran-sc.org/projects/INT" target="_blank">Integration and Testing</a> | 2019-05-21 | Incubation | <span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Zhe Huang</span> | <span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Eliza Celenti</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Qun Luo</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Rohan Patel</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Adam Ordway</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Justin Meilinger</span> |
 | <a href="https://jira.o-ran-sc.org/projects/INT" target="_blank">Integration and Testing</a> | 2019-05-21 | Incubation | <span style="color: orange;" title="☑️ Active - commits between 365-1095 days">James Li</span> | <span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Dave Korman</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Weisen Pan</span> |
 | <a href="https://jira.o-ran-sc.org/projects/INT" target="_blank">Integration and Testing</a> | 2019-05-21 | Incubation | <span style="color: green;" title="✅ Current - commits within last 365 days">Bimo Fransiscus Asisi</span> | <span style="color: green;" title="✅ Current - commits within last 365 days">Chris Wheeler</span><br><span style="color: green;" title="✅ Current - commits within last 365 days">Alberto Losada Grande</span><br><span style="color: green;" title="✅ Current - commits within last 365 days">Allain Legacy</span> |
