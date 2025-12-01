@@ -1,0 +1,16 @@
+{
+  "project": "O-RAN-SC",
+  "slug": "oran",
+  "gerrit_server": "gerrit.o-ran-sc.org",
+  "jenkins_server": "jenkins.o-ran-sc.org",
+  "github_org": "",
+  "generated_at": "2025-12-01T22:43:01Z",
+  "workflow_run_id": "19840005828",
+  "workflow_run_number": "15",
+  "workflow_run_attempt": "1",
+  "git_sha": "f1988166a25f30fa5ced335f582b0beb59d76f31",
+  "git_ref": "fix-linting",
+  "pr_number": 26,
+  "pr_author": "ModeSevenIndustrialSolutions",
+  "environment": "previews"
+}
