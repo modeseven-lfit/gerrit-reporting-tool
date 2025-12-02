@@ -127,6 +127,27 @@ jjb_attribution:
   cache_dir: /tmp
 ```
 
+### G2G (GitHub2Gerrit) Custom Workflow Detection
+
+To customize which workflow files are checked for GitHub2Gerrit synchronization:
+
+```yaml
+features:
+  enabled:
+    - g2g
+
+  g2g:
+    workflow_files:
+      - "github2gerrit.yaml"
+      - "call-github2gerrit.yaml"
+      - "sync-to-gerrit.yaml"        # Custom workflow name
+      - "custom-gerrit-mirror.yaml"  # Another custom name
+```
+
+**Default Behavior**: If not specified, the tool checks for `github2gerrit.yaml` and `call-github2gerrit.yaml`.
+
+**Custom Configuration**: Projects can specify their own workflow filenames. If **any** of the listed workflows exist in `.github/workflows/`, the G2G feature is marked as present (✅) in the report.
+
 ## Validation
 
 All configuration files are validated against the schema. To check if a configuration is valid:

@@ -446,6 +446,68 @@ A: Edit `src/cli/features.py` and add to `AVAILABLE_FEATURES` registry.
 
 ---
 
+## Customizing Feature Detection
+
+### Per-Project Feature Configuration
+
+Some features support per-project customization through configuration files. This allows projects with non-standard conventions to be properly detected.
+
+#### G2G (GitHub2Gerrit) Workflow Customization
+
+The G2G feature detects GitHub to Gerrit workflow synchronization by checking for specific workflow files in `.github/workflows/`. By default, it looks for:
+
+- `github2gerrit.yaml`
+- `call-github2gerrit.yaml`
+
+**Customizing Workflow Filenames:**
+
+If your project uses custom workflow names, you can configure them in your project-specific configuration file:
+
+```yaml
+# configuration/myproject.yaml
+project: My Project
+
+features:
+  enabled:
+    - g2g
+
+  g2g:
+    workflow_files:
+      - "github2gerrit.yaml"           # Standard
+      - "call-github2gerrit.yaml"      # Standard
+      - "sync-to-gerrit.yaml"          # Custom
+      - "custom-gerrit-mirror.yaml"    # Custom
+```
+
+**Detection Logic:**
+
+- If **any** of the configured workflow files exist in `.github/workflows/`, the G2G feature is marked as present (✅)
+- If **none** of the workflow files exist, it's marked as absent (❌)
+- Multiple workflow files can be specified
+- Each project can have its own list of workflow filenames
+
+**Example Use Case:**
+
+A project that uses a non-standard workflow naming convention:
+
+```yaml
+features:
+  g2g:
+    workflow_files:
+      - "gerrit-sync.yaml"
+      - "mirror-to-gerrit.yaml"
+```
+
+**Backward Compatibility:**
+
+- If `features.g2g.workflow_files` is not specified, the default filenames are used
+- Existing configurations continue to work without changes
+- No configuration changes are required for projects using standard workflow names
+
+**Schema Version:** This feature requires schema version 1.1.0 or later.
+
+---
+
 ## Advanced Usage
 
 ### Custom Feature Registry

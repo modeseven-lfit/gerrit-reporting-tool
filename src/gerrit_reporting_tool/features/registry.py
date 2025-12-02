@@ -217,6 +217,18 @@ class FeatureRegistry:
         """
         Check for specific GitHub to Gerrit workflow files.
 
+        Checks for workflow files in .github/workflows/ directory. The list of
+        workflow filenames can be customized per-project via configuration:
+
+        features:
+          g2g:
+            workflow_files:
+              - "github2gerrit.yaml"
+              - "call-github2gerrit.yaml"
+              - "custom-workflow.yaml"
+
+        If not specified in config, defaults to: github2gerrit.yaml, call-github2gerrit.yaml
+
         Args:
             repo_path: Path to the repository
 
@@ -224,7 +236,16 @@ class FeatureRegistry:
             Dict with keys: present (bool), file_paths (list), file_path (str or None)
         """
         workflows_dir = repo_path / ".github" / "workflows"
-        g2g_files = ["github2gerrit.yaml", "call-github2gerrit.yaml"]
+
+        # Get workflow files from config, with backward-compatible defaults
+        default_g2g_files = ["github2gerrit.yaml", "call-github2gerrit.yaml"]
+        features_config = self.config.get("features", {})
+        g2g_config = features_config.get("g2g", {})
+        g2g_files = g2g_config.get("workflow_files", default_g2g_files)
+
+        # Ensure g2g_files is a list
+        if isinstance(g2g_files, str):
+            g2g_files = [g2g_files]
 
         found_files = []
         for filename in g2g_files:

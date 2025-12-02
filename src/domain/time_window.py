@@ -204,10 +204,10 @@ class TimeWindowStats:
             contributors=data.get("contributors", 0),
         )
 
-    def __add__(self, other: "TimeWindowStats") -> "TimeWindowStats":
+    def __add__(self, other: object) -> "TimeWindowStats":
         """Add two TimeWindowStats together for aggregation."""
         if not isinstance(other, TimeWindowStats):
-            return NotImplemented  # type: ignore[unreachable]
+            return NotImplemented
 
         return TimeWindowStats(
             commits=self.commits + other.commits,

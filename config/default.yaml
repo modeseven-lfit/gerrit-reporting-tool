@@ -95,6 +95,18 @@ features:
     - workflows
     - gitreview
 
+  # Per-feature configuration (optional)
+  # Customize feature detection behavior on a per-project basis
+
+  # G2G (GitHub2Gerrit) workflow detection
+  # Specify custom workflow filenames to check in .github/workflows/
+  # If not specified, defaults to: github2gerrit.yaml, call-github2gerrit.yaml
+  # g2g:
+  #   workflow_files:
+  #     - "github2gerrit.yaml"
+  #     - "call-github2gerrit.yaml"
+  #     # Add custom workflow names here for your project
+
 # =============================================================================
 # Workflow Classification
 # =============================================================================
@@ -314,4 +326,4 @@ extensions:
 # =============================================================================
 # Schema Version
 # =============================================================================
-schema_version: "1.0.0"
+schema_version: "1.1.0"
