@@ -1,0 +1,16 @@
+{
+  "project": "ONAP",
+  "slug": "onap",
+  "gerrit_server": "gerrit.onap.org",
+  "jenkins_server": "jenkins.onap.org",
+  "github_org": "",
+  "generated_at": "2025-12-04T08:52:06Z",
+  "workflow_run_id": "19923083836",
+  "workflow_run_number": "17",
+  "workflow_run_attempt": "1",
+  "git_sha": "0374e91218c2c9498bc9407624ff0d4f3e6c4564",
+  "git_ref": "g2g-wf-configurable",
+  "pr_number": 28,
+  "pr_author": "ModeSevenIndustrialSolutions",
+  "environment": "previews"
+}
