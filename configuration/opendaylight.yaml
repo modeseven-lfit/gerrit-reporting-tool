@@ -47,6 +47,23 @@ performance:
   cache: true
 
 # =============================================================================
+# Feature Configuration
+# =============================================================================
+# G2G (GitHub2Gerrit) workflow detection
+# Specify custom workflow filenames to check in .github/workflows/
+# Supports both exact filename matching and regex patterns
+#
+# Pattern matching:
+#   - Use 'regex:' prefix for regex patterns
+#   - Patterns are case-insensitive by default
+#   - Example: "regex:.*github2gerrit.*" matches any file containing
+#     "github2gerrit"
+features:
+  g2g:
+    workflow_files:
+      - "regex:.*github2gerrit.*"
+
+# =============================================================================
 # Activity Thresholds
 # =============================================================================
 # Customized for OpenDaylight's release cycle (~6 month releases)

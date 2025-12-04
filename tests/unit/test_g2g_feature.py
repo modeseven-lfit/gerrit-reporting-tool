@@ -364,3 +364,466 @@ class TestG2GFeatureEdgeCases:
 
         assert result["present"] is True
         assert ".github/workflows/workflow with spaces.yaml" in result["file_paths"]
+
+
+class TestG2GFeatureRegexPatterns:
+    """Test regex pattern matching for G2G feature detection."""
+
+    def test_simple_regex_pattern_match(self, temp_repo: Path, logger: logging.Logger):
+        """Test basic regex pattern matching."""
+        create_workflow_file(temp_repo, "github2gerrit.yaml")
+        create_workflow_file(temp_repo, "call-github2gerrit.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {"workflow_files": ["regex:.*github2gerrit.*"]},
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        assert len(result["file_paths"]) == 2
+        assert ".github/workflows/github2gerrit.yaml" in result["file_paths"]
+        assert ".github/workflows/call-github2gerrit.yaml" in result["file_paths"]
+
+    def test_case_insensitive_regex_pattern(self, temp_repo: Path, logger: logging.Logger):
+        """Test case-insensitive regex pattern matching."""
+        create_workflow_file(temp_repo, "GitHub2Gerrit.yaml")
+        create_workflow_file(temp_repo, "CALL-GITHUB2GERRIT.yaml")
+        create_workflow_file(temp_repo, "github2gerrit-composed.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {"workflow_files": ["regex:.*github2gerrit.*"]},
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        assert len(result["file_paths"]) == 3
+
+    def test_multiple_regex_patterns(self, temp_repo: Path, logger: logging.Logger):
+        """Test multiple regex patterns are all evaluated."""
+        create_workflow_file(temp_repo, "github2gerrit.yaml")
+        create_workflow_file(temp_repo, "gerrit-sync.yaml")
+        create_workflow_file(temp_repo, "mirror-to-gerrit.yml")
+        create_workflow_file(temp_repo, "unrelated-workflow.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {
+                    "workflow_files": [
+                        "regex:.*github2gerrit.*",
+                        "regex:.*gerrit-sync.*",
+                        "regex:.*mirror.*gerrit.*",
+                    ]
+                },
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        assert len(result["file_paths"]) == 3
+        assert ".github/workflows/github2gerrit.yaml" in result["file_paths"]
+        assert ".github/workflows/gerrit-sync.yaml" in result["file_paths"]
+        assert ".github/workflows/mirror-to-gerrit.yml" in result["file_paths"]
+        assert ".github/workflows/unrelated-workflow.yaml" not in result["file_paths"]
+
+    def test_regex_pattern_no_match(self, temp_repo: Path, logger: logging.Logger):
+        """Test regex pattern that doesn't match any files."""
+        create_workflow_file(temp_repo, "ci.yaml")
+        create_workflow_file(temp_repo, "test.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {"workflow_files": ["regex:.*github2gerrit.*"]},
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is False
+        assert result["file_paths"] == []
+
+    def test_exact_match_with_anchors(self, temp_repo: Path, logger: logging.Logger):
+        """Test regex with anchors for exact matching."""
+        create_workflow_file(temp_repo, "github2gerrit.yaml")
+        create_workflow_file(temp_repo, "call-github2gerrit.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {"workflow_files": ["regex:^github2gerrit\\.yaml$"]},
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        assert len(result["file_paths"]) == 1
+        assert ".github/workflows/github2gerrit.yaml" in result["file_paths"]
+        assert ".github/workflows/call-github2gerrit.yaml" not in result["file_paths"]
+
+    def test_complex_regex_with_alternation(self, temp_repo: Path, logger: logging.Logger):
+        """Test complex regex with alternation (OR) operator."""
+        create_workflow_file(temp_repo, "github2gerrit.yaml")
+        create_workflow_file(temp_repo, "call-github2gerrit.yaml")
+        create_workflow_file(temp_repo, "call-composed-github2gerrit.yaml")
+        create_workflow_file(temp_repo, "other-workflow.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {
+                    "workflow_files": [
+                        "regex:^(github2gerrit|call-github2gerrit|call-composed-github2gerrit)\\.yaml$"
+                    ]
+                },
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        assert len(result["file_paths"]) == 3
+        assert ".github/workflows/other-workflow.yaml" not in result["file_paths"]
+
+    def test_pattern_matches_yml_and_yaml(self, temp_repo: Path, logger: logging.Logger):
+        """Test pattern that matches both .yml and .yaml extensions."""
+        create_workflow_file(temp_repo, "github2gerrit.yaml")
+        create_workflow_file(temp_repo, "github2gerrit.yml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {"workflow_files": ["regex:.*github2gerrit\\.ya?ml$"]},
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        assert len(result["file_paths"]) == 2
+
+    def test_backward_compatibility_workflow_files_still_work(
+        self, temp_repo: Path, logger: logging.Logger
+    ):
+        """Test that old workflow_files config still works alongside patterns."""
+        create_workflow_file(temp_repo, "github2gerrit.yaml")
+        create_workflow_file(temp_repo, "call-github2gerrit.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {"workflow_files": ["github2gerrit.yaml", "call-github2gerrit.yaml"]},
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        assert len(result["file_paths"]) == 2
+
+    def test_both_files_and_patterns_combined(self, temp_repo: Path, logger: logging.Logger):
+        """Test that both workflow_files and workflow_patterns work together."""
+        create_workflow_file(temp_repo, "exact-match.yaml")
+        create_workflow_file(temp_repo, "github2gerrit-v1.yaml")
+        create_workflow_file(temp_repo, "github2gerrit-v2.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {
+                    "workflow_files": [
+                        "exact-match.yaml",
+                        "regex:.*github2gerrit.*",
+                    ],
+                },
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        assert len(result["file_paths"]) == 3
+        assert ".github/workflows/exact-match.yaml" in result["file_paths"]
+        assert ".github/workflows/github2gerrit-v1.yaml" in result["file_paths"]
+        assert ".github/workflows/github2gerrit-v2.yaml" in result["file_paths"]
+
+    def test_patterns_deduplicate_matches(self, temp_repo: Path, logger: logging.Logger):
+        """Test that duplicate matches from multiple patterns are deduplicated."""
+        create_workflow_file(temp_repo, "github2gerrit.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {
+                    "workflow_files": [
+                        "regex:.*github2gerrit.*",
+                        "regex:^github2gerrit\\.yaml$",
+                        "regex:.*\\.yaml$",
+                    ]
+                },
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        # Should only contain one entry despite matching multiple patterns
+        assert len(result["file_paths"]) == 1
+        assert ".github/workflows/github2gerrit.yaml" in result["file_paths"]
+
+    def test_invalid_regex_pattern_handled_gracefully(
+        self, temp_repo: Path, logger: logging.Logger
+    ):
+        """Test that invalid regex patterns are handled gracefully."""
+        create_workflow_file(temp_repo, "github2gerrit.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {
+                    "workflow_files": [
+                        "regex:[invalid(regex",  # Invalid regex
+                        "regex:.*github2gerrit.*",  # Valid regex
+                    ]
+                },
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        # Should still detect with the valid pattern
+        assert result["present"] is True
+        assert ".github/workflows/github2gerrit.yaml" in result["file_paths"]
+
+    def test_empty_patterns_list(self, temp_repo: Path, logger: logging.Logger):
+        """Test that empty patterns list is handled correctly."""
+        create_workflow_file(temp_repo, "github2gerrit.yaml")
+
+        config: dict[str, Any] = {"features": {"enabled": ["g2g"], "g2g": {"workflow_files": []}}}
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        # Empty workflow_files means nothing to check
+        assert result["present"] is False
+
+    def test_pattern_with_special_characters(self, temp_repo: Path, logger: logging.Logger):
+        """Test pattern matching filenames with special characters."""
+        create_workflow_file(temp_repo, "g2g-workflow_v1.2.yaml")
+        create_workflow_file(temp_repo, "g2g-workflow-v2.0.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {"workflow_files": ["regex:g2g-workflow[_-]v\\d+\\.\\d+\\.yaml"]},
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        assert len(result["file_paths"]) == 2
+
+    def test_pattern_matches_subdirectories_not_supported(
+        self, temp_repo: Path, logger: logging.Logger
+    ):
+        """Test that patterns only match files in .github/workflows, not subdirs."""
+        workflows_dir = temp_repo / ".github" / "workflows"
+        subdir = workflows_dir / "subdir"
+        subdir.mkdir()
+        (subdir / "github2gerrit.yaml").write_text("# Test workflow\n")
+        create_workflow_file(temp_repo, "github2gerrit.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {"workflow_files": ["regex:.*github2gerrit.*"]},
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        # Should only match the file directly in workflows/, not in subdirectory
+        assert result["present"] is True
+        assert len(result["file_paths"]) == 1
+        assert ".github/workflows/github2gerrit.yaml" in result["file_paths"]
+
+
+class TestG2GFeatureRegexPatternEdgeCases:
+    """Test edge cases for regex pattern matching."""
+
+    def test_pattern_with_unicode_characters(self, temp_repo: Path, logger: logging.Logger):
+        """Test pattern matching with unicode characters in filenames."""
+        create_workflow_file(temp_repo, "gerrit-sync-✓.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {"workflow_files": ["regex:.*gerrit.*"]},
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        assert ".github/workflows/gerrit-sync-✓.yaml" in result["file_paths"]
+
+    def test_pattern_string_converted_to_list(self, temp_repo: Path, logger: logging.Logger):
+        """Test that a single string pattern is converted to a list."""
+        create_workflow_file(temp_repo, "github2gerrit.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {"workflow_files": "regex:.*github2gerrit.*"},
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        assert ".github/workflows/github2gerrit.yaml" in result["file_paths"]
+
+    def test_very_long_pattern(self, temp_repo: Path, logger: logging.Logger):
+        """Test handling of very long regex patterns."""
+        create_workflow_file(temp_repo, "github2gerrit.yaml")
+
+        long_pattern = "(" + "|".join([f"pattern{i}" for i in range(100)]) + "|github2gerrit)"
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {"workflow_files": [f"regex:{long_pattern}"]},
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        assert ".github/workflows/github2gerrit.yaml" in result["file_paths"]
+
+    def test_pattern_with_lookahead_assertions(self, temp_repo: Path, logger: logging.Logger):
+        """Test regex patterns with lookahead assertions."""
+        create_workflow_file(temp_repo, "github2gerrit.yaml")
+        create_workflow_file(temp_repo, "github2gitlab.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {"workflow_files": ["regex:github2(?=gerrit).*"]},
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        assert len(result["file_paths"]) == 1
+        assert ".github/workflows/github2gerrit.yaml" in result["file_paths"]
+
+    def test_dot_star_pattern_matches_all(self, temp_repo: Path, logger: logging.Logger):
+        """Test that .* pattern matches all workflow files."""
+        create_workflow_file(temp_repo, "workflow1.yaml")
+        create_workflow_file(temp_repo, "workflow2.yaml")
+        create_workflow_file(temp_repo, "workflow3.yml")
+
+        config: dict[str, Any] = {
+            "features": {"enabled": ["g2g"], "g2g": {"workflow_files": ["regex:.*"]}}
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        assert len(result["file_paths"]) == 3
+
+    def test_pattern_matching_empty_workflows_directory(
+        self, temp_repo: Path, logger: logging.Logger
+    ):
+        """Test pattern matching when workflows directory is empty."""
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {"workflow_files": ["regex:.*github2gerrit.*"]},
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is False
+        assert result["file_paths"] == []
+
+    def test_opendaylight_use_case(self, temp_repo: Path, logger: logging.Logger):
+        """Test the actual OpenDaylight use case with three workflow files."""
+        create_workflow_file(temp_repo, "github2gerrit.yaml")
+        create_workflow_file(temp_repo, "call-github2gerrit.yaml")
+        create_workflow_file(temp_repo, "call-composed-github2gerrit.yaml")
+        create_workflow_file(temp_repo, "ci-verify.yaml")  # Should not match
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {"workflow_files": ["regex:.*github2gerrit.*"]},
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        assert result["present"] is True
+        assert len(result["file_paths"]) == 3
+        assert ".github/workflows/github2gerrit.yaml" in result["file_paths"]
+        assert ".github/workflows/call-github2gerrit.yaml" in result["file_paths"]
+        assert ".github/workflows/call-composed-github2gerrit.yaml" in result["file_paths"]
+        assert ".github/workflows/ci-verify.yaml" not in result["file_paths"]
+
+    def test_result_metadata_includes_pattern_info(self, temp_repo: Path, logger: logging.Logger):
+        """Test that result includes information about pattern matching."""
+        create_workflow_file(temp_repo, "github2gerrit.yaml")
+
+        config: dict[str, Any] = {
+            "features": {
+                "enabled": ["g2g"],
+                "g2g": {"workflow_files": ["regex:.*github2gerrit.*"]},
+            }
+        }
+        registry = FeatureRegistry(config, logger)
+
+        result = registry._check_g2g(temp_repo)
+
+        # Verify core fields exist
+        assert "present" in result
+        assert "file_paths" in result
+        assert "file_path" in result
+
+        # Verify values are correct
+        assert result["present"] is True
+        assert isinstance(result["file_paths"], list)
+        assert len(result["file_paths"]) == 1

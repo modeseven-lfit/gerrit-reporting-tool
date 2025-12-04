@@ -218,14 +218,34 @@ class FeatureRegistry:
         Check for specific GitHub to Gerrit workflow files.
 
         Checks for workflow files in .github/workflows/ directory. The list of
-        workflow filenames can be customized per-project via configuration:
+        workflow filenames can be customized per-project via configuration.
 
-        features:
-          g2g:
-            workflow_files:
-              - "github2gerrit.yaml"
-              - "call-github2gerrit.yaml"
-              - "custom-workflow.yaml"
+        Configuration supports both exact filenames and regex patterns:
+
+        Exact filenames:
+          features:
+            g2g:
+              workflow_files:
+                - "github2gerrit.yaml"
+                - "call-github2gerrit.yaml"
+                - "custom-workflow.yaml"
+
+        Regex patterns (prefix with "regex:"):
+          features:
+            g2g:
+              workflow_files:
+                - "regex:.*github2gerrit.*"
+                - "regex:g2g-.*\\.ya?ml$"
+
+        Mixed (exact and regex):
+          features:
+            g2g:
+              workflow_files:
+                - "github2gerrit.yaml"
+                - "regex:.*github2gerrit.*"
+
+        Regex patterns are case-insensitive by default. Use (?-i) at the start
+        of the pattern for case-sensitive matching.
 
         If not specified in config, defaults to: github2gerrit.yaml, call-github2gerrit.yaml
 
@@ -233,7 +253,8 @@ class FeatureRegistry:
             repo_path: Path to the repository
 
         Returns:
-            Dict with keys: present (bool), file_paths (list), file_path (str or None)
+            Dict with keys: present (bool), file_paths (list), file_path (str or None),
+                          matched_patterns (dict mapping patterns to matched files)
         """
         workflows_dir = repo_path / ".github" / "workflows"
 
@@ -247,16 +268,83 @@ class FeatureRegistry:
         if isinstance(g2g_files, str):
             g2g_files = [g2g_files]
 
+        # Check if workflows directory exists
+        if not workflows_dir.exists() or not workflows_dir.is_dir():
+            return {
+                "present": False,
+                "file_paths": [],
+                "file_path": None,
+                "matched_patterns": {},
+            }
+
+        # Separate exact filenames from regex patterns
+        exact_filenames = []
+        regex_patterns = []
+        for pattern in g2g_files:
+            if isinstance(pattern, str) and pattern.startswith("regex:"):
+                # Extract the regex pattern (everything after "regex:")
+                regex_str = pattern[6:]  # Remove "regex:" prefix
+                try:
+                    # Compile with case-insensitive flag by default
+                    # Users can override with (?-i) in their pattern
+                    compiled_pattern = re.compile(regex_str, re.IGNORECASE)
+                    regex_patterns.append((pattern, compiled_pattern))
+                except re.error as e:
+                    # Log invalid regex but continue processing
+                    self.logger.warning(
+                        f"Invalid regex pattern '{regex_str}' in g2g configuration: {e}"
+                    )
+            else:
+                exact_filenames.append(pattern)
+
         found_files = []
-        for filename in g2g_files:
+        matched_patterns: Dict[str, List[str]] = {}
+
+        # Check exact filenames first
+        for filename in exact_filenames:
             file_path = workflows_dir / filename
             if file_path.exists():
                 found_files.append(f".github/workflows/{filename}")
+                if filename not in matched_patterns:
+                    matched_patterns[filename] = []
+                matched_patterns[filename].append(filename)
+
+        # Check regex patterns against all workflow files
+        if regex_patterns:
+            try:
+                # Get all files in the workflows directory
+                workflow_files = [
+                    f for f in workflows_dir.iterdir()
+                    if f.is_file() and not f.name.startswith('.')
+                ]
+
+                # Test each workflow file against each regex pattern
+                for workflow_file in workflow_files:
+                    workflow_filename = workflow_file.name
+                    relative_path = f".github/workflows/{workflow_filename}"
+
+                    for pattern_str, compiled_pattern in regex_patterns:
+                        if compiled_pattern.search(workflow_filename):
+                            if relative_path not in found_files:
+                                found_files.append(relative_path)
+                            if pattern_str not in matched_patterns:
+                                matched_patterns[pattern_str] = []
+                            matched_patterns[pattern_str].append(workflow_filename)
+
+            except OSError as e:
+                # Log error reading directory but continue
+                self.logger.warning(
+                    f"Error reading workflows directory {workflows_dir}: {e}"
+                )
+
+        # Sort found files for consistent ordering
+        found_files.sort()
 
         return {
             "present": len(found_files) > 0,
             "file_paths": found_files,
             "file_path": found_files[0] if found_files else None,  # Backward compatibility
+            "matched_patterns": matched_patterns,
         }
 
     def _check_pre_commit(self, repo_path: Path) -> Dict[str, Any]:
