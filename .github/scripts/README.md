@@ -262,15 +262,15 @@ ls -la ./test-downloads/
 
 ### System Dependencies
 
-| Tool | Purpose | Check Command |
-| ------- | ------- | ------- |
-| `bash` | Shell interpreter | `bash --version` |
-| `jq` | JSON processing | `jq --version` |
-| `curl` | HTTP requests | `curl --version` |
-| `git` | Repository operations | `git --version` |
-| `find` | File searching | `find --version` |
-| `date` | Date formatting | `date --version` |
-| `unzip` | Archive extraction | `unzip -v` |
+| Tool    | Purpose               | Check Command    |
+| ------- | --------------------- | ---------------- |
+| `bash`  | Shell interpreter     | `bash --version` |
+| `jq`    | JSON processing       | `jq --version`   |
+| `curl`  | HTTP requests         | `curl --version` |
+| `git`   | Repository operations | `git --version`  |
+| `find`  | File searching        | `find --version` |
+| `date`  | Date formatting       | `date --version` |
+| `unzip` | Archive extraction    | `unzip -v`       |
 
 ### Installing Dependencies
 

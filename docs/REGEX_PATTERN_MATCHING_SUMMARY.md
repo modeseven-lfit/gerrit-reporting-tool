@@ -291,14 +291,18 @@ Before deploying regex patterns:
 
 ### Compatibility Matrix
 
-| Configuration Type | Before | After | Status |
-| ------------------ | ------ | ----- | ------ |
-| Exact filenames only | ✅ Works | ✅ Works | Compatible |
-| Empty config | ✅ Uses defaults | ✅ Uses defaults | Compatible |
-| Missing workflow_files | ✅ Uses defaults | ✅ Uses defaults | Compatible |
-| String (single file) | ✅ Works | ✅ Works | Compatible |
-| Regex patterns | ❌ Not supported | ✅ Supported | New feature |
-| Mixed exact + regex | ❌ Not supported | ✅ Supported | New feature |
+<!-- markdownlint-disable MD060 -->
+
+| Configuration Type     | Before          | After           | Status      |
+| ---------------------- | --------------- | --------------- | ----------- |
+| Exact filenames only   | ✅ Works         | ✅ Works         | Compatible  |
+| Empty config           | ✅ Uses defaults | ✅ Uses defaults | Compatible  |
+| Missing workflow_files | ✅ Uses defaults | ✅ Uses defaults | Compatible  |
+| String (single file)   | ✅ Works         | ✅ Works         | Compatible  |
+| Regex patterns         | ❌ Not supported | ✅ Supported     | New feature |
+| Mixed exact + regex    | ❌ Not supported | ✅ Supported     | New feature |
+
+<!-- markdownlint-enable MD060 -->
 
 ## Benefits
 

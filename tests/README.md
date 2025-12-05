@@ -196,16 +196,16 @@ pytest --cov=src --cov-report=term-missing
 
 Tests can be marked with categories for selective execution:
 
-| Marker | Purpose | Usage |
-| ------- | ------- | ------- |
-| `@pytest.mark.unit` | Unit test | `pytest -m unit` |
-| `@pytest.mark.integration` | Integration test | `pytest -m integration` |
-| `@pytest.mark.property` | Property-based test | `pytest -m property` |
-| `@pytest.mark.regression` | Regression test | `pytest -m regression` |
-| `@pytest.mark.performance` | Performance test | `pytest -m performance` |
-| `@pytest.mark.slow` | Slow-running test | `pytest -m "not slow"` |
-| `@pytest.mark.api` | Tests API clients | `pytest -m api` |
-| `@pytest.mark.smoke` | Quick smoke test | `pytest -m smoke` |
+| Marker                     | Purpose             | Usage                   |
+| -------------------------- | ------------------- | ----------------------- |
+| `@pytest.mark.unit`        | Unit test           | `pytest -m unit`        |
+| `@pytest.mark.integration` | Integration test    | `pytest -m integration` |
+| `@pytest.mark.property`    | Property-based test | `pytest -m property`    |
+| `@pytest.mark.regression`  | Regression test     | `pytest -m regression`  |
+| `@pytest.mark.performance` | Performance test    | `pytest -m performance` |
+| `@pytest.mark.slow`        | Slow-running test   | `pytest -m "not slow"`  |
+| `@pytest.mark.api`         | Tests API clients   | `pytest -m api`         |
+| `@pytest.mark.smoke`       | Quick smoke test    | `pytest -m smoke`       |
 
 **Example:**
 
@@ -465,16 +465,20 @@ See `tests/mocks/api_mocks.py` for complete documentation.
 
 ### Coverage Targets
 
-| Module Category | Target | Status |
-| ------- | ------- | ------- |
-| Utilities | 95%+ | ✅ |
-| API Clients | 85%+ | ✅ |
-| Domain Models | 95%+ | ✅ |
-| Core Logic | 80%+ | ✅ |
-| Performance | 100% | ✅ (maintained) |
-| CLI | 90%+ | ✅ (maintained) |
-| Rendering | 95%+ | ✅ (maintained) |
-| **Overall** | **85%+** | **✅** |
+<!-- markdownlint-disable MD060 -->
+
+| Module Category | Target   | Status         |
+| --------------- | -------- | -------------- |
+| Utilities       | 95%+     | ✅              |
+| API Clients     | 85%+     | ✅              |
+| Domain Models   | 95%+     | ✅              |
+| Core Logic      | 80%+     | ✅              |
+| Performance     | 100%     | ✅ (maintained) |
+| CLI             | 90%+     | ✅ (maintained) |
+| Rendering       | 95%+     | ✅ (maintained) |
+| **Overall**     | **85%+** | **✅**          |
+
+<!-- markdownlint-enable MD060 -->
 
 ### Viewing Coverage
 

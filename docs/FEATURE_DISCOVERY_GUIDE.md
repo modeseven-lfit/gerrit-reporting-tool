@@ -63,62 +63,62 @@ Would display:
 
 ### Build & Package (5 features)
 
-| Feature | Description |
-| ------- | ----------- |
-| `docker` | Docker containerization |
-| `gradle` | Gradle build configuration |
-| `maven` | Maven build configuration |
-| `npm` | NPM package configuration |
+| Feature    | Description                       |
+| ---------- | --------------------------------- |
+| `docker`   | Docker containerization           |
+| `gradle`   | Gradle build configuration        |
+| `maven`    | Maven build configuration         |
+| `npm`      | NPM package configuration         |
 | `sonatype` | Sonatype/Maven Central publishing |
 
 ### CI/CD (4 features)
 
-| Feature | Description |
-| ------- | ----------- |
-| `dependabot` | Dependabot configuration detection |
-| `github-actions` | GitHub Actions workflows |
-| `github2gerrit` | GitHub to Gerrit workflow synchronization |
-| `jenkins` | Jenkins CI/CD jobs |
+| Feature          | Description                               |
+| ---------------- | ----------------------------------------- |
+| `dependabot`     | Dependabot configuration detection        |
+| `github-actions` | GitHub Actions workflows                  |
+| `github2gerrit`  | GitHub to Gerrit workflow synchronization |
+| `jenkins`        | Jenkins CI/CD jobs                        |
 
 ### Code Quality (3 features)
 
-| Feature | Description |
-| ------- | ----------- |
-| `linting` | Code linting configuration (pylint, flake8, etc.) |
-| `pre-commit` | Pre-commit hooks configuration |
-| `sonarqube` | SonarQube analysis configuration |
+| Feature      | Description                                       |
+| ------------ | ------------------------------------------------- |
+| `linting`    | Code linting configuration (pylint, flake8, etc.) |
+| `pre-commit` | Pre-commit hooks configuration                    |
+| `sonarqube`  | SonarQube analysis configuration                  |
 
 ### Documentation (3 features)
 
-| Feature | Description |
-| ------- | ----------- |
-| `mkdocs` | MkDocs documentation |
+| Feature       | Description             |
+| ------------- | ----------------------- |
+| `mkdocs`      | MkDocs documentation    |
 | `readthedocs` | ReadTheDocs integration |
-| `sphinx` | Sphinx documentation |
+| `sphinx`      | Sphinx documentation    |
 
 ### Repository (4 features)
 
-| Feature | Description |
-| ------- | ----------- |
+| Feature         | Description                        |
+| --------------- | ---------------------------------- |
 | `github-mirror` | GitHub mirror repository detection |
-| `gitreview` | Gerrit git-review configuration |
-| `license` | License file detection |
-| `readme` | README file quality check |
+| `gitreview`     | Gerrit git-review configuration    |
+| `license`       | License file detection             |
+| `readme`        | README file quality check          |
 
 ### Security (2 features)
 
-| Feature | Description |
-| ------- | ----------- |
+| Feature             | Description                       |
+| ------------------- | --------------------------------- |
 | `secrets-detection` | Secrets and credentials detection |
-| `security-scanning` | Security vulnerability scanning |
+| `security-scanning` | Security vulnerability scanning   |
 
 ### Testing (3 features)
 
-| Feature | Description |
-| ------- | ----------- |
-| `coverage` | Code coverage reporting |
-| `junit` | JUnit testing framework |
-| `pytest` | PyTest testing framework |
+| Feature    | Description              |
+| ---------- | ------------------------ |
+| `coverage` | Code coverage reporting  |
+| `junit`    | JUnit testing framework  |
+| `pytest`   | PyTest testing framework |
 
 ---
 

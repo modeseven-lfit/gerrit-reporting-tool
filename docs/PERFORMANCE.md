@@ -42,14 +42,14 @@ The Repository Reporting System includes comprehensive performance optimization 
 
 Based on comprehensive testing with real-world repositories:
 
-| Scenario | Before | After | Improvement |
-| ------- | ------- | ------- | ------- |
-| 10 repositories (sequential) | 5 min | 1.5 min | 70% |
-| 25 repositories (parallel) | 15 min | 5 min | 67% |
-| 50 repositories (parallel) | 35 min | 12 min | 66% |
-| Re-run with cache | 5 min | 30 sec | 90% |
-| Peak memory usage | 800 MB | 320 MB | 60% |
-| API calls (deduplication) | 1000 | 600 | 40% |
+| Scenario                     | Before | After   | Improvement |
+| ---------------------------- | ------ | ------- | ----------- |
+| 10 repositories (sequential) | 5 min  | 1.5 min | 70%         |
+| 25 repositories (parallel)   | 15 min | 5 min   | 67%         |
+| 50 repositories (parallel)   | 35 min | 12 min  | 66%         |
+| Re-run with cache            | 5 min  | 30 sec  | 90%         |
+| Peak memory usage            | 800 MB | 320 MB  | 60%         |
+| API calls (deduplication)    | 1000   | 600     | 40%         |
 
 ---
 
@@ -243,12 +243,12 @@ CLI Options:
 
 Clone Strategies:
 
-| Strategy | When Used | Clone Time | Disk Space | Network |
-| ------- | ------- | ------- | ------- | ------- |
-| Full Clone | First clone, full history needed | Baseline | Baseline | Baseline |
-| Shallow Clone | Recent commits only | -50% | -70% | -60% |
-| Reference Clone | Subsequent clones | -80% | -90% | -90% |
-| Shallow Reference | Optimal for re-analysis | -85% | -95% | -95% |
+| Strategy          | When Used                        | Clone Time | Disk Space | Network  |
+| ----------------- | -------------------------------- | ---------- | ---------- | -------- |
+| Full Clone        | First clone, full history needed | Baseline   | Baseline   | Baseline |
+| Shallow Clone     | Recent commits only              | -50%       | -70%       | -60%     |
+| Reference Clone   | Subsequent clones                | -80%       | -90%       | -90%     |
+| Shallow Reference | Optimal for re-analysis          | -85%       | -95%       | -95%     |
 
 Example:
 
@@ -435,12 +435,12 @@ CLI Options:
 
 Memory Usage Patterns:
 
-| Scenario | Before | After | Improvement |
-| ------- | ------- | ------- | ------- |
-| Small repo (<100MB) | 150 MB | 80 MB | 47% |
-| Medium repo (100-500MB) | 400 MB | 180 MB | 55% |
-| Large repo (500MB+) | 800 MB | 320 MB | 60% |
-| 50 repos (parallel) | 2.5 GB | 1.0 GB | 60% |
+| Scenario                | Before | After  | Improvement |
+| ----------------------- | ------ | ------ | ----------- |
+| Small repo (<100MB)     | 150 MB | 80 MB  | 47%         |
+| Medium repo (100-500MB) | 400 MB | 180 MB | 55%         |
+| Large repo (500MB+)     | 800 MB | 320 MB | 60%         |
+| 50 repos (parallel)     | 2.5 GB | 1.0 GB | 60%         |
 
 Example:
 
@@ -529,12 +529,12 @@ CLI Options:
 
 API Call Reduction:
 
-| Operation | Before | After | Savings |
-| ------- | ------- | ------- | ------- |
-| 50 repos, basic stats | 200 | 120 | 40% |
-| 50 repos, full analysis | 1000 | 600 | 40% |
-| Duplicate repos | 400 | 200 | 50% |
-| Re-run with cache | 1000 | 100 | 90% |
+| Operation               | Before | After | Savings |
+| ----------------------- | ------ | ----- | ------- |
+| 50 repos, basic stats   | 200    | 120   | 40%     |
+| 50 repos, full analysis | 1000   | 600   | 40%     |
+| Duplicate repos         | 400    | 200   | 50%     |
+| Re-run with cache       | 1000   | 100   | 90%     |
 
 Example:
 

@@ -712,20 +712,24 @@ gerrit-reporting-tool generate --config config/my-project.yaml --dry-run
 
 ## Template Comparison
 
-| Feature | Minimal | Standard | Full |
-| ------- | ------- | -------- | ---- |
-| **Setup Time** | 30 sec | 2 min | 4 min |
-| **Project name** | ✓ | ✓ | ✓ |
-| **Time windows** | ✓ | ✓ | ✓ |
-| **Output formats** | ✓ | ✓ | ✓ |
-| **ZIP bundle** | ✗ | ✓ | ✓ |
-| **GitHub API** | ✗ | ✓ | ✓ |
-| **Gerrit API** | ✗ | ✗ | ✓ |
-| **Jenkins API** | ✗ | ✗ | ✓ |
-| **Basic features** | ✗ | ✓ | ✓ |
-| **All features** | ✗ | ✗ | ✓ |
-| **Performance** | ✗ | ✗ | ✓ |
-| **Best for** | Testing | Most users | Production |
+<!-- markdownlint-disable MD060 -->
+
+| Feature            | Minimal | Standard   | Full       |
+| ------------------ | ------- | ---------- | ---------- |
+| **Setup Time**     | 30 sec  | 2 min      | 4 min      |
+| **Project name**   | ✓       | ✓          | ✓          |
+| **Time windows**   | ✓       | ✓          | ✓          |
+| **Output formats** | ✓       | ✓          | ✓          |
+| **ZIP bundle**     | ✗       | ✓          | ✓          |
+| **GitHub API**     | ✗       | ✓          | ✓          |
+| **Gerrit API**     | ✗       | ✗          | ✓          |
+| **Jenkins API**    | ✗       | ✗          | ✓          |
+| **Basic features** | ✗       | ✓          | ✓          |
+| **All features**   | ✗       | ✗          | ✓          |
+| **Performance**    | ✗       | ✗          | ✓          |
+| **Best for**       | Testing | Most users | Production |
+
+<!-- markdownlint-enable MD060 -->
 
 ---
 
@@ -1210,10 +1214,14 @@ The reporting tool can integrate with GitHub's API to fetch additional repositor
 
 GitHub offers two types of Personal Access Tokens (PAT):
 
-| Type | Multi-Organization | Use Case |
-| ---- | ------------------ | -------- |
-| **Classic PAT** | ✅ Yes | **Recommended** - Works across all organizations |
-| **Fine-Grained PAT** | ❌ No | Single organization only |
+<!-- markdownlint-disable MD060 -->
+
+| Type                 | Multi-Organization | Use Case                                         |
+| -------------------- | ------------------ | ------------------------------------------------ |
+| **Classic PAT**      | ✅ Yes              | **Recommended** - Works across all organizations |
+| **Fine-Grained PAT** | ❌ No               | Single organization only                         |
+
+<!-- markdownlint-enable MD060 -->
 
 **For cross-organization reporting, you MUST use a Classic PAT.**
 
@@ -1397,11 +1405,11 @@ github_api:
 
 GitHub API has rate limits:
 
-| Authentication | Requests/Hour |
-| -------------- | ------------- |
-| Unauthenticated | 60 |
-| Authenticated (PAT) | 5,000 |
-| GitHub Actions | 1,000 (per repository) |
+| Authentication      | Requests/Hour          |
+| ------------------- | ---------------------- |
+| Unauthenticated     | 60                     |
+| Authenticated (PAT) | 5,000                  |
+| GitHub Actions      | 1,000 (per repository) |
 
 **Handle rate limits:**
 

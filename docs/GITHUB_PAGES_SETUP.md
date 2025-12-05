@@ -15,14 +15,14 @@ The new reporting system publishes reports directly to GitHub Pages on this repo
 
 ### Key Changes
 
-| Aspect | Old System | New System |
-| ------- | ------- | ------- |
-| **Deployment Target** | Separate `gerrit-reports` repo | GitHub Pages on same repo |
-| **Branch** | `main` in external repo | `gh-pages` branch |
-| **Authentication** | `GERRIT_REPORTS_PAT_TOKEN` | Built-in `GITHUB_TOKEN` |
-| **Production Reports** | Pushed to external repo | `/production/` on Pages |
-| **Preview Reports** | Not available | `/pr-preview/<pr-number>/` |
-| **Workflows** | Single `reporting.yaml` | Separate production & PR workflows |
+| Aspect                 | Old System                     | New System                         |
+| ---------------------- | ------------------------------ | ---------------------------------- |
+| **Deployment Target**  | Separate `gerrit-reports` repo | GitHub Pages on same repo          |
+| **Branch**             | `main` in external repo        | `gh-pages` branch                  |
+| **Authentication**     | `GERRIT_REPORTS_PAT_TOKEN`     | Built-in `GITHUB_TOKEN`            |
+| **Production Reports** | Pushed to external repo        | `/production/` on Pages            |
+| **Preview Reports**    | Not available                  | `/pr-preview/<pr-number>/`         |
+| **Workflows**          | Single `reporting.yaml`        | Separate production & PR workflows |
 
 ---
 
@@ -349,20 +349,20 @@ https://<owner>.github.io/<repo>/
 
 ### Production Workflow
 
-| Artifact Type | Retention | Purpose |
-| ------- | ------- | ------- |
-| Raw data (JSON) | 90 days | Meta-reporting, trend analysis |
-| Complete reports | 90 days | Full report package |
-| Clone manifests | 90 days | Repository tracking |
-| Clone logs | 90 days | Debugging |
+| Artifact Type    | Retention | Purpose                        |
+| ---------------- | --------- | ------------------------------ |
+| Raw data (JSON)  | 90 days   | Meta-reporting, trend analysis |
+| Complete reports | 90 days   | Full report package            |
+| Clone manifests  | 90 days   | Repository tracking            |
+| Clone logs       | 90 days   | Debugging                      |
 
 ### Preview Report Workflow
 
-| Artifact Type | Retention | Purpose |
-| ------- | ------- | ------- |
-| Raw data (JSON) | 30 days | Validation |
-| Preview reports | 30 days | Review |
-| Clone manifests | 30 days | Debugging |
+| Artifact Type   | Retention | Purpose    |
+| --------------- | --------- | ---------- |
+| Raw data (JSON) | 30 days   | Validation |
+| Preview reports | 30 days   | Review     |
+| Clone manifests | 30 days   | Debugging  |
 
 ---
 

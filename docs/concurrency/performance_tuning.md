@@ -104,11 +104,11 @@ python scripts/profile_performance.py \
 ```
 
 | Workers | Wall Time (s) | CPU Time (s) | CPU Util (%) | Speedup |
-| ------- | ------- | ------- | ------- | ------- |
-| 1 | 120.0 | 115.0 | 95.8 | 1.00x |
-| 4 | 35.0 | 130.0 | 92.9 | 3.43x |
-| 8 | 20.0 | 145.0 | 90.6 | 6.00x |
-| 16 | 15.0 | 155.0 | 64.6 | 8.00x |
+| ------- | ------------- | ------------ | ------------ | ------- |
+| 1       | 120.0         | 115.0        | 95.8         | 1.00x   |
+| 4       | 35.0          | 130.0        | 92.9         | 3.43x   |
+| 8       | 20.0          | 145.0        | 90.6         | 6.00x   |
+| 16      | 15.0          | 155.0        | 64.6         | 8.00x   |
 
 ```text
 
@@ -184,16 +184,16 @@ open/read                       6.1s  (Disk I/O)
 
 **Tuning Guide**:
 
-| Scenario | Recommended | Rationale |
-| ------- | ------- | ------- |
-| Small projects (<10 repos) | 4 | Low overhead, sufficient parallelism |
-| Medium projects (10-50 repos) | 8 | Balanced performance/resource usage |
-| Large projects (>50 repos) | 12-16 | Maximize throughput |
-| Fast disk (SSD) | Higher | Can handle more concurrent I/O |
-| Slow disk (HDD, NFS) | Lower | Avoid I/O contention |
-| CPU bottleneck | 4-6 | More won't help (GIL limitation) |
-| I/O bottleneck | 12-16 | Can overlap I/O waits |
-| Debugging | 1 | Sequential execution, easier tracing |
+| Scenario                      | Recommended | Rationale                            |
+| ----------------------------- | ----------- | ------------------------------------ |
+| Small projects (<10 repos)    | 4           | Low overhead, sufficient parallelism |
+| Medium projects (10-50 repos) | 8           | Balanced performance/resource usage  |
+| Large projects (>50 repos)    | 12-16       | Maximize throughput                  |
+| Fast disk (SSD)               | Higher      | Can handle more concurrent I/O       |
+| Slow disk (HDD, NFS)          | Lower       | Avoid I/O contention                 |
+| CPU bottleneck                | 4-6         | More won't help (GIL limitation)     |
+| I/O bottleneck                | 12-16       | Can overlap I/O waits                |
+| Debugging                     | 1           | Sequential execution, easier tracing |
 
 **Finding Optimal Value**:
 
@@ -438,11 +438,11 @@ with self._lock:
 
 **SSD vs HDD**:
 
-| Metric | SSD | HDD |
-| ------- | ------- | ------- |
-| Random I/O | Excellent | Poor |
-| Sequential I/O | Excellent | Good |
-| Recommended max_workers | 12-16 | 4-6 |
+| Metric                  | SSD       | HDD  |
+| ----------------------- | --------- | ---- |
+| Random I/O              | Excellent | Poor |
+| Sequential I/O          | Excellent | Good |
+| Recommended max_workers | 12-16     | 4-6  |
 
 **Network Storage (NFS, SMB)**:
 

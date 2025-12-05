@@ -455,18 +455,18 @@ gerrit-reporting-tool generate \
 
 Quick links to all documentation:
 
-| Category | Document | Description |
-| -------- | -------- | ----------- |
-| **Getting Started** | [Getting Started](GETTING_STARTED.md) | You are here! |
-| **Reference** | [Commands](COMMANDS.md) | Complete command reference |
-| | [FAQ](FAQ.md) | Common questions |
-| | [Configuration](CONFIGURATION.md) | All configuration options |
-| **Usage** | [Usage Examples](USAGE_EXAMPLES.md) | Real-world scenarios |
-| | [Performance](PERFORMANCE.md) | Optimization guide |
-| | [CI/CD Integration](CI_CD_INTEGRATION.md) | Automation setup |
-| **Support** | [Troubleshooting](TROUBLESHOOTING.md) | Problem solving |
-| **Development** | [Developer Guide](DEVELOPER_GUIDE.md) | Architecture & API |
-| | [Testing](TESTING.md) | Test suite documentation |
+| Category            | Document                                  | Description                |
+| ------------------- | ----------------------------------------- | -------------------------- |
+| **Getting Started** | [Getting Started](GETTING_STARTED.md)     | You are here!              |
+| **Reference**       | [Commands](COMMANDS.md)                   | Complete command reference |
+|                     | [FAQ](FAQ.md)                             | Common questions           |
+|                     | [Configuration](CONFIGURATION.md)         | All configuration options  |
+| **Usage**           | [Usage Examples](USAGE_EXAMPLES.md)       | Real-world scenarios       |
+|                     | [Performance](PERFORMANCE.md)             | Optimization guide         |
+|                     | [CI/CD Integration](CI_CD_INTEGRATION.md) | Automation setup           |
+| **Support**         | [Troubleshooting](TROUBLESHOOTING.md)     | Problem solving            |
+| **Development**     | [Developer Guide](DEVELOPER_GUIDE.md)     | Architecture & API         |
+|                     | [Testing](TESTING.md)                     | Test suite documentation   |
 
 ---
 

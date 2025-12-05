@@ -81,13 +81,13 @@ workflow_files:
 
 ### Pattern Syntax
 
-| Pattern Type | Example | Matches |
-| ------------ | ------- | ------- |
-| Simple pattern | `regex:.*github2gerrit.*` | Any file containing "github2gerrit" |
-| Anchored | `regex:^github2gerrit\.yaml$` | Exact match |
-| Multi-extension | `regex:.*\.ya?ml$` | Files ending with .yaml or .yml |
-| Alternation | `regex:^(a\|b\|c)\.yaml$` | Specific files a, b, or c |
-| Case-sensitive | `regex:(?-i)^GitHub2Gerrit\.yaml$` | Exact case match |
+| Pattern Type    | Example                            | Matches                             |
+| --------------- | ---------------------------------- | ----------------------------------- |
+| Simple pattern  | `regex:.*github2gerrit.*`          | Any file containing "github2gerrit" |
+| Anchored        | `regex:^github2gerrit\.yaml$`      | Exact match                         |
+| Multi-extension | `regex:.*\.ya?ml$`                 | Files ending with .yaml or .yml     |
+| Alternation     | `regex:^(a\|b\|c)\.yaml$`          | Specific files a, b, or c           |
+| Case-sensitive  | `regex:(?-i)^GitHub2Gerrit\.yaml$` | Exact case match                    |
 
 ### Backward Compatibility
 

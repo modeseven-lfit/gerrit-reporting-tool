@@ -106,13 +106,13 @@ gerrit-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc
 
 ## 🎯 Common Use Cases
 
-| Use Case | Command |
-| -------- | ------- |
-| **Basic report (O-RAN-SC)** | `gerrit-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org` |
-| **Basic report (ONAP)** | `gerrit-reporting-tool generate --project ONAP --repos-path ./gerrit.onap.org` |
-| **With caching** | `gerrit-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org --cache --workers 8` |
-| **Check config** | `gerrit-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org --dry-run` |
-| **Get help** | `gerrit-reporting-tool --help` |
+| Use Case                    | Command                                                                                                    |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| **Basic report (O-RAN-SC)** | `gerrit-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org`                     |
+| **Basic report (ONAP)**     | `gerrit-reporting-tool generate --project ONAP --repos-path ./gerrit.onap.org`                             |
+| **With caching**            | `gerrit-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org --cache --workers 8` |
+| **Check config**            | `gerrit-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org --dry-run`           |
+| **Get help**                | `gerrit-reporting-tool --help`                                                                             |
 
 > **Note:** The `--repos-path` should point to the directory created by `gerrit-clone-action`, which uses the Gerrit server hostname as the directory name (e.g., `./gerrit.o-ran-sc.org` for O-RAN-SC, `./gerrit.onap.org` for ONAP).
 
@@ -189,17 +189,17 @@ gerrit-reporting-tool generate --project my-project --repos-path ./repos
 
 ## 📖 Key Documentation Files
 
-| Topic | Document |
-| ----- | -------- |
-| **Getting Started** | [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md) |
-| **Commands** | [docs/COMMANDS.md](docs/COMMANDS.md) |
-| **FAQ** | [docs/FAQ.md](docs/FAQ.md) |
-| **Configuration** | [docs/CONFIGURATION.md](docs/CONFIGURATION.md) |
-| **Usage Examples** | [docs/USAGE_EXAMPLES.md](docs/USAGE_EXAMPLES.md) |
-| **Performance** | [docs/PERFORMANCE.md](docs/PERFORMANCE.md) |
-| **Troubleshooting** | [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) |
-| **CI/CD Setup** | [docs/CI_CD_INTEGRATION.md](docs/CI_CD_INTEGRATION.md) |
-| **Developer Guide** | [docs/DEVELOPER_GUIDE.md](docs/DEVELOPER_GUIDE.md) |
+| Topic               | Document                                               |
+| ------------------- | ------------------------------------------------------ |
+| **Getting Started** | [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md)     |
+| **Commands**        | [docs/COMMANDS.md](docs/COMMANDS.md)                   |
+| **FAQ**             | [docs/FAQ.md](docs/FAQ.md)                             |
+| **Configuration**   | [docs/CONFIGURATION.md](docs/CONFIGURATION.md)         |
+| **Usage Examples**  | [docs/USAGE_EXAMPLES.md](docs/USAGE_EXAMPLES.md)       |
+| **Performance**     | [docs/PERFORMANCE.md](docs/PERFORMANCE.md)             |
+| **Troubleshooting** | [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)     |
+| **CI/CD Setup**     | [docs/CI_CD_INTEGRATION.md](docs/CI_CD_INTEGRATION.md) |
+| **Developer Guide** | [docs/DEVELOPER_GUIDE.md](docs/DEVELOPER_GUIDE.md)     |
 
 ---
 

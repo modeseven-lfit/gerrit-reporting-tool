@@ -344,19 +344,19 @@ Manage test data files more easily.
 
 #### Test Behavior
 
-| Variable | Purpose | Default | Example |
-| ------- | ------- | ------- | ------- |
-| `TEST_TIMEOUT` | Override default test timeouts | `300` | `TEST_TIMEOUT=600` |
-| `TEST_MODE` | Enable test mode features | `false` | `TEST_MODE=true` |
-| `DEBUG_MODE` | Enable debug logging in tests | `false` | `DEBUG_MODE=true` |
+| Variable       | Purpose                        | Default | Example            |
+| -------------- | ------------------------------ | ------- | ------------------ |
+| `TEST_TIMEOUT` | Override default test timeouts | `300`   | `TEST_TIMEOUT=600` |
+| `TEST_MODE`    | Enable test mode features      | `false` | `TEST_MODE=true`   |
+| `DEBUG_MODE`   | Enable debug logging in tests  | `false` | `DEBUG_MODE=true`  |
 
 #### External API Testing
 
-| Variable | Purpose | Required For |
-| ------- | ------- | ------- |
+| Variable       | Purpose                   | Required For                 |
+| -------------- | ------------------------- | ---------------------------- |
 | `GITHUB_TOKEN` | GitHub API authentication | GitHub API integration tests |
-| `GERRIT_URL` | Gerrit instance URL | Gerrit API tests |
-| `JENKINS_URL` | Jenkins instance URL | Jenkins API tests |
+| `GERRIT_URL`   | Gerrit instance URL       | Gerrit API tests             |
+| `JENKINS_URL`  | Jenkins instance URL      | Jenkins API tests            |
 
 **Note:** Tests requiring these variables will skip gracefully if not provided.
 
@@ -374,8 +374,8 @@ def test_github_api():
 
 #### Coverage Reporting
 
-| Variable | Purpose | Default |
-| ------- | ------- | ------- |
+| Variable          | Purpose              | Default       |
+| ----------------- | -------------------- | ------------- |
 | `COVERAGE_RCFILE` | Coverage config file | `.coveragerc` |
 
 ### Setting Environment Variables

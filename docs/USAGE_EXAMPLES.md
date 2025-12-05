@@ -1383,22 +1383,30 @@ info_yaml:
 
 Committers are color-coded based on Git activity:
 
-| Color | Status | Last Activity | Meaning |
-| ------- | ------- | ------- | ------- |
-| 🟢 Green | Current | 0-365 days | Active contributor |
-| 🟠 Orange | Active | 365-1095 days | Moderately active |
-| 🔴 Red | Inactive | 1095+ days | No recent activity |
-| ⚫ Gray | Unknown | N/A | No Git data found |
+<!-- markdownlint-disable MD060 -->
+
+| Color    | Status   | Last Activity | Meaning            |
+| -------- | -------- | ------------- | ------------------ |
+| 🟢 Green  | Current  | 0-365 days    | Active contributor |
+| 🟠 Orange | Active   | 365-1095 days | Moderately active  |
+| 🔴 Red    | Inactive | 1095+ days    | No recent activity |
+| ⚫ Gray   | Unknown  | N/A           | No Git data found  |
+
+<!-- markdownlint-enable MD060 -->
 
 **Example Output:**
 
 ```markdown
 ## 📋 Committer INFO.yaml Report
 
-| Project | Lifecycle State | Project Lead | Committers |
-| ------- | ------- | ------- | ------- |
-| Project A | Active | 🟢 Alice Smith | 🟢 Bob Jones<br>🟠 Carol White |
-| Project B | Incubation | 🟠 David Brown | 🔴 Eve Davis<br>⚫ Frank Miller |
+<!-- markdownlint-disable MD060 -->
+
+| Project   | Lifecycle State | Project Lead  | Committers                    |
+| --------- | --------------- | ------------- | ----------------------------- |
+| Project A | Active          | 🟢 Alice Smith | 🟢 Bob Jones<br>🟠 Carol White  |
+| Project B | Incubation      | 🟠 David Brown | 🔴 Eve Davis<br>⚫ Frank Miller |
+
+<!-- markdownlint-enable MD060 -->
 ```
 
 ### Example 4: Filtering INFO.yaml Reports

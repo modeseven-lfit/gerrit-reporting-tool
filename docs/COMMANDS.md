@@ -613,13 +613,13 @@ Debug slow runs:
 
 The tool uses standardized exit codes for automation and scripting:
 
-| Code | Meaning | Description |
-| ------- | ------- | ------- |
-| `0` | Success | Operation completed successfully with no errors or warnings |
-| `1` | Error | General error (configuration, API, processing failure) |
-| `2` | Partial Success | Operation completed but with warnings or incomplete data |
-| `3` | Usage Error | Invalid arguments or command syntax |
-| `4` | System Error | System-level error (permissions, disk space, dependencies) |
+| Code | Meaning         | Description                                                 |
+| ---- | --------------- | ----------------------------------------------------------- |
+| `0`  | Success         | Operation completed successfully with no errors or warnings |
+| `1`  | Error           | General error (configuration, API, processing failure)      |
+| `2`  | Partial Success | Operation completed but with warnings or incomplete data    |
+| `3`  | Usage Error     | Invalid arguments or command syntax                         |
+| `4`  | System Error    | System-level error (permissions, disk space, dependencies)  |
 
 Exit Code Details:
 

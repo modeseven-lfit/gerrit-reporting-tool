@@ -200,11 +200,11 @@ def get_jobs_for_project(self, project_name, allocated_jobs):
 
 Compared to fuzzy matching:
 
-| Metric | Fuzzy Matching | CI-Management | Improvement |
-| ------- | ------- | ------- | ------- |
-| Accuracy | 85-90% | 99% | +10-15% |
-| Code Complexity | 70 LOC | 15 LOC | -79% |
-| Maintenance | High | Low | Significant |
+| Metric          | Fuzzy Matching | CI-Management | Improvement |
+| --------------- | -------------- | ------------- | ----------- |
+| Accuracy        | 85-90%         | 99%           | +10-15%     |
+| Code Complexity | 70 LOC         | 15 LOC        | -79%        |
+| Maintenance     | High           | Low           | Significant |
 
 ## Documentation
 

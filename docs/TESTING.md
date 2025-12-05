@@ -648,16 +648,20 @@ tests/
 
 ### Overall Targets
 
-| Module | Target | Current | Status |
-| ------- | ------- | ------- | ------- |
-| src/performance/ | 90% | 100% | ✅ |
-| src/util/ | 90% | 96% | ✅ |
-| src/rendering/ | 85% | 95% | ✅ |
-| src/cli/ | 85% | 90% | ✅ |
-| src/config/ | 85% | ~75% | ⚠️ |
-| src/domain/ | 85% | ~60% | ⚠️ |
-| src/api/ | 85% | 50% | ⚠️ |
-| Overall | 85% | ~62% | ⚠️ |
+<!-- markdownlint-disable MD060 -->
+
+| Module           | Target | Current | Status |
+| ---------------- | ------ | ------- | ------ |
+| src/performance/ | 90%    | 100%    | ✅      |
+| src/util/        | 90%    | 96%     | ✅      |
+| src/rendering/   | 85%    | 95%     | ✅      |
+| src/cli/         | 85%    | 90%     | ✅      |
+| src/config/      | 85%    | ~75%    | ⚠️     |
+| src/domain/      | 85%    | ~60%    | ⚠️     |
+| src/api/         | 85%    | 50%     | ⚠️     |
+| Overall          | 85%    | ~62%    | ⚠️     |
+
+<!-- markdownlint-enable MD060 -->
 
 ### Checking Coverage
 

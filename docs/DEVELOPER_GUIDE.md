@@ -56,17 +56,17 @@ report_data = reporter.analyze_repositories(Path('./repos'))
 
 ### Core Modules
 
-| Module | Purpose | Lines | Phase |
-| ------- | ------- | ------- | ------- |
-| `generate_reports.py` | Entry point, CLI, config | 1,861 | Main |
-| `reporter.py` | Main orchestration | 522 | Phase 7 |
-| `collectors/git.py` | Git data collection | 1,155 | Phase 4 |
-| `renderers/report.py` | Output generation | 1,724 | Phase 6 |
-| `features/registry.py` | Feature detection | 550 | Phase 3 |
-| `aggregators/data.py` | Data aggregation | 454 | Phase 5 |
-| `api/github_client.py` | GitHub API | ~330 | Phase 2 |
-| `api/gerrit_client.py` | Gerrit API | ~150 | Phase 2 |
-| `api/jenkins_client.py` | Jenkins API | ~420 | Phase 2 |
+| Module                  | Purpose                  | Lines | Phase   |
+| ----------------------- | ------------------------ | ----- | ------- |
+| `generate_reports.py`   | Entry point, CLI, config | 1,861 | Main    |
+| `reporter.py`           | Main orchestration       | 522   | Phase 7 |
+| `collectors/git.py`     | Git data collection      | 1,155 | Phase 4 |
+| `renderers/report.py`   | Output generation        | 1,724 | Phase 6 |
+| `features/registry.py`  | Feature detection        | 550   | Phase 3 |
+| `aggregators/data.py`   | Data aggregation         | 454   | Phase 5 |
+| `api/github_client.py`  | GitHub API               | ~330  | Phase 2 |
+| `api/gerrit_client.py`  | Gerrit API               | ~150  | Phase 2 |
+| `api/jenkins_client.py` | Jenkins API              | ~420  | Phase 2 |
 
 ### Directory Layout
 

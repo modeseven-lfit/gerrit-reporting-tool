@@ -80,12 +80,12 @@ pytest -n 4
 
 ## Worker Count Options
 
-| Option | Description | Use Case |
-| ------- | ------- | ------- |
-| `-n auto` | Auto-detect (recommended) | CI/CD, most cases |
-| `-n 4` | Fixed 4 workers | Consistent performance |
-| `-n logical` | Use logical CPU count | Max parallelization |
-| `-n 1` | Single worker | Debugging |
+| Option       | Description               | Use Case               |
+| ------------ | ------------------------- | ---------------------- |
+| `-n auto`    | Auto-detect (recommended) | CI/CD, most cases      |
+| `-n 4`       | Fixed 4 workers           | Consistent performance |
+| `-n logical` | Use logical CPU count     | Max parallelization    |
+| `-n 1`       | Single worker             | Debugging              |
 
 ---
 
@@ -159,13 +159,13 @@ def port(worker_id):
 
 ## Performance Metrics
 
-| Execution Mode | Runtime | Speedup |
-| ------- | ------- | ------- |
-| Sequential | 25m 54s | 1.0x |
-| Parallel (2 workers) | 22m 0s | 1.18x |
-| Parallel (4 workers) | 21m 20s | 1.21x |
+| Execution Mode           | Runtime     | Speedup   |
+| ------------------------ | ----------- | --------- |
+| Sequential               | 25m 54s     | 1.0x      |
+| Parallel (2 workers)     | 22m 0s      | 1.18x     |
+| Parallel (4 workers)     | 21m 20s     | 1.21x     |
 | **Parallel (8 workers)** | **20m 45s** | **1.25x** |
-| Parallel (16 workers) | 20m 35s | 1.26x |
+| Parallel (16 workers)    | 20m 35s     | 1.26x     |
 
 **Optimal:** 8 workers (auto-detected on typical machines)
 
@@ -222,12 +222,12 @@ def test_memory_intensive():
 
 ## Known Limitations
 
-| Feature | Behavior in Parallel |
-| ------- | ------- |
-| **Benchmarks** | Auto-disabled (run separately) |
-| **Random seed** | Per-worker (use --randomly-seed=X) |
-| **Session fixtures** | Created per-worker |
-| **Coverage context** | Warning shown (safe to ignore) |
+| Feature              | Behavior in Parallel               |
+| -------------------- | ---------------------------------- |
+| **Benchmarks**       | Auto-disabled (run separately)     |
+| **Random seed**      | Per-worker (use --randomly-seed=X) |
+| **Session fixtures** | Created per-worker                 |
+| **Coverage context** | Warning shown (safe to ignore)     |
 
 ### Running Benchmarks
 
@@ -322,13 +322,13 @@ pytest -n auto -v | head -5
 
 ## Summary
 
-| Aspect | Value |
-| ------- | ------- |
-| **Command** | `pytest -n auto` |
-| **Workers** | 8 (auto-detected) |
-| **Speedup** | 1.25x (19.9% faster) |
-| **Pass Rate** | 100% (maintained) |
-| **Setup Time** | 5 minutes |
+| Aspect         | Value                |
+| -------------- | -------------------- |
+| **Command**    | `pytest -n auto`     |
+| **Workers**    | 8 (auto-detected)    |
+| **Speedup**    | 1.25x (19.9% faster) |
+| **Pass Rate**  | 100% (maintained)    |
+| **Setup Time** | 5 minutes            |
 
 **Status:** ✅ Production Ready
 

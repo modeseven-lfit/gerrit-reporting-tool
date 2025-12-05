@@ -55,12 +55,12 @@ This guide provides step-by-step instructions for deploying the Repository Repor
 
 ### Deployment Timeline
 
-| Phase | Duration | Activities |
-| ------- | ------- | ------- |
-| Pre-deployment | 1-2 hours | Checklist, environment prep, config |
-| Deployment | 30-60 min | Install, configure, test |
-| Validation | 30-45 min | Smoke tests, monitoring setup |
-| Stabilization | 24-48 hours | Monitor, fine-tune, support |
+| Phase          | Duration    | Activities                          |
+| -------------- | ----------- | ----------------------------------- |
+| Pre-deployment | 1-2 hours   | Checklist, environment prep, config |
+| Deployment     | 30-60 min   | Install, configure, test            |
+| Validation     | 30-45 min   | Smoke tests, monitoring setup       |
+| Stabilization  | 24-48 hours | Monitor, fine-tune, support         |
 
 **Total Time:** 2-4 hours (initial), 1-2 hours (subsequent)
 
@@ -189,11 +189,11 @@ Jenkins Access (if applicable):
 
 ### Method Comparison
 
-| Method | Use Case | Complexity | Automation | Best For |
-| ------- | ------- | ------- | ------- | ------- |
-| **Local Installation** | Manual execution, testing, development | Low | Manual | One-time reports, testing |
-| **GitHub Actions** | Automated, scheduled, CI/CD | Medium | High | Regular reports, CI/CD |
-| **Docker** (planned) | Containerized, portable | Medium | High | Multi-env, orchestration |
+| Method                 | Use Case                               | Complexity | Automation | Best For                  |
+| ---------------------- | -------------------------------------- | ---------- | ---------- | ------------------------- |
+| **Local Installation** | Manual execution, testing, development | Low        | Manual     | One-time reports, testing |
+| **GitHub Actions**     | Automated, scheduled, CI/CD            | Medium     | High       | Regular reports, CI/CD    |
+| **Docker** (planned)   | Containerized, portable                | Medium     | High       | Multi-env, orchestration  |
 
 ### Choosing a Deployment Method
 
@@ -733,14 +733,14 @@ print('✅ Installation: /opt/project-reports')
 2. Click **New repository secret**
 3. Add the following secrets:
 
-| Secret Name | Value | Required |
-| ------- | ------- | ------- |
-| `GITHUB_TOKEN` | Automatic (GitHub provides) | Yes |
-| `GERRIT_USERNAME` | Your Gerrit username | If using Gerrit |
-| `GERRIT_PASSWORD` | Your Gerrit password/token | If using Gerrit |
-| `JENKINS_USERNAME` | Your Jenkins username | If using Jenkins |
-| `JENKINS_TOKEN` | Your Jenkins API token | If using Jenkins |
-| `SLACK_WEBHOOK_URL` | Slack webhook for notifications | Optional |
+| Secret Name         | Value                           | Required         |
+| ------------------- | ------------------------------- | ---------------- |
+| `GITHUB_TOKEN`      | Automatic (GitHub provides)     | Yes              |
+| `GERRIT_USERNAME`   | Your Gerrit username            | If using Gerrit  |
+| `GERRIT_PASSWORD`   | Your Gerrit password/token      | If using Gerrit  |
+| `JENKINS_USERNAME`  | Your Jenkins username           | If using Jenkins |
+| `JENKINS_TOKEN`     | Your Jenkins API token          | If using Jenkins |
+| `SLACK_WEBHOOK_URL` | Slack webhook for notifications | Optional         |
 
 **Note:** `GITHUB_TOKEN` is automatically available in GitHub Actions.
 
@@ -902,11 +902,11 @@ git push origin main
 3. Click **New repository variable**
 4. Add configuration variables:
 
-| Variable Name | Value | Purpose |
-| ------- | ------- | ------- |
-| `REPOS_PATH` | `repos` | Repository path |
-| `OUTPUT_FORMAT` | `all` | Output format |
-| `DEFAULT_WORKERS` | `8` | Worker count |
+| Variable Name     | Value   | Purpose         |
+| ----------------- | ------- | --------------- |
+| `REPOS_PATH`      | `repos` | Repository path |
+| `OUTPUT_FORMAT`   | `all`   | Output format   |
+| `DEFAULT_WORKERS` | `8`     | Worker count    |
 
 ### Step 5: Test Workflow
 
@@ -1645,11 +1645,11 @@ logging:
 
 2. Log Levels by Environment
 
-| Environment | Log Level | Rationale |
-| ------- | ------- | ------- |
-| Production | INFO | Normal operations only |
-| Staging | DEBUG | Detailed diagnostics |
-| Development | DEBUG | Full debugging |
+| Environment | Log Level | Rationale              |
+| ----------- | --------- | ---------------------- |
+| Production  | INFO      | Normal operations only |
+| Staging     | DEBUG     | Detailed diagnostics   |
+| Development | DEBUG     | Full debugging         |
 
 3. Log Analysis
 
@@ -2925,9 +2925,9 @@ On-Call:
 
 ## Document Revision History
 
-| Version | Date | Author | Changes |
-| ------- | ------- | ------- | ------- |
-| 1.0.0 | 2025-01-29 | Repository Reporting System Team | Initial production deployment guide |
+| Version | Date       | Author                           | Changes                             |
+| ------- | ---------- | -------------------------------- | ----------------------------------- |
+| 1.0.0   | 2025-01-29 | Repository Reporting System Team | Initial production deployment guide |
 
 ---
 

@@ -437,13 +437,13 @@ Common API errors:
 
 A:
 
-| Code | Meaning | What to Do |
-| ------- | ------- | ------- |
-| `0` | Success | Nothing - all good! |
-| `1` | Error | Check logs for config/API/processing errors |
-| `2` | Partial | Review warnings, report may be incomplete |
-| `3` | Usage Error | Fix command syntax, check `--help` |
-| `4` | System Error | Check permissions, disk space, dependencies |
+| Code | Meaning      | What to Do                                  |
+| ---- | ------------ | ------------------------------------------- |
+| `0`  | Success      | Nothing - all good!                         |
+| `1`  | Error        | Check logs for config/API/processing errors |
+| `2`  | Partial      | Review warnings, report may be incomplete   |
+| `3`  | Usage Error  | Fix command syntax, check `--help`          |
+| `4`  | System Error | Check permissions, disk space, dependencies |
 
 Detailed diagnosis:
 

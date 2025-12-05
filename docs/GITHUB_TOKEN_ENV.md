@@ -243,11 +243,11 @@ env:
 
 ## Summary
 
-| Aspect | Details |
-| ------- | ------- |
-| **Default Variable** | `GITHUB_TOKEN` |
-| **Legacy Variable** | `CLASSIC_READ_ONLY_PAT_TOKEN` |
-| **CLI Option** | `--github-token-env VAR_NAME` |
-| **Token Type** | Classic Personal Access Token |
-| **Required Scopes** | `repo:status`, `actions:read` |
-| **Precedence** | Config file > Environment variable > None |
+| Aspect               | Details                                   |
+| -------------------- | ----------------------------------------- |
+| **Default Variable** | `GITHUB_TOKEN`                            |
+| **Legacy Variable**  | `CLASSIC_READ_ONLY_PAT_TOKEN`             |
+| **CLI Option**       | `--github-token-env VAR_NAME`             |
+| **Token Type**       | Classic Personal Access Token             |
+| **Required Scopes**  | `repo:status`, `actions:read`             |
+| **Precedence**       | Config file > Environment variable > None |
