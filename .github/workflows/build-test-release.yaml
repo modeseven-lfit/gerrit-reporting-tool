@@ -117,7 +117,7 @@ jobs:
       matrix: "${{ fromJson(needs.python-build.outputs.matrix_json) }}"
     permissions:
       contents: read
-    timeout-minutes: 12
+    timeout-minutes: 18
     steps:
       # Harden the runner used by this workflow
       # yamllint disable-line rule:line-length
@@ -144,7 +144,7 @@ jobs:
       matrix: "${{ fromJson(needs.python-build.outputs.matrix_json) }}"
     permissions:
       contents: read
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
       # Harden the runner used by this workflow
       # yamllint disable-line rule:line-length
