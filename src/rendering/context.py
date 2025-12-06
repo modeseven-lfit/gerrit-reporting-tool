@@ -72,6 +72,7 @@ class RenderContext:
             "workflows": self._build_workflows_context(),
             "orphaned_jobs": self._build_orphaned_jobs_context(),
             "time_windows": self._build_time_windows_context(),
+            "toc": self._build_toc_context(),
             "config": self._build_config_context(),
             "filters": get_template_filters(),
         }
@@ -331,6 +332,7 @@ class RenderContext:
 
         return {
             "theme": self.config.get("render", {}).get("theme", "default"),
+            "table_of_contents": self.config.get("render", {}).get("table_of_contents", True),
             "include_sections": {
                 "title": include_sections.get("title", True),
                 "summary": include_sections.get("summary", True),
@@ -342,6 +344,113 @@ class RenderContext:
                 "orphaned_jobs": include_sections.get("orphaned_jobs", True),
             },
             "project_name": self.config.get("project", {}).get("name", "Repository Analysis"),
+        }
+
+    def _build_toc_context(self) -> Dict[str, Any]:
+        """
+        Build table of contents context.
+
+        Determines which sections will be visible based on both configuration
+        and data availability, matching the logic used in section templates.
+
+        Returns:
+            Dictionary with list of visible sections and their metadata
+        """
+        sections = []
+
+        # Get configuration
+        output_config = self.config.get("output", {})
+        include_sections = output_config.get("include_sections", {})
+
+        # Get data contexts (we'll check these for visibility)
+        summaries = self.data.get("summaries", {})
+        repositories = self.data.get("repositories", [])
+
+        # Summary section
+        # Always shown if enabled (has default summary data)
+        if include_sections.get("summary", True):
+            sections.append({
+                "title": "Global Summary",
+                "anchor": "summary"
+            })
+
+        # Repositories section
+        all_repos = summaries.get("all_repositories", [])
+        if include_sections.get("repositories", True) and len(all_repos) > 0:
+            sections.append({
+                "title": "Gerrit Projects",
+                "anchor": "repositories"
+            })
+
+        # Contributors section
+        top_commits = summaries.get("top_contributors_commits", [])
+        top_loc = summaries.get("top_contributors_loc", [])
+        has_contributors = len(top_commits) > 0 or len(top_loc) > 0
+        if include_sections.get("contributors", True) and has_contributors:
+            sections.append({
+                "title": "Top Contributors",
+                "anchor": "contributors"
+            })
+
+        # Organizations section
+        top_orgs = summaries.get("top_organizations", [])
+        if include_sections.get("organizations", True) and len(top_orgs) > 0:
+            sections.append({
+                "title": "Top Organizations",
+                "anchor": "organizations"
+            })
+
+        # Features section
+        all_features = set()
+        for repo in repositories:
+            features = repo.get("features", {})
+            all_features.update(features.keys())
+        has_features = len(all_features) > 0
+        if include_sections.get("features", True) and has_features:
+            sections.append({
+                "title": "Repository Feature Matrix",
+                "anchor": "features"
+            })
+
+        # Workflows section
+        has_workflows = False
+        for repo in repositories:
+            jenkins_jobs = repo.get("jenkins_jobs", [])
+            features = repo.get("features", {})
+            workflows_data = features.get("workflows", {})
+            github_api_data = workflows_data.get("github_api_data", {})
+            github_workflows = github_api_data.get("workflows", [])
+            active_gh_workflows = [w for w in github_workflows if w.get("state") == "active"]
+            if len(jenkins_jobs) > 0 or len(active_gh_workflows) > 0:
+                has_workflows = True
+                break
+        if include_sections.get("workflows", True) and has_workflows:
+            sections.append({
+                "title": "Deployed CI/CD Jobs",
+                "anchor": "workflows"
+            })
+
+        # Orphaned jobs section
+        orphaned_data = self.data.get("orphaned_jenkins_jobs", {})
+        jobs = orphaned_data.get("jobs", {})
+        has_orphaned_jobs = len(jobs) > 0
+        if include_sections.get("orphaned_jobs", True) and has_orphaned_jobs:
+            sections.append({
+                "title": "Orphaned Jenkins Jobs",
+                "anchor": "orphaned-jobs"
+            })
+
+        # Time windows section (always check for data)
+        time_windows = self.data.get("time_windows", [])
+        if len(time_windows) > 0:
+            sections.append({
+                "title": "Time Windows",
+                "anchor": "time-windows"
+            })
+
+        return {
+            "sections": sections,
+            "has_sections": len(sections) > 0,
         }
 
     def _get_status_color_from_github(self, github_color: str) -> str:

@@ -149,8 +149,8 @@ class ValidationResult:
 class ConfigValidator:
     """Validates configuration against schema and semantic rules."""
 
-    CURRENT_SCHEMA_VERSION = "1.1.0"
-    COMPATIBLE_SCHEMA_VERSIONS = ["1.0.0", "1.1.0"]
+    CURRENT_SCHEMA_VERSION = "1.2.0"
+    COMPATIBLE_SCHEMA_VERSIONS = ["1.0.0", "1.1.0", "1.2.0"]
 
     def __init__(self, schema_path: Optional[Path] = None):
         """Initialize validator with optional custom schema.
@@ -269,7 +269,7 @@ class ConfigValidator:
         if error.validator == "required":
             missing = error.message.split("'")[1]
             if missing == "schema_version":
-                return "Add 'schema_version: \"1.1.0\"' to your configuration"
+                return "Add 'schema_version: \"1.2.0\"' to your configuration"
             elif missing == "project":
                 return "Add 'project: your-project-name' to your configuration"
         elif error.validator == "additionalProperties":

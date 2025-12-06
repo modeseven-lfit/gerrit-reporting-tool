@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/lfit/releng-reports/config-schema/v1.1.0",
+  "$id": "https://github.com/lfit/releng-reports/config-schema/v1.2.0",
   "title": "Repository Reporting System Configuration Schema",
   "description": "Schema for validating repository analysis configuration files",
   "type": "object",
@@ -197,6 +197,10 @@
     "render": {
       "type": "object",
       "properties": {
+        "table_of_contents": {
+          "type": "boolean",
+          "description": "Enable table of contents at the top of HTML/Markdown reports"
+        },
         "show_net_lines": {
           "type": "boolean"
         },

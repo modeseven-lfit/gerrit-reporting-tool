@@ -693,3 +693,372 @@ class TestContextEdgeCases:
 
         # Should handle gracefully
         assert result["workflows"]["total_count"] == 0
+
+
+# ============================================================================
+# Table of Contents Tests
+# ============================================================================
+
+
+class TestRenderContextTOC:
+    """Test Table of Contents context building."""
+
+    def test_toc_key_exists_in_context(self, minimal_data, minimal_config):
+        """Test that toc key is present in context."""
+        context = RenderContext(minimal_data, minimal_config)
+        result = context.build()
+
+        assert "toc" in result
+
+    def test_toc_structure(self, minimal_data, minimal_config):
+        """Test that toc has expected structure."""
+        context = RenderContext(minimal_data, minimal_config)
+        result = context.build()
+
+        assert "sections" in result["toc"]
+        assert "has_sections" in result["toc"]
+        assert isinstance(result["toc"]["sections"], list)
+        assert isinstance(result["toc"]["has_sections"], bool)
+
+    def test_toc_empty_data(self, minimal_config):
+        """Test TOC with no data."""
+        data = {
+            "project": "test",
+            "repositories": [],
+            "summaries": {},
+        }
+        context = RenderContext(data, minimal_config)
+        result = context.build()
+
+        # Should have at least summary section (always shown if enabled)
+        assert len(result["toc"]["sections"]) >= 1
+        assert result["toc"]["has_sections"] is True
+
+    def test_toc_summary_section_always_included(self, minimal_data, minimal_config):
+        """Test that summary section is always included when enabled."""
+        context = RenderContext(minimal_data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Global Summary" in section_titles
+
+    def test_toc_section_structure(self, full_data, minimal_config):
+        """Test that each TOC section has required fields."""
+        context = RenderContext(full_data, minimal_config)
+        result = context.build()
+
+        for section in result["toc"]["sections"]:
+            assert "title" in section
+            assert "anchor" in section
+            assert isinstance(section["title"], str)
+            assert isinstance(section["anchor"], str)
+            assert len(section["title"]) > 0
+            assert len(section["anchor"]) > 0
+
+    def test_toc_repositories_section_with_data(self, full_data, minimal_config):
+        """Test that repositories section appears when data exists."""
+        context = RenderContext(full_data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Gerrit Projects" in section_titles
+
+        # Find the section and verify anchor
+        repo_section = next(s for s in result["toc"]["sections"] if s["title"] == "Gerrit Projects")
+        assert repo_section["anchor"] == "repositories"
+
+    def test_toc_repositories_section_without_data(self, minimal_config):
+        """Test that repositories section is excluded when no data."""
+        data = {
+            "project": "test",
+            "repositories": [],
+            "summaries": {"all_repositories": []},
+        }
+        context = RenderContext(data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Gerrit Projects" not in section_titles
+
+    def test_toc_contributors_section_with_data(self, full_data, minimal_config):
+        """Test that contributors section appears when data exists."""
+        context = RenderContext(full_data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Top Contributors" in section_titles
+
+        # Find the section and verify anchor
+        contrib_section = next(
+            s for s in result["toc"]["sections"] if s["title"] == "Top Contributors"
+        )
+        assert contrib_section["anchor"] == "contributors"
+
+    def test_toc_contributors_section_without_data(self, minimal_config):
+        """Test that contributors section is excluded when no data."""
+        data = {
+            "project": "test",
+            "repositories": [],
+            "summaries": {
+                "top_contributors_commits": [],
+                "top_contributors_loc": [],
+            },
+        }
+        context = RenderContext(data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Top Contributors" not in section_titles
+
+    def test_toc_organizations_section_with_data(self, full_data, minimal_config):
+        """Test that organizations section appears when data exists."""
+        context = RenderContext(full_data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Top Organizations" in section_titles
+
+        # Find the section and verify anchor
+        org_section = next(
+            s for s in result["toc"]["sections"] if s["title"] == "Top Organizations"
+        )
+        assert org_section["anchor"] == "organizations"
+
+    def test_toc_organizations_section_without_data(self, minimal_config):
+        """Test that organizations section is excluded when no data."""
+        data = {
+            "project": "test",
+            "repositories": [],
+            "summaries": {"top_organizations": []},
+        }
+        context = RenderContext(data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Top Organizations" not in section_titles
+
+    def test_toc_features_section_with_data(self, full_data, minimal_config):
+        """Test that features section appears when data exists."""
+        context = RenderContext(full_data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Repository Feature Matrix" in section_titles
+
+        # Find the section and verify anchor
+        feature_section = next(
+            s for s in result["toc"]["sections"] if s["title"] == "Repository Feature Matrix"
+        )
+        assert feature_section["anchor"] == "features"
+
+    def test_toc_features_section_without_data(self, minimal_config):
+        """Test that features section is excluded when no data."""
+        data = {
+            "project": "test",
+            "repositories": [{"name": "repo1", "features": {}}],
+        }
+        context = RenderContext(data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Repository Feature Matrix" not in section_titles
+
+    def test_toc_workflows_section_with_jenkins_jobs(self, full_data, minimal_config):
+        """Test that workflows section appears when Jenkins jobs exist."""
+        context = RenderContext(full_data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Deployed CI/CD Jobs" in section_titles
+
+        # Find the section and verify anchor
+        workflow_section = next(
+            s for s in result["toc"]["sections"] if s["title"] == "Deployed CI/CD Jobs"
+        )
+        assert workflow_section["anchor"] == "workflows"
+
+    def test_toc_workflows_section_with_github_workflows(self, minimal_config):
+        """Test that workflows section appears when GitHub workflows exist."""
+        data = {
+            "project": "test",
+            "repositories": [
+                {
+                    "name": "repo1",
+                    "jenkins_jobs": [],
+                    "features": {
+                        "workflows": {
+                            "github_api_data": {"workflows": [{"name": "ci", "state": "active"}]}
+                        }
+                    },
+                }
+            ],
+        }
+        context = RenderContext(data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Deployed CI/CD Jobs" in section_titles
+
+    def test_toc_workflows_section_without_data(self, minimal_config):
+        """Test that workflows section is excluded when no workflows."""
+        data = {
+            "project": "test",
+            "repositories": [{"name": "repo1", "jenkins_jobs": [], "features": {}}],
+        }
+        context = RenderContext(data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Deployed CI/CD Jobs" not in section_titles
+
+    def test_toc_orphaned_jobs_section_with_data(self, full_data, minimal_config):
+        """Test that orphaned jobs section appears when data exists."""
+        context = RenderContext(full_data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Orphaned Jenkins Jobs" in section_titles
+
+        # Find the section and verify anchor
+        orphan_section = next(
+            s for s in result["toc"]["sections"] if s["title"] == "Orphaned Jenkins Jobs"
+        )
+        assert orphan_section["anchor"] == "orphaned-jobs"
+
+    def test_toc_orphaned_jobs_section_without_data(self, minimal_config):
+        """Test that orphaned jobs section is excluded when no data."""
+        data = {
+            "project": "test",
+            "repositories": [],
+            "orphaned_jenkins_jobs": {"jobs": {}},
+        }
+        context = RenderContext(data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Orphaned Jenkins Jobs" not in section_titles
+
+    def test_toc_time_windows_section_with_data(self, full_data, minimal_config):
+        """Test that time windows section appears when data exists."""
+        context = RenderContext(full_data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Time Windows" in section_titles
+
+        # Find the section and verify anchor
+        time_section = next(s for s in result["toc"]["sections"] if s["title"] == "Time Windows")
+        assert time_section["anchor"] == "time-windows"
+
+    def test_toc_time_windows_section_without_data(self, minimal_config):
+        """Test that time windows section is excluded when no data."""
+        data = {
+            "project": "test",
+            "repositories": [],
+            "time_windows": [],
+        }
+        context = RenderContext(data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Time Windows" not in section_titles
+
+    def test_toc_respects_section_config_disabled(self, full_data):
+        """Test that TOC respects disabled sections in config."""
+        config = {
+            "output": {
+                "include_sections": {
+                    "contributors": False,
+                    "organizations": False,
+                }
+            }
+        }
+        context = RenderContext(full_data, config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        assert "Top Contributors" not in section_titles
+        assert "Top Organizations" not in section_titles
+
+    def test_toc_all_sections_enabled_with_data(self, full_data, minimal_config):
+        """Test TOC with all sections having data."""
+        context = RenderContext(full_data, minimal_config)
+        result = context.build()
+
+        # Should have multiple sections
+        assert len(result["toc"]["sections"]) >= 5
+        assert result["toc"]["has_sections"] is True
+
+        expected_sections = [
+            "Global Summary",
+            "Gerrit Projects",
+            "Top Contributors",
+            "Top Organizations",
+            "Orphaned Jenkins Jobs",
+        ]
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+        for expected in expected_sections:
+            assert expected in section_titles
+
+    def test_toc_section_order(self, full_data, minimal_config):
+        """Test that TOC sections appear in expected order."""
+        context = RenderContext(full_data, minimal_config)
+        result = context.build()
+
+        section_titles = [s["title"] for s in result["toc"]["sections"]]
+
+        # Summary should be first
+        if "Global Summary" in section_titles:
+            assert section_titles[0] == "Global Summary"
+
+        # Check relative order of other sections
+        if "Gerrit Projects" in section_titles and "Top Contributors" in section_titles:
+            repo_idx = section_titles.index("Gerrit Projects")
+            contrib_idx = section_titles.index("Top Contributors")
+            assert repo_idx < contrib_idx
+
+
+class TestRenderContextConfigTOC:
+    """Test TOC configuration options in _build_config_context."""
+
+    def test_config_table_of_contents_default_true(self, minimal_data):
+        """Test that table_of_contents defaults to True when not specified."""
+        config = {"render": {}}
+        context = RenderContext(minimal_data, config)
+        result = context.build()
+
+        assert result["config"]["table_of_contents"] is True
+
+    def test_config_table_of_contents_explicit_true(self, minimal_data):
+        """Test that explicit true value is passed through."""
+        config = {"render": {"table_of_contents": True}}
+        context = RenderContext(minimal_data, config)
+        result = context.build()
+
+        assert result["config"]["table_of_contents"] is True
+
+    def test_config_table_of_contents_explicit_false(self, minimal_data):
+        """Test that explicit false value is passed through."""
+        config = {"render": {"table_of_contents": False}}
+        context = RenderContext(minimal_data, config)
+        result = context.build()
+
+        assert result["config"]["table_of_contents"] is False
+
+    def test_config_table_of_contents_no_render_section(self, minimal_data):
+        """Test that table_of_contents defaults to True with no render section."""
+        config = {}
+        context = RenderContext(minimal_data, config)
+        result = context.build()
+
+        assert result["config"]["table_of_contents"] is True
+
+    def test_config_table_of_contents_accessible_in_context(self, minimal_data, minimal_config):
+        """Test that table_of_contents is accessible in the config context."""
+        context = RenderContext(minimal_data, minimal_config)
+        result = context.build()
+
+        assert "config" in result
+        assert "table_of_contents" in result["config"]
+        assert isinstance(result["config"]["table_of_contents"], bool)

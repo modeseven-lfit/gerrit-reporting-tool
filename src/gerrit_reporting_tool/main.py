@@ -49,7 +49,7 @@ try:
 except ImportError:
     __version__ = "0.0.0"  # Fallback if not installed
 
-SCHEMA_VERSION = "1.1.0"
+SCHEMA_VERSION = "1.2.0"
 DEFAULT_CONFIG_DIR = "configuration"
 DEFAULT_OUTPUT_DIR = "reports"
 

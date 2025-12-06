@@ -1,0 +1,30 @@
+{#
+SPDX-License-Identifier: Apache-2.0
+SPDX-FileCopyrightText: 2025 The Linux Foundation
+#}
+
+{#- Table of Contents Component -#}
+{#- Renders a table of contents with links to report sections -#}
+{#-
+    Context required:
+        - config (dict): Configuration options with table_of_contents flag
+        - toc (dict): Table of contents data with sections list
+
+    This component displays:
+        - Navigation links to each visible section
+        - Only rendered if table_of_contents is enabled
+        - Sections determined dynamically based on config and data
+-#}
+
+{% if config.table_of_contents and toc.has_sections %}
+<nav id="table-of-contents" class="toc report-section">
+    <h2>Table of Contents</h2>
+    <ul class="toc-list">
+        {% for section in toc.sections %}
+        <li class="toc-item">
+            <a href="#{{ section.anchor }}" class="toc-link">{{ section.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
+{% endif %}
