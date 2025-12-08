@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: Linux Foundation
 
-**Generated:** December 07, 2025 at 07:18 UTC
+**Generated:** December 08, 2025 at 07:24 UTC
 **Schema Version:** 1.2.0
 
 ## 📈 Global Summary
@@ -12,12 +12,12 @@
 | Metric | Count | Percentage |
 |--------|-------|------------|
 | Total Gerrit Projects | 35 | 100% |
-| Current Gerrit Projects | 12 | 34.3% |
-| Active Gerrit Projects | 14 | 40.0% |
+| Current Gerrit Projects | 13 | 37.1% |
+| Active Gerrit Projects | 13 | 37.1% |
 | Inactive Gerrit Projects | 9 | 25.7% |
 | No Apparent Commits | 0 | 0.0% |
-| Total Commits | 267 | - |
-| Total Lines of Code | 217.6K | - |
+| Total Commits | 272 | - |
+| Total Lines of Code | 217.7K | - |
 
 ## 🏢 Top Organizations
 
@@ -27,7 +27,7 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 |------|--------------|--------------|---------|-----|-------|----------------|---------------------|
-| 1 | linuxfoundation.org | 31 | 251 | +215796 | 219108 | +859.7 | 35 |
+| 1 | linuxfoundation.org | 31 | 256 | +215881 | 219243 | +843.3 | 35 |
 | 2 | github.com | 1 | 12 | +0 | 44 | +0.0 | 2 |
 | 3 | highstreet-technologies.com | 1 | 2 | +103 | 103 | +51.5 | 1 |
 | 4 | samsung.com | 3 | 1 | +44 | 44 | +44.0 | 1 |
@@ -78,8 +78,8 @@ The data presented in the table below covers the past 365 days.
 | Rank | Contributor | Commits | LOC | Δ LOC | Avg LOC/Commit | Repositories | Organization |
 |------|-------------|---------|-----|-------|----------------|--------------|--------------|
 | 1 | LF Jenkins CI | 104 | +244 | 850 | +2.3 | 1 | linuxfoundation.org |
-| 2 | Matthew Watkins | 80 | +212598 | 214330 | +2657.5 | 9 | linuxfoundation.org |
-| 3 | Anil Belur | 31 | +1896 | 2410 | +61.2 | 22 | linuxfoundation.org |
+| 2 | Matthew Watkins | 84 | +212683 | 214463 | +2531.9 | 9 | linuxfoundation.org |
+| 3 | Anil Belur | 32 | +1896 | 2412 | +59.2 | 23 | linuxfoundation.org |
 | 4 | Andrew Grimberg | 14 | +24 | 88 | +1.7 | 29 | linuxfoundation.org |
 | 5 | Eric Ball | 13 | +11 | 247 | +0.8 | 16 | linuxfoundation.org |
 | 6 | dependabot[bot] | 12 | +0 | 44 | +0.0 | 2 | github.com |
@@ -187,41 +187,41 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 |----------------|---------|---------|--------------|---------------|------------------|--------|
-| releng/info-master | 112 | +482 | 5 | 16 | 2025-11-21 | ✅ |
-| sandbox | 64 | +212043 | 2 | 0 | 2025-12-07 | ✅ |
-| releng/global-jjb | 24 | +564 | 6 | 3 | 2025-12-04 | ✅ |
-| releng/lftools | 21 | +624 | 4 | 2 | 2025-12-05 | ✅ |
-| releng/gerrit_to_platform | 20 | +700 | 5 | 5 | 2025-12-02 | ✅ |
-| releng/common-packer | 13 | +1515 | 4 | 5 | 2025-12-02 | ✅ |
-| releng/docs | 6 | +27 | 3 | 110 | 2025-08-19 | ✅ |
-| ansible/roles/java-install | 2 | +6 | 1 | 183 | 2025-06-07 | ✅ |
-| ansible/roles/puppet-install | 2 | -1 | 2 | 215 | 2025-05-06 | ✅ |
-| ansible/roles/lf-recommended-tools | 1 | +11 | 1 | 186 | 2025-06-04 | ✅ |
-| ansible/roles/python-install | 1 | -19 | 1 | 183 | 2025-06-07 | ✅ |
-| ansible/roles/system-update | 1 | +1 | 1 | 22 | 2025-11-15 | ✅ |
-| ansible/roles | 0 | +0 | 0 | 471 | 2024-08-23 | ☑️ |
-| ansible/roles/docker-install | 0 | +0 | 0 | 409 | 2024-10-24 | ☑️ |
-| ansible/roles/haveged-install | 0 | +0 | 0 | 409 | 2024-10-24 | ☑️ |
-| ansible/roles/lf-dev-libs | 0 | +0 | 0 | 409 | 2024-10-24 | ☑️ |
-| ansible/roles/mono-install | 0 | +0 | 0 | 409 | 2024-10-24 | ☑️ |
-| ansible/roles/packer-install | 0 | +0 | 0 | 409 | 2024-10-24 | ☑️ |
-| ansible/roles/protobuf-install | 0 | +0 | 0 | 409 | 2024-10-24 | ☑️ |
-| ansible/roles/shellcheck-install | 0 | +0 | 0 | 409 | 2024-10-24 | ☑️ |
-| ansible/roles/sysstat-install | 0 | +0 | 0 | 409 | 2024-10-24 | ☑️ |
-| clav2test/ccla-only-project | 0 | +0 | 0 | 2,529 | 2019-01-04 | 🛑 |
-| clav2test/icla-and-ccla-project | 0 | +0 | 0 | 1,726 | 2021-03-17 | 🛑 |
-| lfn/process | 0 | +0 | 0 | 2,738 | 2018-06-09 | 🛑 |
-| puppet/modules/gce | 0 | +0 | 0 | 3,229 | 2017-02-03 | 🛑 |
-| puppet/modules/mailman3 | 0 | +0 | 0 | 3,447 | 2016-06-30 | 🛑 |
-| releng | 0 | +0 | 0 | 641 | 2024-03-06 | ☑️ |
-| releng/ci-workshop | 0 | +0 | 0 | 1,190 | 2022-09-04 | 🛑 |
-| releng/docs-conf | 0 | +0 | 0 | 550 | 2024-06-05 | ☑️ |
-| releng/license-checker | 0 | +0 | 0 | 2,745 | 2018-06-02 | 🛑 |
-| releng/nexus-upload | 0 | +0 | 0 | 555 | 2024-05-31 | ☑️ |
-| releng/pipelines | 0 | +0 | 0 | 1,217 | 2022-08-08 | 🛑 |
-| releng/python-one-password | 0 | +0 | 0 | 809 | 2023-09-20 | ☑️ |
-| releng/sigul-docker | 0 | +0 | 0 | 751 | 2023-11-17 | ☑️ |
-| sandbox-info-master | 0 | +0 | 0 | 1,900 | 2020-09-24 | 🛑 |
+| releng/info-master | 112 | +482 | 5 | 17 | 2025-11-21 | ✅ |
+| sandbox | 68 | +212128 | 2 | 0 | 2025-12-08 | ✅ |
+| releng/global-jjb | 24 | +564 | 6 | 4 | 2025-12-04 | ✅ |
+| releng/lftools | 21 | +624 | 4 | 3 | 2025-12-05 | ✅ |
+| releng/gerrit_to_platform | 20 | +700 | 5 | 6 | 2025-12-02 | ✅ |
+| releng/common-packer | 13 | +1515 | 4 | 6 | 2025-12-02 | ✅ |
+| releng/docs | 6 | +27 | 3 | 111 | 2025-08-19 | ✅ |
+| ansible/roles/java-install | 2 | +6 | 1 | 184 | 2025-06-07 | ✅ |
+| ansible/roles/puppet-install | 2 | -1 | 2 | 216 | 2025-05-06 | ✅ |
+| ansible/roles | 1 | +0 | 1 | 0 | 2025-12-08 | ✅ |
+| ansible/roles/lf-recommended-tools | 1 | +11 | 1 | 187 | 2025-06-04 | ✅ |
+| ansible/roles/python-install | 1 | -19 | 1 | 184 | 2025-06-07 | ✅ |
+| ansible/roles/system-update | 1 | +1 | 1 | 23 | 2025-11-15 | ✅ |
+| ansible/roles/docker-install | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
+| ansible/roles/haveged-install | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
+| ansible/roles/lf-dev-libs | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
+| ansible/roles/mono-install | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
+| ansible/roles/packer-install | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
+| ansible/roles/protobuf-install | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
+| ansible/roles/shellcheck-install | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
+| ansible/roles/sysstat-install | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
+| clav2test/ccla-only-project | 0 | +0 | 0 | 2,530 | 2019-01-04 | 🛑 |
+| clav2test/icla-and-ccla-project | 0 | +0 | 0 | 1,727 | 2021-03-17 | 🛑 |
+| lfn/process | 0 | +0 | 0 | 2,739 | 2018-06-09 | 🛑 |
+| puppet/modules/gce | 0 | +0 | 0 | 3,230 | 2017-02-03 | 🛑 |
+| puppet/modules/mailman3 | 0 | +0 | 0 | 3,448 | 2016-06-30 | 🛑 |
+| releng | 0 | +0 | 0 | 642 | 2024-03-06 | ☑️ |
+| releng/ci-workshop | 0 | +0 | 0 | 1,191 | 2022-09-04 | 🛑 |
+| releng/docs-conf | 0 | +0 | 0 | 551 | 2024-06-05 | ☑️ |
+| releng/license-checker | 0 | +0 | 0 | 2,746 | 2018-06-02 | 🛑 |
+| releng/nexus-upload | 0 | +0 | 0 | 556 | 2024-05-31 | ☑️ |
+| releng/pipelines | 0 | +0 | 0 | 1,218 | 2022-08-08 | 🛑 |
+| releng/python-one-password | 0 | +0 | 0 | 810 | 2023-09-20 | ☑️ |
+| releng/sigul-docker | 0 | +0 | 0 | 752 | 2023-11-17 | ☑️ |
+| sandbox-info-master | 0 | +0 | 0 | 1,901 | 2020-09-24 | 🛑 |
 
 **Total:** 35 repositories
 
@@ -241,16 +241,17 @@ The data presented in the table below covers the past 365 days.
 | ansible/roles/lf-recommended-tools | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/system-update | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/python-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| ansible/roles/haveged-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
-| ansible/roles/packer-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
-| ansible/roles/protobuf-install | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
-| ansible/roles/mono-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
-| ansible/roles/lf-dev-libs | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
+| ansible/roles | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | ansible/roles/docker-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
+| ansible/roles/packer-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
+| ansible/roles/haveged-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
+| ansible/roles/mono-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
+| ansible/roles/protobuf-install | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
+| ansible/roles/lf-dev-libs | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
 | puppet/modules/gce | Ruby | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | puppet/modules/mailman3 | Ruby | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ansible/roles/sysstat-install | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | ansible/roles/shellcheck-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
+| ansible/roles/sysstat-install | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | clav2test/ccla-only-project | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | clav2test/icla-and-ccla-project | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | lfn/process | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
@@ -258,11 +259,10 @@ The data presented in the table below covers the past 365 days.
 | releng/docs-conf | Python | ❌ | ✅ | ✅ | ✅ | ❌ | ☑️ |
 | releng/license-checker | Go | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | releng/nexus-upload | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
-| releng/pipelines | Groovy | ❌ | ✅ | ✅ | ✅ | ❌ | 🛑 |
 | releng/python-one-password | Python | ❌ | ✅ | ✅ | ✅ | ❌ | ☑️ |
+| releng/pipelines | Groovy | ❌ | ✅ | ✅ | ✅ | ❌ | 🛑 |
 | releng/sigul-docker | Dockerfile | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | sandbox-info-master | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| ansible/roles | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | releng | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 
 ## 🏁 Deployed CI/CD Jobs
