@@ -455,7 +455,7 @@ jobs:
       - name: "Upload raw data artifacts"
         if: always()
         # yamllint disable-line rule:line-length
-        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
         with:
           name: raw-data-${{ matrix.slug }}
           path: ./temp-raw-data-${{ matrix.slug }}/
@@ -466,7 +466,7 @@ jobs:
       - name: "Upload report artifacts"
         if: always()
         # yamllint disable-line rule:line-length
-        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
         with:
           name: reports-${{ matrix.slug }}
           path: ./reports/${{ matrix.project }}/
@@ -477,7 +477,7 @@ jobs:
       - name: "Upload clone manifest"
         if: always()
         # yamllint disable-line rule:line-length
-        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
         with:
           name: clone-manifest-${{ matrix.slug }}
           path: "./${{ matrix.gerrit }}/clone-manifest.json"
@@ -487,7 +487,7 @@ jobs:
       - name: "Upload clone log"
         if: always()
         # yamllint disable-line rule:line-length
-        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
         with:
           name: clone-log-${{ matrix.slug }}
           path: "./${{ matrix.gerrit }}.log"
