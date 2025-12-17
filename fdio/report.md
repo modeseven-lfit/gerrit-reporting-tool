@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: FDio
 
-**Generated:** December 16, 2025 at 07:23 UTC
+**Generated:** December 17, 2025 at 07:21 UTC
 **Schema Version:** 1.2.0
 
 ## 📈 Global Summary
@@ -17,7 +17,7 @@
 | Inactive Gerrit Projects | 3 | 42.9% |
 | No Apparent Commits | 0 | 0.0% |
 | Total Commits | 1.4K | - |
-| Total Lines of Code | 231.9K | - |
+| Total Lines of Code | 232.2K | - |
 
 ## 🏢 Top Organizations
 
@@ -27,14 +27,14 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 |------|--------------|--------------|---------|-----|-------|----------------|---------------------|
-| 1 | cisco.com | 157 | 944 | +13177 | 224733 | +14.0 | 5 |
-| 2 | gmail.com | 113 | 165 | +13055 | 26009 | +79.1 | 5 |
-| 3 | icloud.com | 1 | 138 | +3300 | 89622 | +23.9 | 4 |
+| 1 | cisco.com | 157 | 947 | +13197 | 224801 | +13.9 | 5 |
+| 2 | gmail.com | 113 | 172 | +13214 | 27122 | +76.8 | 5 |
+| 3 | icloud.com | 1 | 143 | +3439 | 89877 | +24.0 | 4 |
 | 4 | marvell.com | 14 | 31 | +879 | 2595 | +28.4 | 3 |
 | 5 | intel.com | 59 | 15 | +406 | 812 | +27.1 | 4 |
-| 6 | protonmail.ch | 1 | 15 | +5198 | 8964 | +346.5 | 2 |
-| 7 | hawari.fr | 1 | 13 | +14651 | 17015 | +1127.0 | 1 |
-| 8 | linuxfoundation.org | 15 | 13 | -51 | 463 | -3.9 | 7 |
+| 6 | hawari.fr | 1 | 13 | +14651 | 17015 | +1127.0 | 1 |
+| 7 | linuxfoundation.org | 15 | 13 | -51 | 463 | -3.9 | 7 |
+| 8 | protonmail.ch | 1 | 13 | +5433 | 8519 | +417.9 | 2 |
 | 9 | netgate.com | 14 | 8 | +72 | 220 | +9.0 | 1 |
 | 10 | qq.com | 3 | 7 | +63 | 167 | +9.0 | 1 |
 | 11 | travelping.com | 4 | 7 | +73 | 175 | +10.4 | 1 |
@@ -54,74 +54,74 @@ The data presented in the table below covers the past 365 days.
 | 25 | hotmail.se | 1 | 1 | +575 | 1259 | +575.0 | 1 |
 | 26 | ideco.ru | 1 | 1 | +0 | 2 | +0.0 | 1 |
 | 27 | insidepacket.com | 1 | 1 | +5 | 5 | +5.0 | 1 |
-| 28 | me.com | 1 | 1 | +192 | 802 | +192.0 | 1 |
-| 29 | skbuff.ru | 1 | 1 | -1 | 1 | -1.0 | 1 |
-| 30 | x-ion.de | 1 | 1 | +516 | 858 | +516.0 | 1 |
-| 31 | zte.com.cn | 10 | 1 | +0 | 4 | +0.0 | 1 |
-| 32 | 0xa5.net | 1 | 0 | +0 | 0 | - | 1 |
-| 33 | 3nets.io | 1 | 0 | +0 | 0 | - | 1 |
-| 34 | 6wind.com | 4 | 0 | +0 | 0 | - | 2 |
-| 35 | a51.org | 1 | 0 | +0 | 0 | - | 1 |
-| 36 | ac.be | 1 | 0 | +0 | 0 | - | 1 |
-| 37 | ac.cn | 1 | 0 | +0 | 0 | - | 1 |
-| 38 | alticelabs.com | 1 | 0 | +0 | 0 | - | 1 |
-| 39 | anapaya.net | 2 | 0 | +0 | 0 | - | 1 |
-| 40 | ashroe.eu | 1 | 0 | +0 | 0 | - | 2 |
-| 41 | astri.org | 1 | 0 | +0 | 0 | - | 1 |
-| 42 | babayev.com | 1 | 0 | +0 | 0 | - | 1 |
-| 43 | bahnhof.net | 1 | 0 | +0 | 0 | - | 1 |
-| 44 | broadcom.com | 2 | 0 | +0 | 0 | - | 1 |
-| 45 | cambridgegreys.com | 1 | 0 | +0 | 0 | - | 1 |
-| 46 | canonical.com | 1 | 0 | +0 | 0 | - | 1 |
-| 47 | cavium.com | 2 | 0 | +0 | 0 | - | 1 |
-| 48 | caviumnetworks.com | 1 | 0 | +0 | 0 | - | 1 |
-| 49 | chatts.net | 1 | 0 | +0 | 0 | - | 1 |
-| 50 | chopps.org | 1 | 0 | +0 | 0 | - | 1 |
-| 51 | ciena.com | 1 | 0 | +0 | 0 | - | 1 |
-| 52 | cmd.nu | 1 | 0 | +0 | 0 | - | 1 |
-| 53 | co.nz | 1 | 0 | +0 | 0 | - | 1 |
-| 54 | colliertech.org | 2 | 0 | +0 | 0 | - | 1 |
-| 55 | com.cn | 1 | 0 | +0 | 0 | - | 1 |
-| 56 | comcast.com | 1 | 0 | +0 | 0 | - | 1 |
-| 57 | dbarach-hb | 1 | 0 | +0 | 0 | - | 1 |
-| 58 | debian.org | 1 | 0 | +0 | 0 | - | 1 |
-| 59 | dewith.io | 1 | 0 | +0 | 0 | - | 1 |
-| 60 | efly.cc | 1 | 0 | +0 | 0 | - | 1 |
-| 61 | emnify.com | 1 | 0 | +0 | 0 | - | 1 |
-| 62 | enea.com | 7 | 0 | +0 | 0 | - | 2 |
-| 63 | ericsson.com | 6 | 0 | +0 | 0 | - | 1 |
-| 64 | est.tech | 3 | 0 | +0 | 0 | - | 1 |
-| 65 | example.com | 1 | 0 | +0 | 0 | - | 1 |
-| 66 | fb.com | 1 | 0 | +0 | 0 | - | 1 |
-| 67 | fiberhome.com | 1 | 0 | +0 | 0 | - | 1 |
-| 68 | flirble.org | 1 | 0 | +0 | 0 | - | 2 |
-| 69 | foxmail.com | 1 | 0 | +0 | 0 | - | 1 |
-| 70 | fperrin.net | 1 | 0 | +0 | 0 | - | 1 |
-| 71 | freebsd.org | 2 | 0 | +0 | 0 | - | 1 |
-| 72 | freepro.com | 1 | 0 | +0 | 0 | - | 1 |
-| 73 | frinx.io | 1 | 0 | +0 | 0 | - | 1 |
-| 74 | genesiscloud.com | 1 | 0 | +0 | 0 | - | 1 |
-| 75 | github.com | 1 | 0 | +0 | 0 | - | 1 |
-| 76 | gouv.fr | 1 | 0 | +0 | 0 | - | 1 |
-| 77 | graphiant.com | 5 | 0 | +0 | 0 | - | 1 |
-| 78 | grupawp.pl | 1 | 0 | +0 | 0 | - | 1 |
-| 79 | hcl.com | 1 | 0 | +0 | 0 | - | 1 |
-| 80 | hotmail.com | 1 | 0 | +0 | 0 | - | 1 |
-| 81 | hpe.com | 1 | 0 | +0 | 0 | - | 1 |
-| 82 | hq.sk | 1 | 0 | +0 | 0 | - | 1 |
-| 83 | hrntknr.net | 1 | 0 | +0 | 0 | - | 1 |
-| 84 | hsc.com | 1 | 0 | +0 | 0 | - | 1 |
-| 85 | huawei.com | 2 | 0 | +0 | 0 | - | 1 |
-| 86 | igalia.com | 1 | 0 | +0 | 0 | - | 1 |
-| 87 | incoybe.ca | 1 | 0 | +0 | 0 | - | 1 |
-| 88 | inocybe.ca | 1 | 0 | +0 | 0 | - | 1 |
-| 89 | intel-rd.labo | 1 | 0 | +0 | 0 | - | 1 |
-| 90 | kalrayinc.com | 1 | 0 | +0 | 0 | - | 1 |
-| 91 | klaiber.me | 1 | 0 | +0 | 0 | - | 1 |
-| 92 | klaipeden.com | 1 | 0 | +0 | 0 | - | 1 |
-| 93 | klementsekera.com | 1 | 0 | +0 | 0 | - | 1 |
-| 94 | live.it | 1 | 0 | +0 | 0 | - | 1 |
-| 95 | localhost.localdomain | 1 | 0 | +0 | 0 | - | 1 |
+| 28 | skbuff.ru | 1 | 1 | -1 | 1 | -1.0 | 1 |
+| 29 | x-ion.de | 1 | 1 | +516 | 858 | +516.0 | 1 |
+| 30 | zte.com.cn | 10 | 1 | +0 | 4 | +0.0 | 1 |
+| 31 | 0xa5.net | 1 | 0 | +0 | 0 | - | 1 |
+| 32 | 3nets.io | 1 | 0 | +0 | 0 | - | 1 |
+| 33 | 6wind.com | 4 | 0 | +0 | 0 | - | 2 |
+| 34 | a51.org | 1 | 0 | +0 | 0 | - | 1 |
+| 35 | ac.be | 1 | 0 | +0 | 0 | - | 1 |
+| 36 | ac.cn | 1 | 0 | +0 | 0 | - | 1 |
+| 37 | alticelabs.com | 1 | 0 | +0 | 0 | - | 1 |
+| 38 | anapaya.net | 2 | 0 | +0 | 0 | - | 1 |
+| 39 | ashroe.eu | 1 | 0 | +0 | 0 | - | 2 |
+| 40 | astri.org | 1 | 0 | +0 | 0 | - | 1 |
+| 41 | babayev.com | 1 | 0 | +0 | 0 | - | 1 |
+| 42 | bahnhof.net | 1 | 0 | +0 | 0 | - | 1 |
+| 43 | broadcom.com | 2 | 0 | +0 | 0 | - | 1 |
+| 44 | cambridgegreys.com | 1 | 0 | +0 | 0 | - | 1 |
+| 45 | canonical.com | 1 | 0 | +0 | 0 | - | 1 |
+| 46 | cavium.com | 2 | 0 | +0 | 0 | - | 1 |
+| 47 | caviumnetworks.com | 1 | 0 | +0 | 0 | - | 1 |
+| 48 | chatts.net | 1 | 0 | +0 | 0 | - | 1 |
+| 49 | chopps.org | 1 | 0 | +0 | 0 | - | 1 |
+| 50 | ciena.com | 1 | 0 | +0 | 0 | - | 1 |
+| 51 | cmd.nu | 1 | 0 | +0 | 0 | - | 1 |
+| 52 | co.nz | 1 | 0 | +0 | 0 | - | 1 |
+| 53 | colliertech.org | 2 | 0 | +0 | 0 | - | 1 |
+| 54 | com.cn | 1 | 0 | +0 | 0 | - | 1 |
+| 55 | comcast.com | 1 | 0 | +0 | 0 | - | 1 |
+| 56 | dbarach-hb | 1 | 0 | +0 | 0 | - | 1 |
+| 57 | debian.org | 1 | 0 | +0 | 0 | - | 1 |
+| 58 | dewith.io | 1 | 0 | +0 | 0 | - | 1 |
+| 59 | efly.cc | 1 | 0 | +0 | 0 | - | 1 |
+| 60 | emnify.com | 1 | 0 | +0 | 0 | - | 1 |
+| 61 | enea.com | 7 | 0 | +0 | 0 | - | 2 |
+| 62 | ericsson.com | 6 | 0 | +0 | 0 | - | 1 |
+| 63 | est.tech | 3 | 0 | +0 | 0 | - | 1 |
+| 64 | example.com | 1 | 0 | +0 | 0 | - | 1 |
+| 65 | fb.com | 1 | 0 | +0 | 0 | - | 1 |
+| 66 | fiberhome.com | 1 | 0 | +0 | 0 | - | 1 |
+| 67 | flirble.org | 1 | 0 | +0 | 0 | - | 2 |
+| 68 | foxmail.com | 1 | 0 | +0 | 0 | - | 1 |
+| 69 | fperrin.net | 1 | 0 | +0 | 0 | - | 1 |
+| 70 | freebsd.org | 2 | 0 | +0 | 0 | - | 1 |
+| 71 | freepro.com | 1 | 0 | +0 | 0 | - | 1 |
+| 72 | frinx.io | 1 | 0 | +0 | 0 | - | 1 |
+| 73 | genesiscloud.com | 1 | 0 | +0 | 0 | - | 1 |
+| 74 | github.com | 1 | 0 | +0 | 0 | - | 1 |
+| 75 | gouv.fr | 1 | 0 | +0 | 0 | - | 1 |
+| 76 | graphiant.com | 5 | 0 | +0 | 0 | - | 1 |
+| 77 | grupawp.pl | 1 | 0 | +0 | 0 | - | 1 |
+| 78 | hcl.com | 1 | 0 | +0 | 0 | - | 1 |
+| 79 | hotmail.com | 1 | 0 | +0 | 0 | - | 1 |
+| 80 | hpe.com | 1 | 0 | +0 | 0 | - | 1 |
+| 81 | hq.sk | 1 | 0 | +0 | 0 | - | 1 |
+| 82 | hrntknr.net | 1 | 0 | +0 | 0 | - | 1 |
+| 83 | hsc.com | 1 | 0 | +0 | 0 | - | 1 |
+| 84 | huawei.com | 2 | 0 | +0 | 0 | - | 1 |
+| 85 | igalia.com | 1 | 0 | +0 | 0 | - | 1 |
+| 86 | incoybe.ca | 1 | 0 | +0 | 0 | - | 1 |
+| 87 | inocybe.ca | 1 | 0 | +0 | 0 | - | 1 |
+| 88 | intel-rd.labo | 1 | 0 | +0 | 0 | - | 1 |
+| 89 | kalrayinc.com | 1 | 0 | +0 | 0 | - | 1 |
+| 90 | klaiber.me | 1 | 0 | +0 | 0 | - | 1 |
+| 91 | klaipeden.com | 1 | 0 | +0 | 0 | - | 1 |
+| 92 | klementsekera.com | 1 | 0 | +0 | 0 | - | 1 |
+| 93 | live.it | 1 | 0 | +0 | 0 | - | 1 |
+| 94 | localhost.localdomain | 1 | 0 | +0 | 0 | - | 1 |
+| 95 | me.com | 1 | 0 | +0 | 0 | - | 1 |
 | 96 | mellanox.com | 2 | 0 | +0 | 0 | - | 1 |
 | 97 | meraki.com | 1 | 0 | +0 | 0 | - | 1 |
 | 98 | mestery.com | 1 | 0 | +0 | 0 | - | 1 |
@@ -193,19 +193,19 @@ The data presented in the table below covers the past 365 days.
 |------|-------------|---------|-----|-------|----------------|--------------|--------------|
 | 1 | Florin Coras | 203 | +5730 | 14300 | +28.2 | 3 | cisco.com |
 | 2 | Matus Fabian | 196 | +22986 | 38888 | +117.3 | 2 | cisco.com |
-| 3 | Peter Mikus | 138 | +3300 | 89622 | +23.9 | 4 | icloud.com |
-| 4 | Tibor Frank | 124 | -1307 | 18445 | -10.5 | 3 | cisco.com |
-| 5 | Dave Wallace | 123 | +9559 | 21667 | +77.7 | 5 | gmail.com |
+| 3 | Peter Mikus | 143 | +3439 | 89877 | +24.0 | 4 | icloud.com |
+| 4 | Dave Wallace | 130 | +9718 | 22780 | +74.8 | 5 | gmail.com |
+| 5 | Tibor Frank | 124 | -1307 | 18445 | -10.5 | 3 | cisco.com |
 | 6 | Damjan Marion | 115 | -28605 | 78189 | -248.7 | 2 | cisco.com |
-| 7 | Adrian Villin | 86 | +6882 | 21450 | +80.0 | 1 | cisco.com |
-| 8 | Vratko Polak | 63 | +706 | 36958 | +11.2 | 4 | cisco.com |
+| 7 | Adrian Villin | 87 | +6905 | 21501 | +79.4 | 1 | cisco.com |
+| 8 | Vratko Polak | 65 | +703 | 36975 | +10.8 | 4 | cisco.com |
 | 9 | Semir Sionek | 51 | +1694 | 2852 | +33.2 | 2 | cisco.com |
 | 10 | Mohsin KAZMI | 28 | +2086 | 2960 | +74.5 | 2 | cisco.com |
 | 11 | Naveen Joy | 17 | -389 | 3611 | -22.9 | 3 | cisco.com |
-| 12 | Peter Mikus | 15 | +5198 | 8964 | +346.5 | 2 | protonmail.ch |
-| 13 | Andrew Yourtchenko | 14 | +2073 | 2103 | +148.1 | 2 | gmail.com |
-| 14 | Benoît Ganne | 14 | -125 | 351 | -8.9 | 1 | cisco.com |
-| 15 | Mohammed Hawari | 13 | +14651 | 17015 | +1127.0 | 1 | hawari.fr |
+| 12 | Andrew Yourtchenko | 14 | +2073 | 2103 | +148.1 | 2 | gmail.com |
+| 13 | Benoît Ganne | 14 | -125 | 351 | -8.9 | 1 | cisco.com |
+| 14 | Mohammed Hawari | 13 | +14651 | 17015 | +1127.0 | 1 | hawari.fr |
+| 15 | Peter Mikus | 13 | +5433 | 8519 | +417.9 | 2 | protonmail.ch |
 | 16 | Ivan Ivanets | 13 | +1515 | 2989 | +116.5 | 2 | cisco.com |
 | 17 | Monendra Singh Kushwaha | 12 | +427 | 523 | +35.6 | 1 | marvell.com |
 | 18 | Steven | 12 | +118 | 1666 | +9.8 | 3 | cisco.com |
@@ -246,127 +246,127 @@ The data presented in the table below covers the past 365 days.
 | 53 | Darrel Tan | 1 | +431 | 561 | +431.0 | 1 | gmail.com |
 | 54 | Akeel Ali | 1 | +384 | 436 | +384.0 | 1 | gmail.com |
 | 55 | Changbin Park | 1 | +224 | 238 | +224.0 | 1 | gmail.com |
-| 56 | Damjan Marion | 1 | +192 | 802 | +192.0 | 1 | me.com |
-| 57 | Mihut Aronovici | 1 | +122 | 130 | +122.0 | 1 | cisco.com |
-| 58 | Satha Rao | 1 | +100 | 112 | +100.0 | 1 | marvell.com |
-| 59 | Kirill A. Khalitov | 1 | +43 | 43 | +43.0 | 1 | 46labs.com |
-| 60 | Bartlomiej Leszak | 1 | +31 | 31 | +31.0 | 1 | gmail.com |
-| 61 | Konstantin Kogdenko | 1 | +24 | 46 | +24.0 | 1 | gmail.com |
-| 62 | Yoann Desmouceaux | 1 | +21 | 37 | +21.0 | 1 | cisco.com |
-| 63 | m.nemati | 1 | +21 | 73 | +21.0 | 1 | gmail.com |
-| 64 | Brian Morris | 1 | +7 | 13 | +7.0 | 1 | cisco.com |
-| 65 | Anna Neiman | 1 | +5 | 5 | +5.0 | 1 | insidepacket.com |
-| 66 | Paul Ponchon | 1 | +4 | 4 | +4.0 | 1 | cisco.com |
-| 67 | guangming.zhang | 1 | +2 | 8 | +2.0 | 1 | baicells.com |
-| 68 | kejan | 1 | +2 | 2 | +2.0 | 1 | gmail.com |
-| 69 | Klement Sekera | 1 | +1 | 3 | +1.0 | 1 | gmail.com |
-| 70 | Pierre Pfister | 1 | +1 | 11 | +1.0 | 2 | cisco.com |
-| 71 | Alexander Chernavin | 1 | +0 | 2 | +0.0 | 1 | mts.ru |
-| 72 | Alexander Skorichenko | 1 | +0 | 18 | +0.0 | 1 | netgate.com |
-| 73 | Alexey Stratulat | 1 | +0 | 2 | +0.0 | 1 | ideco.ru |
-| 74 | Anil Belur | 1 | +0 | 2 | +0.0 | 1 | linuxfoundation.org |
-| 75 | Kirill A. Khalitov | 1 | +0 | 2 | +0.0 | 1 | gmail.com |
-| 76 | Renato Botelho do Couto | 1 | +0 | 2 | +0.0 | 1 | netgate.com |
-| 77 | Shubing Guo | 1 | +0 | 4 | +0.0 | 1 | zte.com.cn |
-| 78 | Sivaprasad Tummala | 1 | +0 | 4 | +0.0 | 1 | amd.com |
-| 79 | jinshaohui | 1 | +0 | 16 | +0.0 | 1 | 163.com |
-| 80 | Arthur de Kerhor | 1 | -1 | 53 | -1.0 | 1 | gmail.com |
-| 81 | Maxim Uvarov | 1 | -1 | 1 | -1.0 | 1 | skbuff.ru |
-| 82 | Maxime Peim | 1 | -4 | 8 | -4.0 | 1 | gmail.com |
-| 83 | Abdel Baig | 0 | +0 | 0 | - | 1 | cisco.com |
-| 84 | Adrian Oanca | 0 | +0 | 0 | - | 1 | enea.com |
-| 85 | Adrian Pistol | 0 | +0 | 0 | - | 1 | posteo.net |
-| 86 | Aequitas | 0 | +0 | 0 | - | 1 | zte.com.cn |
-| 87 | Agathiyan Bragadeesh | 0 | +0 | 0 | - | 1 | arm.com |
-| 88 | Ahmed Abdelsalam | 0 | +0 | 0 | - | 1 | cisco.com |
-| 89 | Akshaya N | 0 | +0 | 0 | - | 1 | rtbrick.com |
-| 90 | AkshayaNadahalli | 0 | +0 | 0 | - | 1 | cisco.com |
-| 91 | Alberto Compagno | 0 | +0 | 0 | - | 1 | cisco.com |
-| 92 | Alberto Rodriguez-Natal | 0 | +0 | 0 | - | 1 | cisco.com |
-| 93 | Aleksander Djuric | 0 | +0 | 0 | - | 1 | gmail.com |
-| 94 | Alexander Chernavin | 0 | +0 | 0 | - | 1 | netgate.com |
-| 95 | Alexander Kabaev | 0 | +0 | 0 | - | 1 | freebsd.org |
-| 96 | Alexander Kotov | 0 | +0 | 0 | - | 1 | yandex.ru |
-| 97 | Alexander Kozyrev | 0 | +0 | 0 | - | 1 | nvidia.com |
-| 98 | Alexander Popovsky (apopovsk) | 0 | +0 | 0 | - | 1 | cisco.com |
-| 99 | Alexander Slesarev | 0 | +0 | 0 | - | 1 | cisco.com |
-| 100 | Alexandre Poirrier | 0 | +0 | 0 | - | 1 | cisco.com |
-| 101 | Alok Mishra | 0 | +0 | 0 | - | 1 | marvell.com |
-| 102 | Aloys Augustin | 0 | +0 | 0 | - | 1 | cisco.com |
-| 103 | Aloys Augustin | 0 | +0 | 0 | - | 1 | polytechnique.org |
-| 104 | Alpesh S. Patel | 0 | +0 | 0 | - | 1 | hotmail.com |
-| 105 | Amir Zeidner | 0 | +0 | 0 | - | 1 | mellanox.com |
-| 106 | Andreas Schultz | 0 | +0 | 0 | - | 1 | travelping.com |
-| 107 | Andreas Schultz | 0 | +0 | 0 | - | 1 | warp10.net |
-| 108 | Andrej Kilvady | 0 | +0 | 0 | - | 1 | pantheon.tech |
-| 109 | Andrej Kozemcak | 0 | +0 | 0 | - | 2 | pantheon.tech |
-| 110 | Andrej Kozemcak | 0 | +0 | 0 | - | 2 | cisco.com |
-| 111 | Andrej Kozemcak | 0 | +0 | 0 | - | 1 | pantheon.sk |
-| 112 | Andrej Marcinek | 0 | +0 | 0 | - | 1 | pantheon.tech |
-| 113 | Andrew Grimberg | 0 | +0 | 0 | - | 4 | linuxfoundation.org |
-| 114 | Andrew Li | 0 | +0 | 0 | - | 1 | cisco.com |
-| 115 | Andrew Ying | 0 | +0 | 0 | - | 1 | witine.com |
-| 116 | Andrew Yourtchenko | 0 | +0 | 0 | - | 1 | cisco.com |
-| 117 | Andrey "Zed" Zaikin | 0 | +0 | 0 | - | 1 | gmail.com |
-| 118 | Andy Gospodarek | 0 | +0 | 0 | - | 1 | broadcom.com |
+| 56 | Mihut Aronovici | 1 | +122 | 130 | +122.0 | 1 | cisco.com |
+| 57 | Satha Rao | 1 | +100 | 112 | +100.0 | 1 | marvell.com |
+| 58 | Kirill A. Khalitov | 1 | +43 | 43 | +43.0 | 1 | 46labs.com |
+| 59 | Bartlomiej Leszak | 1 | +31 | 31 | +31.0 | 1 | gmail.com |
+| 60 | Konstantin Kogdenko | 1 | +24 | 46 | +24.0 | 1 | gmail.com |
+| 61 | Yoann Desmouceaux | 1 | +21 | 37 | +21.0 | 1 | cisco.com |
+| 62 | m.nemati | 1 | +21 | 73 | +21.0 | 1 | gmail.com |
+| 63 | Brian Morris | 1 | +7 | 13 | +7.0 | 1 | cisco.com |
+| 64 | Anna Neiman | 1 | +5 | 5 | +5.0 | 1 | insidepacket.com |
+| 65 | Paul Ponchon | 1 | +4 | 4 | +4.0 | 1 | cisco.com |
+| 66 | guangming.zhang | 1 | +2 | 8 | +2.0 | 1 | baicells.com |
+| 67 | kejan | 1 | +2 | 2 | +2.0 | 1 | gmail.com |
+| 68 | Klement Sekera | 1 | +1 | 3 | +1.0 | 1 | gmail.com |
+| 69 | Pierre Pfister | 1 | +1 | 11 | +1.0 | 2 | cisco.com |
+| 70 | Alexander Chernavin | 1 | +0 | 2 | +0.0 | 1 | mts.ru |
+| 71 | Alexander Skorichenko | 1 | +0 | 18 | +0.0 | 1 | netgate.com |
+| 72 | Alexey Stratulat | 1 | +0 | 2 | +0.0 | 1 | ideco.ru |
+| 73 | Anil Belur | 1 | +0 | 2 | +0.0 | 1 | linuxfoundation.org |
+| 74 | Kirill A. Khalitov | 1 | +0 | 2 | +0.0 | 1 | gmail.com |
+| 75 | Renato Botelho do Couto | 1 | +0 | 2 | +0.0 | 1 | netgate.com |
+| 76 | Shubing Guo | 1 | +0 | 4 | +0.0 | 1 | zte.com.cn |
+| 77 | Sivaprasad Tummala | 1 | +0 | 4 | +0.0 | 1 | amd.com |
+| 78 | jinshaohui | 1 | +0 | 16 | +0.0 | 1 | 163.com |
+| 79 | Arthur de Kerhor | 1 | -1 | 53 | -1.0 | 1 | gmail.com |
+| 80 | Maxim Uvarov | 1 | -1 | 1 | -1.0 | 1 | skbuff.ru |
+| 81 | Maxime Peim | 1 | -4 | 8 | -4.0 | 1 | gmail.com |
+| 82 | Abdel Baig | 0 | +0 | 0 | - | 1 | cisco.com |
+| 83 | Adrian Oanca | 0 | +0 | 0 | - | 1 | enea.com |
+| 84 | Adrian Pistol | 0 | +0 | 0 | - | 1 | posteo.net |
+| 85 | Aequitas | 0 | +0 | 0 | - | 1 | zte.com.cn |
+| 86 | Agathiyan Bragadeesh | 0 | +0 | 0 | - | 1 | arm.com |
+| 87 | Ahmed Abdelsalam | 0 | +0 | 0 | - | 1 | cisco.com |
+| 88 | Akshaya N | 0 | +0 | 0 | - | 1 | rtbrick.com |
+| 89 | AkshayaNadahalli | 0 | +0 | 0 | - | 1 | cisco.com |
+| 90 | Alberto Compagno | 0 | +0 | 0 | - | 1 | cisco.com |
+| 91 | Alberto Rodriguez-Natal | 0 | +0 | 0 | - | 1 | cisco.com |
+| 92 | Aleksander Djuric | 0 | +0 | 0 | - | 1 | gmail.com |
+| 93 | Alexander Chernavin | 0 | +0 | 0 | - | 1 | netgate.com |
+| 94 | Alexander Kabaev | 0 | +0 | 0 | - | 1 | freebsd.org |
+| 95 | Alexander Kotov | 0 | +0 | 0 | - | 1 | yandex.ru |
+| 96 | Alexander Kozyrev | 0 | +0 | 0 | - | 1 | nvidia.com |
+| 97 | Alexander Popovsky (apopovsk) | 0 | +0 | 0 | - | 1 | cisco.com |
+| 98 | Alexander Slesarev | 0 | +0 | 0 | - | 1 | cisco.com |
+| 99 | Alexandre Poirrier | 0 | +0 | 0 | - | 1 | cisco.com |
+| 100 | Alok Mishra | 0 | +0 | 0 | - | 1 | marvell.com |
+| 101 | Aloys Augustin | 0 | +0 | 0 | - | 1 | cisco.com |
+| 102 | Aloys Augustin | 0 | +0 | 0 | - | 1 | polytechnique.org |
+| 103 | Alpesh S. Patel | 0 | +0 | 0 | - | 1 | hotmail.com |
+| 104 | Amir Zeidner | 0 | +0 | 0 | - | 1 | mellanox.com |
+| 105 | Andreas Schultz | 0 | +0 | 0 | - | 1 | travelping.com |
+| 106 | Andreas Schultz | 0 | +0 | 0 | - | 1 | warp10.net |
+| 107 | Andrej Kilvady | 0 | +0 | 0 | - | 1 | pantheon.tech |
+| 108 | Andrej Kozemcak | 0 | +0 | 0 | - | 2 | pantheon.tech |
+| 109 | Andrej Kozemcak | 0 | +0 | 0 | - | 2 | cisco.com |
+| 110 | Andrej Kozemcak | 0 | +0 | 0 | - | 1 | pantheon.sk |
+| 111 | Andrej Marcinek | 0 | +0 | 0 | - | 1 | pantheon.tech |
+| 112 | Andrew Grimberg | 0 | +0 | 0 | - | 4 | linuxfoundation.org |
+| 113 | Andrew Li | 0 | +0 | 0 | - | 1 | cisco.com |
+| 114 | Andrew Ying | 0 | +0 | 0 | - | 1 | witine.com |
+| 115 | Andrew Yourtchenko | 0 | +0 | 0 | - | 1 | cisco.com |
+| 116 | Andrey "Zed" Zaikin | 0 | +0 | 0 | - | 1 | gmail.com |
+| 117 | Andy Gospodarek | 0 | +0 | 0 | - | 1 | broadcom.com |
+| 118 | Angelo Mantellini | 0 | +0 | 0 | - | 1 | cisco.com |
 | 119 | Angelo Mantellini | 0 | +0 | 0 | - | 1 | cisco.com |
-| 120 | Angelo Mantellini | 0 | +0 | 0 | - | 1 | cisco.com |
-| 121 | Anlu Yan | 0 | +0 | 0 | - | 1 | cisco.com |
-| 122 | Anton Ivanov | 0 | +0 | 0 | - | 1 | cambridgegreys.com |
-| 123 | Anton Nikolaev | 0 | +0 | 0 | - | 1 | netgate.com |
-| 124 | Aric Gardner | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 125 | Aristeidis Iliopoulos | 0 | +0 | 0 | - | 1 | cisco.com |
-| 126 | Artem Belov | 0 | +0 | 0 | - | 1 | xored.com |
-| 127 | Artem Glazychev | 0 | +0 | 0 | - | 1 | xored.com |
-| 128 | Atzm Watanabe | 0 | +0 | 0 | - | 1 | gmail.com |
-| 129 | Aurélien Degeorges | 0 | +0 | 0 | - | 1 | 6wind.com |
-| 130 | Balaji Venkatraman | 0 | +0 | 0 | - | 1 | cisco.com |
-| 131 | Bence Romsics | 0 | +0 | 0 | - | 1 | gmail.com |
-| 132 | Benoît Ganne | 0 | +0 | 0 | - | 1 | kalrayinc.com |
-| 133 | Berenger Foucher | 0 | +0 | 0 | - | 1 | gouv.fr |
-| 134 | Bernhard M. Wiedemann | 0 | +0 | 0 | - | 1 | suse.de |
-| 135 | Billy McFall | 0 | +0 | 0 | - | 1 | redhat.com |
-| 136 | Bin Huang | 0 | +0 | 0 | - | 1 | gmail.com |
-| 137 | Bin Zhou (bzhou2) | 0 | +0 | 0 | - | 1 | cisco.com |
-| 138 | Brant Lin | 0 | +0 | 0 | - | 1 | ericsson.com |
-| 139 | Brian Brooks | 0 | +0 | 0 | - | 1 | arm.com |
-| 140 | Brian Nesbitt | 0 | +0 | 0 | - | 1 | owmobility.com |
-| 141 | Brian Russell | 0 | +0 | 0 | - | 1 | graphiant.com |
-| 142 | Bud Grise | 0 | +0 | 0 | - | 1 | cisco.com |
-| 143 | Burt Silverman | 0 | +0 | 0 | - | 1 | gmail.com |
-| 144 | C.J. Adams-Collier | 0 | +0 | 0 | - | 1 | colliertech.org |
-| 145 | C.J. Collier | 0 | +0 | 0 | - | 2 | linuxfoundation.org |
-| 146 | C.J. Collier | 0 | +0 | 0 | - | 1 | colliertech.org |
-| 147 | Calvin | 0 | +0 | 0 | - | 1 | gmail.com |
-| 148 | Calvin | 0 | +0 | 0 | - | 1 | incoybe.ca |
-| 149 | Calvin Ference | 0 | +0 | 0 | - | 1 | inocybe.ca |
-| 150 | Carl Smith | 0 | +0 | 0 | - | 1 | co.nz |
-| 151 | Carsten Koester | 0 | +0 | 0 | - | 1 | cisco.com |
-| 152 | Chad Wang | 0 | +0 | 0 | - | 1 | gmail.com |
-| 153 | Changqian Wang | 0 | +0 | 0 | - | 1 | cisco.com |
-| 154 | Chaoyu Jin | 0 | +0 | 0 | - | 1 | cisco.com |
-| 155 | Chen Yahui | 0 | +0 | 0 | - | 1 | gmail.com |
-| 156 | Chenmin Sun | 0 | +0 | 0 | - | 1 | intel.com |
-| 157 | ChinmayaAgarwal | 0 | +0 | 0 | - | 1 | hsc.com |
-| 158 | Choonho Son | 0 | +0 | 0 | - | 1 | gmail.com |
-| 159 | Chore | 0 | +0 | 0 | - | 1 | gmail.com |
-| 160 | Chris Luke | 0 | +0 | 0 | - | 2 | flirble.org |
-| 161 | Chris Luke | 0 | +0 | 0 | - | 1 | comcast.com |
-| 162 | Christian Dechamplain (cdechamp) | 0 | +0 | 0 | - | 1 | cisco.com |
-| 163 | Christian E. Hopps | 0 | +0 | 0 | - | 1 | chopps.org |
-| 164 | Christian Ehrhardt | 0 | +0 | 0 | - | 1 | canonical.com |
-| 165 | Christian Hopps | 0 | +0 | 0 | - | 1 | labn.net |
-| 166 | Christian Hopps | 0 | +0 | 0 | - | 1 | gmail.com |
-| 167 | Christian Svensson | 0 | +0 | 0 | - | 1 | cmd.nu |
-| 168 | Christophe Fontaine | 0 | +0 | 0 | - | 1 | enea.com |
-| 169 | Christophe Fontaine | 0 | +0 | 0 | - | 1 | qosmos.com |
-| 170 | Chuan Han | 0 | +0 | 0 | - | 1 | gmail.com |
-| 171 | Chuhao Tang | 0 | +0 | 0 | - | 1 | cisco.com |
-| 172 | Chun Li | 0 | +0 | 0 | - | 1 | cisco.com |
-| 173 | Ciara Loftus | 0 | +0 | 0 | - | 1 | intel.com |
-| 174 | Clement Durand | 0 | +0 | 0 | - | 1 | polytechnique.edu |
-| 175 | Colin Tregenza Dancer | 0 | +0 | 0 | - | 1 | metaswitch.com |
-| 176 | Cui,Cheng | 0 | +0 | 0 | - | 1 | intel.com |
+| 120 | Anlu Yan | 0 | +0 | 0 | - | 1 | cisco.com |
+| 121 | Anton Ivanov | 0 | +0 | 0 | - | 1 | cambridgegreys.com |
+| 122 | Anton Nikolaev | 0 | +0 | 0 | - | 1 | netgate.com |
+| 123 | Aric Gardner | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 124 | Aristeidis Iliopoulos | 0 | +0 | 0 | - | 1 | cisco.com |
+| 125 | Artem Belov | 0 | +0 | 0 | - | 1 | xored.com |
+| 126 | Artem Glazychev | 0 | +0 | 0 | - | 1 | xored.com |
+| 127 | Atzm Watanabe | 0 | +0 | 0 | - | 1 | gmail.com |
+| 128 | Aurélien Degeorges | 0 | +0 | 0 | - | 1 | 6wind.com |
+| 129 | Balaji Venkatraman | 0 | +0 | 0 | - | 1 | cisco.com |
+| 130 | Bence Romsics | 0 | +0 | 0 | - | 1 | gmail.com |
+| 131 | Benoît Ganne | 0 | +0 | 0 | - | 1 | kalrayinc.com |
+| 132 | Berenger Foucher | 0 | +0 | 0 | - | 1 | gouv.fr |
+| 133 | Bernhard M. Wiedemann | 0 | +0 | 0 | - | 1 | suse.de |
+| 134 | Billy McFall | 0 | +0 | 0 | - | 1 | redhat.com |
+| 135 | Bin Huang | 0 | +0 | 0 | - | 1 | gmail.com |
+| 136 | Bin Zhou (bzhou2) | 0 | +0 | 0 | - | 1 | cisco.com |
+| 137 | Brant Lin | 0 | +0 | 0 | - | 1 | ericsson.com |
+| 138 | Brian Brooks | 0 | +0 | 0 | - | 1 | arm.com |
+| 139 | Brian Nesbitt | 0 | +0 | 0 | - | 1 | owmobility.com |
+| 140 | Brian Russell | 0 | +0 | 0 | - | 1 | graphiant.com |
+| 141 | Bud Grise | 0 | +0 | 0 | - | 1 | cisco.com |
+| 142 | Burt Silverman | 0 | +0 | 0 | - | 1 | gmail.com |
+| 143 | C.J. Adams-Collier | 0 | +0 | 0 | - | 1 | colliertech.org |
+| 144 | C.J. Collier | 0 | +0 | 0 | - | 2 | linuxfoundation.org |
+| 145 | C.J. Collier | 0 | +0 | 0 | - | 1 | colliertech.org |
+| 146 | Calvin | 0 | +0 | 0 | - | 1 | gmail.com |
+| 147 | Calvin | 0 | +0 | 0 | - | 1 | incoybe.ca |
+| 148 | Calvin Ference | 0 | +0 | 0 | - | 1 | inocybe.ca |
+| 149 | Carl Smith | 0 | +0 | 0 | - | 1 | co.nz |
+| 150 | Carsten Koester | 0 | +0 | 0 | - | 1 | cisco.com |
+| 151 | Chad Wang | 0 | +0 | 0 | - | 1 | gmail.com |
+| 152 | Changqian Wang | 0 | +0 | 0 | - | 1 | cisco.com |
+| 153 | Chaoyu Jin | 0 | +0 | 0 | - | 1 | cisco.com |
+| 154 | Chen Yahui | 0 | +0 | 0 | - | 1 | gmail.com |
+| 155 | Chenmin Sun | 0 | +0 | 0 | - | 1 | intel.com |
+| 156 | ChinmayaAgarwal | 0 | +0 | 0 | - | 1 | hsc.com |
+| 157 | Choonho Son | 0 | +0 | 0 | - | 1 | gmail.com |
+| 158 | Chore | 0 | +0 | 0 | - | 1 | gmail.com |
+| 159 | Chris Luke | 0 | +0 | 0 | - | 2 | flirble.org |
+| 160 | Chris Luke | 0 | +0 | 0 | - | 1 | comcast.com |
+| 161 | Christian Dechamplain (cdechamp) | 0 | +0 | 0 | - | 1 | cisco.com |
+| 162 | Christian E. Hopps | 0 | +0 | 0 | - | 1 | chopps.org |
+| 163 | Christian Ehrhardt | 0 | +0 | 0 | - | 1 | canonical.com |
+| 164 | Christian Hopps | 0 | +0 | 0 | - | 1 | labn.net |
+| 165 | Christian Hopps | 0 | +0 | 0 | - | 1 | gmail.com |
+| 166 | Christian Svensson | 0 | +0 | 0 | - | 1 | cmd.nu |
+| 167 | Christophe Fontaine | 0 | +0 | 0 | - | 1 | enea.com |
+| 168 | Christophe Fontaine | 0 | +0 | 0 | - | 1 | qosmos.com |
+| 169 | Chuan Han | 0 | +0 | 0 | - | 1 | gmail.com |
+| 170 | Chuhao Tang | 0 | +0 | 0 | - | 1 | cisco.com |
+| 171 | Chun Li | 0 | +0 | 0 | - | 1 | cisco.com |
+| 172 | Ciara Loftus | 0 | +0 | 0 | - | 1 | intel.com |
+| 173 | Clement Durand | 0 | +0 | 0 | - | 1 | polytechnique.edu |
+| 174 | Colin Tregenza Dancer | 0 | +0 | 0 | - | 1 | metaswitch.com |
+| 175 | Cui,Cheng | 0 | +0 | 0 | - | 1 | intel.com |
+| 176 | Damjan Marion | 0 | +0 | 0 | - | 1 | me.com |
 | 177 | Damjan Marion | 0 | +0 | 0 | - | 1 | 0xa5.net |
 | 178 | Damjan Marion | 0 | +0 | 0 | - | 1 | cisco.com |
 | 179 | Dan Geist | 0 | +0 | 0 | - | 1 | polter.net |
@@ -846,13 +846,13 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 |----------------|---------|---------|--------------|---------------|------------------|--------|
-| vpp | 1001 | +59022 | 78 | 0 | 2025-12-16 | ✅ |
-| csit | 318 | +9912 | 8 | 0 | 2025-12-16 | ✅ |
-| ci-management | 77 | -3102 | 11 | 6 | 2025-12-10 | ✅ |
-| .github | 5 | +3689 | 2 | 0 | 2025-12-16 | ✅ |
-| main_test | 0 | +0 | 0 | 1,872 | 2020-10-31 | 🛑 |
-| test_injector | 0 | +0 | 0 | 3,394 | 2016-08-31 | 🛑 |
-| vppsb | 0 | +0 | 0 | 2,397 | 2019-05-25 | 🛑 |
+| vpp | 1008 | +59012 | 77 | 0 | 2025-12-17 | ✅ |
+| csit | 323 | +10283 | 8 | 1 | 2025-12-16 | ✅ |
+| ci-management | 77 | -3102 | 11 | 7 | 2025-12-10 | ✅ |
+| .github | 5 | +3689 | 2 | 1 | 2025-12-16 | ✅ |
+| main_test | 0 | +0 | 0 | 1,873 | 2020-10-31 | 🛑 |
+| test_injector | 0 | +0 | 0 | 3,395 | 2016-08-31 | 🛑 |
+| vppsb | 0 | +0 | 0 | 2,398 | 2019-05-25 | 🛑 |
 
 **Total:** 7 repositories
 
@@ -870,15 +870,15 @@ The data presented in the table below covers the past 365 days.
 
 ## 🏁 Deployed CI/CD Jobs
 
-**Total GitHub workflows:** 29
+**Total GitHub workflows:** 31
 **Total Jenkins jobs:** 113
 
 | Gerrit Project | GitHub Workflows | Workflow Count | Jenkins Jobs | Job Count |
 |----------------|-------------------|----------------|--------------|-----------|
 | .github | <a href="https://github.com/fdio/.github/actions/workflows/gerrit-required-verify-non-voting.yaml" target="_blank"><span class="status-success workflow-status">gerrit-required-verify-non-voting.yaml</span></a><br><a href="https://github.com/fdio/.github/actions/workflows/gerrit-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-verify.yaml</span></a> | 2 |  | 0 |
 | ci-management | <a href="https://github.com/fdio/ci-management/actions/workflows/gerrit-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-verify.yaml</span></a> | 1 | <a href="https://jenkins.fd.io/job/ci-management-info-yaml-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-info-yaml-verify</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jenkins-cfg-merge/" target="_blank"><span class="status-success jenkins-status">ci-management-jenkins-cfg-merge</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jenkins-cfg-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-jenkins-cfg-verify</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jenkins-sandbox-cleanup/" target="_blank"><span class="status-failure jenkins-status">ci-management-jenkins-sandbox-cleanup</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jjb-deploy-job/" target="_blank"><span class="status-unknown jenkins-status">ci-management-jjb-deploy-job</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jjb-merge/" target="_blank"><span class="status-success jenkins-status">ci-management-jjb-merge</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jjb-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-jjb-verify</span></a><br><a href="https://jenkins.fd.io/job/ci-management-packer-merge-centos-7-builder/" target="_blank"><span class="status-failure jenkins-status">ci-management-packer-merge-centos-7-builder</span></a><br><a href="https://jenkins.fd.io/job/ci-management-packer-merge-centos-8-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-centos-8-builder</span></a><br><a href="https://jenkins.fd.io/job/ci-management-packer-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-verify</span></a><br><a href="https://jenkins.fd.io/job/ci-management-packer-verify-build-centos-7-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-7-builder</span></a><br><a href="https://jenkins.fd.io/job/ci-management-packer-verify-build-centos-8-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-8-builder</span></a> | 12 |
-| csit | <a href="https://github.com/fdio/csit/actions/workflows/csit-dpdk-perf-mrr-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-dpdk-perf-mrr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-report-dispatch.yml" target="_blank"><span class="status-no-runs workflow-status">csit-report-dispatch.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-terraform-aws-eb-version.yml" target="_blank"><span class="status-success workflow-status">csit-terraform-aws-eb-version.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-trex-perf-ndrpdr-weekly.yml" target="_blank"><span class="status-success workflow-status">csit-trex-perf-ndrpdr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-hoststack-daily.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-hoststack-daily.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-mrr-daily.yml" target="_blank"><span class="status-in-progress workflow-status">csit-vpp-perf-mrr-daily.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-mrr-weekly.yml" target="_blank"><span class="status-cancelled workflow-status">csit-vpp-perf-mrr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-ndrpdr-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-ndrpdr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-soak-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-soak-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/gerrit-comment-handler.yaml" target="_blank"><span class="status-success workflow-status">gerrit-comment-handler.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/gerrit-csit-verify-tox.yaml" target="_blank"><span class="status-success workflow-status">gerrit-csit-verify-tox.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/github2gerrit.yaml" target="_blank"><span class="status-failure workflow-status">github2gerrit.yaml</span></a> | 12 | <a href="https://jenkins.fd.io/job/csit-info-yaml-verify/" target="_blank"><span class="status-success jenkins-status">csit-info-yaml-verify</span></a><br><a href="https://jenkins.fd.io/job/csit-sonar/" target="_blank"><span class="status-failure jenkins-status">csit-sonar</span></a><br><a href="https://jenkins.fd.io/job/csit-verify-tox-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">csit-verify-tox-master-ubuntu2404-x86_64</span></a> | 3 |
-| vpp | <a href="https://github.com/fdio/vpp/actions/workflows/gerrit-merge.yml" target="_blank"><span class="status-failure workflow-status">gerrit-merge.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/gerrit-verify.yml" target="_blank"><span class="status-in-progress workflow-status">gerrit-verify.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/github2gerrit.yaml" target="_blank"><span class="status-failure workflow-status">github2gerrit.yaml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-csit-verify-api.yml" target="_blank"><span class="status-success workflow-status">vpp-csit-verify-api.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-merge-docs.yml" target="_blank"><span class="status-failure workflow-status">vpp-merge-docs.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-merge-maketest.yml" target="_blank"><span class="status-no-runs workflow-status">vpp-merge-maketest.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-arm-drivers.yml" target="_blank"><span class="status-success workflow-status">vpp-verify-arm-drivers.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-checkstyle.yml" target="_blank"><span class="status-no-runs workflow-status">vpp-verify-checkstyle.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-cov.yml" target="_blank"><span class="status-failure workflow-status">vpp-verify-cov.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-docs.yml" target="_blank"><span class="status-success workflow-status">vpp-verify-docs.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-dpdk-rdma-ver.yml" target="_blank"><span class="status-success workflow-status">vpp-verify-dpdk-rdma-ver.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-gcc.yml" target="_blank"><span class="status-no-runs workflow-status">vpp-verify-gcc.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-hst.yml" target="_blank"><span class="status-failure workflow-status">vpp-verify-hst.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-maketest.yml" target="_blank"><span class="status-failure workflow-status">vpp-verify-maketest.yml</span></a> | 14 | <a href="https://jenkins.fd.io/job/vpp-checkstyle-verify-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-checkstyle-verify-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-checkstyle-verify-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-checkstyle-verify-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-checkstyle-verify-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-checkstyle-verify-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-cov-verify-master-ubuntu2404-x86_64/" target="_blank"><span class="status-warning jenkins-status">vpp-cov-verify-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-aarch64-2n-grc/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-aarch64-2n-grc</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-aarch64-3n-alt/" target="_blank"><span class="status-unknown jenkins-status">vpp-csit-bisect-master-ubuntu2404-aarch64-3n-alt</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-aarch64-3n-oct/" target="_blank"><span class="status-unknown jenkins-status">vpp-csit-bisect-master-ubuntu2404-aarch64-3n-oct</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-2n-emr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-2n-emr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-2n-icx/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-2n-icx</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-2n-spr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-2n-spr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-2n-zn2/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-2n-zn2</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-3n-emr/" target="_blank"><span class="status-unknown jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-3n-emr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-3n-icx/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-3n-icx</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-3n-icxd/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-3n-icxd</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-3n-snr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-3n-snr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-3na-spr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-3na-spr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-3nb-spr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-3nb-spr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-api-crc-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-api-crc-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-api-crc-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-api-crc-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-api-crc-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-api-crc-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-aarch64-2n-grc/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-aarch64-2n-grc</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-aarch64-3n-alt/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-aarch64-3n-alt</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-aarch64-3n-oct/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-aarch64-3n-oct</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-emr/" target="_blank"><span class="status-failure jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-emr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-icx/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-icx</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-spr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-spr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-zn2/" target="_blank"><span class="status-failure jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-zn2</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-emr/" target="_blank"><span class="status-failure jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-emr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-icx/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-icx</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-icxd/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-icxd</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-snr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-snr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-3na-spr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-3na-spr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-3nb-spr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-3nb-spr</span></a><br><a href="https://jenkins.fd.io/job/vpp-debug-verify-master-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-debug-verify-master-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docs-merge-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docs-merge-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docs-merge-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docs-merge-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docs-merge-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docs-merge-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docs-verify-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docs-verify-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docs-verify-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docs-verify-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docs-verify-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docs-verify-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docsonly-merge-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docsonly-merge-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docsonly-merge-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docsonly-merge-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docsonly-merge-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docsonly-merge-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docsonly-verify-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docsonly-verify-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docsonly-verify-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docsonly-verify-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docsonly-verify-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docsonly-verify-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-dpdk-rdma-version-mismatch-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-dpdk-rdma-version-mismatch-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-gcc-verify-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-gcc-verify-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-gcc-verify-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-gcc-verify-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-gcc-verify-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-gcc-verify-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-info-yaml-verify/" target="_blank"><span class="status-success jenkins-status">vpp-info-yaml-verify</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2506-debian12-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2506-debian12-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2506-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2506-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2506-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2506-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2506-ubuntu2404-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2506-ubuntu2404-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2510-debian12-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2510-debian12-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2510-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2510-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2510-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2510-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2510-ubuntu2404-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2510-ubuntu2404-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-master-debian12-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-master-debian12-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-master-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-master-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-master-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-master-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-master-ubuntu2404-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-master-ubuntu2404-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-packagecloud-release-merge/" target="_blank"><span class="status-unknown jenkins-status">vpp-packagecloud-release-merge</span></a><br><a href="https://jenkins.fd.io/job/vpp-packagecloud-release-verify/" target="_blank"><span class="status-unknown jenkins-status">vpp-packagecloud-release-verify</span></a><br><a href="https://jenkins.fd.io/job/vpp-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">vpp-release-merge-master</span></a><br><a href="https://jenkins.fd.io/job/vpp-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">vpp-release-verify-master</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2506-debian12-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2506-debian12-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2506-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2506-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2506-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2506-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2506-ubuntu2404-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2506-ubuntu2404-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2510-debian12-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2510-debian12-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2510-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2510-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2510-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2510-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2510-ubuntu2404-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2510-ubuntu2404-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-arm-drivers-master-ubuntu2404-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-arm-drivers-master-ubuntu2404-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-2506-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-2506-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-2510-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-2510-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-2506-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-debug-2506-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-2506-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-debug-2506-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-debug-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-2510-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-debug-2510-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-2510-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-debug-2510-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-debug-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-master-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-debug-master-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-master-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-debug-master-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-debug-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-master-ubuntu2204-x86_64/" target="_blank"><span class="status-building jenkins-status">vpp-verify-hst-master-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-master-debian12-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-master-debian12-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-master-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-master-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-master-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-master-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-master-ubuntu2404-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-master-ubuntu2404-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-master-ubuntu2404-x86_64</span></a> | 98 |
+| csit | <a href="https://github.com/fdio/csit/actions/workflows/csit-cdash-version.yml" target="_blank"><span class="status-no-runs workflow-status">csit-cdash-version.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-dpdk-perf-mrr-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-dpdk-perf-mrr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-perf-report.yml" target="_blank"><span class="status-no-runs workflow-status">csit-perf-report.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-trex-perf-ndrpdr-weekly.yml" target="_blank"><span class="status-success workflow-status">csit-trex-perf-ndrpdr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-verify-tox.yaml" target="_blank"><span class="status-no-runs workflow-status">csit-verify-tox.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-hoststack-daily.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-hoststack-daily.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-mrr-daily.yml" target="_blank"><span class="status-in-progress workflow-status">csit-vpp-perf-mrr-daily.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-mrr-weekly.yml" target="_blank"><span class="status-cancelled workflow-status">csit-vpp-perf-mrr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-ndrpdr-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-ndrpdr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-soak-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-soak-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/gerrit-comment-handler.yaml" target="_blank"><span class="status-success workflow-status">gerrit-comment-handler.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/github2gerrit.yaml" target="_blank"><span class="status-failure workflow-status">github2gerrit.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/vpp-csit-bisect.yml" target="_blank"><span class="status-success workflow-status">vpp-csit-bisect.yml</span></a> | 13 | <a href="https://jenkins.fd.io/job/csit-info-yaml-verify/" target="_blank"><span class="status-success jenkins-status">csit-info-yaml-verify</span></a><br><a href="https://jenkins.fd.io/job/csit-sonar/" target="_blank"><span class="status-failure jenkins-status">csit-sonar</span></a><br><a href="https://jenkins.fd.io/job/csit-verify-tox-master-ubuntu2404-x86_64/" target="_blank"><span class="status-failure jenkins-status">csit-verify-tox-master-ubuntu2404-x86_64</span></a> | 3 |
+| vpp | <a href="https://github.com/fdio/vpp/actions/workflows/gerrit-comment-handler.yml" target="_blank"><span class="status-failure workflow-status">gerrit-comment-handler.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/gerrit-merge.yml" target="_blank"><span class="status-success workflow-status">gerrit-merge.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/gerrit-verify.yml" target="_blank"><span class="status-unknown workflow-status">gerrit-verify.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/github2gerrit.yaml" target="_blank"><span class="status-failure workflow-status">github2gerrit.yaml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-csit-verify-api.yml" target="_blank"><span class="status-success workflow-status">vpp-csit-verify-api.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-merge-docs.yml" target="_blank"><span class="status-failure workflow-status">vpp-merge-docs.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-merge-maketest.yml" target="_blank"><span class="status-no-runs workflow-status">vpp-merge-maketest.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-arm-drivers.yml" target="_blank"><span class="status-success workflow-status">vpp-verify-arm-drivers.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-checkstyle.yml" target="_blank"><span class="status-no-runs workflow-status">vpp-verify-checkstyle.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-cov.yml" target="_blank"><span class="status-failure workflow-status">vpp-verify-cov.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-docs.yml" target="_blank"><span class="status-success workflow-status">vpp-verify-docs.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-dpdk-rdma-ver.yml" target="_blank"><span class="status-success workflow-status">vpp-verify-dpdk-rdma-ver.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-gcc.yml" target="_blank"><span class="status-no-runs workflow-status">vpp-verify-gcc.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-hst.yml" target="_blank"><span class="status-failure workflow-status">vpp-verify-hst.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-maketest.yml" target="_blank"><span class="status-failure workflow-status">vpp-verify-maketest.yml</span></a> | 15 | <a href="https://jenkins.fd.io/job/vpp-checkstyle-verify-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-checkstyle-verify-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-checkstyle-verify-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-checkstyle-verify-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-checkstyle-verify-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-checkstyle-verify-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-cov-verify-master-ubuntu2404-x86_64/" target="_blank"><span class="status-warning jenkins-status">vpp-cov-verify-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-aarch64-2n-grc/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-aarch64-2n-grc</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-aarch64-3n-alt/" target="_blank"><span class="status-unknown jenkins-status">vpp-csit-bisect-master-ubuntu2404-aarch64-3n-alt</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-aarch64-3n-oct/" target="_blank"><span class="status-unknown jenkins-status">vpp-csit-bisect-master-ubuntu2404-aarch64-3n-oct</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-2n-emr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-2n-emr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-2n-icx/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-2n-icx</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-2n-spr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-2n-spr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-2n-zn2/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-2n-zn2</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-3n-emr/" target="_blank"><span class="status-unknown jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-3n-emr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-3n-icx/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-3n-icx</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-3n-icxd/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-3n-icxd</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-3n-snr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-3n-snr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-3na-spr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-3na-spr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-bisect-master-ubuntu2404-x86_64-3nb-spr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-bisect-master-ubuntu2404-x86_64-3nb-spr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-api-crc-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-api-crc-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-api-crc-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-api-crc-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-api-crc-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-api-crc-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-aarch64-2n-grc/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-aarch64-2n-grc</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-aarch64-3n-alt/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-aarch64-3n-alt</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-aarch64-3n-oct/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-aarch64-3n-oct</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-emr/" target="_blank"><span class="status-failure jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-emr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-icx/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-icx</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-spr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-spr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-zn2/" target="_blank"><span class="status-failure jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-2n-zn2</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-emr/" target="_blank"><span class="status-failure jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-emr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-icx/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-icx</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-icxd/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-icxd</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-snr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-3n-snr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-3na-spr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-3na-spr</span></a><br><a href="https://jenkins.fd.io/job/vpp-csit-verify-perf-master-ubuntu2404-x86_64-3nb-spr/" target="_blank"><span class="status-success jenkins-status">vpp-csit-verify-perf-master-ubuntu2404-x86_64-3nb-spr</span></a><br><a href="https://jenkins.fd.io/job/vpp-debug-verify-master-ubuntu2204-x86_64/" target="_blank"><span class="status-building jenkins-status">vpp-debug-verify-master-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docs-merge-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docs-merge-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docs-merge-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docs-merge-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docs-merge-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docs-merge-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docs-verify-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docs-verify-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docs-verify-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docs-verify-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docs-verify-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docs-verify-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docsonly-merge-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docsonly-merge-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docsonly-merge-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docsonly-merge-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docsonly-merge-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docsonly-merge-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docsonly-verify-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docsonly-verify-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docsonly-verify-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docsonly-verify-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-docsonly-verify-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-docsonly-verify-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-dpdk-rdma-version-mismatch-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-dpdk-rdma-version-mismatch-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-gcc-verify-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-gcc-verify-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-gcc-verify-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-gcc-verify-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-gcc-verify-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-gcc-verify-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-info-yaml-verify/" target="_blank"><span class="status-success jenkins-status">vpp-info-yaml-verify</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2506-debian12-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2506-debian12-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2506-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2506-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2506-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2506-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2506-ubuntu2404-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2506-ubuntu2404-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2510-debian12-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2510-debian12-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2510-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2510-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2510-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2510-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2510-ubuntu2404-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2510-ubuntu2404-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-master-debian12-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-master-debian12-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-master-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-master-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-master-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-master-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-master-ubuntu2404-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-master-ubuntu2404-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-merge-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-merge-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-packagecloud-release-merge/" target="_blank"><span class="status-unknown jenkins-status">vpp-packagecloud-release-merge</span></a><br><a href="https://jenkins.fd.io/job/vpp-packagecloud-release-verify/" target="_blank"><span class="status-unknown jenkins-status">vpp-packagecloud-release-verify</span></a><br><a href="https://jenkins.fd.io/job/vpp-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">vpp-release-merge-master</span></a><br><a href="https://jenkins.fd.io/job/vpp-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">vpp-release-verify-master</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2506-debian12-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2506-debian12-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2506-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2506-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2506-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2506-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2506-ubuntu2404-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2506-ubuntu2404-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2510-debian12-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2510-debian12-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2510-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2510-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2510-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2510-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2510-ubuntu2404-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2510-ubuntu2404-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-arm-drivers-master-ubuntu2404-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-arm-drivers-master-ubuntu2404-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-2506-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-2506-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-2510-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-2510-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-2506-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-debug-2506-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-2506-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-debug-2506-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-2506-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-debug-2506-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-2510-ubuntu2204-aarch64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-debug-2510-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-2510-ubuntu2204-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-debug-2510-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-2510-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">vpp-verify-hst-debug-2510-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-master-ubuntu2204-aarch64/" target="_blank"><span class="status-building jenkins-status">vpp-verify-hst-debug-master-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-master-ubuntu2204-x86_64/" target="_blank"><span class="status-building jenkins-status">vpp-verify-hst-debug-master-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-debug-master-ubuntu2404-x86_64/" target="_blank"><span class="status-building jenkins-status">vpp-verify-hst-debug-master-ubuntu2404-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-hst-master-ubuntu2204-x86_64/" target="_blank"><span class="status-building jenkins-status">vpp-verify-hst-master-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-master-debian12-x86_64/" target="_blank"><span class="status-building jenkins-status">vpp-verify-master-debian12-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-master-ubuntu2204-aarch64/" target="_blank"><span class="status-building jenkins-status">vpp-verify-master-ubuntu2204-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-master-ubuntu2204-x86_64/" target="_blank"><span class="status-building jenkins-status">vpp-verify-master-ubuntu2204-x86_64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-master-ubuntu2404-aarch64/" target="_blank"><span class="status-building jenkins-status">vpp-verify-master-ubuntu2404-aarch64</span></a><br><a href="https://jenkins.fd.io/job/vpp-verify-master-ubuntu2404-x86_64/" target="_blank"><span class="status-building jenkins-status">vpp-verify-master-ubuntu2404-x86_64</span></a> | 98 |
 
 **Total:** 4 repositories with CI/CD jobs
 
