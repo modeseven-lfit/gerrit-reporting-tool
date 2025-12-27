@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: FDio
 
-**Generated:** December 26, 2025 at 07:21 UTC
+**Generated:** December 27, 2025 at 07:18 UTC
 **Schema Version:** 1.2.0
 
 ## 📈 Global Summary
@@ -17,7 +17,7 @@
 | Inactive Gerrit Projects | 3 | 42.9% |
 | No Apparent Commits | 0 | 0.0% |
 | Total Commits | 1.4K | - |
-| Total Lines of Code | 229.3K | - |
+| Total Lines of Code | 230.1K | - |
 
 ## 🏢 Top Organizations
 
@@ -27,7 +27,7 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 |------|--------------|--------------|---------|-----|-------|----------------|---------------------|
-| 1 | cisco.com | 157 | 955 | +14084 | 227360 | +14.7 | 5 |
+| 1 | cisco.com | 157 | 956 | +14236 | 228734 | +14.9 | 5 |
 | 2 | gmail.com | 113 | 197 | +13644 | 31306 | +69.3 | 5 |
 | 3 | icloud.com | 1 | 148 | +3467 | 89939 | +23.4 | 4 |
 | 4 | marvell.com | 14 | 28 | +1127 | 1635 | +40.2 | 3 |
@@ -196,7 +196,7 @@ The data presented in the table below covers the past 365 days.
 | 3 | Dave Wallace | 154 | +10147 | 26961 | +65.9 | 5 | gmail.com |
 | 4 | Peter Mikus | 148 | +3467 | 89939 | +23.4 | 4 | icloud.com |
 | 5 | Tibor Frank | 125 | -1307 | 18451 | -10.5 | 3 | cisco.com |
-| 6 | Damjan Marion | 118 | -28620 | 78406 | -242.5 | 2 | cisco.com |
+| 6 | Damjan Marion | 119 | -28468 | 79780 | -239.2 | 2 | cisco.com |
 | 7 | Adrian Villin | 90 | +7052 | 22440 | +78.4 | 1 | cisco.com |
 | 8 | Vratko Polak | 65 | +703 | 36975 | +10.8 | 4 | cisco.com |
 | 9 | Semir Sionek | 51 | +1694 | 2852 | +33.2 | 2 | cisco.com |
@@ -353,10 +353,10 @@ The data presented in the table below covers the past 365 days.
 | 160 | Chris Luke | 0 | +0 | 0 | - | 2 | flirble.org |
 | 161 | Chris Luke | 0 | +0 | 0 | - | 1 | comcast.com |
 | 162 | Christian Dechamplain (cdechamp) | 0 | +0 | 0 | - | 1 | cisco.com |
-| 163 | Christian E. Hopps | 0 | +0 | 0 | - | 1 | chopps.org |
-| 164 | Christian Ehrhardt | 0 | +0 | 0 | - | 1 | canonical.com |
-| 165 | Christian Hopps | 0 | +0 | 0 | - | 1 | labn.net |
-| 166 | Christian Hopps | 0 | +0 | 0 | - | 1 | gmail.com |
+| 163 | Christian E. Hopps | 0 | +0 | 0 | - | 1 | gmail.com |
+| 164 | Christian E. Hopps | 0 | +0 | 0 | - | 1 | chopps.org |
+| 165 | Christian Ehrhardt | 0 | +0 | 0 | - | 1 | canonical.com |
+| 166 | Christian Hopps | 0 | +0 | 0 | - | 1 | labn.net |
 | 167 | Christian Svensson | 0 | +0 | 0 | - | 1 | cmd.nu |
 | 168 | Christophe Fontaine | 0 | +0 | 0 | - | 1 | enea.com |
 | 169 | Christophe Fontaine | 0 | +0 | 0 | - | 1 | qosmos.com |
@@ -846,13 +846,13 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 |----------------|---------|---------|--------------|---------------|------------------|--------|
-| vpp | 1033 | +60907 | 78 | 3 | 2025-12-23 | ✅ |
-| csit | 323 | +3500 | 8 | 4 | 2025-12-22 | ✅ |
-| ci-management | 76 | -3139 | 11 | 3 | 2025-12-23 | ✅ |
-| .github | 9 | +3703 | 2 | 5 | 2025-12-21 | ✅ |
-| main_test | 0 | +0 | 0 | 1,882 | 2020-10-31 | 🛑 |
-| test_injector | 0 | +0 | 0 | 3,404 | 2016-08-31 | 🛑 |
-| vppsb | 0 | +0 | 0 | 2,407 | 2019-05-25 | 🛑 |
+| vpp | 1034 | +61059 | 78 | 5 | 2025-12-22 | ✅ |
+| csit | 323 | +3500 | 8 | 5 | 2025-12-22 | ✅ |
+| ci-management | 76 | -3139 | 11 | 4 | 2025-12-23 | ✅ |
+| .github | 9 | +3703 | 2 | 6 | 2025-12-21 | ✅ |
+| main_test | 0 | +0 | 0 | 1,883 | 2020-10-31 | 🛑 |
+| test_injector | 0 | +0 | 0 | 3,405 | 2016-08-31 | 🛑 |
+| vppsb | 0 | +0 | 0 | 2,408 | 2019-05-25 | 🛑 |
 
 **Total:** 7 repositories
 
@@ -875,9 +875,9 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | GitHub Workflows | Workflow Count | Jenkins Jobs | Job Count |
 |----------------|-------------------|----------------|--------------|-----------|
-| .github | <a href="https://github.com/fdio/.github/actions/workflows/gerrit-required-verify-non-voting.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-required-verify-non-voting.yaml</span></a><br><a href="https://github.com/fdio/.github/actions/workflows/gerrit-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-verify.yaml</span></a> | 2 |  | 0 |
+| .github | <a href="https://github.com/fdio/.github/actions/workflows/gerrit-required-verify-non-voting.yaml" target="_blank"><span class="status-success workflow-status">gerrit-required-verify-non-voting.yaml</span></a><br><a href="https://github.com/fdio/.github/actions/workflows/gerrit-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-verify.yaml</span></a> | 2 |  | 0 |
 | ci-management | <a href="https://github.com/fdio/ci-management/actions/workflows/gerrit-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-verify.yaml</span></a> | 1 | <a href="https://jenkins.fd.io/job/ci-management-info-yaml-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-info-yaml-verify</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jenkins-cfg-merge/" target="_blank"><span class="status-success jenkins-status">ci-management-jenkins-cfg-merge</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jenkins-cfg-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-jenkins-cfg-verify</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jenkins-sandbox-cleanup/" target="_blank"><span class="status-failure jenkins-status">ci-management-jenkins-sandbox-cleanup</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jjb-deploy-job/" target="_blank"><span class="status-unknown jenkins-status">ci-management-jjb-deploy-job</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jjb-merge/" target="_blank"><span class="status-success jenkins-status">ci-management-jjb-merge</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jjb-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-jjb-verify</span></a><br><a href="https://jenkins.fd.io/job/ci-management-packer-merge-centos-7-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-7-builder</span></a><br><a href="https://jenkins.fd.io/job/ci-management-packer-merge-centos-8-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-centos-8-builder</span></a><br><a href="https://jenkins.fd.io/job/ci-management-packer-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-verify</span></a><br><a href="https://jenkins.fd.io/job/ci-management-packer-verify-build-centos-7-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-7-builder</span></a><br><a href="https://jenkins.fd.io/job/ci-management-packer-verify-build-centos-8-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-8-builder</span></a> | 12 |
-| csit | <a href="https://github.com/fdio/csit/actions/workflows/csit-cdash-version.yml" target="_blank"><span class="status-no-runs workflow-status">csit-cdash-version.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-dpdk-perf-mrr-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-dpdk-perf-mrr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-perf-report.yml" target="_blank"><span class="status-no-runs workflow-status">csit-perf-report.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-trex-perf-ndrpdr-weekly.yml" target="_blank"><span class="status-success workflow-status">csit-trex-perf-ndrpdr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-verify-tox.yaml" target="_blank"><span class="status-no-runs workflow-status">csit-verify-tox.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-hoststack-daily.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-hoststack-daily.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-mrr-daily.yml" target="_blank"><span class="status-in-progress workflow-status">csit-vpp-perf-mrr-daily.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-mrr-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-mrr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-ndrpdr-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-ndrpdr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-soak-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-soak-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/gerrit-comment-handler.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-comment-handler.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/github2gerrit.yaml" target="_blank"><span class="status-failure workflow-status">github2gerrit.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/vpp-csit-bisect.yml" target="_blank"><span class="status-success workflow-status">vpp-csit-bisect.yml</span></a> | 13 | <a href="https://jenkins.fd.io/job/csit-info-yaml-verify/" target="_blank"><span class="status-success jenkins-status">csit-info-yaml-verify</span></a><br><a href="https://jenkins.fd.io/job/csit-sonar/" target="_blank"><span class="status-failure jenkins-status">csit-sonar</span></a><br><a href="https://jenkins.fd.io/job/csit-verify-tox-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">csit-verify-tox-master-ubuntu2404-x86_64</span></a> | 3 |
+| csit | <a href="https://github.com/fdio/csit/actions/workflows/csit-cdash-version.yml" target="_blank"><span class="status-no-runs workflow-status">csit-cdash-version.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-dpdk-perf-mrr-weekly.yml" target="_blank"><span class="status-in-progress workflow-status">csit-dpdk-perf-mrr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-perf-report.yml" target="_blank"><span class="status-no-runs workflow-status">csit-perf-report.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-trex-perf-ndrpdr-weekly.yml" target="_blank"><span class="status-success workflow-status">csit-trex-perf-ndrpdr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-verify-tox.yaml" target="_blank"><span class="status-no-runs workflow-status">csit-verify-tox.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-hoststack-daily.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-hoststack-daily.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-mrr-daily.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-mrr-daily.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-mrr-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-mrr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-ndrpdr-weekly.yml" target="_blank"><span class="status-in-progress workflow-status">csit-vpp-perf-ndrpdr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-soak-weekly.yml" target="_blank"><span class="status-in-progress workflow-status">csit-vpp-perf-soak-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/gerrit-comment-handler.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-comment-handler.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/github2gerrit.yaml" target="_blank"><span class="status-failure workflow-status">github2gerrit.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/vpp-csit-bisect.yml" target="_blank"><span class="status-success workflow-status">vpp-csit-bisect.yml</span></a> | 13 | <a href="https://jenkins.fd.io/job/csit-info-yaml-verify/" target="_blank"><span class="status-success jenkins-status">csit-info-yaml-verify</span></a><br><a href="https://jenkins.fd.io/job/csit-sonar/" target="_blank"><span class="status-failure jenkins-status">csit-sonar</span></a><br><a href="https://jenkins.fd.io/job/csit-verify-tox-master-ubuntu2404-x86_64/" target="_blank"><span class="status-success jenkins-status">csit-verify-tox-master-ubuntu2404-x86_64</span></a> | 3 |
 | vpp | <a href="https://github.com/fdio/vpp/actions/workflows/gerrit-comment-handler.yml" target="_blank"><span class="status-failure workflow-status">gerrit-comment-handler.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/gerrit-merge.yml" target="_blank"><span class="status-success workflow-status">gerrit-merge.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/gerrit-verify.yml" target="_blank"><span class="status-failure workflow-status">gerrit-verify.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/github2gerrit.yaml" target="_blank"><span class="status-failure workflow-status">github2gerrit.yaml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/periodic-vpp-verify-cov.yml" target="_blank"><span class="status-success workflow-status">periodic-vpp-verify-cov.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/periodic-vpp-verify-dpdk-rdma-ver.yml" target="_blank"><span class="status-success workflow-status">periodic-vpp-verify-dpdk-rdma-ver.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/periodic-vpp-verify-hst.yml" target="_blank"><span class="status-success workflow-status">periodic-vpp-verify-hst.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-csit-verify-api.yml" target="_blank"><span class="status-success workflow-status">vpp-csit-verify-api.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-merge-docs.yml" target="_blank"><span class="status-failure workflow-status">vpp-merge-docs.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-merge-maketest.yml" target="_blank"><span class="status-no-runs workflow-status">vpp-merge-maketest.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-arm-drivers.yml" target="_blank"><span class="status-success workflow-status">vpp-verify-arm-drivers.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-checkstyle.yml" target="_blank"><span class="status-no-runs workflow-status">vpp-verify-checkstyle.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-docs.yml" target="_blank"><span class="status-success workflow-status">vpp-verify-docs.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-gcc.yml" target="_blank"><span class="status-no-runs workflow-status">vpp-verify-gcc.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-hst.yml" target="_blank"><span class="status-failure workflow-status">vpp-verify-hst.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-maketest.yml" target="_blank"><span class="status-failure workflow-status">vpp-verify-maketest.yml</span></a> | 16 | <a href="https://jenkins.fd.io/job/vpp-cov-verify-master-ubuntu2404-x86_64/" target="_blank"><span class="status-warning jenkins-status">vpp-cov-verify-master-ubuntu2404-x86_64</span></a> | 1 |
 
 **Total:** 4 repositories with CI/CD jobs
