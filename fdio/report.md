@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: FDio
 
-**Generated:** December 30, 2025 at 07:22 UTC
+**Generated:** December 31, 2025 at 07:23 UTC
 **Schema Version:** 1.2.0
 
 ## 📈 Global Summary
@@ -17,7 +17,7 @@
 | Inactive Gerrit Projects | 3 | 42.9% |
 | No Apparent Commits | 0 | 0.0% |
 | Total Commits | 1.4K | - |
-| Total Lines of Code | 230.7K | - |
+| Total Lines of Code | 230.6K | - |
 
 ## 🏢 Top Organizations
 
@@ -27,8 +27,8 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 |------|--------------|--------------|---------|-----|-------|----------------|---------------------|
-| 1 | cisco.com | 157 | 957 | +14657 | 229521 | +15.3 | 5 |
-| 2 | gmail.com | 113 | 200 | +13646 | 31322 | +68.2 | 5 |
+| 1 | cisco.com | 157 | 956 | +14596 | 229418 | +15.3 | 5 |
+| 2 | gmail.com | 113 | 202 | +13650 | 31370 | +67.6 | 5 |
 | 3 | icloud.com | 1 | 148 | +3467 | 89939 | +23.4 | 4 |
 | 4 | marvell.com | 14 | 28 | +1127 | 1635 | +40.2 | 3 |
 | 5 | intel.com | 59 | 14 | +405 | 811 | +28.9 | 4 |
@@ -37,11 +37,11 @@ The data presented in the table below covers the past 365 days.
 | 8 | netgate.com | 14 | 9 | +376 | 570 | +41.8 | 1 |
 | 9 | protonmail.ch | 1 | 8 | -1213 | 1733 | -151.6 | 2 |
 | 10 | travelping.com | 4 | 7 | +73 | 175 | +10.4 | 1 |
-| 11 | qq.com | 3 | 6 | +63 | 153 | +10.5 | 1 |
-| 12 | barachs.net | 2 | 5 | +21 | 239 | +4.2 | 2 |
-| 13 | mts.ru | 2 | 5 | +199 | 419 | +39.8 | 1 |
-| 14 | employees.org | 1 | 4 | +14028 | 14172 | +3507.0 | 1 |
-| 15 | ipng.nl | 1 | 4 | +896 | 1636 | +224.0 | 1 |
+| 11 | barachs.net | 2 | 6 | +21 | 241 | +3.5 | 2 |
+| 12 | mts.ru | 2 | 5 | +199 | 419 | +39.8 | 1 |
+| 13 | employees.org | 1 | 4 | +14028 | 14172 | +3507.0 | 1 |
+| 14 | ipng.nl | 1 | 4 | +896 | 1636 | +224.0 | 1 |
+| 15 | qq.com | 3 | 4 | +51 | 133 | +12.8 | 1 |
 | 16 | 46labs.com | 2 | 3 | +55 | 57 | +18.3 | 1 |
 | 17 | arm.com | 17 | 3 | +171 | 199 | +57.0 | 2 |
 | 18 | googlemail.com | 1 | 3 | +196 | 196 | +65.3 | 1 |
@@ -192,8 +192,8 @@ The data presented in the table below covers the past 365 days.
 | Rank | Contributor | Commits | LOC | Δ LOC | Avg LOC/Commit | Repositories | Organization |
 |------|-------------|---------|-----|-------|----------------|--------------|--------------|
 | 1 | Florin Coras | 204 | +5682 | 14654 | +27.9 | 3 | cisco.com |
-| 2 | Matus Fabian | 197 | +23737 | 39895 | +120.5 | 2 | cisco.com |
-| 3 | Dave Wallace | 157 | +10149 | 26977 | +64.6 | 5 | gmail.com |
+| 2 | Matus Fabian | 196 | +23676 | 39792 | +120.8 | 2 | cisco.com |
+| 3 | Dave Wallace | 159 | +10153 | 27025 | +63.9 | 5 | gmail.com |
 | 4 | Peter Mikus | 148 | +3467 | 89939 | +23.4 | 4 | icloud.com |
 | 5 | Tibor Frank | 125 | -1307 | 18451 | -10.5 | 3 | cisco.com |
 | 6 | Damjan Marion | 120 | -28047 | 80567 | -233.7 | 2 | cisco.com |
@@ -213,18 +213,18 @@ The data presented in the table below covers the past 365 days.
 | 20 | Peter Mikus | 8 | -1213 | 1733 | -151.6 | 2 | protonmail.ch |
 | 21 | Vladimir Zhigulin | 7 | +73 | 175 | +10.4 | 1 | travelping.com |
 | 22 | Piotr Bronowski | 6 | +317 | 657 | +52.8 | 1 | intel.com |
-| 23 | fenglei | 6 | +63 | 153 | +10.5 | 1 | qq.com |
-| 24 | Jeff Shaw | 6 | +23 | 81 | +3.8 | 2 | intel.com |
+| 23 | Jeff Shaw | 6 | +23 | 81 | +3.8 | 2 | intel.com |
+| 24 | Dave Barach | 6 | +21 | 241 | +3.5 | 2 | barachs.net |
 | 25 | Hadi Rayan Al-Sandid | 5 | +269 | 329 | +53.8 | 1 | cisco.com |
 | 26 | Nithinsen Kaithakadan | 5 | +94 | 258 | +18.8 | 1 | marvell.com |
 | 27 | Vladimir Smirnov | 5 | +55 | 97 | +11.0 | 1 | gmail.com |
-| 28 | Dave Barach | 5 | +21 | 239 | +4.2 | 2 | barachs.net |
-| 29 | Ole Troan | 4 | +14028 | 14172 | +3507.0 | 1 | employees.org |
-| 30 | Pim van Pelt | 4 | +896 | 1636 | +224.0 | 1 | ipng.nl |
-| 31 | Varun Rapelly | 4 | +288 | 478 | +72.0 | 1 | marvell.com |
-| 32 | Артем Глазычев | 4 | +199 | 417 | +49.8 | 1 | mts.ru |
-| 33 | Nicolas PLANEL | 4 | +154 | 164 | +38.5 | 1 | cisco.com |
-| 34 | Maxime Peim | 4 | +64 | 98 | +16.0 | 1 | cisco.com |
+| 28 | Ole Troan | 4 | +14028 | 14172 | +3507.0 | 1 | employees.org |
+| 29 | Pim van Pelt | 4 | +896 | 1636 | +224.0 | 1 | ipng.nl |
+| 30 | Varun Rapelly | 4 | +288 | 478 | +72.0 | 1 | marvell.com |
+| 31 | Артем Глазычев | 4 | +199 | 417 | +49.8 | 1 | mts.ru |
+| 32 | Nicolas PLANEL | 4 | +154 | 164 | +38.5 | 1 | cisco.com |
+| 33 | Maxime Peim | 4 | +64 | 98 | +16.0 | 1 | cisco.com |
+| 34 | fenglei | 4 | +51 | 133 | +12.8 | 1 | qq.com |
 | 35 | Matthew Smith | 4 | -17 | 61 | -4.2 | 1 | netgate.com |
 | 36 | Ivan Shvedunov | 3 | +393 | 489 | +131.0 | 1 | netgate.com |
 | 37 | nucleo | 3 | +196 | 196 | +65.3 | 1 | googlemail.com |
@@ -846,13 +846,13 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 |----------------|---------|---------|--------------|---------------|------------------|--------|
-| vpp | 1037 | +61482 | 78 | 3 | 2025-12-27 | ✅ |
-| csit | 323 | +3500 | 8 | 8 | 2025-12-22 | ✅ |
-| ci-management | 76 | -3139 | 11 | 7 | 2025-12-23 | ✅ |
-| .github | 9 | +3703 | 2 | 9 | 2025-12-21 | ✅ |
-| main_test | 0 | +0 | 0 | 1,886 | 2020-10-31 | 🛑 |
-| test_injector | 0 | +0 | 0 | 3,408 | 2016-08-31 | 🛑 |
-| vppsb | 0 | +0 | 0 | 2,411 | 2019-05-25 | 🛑 |
+| vpp | 1036 | +61409 | 78 | 0 | 2025-12-31 | ✅ |
+| csit | 323 | +3500 | 8 | 9 | 2025-12-22 | ✅ |
+| ci-management | 76 | -3139 | 11 | 8 | 2025-12-23 | ✅ |
+| .github | 10 | +3707 | 2 | 0 | 2025-12-31 | ✅ |
+| main_test | 0 | +0 | 0 | 1,887 | 2020-10-31 | 🛑 |
+| test_injector | 0 | +0 | 0 | 3,409 | 2016-08-31 | 🛑 |
+| vppsb | 0 | +0 | 0 | 2,412 | 2019-05-25 | 🛑 |
 
 **Total:** 7 repositories
 
@@ -864,8 +864,8 @@ The data presented in the table below covers the past 365 days.
 | csit | Robot Framework | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | ci-management | jjb | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | .github | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
-| main_test | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | test_injector | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| main_test | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vppsb | C | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 
 ## 🏁 Deployed CI/CD Jobs
