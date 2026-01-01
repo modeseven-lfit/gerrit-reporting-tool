@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: FDio
 
-**Generated:** December 31, 2025 at 07:23 UTC
+**Generated:** January 01, 2026 at 07:22 UTC
 **Schema Version:** 1.2.0
 
 ## 📈 Global Summary
@@ -17,7 +17,7 @@
 | Inactive Gerrit Projects | 3 | 42.9% |
 | No Apparent Commits | 0 | 0.0% |
 | Total Commits | 1.4K | - |
-| Total Lines of Code | 230.6K | - |
+| Total Lines of Code | 230.7K | - |
 
 ## 🏢 Top Organizations
 
@@ -27,7 +27,7 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 |------|--------------|--------------|---------|-----|-------|----------------|---------------------|
-| 1 | cisco.com | 157 | 956 | +14596 | 229418 | +15.3 | 5 |
+| 1 | cisco.com | 157 | 958 | +3801 | 240221 | +4.0 | 5 |
 | 2 | gmail.com | 113 | 202 | +13650 | 31370 | +67.6 | 5 |
 | 3 | icloud.com | 1 | 148 | +3467 | 89939 | +23.4 | 4 |
 | 4 | marvell.com | 14 | 28 | +1127 | 1635 | +40.2 | 3 |
@@ -196,7 +196,7 @@ The data presented in the table below covers the past 365 days.
 | 3 | Dave Wallace | 159 | +10153 | 27025 | +63.9 | 5 | gmail.com |
 | 4 | Peter Mikus | 148 | +3467 | 89939 | +23.4 | 4 | icloud.com |
 | 5 | Tibor Frank | 125 | -1307 | 18451 | -10.5 | 3 | cisco.com |
-| 6 | Damjan Marion | 120 | -28047 | 80567 | -233.7 | 2 | cisco.com |
+| 6 | Damjan Marion | 121 | -38842 | 91362 | -321.0 | 2 | cisco.com |
 | 7 | Adrian Villin | 90 | +7052 | 22440 | +78.4 | 1 | cisco.com |
 | 8 | Vratko Polak | 65 | +703 | 36975 | +10.8 | 4 | cisco.com |
 | 9 | Semir Sionek | 51 | +1694 | 2852 | +33.2 | 2 | cisco.com |
@@ -234,21 +234,21 @@ The data presented in the table below covers the past 365 days.
 | 41 | Neil McKee | 2 | +1624 | 3384 | +812.0 | 1 | inmon.com |
 | 42 | Aritra Basu | 2 | +1229 | 1231 | +614.5 | 1 | cisco.com |
 | 43 | Kai Ji | 2 | +65 | 73 | +32.5 | 2 | intel.com |
-| 44 | Joel Godfrey-Smith | 2 | +54 | 66 | +27.0 | 1 | labn.net |
-| 45 | Denys Haryachyy | 2 | +50 | 56 | +25.0 | 1 | gmail.com |
-| 46 | Nathan Skrzypczak | 2 | +44 | 200 | +22.0 | 1 | gmail.com |
-| 47 | Nicolas PLANEL | 2 | +27 | 83 | +13.5 | 1 | gmail.com |
-| 48 | Guillaume Solignac | 2 | +15 | 57 | +7.5 | 1 | cisco.com |
-| 49 | Stanislav Zaikin | 2 | +12 | 14 | +6.0 | 1 | 46labs.com |
-| 50 | wanghb14 | 2 | +4 | 32 | +2.0 | 1 | chinatelecom.cn |
-| 51 | Jimmy Björklund | 1 | +575 | 1259 | +575.0 | 1 | hotmail.se |
-| 52 | Masih Nilforoush | 1 | +516 | 858 | +516.0 | 1 | x-ion.de |
-| 53 | Darrel Tan | 1 | +431 | 561 | +431.0 | 1 | gmail.com |
-| 54 | Akeel Ali | 1 | +384 | 436 | +384.0 | 1 | gmail.com |
-| 55 | Changbin Park | 1 | +224 | 238 | +224.0 | 1 | gmail.com |
-| 56 | Mihut Aronovici | 1 | +122 | 130 | +122.0 | 1 | cisco.com |
-| 57 | Satha Rao | 1 | +100 | 112 | +100.0 | 1 | marvell.com |
-| 58 | Jerome Tollet | 1 | +59 | 59 | +59.0 | 1 | cisco.com |
+| 44 | Jerome Tollet | 2 | +59 | 67 | +29.5 | 1 | cisco.com |
+| 45 | Joel Godfrey-Smith | 2 | +54 | 66 | +27.0 | 1 | labn.net |
+| 46 | Denys Haryachyy | 2 | +50 | 56 | +25.0 | 1 | gmail.com |
+| 47 | Nathan Skrzypczak | 2 | +44 | 200 | +22.0 | 1 | gmail.com |
+| 48 | Nicolas PLANEL | 2 | +27 | 83 | +13.5 | 1 | gmail.com |
+| 49 | Guillaume Solignac | 2 | +15 | 57 | +7.5 | 1 | cisco.com |
+| 50 | Stanislav Zaikin | 2 | +12 | 14 | +6.0 | 1 | 46labs.com |
+| 51 | wanghb14 | 2 | +4 | 32 | +2.0 | 1 | chinatelecom.cn |
+| 52 | Jimmy Björklund | 1 | +575 | 1259 | +575.0 | 1 | hotmail.se |
+| 53 | Masih Nilforoush | 1 | +516 | 858 | +516.0 | 1 | x-ion.de |
+| 54 | Darrel Tan | 1 | +431 | 561 | +431.0 | 1 | gmail.com |
+| 55 | Akeel Ali | 1 | +384 | 436 | +384.0 | 1 | gmail.com |
+| 56 | Changbin Park | 1 | +224 | 238 | +224.0 | 1 | gmail.com |
+| 57 | Mihut Aronovici | 1 | +122 | 130 | +122.0 | 1 | cisco.com |
+| 58 | Satha Rao | 1 | +100 | 112 | +100.0 | 1 | marvell.com |
 | 59 | Kirill A. Khalitov | 1 | +43 | 43 | +43.0 | 1 | 46labs.com |
 | 60 | Bartlomiej Leszak | 1 | +31 | 31 | +31.0 | 1 | gmail.com |
 | 61 | Konstantin Kogdenko | 1 | +24 | 46 | +24.0 | 1 | gmail.com |
@@ -846,13 +846,13 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 |----------------|---------|---------|--------------|---------------|------------------|--------|
-| vpp | 1036 | +61409 | 78 | 0 | 2025-12-31 | ✅ |
-| csit | 323 | +3500 | 8 | 9 | 2025-12-22 | ✅ |
-| ci-management | 76 | -3139 | 11 | 8 | 2025-12-23 | ✅ |
-| .github | 10 | +3707 | 2 | 0 | 2025-12-31 | ✅ |
-| main_test | 0 | +0 | 0 | 1,887 | 2020-10-31 | 🛑 |
-| test_injector | 0 | +0 | 0 | 3,409 | 2016-08-31 | 🛑 |
-| vppsb | 0 | +0 | 0 | 2,412 | 2019-05-25 | 🛑 |
+| vpp | 1038 | +50614 | 78 | 2 | 2025-12-30 | ✅ |
+| csit | 323 | +3500 | 8 | 10 | 2025-12-22 | ✅ |
+| ci-management | 76 | -3139 | 11 | 9 | 2025-12-23 | ✅ |
+| .github | 10 | +3707 | 2 | 1 | 2025-12-31 | ✅ |
+| main_test | 0 | +0 | 0 | 1,888 | 2020-10-31 | 🛑 |
+| test_injector | 0 | +0 | 0 | 3,410 | 2016-08-31 | 🛑 |
+| vppsb | 0 | +0 | 0 | 2,413 | 2019-05-25 | 🛑 |
 
 **Total:** 7 repositories
 
