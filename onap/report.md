@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: ONAP
 
-**Generated:** January 05, 2026 at 07:24 UTC
+**Generated:** January 06, 2026 at 07:21 UTC
 **Schema Version:** 1.2.0
 
 ## 📈 Global Summary
@@ -17,7 +17,7 @@
 | Inactive Gerrit Projects | 34 | 19.1% |
 | No Apparent Commits | 0 | 0.0% |
 | Total Commits | 2.8K | - |
-| Total Lines of Code | 479.0K | - |
+| Total Lines of Code | 479.9K | - |
 
 ## 🏢 Top Organizations
 
@@ -27,15 +27,15 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 |------|--------------|--------------|---------|-----|-------|----------------|---------------------|
-| 1 | est.tech | 109 | 1439 | +79604 | 302938 | +55.3 | 88 |
-| 2 | telekom.de | 11 | 613 | +46083 | 249591 | +75.2 | 72 |
+| 1 | est.tech | 109 | 1445 | +78973 | 305187 | +54.7 | 88 |
+| 2 | telekom.de | 11 | 614 | +46083 | 249679 | +75.1 | 72 |
 | 3 | linuxfoundation.org | 20 | 264 | +5262 | 10626 | +19.9 | 177 |
 | 4 | techmahindra.com | 44 | 119 | +16612 | 40658 | +139.6 | 38 |
 | 5 | att.com | 374 | 118 | +1204 | 12650 | +10.2 | 101 |
 | 6 | t-systems.com | 27 | 83 | +52556 | 78692 | +633.2 | 31 |
 | 7 | t-mobile.pl | 7 | 59 | +2325 | 2689 | +39.4 | 64 |
 | 8 | chinamobile.com | 24 | 45 | +1135 | 2791 | +25.2 | 31 |
-| 9 | accenture.com | 12 | 39 | +8418 | 17562 | +215.8 | 13 |
+| 9 | accenture.com | 12 | 38 | +8416 | 17530 | +221.5 | 13 |
 | 10 | github.com | 2 | 33 | +0 | 68 | +0.0 | 5 |
 | 11 | highstreet-technologies.com | 10 | 7 | -17160 | 43652 | -2451.4 | 11 |
 | 12 | geisibee.de | 1 | 5 | +13 | 27 | +2.6 | 1 |
@@ -160,11 +160,11 @@ The data presented in the table below covers the past 365 days.
 | 3 | Kevin Sandi | 187 | +2494 | 6160 | +13.3 | 114 | linuxfoundation.org |
 | 4 | ToineSiebelink | 153 | +752 | 20364 | +4.9 | 5 | est.tech |
 | 5 | mpriyank | 130 | +6671 | 9279 | +51.3 | 4 | est.tech |
-| 6 | adheli.tavares | 110 | -9334 | 29652 | -84.9 | 15 | est.tech |
-| 7 | Lee Anjella Macabuhay | 109 | -1107 | 8363 | -10.2 | 3 | est.tech |
+| 6 | Lee Anjella Macabuhay | 110 | -1106 | 8374 | -10.1 | 3 | est.tech |
+| 7 | adheli.tavares | 110 | -9334 | 29652 | -84.9 | 15 | est.tech |
 | 8 | Dan Timoney | 108 | +983 | 11777 | +9.1 | 19 | att.com |
 | 9 | Daniel Hanrahan | 100 | +36827 | 50193 | +368.3 | 14 | est.tech |
-| 10 | FrancescoFioraEst | 86 | +8880 | 29590 | +103.3 | 10 | est.tech |
+| 10 | FrancescoFioraEst | 88 | +8244 | 31810 | +93.7 | 10 | est.tech |
 | 11 | Andreas Geissler | 70 | +45799 | 54093 | +654.3 | 21 | telekom.de |
 | 12 | rameshiyer27 | 64 | +1227 | 5919 | +19.2 | 20 | est.tech |
 | 13 | Sourabh Sourabh | 59 | +2613 | 10075 | +44.3 | 3 | est.tech |
@@ -176,18 +176,18 @@ The data presented in the table below covers the past 365 days.
 | 19 | srinivasyanamadala | 35 | +2806 | 9846 | +80.2 | 4 | techmahindra.com |
 | 20 | dependabot[bot] | 33 | +0 | 68 | +0.0 | 4 | github.com |
 | 21 | Arpit Singh | 30 | +1774 | 5008 | +59.1 | 1 | techmahindra.com |
-| 22 | Ben Zelleröhr | 29 | -689 | 7293 | -23.8 | 8 | telekom.de |
+| 22 | Ben Zelleröhr | 30 | -689 | 7381 | -23.0 | 8 | telekom.de |
 | 23 | saul.gill | 28 | +6748 | 64278 | +241.0 | 17 | est.tech |
 | 24 | seanbeirne | 28 | +3156 | 9838 | +112.7 | 2 | est.tech |
 | 25 | thmsdt | 28 | +250 | 2606 | +8.9 | 35 | telekom.de |
 | 26 | akshay.khairnar@t-systems.com | 27 | +45926 | 46916 | +1701.0 | 7 | t-systems.com |
 | 27 | leventecsanyi | 21 | +1045 | 3479 | +49.8 | 2 | est.tech |
 | 28 | Murali Parthasarathy K | 16 | +1836 | 9630 | +114.8 | 5 | techmahindra.com |
-| 29 | aditi.shukla@t-systems.com | 15 | +700 | 5858 | +46.7 | 7 | t-systems.com |
-| 30 | Byung-Woo Jun | 15 | +0 | 0 | +0.0 | 18 | est.tech |
-| 31 | Anil Belur | 14 | +20 | 64 | +1.4 | 3 | linuxfoundation.org |
-| 32 | nisha.gangore | 13 | +8170 | 9170 | +628.5 | 3 | accenture.com |
-| 33 | akenihan | 12 | +1075 | 1777 | +89.6 | 5 | est.tech |
+| 29 | akenihan | 15 | +1079 | 1795 | +71.9 | 5 | est.tech |
+| 30 | aditi.shukla@t-systems.com | 15 | +700 | 5858 | +46.7 | 7 | t-systems.com |
+| 31 | Byung-Woo Jun | 15 | +0 | 0 | +0.0 | 18 | est.tech |
+| 32 | Anil Belur | 14 | +20 | 64 | +1.4 | 3 | linuxfoundation.org |
+| 33 | nisha.gangore | 13 | +8170 | 9170 | +628.5 | 3 | accenture.com |
 | 34 | Michal Jagiello | 11 | +1175 | 1335 | +106.8 | 50 | t-mobile.pl |
 | 35 | JohnKeeney | 11 | +227 | 613 | +20.6 | 6 | est.tech |
 | 36 | ankita.singhal | 11 | +97 | 1159 | +8.8 | 2 | t-systems.com |
@@ -217,21 +217,21 @@ The data presented in the table below covers the past 365 days.
 | 60 | PeukerL@telekom.de | 2 | +34 | 142 | +17.0 | 3 | telekom.de |
 | 61 | Viresh Navalli | 2 | +17 | 25 | +8.5 | 1 | capgemini.com |
 | 62 | Ravi Pendurty | 2 | +13 | 161 | +6.5 | 5 | highstreet-technologies.com |
-| 63 | vani.kv | 2 | +2 | 46 | +1.0 | 6 | accenture.com |
-| 64 | Andrew Grimberg | 2 | +0 | 0 | +0.0 | 35 | linuxfoundation.org |
-| 65 | Jessica Wagantall | 2 | +0 | 0 | +0.0 | 121 | linuxfoundation.org |
-| 66 | nandkishorpatke | 2 | +0 | 0 | +0.0 | 8 | t-systems.com |
-| 67 | sangeeta.bellara | 1 | +2684 | 6198 | +2684.0 | 5 | t-systems.com |
-| 68 | Shalini Shivam | 1 | +1517 | 3467 | +1517.0 | 1 | techmahindra.com |
-| 69 | Ubuntu | 1 | +943 | 1089 | +943.0 | 1 | telekom.de |
-| 70 | aakansha.maltare | 1 | +512 | 512 | +512.0 | 1 | t-systems.com |
-| 71 | pravin.kokane@t-systems.com | 1 | +297 | 299 | +297.0 | 1 | t-systems.com |
-| 72 | dogu.akdo | 1 | +160 | 840 | +160.0 | 1 | telekom.de |
-| 73 | rajesh.kumar | 1 | +111 | 111 | +111.0 | 3 | techmahindra.com |
-| 74 | arkadiusz-dawid.mieszczak@t-systems.com | 1 | +69 | 6269 | +69.0 | 1 | t-systems.com |
-| 75 | Grzesik Michał | 1 | +1 | 27 | +1.0 | 1 | t-mobile.pl |
-| 76 | Singal, Kapil (ks220y) | 1 | +0 | 0 | +0.0 | 12 | att.com |
-| 77 | ankita.singhal | 1 | +0 | 30 | +0.0 | 2 | accenture.com |
+| 63 | Andrew Grimberg | 2 | +0 | 0 | +0.0 | 35 | linuxfoundation.org |
+| 64 | Jessica Wagantall | 2 | +0 | 0 | +0.0 | 121 | linuxfoundation.org |
+| 65 | nandkishorpatke | 2 | +0 | 0 | +0.0 | 8 | t-systems.com |
+| 66 | sangeeta.bellara | 1 | +2684 | 6198 | +2684.0 | 5 | t-systems.com |
+| 67 | Shalini Shivam | 1 | +1517 | 3467 | +1517.0 | 1 | techmahindra.com |
+| 68 | Ubuntu | 1 | +943 | 1089 | +943.0 | 1 | telekom.de |
+| 69 | aakansha.maltare | 1 | +512 | 512 | +512.0 | 1 | t-systems.com |
+| 70 | pravin.kokane@t-systems.com | 1 | +297 | 299 | +297.0 | 1 | t-systems.com |
+| 71 | dogu.akdo | 1 | +160 | 840 | +160.0 | 1 | telekom.de |
+| 72 | rajesh.kumar | 1 | +111 | 111 | +111.0 | 3 | techmahindra.com |
+| 73 | arkadiusz-dawid.mieszczak@t-systems.com | 1 | +69 | 6269 | +69.0 | 1 | t-systems.com |
+| 74 | Grzesik Michał | 1 | +1 | 27 | +1.0 | 1 | t-mobile.pl |
+| 75 | Singal, Kapil (ks220y) | 1 | +0 | 0 | +0.0 | 12 | att.com |
+| 76 | ankita.singhal | 1 | +0 | 30 | +0.0 | 2 | accenture.com |
+| 77 | vani.kv | 1 | +0 | 14 | +0.0 | 6 | accenture.com |
 | 78 | KrupaNagabhushan | 1 | -44 | 44 | -44.0 | 3 | est.tech |
 | 79 | bhoopender.singh@t-systems.com | 1 | -1152 | 2528 | -1152.0 | 1 | t-systems.com |
 | 80 | A200169490 | 0 | +0 | 0 | - | 4 | t-systems.com |
@@ -366,467 +366,467 @@ The data presented in the table below covers the past 365 days.
 | 209 | Brad Benesch | 0 | +0 | 0 | - | 1 | amdocs.com |
 | 210 | Brandon, Bruce (bb2697) | 0 | +0 | 0 | - | 4 | att.com |
 | 211 | Brian Freeman | 0 | +0 | 0 | - | 17 | att.com |
-| 212 | Brinda Santh | 0 | +0 | 0 | - | 4 | att.com |
-| 213 | Brinda Santh | 0 | +0 | 0 | - | 6 | ibm.com |
-| 214 | Brittany Plummer (bp896r) | 0 | +0 | 0 | - | 3 | att.com |
-| 215 | Bruno Sakoto | 0 | +0 | 0 | - | 17 | bell.ca |
-| 216 | Bryan Guo | 0 | +0 | 0 | - | 3 | huawei.com |
-| 217 | Byung-Woo Jun | 0 | +0 | 0 | - | 3 | ericsson.com |
-| 218 | C.T. Paterson | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 219 | C.T. Paterson | 0 | +0 | 0 | - | 1 | gmail.com |
-| 220 | CHINTAMANI | 0 | +0 | 0 | - | 4 | ibm.com |
-| 221 | CLAPP, GEORGE H (gc731h) | 0 | +0 | 0 | - | 1 | att.com |
-| 222 | Carsten Lund | 0 | +0 | 0 | - | 2 | att.com |
-| 223 | Catherine Lefevre | 0 | +0 | 0 | - | 3 | att.com |
-| 224 | Chan, Mercy | 0 | +0 | 0 | - | 2 | att.com |
-| 225 | Chandan Ghosh | 0 | +0 | 0 | - | 8 | ibm.com |
-| 226 | Changjun Wang | 0 | +0 | 0 | - | 7 | qq.com |
-| 227 | Charles Cole | 0 | +0 | 0 | - | 3 | att.com |
-| 228 | Chayal, Avteet (ac229e) | 0 | +0 | 0 | - | 1 | att.com |
-| 229 | Chen, Tingjie | 0 | +0 | 0 | - | 1 | intel.com |
-| 230 | Chenfei Gao | 0 | +0 | 0 | - | 10 | att.com |
-| 231 | Chengli Wang | 0 | +0 | 0 | - | 1 | chinamobile.com |
-| 232 | Chereau Natacha | 0 | +0 | 0 | - | 2 | orange.com |
-| 233 | Cherukuri, Venkatanaresh (vn166g) | 0 | +0 | 0 | - | 2 | att.com |
-| 234 | Cheung, Pat (kc1472) | 0 | +0 | 0 | - | 5 | att.com |
-| 235 | Chinthakayala, Sheshashailavas (sc2914) | 0 | +0 | 0 | - | 4 | att.com |
-| 236 | Chinthakayala, Sheshashailavas (sc2914) | 0 | +0 | 0 | - | 1 | att.com |
-| 237 | Chittaranjan Sardar | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 238 | Chris André | 0 | +0 | 0 | - | 6 | yoppworks.com |
-| 239 | Chris Donley | 0 | +0 | 0 | - | 6 | huawei.com |
-| 240 | Chris Donley | 0 | +0 | 0 | - | 1 | dartmouth.org |
-| 241 | Chris Ramstad | 0 | +0 | 0 | - | 5 | ciena.com |
-| 242 | Christophe Closset | 0 | +0 | 0 | - | 19 | att.com |
-| 243 | Christophe Closset | 0 | +0 | 0 | - | 8 | att.com |
-| 244 | Christopher Lott (cl778h) | 0 | +0 | 0 | - | 4 | att.com |
-| 245 | Chuanyu Chen | 0 | +0 | 0 | - | 12 | huawei.com |
-| 246 | Chuck Short | 0 | +0 | 0 | - | 4 | ericsson.com |
-| 247 | Chuyi Guo | 0 | +0 | 0 | - | 8 | chinamobile.com |
-| 248 | Claudio D. Gasparini | 0 | +0 | 0 | - | 4 | att.com |
-| 249 | Claudio D. Gasparini | 0 | +0 | 0 | - | 2 | pantheon.tech |
-| 250 | Claudio David Gasparini | 0 | +0 | 0 | - | 1 | gmail.com |
-| 251 | Cong Phuoc Hoang | 0 | +0 | 0 | - | 1 | gmail.com |
-| 252 | Congcong Peng | 0 | +0 | 0 | - | 2 | zte.com.cn |
-| 253 | Conor Ward | 0 | +0 | 0 | - | 8 | ericsson.com |
-| 254 | Cristina Pauna | 0 | +0 | 0 | - | 2 | enea.com |
-| 255 | Cédric Ollivier | 0 | +0 | 0 | - | 33 | orange.com |
-| 256 | DR695H | 0 | +0 | 0 | - | 12 | att.com |
-| 257 | DW Talton | 0 | +0 | 0 | - | 5 | linuxfoundation.org |
-| 258 | Dan McMillan | 0 | +0 | 0 | - | 1 | att.com |
-| 259 | Dan Timoney | 0 | +0 | 0 | - | 1 | att.com |
-| 260 | Daniel Cruz | 0 | +0 | 0 | - | 6 | att.com |
-| 261 | Daniel Milaszkiewicz | 0 | +0 | 0 | - | 1 | nokia.com |
-| 262 | Daniel Pono Takamori | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 263 | Daniel Rose | 0 | +0 | 0 | - | 1 | att.com |
-| 264 | Daniel Silverthorn | 0 | +0 | 0 | - | 10 | amdocs.com |
-| 265 | DarraghEgan | 0 | +0 | 0 | - | 4 | est.tech |
-| 266 | Dasar | 0 | +0 | 0 | - | 3 | accenture.com |
-| 267 | Dave Chen | 0 | +0 | 0 | - | 4 | intel.com |
-| 268 | David Brilla | 0 | +0 | 0 | - | 3 | muni.cz |
-| 269 | David Brilla | 0 | +0 | 0 | - | 3 | tieto.com |
-| 270 | David Crosson | 0 | +0 | 0 | - | 1 | orange.com |
-| 271 | David McBride | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 272 | David Minodier | 0 | +0 | 0 | - | 1 | orange.com |
-| 273 | David, Dana (dd775k) | 0 | +0 | 0 | - | 1 | att.com |
-| 274 | Denes Nemeth | 0 | +0 | 0 | - | 8 | nokia.com |
-| 275 | Denis Kasanic | 0 | +0 | 0 | - | 2 | samsung.com |
-| 276 | Denis Kasanic | 0 | +0 | 0 | - | 2 | tieto.com |
-| 277 | DenisGNoonan | 0 | +0 | 0 | - | 1 | est.tech |
-| 278 | Deven Panchal | 0 | +0 | 0 | - | 2 | att.com |
-| 279 | Dileep Ranganathan | 0 | +0 | 0 | - | 11 | intel.com |
-| 280 | Dilip kumar Pampana | 0 | +0 | 0 | - | 1 | ibm.com |
-| 281 | Dilip kumar Pampana | 0 | +0 | 0 | - | 1 | att.com |
-| 282 | Dimple Soni | 0 | +0 | 0 | - | 2 | yoppworks.com |
-| 283 | Dina Dodin | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 284 | Dinh Danh Le | 0 | +0 | 0 | - | 1 | ericsson.com |
-| 285 | Divesh Mirchandani | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 286 | Divyang Patel | 0 | +0 | 0 | - | 2 | telstra.com |
-| 287 | Dmitry Puzikov | 0 | +0 | 0 | - | 21 | tieto.com |
-| 288 | Dmitry Puzikov | 0 | +0 | 0 | - | 2 | samsung.com |
-| 289 | Dominik Mizyn | 0 | +0 | 0 | - | 3 | samsung.com |
-| 290 | Dominik Mizyn | 0 | +0 | 0 | - | 7 | samsung.com |
-| 291 | Donald Hunter | 0 | +0 | 0 | - | 5 | cisco.com |
-| 292 | Dongho Kim | 0 | +0 | 0 | - | 2 | att.com |
-| 293 | Driptaroop Das | 0 | +0 | 0 | - | 6 | ibm.com |
-| 294 | Dunietz, Irwin | 0 | +0 | 0 | - | 1 | att.com |
-| 295 | Dunietz, Irwin | 0 | +0 | 0 | - | 1 | att.com |
-| 296 | Durgpal | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 297 | Dusan Rozman | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 298 | DushyantSinghThakur | 0 | +0 | 0 | - | 2 | techmahindra.com |
-| 299 | DylanB95EST | 0 | +0 | 0 | - | 4 | est.tech |
-| 300 | EC2 Default User | 0 | +0 | 0 | - | 1 | hotmail.com |
-| 301 | ERIMROB | 0 | +0 | 0 | - | 5 | est.tech |
-| 302 | Edwin Lawrance | 0 | +0 | 0 | - | 5 | amdocs.com |
-| 303 | Edyta Krukowska | 0 | +0 | 0 | - | 17 | nokia.com |
-| 304 | Einat Vinouze | 0 | +0 | 0 | - | 1 | att.com |
-| 305 | Einav Keidar | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 306 | Ekko Chang | 0 | +0 | 0 | - | 2 | qct.io |
-| 307 | Elena Kuleshov | 0 | +0 | 0 | - | 4 | att.com |
-| 308 | Elena Kuleshov | 0 | +0 | 0 | - | 1 | att.com |
-| 309 | Eli Halych | 0 | +0 | 0 | - | 1 | gmail.com |
-| 310 | Eliezio Oliveira | 0 | +0 | 0 | - | 5 | est.tech |
-| 311 | Eltanany Shaaban | 0 | +0 | 0 | - | 3 | orange.com |
-| 312 | Emmanuel Bidet | 0 | +0 | 0 | - | 1 | m4x.org |
-| 313 | Emmett Cox | 0 | +0 | 0 | - | 4 | ericsson.com |
-| 314 | EmmettCox | 0 | +0 | 0 | - | 5 | est.tech |
-| 315 | Enbo Wang | 0 | +0 | 0 | - | 8 | huawei.com |
-| 316 | Eoin Hanan | 0 | +0 | 0 | - | 5 | ericsson.com |
-| 317 | Epp, Richard (re6517) | 0 | +0 | 0 | - | 1 | att.com |
-| 318 | Eric Adams | 0 | +0 | 0 | - | 1 | intel.com |
-| 319 | Eric Au | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 320 | Eric Debeau | 0 | +0 | 0 | - | 32 | orange.com |
-| 321 | Eric Multanen | 0 | +0 | 0 | - | 8 | intel.com |
-| 322 | Eric Santos | 0 | +0 | 0 | - | 4 | yoppworks.com |
-| 323 | Eric Tang | 0 | +0 | 0 | - | 1 | gmail.com |
-| 324 | EricMoore | 0 | +0 | 0 | - | 2 | est.tech |
-| 325 | Erol Ozcan (Argela) | 0 | +0 | 0 | - | 1 | com.tr |
-| 326 | Ester Rotstein | 0 | +0 | 0 | - | 2 | att.com |
-| 327 | Ethan Hampton | 0 | +0 | 0 | - | 2 | intel.com |
-| 328 | Ethan Lynn | 0 | +0 | 0 | - | 4 | gmail.com |
-| 329 | Ethan Lynn | 0 | +0 | 0 | - | 8 | vmware.com |
-| 330 | Eylon Malin | 0 | +0 | 0 | - | 1 | att.com |
-| 331 | EzekielaRakotoarijaona | 0 | +0 | 0 | - | 1 | orange.com |
-| 332 | Ezhilarasi | 0 | +0 | 0 | - | 7 | ibm.com |
-| 333 | Fabian_BZH | 0 | +0 | 0 | - | 1 | orange.com |
-| 334 | Fabio Palumbo | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 335 | Fatih Degirmenci | 0 | +0 | 0 | - | 1 | gmail.com |
-| 336 | Fei Tang | 0 | +0 | 0 | - | 1 | zte.com.cn |
-| 337 | Felix Sangalang | 0 | +0 | 0 | - | 2 | att.com |
-| 338 | Felix Sangalang | 0 | +0 | 0 | - | 1 | att.com |
-| 339 | FernandoOliveira | 0 | +0 | 0 | - | 1 | verizon.com |
-| 340 | Fiachra Corcoran | 0 | +0 | 0 | - | 4 | ericsson.com |
-| 341 | Filip Krzywka | 0 | +0 | 0 | - | 7 | nokia.com |
-| 342 | Fraboni, Gino (gf403a) | 0 | +0 | 0 | - | 5 | amdocs.com |
-| 343 | Francis Toth | 0 | +0 | 0 | - | 3 | yoppworks.com |
-| 344 | Frank A. Zdarsky | 0 | +0 | 0 | - | 2 | redhat.com |
-| 345 | Frank Grutzmacher | 0 | +0 | 0 | - | 1 | t-systems.com |
-| 346 | Frank Kimmlingen | 0 | +0 | 0 | - | 2 | telekom.de |
-| 347 | Frank Sandoval | 0 | +0 | 0 | - | 1 | cablelabs.com |
-| 348 | Franklin Dsilva | 0 | +0 | 0 | - | 3 | fujitsu.com |
-| 349 | Fred Oliveira | 0 | +0 | 0 | - | 1 | verizon.com |
-| 350 | Fuss, Areli (af732p) | 0 | +0 | 0 | - | 2 | att.com |
-| 351 | Fuss, Areli (af732p) | 0 | +0 | 0 | - | 1 | att.com |
-| 352 | GOPINATH MATHIVANAN | 0 | +0 | 0 | - | 2 | ibm.com |
-| 353 | GUNDAPANENI | 0 | +0 | 0 | - | 1 | att.com |
-| 354 | Gadicherla, Shiva | 0 | +0 | 0 | - | 1 | att.com |
-| 355 | Gadicherla, Shiva | 0 | +0 | 0 | - | 1 | att.com |
-| 356 | Gal Grottas | 0 | +0 | 0 | - | 2 | att.com |
-| 357 | Gamboa, Gilbert | 0 | +0 | 0 | - | 2 | att.com |
-| 358 | Ganesh Chandrasekaran | 0 | +0 | 0 | - | 4 | samsung.com |
-| 359 | Gao, Chenfei (cg287m) | 0 | +0 | 0 | - | 1 | gmail.com |
-| 360 | Gareth Roper | 0 | +0 | 0 | - | 2 | ericsson.com |
-| 361 | Gary Wu | 0 | +0 | 0 | - | 50 | huawei.com |
-| 362 | Gary Wu | 0 | +0 | 0 | - | 2 | gmail.com |
-| 363 | Gary Wu | 0 | +0 | 0 | - | 6 | futurewei.com |
-| 364 | Gary Wu | 0 | +0 | 0 | - | 5 | futurewei.com |
-| 365 | Gathman, Jonathan (jg1555) | 0 | +0 | 0 | - | 2 | att.com |
-| 366 | Gautam Shah | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 367 | Geora Barsky | 0 | +0 | 0 | - | 7 | amdocs.com |
-| 368 | George, Lina (lg941u) | 0 | +0 | 0 | - | 1 | att.com |
-| 369 | Gerard Hickey | 0 | +0 | 0 | - | 12 | ericsson.com |
-| 370 | Gergely Csatari | 0 | +0 | 0 | - | 1 | nokia.com |
-| 371 | Gildas Lanilis | 0 | +0 | 0 | - | 30 | huawei.com |
-| 372 | Gildas Lanilis | 0 | +0 | 0 | - | 1 | gildass-macbook-air.local |
-| 373 | Gilding, Joyce (jg640n) | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 374 | Gokul Singaraju | 0 | +0 | 0 | - | 2 | att.com |
-| 375 | Gokul Singaraju | 0 | +0 | 0 | - | 2 | gmail.com |
-| 376 | GregSulek | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 377 | Gregory Glover | 0 | +0 | 0 | - | 1 | att.com |
-| 378 | Grinberg Moti | 0 | +0 | 0 | - | 1 | att.com |
-| 379 | Grzegorz Wielgosinski | 0 | +0 | 0 | - | 4 | samsung.com |
-| 380 | Grzegorz-Lis | 0 | +0 | 0 | - | 6 | nokia.com |
-| 381 | GuangrongFu | 0 | +0 | 0 | - | 7 | zte.com.cn |
-| 382 | Guo Ruijing | 0 | +0 | 0 | - | 9 | intel.com |
-| 383 | Guobiao Mo | 0 | +0 | 0 | - | 4 | chinamobile.com |
-| 384 | Gurjeet Bedi | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 385 | HOCKLA | 0 | +0 | 0 | - | 15 | att.com |
-| 386 | Haddox, Anthony (ah0647) | 0 | +0 | 0 | - | 2 | att.com |
-| 387 | Hagop Bozawglanian | 0 | +0 | 0 | - | 7 | att.com |
-| 388 | Hanif Kukkalli | 0 | +0 | 0 | - | 1 | outlook.com |
-| 389 | Hansen, Tony (th1395) | 0 | +0 | 0 | - | 14 | att.com |
-| 390 | Hao Kuang | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 391 | Hao Kuang | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 392 | Hari Om Verma | 0 | +0 | 0 | - | 1 | techmahindra.com |
-| 393 | Hariharan | 0 | +0 | 0 | - | 1 | wipro.com |
-| 394 | Harish Venkata Kajur | 0 | +0 | 0 | - | 19 | att.com |
-| 395 | Harry Huang | 0 | +0 | 0 | - | 2 | huawei.com |
-| 396 | Havaldar Girish | 0 | +0 | 0 | - | 1 | techmahindra.com |
-| 397 | HePeng | 0 | +0 | 0 | - | 2 | zte.com.cn |
-| 398 | Hector Anapan-Lavalle | 0 | +0 | 0 | - | 5 | att.com |
-| 399 | Helen Chen | 0 | +0 | 0 | - | 6 | huawei.com |
-| 400 | HelenaLydon | 0 | +0 | 0 | - | 3 | est.tech |
-| 401 | Hengye | 0 | +0 | 0 | - | 10 | est.tech |
-| 402 | Henrik Andersson | 0 | +0 | 0 | - | 8 | est.tech |
-| 403 | Henry.Sun | 0 | +0 | 0 | - | 5 | est.tech |
-| 404 | Hesam Rahimi | 0 | +0 | 0 | - | 7 | huawei.com |
-| 405 | Hong Guan | 0 | +0 | 0 | - | 4 | att.com |
-| 406 | Hong Guan | 0 | +0 | 0 | - | 2 | att.com |
-| 407 | Hong Hui Xiao | 0 | +0 | 0 | - | 3 | yeah.net |
-| 408 | Houa Yang | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 409 | Huabing Zhao | 0 | +0 | 0 | - | 8 | gmail.com |
-| 410 | HuabingZhao | 0 | +0 | 0 | - | 8 | zte.com.cn |
-| 411 | Huang Cheng | 0 | +0 | 0 | - | 3 | huawei.com |
-| 412 | Huang Haibin | 0 | +0 | 0 | - | 10 | intel.com |
-| 413 | Hui Deng | 0 | +0 | 0 | - | 2 | huawei.com |
-| 414 | IanHowell | 0 | +0 | 0 | - | 1 | att.com |
-| 415 | Idan Amit | 0 | +0 | 0 | - | 10 | att.com |
-| 416 | Idan Amit | 0 | +0 | 0 | - | 3 | att.com |
-| 417 | Igor D.C | 0 | +0 | 0 | - | 1 | intel.com |
-| 418 | Igor Dysko | 0 | +0 | 0 | - | 7 | orange.com |
-| 419 | Ikram Ikramullah | 0 | +0 | 0 | - | 5 | att.com |
-| 420 | Ikramullah, Ikram (fi241c) | 0 | +0 | 0 | - | 2 | att.com |
-| 421 | Ilana Paktor | 0 | +0 | 0 | - | 5 | amdocs.com |
-| 422 | Illia Halych | 0 | +0 | 0 | - | 4 | t-mobile.pl |
-| 423 | Instrumental | 0 | +0 | 0 | - | 6 | att.com |
-| 424 | Instrumental | 0 | +0 | 0 | - | 2 | gathman.org |
-| 425 | Instrumental | 0 | +0 | 0 | - | 3 | gathman.org |
-| 426 | Isaac Manuel Raj | 0 | +0 | 0 | - | 5 | huawei.com |
-| 427 | Isaku Yamahata | 0 | +0 | 0 | - | 1 | intel.com |
-| 428 | Israel Lavi | 0 | +0 | 0 | - | 1 | att.com |
-| 429 | Israel Lavi | 0 | +0 | 0 | - | 2 | att.com |
-| 430 | Israel Lavi | 0 | +0 | 0 | - | 3 | att.com |
-| 431 | Itay Hassid | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 432 | Itohan | 0 | +0 | 0 | - | 4 | intel.com |
-| 433 | Ittay Stern | 0 | +0 | 0 | - | 6 | att.com |
-| 434 | Izabela Zawadzka | 0 | +0 | 0 | - | 2 | nokia.com |
-| 435 | Jack Lucas | 0 | +0 | 0 | - | 12 | sonoris.net |
-| 436 | Jack Lucas | 0 | +0 | 0 | - | 7 | att.com |
-| 437 | JakobKrieg | 0 | +0 | 0 | - | 2 | bcmsolutions.de |
-| 438 | Jakub Dominik | 0 | +0 | 0 | - | 1 | samsung.com |
-| 439 | Jakub Dudycz | 0 | +0 | 0 | - | 8 | nokia.com |
-| 440 | Jakub Dudycz | 0 | +0 | 0 | - | 1 | nokia.com |
-| 441 | Jakub Latusek | 0 | +0 | 0 | - | 2 | samsung.com |
-| 442 | Jakub Latusek | 0 | +0 | 0 | - | 1 | gmail.com |
-| 443 | Jakub Zieba | 0 | +0 | 0 | - | 3 | nokia.com |
-| 444 | James Forsyth | 0 | +0 | 0 | - | 18 | att.com |
-| 445 | James Guistwite | 0 | +0 | 0 | - | 2 | iconectiv.com |
-| 446 | James MacNider | 0 | +0 | 0 | - | 7 | amdocs.com |
-| 447 | Jamil Chawki | 0 | +0 | 0 | - | 1 | orange.com |
-| 448 | Jan Benedikt | 0 | +0 | 0 | - | 2 | samsung.com |
-| 449 | Jan Malkiewicz | 0 | +0 | 0 | - | 8 | nokia.com |
-| 450 | Jean-Yves Geury | 0 | +0 | 0 | - | 3 | nokia.com |
-| 451 | Jennie Jia | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 452 | Jeremy Phelps | 0 | +0 | 0 | - | 5 | linuxfoundation.org |
-| 453 | Jeremy Wolf | 0 | +0 | 0 | - | 1 | att.com |
-| 454 | Jerome Doucerain | 0 | +0 | 0 | - | 5 | bell.ca |
-| 455 | Jerry Flood | 0 | +0 | 0 | - | 6 | att.com |
-| 456 | Jerry Flood | 0 | +0 | 0 | - | 5 | att.com |
-| 457 | JerzySzachniewicz | 0 | +0 | 0 | - | 7 | nokia.com |
-| 458 | Jim Hahn | 0 | +0 | 0 | - | 21 | att.com |
-| 459 | Jim Hahn | 0 | +0 | 0 | - | 1 | gmail.com |
-| 460 | Jithendra | 0 | +0 | 0 | - | 1 | wipro.com |
-| 461 | Joanna Jeremicz | 0 | +0 | 0 | - | 19 | nokia.com |
-| 462 | JoeOLeary | 0 | +0 | 0 | - | 20 | est.tech |
-| 463 | Joey Sullivan | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 464 | John J. Franey | 0 | +0 | 0 | - | 4 | att.com |
-| 465 | John McClung | 0 | +0 | 0 | - | 1 | att.com |
-| 466 | Johnson Li | 0 | +0 | 0 | - | 1 | intel.com |
-| 467 | Jonathan Platt | 0 | +0 | 0 | - | 4 | att.com |
-| 468 | Jorge Hernandez | 0 | +0 | 0 | - | 13 | att.com |
-| 469 | Joseph Chou | 0 | +0 | 0 | - | 4 | att.com |
-| 470 | JosephKeenan | 0 | +0 | 0 | - | 2 | est.tech |
-| 471 | Joshua Reich | 0 | +0 | 0 | - | 4 | att.com |
-| 472 | Joss Armstrong | 0 | +0 | 0 | - | 2 | ericsson.com |
-| 473 | Jozsef Csongvai | 0 | +0 | 0 | - | 10 | bell.ca |
-| 474 | Juhi Arora | 0 | +0 | 0 | - | 1 | bell.ca |
-| 475 | Julien Barbot | 0 | +0 | 0 | - | 6 | barbot.org |
-| 476 | Julien Fontaine | 0 | +0 | 0 | - | 4 | bell.ca |
-| 477 | JulienBe | 0 | +0 | 0 | - | 4 | att.com |
-| 478 | JulienBe | 0 | +0 | 0 | - | 6 | att.com |
-| 479 | Jun (Nicolas) Hu | 0 | +0 | 0 | - | 3 | att.com |
-| 480 | Jun (Nicolas) Hu | 0 | +0 | 0 | - | 1 | att.com |
-| 481 | JunfengWang | 0 | +0 | 0 | - | 2 | ericsson.com |
-| 482 | Junyi | 0 | +0 | 0 | - | 4 | foxmail.com |
-| 483 | JvD_Ericsson | 0 | +0 | 0 | - | 7 | est.tech |
-| 484 | Kai | 0 | +0 | 0 | - | 4 | chinamobile.com |
-| 485 | Kailun Qin | 0 | +0 | 0 | - | 2 | intel.com |
-| 486 | Kajur, Venkata Harish (vk250x) | 0 | +0 | 0 | - | 2 | att.com |
-| 487 | Kalkere Ramesh, Sharan | 0 | +0 | 0 | - | 2 | att.com |
-| 488 | Kalkere Ramesh, Sharan (sk720x) | 0 | +0 | 0 | - | 3 | att.com |
-| 489 | Kanagaraj Manickam | 0 | +0 | 0 | - | 6 | gmail.com |
-| 490 | Kanagaraj Manickam | 0 | +0 | 0 | - | 1 | gamil.com |
-| 491 | Kanagaraj Manickam k00365106 | 0 | +0 | 0 | - | 10 | huawei.com |
-| 492 | Kang Xi | 0 | +0 | 0 | - | 2 | huawei.com |
-| 493 | Kartik Hegde | 0 | +0 | 0 | - | 1 | techmahindra.com |
-| 494 | Kate Hsuan | 0 | +0 | 0 | - | 1 | redhat.com |
-| 495 | Kate Hsuan | 0 | +0 | 0 | - | 3 | qct.io |
-| 496 | Kavitha P | 0 | +0 | 0 | - | 2 | aarnanetworks.com |
-| 497 | Kedar Ambekar | 0 | +0 | 0 | - | 2 | t-systems.com |
-| 498 | Keighron, Lori (lk2924) | 0 | +0 | 0 | - | 1 | att.com |
-| 499 | Keighron, Lori (lk2924) | 0 | +0 | 0 | - | 1 | att.com |
-| 500 | Kenny Paul | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 501 | Keong Lim | 0 | +0 | 0 | - | 9 | huawei.com |
-| 502 | Keren Joseph | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 503 | Kevin McKiou | 0 | +0 | 0 | - | 2 | att.com |
-| 504 | Kevin Scaggs | 0 | +0 | 0 | - | 2 | att.com |
-| 505 | Kiran | 0 | +0 | 0 | - | 3 | t-systems.com |
-| 506 | Kiran Kamineni | 0 | +0 | 0 | - | 10 | intel.com |
-| 507 | Kishore Reddy Dwaram | 0 | +0 | 0 | - | 1 | att.com |
-| 508 | Kishore Reddy, Gujja (kg811t) | 0 | +0 | 0 | - | 1 | att.com |
-| 509 | Kishore Reddy, Gujja (kg811t) | 0 | +0 | 0 | - | 1 | att.com |
-| 510 | Konrad Bańka | 0 | +0 | 0 | - | 9 | samsung.com |
-| 511 | Konrad Bańka | 0 | +0 | 0 | - | 1 | gmail.com |
-| 512 | Konstantinos Kanonakis | 0 | +0 | 0 | - | 1 | huawei.com |
-| 513 | Kotagiri, Ramprasad (rp5662) | 0 | +0 | 0 | - | 1 | att.com |
-| 514 | Kotta, Shireesha (sk434m) | 0 | +0 | 0 | - | 2 | att.com |
-| 515 | Krishna | 0 | +0 | 0 | - | 2 | stl.tech |
-| 516 | Krishnajinka | 0 | +0 | 0 | - | 6 | samsung.com |
-| 517 | Krysiak Adam Gabriel | 0 | +0 | 0 | - | 8 | nokia.com |
-| 518 | Krzysztof Bijakowski | 0 | +0 | 0 | - | 1 | cloudify.co |
-| 519 | Krzysztof Bijakowski | 0 | +0 | 0 | - | 1 | gigaspaces.com |
-| 520 | Krzysztof Frukacz | 0 | +0 | 0 | - | 1 | gigaspaces.com |
-| 521 | Krzysztof Gajewski | 0 | +0 | 0 | - | 9 | nokia.com |
-| 522 | Krzysztof Kuzmicki | 0 | +0 | 0 | - | 19 | nokia.com |
-| 523 | Krzysztof Kwiecien | 0 | +0 | 0 | - | 3 | orange.com |
-| 524 | Krzysztof Opasiak | 0 | +0 | 0 | - | 23 | samsung.com |
-| 525 | Kuldip Rai | 0 | +0 | 0 | - | 1 | bell.ca |
-| 526 | Kumar, Sudarshan (sk670p) | 0 | +0 | 0 | - | 3 | att.com |
-| 527 | Kuralamudhan Ramakrishnan | 0 | +0 | 0 | - | 2 | intel.com |
-| 528 | Kyle Stewart | 0 | +0 | 0 | - | 1 | ericsson.com |
-| 529 | LF Jenkins CI | 0 | +0 | 0 | - | 90 | linuxfoundation.org |
-| 530 | LaMont, William (wl2432) | 0 | +0 | 0 | - | 4 | att.com |
-| 531 | LaMont, William(wl2432) | 0 | +0 | 0 | - | 6 | att.com |
-| 532 | Ladue, David (dl3158) | 0 | +0 | 0 | - | 3 | att.com |
-| 533 | Larry Sachs | 0 | +0 | 0 | - | 2 | intel.com |
-| 534 | Lasse Kaihlavirta | 0 | +0 | 0 | - | 16 | samsung.com |
-| 535 | Lathish | 0 | +0 | 0 | - | 10 | est.tech |
-| 536 | Lathishbabu Ganesan | 0 | +0 | 0 | - | 1 | ericsson.com |
-| 537 | Lee, Tian (tl5884) | 0 | +0 | 0 | - | 16 | amdocs.com |
-| 538 | Lee, Tian (tl5884) | 0 | +0 | 0 | - | 2 | att.com |
-| 539 | Leonard, Mark (ml401d) | 0 | +0 | 0 | - | 2 | att.com |
-| 540 | Leonardo Bellini | 0 | +0 | 0 | - | 2 | att.com |
-| 541 | LiZi | 0 | +0 | 0 | - | 7 | zte.com.cn |
-| 542 | LiamBurke | 0 | +0 | 0 | - | 3 | ericsson.com |
-| 543 | Liang Ding | 0 | +0 | 0 | - | 6 | intel.com |
-| 544 | Lianhao Lu | 0 | +0 | 0 | - | 8 | intel.com |
-| 545 | Liard Samuel | 0 | +0 | 0 | - | 3 | orange.com |
-| 546 | Liexiang Yue | 0 | +0 | 0 | - | 7 | chinamobile.com |
-| 547 | Lin, Jerry (jl319x) | 0 | +0 | 0 | - | 3 | att.com |
-| 548 | Lior Nachmias | 0 | +0 | 0 | - | 6 | att.com |
-| 549 | Lior Nachmias | 0 | +0 | 0 | - | 3 | att.com |
-| 550 | Lisa Revel | 0 | +0 | 0 | - | 1 | att.com |
-| 551 | Litao Gao | 0 | +0 | 0 | - | 2 | windriver.com |
-| 552 | Lo, WEI-TING(wl849v) | 0 | +0 | 0 | - | 1 | att.com |
-| 553 | Lorraine Welch | 0 | +0 | 0 | - | 4 | att.com |
-| 554 | Lott, Christopher (cl778h) | 0 | +0 | 0 | - | 1 | att.com |
-| 555 | Lovett, Trevor | 0 | +0 | 0 | - | 12 | att.com |
-| 556 | Lovett, Trevor (tl2972) | 0 | +0 | 0 | - | 2 | att.com |
-| 557 | Lucjan Bryndza | 0 | +0 | 0 | - | 6 | samsung.com |
-| 558 | Lucjan Bryndza | 0 | +0 | 0 | - | 2 | samsung.com |
-| 559 | Ludmila Schlegelova | 0 | +0 | 0 | - | 1 | telekom.com |
-| 560 | Luji7 | 0 | +0 | 0 | - | 5 | zte.com.cn |
-| 561 | Lukasz Muszkieta | 0 | +0 | 0 | - | 11 | nokia.com |
-| 562 | Lukasz Rajewski | 0 | +0 | 0 | - | 18 | orange.com |
-| 563 | Luke Gleeson | 0 | +0 | 0 | - | 3 | est.tech |
-| 564 | Luke Parker | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 565 | Lusheng Ji | 0 | +0 | 0 | - | 16 | att.com |
-| 566 | Lvbo163 | 0 | +0 | 0 | - | 6 | zte.com.cn |
-| 567 | M.Hosnidokht | 0 | +0 | 0 | - | 5 | yoppworks.com |
-| 568 | MD IRSHAD SHEIKH | 0 | +0 | 0 | - | 7 | huawei.com |
-| 569 | Maciej Lisowski | 0 | +0 | 0 | - | 3 | samsung.com |
-| 570 | Maciej Malewski | 0 | +0 | 0 | - | 7 | nokia.com |
-| 571 | Maciej Wejs | 0 | +0 | 0 | - | 4 | nokia.com |
-| 572 | Maciej Wereski | 0 | +0 | 0 | - | 2 | samsung.com |
-| 573 | Magnusen, Drew (dm741q) | 0 | +0 | 0 | - | 3 | att.com |
-| 574 | Maharajh, Robby (rx2202) | 0 | +0 | 0 | - | 4 | att.com |
-| 575 | Mahendra Raghuwanshi | 0 | +0 | 0 | - | 6 | amdocs.com |
-| 576 | Mahmoud Abdelhamid | 0 | +0 | 0 | - | 1 | orange.com |
-| 577 | Mahsa MonemMoharrer | 0 | +0 | 0 | - | 1 | gmail.com |
-| 578 | Malek | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 579 | Mamed Mamedov | 0 | +0 | 0 | - | 1 | telekom.com |
-| 580 | Mamtha | 0 | +0 | 0 | - | 1 | ibm.com |
-| 581 | Manamohan | 0 | +0 | 0 | - | 2 | techmahindra.com |
-| 582 | Mandar Sawant | 0 | +0 | 0 | - | 5 | att.com |
-| 583 | Mandeep Khinda | 0 | +0 | 0 | - | 6 | amdocs.com |
-| 584 | Mandeep Khinda | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 585 | Manish Kumar | 0 | +0 | 0 | - | 6 | gmail.com |
-| 586 | Manisha Aggarwal | 0 | +0 | 0 | - | 6 | att.com |
-| 587 | Manisha Aggarwal | 0 | +0 | 0 | - | 7 | att.com |
-| 588 | Manjeet Singh Bhatia | 0 | +0 | 0 | - | 1 | intel.com |
-| 589 | Manjunath Ranganathaiah | 0 | +0 | 0 | - | 5 | intel.com |
-| 590 | Manoj Marneni | 0 | +0 | 0 | - | 1 | att.com |
-| 591 | Manoop Talasila | 0 | +0 | 0 | - | 4 | att.com |
-| 592 | Manzon, Inna (im453s) | 0 | +0 | 0 | - | 3 | att.com |
-| 593 | Marat Salakhutdinov | 0 | +0 | 0 | - | 1 | bell.ca |
-| 594 | Marc-Alexandre Choquette | 0 | +0 | 0 | - | 2 | bell.ca |
-| 595 | Marcin Krasowski | 0 | +0 | 0 | - | 3 | samsung.com |
-| 596 | Marcin Migdal | 0 | +0 | 0 | - | 8 | nokia.com |
-| 597 | Marcin Przybysz | 0 | +0 | 0 | - | 8 | nokia.com |
-| 598 | Marcin Wilk | 0 | +0 | 0 | - | 2 | samsung.com |
-| 599 | Marco Platania | 0 | +0 | 0 | - | 12 | att.com |
-| 600 | Marcus Williams | 0 | +0 | 0 | - | 16 | intel.com |
-| 601 | Marek Wolczanski | 0 | +0 | 0 | - | 2 | cloudify.co |
-| 602 | Mariah Jacobs | 0 | +0 | 0 | - | 3 | intel.com |
-| 603 | Mariano Diaz | 0 | +0 | 0 | - | 2 | yoppworks.com |
-| 604 | Mariusz Sygnowski | 0 | +0 | 0 | - | 1 | nokia.com |
-| 605 | Mariusz Wagner | 0 | +0 | 0 | - | 5 | nokia.com |
-| 606 | Mark Tooski | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 607 | Mars Toktonaliev | 0 | +0 | 0 | - | 1 | nokia.com |
-| 608 | Martin Klozik | 0 | +0 | 0 | - | 4 | tieto.com |
-| 609 | Martin Ouimet | 0 | +0 | 0 | - | 2 | bell.ca |
-| 610 | Matej Babej | 0 | +0 | 0 | - | 2 | tieto.com |
-| 611 | Matej Klotton | 0 | +0 | 0 | - | 4 | pantheon.tech |
-| 612 | Matej Perina | 0 | +0 | 0 | - | 3 | pantheon.tech |
-| 613 | Mateusz Gołuchowski | 0 | +0 | 0 | - | 3 | nokia.com |
-| 614 | Mateusz Pilat | 0 | +0 | 0 | - | 4 | samsung.com |
-| 615 | Matt Welch | 0 | +0 | 0 | - | 1 | intel.com |
-| 616 | Matthew Davis | 0 | +0 | 0 | - | 1 | telstra.com |
-| 617 | MatthewHarffy | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 618 | Matthieu Cauffiez | 0 | +0 | 0 | - | 2 | bell.ca |
-| 619 | Matthieu Geerebaert | 0 | +0 | 0 | - | 6 | orange.com |
-| 620 | Matus Szabo | 0 | +0 | 0 | - | 2 | orange.com |
-| 621 | Max Benjamin | 0 | +0 | 0 | - | 3 | att.com |
-| 622 | May Lin | 0 | +0 | 0 | - | 1 | qct.io |
-| 623 | Mcblain, Thomas | 0 | +0 | 0 | - | 2 | att.com |
-| 624 | Mehreen Kaleem | 0 | +0 | 0 | - | 5 | fujitsu.com |
-| 625 | Mehreen Kaleem | 0 | +0 | 0 | - | 1 | wipro.com |
-| 626 | Mei Su | 0 | +0 | 0 | - | 1 | att.com |
-| 627 | Mei Su | 0 | +0 | 0 | - | 1 | email |
-| 628 | Merkel, Jeff | 0 | +0 | 0 | - | 2 | att.com |
-| 629 | Michael Arrastia | 0 | +0 | 0 | - | 5 | amdocs.com |
-| 630 | Michael Borokhovich | 0 | +0 | 0 | - | 1 | att.com |
-| 631 | Michael Hwang | 0 | +0 | 0 | - | 6 | att.com |
-| 632 | Michael Lando | 0 | +0 | 0 | - | 13 | att.com |
-| 633 | Michael Lando | 0 | +0 | 0 | - | 5 | att.com |
-| 634 | Michael Lando | 0 | +0 | 0 | - | 1 | att.com |
-| 635 | Michael Mokry | 0 | +0 | 0 | - | 6 | att.com |
-| 636 | Michael Mokry | 0 | +0 | 0 | - | 7 | att.com |
-| 637 | Michael O'Brien | 0 | +0 | 0 | - | 9 | amdocs.com |
-| 638 | Michael O'Brien | 0 | +0 | 0 | - | 4 | obrienlabs.org |
-| 639 | Michael Pruss | 0 | +0 | 0 | - | 2 | bell.ca |
-| 640 | Michael Shitrit | 0 | +0 | 0 | - | 2 | att.com |
-| 641 | MichaelMorris | 0 | +0 | 0 | - | 17 | est.tech |
-| 642 | Michal Banka | 0 | +0 | 0 | - | 17 | nokia.com |
-| 643 | Michal Chabiera | 0 | +0 | 0 | - | 3 | orange.com |
-| 644 | Michal Kabaj | 0 | +0 | 0 | - | 5 | nokia.com |
-| 645 | Michal Korman | 0 | +0 | 0 | - | 1 | nokia.com |
-| 646 | Michal Ptacek | 0 | +0 | 0 | - | 8 | samsung.com |
-| 647 | Michal Zegan | 0 | +0 | 0 | - | 2 | samsung.com |
-| 648 | Michał Grzesik | 0 | +0 | 0 | - | 1 | orange.com |
-| 649 | Mickael JEZEQUEL | 0 | +0 | 0 | - | 4 | orange.com |
-| 650 | Mike Babinski | 0 | +0 | 0 | - | 2 | att.com |
-| 651 | Mike Elliott | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 652 | Milan Verespej | 0 | +0 | 0 | - | 2 | samsung.com |
-| 653 | Milin | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 654 | Miroslav Los | 0 | +0 | 0 | - | 4 | pantheon.tech |
-| 655 | Mnushkin, Dmitry | 0 | +0 | 0 | - | 2 | att.com |
-| 656 | Mnushkin, Dmitry (dm4252) | 0 | +0 | 0 | - | 2 | att.com |
-| 657 | Modaboina, Kusumakumari (km583p) | 0 | +0 | 0 | - | 1 | att.com |
-| 658 | Modaboina, Kusumakumari (km583p) | 0 | +0 | 0 | - | 1 | att.com |
-| 659 | Mohamed Waly | 0 | +0 | 0 | - | 2 | orange.com |
-| 660 | Mohammad | 0 | +0 | 0 | - | 1 | highstreet-technologies.com |
-| 661 | Mohammadreza Pasandideh | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 662 | Mohammed Naser | 0 | +0 | 0 | - | 5 | vexxhost.com |
-| 663 | Mor Dabastany | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 664 | Moshe | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 665 | Mukesh Paliwal | 0 | +0 | 0 | - | 15 | huawei.com |
-| 666 | MukeshKumar | 0 | +0 | 0 | - | 13 | est.tech |
-| 667 | Mukul | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 668 | Muller, Andrew (am8383) | 0 | +0 | 0 | - | 3 | att.com |
-| 669 | Muller, Andrew (am8383) | 0 | +0 | 0 | - | 1 | att.com |
-| 670 | Muni Mohan Kunchi | 0 | +0 | 0 | - | 1 | att.com |
-| 671 | Munir Ahmad | 0 | +0 | 0 | - | 7 | bell.ca |
-| 672 | Murali-P | 0 | +0 | 0 | - | 8 | huawei.com |
+| 212 | Brittany Plummer (bp896r) | 0 | +0 | 0 | - | 3 | att.com |
+| 213 | Bruno Sakoto | 0 | +0 | 0 | - | 17 | bell.ca |
+| 214 | Bryan Guo | 0 | +0 | 0 | - | 3 | huawei.com |
+| 215 | Byung-Woo Jun | 0 | +0 | 0 | - | 3 | ericsson.com |
+| 216 | C.T. Paterson | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 217 | C.T. Paterson | 0 | +0 | 0 | - | 1 | gmail.com |
+| 218 | CHINTAMANI | 0 | +0 | 0 | - | 4 | ibm.com |
+| 219 | CLAPP, GEORGE H (gc731h) | 0 | +0 | 0 | - | 1 | att.com |
+| 220 | Carsten Lund | 0 | +0 | 0 | - | 2 | att.com |
+| 221 | Catherine Lefevre | 0 | +0 | 0 | - | 3 | att.com |
+| 222 | Chan, Mercy | 0 | +0 | 0 | - | 2 | att.com |
+| 223 | Chandan Ghosh | 0 | +0 | 0 | - | 8 | ibm.com |
+| 224 | Changjun Wang | 0 | +0 | 0 | - | 7 | qq.com |
+| 225 | Charles Cole | 0 | +0 | 0 | - | 3 | att.com |
+| 226 | Chayal, Avteet (ac229e) | 0 | +0 | 0 | - | 1 | att.com |
+| 227 | Chen, Tingjie | 0 | +0 | 0 | - | 1 | intel.com |
+| 228 | Chenfei Gao | 0 | +0 | 0 | - | 10 | att.com |
+| 229 | Chengli Wang | 0 | +0 | 0 | - | 1 | chinamobile.com |
+| 230 | Chereau Natacha | 0 | +0 | 0 | - | 2 | orange.com |
+| 231 | Cherukuri, Venkatanaresh (vn166g) | 0 | +0 | 0 | - | 2 | att.com |
+| 232 | Cheung, Pat (kc1472) | 0 | +0 | 0 | - | 5 | att.com |
+| 233 | Chinthakayala, Sheshashailavas (sc2914) | 0 | +0 | 0 | - | 4 | att.com |
+| 234 | Chinthakayala, Sheshashailavas (sc2914) | 0 | +0 | 0 | - | 1 | att.com |
+| 235 | Chittaranjan Sardar | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 236 | Chris André | 0 | +0 | 0 | - | 6 | yoppworks.com |
+| 237 | Chris Donley | 0 | +0 | 0 | - | 6 | huawei.com |
+| 238 | Chris Donley | 0 | +0 | 0 | - | 1 | dartmouth.org |
+| 239 | Chris Ramstad | 0 | +0 | 0 | - | 5 | ciena.com |
+| 240 | Christophe Closset | 0 | +0 | 0 | - | 19 | att.com |
+| 241 | Christophe Closset | 0 | +0 | 0 | - | 8 | att.com |
+| 242 | Christopher Lott (cl778h) | 0 | +0 | 0 | - | 4 | att.com |
+| 243 | Chuanyu Chen | 0 | +0 | 0 | - | 12 | huawei.com |
+| 244 | Chuck Short | 0 | +0 | 0 | - | 4 | ericsson.com |
+| 245 | Chuyi Guo | 0 | +0 | 0 | - | 8 | chinamobile.com |
+| 246 | Claudio D. Gasparini | 0 | +0 | 0 | - | 4 | att.com |
+| 247 | Claudio D. Gasparini | 0 | +0 | 0 | - | 2 | pantheon.tech |
+| 248 | Claudio David Gasparini | 0 | +0 | 0 | - | 1 | gmail.com |
+| 249 | Cong Phuoc Hoang | 0 | +0 | 0 | - | 1 | gmail.com |
+| 250 | Congcong Peng | 0 | +0 | 0 | - | 2 | zte.com.cn |
+| 251 | Conor Ward | 0 | +0 | 0 | - | 8 | ericsson.com |
+| 252 | Cristina Pauna | 0 | +0 | 0 | - | 2 | enea.com |
+| 253 | Cédric Ollivier | 0 | +0 | 0 | - | 33 | orange.com |
+| 254 | DR695H | 0 | +0 | 0 | - | 12 | att.com |
+| 255 | DW Talton | 0 | +0 | 0 | - | 5 | linuxfoundation.org |
+| 256 | Dan McMillan | 0 | +0 | 0 | - | 1 | att.com |
+| 257 | Dan Timoney | 0 | +0 | 0 | - | 1 | att.com |
+| 258 | Daniel Cruz | 0 | +0 | 0 | - | 6 | att.com |
+| 259 | Daniel Milaszkiewicz | 0 | +0 | 0 | - | 1 | nokia.com |
+| 260 | Daniel Pono Takamori | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 261 | Daniel Rose | 0 | +0 | 0 | - | 1 | att.com |
+| 262 | Daniel Silverthorn | 0 | +0 | 0 | - | 10 | amdocs.com |
+| 263 | DarraghEgan | 0 | +0 | 0 | - | 4 | est.tech |
+| 264 | Dasar | 0 | +0 | 0 | - | 3 | accenture.com |
+| 265 | Dave Chen | 0 | +0 | 0 | - | 4 | intel.com |
+| 266 | David Brilla | 0 | +0 | 0 | - | 3 | muni.cz |
+| 267 | David Brilla | 0 | +0 | 0 | - | 3 | tieto.com |
+| 268 | David Crosson | 0 | +0 | 0 | - | 1 | orange.com |
+| 269 | David McBride | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 270 | David Minodier | 0 | +0 | 0 | - | 1 | orange.com |
+| 271 | David, Dana (dd775k) | 0 | +0 | 0 | - | 1 | att.com |
+| 272 | Denes Nemeth | 0 | +0 | 0 | - | 8 | nokia.com |
+| 273 | Denis Kasanic | 0 | +0 | 0 | - | 2 | samsung.com |
+| 274 | Denis Kasanic | 0 | +0 | 0 | - | 2 | tieto.com |
+| 275 | DenisGNoonan | 0 | +0 | 0 | - | 1 | est.tech |
+| 276 | Deven Panchal | 0 | +0 | 0 | - | 2 | att.com |
+| 277 | Dileep Ranganathan | 0 | +0 | 0 | - | 11 | intel.com |
+| 278 | Dilip kumar Pampana | 0 | +0 | 0 | - | 1 | ibm.com |
+| 279 | Dilip kumar Pampana | 0 | +0 | 0 | - | 1 | att.com |
+| 280 | Dimple Soni | 0 | +0 | 0 | - | 2 | yoppworks.com |
+| 281 | Dina Dodin | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 282 | Dinh Danh Le | 0 | +0 | 0 | - | 1 | ericsson.com |
+| 283 | Divesh Mirchandani | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 284 | Divyang Patel | 0 | +0 | 0 | - | 2 | telstra.com |
+| 285 | Dmitry Puzikov | 0 | +0 | 0 | - | 21 | tieto.com |
+| 286 | Dmitry Puzikov | 0 | +0 | 0 | - | 2 | samsung.com |
+| 287 | Dominik Mizyn | 0 | +0 | 0 | - | 7 | samsung.com |
+| 288 | Dominik Mizyn | 0 | +0 | 0 | - | 3 | samsung.com |
+| 289 | Donald Hunter | 0 | +0 | 0 | - | 5 | cisco.com |
+| 290 | Dongho Kim | 0 | +0 | 0 | - | 2 | att.com |
+| 291 | Driptaroop Das | 0 | +0 | 0 | - | 6 | ibm.com |
+| 292 | Dunietz, Irwin | 0 | +0 | 0 | - | 1 | att.com |
+| 293 | Dunietz, Irwin | 0 | +0 | 0 | - | 1 | att.com |
+| 294 | Durgpal | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 295 | Dusan Rozman | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 296 | DushyantSinghThakur | 0 | +0 | 0 | - | 2 | techmahindra.com |
+| 297 | DylanB95EST | 0 | +0 | 0 | - | 4 | est.tech |
+| 298 | EC2 Default User | 0 | +0 | 0 | - | 1 | hotmail.com |
+| 299 | ERIMROB | 0 | +0 | 0 | - | 5 | est.tech |
+| 300 | Edwin Lawrance | 0 | +0 | 0 | - | 5 | amdocs.com |
+| 301 | Edyta Krukowska | 0 | +0 | 0 | - | 17 | nokia.com |
+| 302 | Einat Vinouze | 0 | +0 | 0 | - | 1 | att.com |
+| 303 | Einav Keidar | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 304 | Ekko Chang | 0 | +0 | 0 | - | 2 | qct.io |
+| 305 | Elena Kuleshov | 0 | +0 | 0 | - | 4 | att.com |
+| 306 | Elena Kuleshov | 0 | +0 | 0 | - | 1 | att.com |
+| 307 | Eli Halych | 0 | +0 | 0 | - | 1 | gmail.com |
+| 308 | Eliezio Oliveira | 0 | +0 | 0 | - | 5 | est.tech |
+| 309 | Eltanany Shaaban | 0 | +0 | 0 | - | 3 | orange.com |
+| 310 | Emmanuel Bidet | 0 | +0 | 0 | - | 1 | m4x.org |
+| 311 | Emmett Cox | 0 | +0 | 0 | - | 4 | ericsson.com |
+| 312 | EmmettCox | 0 | +0 | 0 | - | 5 | est.tech |
+| 313 | Enbo Wang | 0 | +0 | 0 | - | 8 | huawei.com |
+| 314 | Eoin Hanan | 0 | +0 | 0 | - | 5 | ericsson.com |
+| 315 | Epp, Richard (re6517) | 0 | +0 | 0 | - | 1 | att.com |
+| 316 | Eric Adams | 0 | +0 | 0 | - | 1 | intel.com |
+| 317 | Eric Au | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 318 | Eric Debeau | 0 | +0 | 0 | - | 32 | orange.com |
+| 319 | Eric Multanen | 0 | +0 | 0 | - | 8 | intel.com |
+| 320 | Eric Santos | 0 | +0 | 0 | - | 4 | yoppworks.com |
+| 321 | Eric Tang | 0 | +0 | 0 | - | 1 | gmail.com |
+| 322 | EricMoore | 0 | +0 | 0 | - | 2 | est.tech |
+| 323 | Erol Ozcan (Argela) | 0 | +0 | 0 | - | 1 | com.tr |
+| 324 | Ester Rotstein | 0 | +0 | 0 | - | 2 | att.com |
+| 325 | Ethan Hampton | 0 | +0 | 0 | - | 2 | intel.com |
+| 326 | Ethan Lynn | 0 | +0 | 0 | - | 4 | gmail.com |
+| 327 | Ethan Lynn | 0 | +0 | 0 | - | 8 | vmware.com |
+| 328 | Eylon Malin | 0 | +0 | 0 | - | 1 | att.com |
+| 329 | EzekielaRakotoarijaona | 0 | +0 | 0 | - | 1 | orange.com |
+| 330 | Ezhilarasi | 0 | +0 | 0 | - | 7 | ibm.com |
+| 331 | Fabian_BZH | 0 | +0 | 0 | - | 1 | orange.com |
+| 332 | Fabio Palumbo | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 333 | Fatih Degirmenci | 0 | +0 | 0 | - | 1 | gmail.com |
+| 334 | Fei Tang | 0 | +0 | 0 | - | 1 | zte.com.cn |
+| 335 | Felix Sangalang | 0 | +0 | 0 | - | 2 | att.com |
+| 336 | Felix Sangalang | 0 | +0 | 0 | - | 1 | att.com |
+| 337 | FernandoOliveira | 0 | +0 | 0 | - | 1 | verizon.com |
+| 338 | Fiachra Corcoran | 0 | +0 | 0 | - | 4 | ericsson.com |
+| 339 | Filip Krzywka | 0 | +0 | 0 | - | 7 | nokia.com |
+| 340 | Fraboni, Gino (gf403a) | 0 | +0 | 0 | - | 5 | amdocs.com |
+| 341 | Francis Toth | 0 | +0 | 0 | - | 3 | yoppworks.com |
+| 342 | Frank A. Zdarsky | 0 | +0 | 0 | - | 2 | redhat.com |
+| 343 | Frank Grutzmacher | 0 | +0 | 0 | - | 1 | t-systems.com |
+| 344 | Frank Kimmlingen | 0 | +0 | 0 | - | 2 | telekom.de |
+| 345 | Frank Sandoval | 0 | +0 | 0 | - | 1 | cablelabs.com |
+| 346 | Franklin Dsilva | 0 | +0 | 0 | - | 3 | fujitsu.com |
+| 347 | Fred Oliveira | 0 | +0 | 0 | - | 1 | verizon.com |
+| 348 | Fuss, Areli (af732p) | 0 | +0 | 0 | - | 2 | att.com |
+| 349 | Fuss, Areli (af732p) | 0 | +0 | 0 | - | 1 | att.com |
+| 350 | GOPINATH MATHIVANAN | 0 | +0 | 0 | - | 2 | ibm.com |
+| 351 | GUNDAPANENI | 0 | +0 | 0 | - | 1 | att.com |
+| 352 | Gadicherla, Shiva | 0 | +0 | 0 | - | 1 | att.com |
+| 353 | Gadicherla, Shiva | 0 | +0 | 0 | - | 1 | att.com |
+| 354 | Gal Grottas | 0 | +0 | 0 | - | 2 | att.com |
+| 355 | Gamboa, Gilbert | 0 | +0 | 0 | - | 2 | att.com |
+| 356 | Ganesh Chandrasekaran | 0 | +0 | 0 | - | 4 | samsung.com |
+| 357 | Gao, Chenfei (cg287m) | 0 | +0 | 0 | - | 1 | gmail.com |
+| 358 | Gareth Roper | 0 | +0 | 0 | - | 2 | ericsson.com |
+| 359 | Gary Wu | 0 | +0 | 0 | - | 50 | huawei.com |
+| 360 | Gary Wu | 0 | +0 | 0 | - | 2 | gmail.com |
+| 361 | Gary Wu | 0 | +0 | 0 | - | 6 | futurewei.com |
+| 362 | Gary Wu | 0 | +0 | 0 | - | 5 | futurewei.com |
+| 363 | Gathman, Jonathan (jg1555) | 0 | +0 | 0 | - | 2 | att.com |
+| 364 | Gautam Shah | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 365 | Geora Barsky | 0 | +0 | 0 | - | 7 | amdocs.com |
+| 366 | George, Lina (lg941u) | 0 | +0 | 0 | - | 1 | att.com |
+| 367 | Gerard Hickey | 0 | +0 | 0 | - | 12 | ericsson.com |
+| 368 | Gergely Csatari | 0 | +0 | 0 | - | 1 | nokia.com |
+| 369 | Gildas Lanilis | 0 | +0 | 0 | - | 30 | huawei.com |
+| 370 | Gildas Lanilis | 0 | +0 | 0 | - | 1 | gildass-macbook-air.local |
+| 371 | Gilding, Joyce (jg640n) | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 372 | Gokul Singaraju | 0 | +0 | 0 | - | 2 | att.com |
+| 373 | Gokul Singaraju | 0 | +0 | 0 | - | 2 | gmail.com |
+| 374 | GregSulek | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 375 | Gregory Glover | 0 | +0 | 0 | - | 1 | att.com |
+| 376 | Grinberg Moti | 0 | +0 | 0 | - | 1 | att.com |
+| 377 | Grzegorz Wielgosinski | 0 | +0 | 0 | - | 4 | samsung.com |
+| 378 | Grzegorz-Lis | 0 | +0 | 0 | - | 6 | nokia.com |
+| 379 | GuangrongFu | 0 | +0 | 0 | - | 7 | zte.com.cn |
+| 380 | Guo Ruijing | 0 | +0 | 0 | - | 9 | intel.com |
+| 381 | Guobiao Mo | 0 | +0 | 0 | - | 4 | chinamobile.com |
+| 382 | Gurjeet Bedi | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 383 | HOCKLA | 0 | +0 | 0 | - | 15 | att.com |
+| 384 | Haddox, Anthony (ah0647) | 0 | +0 | 0 | - | 2 | att.com |
+| 385 | Hagop Bozawglanian | 0 | +0 | 0 | - | 7 | att.com |
+| 386 | Hanif Kukkalli | 0 | +0 | 0 | - | 1 | outlook.com |
+| 387 | Hansen, Tony (th1395) | 0 | +0 | 0 | - | 14 | att.com |
+| 388 | Hao Kuang | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 389 | Hao Kuang | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 390 | Hari Om Verma | 0 | +0 | 0 | - | 1 | techmahindra.com |
+| 391 | Hariharan | 0 | +0 | 0 | - | 1 | wipro.com |
+| 392 | Harish Venkata Kajur | 0 | +0 | 0 | - | 19 | att.com |
+| 393 | Harry Huang | 0 | +0 | 0 | - | 2 | huawei.com |
+| 394 | Havaldar Girish | 0 | +0 | 0 | - | 1 | techmahindra.com |
+| 395 | HePeng | 0 | +0 | 0 | - | 2 | zte.com.cn |
+| 396 | Hector Anapan-Lavalle | 0 | +0 | 0 | - | 5 | att.com |
+| 397 | Helen Chen | 0 | +0 | 0 | - | 6 | huawei.com |
+| 398 | HelenaLydon | 0 | +0 | 0 | - | 3 | est.tech |
+| 399 | Hengye | 0 | +0 | 0 | - | 10 | est.tech |
+| 400 | Henrik Andersson | 0 | +0 | 0 | - | 8 | est.tech |
+| 401 | Henry.Sun | 0 | +0 | 0 | - | 5 | est.tech |
+| 402 | Hesam Rahimi | 0 | +0 | 0 | - | 7 | huawei.com |
+| 403 | Hong Guan | 0 | +0 | 0 | - | 4 | att.com |
+| 404 | Hong Guan | 0 | +0 | 0 | - | 2 | att.com |
+| 405 | Hong Hui Xiao | 0 | +0 | 0 | - | 3 | yeah.net |
+| 406 | Houa Yang | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 407 | Huabing Zhao | 0 | +0 | 0 | - | 8 | gmail.com |
+| 408 | HuabingZhao | 0 | +0 | 0 | - | 8 | zte.com.cn |
+| 409 | Huang Cheng | 0 | +0 | 0 | - | 3 | huawei.com |
+| 410 | Huang Haibin | 0 | +0 | 0 | - | 10 | intel.com |
+| 411 | Hui Deng | 0 | +0 | 0 | - | 2 | huawei.com |
+| 412 | IanHowell | 0 | +0 | 0 | - | 1 | att.com |
+| 413 | Idan Amit | 0 | +0 | 0 | - | 10 | att.com |
+| 414 | Idan Amit | 0 | +0 | 0 | - | 3 | att.com |
+| 415 | Igor D.C | 0 | +0 | 0 | - | 1 | intel.com |
+| 416 | Igor Dysko | 0 | +0 | 0 | - | 7 | orange.com |
+| 417 | Ikram Ikramullah | 0 | +0 | 0 | - | 5 | att.com |
+| 418 | Ikramullah, Ikram (fi241c) | 0 | +0 | 0 | - | 2 | att.com |
+| 419 | Ilana Paktor | 0 | +0 | 0 | - | 5 | amdocs.com |
+| 420 | Illia Halych | 0 | +0 | 0 | - | 4 | t-mobile.pl |
+| 421 | Instrumental | 0 | +0 | 0 | - | 6 | att.com |
+| 422 | Instrumental | 0 | +0 | 0 | - | 2 | gathman.org |
+| 423 | Instrumental | 0 | +0 | 0 | - | 3 | gathman.org |
+| 424 | Isaac Manuel Raj | 0 | +0 | 0 | - | 5 | huawei.com |
+| 425 | Isaku Yamahata | 0 | +0 | 0 | - | 1 | intel.com |
+| 426 | Israel Lavi | 0 | +0 | 0 | - | 1 | att.com |
+| 427 | Israel Lavi | 0 | +0 | 0 | - | 2 | att.com |
+| 428 | Israel Lavi | 0 | +0 | 0 | - | 3 | att.com |
+| 429 | Itay Hassid | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 430 | Itohan | 0 | +0 | 0 | - | 4 | intel.com |
+| 431 | Ittay Stern | 0 | +0 | 0 | - | 6 | att.com |
+| 432 | Izabela Zawadzka | 0 | +0 | 0 | - | 2 | nokia.com |
+| 433 | Jack Lucas | 0 | +0 | 0 | - | 12 | sonoris.net |
+| 434 | Jack Lucas | 0 | +0 | 0 | - | 7 | att.com |
+| 435 | JakobKrieg | 0 | +0 | 0 | - | 2 | bcmsolutions.de |
+| 436 | Jakub Dominik | 0 | +0 | 0 | - | 1 | samsung.com |
+| 437 | Jakub Dudycz | 0 | +0 | 0 | - | 8 | nokia.com |
+| 438 | Jakub Dudycz | 0 | +0 | 0 | - | 1 | nokia.com |
+| 439 | Jakub Latusek | 0 | +0 | 0 | - | 2 | samsung.com |
+| 440 | Jakub Latusek | 0 | +0 | 0 | - | 1 | gmail.com |
+| 441 | Jakub Zieba | 0 | +0 | 0 | - | 3 | nokia.com |
+| 442 | James Guistwite | 0 | +0 | 0 | - | 2 | iconectiv.com |
+| 443 | James MacNider | 0 | +0 | 0 | - | 7 | amdocs.com |
+| 444 | Jamil Chawki | 0 | +0 | 0 | - | 1 | orange.com |
+| 445 | Jan Benedikt | 0 | +0 | 0 | - | 2 | samsung.com |
+| 446 | Jan Malkiewicz | 0 | +0 | 0 | - | 8 | nokia.com |
+| 447 | Jean-Yves Geury | 0 | +0 | 0 | - | 3 | nokia.com |
+| 448 | Jennie Jia | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 449 | Jeremy Phelps | 0 | +0 | 0 | - | 5 | linuxfoundation.org |
+| 450 | Jeremy Wolf | 0 | +0 | 0 | - | 1 | att.com |
+| 451 | Jerome Doucerain | 0 | +0 | 0 | - | 5 | bell.ca |
+| 452 | Jerry Flood | 0 | +0 | 0 | - | 6 | att.com |
+| 453 | Jerry Flood | 0 | +0 | 0 | - | 5 | att.com |
+| 454 | JerzySzachniewicz | 0 | +0 | 0 | - | 7 | nokia.com |
+| 455 | Jim Hahn | 0 | +0 | 0 | - | 21 | att.com |
+| 456 | Jim Hahn | 0 | +0 | 0 | - | 1 | gmail.com |
+| 457 | Jimmy Forsyth | 0 | +0 | 0 | - | 18 | att.com |
+| 458 | Jithendra | 0 | +0 | 0 | - | 1 | wipro.com |
+| 459 | Joanna Jeremicz | 0 | +0 | 0 | - | 19 | nokia.com |
+| 460 | JoeOLeary | 0 | +0 | 0 | - | 20 | est.tech |
+| 461 | Joey Sullivan | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 462 | John J. Franey | 0 | +0 | 0 | - | 4 | att.com |
+| 463 | John McClung | 0 | +0 | 0 | - | 1 | att.com |
+| 464 | Johnson Li | 0 | +0 | 0 | - | 1 | intel.com |
+| 465 | Jonathan Platt | 0 | +0 | 0 | - | 4 | att.com |
+| 466 | Jorge Hernandez | 0 | +0 | 0 | - | 13 | att.com |
+| 467 | Joseph Chou | 0 | +0 | 0 | - | 4 | att.com |
+| 468 | JosephKeenan | 0 | +0 | 0 | - | 2 | est.tech |
+| 469 | Joshua Reich | 0 | +0 | 0 | - | 4 | att.com |
+| 470 | Joss Armstrong | 0 | +0 | 0 | - | 2 | ericsson.com |
+| 471 | Jozsef Csongvai | 0 | +0 | 0 | - | 10 | bell.ca |
+| 472 | Juhi Arora | 0 | +0 | 0 | - | 1 | bell.ca |
+| 473 | Julien Barbot | 0 | +0 | 0 | - | 6 | barbot.org |
+| 474 | Julien Fontaine | 0 | +0 | 0 | - | 4 | bell.ca |
+| 475 | JulienBe | 0 | +0 | 0 | - | 4 | att.com |
+| 476 | JulienBe | 0 | +0 | 0 | - | 6 | att.com |
+| 477 | Jun (Nicolas) Hu | 0 | +0 | 0 | - | 3 | att.com |
+| 478 | Jun (Nicolas) Hu | 0 | +0 | 0 | - | 1 | att.com |
+| 479 | JunfengWang | 0 | +0 | 0 | - | 2 | ericsson.com |
+| 480 | Junyi | 0 | +0 | 0 | - | 4 | foxmail.com |
+| 481 | JvD_Ericsson | 0 | +0 | 0 | - | 7 | est.tech |
+| 482 | Kai | 0 | +0 | 0 | - | 4 | chinamobile.com |
+| 483 | Kailun Qin | 0 | +0 | 0 | - | 2 | intel.com |
+| 484 | Kajur, Venkata Harish (vk250x) | 0 | +0 | 0 | - | 2 | att.com |
+| 485 | Kalkere Ramesh, Sharan | 0 | +0 | 0 | - | 2 | att.com |
+| 486 | Kalkere Ramesh, Sharan (sk720x) | 0 | +0 | 0 | - | 3 | att.com |
+| 487 | Kanagaraj Manickam | 0 | +0 | 0 | - | 6 | gmail.com |
+| 488 | Kanagaraj Manickam | 0 | +0 | 0 | - | 1 | gamil.com |
+| 489 | Kanagaraj Manickam k00365106 | 0 | +0 | 0 | - | 10 | huawei.com |
+| 490 | Kang Xi | 0 | +0 | 0 | - | 2 | huawei.com |
+| 491 | Kartik Hegde | 0 | +0 | 0 | - | 1 | techmahindra.com |
+| 492 | Kate Hsuan | 0 | +0 | 0 | - | 1 | redhat.com |
+| 493 | Kate Hsuan | 0 | +0 | 0 | - | 3 | qct.io |
+| 494 | Kavitha P | 0 | +0 | 0 | - | 2 | aarnanetworks.com |
+| 495 | Kedar Ambekar | 0 | +0 | 0 | - | 2 | t-systems.com |
+| 496 | Keighron, Lori (lk2924) | 0 | +0 | 0 | - | 1 | att.com |
+| 497 | Keighron, Lori (lk2924) | 0 | +0 | 0 | - | 1 | att.com |
+| 498 | Kenny Paul | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 499 | Keong Lim | 0 | +0 | 0 | - | 9 | huawei.com |
+| 500 | Keren Joseph | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 501 | Kevin McKiou | 0 | +0 | 0 | - | 2 | att.com |
+| 502 | Kevin Scaggs | 0 | +0 | 0 | - | 2 | att.com |
+| 503 | Kiran | 0 | +0 | 0 | - | 3 | t-systems.com |
+| 504 | Kiran Kamineni | 0 | +0 | 0 | - | 10 | intel.com |
+| 505 | Kishore Reddy Dwaram | 0 | +0 | 0 | - | 1 | att.com |
+| 506 | Kishore Reddy, Gujja (kg811t) | 0 | +0 | 0 | - | 1 | att.com |
+| 507 | Kishore Reddy, Gujja (kg811t) | 0 | +0 | 0 | - | 1 | att.com |
+| 508 | Konrad Bańka | 0 | +0 | 0 | - | 9 | samsung.com |
+| 509 | Konrad Bańka | 0 | +0 | 0 | - | 1 | gmail.com |
+| 510 | Konstantinos Kanonakis | 0 | +0 | 0 | - | 1 | huawei.com |
+| 511 | Kotagiri, Ramprasad (rp5662) | 0 | +0 | 0 | - | 1 | att.com |
+| 512 | Kotta, Shireesha (sk434m) | 0 | +0 | 0 | - | 2 | att.com |
+| 513 | Krishna | 0 | +0 | 0 | - | 2 | stl.tech |
+| 514 | Krishnajinka | 0 | +0 | 0 | - | 6 | samsung.com |
+| 515 | Krysiak Adam Gabriel | 0 | +0 | 0 | - | 8 | nokia.com |
+| 516 | Krzysztof Bijakowski | 0 | +0 | 0 | - | 1 | cloudify.co |
+| 517 | Krzysztof Bijakowski | 0 | +0 | 0 | - | 1 | gigaspaces.com |
+| 518 | Krzysztof Frukacz | 0 | +0 | 0 | - | 1 | gigaspaces.com |
+| 519 | Krzysztof Gajewski | 0 | +0 | 0 | - | 9 | nokia.com |
+| 520 | Krzysztof Kuzmicki | 0 | +0 | 0 | - | 19 | nokia.com |
+| 521 | Krzysztof Kwiecien | 0 | +0 | 0 | - | 3 | orange.com |
+| 522 | Krzysztof Opasiak | 0 | +0 | 0 | - | 23 | samsung.com |
+| 523 | Kuldip Rai | 0 | +0 | 0 | - | 1 | bell.ca |
+| 524 | Kumar, Sudarshan (sk670p) | 0 | +0 | 0 | - | 3 | att.com |
+| 525 | Kuralamudhan Ramakrishnan | 0 | +0 | 0 | - | 2 | intel.com |
+| 526 | Kyle Stewart | 0 | +0 | 0 | - | 1 | ericsson.com |
+| 527 | LF Jenkins CI | 0 | +0 | 0 | - | 90 | linuxfoundation.org |
+| 528 | LaMont, William (wl2432) | 0 | +0 | 0 | - | 4 | att.com |
+| 529 | LaMont, William(wl2432) | 0 | +0 | 0 | - | 6 | att.com |
+| 530 | Ladue, David (dl3158) | 0 | +0 | 0 | - | 3 | att.com |
+| 531 | Larry Sachs | 0 | +0 | 0 | - | 2 | intel.com |
+| 532 | Lasse Kaihlavirta | 0 | +0 | 0 | - | 16 | samsung.com |
+| 533 | Lathish | 0 | +0 | 0 | - | 10 | est.tech |
+| 534 | Lathishbabu Ganesan | 0 | +0 | 0 | - | 1 | ericsson.com |
+| 535 | Lee, Tian (tl5884) | 0 | +0 | 0 | - | 16 | amdocs.com |
+| 536 | Lee, Tian (tl5884) | 0 | +0 | 0 | - | 2 | att.com |
+| 537 | Leonard, Mark (ml401d) | 0 | +0 | 0 | - | 2 | att.com |
+| 538 | Leonardo Bellini | 0 | +0 | 0 | - | 2 | att.com |
+| 539 | LiZi | 0 | +0 | 0 | - | 7 | zte.com.cn |
+| 540 | LiamBurke | 0 | +0 | 0 | - | 3 | ericsson.com |
+| 541 | Liang Ding | 0 | +0 | 0 | - | 6 | intel.com |
+| 542 | Lianhao Lu | 0 | +0 | 0 | - | 8 | intel.com |
+| 543 | Liard Samuel | 0 | +0 | 0 | - | 3 | orange.com |
+| 544 | Liexiang Yue | 0 | +0 | 0 | - | 7 | chinamobile.com |
+| 545 | Lin, Jerry (jl319x) | 0 | +0 | 0 | - | 3 | att.com |
+| 546 | Lior Nachmias | 0 | +0 | 0 | - | 6 | att.com |
+| 547 | Lior Nachmias | 0 | +0 | 0 | - | 3 | att.com |
+| 548 | Lisa Revel | 0 | +0 | 0 | - | 1 | att.com |
+| 549 | Litao Gao | 0 | +0 | 0 | - | 2 | windriver.com |
+| 550 | Lo, WEI-TING(wl849v) | 0 | +0 | 0 | - | 1 | att.com |
+| 551 | Lorraine Welch | 0 | +0 | 0 | - | 4 | att.com |
+| 552 | Lott, Christopher (cl778h) | 0 | +0 | 0 | - | 1 | att.com |
+| 553 | Lovett, Trevor | 0 | +0 | 0 | - | 12 | att.com |
+| 554 | Lovett, Trevor (tl2972) | 0 | +0 | 0 | - | 2 | att.com |
+| 555 | Lucjan Bryndza | 0 | +0 | 0 | - | 6 | samsung.com |
+| 556 | Lucjan Bryndza | 0 | +0 | 0 | - | 2 | samsung.com |
+| 557 | Ludmila Schlegelova | 0 | +0 | 0 | - | 1 | telekom.com |
+| 558 | Luji7 | 0 | +0 | 0 | - | 5 | zte.com.cn |
+| 559 | Lukasz Muszkieta | 0 | +0 | 0 | - | 11 | nokia.com |
+| 560 | Lukasz Rajewski | 0 | +0 | 0 | - | 18 | orange.com |
+| 561 | Luke Gleeson | 0 | +0 | 0 | - | 3 | est.tech |
+| 562 | Luke Parker | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 563 | Lusheng Ji | 0 | +0 | 0 | - | 16 | att.com |
+| 564 | Lvbo163 | 0 | +0 | 0 | - | 6 | zte.com.cn |
+| 565 | M.Hosnidokht | 0 | +0 | 0 | - | 5 | yoppworks.com |
+| 566 | MD IRSHAD SHEIKH | 0 | +0 | 0 | - | 7 | huawei.com |
+| 567 | Maciej Lisowski | 0 | +0 | 0 | - | 3 | samsung.com |
+| 568 | Maciej Malewski | 0 | +0 | 0 | - | 7 | nokia.com |
+| 569 | Maciej Wejs | 0 | +0 | 0 | - | 4 | nokia.com |
+| 570 | Maciej Wereski | 0 | +0 | 0 | - | 2 | samsung.com |
+| 571 | Magnusen, Drew (dm741q) | 0 | +0 | 0 | - | 3 | att.com |
+| 572 | Maharajh, Robby (rx2202) | 0 | +0 | 0 | - | 4 | att.com |
+| 573 | Mahendra Raghuwanshi | 0 | +0 | 0 | - | 6 | amdocs.com |
+| 574 | Mahmoud Abdelhamid | 0 | +0 | 0 | - | 1 | orange.com |
+| 575 | Mahsa MonemMoharrer | 0 | +0 | 0 | - | 1 | gmail.com |
+| 576 | Malek | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 577 | Mamed Mamedov | 0 | +0 | 0 | - | 1 | telekom.com |
+| 578 | Mamtha | 0 | +0 | 0 | - | 1 | ibm.com |
+| 579 | Manamohan | 0 | +0 | 0 | - | 2 | techmahindra.com |
+| 580 | Mandar Sawant | 0 | +0 | 0 | - | 5 | att.com |
+| 581 | Mandeep Khinda | 0 | +0 | 0 | - | 6 | amdocs.com |
+| 582 | Mandeep Khinda | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 583 | Manish Kumar | 0 | +0 | 0 | - | 6 | gmail.com |
+| 584 | Manisha Aggarwal | 0 | +0 | 0 | - | 6 | att.com |
+| 585 | Manisha Aggarwal | 0 | +0 | 0 | - | 7 | att.com |
+| 586 | Manjeet Singh Bhatia | 0 | +0 | 0 | - | 1 | intel.com |
+| 587 | Manjunath Ranganathaiah | 0 | +0 | 0 | - | 5 | intel.com |
+| 588 | Manoj Marneni | 0 | +0 | 0 | - | 1 | att.com |
+| 589 | Manoop Talasila | 0 | +0 | 0 | - | 4 | att.com |
+| 590 | Manzon, Inna (im453s) | 0 | +0 | 0 | - | 3 | att.com |
+| 591 | Marat Salakhutdinov | 0 | +0 | 0 | - | 1 | bell.ca |
+| 592 | Marc-Alexandre Choquette | 0 | +0 | 0 | - | 2 | bell.ca |
+| 593 | Marcin Krasowski | 0 | +0 | 0 | - | 3 | samsung.com |
+| 594 | Marcin Migdal | 0 | +0 | 0 | - | 8 | nokia.com |
+| 595 | Marcin Przybysz | 0 | +0 | 0 | - | 8 | nokia.com |
+| 596 | Marcin Wilk | 0 | +0 | 0 | - | 2 | samsung.com |
+| 597 | Marco Platania | 0 | +0 | 0 | - | 12 | att.com |
+| 598 | Marcus Williams | 0 | +0 | 0 | - | 16 | intel.com |
+| 599 | Marek Wolczanski | 0 | +0 | 0 | - | 2 | cloudify.co |
+| 600 | Mariah Jacobs | 0 | +0 | 0 | - | 3 | intel.com |
+| 601 | Mariano Diaz | 0 | +0 | 0 | - | 2 | yoppworks.com |
+| 602 | Mariusz Sygnowski | 0 | +0 | 0 | - | 1 | nokia.com |
+| 603 | Mariusz Wagner | 0 | +0 | 0 | - | 5 | nokia.com |
+| 604 | Mark Tooski | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 605 | Mars Toktonaliev | 0 | +0 | 0 | - | 1 | nokia.com |
+| 606 | Martin Klozik | 0 | +0 | 0 | - | 4 | tieto.com |
+| 607 | Martin Ouimet | 0 | +0 | 0 | - | 2 | bell.ca |
+| 608 | Matej Babej | 0 | +0 | 0 | - | 2 | tieto.com |
+| 609 | Matej Klotton | 0 | +0 | 0 | - | 4 | pantheon.tech |
+| 610 | Matej Perina | 0 | +0 | 0 | - | 3 | pantheon.tech |
+| 611 | Mateusz Gołuchowski | 0 | +0 | 0 | - | 3 | nokia.com |
+| 612 | Mateusz Pilat | 0 | +0 | 0 | - | 4 | samsung.com |
+| 613 | Matt Welch | 0 | +0 | 0 | - | 1 | intel.com |
+| 614 | Matthew Davis | 0 | +0 | 0 | - | 1 | telstra.com |
+| 615 | MatthewHarffy | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 616 | Matthieu Cauffiez | 0 | +0 | 0 | - | 2 | bell.ca |
+| 617 | Matthieu Geerebaert | 0 | +0 | 0 | - | 6 | orange.com |
+| 618 | Matus Szabo | 0 | +0 | 0 | - | 2 | orange.com |
+| 619 | Max Benjamin | 0 | +0 | 0 | - | 3 | att.com |
+| 620 | May Lin | 0 | +0 | 0 | - | 1 | qct.io |
+| 621 | Mcblain, Thomas | 0 | +0 | 0 | - | 2 | att.com |
+| 622 | Mehreen Kaleem | 0 | +0 | 0 | - | 5 | fujitsu.com |
+| 623 | Mehreen Kaleem | 0 | +0 | 0 | - | 1 | wipro.com |
+| 624 | Mei Su | 0 | +0 | 0 | - | 1 | att.com |
+| 625 | Mei Su | 0 | +0 | 0 | - | 1 | email |
+| 626 | Merkel, Jeff | 0 | +0 | 0 | - | 2 | att.com |
+| 627 | Michael Arrastia | 0 | +0 | 0 | - | 5 | amdocs.com |
+| 628 | Michael Borokhovich | 0 | +0 | 0 | - | 1 | att.com |
+| 629 | Michael Hwang | 0 | +0 | 0 | - | 6 | att.com |
+| 630 | Michael Lando | 0 | +0 | 0 | - | 13 | att.com |
+| 631 | Michael Lando | 0 | +0 | 0 | - | 5 | att.com |
+| 632 | Michael Lando | 0 | +0 | 0 | - | 1 | att.com |
+| 633 | Michael Mokry | 0 | +0 | 0 | - | 6 | att.com |
+| 634 | Michael Mokry | 0 | +0 | 0 | - | 7 | att.com |
+| 635 | Michael O'Brien | 0 | +0 | 0 | - | 9 | amdocs.com |
+| 636 | Michael O'Brien | 0 | +0 | 0 | - | 4 | obrienlabs.org |
+| 637 | Michael Pruss | 0 | +0 | 0 | - | 2 | bell.ca |
+| 638 | Michael Shitrit | 0 | +0 | 0 | - | 2 | att.com |
+| 639 | MichaelMorris | 0 | +0 | 0 | - | 17 | est.tech |
+| 640 | Michal Banka | 0 | +0 | 0 | - | 17 | nokia.com |
+| 641 | Michal Chabiera | 0 | +0 | 0 | - | 3 | orange.com |
+| 642 | Michal Kabaj | 0 | +0 | 0 | - | 5 | nokia.com |
+| 643 | Michal Korman | 0 | +0 | 0 | - | 1 | nokia.com |
+| 644 | Michal Ptacek | 0 | +0 | 0 | - | 8 | samsung.com |
+| 645 | Michal Zegan | 0 | +0 | 0 | - | 2 | samsung.com |
+| 646 | Michał Grzesik | 0 | +0 | 0 | - | 1 | orange.com |
+| 647 | Mickael JEZEQUEL | 0 | +0 | 0 | - | 4 | orange.com |
+| 648 | Mike Babinski | 0 | +0 | 0 | - | 2 | att.com |
+| 649 | Mike Elliott | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 650 | Milan Verespej | 0 | +0 | 0 | - | 2 | samsung.com |
+| 651 | Milin | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 652 | Miroslav Los | 0 | +0 | 0 | - | 4 | pantheon.tech |
+| 653 | Mnushkin, Dmitry | 0 | +0 | 0 | - | 2 | att.com |
+| 654 | Mnushkin, Dmitry (dm4252) | 0 | +0 | 0 | - | 2 | att.com |
+| 655 | Modaboina, Kusumakumari (km583p) | 0 | +0 | 0 | - | 1 | att.com |
+| 656 | Modaboina, Kusumakumari (km583p) | 0 | +0 | 0 | - | 1 | att.com |
+| 657 | Mohamed Waly | 0 | +0 | 0 | - | 2 | orange.com |
+| 658 | Mohammad | 0 | +0 | 0 | - | 1 | highstreet-technologies.com |
+| 659 | Mohammadreza Pasandideh | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 660 | Mohammed Naser | 0 | +0 | 0 | - | 5 | vexxhost.com |
+| 661 | Mor Dabastany | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 662 | Moshe | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 663 | Mukesh Paliwal | 0 | +0 | 0 | - | 15 | huawei.com |
+| 664 | MukeshKumar | 0 | +0 | 0 | - | 13 | est.tech |
+| 665 | Mukul | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 666 | Muller, Andrew (am8383) | 0 | +0 | 0 | - | 3 | att.com |
+| 667 | Muller, Andrew (am8383) | 0 | +0 | 0 | - | 1 | att.com |
+| 668 | Muni Mohan Kunchi | 0 | +0 | 0 | - | 1 | att.com |
+| 669 | Munir Ahmad | 0 | +0 | 0 | - | 7 | bell.ca |
+| 670 | Murali-P | 0 | +0 | 0 | - | 8 | huawei.com |
+| 671 | Muthuramalingam, Brinda Santh | 0 | +0 | 0 | - | 6 | ibm.com |
+| 672 | Muthuramalingam, Brinda Santh | 0 | +0 | 0 | - | 4 | att.com |
 | 673 | NGUYEN | 0 | +0 | 0 | - | 1 | att.com |
 | 674 | NITIN KAWA | 0 | +0 | 0 | - | 2 | huawei.com |
 | 675 | Nagendra90287 | 0 | +0 | 0 | - | 3 | amdocs.com |
@@ -946,7 +946,7 @@ The data presented in the table below covers the past 365 days.
 | 789 | Rami | 0 | +0 | 0 | - | 1 | orange.com |
 | 790 | Rashmi Pujar | 0 | +0 | 0 | - | 7 | bell.ca |
 | 791 | Rashmi Pujar | 0 | +0 | 0 | - | 12 | bell.ca |
-| 792 | Ravi Geda | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 792 | RaviGeda | 0 | +0 | 0 | - | 4 | amdocs.com |
 | 793 | Raviteja Cherughattu | 0 | +0 | 0 | - | 1 | att.com |
 | 794 | RehanRaza | 0 | +0 | 0 | - | 9 | est.tech |
 | 795 | Remigiusz Janeczek | 0 | +0 | 0 | - | 25 | nokia.com |
@@ -1109,471 +1109,471 @@ The data presented in the table below covers the past 365 days.
 | 952 | Tal Gitelman | 0 | +0 | 0 | - | 5 | att.com |
 | 953 | Tal Karbachinsky | 0 | +0 | 0 | - | 2 | amdocs.com |
 | 954 | TamasBakai | 0 | +0 | 0 | - | 5 | est.tech |
-| 955 | Ted Humphrey | 0 | +0 | 0 | - | 2 | att.com |
-| 956 | Tej, Tarun | 0 | +0 | 0 | - | 3 | att.com |
-| 957 | Temoc Rodriguez | 0 | +0 | 0 | - | 5 | att.com |
-| 958 | ThamlurRaju | 0 | +0 | 0 | - | 2 | techmahindra.com |
-| 959 | Thanh Ha | 0 | +0 | 0 | - | 2 | linuxfoundation.org |
-| 960 | Thierry Hardy | 0 | +0 | 0 | - | 2 | orange.com |
-| 961 | Thomas Nelson | 0 | +0 | 0 | - | 3 | att.com |
-| 962 | Threefoot, Jane (jt6620) | 0 | +0 | 0 | - | 4 | att.com |
-| 963 | Thugutla sailakshmi | 0 | +0 | 0 | - | 4 | ibm.com |
-| 964 | Tim Johnson | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 965 | Tin Lam | 0 | +0 | 0 | - | 1 | irrational.io |
-| 966 | Toan Nguyen | 0 | +0 | 0 | - | 1 | att.com |
-| 967 | Todd Larchuk | 0 | +0 | 0 | - | 1 | att.com |
-| 968 | Todd Malsbary | 0 | +0 | 0 | - | 1 | intel.com |
-| 969 | Tomasz Golabek | 0 | +0 | 0 | - | 13 | nokia.com |
-| 970 | Tomasz Gwozdecki | 0 | +0 | 0 | - | 2 | nokia.com |
-| 971 | Tomasz Pietruszkiewicz | 0 | +0 | 0 | - | 14 | nokia.com |
-| 972 | Tomasz Switon | 0 | +0 | 0 | - | 1 | nokia.com |
-| 973 | Tomasz Wrobel | 0 | +0 | 0 | - | 17 | nokia.com |
-| 974 | Tomek Kaminski | 0 | +0 | 0 | - | 3 | nokia.com |
-| 975 | Tomek Osinski | 0 | +0 | 0 | - | 1 | orange.com |
-| 976 | Tommy Carpenter | 0 | +0 | 0 | - | 1 | att.com |
+| 955 | Tao Shen | 0 | +0 | 0 | - | 7 | chinamobile.com |
+| 956 | Ted Humphrey | 0 | +0 | 0 | - | 2 | att.com |
+| 957 | Tej, Tarun | 0 | +0 | 0 | - | 3 | att.com |
+| 958 | Temoc Rodriguez | 0 | +0 | 0 | - | 5 | att.com |
+| 959 | ThamlurRaju | 0 | +0 | 0 | - | 2 | techmahindra.com |
+| 960 | Thanh Ha | 0 | +0 | 0 | - | 2 | linuxfoundation.org |
+| 961 | Thierry Hardy | 0 | +0 | 0 | - | 2 | orange.com |
+| 962 | Thomas Nelson | 0 | +0 | 0 | - | 3 | att.com |
+| 963 | Threefoot, Jane (jt6620) | 0 | +0 | 0 | - | 4 | att.com |
+| 964 | Thugutla sailakshmi | 0 | +0 | 0 | - | 4 | ibm.com |
+| 965 | Tim Johnson | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 966 | Tin Lam | 0 | +0 | 0 | - | 1 | irrational.io |
+| 967 | Toan Nguyen | 0 | +0 | 0 | - | 1 | att.com |
+| 968 | Todd Larchuk | 0 | +0 | 0 | - | 1 | att.com |
+| 969 | Todd Malsbary | 0 | +0 | 0 | - | 1 | intel.com |
+| 970 | Tomasz Golabek | 0 | +0 | 0 | - | 13 | nokia.com |
+| 971 | Tomasz Gwozdecki | 0 | +0 | 0 | - | 2 | nokia.com |
+| 972 | Tomasz Pietruszkiewicz | 0 | +0 | 0 | - | 14 | nokia.com |
+| 973 | Tomasz Switon | 0 | +0 | 0 | - | 1 | nokia.com |
+| 974 | Tomasz Wrobel | 0 | +0 | 0 | - | 17 | nokia.com |
+| 975 | Tomek Kaminski | 0 | +0 | 0 | - | 3 | nokia.com |
+| 976 | Tomek Osinski | 0 | +0 | 0 | - | 1 | orange.com |
 | 977 | Tommy Carpenter | 0 | +0 | 0 | - | 1 | att.com |
-| 978 | Tomáš Levora | 0 | +0 | 0 | - | 4 | samsung.com |
-| 979 | Tony Hansen | 0 | +0 | 0 | - | 16 | att.com |
-| 980 | Toshimichi Fukuda | 0 | +0 | 0 | - | 3 | fujitsu.com |
-| 981 | Tschaen, Brendan | 0 | +0 | 0 | - | 5 | att.com |
-| 982 | Tschaen, Brendan (bt054f) | 0 | +0 | 0 | - | 2 | att.com |
-| 983 | Tufman, Shay | 0 | +0 | 0 | - | 2 | att.com |
-| 984 | Tufman, Shay | 0 | +0 | 0 | - | 2 | gmail.com |
-| 985 | Tufman, Shay (st198j) | 0 | +0 | 0 | - | 2 | att.com |
-| 986 | Ubuntu | 0 | +0 | 0 | - | 1 | telekom.de |
-| 987 | Ubuntu | 0 | +0 | 0 | - | 1 | windstream.com |
-| 988 | Ubuntu | 0 | +0 | 0 | - | 2 | example.com |
-| 989 | Ubuntu | 0 | +0 | 0 | - | 1 | nokia.com |
-| 990 | Usaraswat | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 991 | Vanessa Valderrama | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 992 | Varma, Vikas (vv8305) | 0 | +0 | 0 | - | 1 | att.com |
-| 993 | Vasyl Razinkov | 0 | +0 | 0 | - | 2 | sidero.ie |
-| 994 | Venkata Harish K Kajur | 0 | +0 | 0 | - | 6 | gmail.com |
-| 995 | Venkata Molluru | 0 | +0 | 0 | - | 2 | techmahindra.com |
-| 996 | Victor Gao | 0 | +0 | 0 | - | 9 | huawei.com |
-| 997 | Victor Morales | 0 | +0 | 0 | - | 13 | intel.com |
-| 998 | Victor Morales | 0 | +0 | 0 | - | 1 | samsung.com |
-| 999 | Vidisha | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1000 | Vidya Shinde | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1001 | Vidya Shinde | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1002 | Vidyashree Rama | 0 | +0 | 0 | - | 9 | huawei.com |
-| 1003 | Vijay Venkatesh Kumar | 0 | +0 | 0 | - | 24 | att.com |
-| 1004 | Vikram Potturi(apotturi) | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1005 | Vincent Colas | 0 | +0 | 0 | - | 2 | orange.com |
-| 1006 | Virginie | 0 | +0 | 0 | - | 2 | orange.com |
-| 1007 | Vishal Varvate | 0 | +0 | 0 | - | 1 | capgemini.com |
-| 1008 | Viswanath Kumar Skand Priya | 0 | +0 | 0 | - | 1 | verizon.com |
-| 1009 | Vitaly Lavrusevich | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1010 | Vladislav Sheshalevich | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1011 | Vodafone | 0 | +0 | 0 | - | 7 | vodafone.com |
-| 1012 | Wang,Frank(gw1218) | 0 | +0 | 0 | - | 1 | att.com |
-| 1013 | WeberLaurent | 0 | +0 | 0 | - | 2 | gmail.com |
-| 1014 | Wiktor Garbarek | 0 | +0 | 0 | - | 5 | nokia.com |
-| 1015 | William Reehil | 0 | +0 | 0 | - | 11 | att.com |
-| 1016 | Witold Ficio Kopel | 0 | +0 | 0 | - | 2 | samsung.com |
-| 1017 | Wonnell, Skip (kw5258) | 0 | +0 | 0 | - | 1 | att.com |
-| 1018 | Xiaohua Zhang | 0 | +0 | 0 | - | 5 | windriver.com |
-| 1019 | Xin Miao | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1020 | Xin Miao | 0 | +0 | 0 | - | 2 | fujitsu.com |
-| 1021 | XingXiaocheng | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1022 | Yang Xu | 0 | +0 | 0 | - | 12 | huawei.com |
-| 1023 | Yang Xu | 0 | +0 | 0 | - | 5 | futurewei.com |
-| 1024 | Yang Xu | 0 | +0 | 0 | - | 4 | gmail.com |
-| 1025 | Yang Xu | 0 | +0 | 0 | - | 4 | futurewei.com |
-| 1026 | Yao Le | 0 | +0 | 0 | - | 1 | intel.com |
-| 1027 | Yaoguang Wang | 0 | +0 | 0 | - | 4 | huawei.com |
-| 1028 | Yarin Dekel | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1029 | Yashwanth | 0 | +0 | 0 | - | 4 | wipro.com |
-| 1030 | Yatian XU | 0 | +0 | 0 | - | 1 | nokia-sbell.com |
-| 1031 | YiLi | 0 | +0 | 0 | - | 1 | zte.com.cn |
-| 1032 | Yoav Schneiderman | 0 | +0 | 0 | - | 1 | att.com |
-| 1033 | YongchaoWu | 0 | +0 | 0 | - | 4 | est.tech |
-| 1034 | Yoo, Brian (by703c) | 0 | +0 | 0 | - | 3 | att.com |
-| 1035 | YuanHu | 0 | +0 | 0 | - | 5 | zte.com.cn |
-| 1036 | Yuli | 0 | +0 | 0 | - | 3 | gmail.com |
-| 1037 | Yuli Shlosberg | 0 | +0 | 0 | - | 8 | att.com |
-| 1038 | Yulian Han | 0 | +0 | 0 | - | 5 | huawei.com |
-| 1039 | Yun Huang | 0 | +0 | 0 | - | 3 | windriver.com |
-| 1040 | ZhangZihao | 0 | +0 | 0 | - | 2 | chinamobile.com |
-| 1041 | Zhaoxing Meng | 0 | +0 | 0 | - | 8 | zte.com.cn |
-| 1042 | Zhuangyang | 0 | +0 | 0 | - | 1 | qq.com |
-| 1043 | Zhuoyao Huang | 0 | +0 | 0 | - | 6 | zte.com.cn |
-| 1044 | Zihmin Hoover | 0 | +0 | 0 | - | 1 | att.com |
-| 1045 | Zlatko Murgoski | 0 | +0 | 0 | - | 5 | nokia.com |
-| 1046 | a.sreekumar | 0 | +0 | 0 | - | 16 | bell.ca |
-| 1047 | a.sreekumar | 0 | +0 | 0 | - | 14 | est.tech |
-| 1048 | a.sreekumar | 0 | +0 | 0 | - | 1 | ericsson.com |
-| 1049 | abatos | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1050 | abbas | 0 | +0 | 0 | - | 1 | wipro.com |
-| 1051 | abhishek.c92 | 0 | +0 | 0 | - | 1 | samsung.com |
-| 1052 | aditya | 0 | +0 | 0 | - | 4 | att.com |
-| 1053 | aditya.puthuparambil | 0 | +0 | 0 | - | 7 | est.tech |
-| 1054 | afenner | 0 | +0 | 0 | - | 3 | est.tech |
-| 1055 | afenner | 0 | +0 | 0 | - | 4 | ericsson.com |
-| 1056 | aishkashyap | 0 | +0 | 0 | - | 3 | techmahindra.com |
-| 1057 | ajay priyadarshi | 0 | +0 | 0 | - | 1 | ril.com |
-| 1058 | ajay_dp001 | 0 | +0 | 0 | - | 13 | est.tech |
-| 1059 | akhilakishore | 0 | +0 | 0 | - | 3 | intel.com |
-| 1060 | akhosla | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 1061 | aleem.raja@t-systems.com | 0 | +0 | 0 | - | 7 | t-systems.com |
-| 1062 | aleemraja | 0 | +0 | 0 | - | 4 | techmahindra.com |
-| 1063 | alex.stancu | 0 | +0 | 0 | - | 1 | highstreet-technologies.com |
-| 1064 | alkac | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1065 | amatthews | 0 | +0 | 0 | - | 1 | est.tech |
-| 1066 | ambrishest | 0 | +0 | 0 | - | 1 | est.tech |
-| 1067 | amine ezziati | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1068 | amitjai | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1069 | amohamad | 0 | +0 | 0 | - | 1 | queensu.ca |
-| 1070 | amshegokar | 0 | +0 | 0 | - | 4 | techmahindra.com |
-| 1071 | andre.schmid | 0 | +0 | 0 | - | 5 | est.tech |
-| 1072 | andrzejszukuc | 0 | +0 | 0 | - | 5 | nokia.com |
-| 1073 | anjali.walsatwar | 0 | +0 | 0 | - | 6 | huawei.com |
-| 1074 | ankitbhatt | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1075 | ankitg@aarnanetworks.com | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
-| 1076 | antonys | 0 | +0 | 0 | - | 1 | est.tech |
-| 1077 | anujkap | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1078 | anupmarathe | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1079 | anushadasari | 0 | +0 | 0 | - | 4 | ibm.com |
-| 1080 | aosull01 | 0 | +0 | 0 | - | 4 | huawei.com |
-| 1081 | aribeiro | 0 | +0 | 0 | - | 2 | est.tech |
-| 1082 | arkadiusz.adamski | 0 | +0 | 0 | - | 4 | est.tech |
-| 1083 | arun chapagain | 0 | +0 | 0 | - | 2 | huawei.com |
-| 1084 | as005h | 0 | +0 | 0 | - | 1 | att.com |
-| 1085 | asgar | 0 | +0 | 0 | - | 2 | ibm.com |
-| 1086 | atulan | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1087 | atulpurohit | 0 | +0 | 0 | - | 2 | vodafone.com |
-| 1088 | avigaffa | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1089 | avinash.akkera | 0 | +0 | 0 | - | 1 | accenture.com |
-| 1090 | ayalaben | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1091 | barak | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1092 | bb3476 | 0 | +0 | 0 | - | 2 | att.com |
-| 1093 | bdfreeman1421 | 0 | +0 | 0 | - | 1 | att.com |
-| 1094 | beili.zhou | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1095 | bencheung | 0 | +0 | 0 | - | 3 | nokia.com |
-| 1096 | bharath | 0 | +0 | 0 | - | 3 | hotmail.com |
-| 1097 | bhedstrom | 0 | +0 | 0 | - | 2 | oamtechnologies.com |
-| 1098 | biancunkang | 0 | +0 | 0 | - | 2 | zte.com.cn |
-| 1099 | bilal.iqbal | 0 | +0 | 0 | - | 3 | est.tech |
-| 1100 | biniek | 0 | +0 | 0 | - | 6 | nokia.com |
-| 1101 | biswajit.deswali | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1102 | bmiklos | 0 | +0 | 0 | - | 1 | est.tech |
-| 1103 | bobbymander | 0 | +0 | 0 | - | 1 | att.com |
-| 1104 | bran-wang | 0 | +0 | 0 | - | 1 | vmware.com |
-| 1105 | brucetcisco | 0 | +0 | 0 | - | 2 | cisco.com |
-| 1106 | brunomilitzer | 0 | +0 | 0 | - | 3 | est.tech |
-| 1107 | bt2983 | 0 | +0 | 0 | - | 4 | att.com |
-| 1108 | burdziak | 0 | +0 | 0 | - | 10 | nokia.com |
-| 1109 | bwong21 | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 1110 | cb478c | 0 | +0 | 0 | - | 1 | att.com |
-| 1111 | chandana.g.n | 0 | +0 | 0 | - | 1 | accenture.com |
-| 1112 | chenjie1 | 0 | +0 | 0 | - | 2 | intel.com |
-| 1113 | chenkai | 0 | +0 | 0 | - | 1 | fiberhome.com |
-| 1114 | chenying83 | 0 | +0 | 0 | - | 2 | huawei.com |
-| 1115 | chrisreece | 0 | +0 | 0 | - | 1 | awardsolutions.com |
-| 1116 | chsailakshmi | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
-| 1117 | cluckenbaugh | 0 | +0 | 0 | - | 1 | att.com |
-| 1118 | cmrizhangzhen | 0 | +0 | 0 | - | 4 | qq.com |
-| 1119 | colvert | 0 | +0 | 0 | - | 2 | gmail.com |
-| 1120 | cyuamber | 0 | +0 | 0 | - | 5 | chinamobile.com |
-| 1121 | dasarathi528024 | 0 | +0 | 0 | - | 1 | techmahindra.com |
-| 1122 | dave.adams (da490c) | 0 | +0 | 0 | - | 6 | amdocs.com |
-| 1123 | david.mcweeney | 0 | +0 | 0 | - | 12 | est.tech |
-| 1124 | davsad | 0 | +0 | 0 | - | 1 | est.tech |
-| 1125 | decheng zhang | 0 | +0 | 0 | - | 8 | huawei.com |
-| 1126 | deen1985 | 0 | +0 | 0 | - | 13 | nokia.com |
-| 1127 | deepikasatheesh | 0 | +0 | 0 | - | 8 | wipro.com |
-| 1128 | dekstroza | 0 | +0 | 0 | - | 2 | ericsson.com |
-| 1129 | demskeq8 | 0 | +0 | 0 | - | 2 | highstreet-technologies.com |
-| 1130 | demx8as6 | 0 | +0 | 0 | - | 1 | highstreet-technologies.com |
-| 1131 | denghui (L) | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1132 | denglingli | 0 | +0 | 0 | - | 2 | chinamobile.com |
-| 1133 | denilson.l65 | 0 | +0 | 0 | - | 6 | wipro.com |
-| 1134 | dermot123 | 0 | +0 | 0 | - | 2 | est.tech |
-| 1135 | dfarrelly | 0 | +0 | 0 | - | 9 | est.tech |
-| 1136 | dfilppi | 0 | +0 | 0 | - | 3 | cloudify.co |
-| 1137 | dfilppi | 0 | +0 | 0 | - | 1 | gigaspaces.com |
-| 1138 | dfx1971 | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 1139 | dg5762 | 0 | +0 | 0 | - | 2 | att.com |
-| 1140 | dgermain | 0 | +0 | 0 | - | 1 | cgi.com |
-| 1141 | dglFromAtt | 0 | +0 | 0 | - | 9 | att.com |
-| 1142 | dharani | 0 | +0 | 0 | - | 1 | wipro.com |
-| 1143 | dhebeha | 0 | +0 | 0 | - | 4 | wipro.com |
-| 1144 | dinesha | 0 | +0 | 0 | - | 2 | ibm.com |
-| 1145 | dkamdocs | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1146 | drveerendra | 0 | +0 | 0 | - | 2 | att.com |
-| 1147 | dsingh.278 | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1148 | dyh | 0 | +0 | 0 | - | 7 | chinamobile.com |
-| 1149 | eHanan | 0 | +0 | 0 | - | 5 | est.tech |
-| 1150 | earthmant | 0 | +0 | 0 | - | 1 | cloudify.co |
-| 1151 | ecaiyanlinux | 0 | +0 | 0 | - | 8 | est.tech |
-| 1152 | econwar | 0 | +0 | 0 | - | 6 | est.tech |
-| 1153 | ed852m | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1154 | edepaul | 0 | +0 | 0 | - | 2 | est.tech |
-| 1155 | eeginux | 0 | +0 | 0 | - | 4 | est.tech |
-| 1156 | efiacor | 0 | +0 | 0 | - | 29 | est.tech |
-| 1157 | eh552t | 0 | +0 | 0 | - | 9 | att.com |
-| 1158 | eh552t | 0 | +0 | 0 | - | 1 | att.com |
-| 1159 | eikrwaq | 0 | +0 | 0 | - | 9 | ericsson.com |
-| 1160 | ejamcud | 0 | +0 | 0 | - | 2 | est.tech |
-| 1161 | eleonorali | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 1162 | emartin | 0 | +0 | 0 | - | 5 | est.tech |
-| 1163 | enyinna1234 | 0 | +0 | 0 | - | 3 | intel.com |
-| 1164 | erlei | 0 | +0 | 0 | - | 1 | zte.com.cn |
-| 1165 | eronkeo | 0 | +0 | 0 | - | 4 | est.tech |
-| 1166 | eschcam | 0 | +0 | 0 | - | 2 | est.tech |
-| 1167 | esobmar | 0 | +0 | 0 | - | 3 | est.tech |
-| 1168 | esobmar | 0 | +0 | 0 | - | 2 | ericsson.com |
-| 1169 | eyalholz | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 1170 | farida azmy | 0 | +0 | 0 | - | 2 | orange.com |
-| 1171 | fengyuanxing | 0 | +0 | 0 | - | 4 | zte.com.cn |
-| 1172 | fpaquett | 0 | +0 | 0 | - | 7 | amdocs.com |
-| 1173 | franciscovila | 0 | +0 | 0 | - | 1 | est.tech |
-| 1174 | frederic desnoes | 0 | +0 | 0 | - | 1 | orange.com |
-| 1175 | fujinhua | 0 | +0 | 0 | - | 8 | zte.com.cn |
-| 1176 | fzhang | 0 | +0 | 0 | - | 2 | ericsson.com |
-| 1177 | gabe.maurer | 0 | +0 | 0 | - | 1 | att.com |
-| 1178 | gaurav | 0 | +0 | 0 | - | 7 | huawei.com |
-| 1179 | gautamk189 | 0 | +0 | 0 | - | 1 | hcl.com |
-| 1180 | git config --global user.name | 0 | +0 | 0 | - | 3 | samsung.com |
-| 1181 | gjaibm1314 | 0 | +0 | 0 | - | 1 | qq.com |
-| 1182 | gongjief | 0 | +0 | 0 | - | 1 | isoftstone.com |
-| 1183 | grabinsk | 0 | +0 | 0 | - | 3 | nokia.com |
-| 1184 | gregory.hayes | 0 | +0 | 0 | - | 3 | est.tech |
-| 1185 | guanwenyao | 0 | +0 | 0 | - | 4 | chinamobile.com |
-| 1186 | guillaume.lambert | 0 | +0 | 0 | - | 3 | orange.com |
-| 1187 | gummar | 0 | +0 | 0 | - | 5 | est.tech |
-| 1188 | guochong | 0 | +0 | 0 | - | 3 | chinamobile.com |
-| 1189 | h00397475 | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1190 | hanybaki | 0 | +0 | 0 | - | 4 | orange.com |
-| 1191 | hariharan97 | 0 | +0 | 0 | - | 4 | wipro.com |
-| 1192 | hb123f | 0 | +0 | 0 | - | 1 | att.com |
-| 1193 | hb123f | 0 | +0 | 0 | - | 2 | att.com |
-| 1194 | hetengjiao | 0 | +0 | 0 | - | 3 | chinamobile.com |
-| 1195 | hewei-cmss | 0 | +0 | 0 | - | 1 | chinamobile.com |
-| 1196 | highstreetherbert | 0 | +0 | 0 | - | 9 | highstreet-technologies.com |
-| 1197 | hongyu zhao | 0 | +0 | 0 | - | 2 | zte.com.cn |
-| 1198 | hp1256 | 0 | +0 | 0 | - | 3 | att.com |
-| 1199 | hthieu | 0 | +0 | 0 | - | 1 | nokia-bell-labs.com |
-| 1200 | huangsam | 0 | +0 | 0 | - | 3 | 163.com |
-| 1201 | huaxing | 0 | +0 | 0 | - | 5 | est.tech |
-| 1202 | hyu2010 | 0 | +0 | 0 | - | 3 | gmail.com |
-| 1203 | hyu2010 | 0 | +0 | 0 | - | 2 | huawei.com |
-| 1204 | ig6133 | 0 | +0 | 0 | - | 3 | att.com |
-| 1205 | imamSidero | 0 | +0 | 0 | - | 1 | est.tech |
-| 1206 | ingitk | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1207 | isaac | 0 | +0 | 0 | - | 4 | att.com |
-| 1208 | j.blixt | 0 | +0 | 0 | - | 1 | samsung.com |
-| 1209 | janani b | 0 | +0 | 0 | - | 8 | huawei.com |
-| 1210 | jasmineWen | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1211 | jbalasub | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1212 | jczestochowska | 0 | +0 | 0 | - | 1 | nokia.com |
-| 1213 | jeanluc-auge | 0 | +0 | 0 | - | 1 | orange.com |
-| 1214 | jegadeeshbabu1 | 0 | +0 | 0 | - | 3 | ibm.com |
-| 1215 | jh7358 | 0 | +0 | 0 | - | 9 | att.com |
-| 1216 | jhh | 0 | +0 | 0 | - | 19 | att.com |
-| 1217 | jingjincs | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1218 | jinquanni | 0 | +0 | 0 | - | 4 | zte.com.cn |
-| 1219 | jitendra sharma | 0 | +0 | 0 | - | 3 | huawei.com |
-| 1220 | jjewitt58 | 0 | +0 | 0 | - | 2 | oamtechnologies.com |
-| 1221 | joquiltyL | 0 | +0 | 0 | - | 2 | ericsson.com |
-| 1222 | joxu | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1223 | jsbeaulac | 0 | +0 | 0 | - | 1 | ericsson.com |
-| 1224 | jsseidel | 0 | +0 | 0 | - | 1 | att.com |
-| 1225 | jsseidel | 0 | +0 | 0 | - | 1 | fastmail.com |
-| 1226 | juhi arora | 0 | +0 | 0 | - | 1 | cgi.com |
-| 1227 | jwang5 | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1228 | jz385p | 0 | +0 | 0 | - | 1 | att.com |
-| 1229 | k.kazak | 0 | +0 | 0 | - | 4 | samsung.com |
-| 1230 | k.kedron | 0 | +0 | 0 | - | 19 | samsung.com |
-| 1231 | karbon | 0 | +0 | 0 | - | 1 | chinatelecom.cn |
-| 1232 | katy.rotman | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 1233 | kevin.tang | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1234 | kevin.tang | 0 | +0 | 0 | - | 1 | stl.tech |
-| 1235 | kevinmcdonnell | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1236 | kiranya | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 1237 | kishore | 0 | +0 | 0 | - | 3 | att.com |
-| 1238 | kissand | 0 | +0 | 0 | - | 1 | est.tech |
-| 1239 | kjaniak | 0 | +0 | 0 | - | 11 | nokia.com |
-| 1240 | koblosz | 0 | +0 | 0 | - | 4 | nokia.com |
-| 1241 | kooper | 0 | +0 | 0 | - | 3 | est.tech |
-| 1242 | kosewski | 0 | +0 | 0 | - | 1 | nokia.com |
-| 1243 | kranthi guttikonda | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1244 | kranthikirang | 0 | +0 | 0 | - | 3 | b-yond.com |
-| 1245 | krickwix | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1246 | krishna | 0 | +0 | 0 | - | 10 | wipro.com |
-| 1247 | krishnaa96 | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1248 | krishnajinka | 0 | +0 | 0 | - | 4 | gmail.com |
-| 1249 | ksinghn247 | 0 | +0 | 0 | - | 1 | hcl.com |
-| 1250 | ktimoney | 0 | +0 | 0 | - | 8 | est.tech |
-| 1251 | kuldipr | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 1252 | kurczews | 0 | +0 | 0 | - | 8 | nokia.com |
-| 1253 | kwasiel | 0 | +0 | 0 | - | 2 | nokia.com |
-| 1254 | laili | 0 | +0 | 0 | - | 2 | zte.com.cn |
-| 1255 | lalena.aria | 0 | +0 | 0 | - | 5 | att.com |
-| 1256 | leila | 0 | +0 | 0 | - | 4 | bell.ca |
-| 1257 | lgrech | 0 | +0 | 0 | - | 2 | nokia.com |
-| 1258 | liamfallon | 0 | +0 | 0 | - | 17 | est.tech |
-| 1259 | liamfallon | 0 | +0 | 0 | - | 10 | ericsson.com |
-| 1260 | liangke | 0 | +0 | 0 | - | 8 | 163.com |
-| 1261 | liboNet | 0 | +0 | 0 | - | 10 | intel.com |
-| 1262 | liboz | 0 | +0 | 0 | - | 2 | arris.com |
-| 1263 | libujacob | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1264 | lishitao | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1265 | liuqian | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1266 | liuwh7 | 0 | +0 | 0 | - | 1 | asiainfo.com |
-| 1267 | liuyuan | 0 | +0 | 0 | - | 1 | chinamobile.com |
-| 1268 | liying_cmcc | 0 | +0 | 0 | - | 2 | chinamobile.com |
-| 1269 | luna | 0 | +0 | 0 | - | 2 | vmware.com |
-| 1270 | luxin | 0 | +0 | 0 | - | 6 | huawei.com |
-| 1271 | lvqidi | 0 | +0 | 0 | - | 1 | chinamobile.com |
-| 1272 | m.kowalski3 | 0 | +0 | 0 | - | 4 | samsung.com |
-| 1273 | m.miernik | 0 | +0 | 0 | - | 1 | samsung.com |
-| 1274 | ma987d | 0 | +0 | 0 | - | 1 | att.com |
-| 1275 | malar | 0 | +0 | 0 | - | 7 | wipro.com |
-| 1276 | manisha07 | 0 | +0 | 0 | - | 2 | ibm.com |
-| 1277 | maopeng zhang | 0 | +0 | 0 | - | 8 | zte.com.cn |
-| 1278 | marcin krasowski | 0 | +0 | 0 | - | 1 | krasm.net |
-| 1279 | marcinrzepeckiwroc | 0 | +0 | 0 | - | 8 | nokia.com |
-| 1280 | marekpl | 0 | +0 | 0 | - | 6 | nokia.com |
-| 1281 | marge.hillis | 0 | +0 | 0 | - | 1 | nokia.com |
-| 1282 | marian.vaclavik@telekom.com | 0 | +0 | 0 | - | 1 | telekom.com |
-| 1283 | marineMD | 0 | +0 | 0 | - | 15 | att.com |
-| 1284 | marios.iakovidis | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1285 | mark.j.leonard | 0 | +0 | 0 | - | 8 | gmail.com |
-| 1286 | marvinYu | 0 | +0 | 0 | - | 2 | intel.com |
-| 1287 | matthew-mcneilly | 0 | +0 | 0 | - | 1 | est.tech |
-| 1288 | maximesson | 0 | +0 | 0 | - | 6 | est.tech |
-| 1289 | mayankg2703 | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1290 | mayankg2703 | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 1291 | meriem zidane | 0 | +0 | 0 | - | 1 | bell.ca |
-| 1292 | mharazin | 0 | +0 | 0 | - | 7 | nokia.com |
-| 1293 | micdzied | 0 | +0 | 0 | - | 6 | nokia.com |
-| 1294 | michaere | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 1295 | minfanyang | 0 | +0 | 0 | - | 1 | zte.com.cn |
-| 1296 | miriame | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 1297 | miroslav.masaryk | 0 | +0 | 0 | - | 1 | telekom.com |
-| 1298 | mkerrigan | 0 | +0 | 0 | - | 2 | est.tech |
-| 1299 | mkidd | 0 | +0 | 0 | - | 1 | est.tech |
-| 1300 | ml636r | 0 | +0 | 0 | - | 3 | att.com |
-| 1301 | mmis | 0 | +0 | 0 | - | 10 | ericsson.com |
-| 1302 | mojahidi | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1303 | morganrol | 0 | +0 | 0 | - | 36 | orange.com |
-| 1304 | ms236b | 0 | +0 | 0 | - | 2 | att.com |
-| 1305 | mukesh.landge@t-systems.com | 0 | +0 | 0 | - | 1 | t-systems.com |
-| 1306 | nadeeshani.jayathilake | 0 | +0 | 0 | - | 2 | est.tech |
-| 1307 | nagu | 0 | +0 | 0 | - | 1 | infosys.com |
-| 1308 | nandkumar | 0 | +0 | 0 | - | 1 | techmahindra.com |
-| 1309 | necuser | 0 | +0 | 0 | - | 5 | hotmail.com |
-| 1310 | nellix93 | 0 | +0 | 0 | - | 2 | telecomitalia.it |
-| 1311 | niamhcore | 0 | +0 | 0 | - | 3 | est.tech |
-| 1312 | ning.xi | 0 | +0 | 0 | - | 6 | est.tech |
-| 1313 | nitincg | 0 | +0 | 0 | - | 1 | capgemini.com |
-| 1314 | nkshankar | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1315 | noahs | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 1316 | noahs | 0 | +0 | 0 | - | 2 | gmail.com |
-| 1317 | nrpandya | 0 | +0 | 0 | - | 2 | att.com |
-| 1318 | od7427 | 0 | +0 | 0 | - | 1 | att.com |
-| 1319 | onapuser | 0 | +0 | 0 | - | 1 | localhost.local |
-| 1320 | osgn422w | 0 | +0 | 0 | - | 6 | att.com |
-| 1321 | osgn422w | 0 | +0 | 0 | - | 3 | att.com |
-| 1322 | osinstom | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1323 | othman touijer | 0 | +0 | 0 | - | 2 | soprasteria.com |
-| 1324 | ottero | 0 | +0 | 0 | - | 3 | est.tech |
-| 1325 | pa834y | 0 | +0 | 0 | - | 1 | att.com |
-| 1326 | pawel.kadlubanski | 0 | +0 | 0 | - | 3 | nokia.com |
-| 1327 | paweldenst | 0 | +0 | 0 | - | 5 | t-mobile.pl |
-| 1328 | pbiniek | 0 | +0 | 0 | - | 4 | nokia.com |
-| 1329 | phani.y | 0 | +0 | 0 | - | 3 | huawei.com |
-| 1330 | piclose | 0 | +0 | 0 | - | 2 | att.com |
-| 1331 | pkaras | 0 | +0 | 0 | - | 7 | nokia.com |
-| 1332 | pprakhar | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1333 | pradip01 | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1334 | prakash.e | 0 | +0 | 0 | - | 5 | huawei.com |
-| 1335 | pramod | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 1336 | pramod.jamkhedkar | 0 | +0 | 0 | - | 3 | att.com |
-| 1337 | pranavdi | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 1338 | pranitk1905 | 0 | +0 | 0 | - | 8 | t-systems.com |
-| 1339 | prashank | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 1340 | prathamesh | 0 | +0 | 0 | - | 3 | yahoo.ca |
-| 1341 | prathamesh morde | 0 | +0 | 0 | - | 5 | bell.ca |
-| 1342 | priyanka.akhade | 0 | +0 | 0 | - | 2 | huawei.com |
-| 1343 | pswang | 0 | +0 | 0 | - | 2 | gmail.com |
-| 1344 | puthuparambil.aditya | 0 | +0 | 0 | - | 12 | bell.ca |
-| 1345 | pwielebs | 0 | +0 | 0 | - | 12 | nokia.com |
-| 1346 | qiang zu | 0 | +0 | 0 | - | 2 | gmail.com |
-| 1347 | qingshuting | 0 | +0 | 0 | - | 9 | huawei.com |
-| 1348 | r.bogacki | 0 | +0 | 0 | - | 5 | samsung.com |
-| 1349 | rajeevme | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1350 | rajendrajaiswal | 0 | +0 | 0 | - | 12 | ericsson.com |
-| 1351 | rajeshkalai | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1352 | rama-huawei | 0 | +0 | 0 | - | 11 | huawei.com |
-| 1353 | ramagp | 0 | +0 | 0 | - | 7 | aarnanetworks.com |
-| 1354 | ramamani yeleswarapu | 0 | +0 | 0 | - | 2 | intel.com |
-| 1355 | ramanjaneya | 0 | +0 | 0 | - | 5 | huawei.com |
-| 1356 | ramki krishnan | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1357 | ramu.n | 0 | +0 | 0 | - | 8 | huawei.com |
-| 1358 | ramverma | 0 | +0 | 0 | - | 15 | est.tech |
-| 1359 | ramverma | 0 | +0 | 0 | - | 9 | ericsson.com |
-| 1360 | ramya | 0 | +0 | 0 | - | 2 | wipro.com |
-| 1361 | ranpollak | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 1362 | raviteja.karumuri | 0 | +0 | 0 | - | 8 | est.tech |
-| 1363 | rb7147 | 0 | +0 | 0 | - | 2 | att.com |
-| 1364 | renealr | 0 | +0 | 0 | - | 6 | amdocs.com |
-| 1365 | rl001m | 0 | +0 | 0 | - | 1 | att.com |
-| 1366 | rn509j | 0 | +0 | 0 | - | 1 | att.com |
-| 1367 | robert.tomczyk | 0 | +0 | 0 | - | 1 | est.tech |
-| 1368 | roger yuan | 0 | +0 | 0 | - | 3 | yoppworks.com |
-| 1369 | rokenny | 0 | +0 | 0 | - | 2 | est.tech |
-| 1370 | romaingimbert | 0 | +0 | 0 | - | 1 | orange.com |
-| 1371 | root | 0 | +0 | 0 | - | 1 | nsn-intra.net |
-| 1372 | root | 0 | +0 | 0 | - | 1 | kosmos-ranczer.novalocal |
-| 1373 | root | 0 | +0 | 0 | - | 3 | fujitsu.com |
-| 1374 | root | 0 | +0 | 0 | - | 1 | att.com |
-| 1375 | root | 0 | +0 | 0 | - | 1 | cloudapp.net |
-| 1376 | root | 0 | +0 | 0 | - | 1 | intel.com |
-| 1377 | root@nfs | 0 | +0 | 0 | - | 1 | nfs |
-| 1378 | root@rancher | 0 | +0 | 0 | - | 2 | rancher |
-| 1379 | rope252 | 0 | +0 | 0 | - | 7 | est.tech |
-| 1380 | rr929y | 0 | +0 | 0 | - | 3 | att.com |
-| 1381 | rui hu | 0 | +0 | 0 | - | 4 | zte.com.cn |
-| 1382 | ruilin cai | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1383 | ruty slominsky | 0 | +0 | 0 | - | 1 | att.com |
+| 978 | Tommy Carpenter | 0 | +0 | 0 | - | 1 | att.com |
+| 979 | Tomáš Levora | 0 | +0 | 0 | - | 4 | samsung.com |
+| 980 | Tony Hansen | 0 | +0 | 0 | - | 16 | att.com |
+| 981 | Toshimichi Fukuda | 0 | +0 | 0 | - | 3 | fujitsu.com |
+| 982 | Tschaen, Brendan | 0 | +0 | 0 | - | 5 | att.com |
+| 983 | Tschaen, Brendan (bt054f) | 0 | +0 | 0 | - | 2 | att.com |
+| 984 | Tufman, Shay | 0 | +0 | 0 | - | 2 | att.com |
+| 985 | Tufman, Shay | 0 | +0 | 0 | - | 2 | gmail.com |
+| 986 | Tufman, Shay (st198j) | 0 | +0 | 0 | - | 2 | att.com |
+| 987 | Ubuntu | 0 | +0 | 0 | - | 1 | telekom.de |
+| 988 | Ubuntu | 0 | +0 | 0 | - | 1 | windstream.com |
+| 989 | Ubuntu | 0 | +0 | 0 | - | 2 | example.com |
+| 990 | Ubuntu | 0 | +0 | 0 | - | 1 | nokia.com |
+| 991 | Usaraswat | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 992 | Utkarsh Jauhari | 0 | +0 | 0 | - | 7 | att.com |
+| 993 | Vanessa Valderrama | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 994 | Varma, Vikas (vv8305) | 0 | +0 | 0 | - | 1 | att.com |
+| 995 | Vasyl Razinkov | 0 | +0 | 0 | - | 2 | sidero.ie |
+| 996 | Venkata Harish K Kajur | 0 | +0 | 0 | - | 6 | gmail.com |
+| 997 | Venkata Molluru | 0 | +0 | 0 | - | 2 | techmahindra.com |
+| 998 | Victor Gao | 0 | +0 | 0 | - | 9 | huawei.com |
+| 999 | Victor Morales | 0 | +0 | 0 | - | 13 | intel.com |
+| 1000 | Victor Morales | 0 | +0 | 0 | - | 1 | samsung.com |
+| 1001 | Vidisha | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1002 | Vidya Shinde | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1003 | Vidya Shinde | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1004 | Vidyashree Rama | 0 | +0 | 0 | - | 9 | huawei.com |
+| 1005 | Vijay Venkatesh Kumar | 0 | +0 | 0 | - | 24 | att.com |
+| 1006 | Vikram Potturi(apotturi) | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1007 | Vincent Colas | 0 | +0 | 0 | - | 2 | orange.com |
+| 1008 | Virginie | 0 | +0 | 0 | - | 2 | orange.com |
+| 1009 | Vishal Varvate | 0 | +0 | 0 | - | 1 | capgemini.com |
+| 1010 | Viswanath Kumar Skand Priya | 0 | +0 | 0 | - | 1 | verizon.com |
+| 1011 | Vitaly Lavrusevich | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1012 | Vladislav Sheshalevich | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1013 | Vodafone | 0 | +0 | 0 | - | 7 | vodafone.com |
+| 1014 | Wang,Frank(gw1218) | 0 | +0 | 0 | - | 1 | att.com |
+| 1015 | WeberLaurent | 0 | +0 | 0 | - | 2 | gmail.com |
+| 1016 | Wiktor Garbarek | 0 | +0 | 0 | - | 5 | nokia.com |
+| 1017 | William Reehil | 0 | +0 | 0 | - | 11 | att.com |
+| 1018 | Witold Ficio Kopel | 0 | +0 | 0 | - | 2 | samsung.com |
+| 1019 | Wong, Ben | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 1020 | Wonnell, Skip (kw5258) | 0 | +0 | 0 | - | 1 | att.com |
+| 1021 | Xiaohua Zhang | 0 | +0 | 0 | - | 5 | windriver.com |
+| 1022 | Xin Miao | 0 | +0 | 0 | - | 1 | huawei.com |
+| 1023 | Xin Miao | 0 | +0 | 0 | - | 2 | fujitsu.com |
+| 1024 | XingXiaocheng | 0 | +0 | 0 | - | 1 | huawei.com |
+| 1025 | Yang Xu | 0 | +0 | 0 | - | 12 | huawei.com |
+| 1026 | Yang Xu | 0 | +0 | 0 | - | 5 | futurewei.com |
+| 1027 | Yang Xu | 0 | +0 | 0 | - | 4 | gmail.com |
+| 1028 | Yang Xu | 0 | +0 | 0 | - | 4 | futurewei.com |
+| 1029 | Yao Le | 0 | +0 | 0 | - | 1 | intel.com |
+| 1030 | Yaoguang Wang | 0 | +0 | 0 | - | 4 | huawei.com |
+| 1031 | Yarin Dekel | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1032 | Yashwanth | 0 | +0 | 0 | - | 4 | wipro.com |
+| 1033 | Yatian XU | 0 | +0 | 0 | - | 1 | nokia-sbell.com |
+| 1034 | YiLi | 0 | +0 | 0 | - | 1 | zte.com.cn |
+| 1035 | Yoav Schneiderman | 0 | +0 | 0 | - | 1 | att.com |
+| 1036 | YongchaoWu | 0 | +0 | 0 | - | 4 | est.tech |
+| 1037 | Yoo, Brian (by703c) | 0 | +0 | 0 | - | 3 | att.com |
+| 1038 | YuanHu | 0 | +0 | 0 | - | 5 | zte.com.cn |
+| 1039 | Yuli | 0 | +0 | 0 | - | 3 | gmail.com |
+| 1040 | Yuli Shlosberg | 0 | +0 | 0 | - | 8 | att.com |
+| 1041 | Yulian Han | 0 | +0 | 0 | - | 5 | huawei.com |
+| 1042 | Yun Huang | 0 | +0 | 0 | - | 3 | windriver.com |
+| 1043 | ZhangZihao | 0 | +0 | 0 | - | 2 | chinamobile.com |
+| 1044 | Zhaoxing Meng | 0 | +0 | 0 | - | 8 | zte.com.cn |
+| 1045 | Zhuangyang | 0 | +0 | 0 | - | 1 | qq.com |
+| 1046 | Zhuoyao Huang | 0 | +0 | 0 | - | 6 | zte.com.cn |
+| 1047 | Zihmin Hoover | 0 | +0 | 0 | - | 1 | att.com |
+| 1048 | Zlatko Murgoski | 0 | +0 | 0 | - | 5 | nokia.com |
+| 1049 | a.sreekumar | 0 | +0 | 0 | - | 16 | bell.ca |
+| 1050 | a.sreekumar | 0 | +0 | 0 | - | 14 | est.tech |
+| 1051 | a.sreekumar | 0 | +0 | 0 | - | 1 | ericsson.com |
+| 1052 | abatos | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1053 | abbas | 0 | +0 | 0 | - | 1 | wipro.com |
+| 1054 | abhishek.c92 | 0 | +0 | 0 | - | 1 | samsung.com |
+| 1055 | aditya | 0 | +0 | 0 | - | 4 | att.com |
+| 1056 | aditya.puthuparambil | 0 | +0 | 0 | - | 7 | est.tech |
+| 1057 | afenner | 0 | +0 | 0 | - | 3 | est.tech |
+| 1058 | afenner | 0 | +0 | 0 | - | 4 | ericsson.com |
+| 1059 | aishkashyap | 0 | +0 | 0 | - | 3 | techmahindra.com |
+| 1060 | ajay priyadarshi | 0 | +0 | 0 | - | 1 | ril.com |
+| 1061 | ajay_dp001 | 0 | +0 | 0 | - | 13 | est.tech |
+| 1062 | akhilakishore | 0 | +0 | 0 | - | 3 | intel.com |
+| 1063 | akhosla | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 1064 | aleem.raja@t-systems.com | 0 | +0 | 0 | - | 7 | t-systems.com |
+| 1065 | aleemraja | 0 | +0 | 0 | - | 4 | techmahindra.com |
+| 1066 | alex.stancu | 0 | +0 | 0 | - | 1 | highstreet-technologies.com |
+| 1067 | alkac | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1068 | amatthews | 0 | +0 | 0 | - | 1 | est.tech |
+| 1069 | ambrishest | 0 | +0 | 0 | - | 1 | est.tech |
+| 1070 | amine ezziati | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1071 | amitjai | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1072 | amohamad | 0 | +0 | 0 | - | 1 | queensu.ca |
+| 1073 | amshegokar | 0 | +0 | 0 | - | 4 | techmahindra.com |
+| 1074 | andre.schmid | 0 | +0 | 0 | - | 5 | est.tech |
+| 1075 | andrzejszukuc | 0 | +0 | 0 | - | 5 | nokia.com |
+| 1076 | anjali.walsatwar | 0 | +0 | 0 | - | 6 | huawei.com |
+| 1077 | ankitbhatt | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1078 | ankitg@aarnanetworks.com | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
+| 1079 | antonys | 0 | +0 | 0 | - | 1 | est.tech |
+| 1080 | anujkap | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1081 | anupmarathe | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1082 | anushadasari | 0 | +0 | 0 | - | 4 | ibm.com |
+| 1083 | aosull01 | 0 | +0 | 0 | - | 4 | huawei.com |
+| 1084 | aribeiro | 0 | +0 | 0 | - | 2 | est.tech |
+| 1085 | arkadiusz.adamski | 0 | +0 | 0 | - | 4 | est.tech |
+| 1086 | arun chapagain | 0 | +0 | 0 | - | 2 | huawei.com |
+| 1087 | as005h | 0 | +0 | 0 | - | 1 | att.com |
+| 1088 | asgar | 0 | +0 | 0 | - | 2 | ibm.com |
+| 1089 | atulan | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1090 | atulpurohit | 0 | +0 | 0 | - | 2 | vodafone.com |
+| 1091 | avigaffa | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1092 | avinash.akkera | 0 | +0 | 0 | - | 1 | accenture.com |
+| 1093 | ayalaben | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1094 | barak | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1095 | bb3476 | 0 | +0 | 0 | - | 2 | att.com |
+| 1096 | bdfreeman1421 | 0 | +0 | 0 | - | 1 | att.com |
+| 1097 | beili.zhou | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1098 | bencheung | 0 | +0 | 0 | - | 3 | nokia.com |
+| 1099 | bharath | 0 | +0 | 0 | - | 3 | hotmail.com |
+| 1100 | bhedstrom | 0 | +0 | 0 | - | 2 | oamtechnologies.com |
+| 1101 | biancunkang | 0 | +0 | 0 | - | 2 | zte.com.cn |
+| 1102 | bilal.iqbal | 0 | +0 | 0 | - | 3 | est.tech |
+| 1103 | biniek | 0 | +0 | 0 | - | 6 | nokia.com |
+| 1104 | biswajit.deswali | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1105 | bmiklos | 0 | +0 | 0 | - | 1 | est.tech |
+| 1106 | bobbymander | 0 | +0 | 0 | - | 1 | att.com |
+| 1107 | bran-wang | 0 | +0 | 0 | - | 1 | vmware.com |
+| 1108 | brucetcisco | 0 | +0 | 0 | - | 2 | cisco.com |
+| 1109 | brunomilitzer | 0 | +0 | 0 | - | 3 | est.tech |
+| 1110 | bt2983 | 0 | +0 | 0 | - | 4 | att.com |
+| 1111 | burdziak | 0 | +0 | 0 | - | 10 | nokia.com |
+| 1112 | cb478c | 0 | +0 | 0 | - | 1 | att.com |
+| 1113 | chandana.g.n | 0 | +0 | 0 | - | 1 | accenture.com |
+| 1114 | chenjie1 | 0 | +0 | 0 | - | 2 | intel.com |
+| 1115 | chenkai | 0 | +0 | 0 | - | 1 | fiberhome.com |
+| 1116 | chenying83 | 0 | +0 | 0 | - | 2 | huawei.com |
+| 1117 | chrisreece | 0 | +0 | 0 | - | 1 | awardsolutions.com |
+| 1118 | chsailakshmi | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
+| 1119 | cluckenbaugh | 0 | +0 | 0 | - | 1 | att.com |
+| 1120 | cmrizhangzhen | 0 | +0 | 0 | - | 4 | qq.com |
+| 1121 | colvert | 0 | +0 | 0 | - | 2 | gmail.com |
+| 1122 | cyuamber | 0 | +0 | 0 | - | 5 | chinamobile.com |
+| 1123 | dasarathi528024 | 0 | +0 | 0 | - | 1 | techmahindra.com |
+| 1124 | dave.adams (da490c) | 0 | +0 | 0 | - | 6 | amdocs.com |
+| 1125 | david.mcweeney | 0 | +0 | 0 | - | 12 | est.tech |
+| 1126 | davsad | 0 | +0 | 0 | - | 1 | est.tech |
+| 1127 | decheng zhang | 0 | +0 | 0 | - | 8 | huawei.com |
+| 1128 | deen1985 | 0 | +0 | 0 | - | 13 | nokia.com |
+| 1129 | deepikasatheesh | 0 | +0 | 0 | - | 8 | wipro.com |
+| 1130 | dekstroza | 0 | +0 | 0 | - | 2 | ericsson.com |
+| 1131 | demskeq8 | 0 | +0 | 0 | - | 2 | highstreet-technologies.com |
+| 1132 | demx8as6 | 0 | +0 | 0 | - | 1 | highstreet-technologies.com |
+| 1133 | denghui (L) | 0 | +0 | 0 | - | 1 | huawei.com |
+| 1134 | denglingli | 0 | +0 | 0 | - | 2 | chinamobile.com |
+| 1135 | denilson.l65 | 0 | +0 | 0 | - | 6 | wipro.com |
+| 1136 | dermot123 | 0 | +0 | 0 | - | 2 | est.tech |
+| 1137 | dfarrelly | 0 | +0 | 0 | - | 9 | est.tech |
+| 1138 | dfilppi | 0 | +0 | 0 | - | 3 | cloudify.co |
+| 1139 | dfilppi | 0 | +0 | 0 | - | 1 | gigaspaces.com |
+| 1140 | dfx1971 | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 1141 | dg5762 | 0 | +0 | 0 | - | 2 | att.com |
+| 1142 | dgermain | 0 | +0 | 0 | - | 1 | cgi.com |
+| 1143 | dglFromAtt | 0 | +0 | 0 | - | 9 | att.com |
+| 1144 | dharani | 0 | +0 | 0 | - | 1 | wipro.com |
+| 1145 | dhebeha | 0 | +0 | 0 | - | 4 | wipro.com |
+| 1146 | dinesha | 0 | +0 | 0 | - | 2 | ibm.com |
+| 1147 | dkamdocs | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1148 | drveerendra | 0 | +0 | 0 | - | 2 | att.com |
+| 1149 | dsingh.278 | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1150 | dyh | 0 | +0 | 0 | - | 7 | chinamobile.com |
+| 1151 | eHanan | 0 | +0 | 0 | - | 5 | est.tech |
+| 1152 | earthmant | 0 | +0 | 0 | - | 1 | cloudify.co |
+| 1153 | ecaiyanlinux | 0 | +0 | 0 | - | 8 | est.tech |
+| 1154 | econwar | 0 | +0 | 0 | - | 6 | est.tech |
+| 1155 | ed852m | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1156 | edepaul | 0 | +0 | 0 | - | 2 | est.tech |
+| 1157 | eeginux | 0 | +0 | 0 | - | 4 | est.tech |
+| 1158 | efiacor | 0 | +0 | 0 | - | 29 | est.tech |
+| 1159 | eh552t | 0 | +0 | 0 | - | 9 | att.com |
+| 1160 | eh552t | 0 | +0 | 0 | - | 1 | att.com |
+| 1161 | ejamcud | 0 | +0 | 0 | - | 2 | est.tech |
+| 1162 | eleonorali | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 1163 | emartin | 0 | +0 | 0 | - | 5 | est.tech |
+| 1164 | enyinna1234 | 0 | +0 | 0 | - | 3 | intel.com |
+| 1165 | erlei | 0 | +0 | 0 | - | 1 | zte.com.cn |
+| 1166 | eronkeo | 0 | +0 | 0 | - | 4 | est.tech |
+| 1167 | eschcam | 0 | +0 | 0 | - | 2 | est.tech |
+| 1168 | esobmar | 0 | +0 | 0 | - | 3 | est.tech |
+| 1169 | esobmar | 0 | +0 | 0 | - | 2 | ericsson.com |
+| 1170 | eyalholz | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 1171 | farida azmy | 0 | +0 | 0 | - | 2 | orange.com |
+| 1172 | fengyuanxing | 0 | +0 | 0 | - | 4 | zte.com.cn |
+| 1173 | fpaquett | 0 | +0 | 0 | - | 7 | amdocs.com |
+| 1174 | franciscovila | 0 | +0 | 0 | - | 1 | est.tech |
+| 1175 | frederic desnoes | 0 | +0 | 0 | - | 1 | orange.com |
+| 1176 | fujinhua | 0 | +0 | 0 | - | 8 | zte.com.cn |
+| 1177 | fzhang | 0 | +0 | 0 | - | 2 | ericsson.com |
+| 1178 | gabe.maurer | 0 | +0 | 0 | - | 1 | att.com |
+| 1179 | gaurav | 0 | +0 | 0 | - | 7 | huawei.com |
+| 1180 | gautamk189 | 0 | +0 | 0 | - | 1 | hcl.com |
+| 1181 | git config --global user.name | 0 | +0 | 0 | - | 3 | samsung.com |
+| 1182 | gjaibm1314 | 0 | +0 | 0 | - | 1 | qq.com |
+| 1183 | gongjief | 0 | +0 | 0 | - | 1 | isoftstone.com |
+| 1184 | grabinsk | 0 | +0 | 0 | - | 3 | nokia.com |
+| 1185 | gregory.hayes | 0 | +0 | 0 | - | 3 | est.tech |
+| 1186 | guanwenyao | 0 | +0 | 0 | - | 4 | chinamobile.com |
+| 1187 | guillaume.lambert | 0 | +0 | 0 | - | 3 | orange.com |
+| 1188 | gummar | 0 | +0 | 0 | - | 5 | est.tech |
+| 1189 | guochong | 0 | +0 | 0 | - | 3 | chinamobile.com |
+| 1190 | h00397475 | 0 | +0 | 0 | - | 1 | huawei.com |
+| 1191 | hanybaki | 0 | +0 | 0 | - | 4 | orange.com |
+| 1192 | hariharan97 | 0 | +0 | 0 | - | 4 | wipro.com |
+| 1193 | hb123f | 0 | +0 | 0 | - | 1 | att.com |
+| 1194 | hb123f | 0 | +0 | 0 | - | 2 | att.com |
+| 1195 | hetengjiao | 0 | +0 | 0 | - | 3 | chinamobile.com |
+| 1196 | hewei-cmss | 0 | +0 | 0 | - | 1 | chinamobile.com |
+| 1197 | highstreetherbert | 0 | +0 | 0 | - | 9 | highstreet-technologies.com |
+| 1198 | hongyu zhao | 0 | +0 | 0 | - | 2 | zte.com.cn |
+| 1199 | hp1256 | 0 | +0 | 0 | - | 3 | att.com |
+| 1200 | hthieu | 0 | +0 | 0 | - | 1 | nokia-bell-labs.com |
+| 1201 | huangsam | 0 | +0 | 0 | - | 3 | 163.com |
+| 1202 | huaxing | 0 | +0 | 0 | - | 5 | est.tech |
+| 1203 | hyu2010 | 0 | +0 | 0 | - | 3 | gmail.com |
+| 1204 | hyu2010 | 0 | +0 | 0 | - | 2 | huawei.com |
+| 1205 | ig6133 | 0 | +0 | 0 | - | 3 | att.com |
+| 1206 | imamSidero | 0 | +0 | 0 | - | 1 | est.tech |
+| 1207 | ingitk | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1208 | isaac | 0 | +0 | 0 | - | 4 | att.com |
+| 1209 | j.blixt | 0 | +0 | 0 | - | 1 | samsung.com |
+| 1210 | janani b | 0 | +0 | 0 | - | 8 | huawei.com |
+| 1211 | jasmineWen | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1212 | jbalasub | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1213 | jczestochowska | 0 | +0 | 0 | - | 1 | nokia.com |
+| 1214 | jeanluc-auge | 0 | +0 | 0 | - | 1 | orange.com |
+| 1215 | jegadeeshbabu1 | 0 | +0 | 0 | - | 3 | ibm.com |
+| 1216 | jh7358 | 0 | +0 | 0 | - | 9 | att.com |
+| 1217 | jhh | 0 | +0 | 0 | - | 19 | att.com |
+| 1218 | jingjincs | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1219 | jinquanni | 0 | +0 | 0 | - | 4 | zte.com.cn |
+| 1220 | jitendra sharma | 0 | +0 | 0 | - | 3 | huawei.com |
+| 1221 | jjewitt58 | 0 | +0 | 0 | - | 2 | oamtechnologies.com |
+| 1222 | joquiltyL | 0 | +0 | 0 | - | 2 | ericsson.com |
+| 1223 | joxu | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1224 | jsbeaulac | 0 | +0 | 0 | - | 1 | ericsson.com |
+| 1225 | jsseidel | 0 | +0 | 0 | - | 1 | att.com |
+| 1226 | jsseidel | 0 | +0 | 0 | - | 1 | fastmail.com |
+| 1227 | juhi arora | 0 | +0 | 0 | - | 1 | cgi.com |
+| 1228 | jwang5 | 0 | +0 | 0 | - | 1 | huawei.com |
+| 1229 | jz385p | 0 | +0 | 0 | - | 1 | att.com |
+| 1230 | k.kazak | 0 | +0 | 0 | - | 4 | samsung.com |
+| 1231 | k.kedron | 0 | +0 | 0 | - | 19 | samsung.com |
+| 1232 | karbon | 0 | +0 | 0 | - | 1 | chinatelecom.cn |
+| 1233 | katy.rotman | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 1234 | kevin.tang | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1235 | kevin.tang | 0 | +0 | 0 | - | 1 | stl.tech |
+| 1236 | kevinmcdonnell | 0 | +0 | 0 | - | 1 | huawei.com |
+| 1237 | kiranya | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 1238 | kishore | 0 | +0 | 0 | - | 3 | att.com |
+| 1239 | kissand | 0 | +0 | 0 | - | 1 | est.tech |
+| 1240 | kjaniak | 0 | +0 | 0 | - | 11 | nokia.com |
+| 1241 | koblosz | 0 | +0 | 0 | - | 4 | nokia.com |
+| 1242 | kooper | 0 | +0 | 0 | - | 3 | est.tech |
+| 1243 | kosewski | 0 | +0 | 0 | - | 1 | nokia.com |
+| 1244 | kranthi guttikonda | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1245 | kranthikirang | 0 | +0 | 0 | - | 3 | b-yond.com |
+| 1246 | krickwix | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1247 | krishna | 0 | +0 | 0 | - | 10 | wipro.com |
+| 1248 | krishnaa96 | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1249 | krishnajinka | 0 | +0 | 0 | - | 4 | gmail.com |
+| 1250 | ksinghn247 | 0 | +0 | 0 | - | 1 | hcl.com |
+| 1251 | ktimoney | 0 | +0 | 0 | - | 8 | est.tech |
+| 1252 | kuldipr | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 1253 | kurczews | 0 | +0 | 0 | - | 8 | nokia.com |
+| 1254 | kwasiel | 0 | +0 | 0 | - | 2 | nokia.com |
+| 1255 | laili | 0 | +0 | 0 | - | 2 | zte.com.cn |
+| 1256 | lalena.aria | 0 | +0 | 0 | - | 5 | att.com |
+| 1257 | leila | 0 | +0 | 0 | - | 4 | bell.ca |
+| 1258 | lgrech | 0 | +0 | 0 | - | 2 | nokia.com |
+| 1259 | liamfallon | 0 | +0 | 0 | - | 17 | est.tech |
+| 1260 | liamfallon | 0 | +0 | 0 | - | 10 | ericsson.com |
+| 1261 | liangke | 0 | +0 | 0 | - | 8 | 163.com |
+| 1262 | liboNet | 0 | +0 | 0 | - | 10 | intel.com |
+| 1263 | liboz | 0 | +0 | 0 | - | 2 | arris.com |
+| 1264 | libujacob | 0 | +0 | 0 | - | 1 | huawei.com |
+| 1265 | lishitao | 0 | +0 | 0 | - | 1 | huawei.com |
+| 1266 | liuqian | 0 | +0 | 0 | - | 1 | huawei.com |
+| 1267 | liuwh7 | 0 | +0 | 0 | - | 1 | asiainfo.com |
+| 1268 | liuyuan | 0 | +0 | 0 | - | 1 | chinamobile.com |
+| 1269 | liying_cmcc | 0 | +0 | 0 | - | 2 | chinamobile.com |
+| 1270 | luna | 0 | +0 | 0 | - | 2 | vmware.com |
+| 1271 | luxin | 0 | +0 | 0 | - | 6 | huawei.com |
+| 1272 | lvqidi | 0 | +0 | 0 | - | 1 | chinamobile.com |
+| 1273 | m.kowalski3 | 0 | +0 | 0 | - | 4 | samsung.com |
+| 1274 | m.miernik | 0 | +0 | 0 | - | 1 | samsung.com |
+| 1275 | ma987d | 0 | +0 | 0 | - | 1 | att.com |
+| 1276 | malar | 0 | +0 | 0 | - | 7 | wipro.com |
+| 1277 | manisha07 | 0 | +0 | 0 | - | 2 | ibm.com |
+| 1278 | maopeng zhang | 0 | +0 | 0 | - | 8 | zte.com.cn |
+| 1279 | marcin krasowski | 0 | +0 | 0 | - | 1 | krasm.net |
+| 1280 | marcinrzepeckiwroc | 0 | +0 | 0 | - | 8 | nokia.com |
+| 1281 | marekpl | 0 | +0 | 0 | - | 6 | nokia.com |
+| 1282 | marge.hillis | 0 | +0 | 0 | - | 1 | nokia.com |
+| 1283 | marian.vaclavik@telekom.com | 0 | +0 | 0 | - | 1 | telekom.com |
+| 1284 | marineMD | 0 | +0 | 0 | - | 15 | att.com |
+| 1285 | marios.iakovidis | 0 | +0 | 0 | - | 1 | huawei.com |
+| 1286 | mark.j.leonard | 0 | +0 | 0 | - | 8 | gmail.com |
+| 1287 | marvinYu | 0 | +0 | 0 | - | 2 | intel.com |
+| 1288 | matthew-mcneilly | 0 | +0 | 0 | - | 1 | est.tech |
+| 1289 | maximesson | 0 | +0 | 0 | - | 6 | est.tech |
+| 1290 | mayankg2703 | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1291 | mayankg2703 | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 1292 | meriem zidane | 0 | +0 | 0 | - | 1 | bell.ca |
+| 1293 | mharazin | 0 | +0 | 0 | - | 7 | nokia.com |
+| 1294 | micdzied | 0 | +0 | 0 | - | 6 | nokia.com |
+| 1295 | michaere | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 1296 | minfanyang | 0 | +0 | 0 | - | 1 | zte.com.cn |
+| 1297 | miriame | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 1298 | miroslav.masaryk | 0 | +0 | 0 | - | 1 | telekom.com |
+| 1299 | mkerrigan | 0 | +0 | 0 | - | 2 | est.tech |
+| 1300 | mkidd | 0 | +0 | 0 | - | 1 | est.tech |
+| 1301 | ml636r | 0 | +0 | 0 | - | 3 | att.com |
+| 1302 | mmis | 0 | +0 | 0 | - | 10 | ericsson.com |
+| 1303 | mojahidi | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1304 | morganrol | 0 | +0 | 0 | - | 36 | orange.com |
+| 1305 | ms236b | 0 | +0 | 0 | - | 2 | att.com |
+| 1306 | mukesh.landge@t-systems.com | 0 | +0 | 0 | - | 1 | t-systems.com |
+| 1307 | nadeeshani.jayathilake | 0 | +0 | 0 | - | 2 | est.tech |
+| 1308 | nagu | 0 | +0 | 0 | - | 1 | infosys.com |
+| 1309 | nandkumar | 0 | +0 | 0 | - | 1 | techmahindra.com |
+| 1310 | necuser | 0 | +0 | 0 | - | 5 | hotmail.com |
+| 1311 | nellix93 | 0 | +0 | 0 | - | 2 | telecomitalia.it |
+| 1312 | niamhcore | 0 | +0 | 0 | - | 3 | est.tech |
+| 1313 | ning.xi | 0 | +0 | 0 | - | 6 | est.tech |
+| 1314 | nitincg | 0 | +0 | 0 | - | 1 | capgemini.com |
+| 1315 | nkshankar | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1316 | noahs | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 1317 | noahs | 0 | +0 | 0 | - | 2 | gmail.com |
+| 1318 | nrpandya | 0 | +0 | 0 | - | 2 | att.com |
+| 1319 | od7427 | 0 | +0 | 0 | - | 1 | att.com |
+| 1320 | onapuser | 0 | +0 | 0 | - | 1 | localhost.local |
+| 1321 | osgn422w | 0 | +0 | 0 | - | 6 | att.com |
+| 1322 | osgn422w | 0 | +0 | 0 | - | 3 | att.com |
+| 1323 | osinstom | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1324 | othman touijer | 0 | +0 | 0 | - | 2 | soprasteria.com |
+| 1325 | ottero | 0 | +0 | 0 | - | 3 | est.tech |
+| 1326 | pa834y | 0 | +0 | 0 | - | 1 | att.com |
+| 1327 | pawel.kadlubanski | 0 | +0 | 0 | - | 3 | nokia.com |
+| 1328 | paweldenst | 0 | +0 | 0 | - | 5 | t-mobile.pl |
+| 1329 | pbiniek | 0 | +0 | 0 | - | 4 | nokia.com |
+| 1330 | phani.y | 0 | +0 | 0 | - | 3 | huawei.com |
+| 1331 | piclose | 0 | +0 | 0 | - | 2 | att.com |
+| 1332 | pkaras | 0 | +0 | 0 | - | 7 | nokia.com |
+| 1333 | pprakhar | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1334 | pradip01 | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1335 | prakash.e | 0 | +0 | 0 | - | 5 | huawei.com |
+| 1336 | pramod | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 1337 | pramod.jamkhedkar | 0 | +0 | 0 | - | 3 | att.com |
+| 1338 | pranavdi | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 1339 | pranitk1905 | 0 | +0 | 0 | - | 8 | t-systems.com |
+| 1340 | prashank | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 1341 | prathamesh | 0 | +0 | 0 | - | 3 | yahoo.ca |
+| 1342 | prathamesh morde | 0 | +0 | 0 | - | 5 | bell.ca |
+| 1343 | priyanka.akhade | 0 | +0 | 0 | - | 2 | huawei.com |
+| 1344 | pswang | 0 | +0 | 0 | - | 2 | gmail.com |
+| 1345 | puthuparambil.aditya | 0 | +0 | 0 | - | 12 | bell.ca |
+| 1346 | pwielebs | 0 | +0 | 0 | - | 12 | nokia.com |
+| 1347 | qiang zu | 0 | +0 | 0 | - | 2 | gmail.com |
+| 1348 | qingshuting | 0 | +0 | 0 | - | 9 | huawei.com |
+| 1349 | r.bogacki | 0 | +0 | 0 | - | 5 | samsung.com |
+| 1350 | rajeevme | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1351 | rajendrajaiswal | 0 | +0 | 0 | - | 12 | ericsson.com |
+| 1352 | rajeshkalai | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1353 | rama-huawei | 0 | +0 | 0 | - | 11 | huawei.com |
+| 1354 | ramagp | 0 | +0 | 0 | - | 7 | aarnanetworks.com |
+| 1355 | ramamani yeleswarapu | 0 | +0 | 0 | - | 2 | intel.com |
+| 1356 | ramanjaneya | 0 | +0 | 0 | - | 5 | huawei.com |
+| 1357 | ramki krishnan | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1358 | ramu.n | 0 | +0 | 0 | - | 8 | huawei.com |
+| 1359 | ramverma | 0 | +0 | 0 | - | 15 | est.tech |
+| 1360 | ramverma | 0 | +0 | 0 | - | 9 | ericsson.com |
+| 1361 | ramya | 0 | +0 | 0 | - | 2 | wipro.com |
+| 1362 | ranpollak | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 1363 | raviteja.karumuri | 0 | +0 | 0 | - | 8 | est.tech |
+| 1364 | rb7147 | 0 | +0 | 0 | - | 2 | att.com |
+| 1365 | renealr | 0 | +0 | 0 | - | 6 | amdocs.com |
+| 1366 | rl001m | 0 | +0 | 0 | - | 1 | att.com |
+| 1367 | rn509j | 0 | +0 | 0 | - | 1 | att.com |
+| 1368 | robert.tomczyk | 0 | +0 | 0 | - | 1 | est.tech |
+| 1369 | roger yuan | 0 | +0 | 0 | - | 3 | yoppworks.com |
+| 1370 | rokenny | 0 | +0 | 0 | - | 2 | est.tech |
+| 1371 | romaingimbert | 0 | +0 | 0 | - | 1 | orange.com |
+| 1372 | root | 0 | +0 | 0 | - | 1 | nsn-intra.net |
+| 1373 | root | 0 | +0 | 0 | - | 1 | kosmos-ranczer.novalocal |
+| 1374 | root | 0 | +0 | 0 | - | 3 | fujitsu.com |
+| 1375 | root | 0 | +0 | 0 | - | 1 | att.com |
+| 1376 | root | 0 | +0 | 0 | - | 1 | cloudapp.net |
+| 1377 | root | 0 | +0 | 0 | - | 1 | intel.com |
+| 1378 | root@nfs | 0 | +0 | 0 | - | 1 | nfs |
+| 1379 | root@rancher | 0 | +0 | 0 | - | 2 | rancher |
+| 1380 | rope252 | 0 | +0 | 0 | - | 7 | est.tech |
+| 1381 | rr929y | 0 | +0 | 0 | - | 3 | att.com |
+| 1382 | rui hu | 0 | +0 | 0 | - | 4 | zte.com.cn |
+| 1383 | ruilin cai | 0 | +0 | 0 | - | 1 | huawei.com |
 | 1384 | ruty slominsky | 0 | +0 | 0 | - | 1 | att.com |
-| 1385 | rv871f | 0 | +0 | 0 | - | 6 | amdocs.com |
-| 1386 | rvyas | 0 | +0 | 0 | - | 2 | gmail.com |
-| 1387 | ryanSheehan | 0 | +0 | 0 | - | 2 | gmail.com |
-| 1388 | s00370346 | 0 | +0 | 0 | - | 4 | huawei.com |
-| 1389 | sa282w | 0 | +0 | 0 | - | 1 | att.com |
-| 1390 | sai-neetha | 0 | +0 | 0 | - | 2 | highstreet-technologies.com |
-| 1391 | sanchitap | 0 | +0 | 0 | - | 3 | techmahindra.com |
-| 1392 | sandovalfr | 0 | +0 | 0 | - | 7 | oamtechnologies.com |
-| 1393 | sandovalfr | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1394 | sangu_3653 | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1395 | sanjaymekhale | 0 | +0 | 0 | - | 2 | techmahindra.com |
-| 1396 | sarada prasad sahoo | 0 | +0 | 0 | - | 6 | huawei.com |
-| 1397 | saul.gill | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1398 | sb5356 | 0 | +0 | 0 | - | 1 | att.com |
-| 1399 | sblimkie | 0 | +0 | 0 | - | 14 | amdocs.com |
-| 1400 | sblimkie | 0 | +0 | 0 | - | 1 | att.com |
-| 1401 | seanfos | 0 | +0 | 0 | - | 3 | est.tech |
-| 1402 | sebdet | 0 | +0 | 0 | - | 12 | att.com |
-| 1403 | sebdet | 0 | +0 | 0 | - | 9 | att.com |
-| 1404 | sekharhuawei | 0 | +0 | 0 | - | 4 | huawei.com |
-| 1405 | sendil kumar Jaya kumar | 0 | +0 | 0 | - | 1 | wipro.com |
-| 1406 | shabs2020 | 0 | +0 | 0 | - | 1 | highstreet-technologies.com |
-| 1407 | shady | 0 | +0 | 0 | - | 2 | orange.com |
-| 1408 | shaheen_vz | 0 | +0 | 0 | - | 2 | verizon.com |
-| 1409 | shalomb | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1410 | shanedaniel | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 1411 | shangxdy | 0 | +0 | 0 | - | 2 | zte.com.cn |
-| 1412 | shaoqiu | 0 | +0 | 0 | - | 8 | est.tech |
-| 1413 | sharath | 0 | +0 | 0 | - | 2 | gmail.com |
-| 1414 | sharath.reddy | 0 | +0 | 0 | - | 5 | huawei.com |
-| 1415 | shashikanth.vh@huawei.com | 0 | +0 | 0 | - | 21 | huawei.com |
-| 1416 | sheel.bajpai | 0 | +0 | 0 | - | 1 | orange.com |
-| 1417 | sheetal ghadge | 0 | +0 | 0 | - | 1 | t-systems.com |
-| 1418 | sheetalm | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1419 | shentao | 0 | +0 | 0 | - | 7 | chinamobile.com |
+| 1385 | ruty slominsky | 0 | +0 | 0 | - | 1 | att.com |
+| 1386 | rv871f | 0 | +0 | 0 | - | 6 | amdocs.com |
+| 1387 | rvyas | 0 | +0 | 0 | - | 2 | gmail.com |
+| 1388 | ryanSheehan | 0 | +0 | 0 | - | 2 | gmail.com |
+| 1389 | s00370346 | 0 | +0 | 0 | - | 4 | huawei.com |
+| 1390 | sa282w | 0 | +0 | 0 | - | 1 | att.com |
+| 1391 | sai-neetha | 0 | +0 | 0 | - | 2 | highstreet-technologies.com |
+| 1392 | sanchitap | 0 | +0 | 0 | - | 3 | techmahindra.com |
+| 1393 | sandovalfr | 0 | +0 | 0 | - | 7 | oamtechnologies.com |
+| 1394 | sandovalfr | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1395 | sangu_3653 | 0 | +0 | 0 | - | 1 | huawei.com |
+| 1396 | sanjaymekhale | 0 | +0 | 0 | - | 2 | techmahindra.com |
+| 1397 | sarada prasad sahoo | 0 | +0 | 0 | - | 6 | huawei.com |
+| 1398 | saul.gill | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1399 | sb5356 | 0 | +0 | 0 | - | 1 | att.com |
+| 1400 | sblimkie | 0 | +0 | 0 | - | 14 | amdocs.com |
+| 1401 | sblimkie | 0 | +0 | 0 | - | 1 | att.com |
+| 1402 | seanfos | 0 | +0 | 0 | - | 3 | est.tech |
+| 1403 | sebdet | 0 | +0 | 0 | - | 12 | att.com |
+| 1404 | sebdet | 0 | +0 | 0 | - | 9 | att.com |
+| 1405 | sekharhuawei | 0 | +0 | 0 | - | 4 | huawei.com |
+| 1406 | sendil kumar Jaya kumar | 0 | +0 | 0 | - | 1 | wipro.com |
+| 1407 | shabs2020 | 0 | +0 | 0 | - | 1 | highstreet-technologies.com |
+| 1408 | shady | 0 | +0 | 0 | - | 2 | orange.com |
+| 1409 | shaheen_vz | 0 | +0 | 0 | - | 2 | verizon.com |
+| 1410 | shalomb | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1411 | shanedaniel | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 1412 | shangxdy | 0 | +0 | 0 | - | 2 | zte.com.cn |
+| 1413 | shaoqiu | 0 | +0 | 0 | - | 8 | est.tech |
+| 1414 | sharath | 0 | +0 | 0 | - | 2 | gmail.com |
+| 1415 | sharath.reddy | 0 | +0 | 0 | - | 5 | huawei.com |
+| 1416 | shashikanth.vh@huawei.com | 0 | +0 | 0 | - | 21 | huawei.com |
+| 1417 | sheel.bajpai | 0 | +0 | 0 | - | 1 | orange.com |
+| 1418 | sheetal ghadge | 0 | +0 | 0 | - | 1 | t-systems.com |
+| 1419 | sheetalm | 0 | +0 | 0 | - | 3 | amdocs.com |
 | 1420 | shinuj1989 | 0 | +0 | 0 | - | 2 | ericsson.com |
 | 1421 | shiria | 0 | +0 | 0 | - | 2 | amdocs.com |
 | 1422 | shivasubedi | 0 | +0 | 0 | - | 4 | est.tech |
@@ -1622,35 +1622,35 @@ The data presented in the table below covers the past 365 days.
 | 1465 | tzvika | 0 | +0 | 0 | - | 2 | amdocs.com |
 | 1466 | tzvika avni | 0 | +0 | 0 | - | 1 | amdocs.com |
 | 1467 | udhaya chandran | 0 | +0 | 0 | - | 3 | verizon.com |
-| 1468 | uj426b | 0 | +0 | 0 | - | 7 | att.com |
-| 1469 | ur326r | 0 | +0 | 0 | - | 4 | att.com |
-| 1470 | vagrant | 0 | +0 | 0 | - | 2 | onap.org |
-| 1471 | vagrant | 0 | +0 | 0 | - | 1 | vagrant.vm |
-| 1472 | vaibhav.jain1 | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 1473 | vaibhav_16dec | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 1474 | vaibhavjayas | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 1475 | vamshi.nemalikonda | 0 | +0 | 0 | - | 4 | techmahindra.com |
-| 1476 | varun gudisena | 0 | +0 | 0 | - | 4 | att.com |
-| 1477 | varun gudisena | 0 | +0 | 0 | - | 5 | att.com |
-| 1478 | vasraz | 0 | +0 | 0 | - | 10 | est.tech |
-| 1479 | vasundhra | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1480 | vb8416 | 0 | +0 | 0 | - | 4 | att.com |
-| 1481 | vdmeer | 0 | +0 | 0 | - | 1 | ericsson.com |
-| 1482 | vempo | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 1483 | vidhyasree | 0 | +0 | 0 | - | 1 | att.com |
-| 1484 | vikaskumar | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
-| 1485 | vinal patel | 0 | +0 | 0 | - | 2 | ibm.com |
-| 1486 | vitalied | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1487 | vladimir turok | 0 | +0 | 0 | - | 1 | t-systems.com |
-| 1488 | vmuthukrishnan@aarnanetworks.com | 0 | +0 | 0 | - | 2 | aarnanetworks.com |
-| 1489 | vrvarma | 0 | +0 | 0 | - | 4 | att.com |
-| 1490 | vrvarma | 0 | +0 | 0 | - | 8 | att.com |
-| 1491 | vv770d | 0 | +0 | 0 | - | 1 | sbc.com |
-| 1492 | vvarvate | 0 | +0 | 0 | - | 2 | techmahindra.com |
-| 1493 | wangxinyuan10113332 | 0 | +0 | 0 | - | 1 | zte.com.cn |
-| 1494 | wangy122 | 0 | +0 | 0 | - | 1 | chinatelecom.cn |
-| 1495 | wangyuerg | 0 | +0 | 0 | - | 1 | chinamobile.com |
-| 1496 | waqas.ikram | 0 | +0 | 0 | - | 12 | est.tech |
+| 1468 | ur326r | 0 | +0 | 0 | - | 4 | att.com |
+| 1469 | vagrant | 0 | +0 | 0 | - | 2 | onap.org |
+| 1470 | vagrant | 0 | +0 | 0 | - | 1 | vagrant.vm |
+| 1471 | vaibhav.jain1 | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 1472 | vaibhav_16dec | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 1473 | vaibhavjayas | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 1474 | vamshi.nemalikonda | 0 | +0 | 0 | - | 4 | techmahindra.com |
+| 1475 | varun gudisena | 0 | +0 | 0 | - | 4 | att.com |
+| 1476 | varun gudisena | 0 | +0 | 0 | - | 5 | att.com |
+| 1477 | vasraz | 0 | +0 | 0 | - | 10 | est.tech |
+| 1478 | vasundhra | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1479 | vb8416 | 0 | +0 | 0 | - | 4 | att.com |
+| 1480 | vdmeer | 0 | +0 | 0 | - | 1 | ericsson.com |
+| 1481 | vempo | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 1482 | vidhyasree | 0 | +0 | 0 | - | 1 | att.com |
+| 1483 | vikaskumar | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
+| 1484 | vinal patel | 0 | +0 | 0 | - | 2 | ibm.com |
+| 1485 | vitalied | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1486 | vladimir turok | 0 | +0 | 0 | - | 1 | t-systems.com |
+| 1487 | vmuthukrishnan@aarnanetworks.com | 0 | +0 | 0 | - | 2 | aarnanetworks.com |
+| 1488 | vrvarma | 0 | +0 | 0 | - | 4 | att.com |
+| 1489 | vrvarma | 0 | +0 | 0 | - | 8 | att.com |
+| 1490 | vv770d | 0 | +0 | 0 | - | 1 | sbc.com |
+| 1491 | vvarvate | 0 | +0 | 0 | - | 2 | techmahindra.com |
+| 1492 | wangxinyuan10113332 | 0 | +0 | 0 | - | 1 | zte.com.cn |
+| 1493 | wangy122 | 0 | +0 | 0 | - | 1 | chinatelecom.cn |
+| 1494 | wangyuerg | 0 | +0 | 0 | - | 1 | chinamobile.com |
+| 1495 | waqas.ikram | 0 | +0 | 0 | - | 12 | est.tech |
+| 1496 | waqas.ikram | 0 | +0 | 0 | - | 9 | ericsson.com |
 | 1497 | wasala | 0 | +0 | 0 | - | 6 | nokia.com |
 | 1498 | wr148d | 0 | +0 | 0 | - | 18 | att.com |
 | 1499 | wsliwka | 0 | +0 | 0 | - | 8 | nokia.com |
@@ -1691,184 +1691,184 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 |----------------|---------|---------|--------------|---------------|------------------|--------|
-| cps | 671 | +19369 | 17 | 2 | 2026-01-03 | ✅ |
-| oom | 172 | +44564 | 19 | 26 | 2025-12-10 | ✅ |
-| policy/clamp | 166 | +52899 | 7 | 27 | 2025-12-09 | ✅ |
-| ci-management | 108 | +173 | 17 | 12 | 2025-12-24 | ✅ |
-| policy/docker | 99 | -9037 | 11 | 27 | 2025-12-09 | ✅ |
-| policy/parent | 91 | +2363 | 11 | 27 | 2025-12-09 | ✅ |
-| so | 87 | +710 | 5 | 13 | 2025-12-23 | ✅ |
-| policy/opa-pdp | 70 | +11216 | 11 | 33 | 2025-12-03 | ✅ |
-| ccsdk/oran | 58 | +19369 | 9 | 19 | 2025-12-17 | ✅ |
-| cps/ncmp-dmi-plugin | 58 | +848 | 9 | 19 | 2025-12-17 | ✅ |
-| aai/schema-service | 55 | +45694 | 14 | 33 | 2025-12-03 | ✅ |
-| policy/models | 46 | -2554 | 6 | 27 | 2025-12-09 | ✅ |
-| multicloud/k8s | 43 | -35 | 5 | 17 | 2025-12-19 | ✅ |
-| policy/apex-pdp | 43 | +137 | 4 | 27 | 2025-12-09 | ✅ |
-| policy/api | 41 | +47 | 5 | 33 | 2025-12-03 | ✅ |
-| policy/drools-applications | 41 | +1 | 4 | 26 | 2025-12-10 | ✅ |
-| policy/pap | 41 | -170 | 5 | 27 | 2025-12-09 | ✅ |
-| policy/xacml-pdp | 40 | +2628 | 5 | 27 | 2025-12-09 | ✅ |
-| policy/drools-pdp | 38 | +160 | 4 | 27 | 2025-12-09 | ✅ |
-| portal-ng/ui | 38 | +781 | 4 | 20 | 2025-12-16 | ✅ |
-| aai/aai-common | 36 | -1285 | 9 | 33 | 2025-12-03 | ✅ |
-| policy/distribution | 33 | +95 | 3 | 27 | 2025-12-09 | ✅ |
-| sdc | 33 | -2263 | 8 | 145 | 2025-08-13 | ✅ |
-| policy/common | 32 | +265 | 4 | 27 | 2025-12-09 | ✅ |
-| portal-ng/bff | 31 | +69 | 5 | 6 | 2025-12-30 | ✅ |
-| ccsdk/parent | 27 | +1367 | 8 | 24 | 2025-12-12 | ✅ |
-| so/adapters/so-cnf-adapter | 27 | +802 | 4 | 15 | 2025-12-21 | ✅ |
-| aai/traversal | 25 | +2121 | 9 | 16 | 2025-12-20 | ✅ |
-| aai/resources | 23 | +112 | 6 | 16 | 2025-12-20 | ✅ |
-| usecase-ui/server | 23 | +496 | 3 | 186 | 2025-07-03 | ✅ |
-| doc | 22 | +300 | 2 | 144 | 2025-08-14 | ✅ |
-| ccsdk/sli | 21 | +817 | 3 | 24 | 2025-12-12 | ✅ |
-| usecase-ui | 21 | +1115 | 4 | 145 | 2025-08-13 | ✅ |
-| aai/graphadmin | 20 | +1411 | 6 | 18 | 2025-12-18 | ✅ |
-| sdc/sdc-workflow-designer | 20 | +83 | 2 | 144 | 2025-08-14 | ✅ |
-| ccsdk/distribution | 19 | +702 | 5 | 24 | 2025-12-12 | ✅ |
-| ccsdk/features | 17 | -16608 | 5 | 26 | 2025-12-10 | ✅ |
-| oom/readiness | 17 | +1391 | 3 | 75 | 2025-10-22 | ✅ |
-| portal-ng/history | 17 | -183 | 5 | 129 | 2025-08-29 | ✅ |
-| sdnc/oam | 17 | +256 | 3 | 20 | 2025-12-16 | ✅ |
-| aai/model-loader | 16 | +314 | 9 | 13 | 2025-12-23 | ✅ |
-| testsuite/pythonsdk-tests | 16 | +5731 | 3 | 75 | 2025-10-22 | ✅ |
-| aai/babel | 15 | +65 | 9 | 13 | 2025-12-23 | ✅ |
-| ccsdk/apps | 15 | +409 | 5 | 24 | 2025-12-12 | ✅ |
-| integration/python-onapsdk | 15 | +1488 | 5 | 145 | 2025-08-13 | ✅ |
-| integration/xtesting | 14 | +474 | 5 | 145 | 2025-08-13 | ✅ |
-| multicloud/framework | 14 | +66 | 4 | 99 | 2025-09-28 | ✅ |
-| testsuite | 14 | +20 | 3 | 145 | 2025-08-13 | ✅ |
-| ccsdk/cds | 13 | +448 | 5 | 25 | 2025-12-11 | ✅ |
-| portal-ng/preferences | 13 | -341 | 3 | 144 | 2025-08-14 | ✅ |
-| usecase-ui/llm-adaptation | 13 | +303 | 2 | 145 | 2025-08-13 | ✅ |
-| sdc/sdc-be-common | 11 | +5 | 2 | 107 | 2025-09-20 | ✅ |
-| aai/sparky-be | 9 | -264 | 2 | 145 | 2025-08-13 | ✅ |
-| sdc/sdc-helm-validator | 9 | +106 | 3 | 107 | 2025-09-20 | ✅ |
-| so/adapters/so-etsi-sol003-adapter | 9 | +270 | 3 | 21 | 2025-12-15 | ✅ |
-| so/so-admin-cockpit | 9 | +87 | 2 | 72 | 2025-10-25 | ✅ |
-| integration/simulators/nf-simulator/ves-client | 8 | +135 | 2 | 34 | 2025-12-02 | ✅ |
-| so/adapters/so-nssmf-adapter | 8 | +103 | 3 | 20 | 2025-12-16 | ✅ |
-| usecase-ui/intent-analysis | 8 | +67 | 3 | 145 | 2025-08-13 | ✅ |
-| so/adapters/so-etsi-sol005-adapter | 7 | +78 | 3 | 73 | 2025-10-24 | ✅ |
-| so/adapters/so-oof-adapter | 7 | +99 | 3 | 73 | 2025-10-24 | ✅ |
-| sdnc/northbound | 6 | +344 | 2 | 24 | 2025-12-12 | ✅ |
-| aai/sparky-fe | 5 | +4397 | 2 | 145 | 2025-08-13 | ✅ |
-| so/so-etsi-nfvo | 4 | +48 | 2 | 107 | 2025-09-20 | ✅ |
-| .github | 3 | +4 | 1 | 172 | 2025-07-17 | ✅ |
-| dcaegen2/collectors/datafile | 3 | +32 | 2 | 145 | 2025-08-13 | ✅ |
-| integration/simulators/A1-policy-enforcement-simulator | 3 | +48 | 2 | 73 | 2025-10-24 | ✅ |
-| integration/simulators/pnf-simulator | 3 | +30 | 2 | 145 | 2025-08-13 | ✅ |
-| integration/usecases/A1-policy-enforcement | 3 | +48 | 2 | 73 | 2025-10-24 | ✅ |
-| integration/usecases/A1-policy-enforcement-r-apps | 3 | +48 | 2 | 73 | 2025-10-24 | ✅ |
-| sdnc/apps | 3 | +4 | 2 | 24 | 2025-12-12 | ✅ |
-| doc/doc-best-practice | 2 | +15 | 1 | 144 | 2025-08-14 | ✅ |
-| integration | 2 | -8 | 2 | 145 | 2025-08-13 | ✅ |
-| logging-analytics | 2 | +39 | 1 | 177 | 2025-07-12 | ✅ |
-| portal-ng | 2 | +48 | 1 | 107 | 2025-09-20 | ✅ |
-| sdc/sdc-distribution-client | 2 | +48 | 1 | 107 | 2025-09-20 | ✅ |
-| sdc/sdc-tosca | 2 | +49 | 1 | 107 | 2025-09-20 | ✅ |
-| testsuite/cds-mock-odl | 2 | +48 | 1 | 107 | 2025-09-20 | ✅ |
-| aai/graphgraph | 1 | +15 | 1 | 148 | 2025-08-10 | ✅ |
-| aai/logging-service | 1 | +15 | 1 | 146 | 2025-08-12 | ✅ |
-| aai/rest-client | 1 | +15 | 1 | 146 | 2025-08-12 | ✅ |
-| aai/test-config | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| dcaegen2 | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| dcaegen2/analytics/tca-gen2 | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| dcaegen2/collectors/hv-ves | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| dcaegen2/collectors/restconf | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| dcaegen2/collectors/snmptrap | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| dcaegen2/collectors/ves | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| dcaegen2/deployments | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| dcaegen2/platform/ves-openapi-manager | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| dcaegen2/services | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| dcaegen2/services/heartbeat | 1 | +16 | 1 | 145 | 2025-08-13 | ✅ |
-| dcaegen2/services/mapper | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| dcaegen2/services/pm-mapper | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| dcaegen2/services/prh | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| dcaegen2/services/sdk | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| dcaegen2/utils | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| demo | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| integration/csit | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| integration/data-provider | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| integration/ietf-actn-tools | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| integration/pipelines/build-integration | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| integration/simulators/5G-core-nf-simulator | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| integration/simulators/core-nssmf-simulator | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| integration/simulators/nf-simulator/netconf-server | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| integration/simulators/ran-nssmf-simulator | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| modeling/modelspec | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| multicloud/openstack | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| multicloud/openstack/windriver | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| oom/platform/keycloak | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| oom/registrator | 1 | +262 | 1 | 52 | 2025-11-14 | ✅ |
-| oparent | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| portal-ng/e2e | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| relman | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| sdc/onap-ui-angular | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| sdc/onap-ui-common | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| so/chef-repo | 1 | +15 | 1 | 144 | 2025-08-14 | ✅ |
-| so/docker-config | 1 | +15 | 1 | 144 | 2025-08-14 | ✅ |
-| so/libs | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| so/so-config | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| testsuite/python-testing-utils | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| testsuite/robot-utils | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| usecase-ui/nlp | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| vfc/nfvo/db | 1 | +15 | 1 | 145 | 2025-08-13 | ✅ |
-| aai | 0 | +0 | 0 | 1,930 | 2020-09-23 | 🛑 |
-| aai/oom | 0 | +0 | 0 | 1,854 | 2020-12-08 | 🛑 |
-| ccsdk | 0 | +0 | 0 | 3,113 | 2017-06-28 | 🛑 |
-| dcaegen2/services/son-handler | 0 | +0 | 0 | 1,012 | 2023-03-30 | ☑️ |
-| dmaap | 0 | +0 | 0 | 3,114 | 2017-06-27 | 🛑 |
-| dmaap/buscontroller | 0 | +0 | 0 | 677 | 2024-02-28 | ☑️ |
-| dmaap/datarouter | 0 | +0 | 0 | 677 | 2024-02-28 | ☑️ |
-| dmaap/kafka11aaf | 0 | +0 | 0 | 1,012 | 2023-03-30 | ☑️ |
-| holmes | 0 | +0 | 0 | 3,112 | 2017-06-29 | 🛑 |
-| integration/docker/onap-java11 | 0 | +0 | 0 | 997 | 2023-04-14 | ☑️ |
-| integration/docker/onap-python | 0 | +0 | 0 | 997 | 2023-04-14 | ☑️ |
-| integration/onap-component-simulators | 0 | +0 | 0 | 388 | 2024-12-13 | ☑️ |
-| integration/pipelines/chained-ci | 0 | +0 | 0 | 997 | 2023-04-14 | ☑️ |
-| integration/pipelines/oom-automatic-installation | 0 | +0 | 0 | 975 | 2023-05-06 | ☑️ |
-| integration/pipelines/xtesting-onap | 0 | +0 | 0 | 997 | 2023-04-14 | ☑️ |
-| integration/seccom | 0 | +0 | 0 | 921 | 2023-06-29 | ☑️ |
-| integration/simulators/nf-simulator | 0 | +0 | 0 | 991 | 2023-04-20 | ☑️ |
-| integration/simulators/nf-simulator/avcn-manager | 0 | +0 | 0 | 1,168 | 2022-10-25 | 🛑 |
-| integration/simulators/nf-simulator/pm-https-server | 0 | +0 | 0 | 1,168 | 2022-10-25 | 🛑 |
-| integration/simulators/ran-app | 0 | +0 | 0 | 1,133 | 2022-11-29 | 🛑 |
-| integration/simulators/ran-simulator | 0 | +0 | 0 | 996 | 2023-04-15 | ☑️ |
-| msb | 0 | +0 | 0 | 3,113 | 2017-06-28 | 🛑 |
-| msb/service-mesh | 0 | +0 | 0 | 1,837 | 2020-12-25 | 🛑 |
-| multicloud | 0 | +0 | 0 | 1,580 | 2021-09-08 | 🛑 |
-| multicloud/openstack/vmware | 0 | +0 | 0 | 1,575 | 2021-09-13 | 🛑 |
-| oom/consul | 0 | +0 | 0 | 1,333 | 2022-05-13 | 🛑 |
-| oom/offline-installer | 0 | +0 | 0 | 1,168 | 2022-10-25 | 🛑 |
-| oom/platform/cert-manager | 0 | +0 | 0 | 1,993 | 2020-07-22 | 🛑 |
-| oom/platform/cert-service | 0 | +0 | 0 | 916 | 2023-07-04 | ☑️ |
-| oom/utils | 0 | +0 | 0 | 1,333 | 2022-05-13 | 🛑 |
-| oparent/cia | 0 | +0 | 0 | 2,047 | 2020-05-29 | 🛑 |
-| osa | 0 | +0 | 0 | 508 | 2024-08-15 | ☑️ |
-| policy | 0 | +0 | 0 | 1,930 | 2020-09-23 | 🛑 |
-| sandbox-2 | 0 | +0 | 0 | 2,690 | 2018-08-25 | 🛑 |
-| sandbox-3 | 0 | +0 | 0 | 2,027 | 2020-06-18 | 🛑 |
-| sdc/sdc-docker-base | 0 | +0 | 0 | 1,382 | 2022-03-25 | 🛑 |
-| sdc/sdc-pubsub | 0 | +0 | 0 | 1,048 | 2023-02-22 | ☑️ |
-| sdnc | 0 | +0 | 0 | 1,930 | 2020-09-23 | 🛑 |
-| testsuite/cds | 0 | +0 | 0 | 990 | 2023-04-21 | ☑️ |
-| testsuite/cds-mock-server | 0 | +0 | 0 | 991 | 2023-04-20 | ☑️ |
-| testsuite/cds-mock-ssh | 0 | +0 | 0 | 1,797 | 2021-02-03 | 🛑 |
-| testsuite/oom | 0 | +0 | 0 | 990 | 2023-04-21 | ☑️ |
-| university | 0 | +0 | 0 | 3,084 | 2017-07-27 | 🛑 |
-| vfc | 0 | +0 | 0 | 3,112 | 2017-06-29 | 🛑 |
-| vnfrqts | 0 | +0 | 0 | 3,111 | 2017-06-30 | 🛑 |
-| vnfrqts/epics | 0 | +0 | 0 | 1,957 | 2020-08-27 | 🛑 |
-| vnfrqts/guidelines | 0 | +0 | 0 | 1,361 | 2022-04-15 | 🛑 |
-| vnfrqts/requirements | 0 | +0 | 0 | 1,361 | 2022-04-15 | 🛑 |
-| vnfrqts/testcases | 0 | +0 | 0 | 1,361 | 2022-04-15 | 🛑 |
-| vnfrqts/usecases | 0 | +0 | 0 | 1,361 | 2022-04-15 | 🛑 |
-| vnfsdk | 0 | +0 | 0 | 3,123 | 2017-06-18 | 🛑 |
-| vnfsdk/lctest | 0 | +0 | 0 | 2,314 | 2019-09-05 | 🛑 |
-| vnfsdk/model | 0 | +0 | 0 | 677 | 2024-02-28 | ☑️ |
-| vnfsdk/pkgtools | 0 | +0 | 0 | 1,175 | 2022-10-18 | 🛑 |
+| cps | 672 | +19370 | 17 | 0 | 2026-01-06 | ✅ |
+| oom | 172 | +44564 | 19 | 27 | 2025-12-10 | ✅ |
+| policy/clamp | 167 | +53401 | 7 | 3 | 2026-01-03 | ✅ |
+| ci-management | 108 | +173 | 17 | 13 | 2025-12-24 | ✅ |
+| policy/docker | 100 | -10175 | 11 | 0 | 2026-01-06 | ✅ |
+| policy/parent | 94 | +2367 | 11 | 0 | 2026-01-06 | ✅ |
+| so | 87 | +710 | 5 | 14 | 2025-12-23 | ✅ |
+| policy/opa-pdp | 70 | +11216 | 11 | 34 | 2025-12-03 | ✅ |
+| ccsdk/oran | 58 | +19369 | 9 | 20 | 2025-12-17 | ✅ |
+| cps/ncmp-dmi-plugin | 58 | +848 | 9 | 20 | 2025-12-17 | ✅ |
+| aai/schema-service | 54 | +45692 | 14 | 34 | 2025-12-03 | ✅ |
+| policy/models | 46 | -2554 | 6 | 28 | 2025-12-09 | ✅ |
+| multicloud/k8s | 43 | -35 | 5 | 18 | 2025-12-19 | ✅ |
+| policy/apex-pdp | 43 | +137 | 4 | 28 | 2025-12-09 | ✅ |
+| policy/api | 41 | +47 | 5 | 34 | 2025-12-03 | ✅ |
+| policy/drools-applications | 41 | +1 | 4 | 27 | 2025-12-10 | ✅ |
+| policy/pap | 41 | -170 | 5 | 28 | 2025-12-09 | ✅ |
+| policy/xacml-pdp | 40 | +2628 | 5 | 28 | 2025-12-09 | ✅ |
+| policy/drools-pdp | 38 | +160 | 4 | 28 | 2025-12-09 | ✅ |
+| portal-ng/ui | 38 | +781 | 4 | 21 | 2025-12-16 | ✅ |
+| aai/aai-common | 36 | -1285 | 9 | 34 | 2025-12-03 | ✅ |
+| policy/distribution | 33 | +95 | 3 | 28 | 2025-12-09 | ✅ |
+| sdc | 33 | -2263 | 8 | 146 | 2025-08-13 | ✅ |
+| policy/common | 32 | +265 | 4 | 28 | 2025-12-09 | ✅ |
+| portal-ng/bff | 31 | +69 | 5 | 7 | 2025-12-30 | ✅ |
+| ccsdk/parent | 27 | +1367 | 8 | 25 | 2025-12-12 | ✅ |
+| so/adapters/so-cnf-adapter | 27 | +802 | 4 | 16 | 2025-12-21 | ✅ |
+| aai/traversal | 25 | +2121 | 9 | 17 | 2025-12-20 | ✅ |
+| aai/resources | 23 | +112 | 6 | 17 | 2025-12-20 | ✅ |
+| usecase-ui/server | 23 | +496 | 3 | 187 | 2025-07-03 | ✅ |
+| doc | 22 | +300 | 2 | 145 | 2025-08-14 | ✅ |
+| ccsdk/sli | 21 | +817 | 3 | 25 | 2025-12-12 | ✅ |
+| usecase-ui | 21 | +1115 | 4 | 146 | 2025-08-13 | ✅ |
+| aai/graphadmin | 20 | +1411 | 6 | 19 | 2025-12-18 | ✅ |
+| sdc/sdc-workflow-designer | 20 | +83 | 2 | 145 | 2025-08-14 | ✅ |
+| ccsdk/distribution | 19 | +702 | 5 | 25 | 2025-12-12 | ✅ |
+| ccsdk/features | 17 | -16608 | 5 | 27 | 2025-12-10 | ✅ |
+| oom/readiness | 17 | +1391 | 3 | 76 | 2025-10-22 | ✅ |
+| portal-ng/history | 17 | -183 | 5 | 130 | 2025-08-29 | ✅ |
+| sdnc/oam | 17 | +256 | 3 | 21 | 2025-12-16 | ✅ |
+| aai/model-loader | 16 | +314 | 9 | 14 | 2025-12-23 | ✅ |
+| testsuite/pythonsdk-tests | 16 | +5731 | 3 | 76 | 2025-10-22 | ✅ |
+| aai/babel | 15 | +65 | 9 | 14 | 2025-12-23 | ✅ |
+| ccsdk/apps | 15 | +409 | 5 | 25 | 2025-12-12 | ✅ |
+| integration/python-onapsdk | 15 | +1488 | 5 | 146 | 2025-08-13 | ✅ |
+| testsuite | 15 | +20 | 3 | 294 | 2025-03-18 | ✅ |
+| integration/xtesting | 14 | +474 | 5 | 146 | 2025-08-13 | ✅ |
+| multicloud/framework | 14 | +66 | 4 | 100 | 2025-09-28 | ✅ |
+| ccsdk/cds | 13 | +448 | 5 | 26 | 2025-12-11 | ✅ |
+| portal-ng/preferences | 13 | -341 | 3 | 145 | 2025-08-14 | ✅ |
+| usecase-ui/llm-adaptation | 13 | +303 | 2 | 146 | 2025-08-13 | ✅ |
+| sdc/sdc-be-common | 11 | +5 | 2 | 108 | 2025-09-20 | ✅ |
+| aai/sparky-be | 9 | -264 | 2 | 146 | 2025-08-13 | ✅ |
+| sdc/sdc-helm-validator | 9 | +106 | 3 | 108 | 2025-09-20 | ✅ |
+| so/adapters/so-etsi-sol003-adapter | 9 | +270 | 3 | 22 | 2025-12-15 | ✅ |
+| so/so-admin-cockpit | 9 | +87 | 2 | 73 | 2025-10-25 | ✅ |
+| integration/simulators/nf-simulator/ves-client | 8 | +135 | 2 | 35 | 2025-12-02 | ✅ |
+| so/adapters/so-nssmf-adapter | 8 | +103 | 3 | 21 | 2025-12-16 | ✅ |
+| usecase-ui/intent-analysis | 8 | +67 | 3 | 146 | 2025-08-13 | ✅ |
+| so/adapters/so-etsi-sol005-adapter | 7 | +78 | 3 | 74 | 2025-10-24 | ✅ |
+| so/adapters/so-oof-adapter | 7 | +99 | 3 | 74 | 2025-10-24 | ✅ |
+| sdnc/northbound | 6 | +344 | 2 | 25 | 2025-12-12 | ✅ |
+| aai/sparky-fe | 5 | +4397 | 2 | 146 | 2025-08-13 | ✅ |
+| so/so-etsi-nfvo | 4 | +48 | 2 | 108 | 2025-09-20 | ✅ |
+| .github | 3 | +4 | 1 | 173 | 2025-07-17 | ✅ |
+| dcaegen2/collectors/datafile | 3 | +32 | 2 | 146 | 2025-08-13 | ✅ |
+| integration/simulators/A1-policy-enforcement-simulator | 3 | +48 | 2 | 74 | 2025-10-24 | ✅ |
+| integration/simulators/pnf-simulator | 3 | +30 | 2 | 146 | 2025-08-13 | ✅ |
+| integration/usecases/A1-policy-enforcement | 3 | +48 | 2 | 74 | 2025-10-24 | ✅ |
+| integration/usecases/A1-policy-enforcement-r-apps | 3 | +48 | 2 | 74 | 2025-10-24 | ✅ |
+| sdnc/apps | 3 | +4 | 2 | 25 | 2025-12-12 | ✅ |
+| doc/doc-best-practice | 2 | +15 | 1 | 145 | 2025-08-14 | ✅ |
+| integration | 2 | -8 | 2 | 146 | 2025-08-13 | ✅ |
+| logging-analytics | 2 | +39 | 1 | 178 | 2025-07-12 | ✅ |
+| portal-ng | 2 | +48 | 1 | 108 | 2025-09-20 | ✅ |
+| sdc/sdc-distribution-client | 2 | +48 | 1 | 108 | 2025-09-20 | ✅ |
+| sdc/sdc-tosca | 2 | +49 | 1 | 108 | 2025-09-20 | ✅ |
+| testsuite/cds-mock-odl | 2 | +48 | 1 | 108 | 2025-09-20 | ✅ |
+| aai/graphgraph | 1 | +15 | 1 | 149 | 2025-08-10 | ✅ |
+| aai/logging-service | 1 | +15 | 1 | 147 | 2025-08-12 | ✅ |
+| aai/rest-client | 1 | +15 | 1 | 147 | 2025-08-12 | ✅ |
+| aai/test-config | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| dcaegen2 | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| dcaegen2/analytics/tca-gen2 | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| dcaegen2/collectors/hv-ves | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| dcaegen2/collectors/restconf | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| dcaegen2/collectors/snmptrap | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| dcaegen2/collectors/ves | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| dcaegen2/deployments | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| dcaegen2/platform/ves-openapi-manager | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| dcaegen2/services | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| dcaegen2/services/heartbeat | 1 | +16 | 1 | 146 | 2025-08-13 | ✅ |
+| dcaegen2/services/mapper | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| dcaegen2/services/pm-mapper | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| dcaegen2/services/prh | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| dcaegen2/services/sdk | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| dcaegen2/utils | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| demo | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| integration/csit | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| integration/data-provider | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| integration/ietf-actn-tools | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| integration/pipelines/build-integration | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| integration/simulators/5G-core-nf-simulator | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| integration/simulators/core-nssmf-simulator | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| integration/simulators/nf-simulator/netconf-server | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| integration/simulators/ran-nssmf-simulator | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| modeling/modelspec | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| multicloud/openstack | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| multicloud/openstack/windriver | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| oom/platform/keycloak | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| oom/registrator | 1 | +262 | 1 | 53 | 2025-11-14 | ✅ |
+| oparent | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| portal-ng/e2e | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| relman | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| sdc/onap-ui-angular | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| sdc/onap-ui-common | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| so/chef-repo | 1 | +15 | 1 | 145 | 2025-08-14 | ✅ |
+| so/docker-config | 1 | +15 | 1 | 145 | 2025-08-14 | ✅ |
+| so/libs | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| so/so-config | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| testsuite/python-testing-utils | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| testsuite/robot-utils | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| usecase-ui/nlp | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| vfc/nfvo/db | 1 | +15 | 1 | 146 | 2025-08-13 | ✅ |
+| aai | 0 | +0 | 0 | 1,931 | 2020-09-23 | 🛑 |
+| aai/oom | 0 | +0 | 0 | 1,855 | 2020-12-08 | 🛑 |
+| ccsdk | 0 | +0 | 0 | 3,114 | 2017-06-28 | 🛑 |
+| dcaegen2/services/son-handler | 0 | +0 | 0 | 1,013 | 2023-03-30 | ☑️ |
+| dmaap | 0 | +0 | 0 | 3,115 | 2017-06-27 | 🛑 |
+| dmaap/buscontroller | 0 | +0 | 0 | 678 | 2024-02-28 | ☑️ |
+| dmaap/datarouter | 0 | +0 | 0 | 678 | 2024-02-28 | ☑️ |
+| dmaap/kafka11aaf | 0 | +0 | 0 | 1,013 | 2023-03-30 | ☑️ |
+| holmes | 0 | +0 | 0 | 3,113 | 2017-06-29 | 🛑 |
+| integration/docker/onap-java11 | 0 | +0 | 0 | 998 | 2023-04-14 | ☑️ |
+| integration/docker/onap-python | 0 | +0 | 0 | 998 | 2023-04-14 | ☑️ |
+| integration/onap-component-simulators | 0 | +0 | 0 | 389 | 2024-12-13 | ☑️ |
+| integration/pipelines/chained-ci | 0 | +0 | 0 | 998 | 2023-04-14 | ☑️ |
+| integration/pipelines/oom-automatic-installation | 0 | +0 | 0 | 976 | 2023-05-06 | ☑️ |
+| integration/pipelines/xtesting-onap | 0 | +0 | 0 | 998 | 2023-04-14 | ☑️ |
+| integration/seccom | 0 | +0 | 0 | 922 | 2023-06-29 | ☑️ |
+| integration/simulators/nf-simulator | 0 | +0 | 0 | 992 | 2023-04-20 | ☑️ |
+| integration/simulators/nf-simulator/avcn-manager | 0 | +0 | 0 | 1,169 | 2022-10-25 | 🛑 |
+| integration/simulators/nf-simulator/pm-https-server | 0 | +0 | 0 | 1,169 | 2022-10-25 | 🛑 |
+| integration/simulators/ran-app | 0 | +0 | 0 | 1,134 | 2022-11-29 | 🛑 |
+| integration/simulators/ran-simulator | 0 | +0 | 0 | 997 | 2023-04-15 | ☑️ |
+| msb | 0 | +0 | 0 | 3,114 | 2017-06-28 | 🛑 |
+| msb/service-mesh | 0 | +0 | 0 | 1,838 | 2020-12-25 | 🛑 |
+| multicloud | 0 | +0 | 0 | 1,581 | 2021-09-08 | 🛑 |
+| multicloud/openstack/vmware | 0 | +0 | 0 | 1,576 | 2021-09-13 | 🛑 |
+| oom/consul | 0 | +0 | 0 | 1,334 | 2022-05-13 | 🛑 |
+| oom/offline-installer | 0 | +0 | 0 | 1,169 | 2022-10-25 | 🛑 |
+| oom/platform/cert-manager | 0 | +0 | 0 | 1,994 | 2020-07-22 | 🛑 |
+| oom/platform/cert-service | 0 | +0 | 0 | 917 | 2023-07-04 | ☑️ |
+| oom/utils | 0 | +0 | 0 | 1,334 | 2022-05-13 | 🛑 |
+| oparent/cia | 0 | +0 | 0 | 2,048 | 2020-05-29 | 🛑 |
+| osa | 0 | +0 | 0 | 509 | 2024-08-15 | ☑️ |
+| policy | 0 | +0 | 0 | 1,931 | 2020-09-23 | 🛑 |
+| sandbox-2 | 0 | +0 | 0 | 2,691 | 2018-08-25 | 🛑 |
+| sandbox-3 | 0 | +0 | 0 | 2,028 | 2020-06-18 | 🛑 |
+| sdc/sdc-docker-base | 0 | +0 | 0 | 1,383 | 2022-03-25 | 🛑 |
+| sdc/sdc-pubsub | 0 | +0 | 0 | 1,049 | 2023-02-22 | ☑️ |
+| sdnc | 0 | +0 | 0 | 1,931 | 2020-09-23 | 🛑 |
+| testsuite/cds | 0 | +0 | 0 | 991 | 2023-04-21 | ☑️ |
+| testsuite/cds-mock-server | 0 | +0 | 0 | 992 | 2023-04-20 | ☑️ |
+| testsuite/cds-mock-ssh | 0 | +0 | 0 | 1,798 | 2021-02-03 | 🛑 |
+| testsuite/oom | 0 | +0 | 0 | 991 | 2023-04-21 | ☑️ |
+| university | 0 | +0 | 0 | 3,085 | 2017-07-27 | 🛑 |
+| vfc | 0 | +0 | 0 | 3,113 | 2017-06-29 | 🛑 |
+| vnfrqts | 0 | +0 | 0 | 3,112 | 2017-06-30 | 🛑 |
+| vnfrqts/epics | 0 | +0 | 0 | 1,958 | 2020-08-27 | 🛑 |
+| vnfrqts/guidelines | 0 | +0 | 0 | 1,362 | 2022-04-15 | 🛑 |
+| vnfrqts/requirements | 0 | +0 | 0 | 1,362 | 2022-04-15 | 🛑 |
+| vnfrqts/testcases | 0 | +0 | 0 | 1,362 | 2022-04-15 | 🛑 |
+| vnfrqts/usecases | 0 | +0 | 0 | 1,362 | 2022-04-15 | 🛑 |
+| vnfsdk | 0 | +0 | 0 | 3,124 | 2017-06-18 | 🛑 |
+| vnfsdk/lctest | 0 | +0 | 0 | 2,315 | 2019-09-05 | 🛑 |
+| vnfsdk/model | 0 | +0 | 0 | 678 | 2024-02-28 | ☑️ |
+| vnfsdk/pkgtools | 0 | +0 | 0 | 1,176 | 2022-10-18 | 🛑 |
 
 **Total:** 178 repositories
 
@@ -1891,8 +1891,8 @@ The data presented in the table below covers the past 365 days.
 | multicloud/k8s | Go | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | policy/apex-pdp | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | policy/api | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| policy/pap | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | policy/drools-applications | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| policy/pap | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | policy/xacml-pdp | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | policy/drools-pdp | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | portal-ng/ui | TypeScript | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
@@ -1921,9 +1921,9 @@ The data presented in the table below covers the past 365 days.
 | aai/babel | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | ccsdk/apps | Java/Maven | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | integration/python-onapsdk | Python | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| testsuite | Robot Framework | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | integration/xtesting | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | multicloud/framework | Java/Maven | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
-| testsuite | Robot Framework | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | ccsdk/cds | Kotlin | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | portal-ng/preferences | Java/Gradle | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | usecase-ui/llm-adaptation | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
@@ -1943,8 +1943,8 @@ The data presented in the table below covers the past 365 days.
 | dcaegen2/collectors/datafile | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | integration/simulators/A1-policy-enforcement-simulator | Java/Maven | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | integration/usecases/A1-policy-enforcement | Shell | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
-| integration/usecases/A1-policy-enforcement-r-apps | Java/Maven | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | integration/simulators/pnf-simulator | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| integration/usecases/A1-policy-enforcement-r-apps | Java/Maven | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | sdnc/apps | Java/Maven | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | .github | None | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | doc/doc-best-practice | Python | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
@@ -1954,27 +1954,27 @@ The data presented in the table below covers the past 365 days.
 | logging-analytics | Java/Maven | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | portal-ng | Java | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | integration | Java | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
-| integration/simulators/nf-simulator/netconf-server | Python | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | dcaegen2/collectors/restconf | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| integration/simulators/nf-simulator/netconf-server | Python | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | dcaegen2/collectors/snmptrap | Python | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | dcaegen2/services/heartbeat | Python | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| dcaegen2/platform/ves-openapi-manager | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | dcaegen2/collectors/ves | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| dcaegen2/analytics/tca-gen2 | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| dcaegen2/platform/ves-openapi-manager | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | dcaegen2/services/mapper | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | integration/pipelines/build-integration | Python | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | dcaegen2/services/prh | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| integration/simulators/5G-core-nf-simulator | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| dcaegen2/analytics/tca-gen2 | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | dcaegen2/services/pm-mapper | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| integration/simulators/5G-core-nf-simulator | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | integration/simulators/core-nssmf-simulator | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | integration/simulators/ran-nssmf-simulator | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| dcaegen2/collectors/hv-ves | Kotlin | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | multicloud/openstack/windriver | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | oom/platform/keycloak | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| dcaegen2/collectors/hv-ves | Kotlin | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| vfc/nfvo/db | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | dcaegen2/services/sdk | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| aai/graphgraph | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| vfc/nfvo/db | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aai/logging-service | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| aai/graphgraph | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aai/rest-client | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aai/test-config | Robot Framework | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | dcaegen2/deployments | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
@@ -1992,10 +1992,10 @@ The data presented in the table below covers the past 365 days.
 | so/chef-repo | Ruby | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | so/docker-config | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | so/so-config | Ruby | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| testsuite/python-testing-utils | Python | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | testsuite/robot-utils | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| usecase-ui/nlp | Python | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| testsuite/python-testing-utils | Python | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | so/libs | Java/Maven | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| usecase-ui/nlp | Python | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | demo | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | oparent | Python | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | relman | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
@@ -2006,8 +2006,8 @@ The data presented in the table below covers the past 365 days.
 | integration/docker/onap-python | Dockerfile | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | dcaegen2/services/son-handler | Java/Maven | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | integration/pipelines/chained-ci | JavaScript | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| integration/pipelines/xtesting-onap | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | integration/pipelines/oom-automatic-installation | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| integration/pipelines/xtesting-onap | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | integration/simulators/ran-app | Java | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | oom/platform/cert-manager | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | integration/simulators/ran-simulator | Java | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
@@ -2018,8 +2018,8 @@ The data presented in the table below covers the past 365 days.
 | dmaap/buscontroller | Java/Maven | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | dmaap/kafka11aaf | Java/Maven | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | dmaap/datarouter | Java/Maven | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| integration/onap-component-simulators | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | integration/seccom | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| integration/onap-component-simulators | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | msb/service-mesh | Go | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | oom/consul | Dockerfile | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | oom/offline-installer | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
@@ -2032,8 +2032,8 @@ The data presented in the table below covers the past 365 days.
 | testsuite/oom | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | testsuite/cds | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | vnfrqts/epics | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| vnfrqts/testcases | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | vnfrqts/guidelines | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| vnfrqts/testcases | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | vnfrqts/usecases | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | vnfrqts/requirements | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | vnfsdk/model | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
@@ -2075,15 +2075,15 @@ The data presented in the table below covers the past 365 days.
 | aai/sparky-be |  | 0 | <a href="https://jenkins.onap.org/job/aai-sparky-be-maven-verify-master-mvn36-openjdk11/" target="_blank"><span class="status-success jenkins-status">aai-sparky-be-maven-verify-master-mvn36-openjdk11</span></a><br><a href="https://jenkins.onap.org/job/aai-sparky-be-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">aai-sparky-be-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/aai-sparky-be-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">aai-sparky-be-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/aai-sparky-be-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">aai-sparky-be-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/aai-sparky-be-release-verify-master/" target="_blank"><span class="status-success jenkins-status">aai-sparky-be-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/aai-sparky-be-release-merge-master/" target="_blank"><span class="status-success jenkins-status">aai-sparky-be-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/aai-sparky-be-sonar/" target="_blank"><span class="status-success jenkins-status">aai-sparky-be-sonar</span></a><br><a href="https://jenkins.onap.org/job/aai-sparky-be-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">aai-sparky-be-maven-clm-master</span></a> | 8 |
 | aai/sparky-fe |  | 0 | <a href="https://jenkins.onap.org/job/aai-sparky-fe-master-verify-java/" target="_blank"><span class="status-success jenkins-status">aai-sparky-fe-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/aai-sparky-fe-master-merge-java/" target="_blank"><span class="status-success jenkins-status">aai-sparky-fe-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/aai-sparky-fe-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">aai-sparky-fe-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/aai-sparky-fe-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">aai-sparky-fe-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/aai-sparky-fe-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">aai-sparky-fe-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/aai-sparky-fe-sonar/" target="_blank"><span class="status-success jenkins-status">aai-sparky-fe-sonar</span></a> | 6 |
 | aai/traversal |  | 0 | <a href="https://jenkins.onap.org/job/aai-traversal-master-verify-java/" target="_blank"><span class="status-success jenkins-status">aai-traversal-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/aai-traversal-master-merge-java/" target="_blank"><span class="status-success jenkins-status">aai-traversal-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/aai-traversal-maven-stage-master/" target="_blank"><span class="status-failure jenkins-status">aai-traversal-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/aai-traversal-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">aai-traversal-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/aai-traversal-release-verify-master/" target="_blank"><span class="status-success jenkins-status">aai-traversal-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/aai-traversal-release-merge-master/" target="_blank"><span class="status-success jenkins-status">aai-traversal-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/aai-traversal-sonar/" target="_blank"><span class="status-success jenkins-status">aai-traversal-sonar</span></a><br><a href="https://jenkins.onap.org/job/aai-traversal-maven-clm-master/" target="_blank"><span class="status-warning jenkins-status">aai-traversal-maven-clm-master</span></a> | 8 |
-| ccsdk/apps | <a href="https://github.com/onap/ccsdk-apps/actions/workflows/gerrit-merge-cbom.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-merge-cbom.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/ccsdk-apps-maven-verify-paris-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-maven-verify-paris-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-verify-quebec-mvn39-openjdk21/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-apps-maven-verify-quebec-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-verify-master-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-maven-verify-master-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">ccsdk-apps-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-merge-quebec/" target="_blank"><span class="status-failure jenkins-status">ccsdk-apps-maven-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-apps-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-apps-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-apps-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-docker-stage-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-docker-stage-quebec/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-apps-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-apps-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-release-verify-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-apps-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-apps-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-release-merge-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-sonar/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-sonar</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-apps-maven-clm-master</span></a> | 20 |
+| ccsdk/apps | <a href="https://github.com/onap/ccsdk-apps/actions/workflows/gerrit-merge-cbom.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-merge-cbom.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/ccsdk-apps-maven-verify-paris-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-maven-verify-paris-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-verify-quebec-mvn39-openjdk21/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-apps-maven-verify-quebec-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-verify-master-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-maven-verify-master-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">ccsdk-apps-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-merge-quebec/" target="_blank"><span class="status-failure jenkins-status">ccsdk-apps-maven-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-apps-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-apps-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-apps-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-docker-stage-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-docker-stage-quebec/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-docker-stage-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-apps-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-apps-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-apps-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-release-verify-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-apps-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-apps-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-release-merge-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-sonar/" target="_blank"><span class="status-success jenkins-status">ccsdk-apps-sonar</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-apps-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-apps-maven-clm-master</span></a> | 20 |
 | ccsdk/cds | <a href="https://github.com/onap/ccsdk-cds/actions/workflows/gerrit-merge.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-merge.yaml</span></a><br><a href="https://github.com/onap/ccsdk-cds/actions/workflows/gerrit-verify.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-verify.yaml</span></a> | 2 | <a href="https://jenkins.onap.org/job/ccsdk-cds-maven-verify-master-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-cds-maven-verify-master-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-maven-verify-quebec-mvn39-openjdk21/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-cds-maven-verify-quebec-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-maven-verify-paris-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-cds-maven-verify-paris-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-cds-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-maven-merge-quebec/" target="_blank"><span class="status-failure jenkins-status">ccsdk-cds-maven-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">ccsdk-cds-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-cds-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-cds-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-maven-stage-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-cds-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-cds-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-maven-docker-stage-quebec/" target="_blank"><span class="status-failure jenkins-status">ccsdk-cds-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-maven-docker-stage-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-cds-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-release-verify-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-cds-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-cds-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-release-verify-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-cds-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-release-merge-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-cds-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-cds-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-release-merge-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-cds-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-sonar/" target="_blank"><span class="status-failure jenkins-status">ccsdk-cds-sonar</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-cds-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-cds-maven-clm-master</span></a> | 20 |
-| ccsdk/distribution | <a href="https://github.com/onap/ccsdk-distribution/actions/workflows/gerrit-merge-cbom.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-merge-cbom.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-verify-master-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-maven-verify-master-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-verify-quebec-mvn39-openjdk21/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-maven-verify-quebec-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-verify-paris-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-maven-verify-paris-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-distribution-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-merge-quebec/" target="_blank"><span class="status-failure jenkins-status">ccsdk-distribution-maven-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">ccsdk-distribution-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-docker-stage-quebec/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-docker-stage-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-release-verify-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-release-merge-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-distribution-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-merge-verification-maven-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-merge-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-merge-verification-maven-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-merge-verification-maven-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-merge-verification-maven-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-merge-verification-maven-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-review-verification-maven-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-review-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-review-verification-maven-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-review-verification-maven-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-review-verification-maven-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-review-verification-maven-quebec</span></a> | 25 |
+| ccsdk/distribution | <a href="https://github.com/onap/ccsdk-distribution/actions/workflows/gerrit-merge-cbom.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-merge-cbom.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-verify-master-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-maven-verify-master-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-verify-quebec-mvn39-openjdk21/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-maven-verify-quebec-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-verify-paris-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-maven-verify-paris-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-distribution-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-merge-quebec/" target="_blank"><span class="status-failure jenkins-status">ccsdk-distribution-maven-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">ccsdk-distribution-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-docker-stage-quebec/" target="_blank"><span class="status-failure jenkins-status">ccsdk-distribution-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-docker-stage-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-release-verify-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-release-merge-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-distribution-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-merge-verification-maven-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-merge-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-merge-verification-maven-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-merge-verification-maven-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-merge-verification-maven-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-merge-verification-maven-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-review-verification-maven-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-review-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-review-verification-maven-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-distribution-review-verification-maven-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-distribution-review-verification-maven-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-distribution-review-verification-maven-quebec</span></a> | 25 |
 | ccsdk/features | <a href="https://github.com/onap/ccsdk-features/actions/workflows/gerrit-merge-cbom.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-merge-cbom.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/ccsdk-features-maven-verify-master-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-features-maven-verify-master-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-maven-verify-quebec-mvn39-openjdk21/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-features-maven-verify-quebec-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-maven-verify-paris-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-features-maven-verify-paris-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-features-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-maven-merge-quebec/" target="_blank"><span class="status-failure jenkins-status">ccsdk-features-maven-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">ccsdk-features-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-features-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-features-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-features-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-release-verify-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-features-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-features-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-features-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-release-merge-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-features-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-features-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-features-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-sonar/" target="_blank"><span class="status-success jenkins-status">ccsdk-features-sonar</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-features-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-features-maven-clm-master</span></a> | 17 |
-| ccsdk/oran | <a href="https://github.com/onap/ccsdk-oran/actions/workflows/gerrit-merge-cbom.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-merge-cbom.yaml</span></a><br><a href="https://github.com/onap/ccsdk-oran/actions/workflows/gerrit-oran-functional-test-case-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-oran-functional-test-case-verify.yaml</span></a> | 2 | <a href="https://jenkins.onap.org/job/ccsdk-oran-maven-verify-oslo-mvn38-openjdk17/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-verify-oslo-mvn38-openjdk17</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-verify-newdelhi-mvn38-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-maven-verify-newdelhi-mvn38-openjdk17</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-merge-oslo/" target="_blank"><span class="status-failure jenkins-status">ccsdk-oran-maven-merge-oslo</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-merge-newdelhi/" target="_blank"><span class="status-failure jenkins-status">ccsdk-oran-maven-merge-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-stage-oslo/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-maven-stage-oslo</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-stage-newdelhi/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-stage-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-docker-stage-oslo/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-maven-docker-stage-oslo</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-docker-stage-newdelhi/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-docker-stage-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-verify-oslo/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-release-verify-oslo</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-verify-newdelhi/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-release-verify-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-merge-oslo/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-release-merge-oslo</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-merge-newdelhi/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-release-merge-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-verify-master-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-verify-master-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-verify-quebec-mvn39-openjdk21/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-maven-verify-quebec-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-verify-paris-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-verify-paris-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-oran-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-merge-quebec/" target="_blank"><span class="status-failure jenkins-status">ccsdk-oran-maven-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">ccsdk-oran-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-stage-quebec/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-stage-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-verify-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-merge-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-oran-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-sonar/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-sonar</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-merge-verification-maven-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-oran-merge-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-merge-verification-maven-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-merge-verification-maven-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-merge-verification-maven-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-merge-verification-maven-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-review-verification-maven-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-review-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-review-verification-maven-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-review-verification-maven-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-review-verification-maven-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-review-verification-maven-quebec</span></a> | 38 |
+| ccsdk/oran | <a href="https://github.com/onap/ccsdk-oran/actions/workflows/gerrit-merge-cbom.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-merge-cbom.yaml</span></a><br><a href="https://github.com/onap/ccsdk-oran/actions/workflows/gerrit-oran-functional-test-case-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-oran-functional-test-case-verify.yaml</span></a> | 2 | <a href="https://jenkins.onap.org/job/ccsdk-oran-maven-verify-oslo-mvn38-openjdk17/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-verify-oslo-mvn38-openjdk17</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-verify-newdelhi-mvn38-openjdk17/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-maven-verify-newdelhi-mvn38-openjdk17</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-merge-oslo/" target="_blank"><span class="status-failure jenkins-status">ccsdk-oran-maven-merge-oslo</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-merge-newdelhi/" target="_blank"><span class="status-failure jenkins-status">ccsdk-oran-maven-merge-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-stage-oslo/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-maven-stage-oslo</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-stage-newdelhi/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-stage-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-docker-stage-oslo/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-maven-docker-stage-oslo</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-docker-stage-newdelhi/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-docker-stage-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-verify-oslo/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-release-verify-oslo</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-verify-newdelhi/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-release-verify-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-merge-oslo/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-release-merge-oslo</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-merge-newdelhi/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-release-merge-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-verify-master-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-verify-master-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-verify-quebec-mvn39-openjdk21/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-maven-verify-quebec-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-verify-paris-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-verify-paris-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-oran-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-merge-quebec/" target="_blank"><span class="status-failure jenkins-status">ccsdk-oran-maven-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">ccsdk-oran-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-stage-quebec/" target="_blank"><span class="status-failure jenkins-status">ccsdk-oran-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-stage-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-verify-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-merge-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-oran-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-sonar/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-sonar</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-merge-verification-maven-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-oran-merge-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-merge-verification-maven-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-merge-verification-maven-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-merge-verification-maven-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-merge-verification-maven-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-review-verification-maven-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-review-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-review-verification-maven-paris/" target="_blank"><span class="status-success jenkins-status">ccsdk-oran-review-verification-maven-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-oran-review-verification-maven-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-oran-review-verification-maven-quebec</span></a> | 38 |
 | ccsdk/parent | <a href="https://github.com/onap/ccsdk-parent/actions/workflows/gerrit-merge-cbom.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-merge-cbom.yaml</span></a><br><a href="https://github.com/onap/ccsdk-parent/actions/workflows/gerrit-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-verify.yaml</span></a> | 2 | <a href="https://jenkins.onap.org/job/ccsdk-parent-maven-verify-paris-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-parent-maven-verify-paris-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-parent-maven-verify-quebec-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-parent-maven-verify-quebec-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-parent-maven-verify-master-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-parent-maven-verify-master-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-parent-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">ccsdk-parent-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-parent-maven-merge-quebec/" target="_blank"><span class="status-failure jenkins-status">ccsdk-parent-maven-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-parent-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-parent-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-parent-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-parent-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-parent-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-parent-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-parent-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-parent-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-parent-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-parent-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-parent-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-parent-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-parent-release-verify-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-parent-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-parent-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-parent-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-parent-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-parent-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-parent-release-merge-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-parent-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-parent-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-parent-maven-clm-master</span></a> | 16 |
 | ccsdk/sli | <a href="https://github.com/onap/ccsdk-sli/actions/workflows/clm-scan.yaml" target="_blank"><span class="status-success workflow-status">clm-scan.yaml</span></a><br><a href="https://github.com/onap/ccsdk-sli/actions/workflows/gerrit-merge-cbom.yaml" target="_blank"><span class="status-success workflow-status">gerrit-merge-cbom.yaml</span></a> | 2 | <a href="https://jenkins.onap.org/job/ccsdk-sli-current-maven-verify-master-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-sli-current-maven-verify-master-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-sli-current-maven-verify-quebec-mvn39-openjdk21/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-sli-current-maven-verify-quebec-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-sli-current-maven-verify-paris-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">ccsdk-sli-current-maven-verify-paris-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-sli-current-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">ccsdk-sli-current-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-sli-current-maven-merge-quebec/" target="_blank"><span class="status-failure jenkins-status">ccsdk-sli-current-maven-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-sli-current-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">ccsdk-sli-current-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-sli-current-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-sli-current-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-sli-current-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-sli-current-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-sli-current-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-sli-current-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-sli-current-release-verify-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-sli-current-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-sli-current-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-sli-current-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-sli-current-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-sli-current-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-sli-current-release-merge-master/" target="_blank"><span class="status-success jenkins-status">ccsdk-sli-current-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-sli-current-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-sli-current-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-sli-current-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">ccsdk-sli-current-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/ccsdk-sli-sonar/" target="_blank"><span class="status-success jenkins-status">ccsdk-sli-sonar</span></a> | 16 |
-| ci-management | <a href="https://github.com/onap/ci-management/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-failure workflow-status">call-github2gerrit.yaml</span></a><br><a href="https://github.com/onap/ci-management/actions/workflows/gerrit-ci-management-merge.yaml" target="_blank"><span class="status-success workflow-status">gerrit-ci-management-merge.yaml</span></a><br><a href="https://github.com/onap/ci-management/actions/workflows/gerrit-ci-management-novote-verify.yaml" target="_blank"><span class="status-unknown workflow-status">gerrit-ci-management-novote-verify.yaml</span></a><br><a href="https://github.com/onap/ci-management/actions/workflows/gerrit-ci-management-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-ci-management-verify.yaml</span></a> | 4 | <a href="https://jenkins.onap.org/job/ci-management-jenkins-cfg-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-jenkins-cfg-verify</span></a><br><a href="https://jenkins.onap.org/job/ci-management-jenkins-sandbox-cleanup/" target="_blank"><span class="status-failure jenkins-status">ci-management-jenkins-sandbox-cleanup</span></a><br><a href="https://jenkins.onap.org/job/ci-management-jjb-deploy-job/" target="_blank"><span class="status-success jenkins-status">ci-management-jjb-deploy-job</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-verify</span></a><br><a href="https://jenkins.onap.org/job/ci-management-openstack-cron/" target="_blank"><span class="status-success jenkins-status">ci-management-openstack-cron</span></a><br><a href="https://jenkins.onap.org/job/ci-management-openstack-update-cloud-image/" target="_blank"><span class="status-unknown jenkins-status">ci-management-openstack-update-cloud-image</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-centos-7-docker/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-7-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-centos-cs-8-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-cs-8-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-centos-cs-8-devstack/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-cs-8-devstack</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-centos-cs-8-devstack-pre-pip-yoga/" target="_blank"><span class="status-failure jenkins-status">ci-management-packer-merge-centos-cs-8-devstack-pre-pip-yoga</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-centos-cs-8-docker/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-cs-8-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-centos-cs-8-redis/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-centos-cs-8-redis</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-18.04-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-18.04-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-18.04-docker/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-18.04-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-20.04-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-20.04-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-20.04-devstack/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-20.04-devstack</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-20.04-docker/" target="_blank"><span class="status-failure jenkins-status">ci-management-packer-merge-ubuntu-20.04-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-20.04-helm/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-20.04-helm</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-20.04-memcached/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-ubuntu-20.04-memcached</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-22.04-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-22.04-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-22.04-devstack/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-22.04-devstack</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-22.04-docker/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-22.04-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-22.04-helm/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-ubuntu-22.04-helm</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-22.04-memcached/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-ubuntu-22.04-memcached</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-centos-7-docker/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-7-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-centos-cs-8-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-cs-8-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-centos-cs-8-devstack/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-cs-8-devstack</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-centos-cs-8-devstack-pre-pip-yoga/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-cs-8-devstack-pre-pip-yoga</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-centos-cs-8-docker/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-cs-8-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-centos-cs-8-redis/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-cs-8-redis</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-18.04-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-18.04-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-18.04-docker/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-18.04-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-20.04-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-20.04-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-20.04-devstack/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-20.04-devstack</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-20.04-docker/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-20.04-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-20.04-helm/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-20.04-helm</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-20.04-memcached/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-20.04-memcached</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-22.04-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-22.04-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-22.04-devstack/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-22.04-devstack</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-22.04-docker/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-22.04-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-22.04-helm/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-22.04-helm</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-22.04-memcached/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-22.04-memcached</span></a> | 42 |
-| cps | <a href="https://github.com/onap/cps/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-success workflow-status">call-github2gerrit.yaml</span></a><br><a href="https://github.com/onap/cps/actions/workflows/scorecard.yml" target="_blank"><span class="status-success workflow-status">scorecard.yml</span></a> | 2 | <a href="https://jenkins.onap.org/job/cps-master-verify-java/" target="_blank"><span class="status-success jenkins-status">cps-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/cps-paris-verify-java/" target="_blank"><span class="status-success jenkins-status">cps-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/cps-oslo-verify-java/" target="_blank"><span class="status-success jenkins-status">cps-oslo-verify-java</span></a><br><a href="https://jenkins.onap.org/job/cps-master-merge-java/" target="_blank"><span class="status-success jenkins-status">cps-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/cps-paris-merge-java/" target="_blank"><span class="status-success jenkins-status">cps-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/cps-oslo-merge-java/" target="_blank"><span class="status-success jenkins-status">cps-oslo-merge-java</span></a><br><a href="https://jenkins.onap.org/job/cps-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">cps-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/cps-maven-stage-paris/" target="_blank"><span class="status-success jenkins-status">cps-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-maven-stage-oslo/" target="_blank"><span class="status-unknown jenkins-status">cps-maven-stage-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">cps-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/cps-maven-docker-stage-paris/" target="_blank"><span class="status-success jenkins-status">cps-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-maven-docker-stage-oslo/" target="_blank"><span class="status-unknown jenkins-status">cps-maven-docker-stage-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-release-verify-master/" target="_blank"><span class="status-success jenkins-status">cps-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/cps-release-verify-paris/" target="_blank"><span class="status-success jenkins-status">cps-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-release-verify-oslo/" target="_blank"><span class="status-unknown jenkins-status">cps-release-verify-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-release-merge-master/" target="_blank"><span class="status-success jenkins-status">cps-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/cps-release-merge-paris/" target="_blank"><span class="status-success jenkins-status">cps-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-release-merge-oslo/" target="_blank"><span class="status-unknown jenkins-status">cps-release-merge-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-sonar/" target="_blank"><span class="status-success jenkins-status">cps-sonar</span></a><br><a href="https://jenkins.onap.org/job/cps-sonar-verify/" target="_blank"><span class="status-success jenkins-status">cps-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/cps-maven-clm-master/" target="_blank"><span class="status-warning jenkins-status">cps-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/cps-merge-verification-maven-master/" target="_blank"><span class="status-success jenkins-status">cps-merge-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/cps-merge-verification-maven-oslo/" target="_blank"><span class="status-success jenkins-status">cps-merge-verification-maven-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-merge-verification-maven-paris/" target="_blank"><span class="status-success jenkins-status">cps-merge-verification-maven-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-review-verification-maven-master/" target="_blank"><span class="status-success jenkins-status">cps-review-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/cps-review-verification-maven-oslo/" target="_blank"><span class="status-success jenkins-status">cps-review-verification-maven-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-review-verification-maven-paris/" target="_blank"><span class="status-success jenkins-status">cps-review-verification-maven-paris</span></a> | 27 |
+| ci-management | <a href="https://github.com/onap/ci-management/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-failure workflow-status">call-github2gerrit.yaml</span></a><br><a href="https://github.com/onap/ci-management/actions/workflows/gerrit-ci-management-merge.yaml" target="_blank"><span class="status-success workflow-status">gerrit-ci-management-merge.yaml</span></a><br><a href="https://github.com/onap/ci-management/actions/workflows/gerrit-ci-management-novote-verify.yaml" target="_blank"><span class="status-unknown workflow-status">gerrit-ci-management-novote-verify.yaml</span></a><br><a href="https://github.com/onap/ci-management/actions/workflows/gerrit-ci-management-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-ci-management-verify.yaml</span></a> | 4 | <a href="https://jenkins.onap.org/job/ci-management-jenkins-cfg-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-jenkins-cfg-verify</span></a><br><a href="https://jenkins.onap.org/job/ci-management-jenkins-sandbox-cleanup/" target="_blank"><span class="status-failure jenkins-status">ci-management-jenkins-sandbox-cleanup</span></a><br><a href="https://jenkins.onap.org/job/ci-management-jjb-deploy-job/" target="_blank"><span class="status-success jenkins-status">ci-management-jjb-deploy-job</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-verify</span></a><br><a href="https://jenkins.onap.org/job/ci-management-openstack-cron/" target="_blank"><span class="status-warning jenkins-status">ci-management-openstack-cron</span></a><br><a href="https://jenkins.onap.org/job/ci-management-openstack-update-cloud-image/" target="_blank"><span class="status-unknown jenkins-status">ci-management-openstack-update-cloud-image</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-centos-7-docker/" target="_blank"><span class="status-failure jenkins-status">ci-management-packer-merge-centos-7-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-centos-cs-8-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-cs-8-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-centos-cs-8-devstack/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-cs-8-devstack</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-centos-cs-8-devstack-pre-pip-yoga/" target="_blank"><span class="status-failure jenkins-status">ci-management-packer-merge-centos-cs-8-devstack-pre-pip-yoga</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-centos-cs-8-docker/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-centos-cs-8-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-centos-cs-8-redis/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-centos-cs-8-redis</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-18.04-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-18.04-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-18.04-docker/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-18.04-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-20.04-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-20.04-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-20.04-devstack/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-20.04-devstack</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-20.04-docker/" target="_blank"><span class="status-failure jenkins-status">ci-management-packer-merge-ubuntu-20.04-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-20.04-helm/" target="_blank"><span class="status-failure jenkins-status">ci-management-packer-merge-ubuntu-20.04-helm</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-20.04-memcached/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-ubuntu-20.04-memcached</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-22.04-builder/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-22.04-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-22.04-devstack/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-22.04-devstack</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-22.04-docker/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-merge-ubuntu-22.04-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-22.04-helm/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-ubuntu-22.04-helm</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-merge-ubuntu-22.04-memcached/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-ubuntu-22.04-memcached</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-centos-7-docker/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-7-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-centos-cs-8-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-cs-8-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-centos-cs-8-devstack/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-cs-8-devstack</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-centos-cs-8-devstack-pre-pip-yoga/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-cs-8-devstack-pre-pip-yoga</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-centos-cs-8-docker/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-cs-8-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-centos-cs-8-redis/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-cs-8-redis</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-18.04-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-18.04-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-18.04-docker/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-18.04-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-20.04-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-20.04-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-20.04-devstack/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-20.04-devstack</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-20.04-docker/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-20.04-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-20.04-helm/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-20.04-helm</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-20.04-memcached/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-20.04-memcached</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-22.04-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-22.04-builder</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-22.04-devstack/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-22.04-devstack</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-22.04-docker/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-22.04-docker</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-22.04-helm/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-22.04-helm</span></a><br><a href="https://jenkins.onap.org/job/ci-management-packer-verify-build-ubuntu-22.04-memcached/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-ubuntu-22.04-memcached</span></a> | 42 |
+| cps | <a href="https://github.com/onap/cps/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-success workflow-status">call-github2gerrit.yaml</span></a><br><a href="https://github.com/onap/cps/actions/workflows/scorecard.yml" target="_blank"><span class="status-success workflow-status">scorecard.yml</span></a> | 2 | <a href="https://jenkins.onap.org/job/cps-master-verify-java/" target="_blank"><span class="status-failure jenkins-status">cps-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/cps-paris-verify-java/" target="_blank"><span class="status-success jenkins-status">cps-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/cps-oslo-verify-java/" target="_blank"><span class="status-success jenkins-status">cps-oslo-verify-java</span></a><br><a href="https://jenkins.onap.org/job/cps-master-merge-java/" target="_blank"><span class="status-success jenkins-status">cps-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/cps-paris-merge-java/" target="_blank"><span class="status-success jenkins-status">cps-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/cps-oslo-merge-java/" target="_blank"><span class="status-success jenkins-status">cps-oslo-merge-java</span></a><br><a href="https://jenkins.onap.org/job/cps-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">cps-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/cps-maven-stage-paris/" target="_blank"><span class="status-success jenkins-status">cps-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-maven-stage-oslo/" target="_blank"><span class="status-unknown jenkins-status">cps-maven-stage-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">cps-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/cps-maven-docker-stage-paris/" target="_blank"><span class="status-success jenkins-status">cps-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-maven-docker-stage-oslo/" target="_blank"><span class="status-unknown jenkins-status">cps-maven-docker-stage-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-release-verify-master/" target="_blank"><span class="status-success jenkins-status">cps-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/cps-release-verify-paris/" target="_blank"><span class="status-success jenkins-status">cps-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-release-verify-oslo/" target="_blank"><span class="status-unknown jenkins-status">cps-release-verify-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-release-merge-master/" target="_blank"><span class="status-success jenkins-status">cps-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/cps-release-merge-paris/" target="_blank"><span class="status-success jenkins-status">cps-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-release-merge-oslo/" target="_blank"><span class="status-unknown jenkins-status">cps-release-merge-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-sonar/" target="_blank"><span class="status-success jenkins-status">cps-sonar</span></a><br><a href="https://jenkins.onap.org/job/cps-sonar-verify/" target="_blank"><span class="status-failure jenkins-status">cps-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/cps-maven-clm-master/" target="_blank"><span class="status-warning jenkins-status">cps-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/cps-merge-verification-maven-master/" target="_blank"><span class="status-success jenkins-status">cps-merge-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/cps-merge-verification-maven-oslo/" target="_blank"><span class="status-success jenkins-status">cps-merge-verification-maven-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-merge-verification-maven-paris/" target="_blank"><span class="status-success jenkins-status">cps-merge-verification-maven-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-review-verification-maven-master/" target="_blank"><span class="status-success jenkins-status">cps-review-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/cps-review-verification-maven-oslo/" target="_blank"><span class="status-success jenkins-status">cps-review-verification-maven-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-review-verification-maven-paris/" target="_blank"><span class="status-success jenkins-status">cps-review-verification-maven-paris</span></a> | 27 |
 | cps/ncmp-dmi-plugin |  | 0 | <a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-maven-docker-verify-master-mvn36-openjdk17/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-maven-docker-verify-master-mvn36-openjdk17</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-maven-docker-verify-paris-mvn36-openjdk17/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-maven-docker-verify-paris-mvn36-openjdk17</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-maven-docker-verify-oslo-mvn36-openjdk17/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-maven-docker-verify-oslo-mvn36-openjdk17</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">cps-ncmp-dmi-plugin-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">cps-ncmp-dmi-plugin-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-maven-merge-oslo/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-maven-merge-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">cps-ncmp-dmi-plugin-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-maven-stage-oslo/" target="_blank"><span class="status-unknown jenkins-status">cps-ncmp-dmi-plugin-maven-stage-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">cps-ncmp-dmi-plugin-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-maven-docker-stage-oslo/" target="_blank"><span class="status-unknown jenkins-status">cps-ncmp-dmi-plugin-maven-docker-stage-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-release-verify-master/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">cps-ncmp-dmi-plugin-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-release-verify-oslo/" target="_blank"><span class="status-unknown jenkins-status">cps-ncmp-dmi-plugin-release-verify-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-release-merge-master/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">cps-ncmp-dmi-plugin-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-release-merge-oslo/" target="_blank"><span class="status-unknown jenkins-status">cps-ncmp-dmi-plugin-release-merge-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-sonar/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-sonar</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-sonar-verify/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-maven-clm-master/" target="_blank"><span class="status-warning jenkins-status">cps-ncmp-dmi-plugin-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-merge-verification-maven-master/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-merge-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-merge-verification-maven-oslo/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-merge-verification-maven-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-merge-verification-maven-paris/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-merge-verification-maven-paris</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-review-verification-maven-master/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-review-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-review-verification-maven-oslo/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-review-verification-maven-oslo</span></a><br><a href="https://jenkins.onap.org/job/cps-ncmp-dmi-plugin-review-verification-maven-paris/" target="_blank"><span class="status-success jenkins-status">cps-ncmp-dmi-plugin-review-verification-maven-paris</span></a> | 27 |
 | dcaegen2 |  | 0 | <a href="https://jenkins.onap.org/job/dcaegen2-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">dcaegen2-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/dcaegen2-master-csit-prh-testsuites/" target="_blank"><span class="status-success jenkins-status">dcaegen2-master-csit-prh-testsuites</span></a><br><a href="https://jenkins.onap.org/job/dcaegen2-master-csit-testsuites/" target="_blank"><span class="status-success jenkins-status">dcaegen2-master-csit-testsuites</span></a><br><a href="https://jenkins.onap.org/job/dcaegen2-master-verify-csit-prh-testsuites/" target="_blank"><span class="status-success jenkins-status">dcaegen2-master-verify-csit-prh-testsuites</span></a><br><a href="https://jenkins.onap.org/job/dcaegen2-master-verify-csit-testsuites/" target="_blank"><span class="status-success jenkins-status">dcaegen2-master-verify-csit-testsuites</span></a><br><a href="https://jenkins.onap.org/job/dcaegen2-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">dcaegen2-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/dcaegen2-maven-verify-master-mvn35-openjdk11/" target="_blank"><span class="status-success jenkins-status">dcaegen2-maven-verify-master-mvn35-openjdk11</span></a><br><a href="https://jenkins.onap.org/job/dcaegen2-platform-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">dcaegen2-platform-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/dcaegen2-platform-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">dcaegen2-platform-release-verify-master</span></a> | 9 |
 | dcaegen2/analytics/tca-gen2 |  | 0 | <a href="https://jenkins.onap.org/job/dcaegen2-analytics-tca-gen2-maven-verify-master-mvn35-openjdk11/" target="_blank"><span class="status-success jenkins-status">dcaegen2-analytics-tca-gen2-maven-verify-master-mvn35-openjdk11</span></a><br><a href="https://jenkins.onap.org/job/dcaegen2-analytics-tca-gen2-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">dcaegen2-analytics-tca-gen2-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/dcaegen2-analytics-tca-gen2-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">dcaegen2-analytics-tca-gen2-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/dcaegen2-analytics-tca-gen2-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">dcaegen2-analytics-tca-gen2-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/dcaegen2-analytics-tca-gen2-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">dcaegen2-analytics-tca-gen2-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/dcaegen2-analytics-tca-gen2-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">dcaegen2-analytics-tca-gen2-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/dcaegen2-analytics-tca-gen2-sonar/" target="_blank"><span class="status-success jenkins-status">dcaegen2-analytics-tca-gen2-sonar</span></a><br><a href="https://jenkins.onap.org/job/dcaegen2-analytics-tca-gen2-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">dcaegen2-analytics-tca-gen2-maven-clm-master</span></a> | 8 |
@@ -2124,7 +2124,7 @@ The data presented in the table below covers the past 365 days.
 | integration/simulators/ran-simulator |  | 0 | <a href="https://jenkins.onap.org/job/integration-simulators-ran-simulator-master-verify-java/" target="_blank"><span class="status-success jenkins-status">integration-simulators-ran-simulator-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/integration-simulators-ran-simulator-master-merge-java/" target="_blank"><span class="status-unknown jenkins-status">integration-simulators-ran-simulator-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/integration-simulators-ran-simulator-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">integration-simulators-ran-simulator-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/integration-simulators-ran-simulator-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">integration-simulators-ran-simulator-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-simulators-ran-simulator-maven-stage-master/" target="_blank"><span class="status-unknown jenkins-status">integration-simulators-ran-simulator-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/integration-simulators-ran-simulator-master-json-lint/" target="_blank"><span class="status-success jenkins-status">integration-simulators-ran-simulator-master-json-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-simulators-ran-simulator-master-yaml-lint/" target="_blank"><span class="status-success jenkins-status">integration-simulators-ran-simulator-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-simulators-ran-simulator-master-yml-lint/" target="_blank"><span class="status-success jenkins-status">integration-simulators-ran-simulator-master-yml-lint</span></a> | 8 |
 | integration/usecases/A1-policy-enforcement | <a href="https://github.com/onap/integration-usecases-A1-policy-enforcement/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-no-runs workflow-status">call-github2gerrit.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/integration-usecases-A1-policy-enforcement-master-json-lint/" target="_blank"><span class="status-success jenkins-status">integration-usecases-A1-policy-enforcement-master-json-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-usecases-A1-policy-enforcement-master-md-lint/" target="_blank"><span class="status-success jenkins-status">integration-usecases-A1-policy-enforcement-master-md-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-usecases-A1-policy-enforcement-master-python-lint/" target="_blank"><span class="status-success jenkins-status">integration-usecases-A1-policy-enforcement-master-python-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-usecases-A1-policy-enforcement-master-yaml-lint/" target="_blank"><span class="status-success jenkins-status">integration-usecases-A1-policy-enforcement-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-usecases-A1-policy-enforcement-master-yml-lint/" target="_blank"><span class="status-success jenkins-status">integration-usecases-A1-policy-enforcement-master-yml-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-usecases-A1-policy-enforcement-r-apps-master-json-lint/" target="_blank"><span class="status-success jenkins-status">integration-usecases-A1-policy-enforcement-r-apps-master-json-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-usecases-A1-policy-enforcement-r-apps-master-md-lint/" target="_blank"><span class="status-success jenkins-status">integration-usecases-A1-policy-enforcement-r-apps-master-md-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-usecases-A1-policy-enforcement-r-apps-master-python-lint/" target="_blank"><span class="status-unknown jenkins-status">integration-usecases-A1-policy-enforcement-r-apps-master-python-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-usecases-A1-policy-enforcement-r-apps-master-yaml-lint/" target="_blank"><span class="status-success jenkins-status">integration-usecases-A1-policy-enforcement-r-apps-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-usecases-A1-policy-enforcement-r-apps-master-yml-lint/" target="_blank"><span class="status-success jenkins-status">integration-usecases-A1-policy-enforcement-r-apps-master-yml-lint</span></a> | 10 |
 | integration/usecases/A1-policy-enforcement-r-apps | <a href="https://github.com/onap/integration-usecases-A1-policy-enforcement-r-apps/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-no-runs workflow-status">call-github2gerrit.yaml</span></a> | 1 |  | 0 |
-| integration/xtesting |  | 0 | <a href="https://jenkins.onap.org/job/integration-xtesting-infra-healthcheck-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-infra-healthcheck-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-infra-healthcheck-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-infra-healthcheck-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-healthcheck-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-healthcheck-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-healthcheck-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-healthcheck-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-smoke-usecases-pythonsdk-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-smoke-usecases-pythonsdk-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-smoke-usecases-pythonsdk-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-smoke-usecases-pythonsdk-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-smoke-usecases-robot-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-smoke-usecases-robot-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-smoke-usecases-robot-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-smoke-usecases-robot-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-security-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-security-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-security-docker-merge-master/" target="_blank"><span class="status-failure jenkins-status">integration-xtesting-security-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-smoke-usecases-robot-py3-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-smoke-usecases-robot-py3-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-smoke-usecases-robot-py3-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-smoke-usecases-robot-py3-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-testkube-executor-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-testkube-executor-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-testkube-executor-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-testkube-executor-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-master-commit-lint/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-master-commit-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-master-json-lint/" target="_blank"><span class="status-unknown jenkins-status">integration-xtesting-master-json-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-master-md-lint/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-master-md-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-master-yaml-lint/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-master-yml-lint/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-master-yml-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">integration-xtesting-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">integration-xtesting-release-verify-master</span></a> | 21 |
+| integration/xtesting |  | 0 | <a href="https://jenkins.onap.org/job/integration-xtesting-infra-healthcheck-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-infra-healthcheck-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-infra-healthcheck-docker-merge-master/" target="_blank"><span class="status-warning jenkins-status">integration-xtesting-infra-healthcheck-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-healthcheck-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-healthcheck-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-healthcheck-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-healthcheck-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-smoke-usecases-pythonsdk-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-smoke-usecases-pythonsdk-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-smoke-usecases-pythonsdk-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-smoke-usecases-pythonsdk-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-smoke-usecases-robot-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-smoke-usecases-robot-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-smoke-usecases-robot-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-smoke-usecases-robot-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-security-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-security-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-security-docker-merge-master/" target="_blank"><span class="status-failure jenkins-status">integration-xtesting-security-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-smoke-usecases-robot-py3-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-smoke-usecases-robot-py3-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-smoke-usecases-robot-py3-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-smoke-usecases-robot-py3-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-testkube-executor-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-testkube-executor-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-testkube-executor-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-testkube-executor-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-master-commit-lint/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-master-commit-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-master-json-lint/" target="_blank"><span class="status-unknown jenkins-status">integration-xtesting-master-json-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-master-md-lint/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-master-md-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-master-yaml-lint/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-master-yml-lint/" target="_blank"><span class="status-success jenkins-status">integration-xtesting-master-yml-lint</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">integration-xtesting-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/integration-xtesting-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">integration-xtesting-release-verify-master</span></a> | 21 |
 | msb |  | 0 | <a href="https://jenkins.onap.org/job/msb-apigateway-master-merge-java/" target="_blank"><span class="status-success jenkins-status">msb-apigateway-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/msb-apigateway-master-verify-java/" target="_blank"><span class="status-success jenkins-status">msb-apigateway-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/msb-apigateway-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">msb-apigateway-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/msb-apigateway-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">msb-apigateway-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/msb-apigateway-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">msb-apigateway-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/msb-apigateway-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">msb-apigateway-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/msb-apigateway-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">msb-apigateway-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/msb-apigateway-sonar/" target="_blank"><span class="status-success jenkins-status">msb-apigateway-sonar</span></a><br><a href="https://jenkins.onap.org/job/msb-discovery-master-merge-java/" target="_blank"><span class="status-success jenkins-status">msb-discovery-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/msb-discovery-master-verify-java/" target="_blank"><span class="status-success jenkins-status">msb-discovery-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/msb-discovery-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">msb-discovery-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/msb-discovery-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">msb-discovery-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/msb-discovery-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">msb-discovery-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/msb-discovery-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">msb-discovery-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/msb-discovery-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">msb-discovery-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/msb-discovery-sonar/" target="_blank"><span class="status-failure jenkins-status">msb-discovery-sonar</span></a><br><a href="https://jenkins.onap.org/job/msb-java-sdk-master-merge-java/" target="_blank"><span class="status-success jenkins-status">msb-java-sdk-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/msb-java-sdk-master-verify-java/" target="_blank"><span class="status-success jenkins-status">msb-java-sdk-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/msb-java-sdk-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">msb-java-sdk-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/msb-java-sdk-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">msb-java-sdk-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/msb-java-sdk-sonar/" target="_blank"><span class="status-success jenkins-status">msb-java-sdk-sonar</span></a><br><a href="https://jenkins.onap.org/job/msb-swagger-sdk-master-merge-java/" target="_blank"><span class="status-success jenkins-status">msb-swagger-sdk-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/msb-swagger-sdk-master-verify-java/" target="_blank"><span class="status-success jenkins-status">msb-swagger-sdk-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/msb-swagger-sdk-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">msb-swagger-sdk-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/msb-swagger-sdk-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">msb-swagger-sdk-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/msb-swagger-sdk-sonar/" target="_blank"><span class="status-success jenkins-status">msb-swagger-sdk-sonar</span></a> | 26 |
 | multicloud |  | 0 | <a href="https://jenkins.onap.org/job/multicloud-fcaps-master-csit-functionality1/" target="_blank"><span class="status-success jenkins-status">multicloud-fcaps-master-csit-functionality1</span></a><br><a href="https://jenkins.onap.org/job/multicloud-fcaps-master-verify-csit-functionality1/" target="_blank"><span class="status-success jenkins-status">multicloud-fcaps-master-verify-csit-functionality1</span></a><br><a href="https://jenkins.onap.org/job/multicloud-master-csit-functionality1/" target="_blank"><span class="status-success jenkins-status">multicloud-master-csit-functionality1</span></a><br><a href="https://jenkins.onap.org/job/multicloud-master-verify-csit-functionality1/" target="_blank"><span class="status-success jenkins-status">multicloud-master-verify-csit-functionality1</span></a><br><a href="https://jenkins.onap.org/job/multicloud-starlingx-master-csit-functionality1/" target="_blank"><span class="status-success jenkins-status">multicloud-starlingx-master-csit-functionality1</span></a><br><a href="https://jenkins.onap.org/job/multicloud-starlingx-master-verify-csit-functionality1/" target="_blank"><span class="status-success jenkins-status">multicloud-starlingx-master-verify-csit-functionality1</span></a><br><a href="https://jenkins.onap.org/job/multicloud-vmware-master-csit-functionality1/" target="_blank"><span class="status-warning jenkins-status">multicloud-vmware-master-csit-functionality1</span></a><br><a href="https://jenkins.onap.org/job/multicloud-vmware-master-verify-csit-functionality1/" target="_blank"><span class="status-success jenkins-status">multicloud-vmware-master-verify-csit-functionality1</span></a> | 8 |
 | multicloud/framework |  | 0 | <a href="https://jenkins.onap.org/job/multicloud-framework-artifactbroker-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">multicloud-framework-artifactbroker-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/multicloud-framework-artifactbroker-sonar/" target="_blank"><span class="status-success jenkins-status">multicloud-framework-artifactbroker-sonar</span></a><br><a href="https://jenkins.onap.org/job/multicloud-framework-master-artifactbroker-merge-java/" target="_blank"><span class="status-success jenkins-status">multicloud-framework-master-artifactbroker-merge-java</span></a><br><a href="https://jenkins.onap.org/job/multicloud-framework-master-artifactbroker-verify-java/" target="_blank"><span class="status-success jenkins-status">multicloud-framework-master-artifactbroker-verify-java</span></a><br><a href="https://jenkins.onap.org/job/multicloud-framework-master-merge-java/" target="_blank"><span class="status-success jenkins-status">multicloud-framework-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/multicloud-framework-master-multivimbroker-merge-java/" target="_blank"><span class="status-success jenkins-status">multicloud-framework-master-multivimbroker-merge-java</span></a><br><a href="https://jenkins.onap.org/job/multicloud-framework-master-multivimbroker-verify-java/" target="_blank"><span class="status-success jenkins-status">multicloud-framework-master-multivimbroker-verify-java</span></a><br><a href="https://jenkins.onap.org/job/multicloud-framework-master-multivimbroker-verify-python/" target="_blank"><span class="status-success jenkins-status">multicloud-framework-master-multivimbroker-verify-python</span></a><br><a href="https://jenkins.onap.org/job/multicloud-framework-master-verify-java/" target="_blank"><span class="status-success jenkins-status">multicloud-framework-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/multicloud-framework-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">multicloud-framework-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/multicloud-framework-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">multicloud-framework-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/multicloud-framework-multivimbroker-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">multicloud-framework-multivimbroker-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/multicloud-framework-multivimbroker-sonar/" target="_blank"><span class="status-success jenkins-status">multicloud-framework-multivimbroker-sonar</span></a><br><a href="https://jenkins.onap.org/job/multicloud-framework-release-merge-master/" target="_blank"><span class="status-success jenkins-status">multicloud-framework-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/multicloud-framework-release-verify-master/" target="_blank"><span class="status-success jenkins-status">multicloud-framework-release-verify-master</span></a> | 15 |
@@ -2135,21 +2135,21 @@ The data presented in the table below covers the past 365 days.
 | oom |  | 0 | <a href="https://jenkins.onap.org/job/oom-master-checkbashisms-lint/" target="_blank"><span class="status-success jenkins-status">oom-master-checkbashisms-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-master-doc8-lint/" target="_blank"><span class="status-success jenkins-status">oom-master-doc8-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-master-image-verify/" target="_blank"><span class="status-success jenkins-status">oom-master-image-verify</span></a><br><a href="https://jenkins.onap.org/job/oom-master-merge-helm/" target="_blank"><span class="status-success jenkins-status">oom-master-merge-helm</span></a><br><a href="https://jenkins.onap.org/job/oom-master-pre-commit-lint/" target="_blank"><span class="status-success jenkins-status">oom-master-pre-commit-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-master-release-config/" target="_blank"><span class="status-unknown jenkins-status">oom-master-release-config</span></a><br><a href="https://jenkins.onap.org/job/oom-master-release-helm/" target="_blank"><span class="status-success jenkins-status">oom-master-release-helm</span></a><br><a href="https://jenkins.onap.org/job/oom-master-sphinx-lint/" target="_blank"><span class="status-success jenkins-status">oom-master-sphinx-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-master-verify-helm3.8/" target="_blank"><span class="status-success jenkins-status">oom-master-verify-helm3.8</span></a><br><a href="https://jenkins.onap.org/job/oom-master-verify-make-helm3.10.2/" target="_blank"><span class="status-success jenkins-status">oom-master-verify-make-helm3.10.2</span></a><br><a href="https://jenkins.onap.org/job/oom-montreal-checkbashisms-lint/" target="_blank"><span class="status-unknown jenkins-status">oom-montreal-checkbashisms-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-montreal-doc8-lint/" target="_blank"><span class="status-unknown jenkins-status">oom-montreal-doc8-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-montreal-pre-commit-lint/" target="_blank"><span class="status-unknown jenkins-status">oom-montreal-pre-commit-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-montreal-sphinx-lint/" target="_blank"><span class="status-unknown jenkins-status">oom-montreal-sphinx-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-newdelhi-checkbashisms-lint/" target="_blank"><span class="status-success jenkins-status">oom-newdelhi-checkbashisms-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-newdelhi-doc8-lint/" target="_blank"><span class="status-unknown jenkins-status">oom-newdelhi-doc8-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-newdelhi-pre-commit-lint/" target="_blank"><span class="status-success jenkins-status">oom-newdelhi-pre-commit-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-newdelhi-sphinx-lint/" target="_blank"><span class="status-unknown jenkins-status">oom-newdelhi-sphinx-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-oslo-verify-make-helm3.10.2/" target="_blank"><span class="status-unknown jenkins-status">oom-oslo-verify-make-helm3.10.2</span></a><br><a href="https://jenkins.onap.org/job/oom-paris-verify-make-helm3.10.2/" target="_blank"><span class="status-unknown jenkins-status">oom-paris-verify-make-helm3.10.2</span></a> | 20 |
 | oom/consul |  | 0 | <a href="https://jenkins.onap.org/job/oom-consul-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">oom-consul-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/oom-consul-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">oom-consul-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/oom-consul-master-py-lint/" target="_blank"><span class="status-unknown jenkins-status">oom-consul-master-py-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-consul-master-yaml-lint/" target="_blank"><span class="status-success jenkins-status">oom-consul-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-consul-master-yml-lint/" target="_blank"><span class="status-unknown jenkins-status">oom-consul-master-yml-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-consul-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">oom-consul-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/oom-consul-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">oom-consul-release-verify-master</span></a> | 7 |
 | oom/platform/cert-service |  | 0 | <a href="https://jenkins.onap.org/job/oom-platform-cert-service-master-verify-java/" target="_blank"><span class="status-failure jenkins-status">oom-platform-cert-service-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/oom-platform-cert-service-master-merge-java/" target="_blank"><span class="status-success jenkins-status">oom-platform-cert-service-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/oom-platform-cert-service-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">oom-platform-cert-service-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/oom-platform-cert-service-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">oom-platform-cert-service-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/oom-platform-cert-service-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">oom-platform-cert-service-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/oom-platform-cert-service-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">oom-platform-cert-service-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/oom-platform-cert-service-sonar/" target="_blank"><span class="status-failure jenkins-status">oom-platform-cert-service-sonar</span></a><br><a href="https://jenkins.onap.org/job/oom-platform-cert-service-master-csit-certservice/" target="_blank"><span class="status-success jenkins-status">oom-platform-cert-service-master-csit-certservice</span></a><br><a href="https://jenkins.onap.org/job/oom-platform-cert-service-master-csit-postprocessor/" target="_blank"><span class="status-success jenkins-status">oom-platform-cert-service-master-csit-postprocessor</span></a><br><a href="https://jenkins.onap.org/job/oom-platform-cert-service-master-verify-csit-certservice/" target="_blank"><span class="status-success jenkins-status">oom-platform-cert-service-master-verify-csit-certservice</span></a><br><a href="https://jenkins.onap.org/job/oom-platform-cert-service-master-verify-csit-postprocessor/" target="_blank"><span class="status-success jenkins-status">oom-platform-cert-service-master-verify-csit-postprocessor</span></a><br><a href="https://jenkins.onap.org/job/oom-platform-cert-service-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">oom-platform-cert-service-maven-clm-master</span></a> | 12 |
-| oom/readiness |  | 0 | <a href="https://jenkins.onap.org/job/oom-readiness-master-verify-golang/" target="_blank"><span class="status-success jenkins-status">oom-readiness-master-verify-golang</span></a><br><a href="https://jenkins.onap.org/job/oom-readiness-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">oom-readiness-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/oom-readiness-docker-merge-master/" target="_blank"><span class="status-building jenkins-status">oom-readiness-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/oom-readiness-master-py-lint/" target="_blank"><span class="status-unknown jenkins-status">oom-readiness-master-py-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-readiness-master-yaml-lint/" target="_blank"><span class="status-success jenkins-status">oom-readiness-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-readiness-master-yml-lint/" target="_blank"><span class="status-success jenkins-status">oom-readiness-master-yml-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-readiness-release-merge-master/" target="_blank"><span class="status-success jenkins-status">oom-readiness-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/oom-readiness-release-verify-master/" target="_blank"><span class="status-success jenkins-status">oom-readiness-release-verify-master</span></a> | 8 |
-| oom/registrator | <a href="https://github.com/onap/oom-registrator/actions/workflows/gerrit-merge-cbom.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-merge-cbom.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/oom-registrator-master-verify-java/" target="_blank"><span class="status-success jenkins-status">oom-registrator-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/oom-registrator-master-merge-java/" target="_blank"><span class="status-warning jenkins-status">oom-registrator-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/oom-registrator-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">oom-registrator-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/oom-registrator-master-release-version-java-daily/" target="_blank"><span class="status-success jenkins-status">oom-registrator-master-release-version-java-daily</span></a><br><a href="https://jenkins.onap.org/job/oom-registrator-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">oom-registrator-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/oom-registrator-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">oom-registrator-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/oom-registrator-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">oom-registrator-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/oom-registrator-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">oom-registrator-maven-clm-master</span></a> | 8 |
+| oom/readiness |  | 0 | <a href="https://jenkins.onap.org/job/oom-readiness-master-verify-golang/" target="_blank"><span class="status-success jenkins-status">oom-readiness-master-verify-golang</span></a><br><a href="https://jenkins.onap.org/job/oom-readiness-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">oom-readiness-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/oom-readiness-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">oom-readiness-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/oom-readiness-master-py-lint/" target="_blank"><span class="status-unknown jenkins-status">oom-readiness-master-py-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-readiness-master-yaml-lint/" target="_blank"><span class="status-success jenkins-status">oom-readiness-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-readiness-master-yml-lint/" target="_blank"><span class="status-success jenkins-status">oom-readiness-master-yml-lint</span></a><br><a href="https://jenkins.onap.org/job/oom-readiness-release-merge-master/" target="_blank"><span class="status-success jenkins-status">oom-readiness-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/oom-readiness-release-verify-master/" target="_blank"><span class="status-success jenkins-status">oom-readiness-release-verify-master</span></a> | 8 |
+| oom/registrator | <a href="https://github.com/onap/oom-registrator/actions/workflows/gerrit-merge-cbom.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-merge-cbom.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/oom-registrator-master-verify-java/" target="_blank"><span class="status-failure jenkins-status">oom-registrator-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/oom-registrator-master-merge-java/" target="_blank"><span class="status-warning jenkins-status">oom-registrator-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/oom-registrator-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">oom-registrator-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/oom-registrator-master-release-version-java-daily/" target="_blank"><span class="status-success jenkins-status">oom-registrator-master-release-version-java-daily</span></a><br><a href="https://jenkins.onap.org/job/oom-registrator-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">oom-registrator-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/oom-registrator-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">oom-registrator-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/oom-registrator-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">oom-registrator-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/oom-registrator-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">oom-registrator-maven-clm-master</span></a> | 8 |
 | oparent | <a href="https://github.com/onap/oparent/actions/workflows/gerrit-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-verify.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/oparent-master-verify-java/" target="_blank"><span class="status-success jenkins-status">oparent-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/oparent-master-merge-java/" target="_blank"><span class="status-success jenkins-status">oparent-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/oparent-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">oparent-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/oparent-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">oparent-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/oparent-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">oparent-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/oparent-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">oparent-maven-clm-master</span></a> | 6 |
-| policy/apex-pdp | <a href="https://github.com/onap/policy-apex-pdp/actions/workflows/gerrit-apex-performance-test.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-apex-performance-test.yaml</span></a><br><a href="https://github.com/onap/policy-apex-pdp/actions/workflows/gerrit-apex-stability-test.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-apex-stability-test.yaml</span></a><br><a href="https://github.com/onap/policy-apex-pdp/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 3 | <a href="https://jenkins.onap.org/job/policy-apex-pdp-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-sonar/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-apex-pdp-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-master-project-csit-apex-pdp/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-master-project-csit-apex-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-master-project-csit-verify-apex-pdp/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-master-project-csit-verify-apex-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-paris-project-csit-apex-pdp/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-paris-project-csit-apex-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-paris-project-csit-verify-apex-pdp/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-paris-project-csit-verify-apex-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-quebec-project-csit-apex-pdp/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-quebec-project-csit-apex-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-quebec-project-csit-verify-apex-pdp/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-quebec-project-csit-verify-apex-pdp</span></a> | 27 |
-| policy/api | <a href="https://github.com/onap/policy-api/actions/workflows/gerrit-policy-api-performance.yaml" target="_blank"><span class="status-success workflow-status">gerrit-policy-api-performance.yaml</span></a><br><a href="https://github.com/onap/policy-api/actions/workflows/gerrit-policy-api-stability.yaml" target="_blank"><span class="status-success workflow-status">gerrit-policy-api-stability.yaml</span></a><br><a href="https://github.com/onap/policy-api/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 3 | <a href="https://jenkins.onap.org/job/policy-api-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-api-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-api-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-api-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-api-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-api-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-api-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-api-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-api-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-api-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-api-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-api-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-api-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-api-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-api-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-api-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-api-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-api-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-api-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-api-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-api-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-api-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-api-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-api-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-api-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-api-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-api-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-api-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-api-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-api-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-api-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-api-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-api-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-api-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-api-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-api-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-api-sonar/" target="_blank"><span class="status-success jenkins-status">policy-api-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-api-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-api-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-api-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-api-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/policy-api-master-project-csit-api/" target="_blank"><span class="status-success jenkins-status">policy-api-master-project-csit-api</span></a><br><a href="https://jenkins.onap.org/job/policy-api-master-project-csit-verify-api/" target="_blank"><span class="status-success jenkins-status">policy-api-master-project-csit-verify-api</span></a><br><a href="https://jenkins.onap.org/job/policy-api-paris-project-csit-api/" target="_blank"><span class="status-success jenkins-status">policy-api-paris-project-csit-api</span></a><br><a href="https://jenkins.onap.org/job/policy-api-paris-project-csit-verify-api/" target="_blank"><span class="status-unknown jenkins-status">policy-api-paris-project-csit-verify-api</span></a><br><a href="https://jenkins.onap.org/job/policy-api-quebec-project-csit-api/" target="_blank"><span class="status-success jenkins-status">policy-api-quebec-project-csit-api</span></a><br><a href="https://jenkins.onap.org/job/policy-api-quebec-project-csit-verify-api/" target="_blank"><span class="status-unknown jenkins-status">policy-api-quebec-project-csit-verify-api</span></a> | 27 |
-| policy/clamp | <a href="https://github.com/onap/policy-clamp/actions/workflows/gerrit-clamp-performance-test.yaml" target="_blank"><span class="status-cancelled workflow-status">gerrit-clamp-performance-test.yaml</span></a><br><a href="https://github.com/onap/policy-clamp/actions/workflows/gerrit-clamp-stability-test.yaml" target="_blank"><span class="status-success workflow-status">gerrit-clamp-stability-test.yaml</span></a><br><a href="https://github.com/onap/policy-clamp/actions/workflows/openssfscorecard.yaml" target="_blank"><span class="status-success workflow-status">openssfscorecard.yaml</span></a> | 3 | <a href="https://jenkins.onap.org/job/policy-clamp-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-clamp-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-clamp-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-clamp-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-clamp-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-clamp-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-clamp-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-sonar/" target="_blank"><span class="status-success jenkins-status">policy-clamp-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-clamp-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-clamp-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-master-project-csit-clamp/" target="_blank"><span class="status-warning jenkins-status">policy-clamp-master-project-csit-clamp</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-master-project-csit-verify-clamp/" target="_blank"><span class="status-warning jenkins-status">policy-clamp-master-project-csit-verify-clamp</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-paris-project-csit-clamp/" target="_blank"><span class="status-success jenkins-status">policy-clamp-paris-project-csit-clamp</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-paris-project-csit-verify-clamp/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-paris-project-csit-verify-clamp</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-quebec-project-csit-clamp/" target="_blank"><span class="status-warning jenkins-status">policy-clamp-quebec-project-csit-clamp</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-quebec-project-csit-verify-clamp/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-quebec-project-csit-verify-clamp</span></a> | 27 |
-| policy/common | <a href="https://github.com/onap/policy-common/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/policy-common-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-common-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-common-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-common-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-common-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-common-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-common-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-common-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-common-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-common-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-common-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-common-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-common-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-common-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-common-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-common-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-common-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-common-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-common-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-common-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-common-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-common-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-common-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-common-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-common-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-common-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-common-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-common-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-common-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-common-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-common-sonar/" target="_blank"><span class="status-success jenkins-status">policy-common-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-common-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-common-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-common-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-common-maven-clm-master</span></a> | 18 |
-| policy/distribution |  | 0 | <a href="https://jenkins.onap.org/job/policy-distribution-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-distribution-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-distribution-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-distribution-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-distribution-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-distribution-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-distribution-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-sonar/" target="_blank"><span class="status-success jenkins-status">policy-distribution-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-distribution-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-distribution-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-master-project-csit-distribution/" target="_blank"><span class="status-success jenkins-status">policy-distribution-master-project-csit-distribution</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-master-project-csit-verify-distribution/" target="_blank"><span class="status-success jenkins-status">policy-distribution-master-project-csit-verify-distribution</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-paris-project-csit-distribution/" target="_blank"><span class="status-success jenkins-status">policy-distribution-paris-project-csit-distribution</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-paris-project-csit-verify-distribution/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-paris-project-csit-verify-distribution</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-quebec-project-csit-distribution/" target="_blank"><span class="status-success jenkins-status">policy-distribution-quebec-project-csit-distribution</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-quebec-project-csit-verify-distribution/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-quebec-project-csit-verify-distribution</span></a> | 27 |
-| policy/docker | <a href="https://github.com/onap/policy-docker/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/policy-docker-paris-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-docker-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-paris-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-docker-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-docker-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-docker-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-docker-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-docker-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-docker-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-docker-maven-clm-master</span></a> | 16 |
-| policy/drools-applications | <a href="https://github.com/onap/policy-drools-applications/actions/workflows/gerrit-drools-performance-test.yaml" target="_blank"><span class="status-success workflow-status">gerrit-drools-performance-test.yaml</span></a><br><a href="https://github.com/onap/policy-drools-applications/actions/workflows/gerrit-drools-stability-test.yaml" target="_blank"><span class="status-success workflow-status">gerrit-drools-stability-test.yaml</span></a><br><a href="https://github.com/onap/policy-drools-applications/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 3 | <a href="https://jenkins.onap.org/job/policy-drools-applications-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-sonar/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-drools-applications-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-master-project-csit-drools-applications/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-master-project-csit-drools-applications</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-master-project-csit-verify-drools-applications/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-master-project-csit-verify-drools-applications</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-paris-project-csit-drools-applications/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-paris-project-csit-drools-applications</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-paris-project-csit-verify-drools-applications/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-paris-project-csit-verify-drools-applications</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-quebec-project-csit-drools-applications/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-quebec-project-csit-drools-applications</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-quebec-project-csit-verify-drools-applications/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-quebec-project-csit-verify-drools-applications</span></a> | 27 |
-| policy/drools-pdp | <a href="https://github.com/onap/policy-drools-pdp/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/policy-drools-pdp-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-sonar/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-drools-pdp-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-master-project-csit-drools-pdp/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-master-project-csit-drools-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-master-project-csit-verify-drools-pdp/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-master-project-csit-verify-drools-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-paris-project-csit-drools-pdp/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-paris-project-csit-drools-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-paris-project-csit-verify-drools-pdp/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-paris-project-csit-verify-drools-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-quebec-project-csit-drools-pdp/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-quebec-project-csit-drools-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-quebec-project-csit-verify-drools-pdp/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-quebec-project-csit-verify-drools-pdp</span></a> | 27 |
+| policy/apex-pdp | <a href="https://github.com/onap/policy-apex-pdp/actions/workflows/gerrit-apex-performance-test.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-apex-performance-test.yaml</span></a><br><a href="https://github.com/onap/policy-apex-pdp/actions/workflows/gerrit-apex-stability-test.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-apex-stability-test.yaml</span></a><br><a href="https://github.com/onap/policy-apex-pdp/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 3 | <a href="https://jenkins.onap.org/job/policy-apex-pdp-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-sonar/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-apex-pdp-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-master-project-csit-apex-pdp/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-master-project-csit-apex-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-master-project-csit-verify-apex-pdp/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-master-project-csit-verify-apex-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-paris-project-csit-apex-pdp/" target="_blank"><span class="status-success jenkins-status">policy-apex-pdp-paris-project-csit-apex-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-paris-project-csit-verify-apex-pdp/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-paris-project-csit-verify-apex-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-quebec-project-csit-apex-pdp/" target="_blank"><span class="status-warning jenkins-status">policy-apex-pdp-quebec-project-csit-apex-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-apex-pdp-quebec-project-csit-verify-apex-pdp/" target="_blank"><span class="status-unknown jenkins-status">policy-apex-pdp-quebec-project-csit-verify-apex-pdp</span></a> | 27 |
+| policy/api | <a href="https://github.com/onap/policy-api/actions/workflows/gerrit-policy-api-performance.yaml" target="_blank"><span class="status-success workflow-status">gerrit-policy-api-performance.yaml</span></a><br><a href="https://github.com/onap/policy-api/actions/workflows/gerrit-policy-api-stability.yaml" target="_blank"><span class="status-success workflow-status">gerrit-policy-api-stability.yaml</span></a><br><a href="https://github.com/onap/policy-api/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 3 | <a href="https://jenkins.onap.org/job/policy-api-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-api-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-api-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-api-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-api-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-api-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-api-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-api-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-api-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-api-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-api-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-api-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-api-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-api-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-api-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-api-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-api-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-api-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-api-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-api-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-api-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-api-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-api-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-api-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-api-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-api-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-api-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-api-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-api-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-api-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-api-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-api-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-api-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-api-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-api-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-api-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-api-sonar/" target="_blank"><span class="status-success jenkins-status">policy-api-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-api-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-api-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-api-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-api-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/policy-api-master-project-csit-api/" target="_blank"><span class="status-success jenkins-status">policy-api-master-project-csit-api</span></a><br><a href="https://jenkins.onap.org/job/policy-api-master-project-csit-verify-api/" target="_blank"><span class="status-success jenkins-status">policy-api-master-project-csit-verify-api</span></a><br><a href="https://jenkins.onap.org/job/policy-api-paris-project-csit-api/" target="_blank"><span class="status-success jenkins-status">policy-api-paris-project-csit-api</span></a><br><a href="https://jenkins.onap.org/job/policy-api-paris-project-csit-verify-api/" target="_blank"><span class="status-unknown jenkins-status">policy-api-paris-project-csit-verify-api</span></a><br><a href="https://jenkins.onap.org/job/policy-api-quebec-project-csit-api/" target="_blank"><span class="status-warning jenkins-status">policy-api-quebec-project-csit-api</span></a><br><a href="https://jenkins.onap.org/job/policy-api-quebec-project-csit-verify-api/" target="_blank"><span class="status-unknown jenkins-status">policy-api-quebec-project-csit-verify-api</span></a> | 27 |
+| policy/clamp | <a href="https://github.com/onap/policy-clamp/actions/workflows/gerrit-clamp-performance-test.yaml" target="_blank"><span class="status-cancelled workflow-status">gerrit-clamp-performance-test.yaml</span></a><br><a href="https://github.com/onap/policy-clamp/actions/workflows/gerrit-clamp-stability-test.yaml" target="_blank"><span class="status-success workflow-status">gerrit-clamp-stability-test.yaml</span></a><br><a href="https://github.com/onap/policy-clamp/actions/workflows/openssfscorecard.yaml" target="_blank"><span class="status-success workflow-status">openssfscorecard.yaml</span></a> | 3 | <a href="https://jenkins.onap.org/job/policy-clamp-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-clamp-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-clamp-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-clamp-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-clamp-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-clamp-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-clamp-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-sonar/" target="_blank"><span class="status-success jenkins-status">policy-clamp-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-clamp-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-clamp-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-master-project-csit-clamp/" target="_blank"><span class="status-success jenkins-status">policy-clamp-master-project-csit-clamp</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-master-project-csit-verify-clamp/" target="_blank"><span class="status-warning jenkins-status">policy-clamp-master-project-csit-verify-clamp</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-paris-project-csit-clamp/" target="_blank"><span class="status-success jenkins-status">policy-clamp-paris-project-csit-clamp</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-paris-project-csit-verify-clamp/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-paris-project-csit-verify-clamp</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-quebec-project-csit-clamp/" target="_blank"><span class="status-warning jenkins-status">policy-clamp-quebec-project-csit-clamp</span></a><br><a href="https://jenkins.onap.org/job/policy-clamp-quebec-project-csit-verify-clamp/" target="_blank"><span class="status-unknown jenkins-status">policy-clamp-quebec-project-csit-verify-clamp</span></a> | 27 |
+| policy/common | <a href="https://github.com/onap/policy-common/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/policy-common-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-common-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-common-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-common-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-common-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-common-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-common-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-common-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-common-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-common-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-common-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-common-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-common-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-common-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-common-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-common-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-common-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-common-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-common-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-common-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-common-master-verify-java/" target="_blank"><span class="status-failure jenkins-status">policy-common-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-common-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-common-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-common-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-common-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-common-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-common-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-common-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-common-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-common-sonar/" target="_blank"><span class="status-success jenkins-status">policy-common-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-common-sonar-verify/" target="_blank"><span class="status-failure jenkins-status">policy-common-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-common-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-common-maven-clm-master</span></a> | 18 |
+| policy/distribution |  | 0 | <a href="https://jenkins.onap.org/job/policy-distribution-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-distribution-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-distribution-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-distribution-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-distribution-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-distribution-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-distribution-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-sonar/" target="_blank"><span class="status-success jenkins-status">policy-distribution-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-distribution-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-distribution-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-master-project-csit-distribution/" target="_blank"><span class="status-success jenkins-status">policy-distribution-master-project-csit-distribution</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-master-project-csit-verify-distribution/" target="_blank"><span class="status-success jenkins-status">policy-distribution-master-project-csit-verify-distribution</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-paris-project-csit-distribution/" target="_blank"><span class="status-warning jenkins-status">policy-distribution-paris-project-csit-distribution</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-paris-project-csit-verify-distribution/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-paris-project-csit-verify-distribution</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-quebec-project-csit-distribution/" target="_blank"><span class="status-success jenkins-status">policy-distribution-quebec-project-csit-distribution</span></a><br><a href="https://jenkins.onap.org/job/policy-distribution-quebec-project-csit-verify-distribution/" target="_blank"><span class="status-unknown jenkins-status">policy-distribution-quebec-project-csit-verify-distribution</span></a> | 27 |
+| policy/docker | <a href="https://github.com/onap/policy-docker/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/policy-docker-paris-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-docker-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-paris-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-docker-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-docker-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-master-verify-java/" target="_blank"><span class="status-failure jenkins-status">policy-docker-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-docker-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-docker-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-docker-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-docker-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-docker-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-docker-maven-clm-master</span></a> | 16 |
+| policy/drools-applications | <a href="https://github.com/onap/policy-drools-applications/actions/workflows/gerrit-drools-performance-test.yaml" target="_blank"><span class="status-success workflow-status">gerrit-drools-performance-test.yaml</span></a><br><a href="https://github.com/onap/policy-drools-applications/actions/workflows/gerrit-drools-stability-test.yaml" target="_blank"><span class="status-success workflow-status">gerrit-drools-stability-test.yaml</span></a><br><a href="https://github.com/onap/policy-drools-applications/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 3 | <a href="https://jenkins.onap.org/job/policy-drools-applications-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-sonar/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-drools-applications-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-master-project-csit-drools-applications/" target="_blank"><span class="status-warning jenkins-status">policy-drools-applications-master-project-csit-drools-applications</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-master-project-csit-verify-drools-applications/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-master-project-csit-verify-drools-applications</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-paris-project-csit-drools-applications/" target="_blank"><span class="status-warning jenkins-status">policy-drools-applications-paris-project-csit-drools-applications</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-paris-project-csit-verify-drools-applications/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-paris-project-csit-verify-drools-applications</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-quebec-project-csit-drools-applications/" target="_blank"><span class="status-success jenkins-status">policy-drools-applications-quebec-project-csit-drools-applications</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-applications-quebec-project-csit-verify-drools-applications/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-applications-quebec-project-csit-verify-drools-applications</span></a> | 27 |
+| policy/drools-pdp | <a href="https://github.com/onap/policy-drools-pdp/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/policy-drools-pdp-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-sonar/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-drools-pdp-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-master-project-csit-drools-pdp/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-master-project-csit-drools-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-master-project-csit-verify-drools-pdp/" target="_blank"><span class="status-success jenkins-status">policy-drools-pdp-master-project-csit-verify-drools-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-paris-project-csit-drools-pdp/" target="_blank"><span class="status-warning jenkins-status">policy-drools-pdp-paris-project-csit-drools-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-paris-project-csit-verify-drools-pdp/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-paris-project-csit-verify-drools-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-quebec-project-csit-drools-pdp/" target="_blank"><span class="status-warning jenkins-status">policy-drools-pdp-quebec-project-csit-drools-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-drools-pdp-quebec-project-csit-verify-drools-pdp/" target="_blank"><span class="status-unknown jenkins-status">policy-drools-pdp-quebec-project-csit-verify-drools-pdp</span></a> | 27 |
 | policy/models | <a href="https://github.com/onap/policy-models/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/policy-models-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-models-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-models-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-models-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-models-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-models-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-models-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-models-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-models-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-models-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-models-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-models-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-models-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-models-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-models-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-models-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-models-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-models-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-models-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-models-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-models-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-models-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-models-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-models-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-models-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-models-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-models-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-models-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-models-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-models-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-models-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-models-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-models-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-models-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-models-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-models-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-models-sonar/" target="_blank"><span class="status-success jenkins-status">policy-models-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-models-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-models-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-models-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-models-maven-clm-master</span></a> | 21 |
 | policy/opa-pdp | <a href="https://github.com/onap/policy-opa-pdp/actions/workflows/gerrit-opa-performance-test.yaml" target="_blank"><span class="status-success workflow-status">gerrit-opa-performance-test.yaml</span></a><br><a href="https://github.com/onap/policy-opa-pdp/actions/workflows/gerrit-opa-stability-test.yaml" target="_blank"><span class="status-success workflow-status">gerrit-opa-stability-test.yaml</span></a><br><a href="https://github.com/onap/policy-opa-pdp/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a><br><a href="https://github.com/onap/policy-opa-pdp/actions/workflows/security-audits.yaml" target="_blank"><span class="status-failure workflow-status">security-audits.yaml</span></a> | 4 | <a href="https://jenkins.onap.org/job/policy-opa-pdp-info-yaml-verify/" target="_blank"><span class="status-success jenkins-status">policy-opa-pdp-info-yaml-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-master-verify-golang/" target="_blank"><span class="status-success jenkins-status">policy-opa-pdp-master-verify-golang</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-paris-verify-golang/" target="_blank"><span class="status-unknown jenkins-status">policy-opa-pdp-paris-verify-golang</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-quebec-verify-golang/" target="_blank"><span class="status-unknown jenkins-status">policy-opa-pdp-quebec-verify-golang</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-master-merge-golang/" target="_blank"><span class="status-success jenkins-status">policy-opa-pdp-master-merge-golang</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-paris-merge-golang/" target="_blank"><span class="status-unknown jenkins-status">policy-opa-pdp-paris-merge-golang</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-quebec-merge-golang/" target="_blank"><span class="status-unknown jenkins-status">policy-opa-pdp-quebec-merge-golang</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-master-docker-golang-shell-daily/" target="_blank"><span class="status-unknown jenkins-status">policy-opa-pdp-master-docker-golang-shell-daily</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-paris-docker-golang-shell-daily/" target="_blank"><span class="status-unknown jenkins-status">policy-opa-pdp-paris-docker-golang-shell-daily</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-quebec-docker-golang-shell-daily/" target="_blank"><span class="status-unknown jenkins-status">policy-opa-pdp-quebec-docker-golang-shell-daily</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-opa-pdp-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-opa-pdp-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-opa-pdp-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-opa-pdp-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-opa-pdp-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-opa-pdp-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-master-project-csit-policy-opa-pdp/" target="_blank"><span class="status-success jenkins-status">policy-opa-pdp-master-project-csit-policy-opa-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-master-project-csit-verify-opa-pdp/" target="_blank"><span class="status-success jenkins-status">policy-opa-pdp-master-project-csit-verify-opa-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-nexus-iq-go-clm-master/" target="_blank"><span class="status-success jenkins-status">policy-opa-pdp-nexus-iq-go-clm-master</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-paris-project-csit-policy-opa-pdp/" target="_blank"><span class="status-success jenkins-status">policy-opa-pdp-paris-project-csit-policy-opa-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-paris-project-csit-verify-opa-pdp/" target="_blank"><span class="status-unknown jenkins-status">policy-opa-pdp-paris-project-csit-verify-opa-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-quebec-project-csit-policy-opa-pdp/" target="_blank"><span class="status-success jenkins-status">policy-opa-pdp-quebec-project-csit-policy-opa-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-opa-pdp-quebec-project-csit-verify-opa-pdp/" target="_blank"><span class="status-unknown jenkins-status">policy-opa-pdp-quebec-project-csit-verify-opa-pdp</span></a> | 23 |
 | policy/pap | <a href="https://github.com/onap/policy-pap/actions/workflows/gerrit-pap-performance-test.yaml" target="_blank"><span class="status-success workflow-status">gerrit-pap-performance-test.yaml</span></a><br><a href="https://github.com/onap/policy-pap/actions/workflows/gerrit-pap-stability-test.yaml" target="_blank"><span class="status-success workflow-status">gerrit-pap-stability-test.yaml</span></a><br><a href="https://github.com/onap/policy-pap/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 3 | <a href="https://jenkins.onap.org/job/policy-pap-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-pap-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-pap-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-pap-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-pap-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-pap-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-pap-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-pap-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-pap-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-pap-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-pap-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-pap-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-pap-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-pap-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-pap-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-pap-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-pap-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-pap-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-pap-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-sonar/" target="_blank"><span class="status-success jenkins-status">policy-pap-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-pap-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-pap-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-master-project-csit-pap/" target="_blank"><span class="status-success jenkins-status">policy-pap-master-project-csit-pap</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-master-project-csit-verify-pap/" target="_blank"><span class="status-success jenkins-status">policy-pap-master-project-csit-verify-pap</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-paris-project-csit-pap/" target="_blank"><span class="status-success jenkins-status">policy-pap-paris-project-csit-pap</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-paris-project-csit-verify-pap/" target="_blank"><span class="status-unknown jenkins-status">policy-pap-paris-project-csit-verify-pap</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-quebec-project-csit-pap/" target="_blank"><span class="status-success jenkins-status">policy-pap-quebec-project-csit-pap</span></a><br><a href="https://jenkins.onap.org/job/policy-pap-quebec-project-csit-verify-pap/" target="_blank"><span class="status-unknown jenkins-status">policy-pap-quebec-project-csit-verify-pap</span></a> | 27 |
-| policy/parent | <a href="https://github.com/onap/policy-parent/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/policy-parent-paris-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-parent-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-paris-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-parent-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-parent-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-parent-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-parent-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-parent-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-parent-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-parent-maven-clm-master</span></a> | 16 |
+| policy/parent | <a href="https://github.com/onap/policy-parent/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/policy-parent-paris-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-parent-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-paris-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-parent-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-parent-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-parent-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-parent-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-parent-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-release-verify-master/" target="_blank"><span class="status-failure jenkins-status">policy-parent-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-release-merge-master/" target="_blank"><span class="status-failure jenkins-status">policy-parent-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-parent-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-parent-maven-clm-master</span></a> | 16 |
 | policy/xacml-pdp | <a href="https://github.com/onap/policy-xacml-pdp/actions/workflows/gerrit-xacml-performance-test.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-xacml-performance-test.yaml</span></a><br><a href="https://github.com/onap/policy-xacml-pdp/actions/workflows/gerrit-xacml-stability-test.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-xacml-stability-test.yaml</span></a><br><a href="https://github.com/onap/policy-xacml-pdp/actions/workflows/open-ssf-scorecard.yaml" target="_blank"><span class="status-success workflow-status">open-ssf-scorecard.yaml</span></a> | 3 | <a href="https://jenkins.onap.org/job/policy-xacml-pdp-paris-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-xacml-pdp-paris-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-quebec-verify-java/" target="_blank"><span class="status-unknown jenkins-status">policy-xacml-pdp-quebec-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-paris-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-xacml-pdp-paris-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-quebec-merge-java/" target="_blank"><span class="status-unknown jenkins-status">policy-xacml-pdp-quebec-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-xacml-pdp-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-xacml-pdp-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-maven-docker-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-xacml-pdp-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-maven-docker-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-xacml-pdp-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-xacml-pdp-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-xacml-pdp-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">policy-xacml-pdp-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">policy-xacml-pdp-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-master-verify-java/" target="_blank"><span class="status-success jenkins-status">policy-xacml-pdp-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-master-merge-java/" target="_blank"><span class="status-success jenkins-status">policy-xacml-pdp-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-xacml-pdp-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">policy-xacml-pdp-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-release-verify-master/" target="_blank"><span class="status-success jenkins-status">policy-xacml-pdp-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-release-merge-master/" target="_blank"><span class="status-success jenkins-status">policy-xacml-pdp-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-sonar/" target="_blank"><span class="status-success jenkins-status">policy-xacml-pdp-sonar</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-sonar-verify/" target="_blank"><span class="status-success jenkins-status">policy-xacml-pdp-sonar-verify</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">policy-xacml-pdp-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-master-project-csit-verify-xacml-pdp/" target="_blank"><span class="status-success jenkins-status">policy-xacml-pdp-master-project-csit-verify-xacml-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-master-project-csit-xacml-pdp/" target="_blank"><span class="status-success jenkins-status">policy-xacml-pdp-master-project-csit-xacml-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-paris-project-csit-verify-xacml-pdp/" target="_blank"><span class="status-unknown jenkins-status">policy-xacml-pdp-paris-project-csit-verify-xacml-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-paris-project-csit-xacml-pdp/" target="_blank"><span class="status-success jenkins-status">policy-xacml-pdp-paris-project-csit-xacml-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-quebec-project-csit-verify-xacml-pdp/" target="_blank"><span class="status-unknown jenkins-status">policy-xacml-pdp-quebec-project-csit-verify-xacml-pdp</span></a><br><a href="https://jenkins.onap.org/job/policy-xacml-pdp-quebec-project-csit-xacml-pdp/" target="_blank"><span class="status-success jenkins-status">policy-xacml-pdp-quebec-project-csit-xacml-pdp</span></a> | 27 |
 | portal-ng | <a href="https://github.com/onap/portal-ng/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-no-runs workflow-status">call-github2gerrit.yaml</span></a> | 1 |  | 0 |
 | portal-ng/bff | <a href="https://github.com/onap/portal-ng-bff/actions/workflows/gerrit-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-verify.yaml</span></a><br><a href="https://github.com/onap/portal-ng-bff/actions/workflows/github2gerrit.yaml" target="_blank"><span class="status-success workflow-status">github2gerrit.yaml</span></a> | 2 | <a href="https://jenkins.onap.org/job/portal-ng-bff-gradle-build-master/" target="_blank"><span class="status-success jenkins-status">portal-ng-bff-gradle-build-master</span></a><br><a href="https://jenkins.onap.org/job/portal-ng-bff-gradle-publish-jar-master/" target="_blank"><span class="status-failure jenkins-status">portal-ng-bff-gradle-publish-jar-master</span></a><br><a href="https://jenkins.onap.org/job/portal-ng-bff-docker-verify-master/" target="_blank"><span class="status-success jenkins-status">portal-ng-bff-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/portal-ng-bff-docker-merge-master/" target="_blank"><span class="status-success jenkins-status">portal-ng-bff-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/portal-ng-bff-release-verify-master/" target="_blank"><span class="status-success jenkins-status">portal-ng-bff-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/portal-ng-bff-release-merge-master/" target="_blank"><span class="status-success jenkins-status">portal-ng-bff-release-merge-master</span></a> | 6 |
@@ -2165,8 +2165,8 @@ The data presented in the table below covers the past 365 days.
 | sdc/sdc-pubsub |  | 0 | <a href="https://jenkins.onap.org/job/sdc-sdc-pubsub-master-verify-java/" target="_blank"><span class="status-success jenkins-status">sdc-sdc-pubsub-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-pubsub-montreal-verify-java/" target="_blank"><span class="status-unknown jenkins-status">sdc-sdc-pubsub-montreal-verify-java</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-pubsub-master-merge-java/" target="_blank"><span class="status-success jenkins-status">sdc-sdc-pubsub-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-pubsub-montreal-merge-java/" target="_blank"><span class="status-unknown jenkins-status">sdc-sdc-pubsub-montreal-merge-java</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-pubsub-sonar/" target="_blank"><span class="status-failure jenkins-status">sdc-sdc-pubsub-sonar</span></a> | 5 |
 | sdc/sdc-tosca | <a href="https://github.com/onap/sdc-sdc-tosca/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-no-runs workflow-status">call-github2gerrit.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/sdc-sdc-tosca-master-verify-java/" target="_blank"><span class="status-success jenkins-status">sdc-sdc-tosca-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-tosca-montreal-verify-java/" target="_blank"><span class="status-unknown jenkins-status">sdc-sdc-tosca-montreal-verify-java</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-tosca-master-merge-java/" target="_blank"><span class="status-success jenkins-status">sdc-sdc-tosca-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-tosca-montreal-merge-java/" target="_blank"><span class="status-unknown jenkins-status">sdc-sdc-tosca-montreal-merge-java</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-tosca-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">sdc-sdc-tosca-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-tosca-maven-stage-montreal/" target="_blank"><span class="status-unknown jenkins-status">sdc-sdc-tosca-maven-stage-montreal</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-tosca-release-verify-master/" target="_blank"><span class="status-success jenkins-status">sdc-sdc-tosca-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-tosca-release-verify-montreal/" target="_blank"><span class="status-unknown jenkins-status">sdc-sdc-tosca-release-verify-montreal</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-tosca-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">sdc-sdc-tosca-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-tosca-release-merge-montreal/" target="_blank"><span class="status-unknown jenkins-status">sdc-sdc-tosca-release-merge-montreal</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-tosca-sonar/" target="_blank"><span class="status-success jenkins-status">sdc-sdc-tosca-sonar</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-tosca-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">sdc-sdc-tosca-maven-clm-master</span></a> | 12 |
 | sdc/sdc-workflow-designer | <a href="https://github.com/onap/sdc-sdc-workflow-designer/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-no-runs workflow-status">call-github2gerrit.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/sdc-sdc-workflow-designer-master-verify-java/" target="_blank"><span class="status-success jenkins-status">sdc-sdc-workflow-designer-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-workflow-designer-montreal-verify-java/" target="_blank"><span class="status-unknown jenkins-status">sdc-sdc-workflow-designer-montreal-verify-java</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-workflow-designer-master-merge-java/" target="_blank"><span class="status-success jenkins-status">sdc-sdc-workflow-designer-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-workflow-designer-montreal-merge-java/" target="_blank"><span class="status-unknown jenkins-status">sdc-sdc-workflow-designer-montreal-merge-java</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-workflow-designer-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">sdc-sdc-workflow-designer-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-workflow-designer-maven-stage-montreal/" target="_blank"><span class="status-unknown jenkins-status">sdc-sdc-workflow-designer-maven-stage-montreal</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-workflow-designer-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">sdc-sdc-workflow-designer-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-workflow-designer-maven-docker-stage-montreal/" target="_blank"><span class="status-unknown jenkins-status">sdc-sdc-workflow-designer-maven-docker-stage-montreal</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-workflow-designer-release-verify-master/" target="_blank"><span class="status-success jenkins-status">sdc-sdc-workflow-designer-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-workflow-designer-release-verify-montreal/" target="_blank"><span class="status-unknown jenkins-status">sdc-sdc-workflow-designer-release-verify-montreal</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-workflow-designer-release-merge-master/" target="_blank"><span class="status-success jenkins-status">sdc-sdc-workflow-designer-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-workflow-designer-release-merge-montreal/" target="_blank"><span class="status-unknown jenkins-status">sdc-sdc-workflow-designer-release-merge-montreal</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-workflow-designer-sonar/" target="_blank"><span class="status-success jenkins-status">sdc-sdc-workflow-designer-sonar</span></a><br><a href="https://jenkins.onap.org/job/sdc-sdc-workflow-designer-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">sdc-sdc-workflow-designer-maven-clm-master</span></a> | 14 |
-| sdnc/apps |  | 0 | <a href="https://jenkins.onap.org/job/sdnc-apps-maven-verify-paris-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">sdnc-apps-maven-verify-paris-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-verify-quebec-mvn39-openjdk21/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-maven-verify-quebec-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-verify-master-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">sdnc-apps-maven-verify-master-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">sdnc-apps-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-merge-quebec/" target="_blank"><span class="status-failure jenkins-status">sdnc-apps-maven-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">sdnc-apps-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">sdnc-apps-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-docker-stage-paris/" target="_blank"><span class="status-success jenkins-status">sdnc-apps-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-docker-stage-quebec/" target="_blank"><span class="status-success jenkins-status">sdnc-apps-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">sdnc-apps-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-sonar/" target="_blank"><span class="status-success jenkins-status">sdnc-apps-sonar</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">sdnc-apps-maven-clm-master</span></a> | 20 |
-| sdnc/northbound |  | 0 | <a href="https://jenkins.onap.org/job/sdnc-northbound-maven-verify-paris-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">sdnc-northbound-maven-verify-paris-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-verify-quebec-mvn39-openjdk21/" target="_blank"><span class="status-unknown jenkins-status">sdnc-northbound-maven-verify-quebec-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-verify-master-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">sdnc-northbound-maven-verify-master-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">sdnc-northbound-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-merge-quebec/" target="_blank"><span class="status-failure jenkins-status">sdnc-northbound-maven-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">sdnc-northbound-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-northbound-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-northbound-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">sdnc-northbound-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-northbound-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-northbound-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-release-verify-master/" target="_blank"><span class="status-success jenkins-status">sdnc-northbound-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-northbound-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-northbound-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-release-merge-master/" target="_blank"><span class="status-success jenkins-status">sdnc-northbound-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-sonar/" target="_blank"><span class="status-success jenkins-status">sdnc-northbound-sonar</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">sdnc-northbound-maven-clm-master</span></a> | 17 |
+| sdnc/apps |  | 0 | <a href="https://jenkins.onap.org/job/sdnc-apps-maven-verify-paris-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">sdnc-apps-maven-verify-paris-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-verify-quebec-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">sdnc-apps-maven-verify-quebec-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-verify-master-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">sdnc-apps-maven-verify-master-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">sdnc-apps-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-merge-quebec/" target="_blank"><span class="status-failure jenkins-status">sdnc-apps-maven-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">sdnc-apps-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">sdnc-apps-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-docker-stage-paris/" target="_blank"><span class="status-success jenkins-status">sdnc-apps-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-docker-stage-quebec/" target="_blank"><span class="status-success jenkins-status">sdnc-apps-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">sdnc-apps-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">sdnc-apps-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-sonar/" target="_blank"><span class="status-success jenkins-status">sdnc-apps-sonar</span></a><br><a href="https://jenkins.onap.org/job/sdnc-apps-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">sdnc-apps-maven-clm-master</span></a> | 20 |
+| sdnc/northbound |  | 0 | <a href="https://jenkins.onap.org/job/sdnc-northbound-maven-verify-paris-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">sdnc-northbound-maven-verify-paris-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-verify-quebec-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">sdnc-northbound-maven-verify-quebec-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-verify-master-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">sdnc-northbound-maven-verify-master-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">sdnc-northbound-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-merge-quebec/" target="_blank"><span class="status-failure jenkins-status">sdnc-northbound-maven-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">sdnc-northbound-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-northbound-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-northbound-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">sdnc-northbound-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-northbound-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-northbound-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-release-verify-master/" target="_blank"><span class="status-success jenkins-status">sdnc-northbound-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-northbound-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-northbound-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-release-merge-master/" target="_blank"><span class="status-success jenkins-status">sdnc-northbound-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-sonar/" target="_blank"><span class="status-success jenkins-status">sdnc-northbound-sonar</span></a><br><a href="https://jenkins.onap.org/job/sdnc-northbound-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">sdnc-northbound-maven-clm-master</span></a> | 17 |
 | sdnc/oam | <a href="https://github.com/onap/sdnc-oam/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-failure workflow-status">call-github2gerrit.yaml</span></a><br><a href="https://github.com/onap/sdnc-oam/actions/workflows/gerrit-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-verify.yaml</span></a> | 2 | <a href="https://jenkins.onap.org/job/sdnc-oam-maven-verify-paris-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">sdnc-oam-maven-verify-paris-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-maven-verify-quebec-mvn39-openjdk21/" target="_blank"><span class="status-unknown jenkins-status">sdnc-oam-maven-verify-quebec-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-maven-verify-master-mvn39-openjdk21/" target="_blank"><span class="status-success jenkins-status">sdnc-oam-maven-verify-master-mvn39-openjdk21</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-maven-merge-paris/" target="_blank"><span class="status-failure jenkins-status">sdnc-oam-maven-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-maven-merge-quebec/" target="_blank"><span class="status-failure jenkins-status">sdnc-oam-maven-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-maven-merge-master/" target="_blank"><span class="status-failure jenkins-status">sdnc-oam-maven-merge-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-maven-stage-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-oam-maven-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-maven-stage-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-oam-maven-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">sdnc-oam-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-maven-docker-stage-paris/" target="_blank"><span class="status-failure jenkins-status">sdnc-oam-maven-docker-stage-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-maven-docker-stage-quebec/" target="_blank"><span class="status-failure jenkins-status">sdnc-oam-maven-docker-stage-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-maven-docker-stage-master/" target="_blank"><span class="status-failure jenkins-status">sdnc-oam-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-release-verify-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-oam-release-verify-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-release-verify-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-oam-release-verify-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-release-verify-master/" target="_blank"><span class="status-success jenkins-status">sdnc-oam-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-release-merge-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-oam-release-merge-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-release-merge-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-oam-release-merge-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-release-merge-master/" target="_blank"><span class="status-success jenkins-status">sdnc-oam-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">sdnc-oam-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-merge-verification-maven-master/" target="_blank"><span class="status-failure jenkins-status">sdnc-oam-merge-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-merge-verification-maven-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-oam-merge-verification-maven-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-merge-verification-maven-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-oam-merge-verification-maven-quebec</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-review-verification-maven-master/" target="_blank"><span class="status-success jenkins-status">sdnc-oam-review-verification-maven-master</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-review-verification-maven-paris/" target="_blank"><span class="status-unknown jenkins-status">sdnc-oam-review-verification-maven-paris</span></a><br><a href="https://jenkins.onap.org/job/sdnc-oam-review-verification-maven-quebec/" target="_blank"><span class="status-unknown jenkins-status">sdnc-oam-review-verification-maven-quebec</span></a> | 25 |
 | so | <a href="https://github.com/onap/so/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-no-runs workflow-status">call-github2gerrit.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/so-master-verify-java/" target="_blank"><span class="status-success jenkins-status">so-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/so-java17-verify-java/" target="_blank"><span class="status-success jenkins-status">so-java17-verify-java</span></a><br><a href="https://jenkins.onap.org/job/so-master-merge-java/" target="_blank"><span class="status-success jenkins-status">so-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/so-java17-merge-java/" target="_blank"><span class="status-success jenkins-status">so-java17-merge-java</span></a><br><a href="https://jenkins.onap.org/job/so-maven-stage-master/" target="_blank"><span class="status-failure jenkins-status">so-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/so-maven-stage-java17/" target="_blank"><span class="status-success jenkins-status">so-maven-stage-java17</span></a><br><a href="https://jenkins.onap.org/job/so-maven-docker-stage-master/" target="_blank"><span class="status-failure jenkins-status">so-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/so-maven-docker-stage-java17/" target="_blank"><span class="status-success jenkins-status">so-maven-docker-stage-java17</span></a><br><a href="https://jenkins.onap.org/job/so-release-verify-master/" target="_blank"><span class="status-success jenkins-status">so-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/so-release-verify-java17/" target="_blank"><span class="status-unknown jenkins-status">so-release-verify-java17</span></a><br><a href="https://jenkins.onap.org/job/so-release-merge-master/" target="_blank"><span class="status-success jenkins-status">so-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/so-release-merge-java17/" target="_blank"><span class="status-unknown jenkins-status">so-release-merge-java17</span></a><br><a href="https://jenkins.onap.org/job/so-sonar/" target="_blank"><span class="status-success jenkins-status">so-sonar</span></a><br><a href="https://jenkins.onap.org/job/so-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">so-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/so-coverity/" target="_blank"><span class="status-failure jenkins-status">so-coverity</span></a><br><a href="https://jenkins.onap.org/job/so-master-csit-integration-cnfm-testing/" target="_blank"><span class="status-success jenkins-status">so-master-csit-integration-cnfm-testing</span></a><br><a href="https://jenkins.onap.org/job/so-master-csit-integration-etsi-testing/" target="_blank"><span class="status-success jenkins-status">so-master-csit-integration-etsi-testing</span></a><br><a href="https://jenkins.onap.org/job/so-master-csit-macroflow/" target="_blank"><span class="status-success jenkins-status">so-master-csit-macroflow</span></a><br><a href="https://jenkins.onap.org/job/so-master-verify-csit-integration-cnfm-testing/" target="_blank"><span class="status-success jenkins-status">so-master-verify-csit-integration-cnfm-testing</span></a><br><a href="https://jenkins.onap.org/job/so-master-verify-csit-integration-etsi-testing/" target="_blank"><span class="status-success jenkins-status">so-master-verify-csit-integration-etsi-testing</span></a><br><a href="https://jenkins.onap.org/job/so-master-verify-csit-macroflow/" target="_blank"><span class="status-success jenkins-status">so-master-verify-csit-macroflow</span></a> | 21 |
 | so/adapters/so-cnf-adapter | <a href="https://github.com/onap/so-adapters-so-cnf-adapter/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-no-runs workflow-status">call-github2gerrit.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/so-adapters-so-cnf-adapter-master-verify-java/" target="_blank"><span class="status-success jenkins-status">so-adapters-so-cnf-adapter-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/so-adapters-so-cnf-adapter-master-merge-java/" target="_blank"><span class="status-success jenkins-status">so-adapters-so-cnf-adapter-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/so-adapters-so-cnf-adapter-maven-stage-master/" target="_blank"><span class="status-failure jenkins-status">so-adapters-so-cnf-adapter-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/so-adapters-so-cnf-adapter-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">so-adapters-so-cnf-adapter-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/so-adapters-so-cnf-adapter-release-verify-master/" target="_blank"><span class="status-success jenkins-status">so-adapters-so-cnf-adapter-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/so-adapters-so-cnf-adapter-release-merge-master/" target="_blank"><span class="status-success jenkins-status">so-adapters-so-cnf-adapter-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/so-adapters-so-cnf-adapter-sonar/" target="_blank"><span class="status-success jenkins-status">so-adapters-so-cnf-adapter-sonar</span></a><br><a href="https://jenkins.onap.org/job/so-adapters-so-cnf-adapter-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">so-adapters-so-cnf-adapter-maven-clm-master</span></a> | 8 |
@@ -2177,11 +2177,11 @@ The data presented in the table below covers the past 365 days.
 | so/libs |  | 0 | <a href="https://jenkins.onap.org/job/so-libs-master-verify-java/" target="_blank"><span class="status-success jenkins-status">so-libs-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/so-libs-master-merge-java/" target="_blank"><span class="status-success jenkins-status">so-libs-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/so-libs-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">so-libs-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/so-libs-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">so-libs-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/so-libs-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">so-libs-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/so-libs-sonar/" target="_blank"><span class="status-success jenkins-status">so-libs-sonar</span></a><br><a href="https://jenkins.onap.org/job/so-libs-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">so-libs-maven-clm-master</span></a> | 7 |
 | so/so-admin-cockpit | <a href="https://github.com/onap/so-so-admin-cockpit/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-no-runs workflow-status">call-github2gerrit.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/so-so-admin-cockpit-master-verify-java/" target="_blank"><span class="status-success jenkins-status">so-so-admin-cockpit-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/so-so-admin-cockpit-master-merge-java/" target="_blank"><span class="status-success jenkins-status">so-so-admin-cockpit-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/so-so-admin-cockpit-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">so-so-admin-cockpit-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/so-so-admin-cockpit-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">so-so-admin-cockpit-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/so-so-admin-cockpit-release-verify-master/" target="_blank"><span class="status-success jenkins-status">so-so-admin-cockpit-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/so-so-admin-cockpit-release-merge-master/" target="_blank"><span class="status-success jenkins-status">so-so-admin-cockpit-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/so-so-admin-cockpit-sonar/" target="_blank"><span class="status-success jenkins-status">so-so-admin-cockpit-sonar</span></a><br><a href="https://jenkins.onap.org/job/so-so-admin-cockpit-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">so-so-admin-cockpit-maven-clm-master</span></a><br><a href="https://jenkins.onap.org/job/so-so-admin-cockpit-coverity/" target="_blank"><span class="status-failure jenkins-status">so-so-admin-cockpit-coverity</span></a> | 9 |
 | so/so-etsi-nfvo | <a href="https://github.com/onap/so-so-etsi-nfvo/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-no-runs workflow-status">call-github2gerrit.yaml</span></a> | 1 | <a href="https://jenkins.onap.org/job/so-so-etsi-nfvo-master-verify-java/" target="_blank"><span class="status-success jenkins-status">so-so-etsi-nfvo-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/so-so-etsi-nfvo-master-merge-java/" target="_blank"><span class="status-success jenkins-status">so-so-etsi-nfvo-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/so-so-etsi-nfvo-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">so-so-etsi-nfvo-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/so-so-etsi-nfvo-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">so-so-etsi-nfvo-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/so-so-etsi-nfvo-release-verify-master/" target="_blank"><span class="status-unknown jenkins-status">so-so-etsi-nfvo-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/so-so-etsi-nfvo-release-merge-master/" target="_blank"><span class="status-unknown jenkins-status">so-so-etsi-nfvo-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/so-so-etsi-nfvo-sonar/" target="_blank"><span class="status-success jenkins-status">so-so-etsi-nfvo-sonar</span></a><br><a href="https://jenkins.onap.org/job/so-so-etsi-nfvo-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">so-so-etsi-nfvo-maven-clm-master</span></a> | 8 |
-| testsuite |  | 0 | <a href="https://jenkins.onap.org/job/testsuite-master-3scm-docker-shell-daily/" target="_blank"><span class="status-success jenkins-status">testsuite-master-3scm-docker-shell-daily</span></a><br><a href="https://jenkins.onap.org/job/testsuite-master-json-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-master-json-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-master-robot-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-master-robot-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-master-yaml-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-master-yml-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-master-yml-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-release-merge-master/" target="_blank"><span class="status-success jenkins-status">testsuite-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/testsuite-release-verify-master/" target="_blank"><span class="status-success jenkins-status">testsuite-release-verify-master</span></a> | 7 |
+| testsuite |  | 0 | <a href="https://jenkins.onap.org/job/testsuite-master-3scm-docker-shell-daily/" target="_blank"><span class="status-warning jenkins-status">testsuite-master-3scm-docker-shell-daily</span></a><br><a href="https://jenkins.onap.org/job/testsuite-master-json-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-master-json-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-master-robot-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-master-robot-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-master-yaml-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-master-yml-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-master-yml-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-release-merge-master/" target="_blank"><span class="status-success jenkins-status">testsuite-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/testsuite-release-verify-master/" target="_blank"><span class="status-success jenkins-status">testsuite-release-verify-master</span></a> | 7 |
 | testsuite/cds |  | 0 | <a href="https://jenkins.onap.org/job/testsuite-cds-master-json-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-cds-master-json-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-master-md-lint/" target="_blank"><span class="status-unknown jenkins-status">testsuite-cds-master-md-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-master-python-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-cds-master-python-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-master-yaml-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-cds-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-master-yml-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-cds-master-yml-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-odl-docker-merge-master/" target="_blank"><span class="status-failure jenkins-status">testsuite-cds-mock-odl-docker-merge-master</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-odl-docker-verify-master/" target="_blank"><span class="status-unknown jenkins-status">testsuite-cds-mock-odl-docker-verify-master</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-odl-master-json-lint/" target="_blank"><span class="status-unknown jenkins-status">testsuite-cds-mock-odl-master-json-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-odl-master-md-lint/" target="_blank"><span class="status-unknown jenkins-status">testsuite-cds-mock-odl-master-md-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-odl-master-python-lint/" target="_blank"><span class="status-unknown jenkins-status">testsuite-cds-mock-odl-master-python-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-odl-master-yaml-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-cds-mock-odl-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-odl-master-yml-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-cds-mock-odl-master-yml-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-server-master-json-lint/" target="_blank"><span class="status-unknown jenkins-status">testsuite-cds-mock-server-master-json-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-server-master-md-lint/" target="_blank"><span class="status-unknown jenkins-status">testsuite-cds-mock-server-master-md-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-server-master-python-lint/" target="_blank"><span class="status-unknown jenkins-status">testsuite-cds-mock-server-master-python-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-server-master-yaml-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-cds-mock-server-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-server-master-yml-lint/" target="_blank"><span class="status-unknown jenkins-status">testsuite-cds-mock-server-master-yml-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-ssh-master-json-lint/" target="_blank"><span class="status-unknown jenkins-status">testsuite-cds-mock-ssh-master-json-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-ssh-master-md-lint/" target="_blank"><span class="status-unknown jenkins-status">testsuite-cds-mock-ssh-master-md-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-ssh-master-python-lint/" target="_blank"><span class="status-unknown jenkins-status">testsuite-cds-mock-ssh-master-python-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-ssh-master-yaml-lint/" target="_blank"><span class="status-unknown jenkins-status">testsuite-cds-mock-ssh-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-cds-mock-ssh-master-yml-lint/" target="_blank"><span class="status-unknown jenkins-status">testsuite-cds-mock-ssh-master-yml-lint</span></a> | 22 |
 | testsuite/cds-mock-odl | <a href="https://github.com/onap/testsuite-cds-mock-odl/actions/workflows/call-github2gerrit.yaml" target="_blank"><span class="status-no-runs workflow-status">call-github2gerrit.yaml</span></a> | 1 |  | 0 |
 | testsuite/python-testing-utils |  | 0 | <a href="https://jenkins.onap.org/job/testsuite-python-testing-utils-master-robotframework-onap-verify-python/" target="_blank"><span class="status-success jenkins-status">testsuite-python-testing-utils-master-robotframework-onap-verify-python</span></a><br><a href="https://jenkins.onap.org/job/testsuite-python-testing-utils-robotframework-onap-python-release-master/" target="_blank"><span class="status-success jenkins-status">testsuite-python-testing-utils-robotframework-onap-python-release-master</span></a><br><a href="https://jenkins.onap.org/job/testsuite-python-testing-utils-robotframework-onap-python-staging-master/" target="_blank"><span class="status-success jenkins-status">testsuite-python-testing-utils-robotframework-onap-python-staging-master</span></a> | 3 |
-| testsuite/pythonsdk-tests |  | 0 | <a href="https://jenkins.onap.org/job/testsuite-pythonsdk-tests-master-json-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-pythonsdk-tests-master-json-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-pythonsdk-tests-master-python-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-pythonsdk-tests-master-python-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-pythonsdk-tests-master-rst-lint/" target="_blank"><span class="status-unknown jenkins-status">testsuite-pythonsdk-tests-master-rst-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-pythonsdk-tests-master-yaml-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-pythonsdk-tests-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-pythonsdk-tests-master-yml-lint/" target="_blank"><span class="status-failure jenkins-status">testsuite-pythonsdk-tests-master-yml-lint</span></a> | 5 |
+| testsuite/pythonsdk-tests |  | 0 | <a href="https://jenkins.onap.org/job/testsuite-pythonsdk-tests-master-json-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-pythonsdk-tests-master-json-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-pythonsdk-tests-master-python-lint/" target="_blank"><span class="status-failure jenkins-status">testsuite-pythonsdk-tests-master-python-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-pythonsdk-tests-master-rst-lint/" target="_blank"><span class="status-unknown jenkins-status">testsuite-pythonsdk-tests-master-rst-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-pythonsdk-tests-master-yaml-lint/" target="_blank"><span class="status-success jenkins-status">testsuite-pythonsdk-tests-master-yaml-lint</span></a><br><a href="https://jenkins.onap.org/job/testsuite-pythonsdk-tests-master-yml-lint/" target="_blank"><span class="status-failure jenkins-status">testsuite-pythonsdk-tests-master-yml-lint</span></a> | 5 |
 | usecase-ui |  | 0 | <a href="https://jenkins.onap.org/job/usecase-ui-master-verify-java/" target="_blank"><span class="status-success jenkins-status">usecase-ui-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-newdelhi-verify-java/" target="_blank"><span class="status-success jenkins-status">usecase-ui-newdelhi-verify-java</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-master-merge-java/" target="_blank"><span class="status-success jenkins-status">usecase-ui-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-newdelhi-merge-java/" target="_blank"><span class="status-success jenkins-status">usecase-ui-newdelhi-merge-java</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">usecase-ui-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-maven-stage-newdelhi/" target="_blank"><span class="status-unknown jenkins-status">usecase-ui-maven-stage-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-master-docker-java-daily/" target="_blank"><span class="status-success jenkins-status">usecase-ui-master-docker-java-daily</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-newdelhi-docker-java-daily/" target="_blank"><span class="status-unknown jenkins-status">usecase-ui-newdelhi-docker-java-daily</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-release-verify-master/" target="_blank"><span class="status-success jenkins-status">usecase-ui-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-release-verify-newdelhi/" target="_blank"><span class="status-unknown jenkins-status">usecase-ui-release-verify-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-release-merge-master/" target="_blank"><span class="status-success jenkins-status">usecase-ui-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-release-merge-newdelhi/" target="_blank"><span class="status-unknown jenkins-status">usecase-ui-release-merge-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-maven-clm-master/" target="_blank"><span class="status-failure jenkins-status">usecase-ui-maven-clm-master</span></a> | 13 |
 | usecase-ui/intent-analysis |  | 0 | <a href="https://jenkins.onap.org/job/usecase-ui-intent-analysis-master-verify-java/" target="_blank"><span class="status-success jenkins-status">usecase-ui-intent-analysis-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-intent-analysis-newdelhi-verify-java/" target="_blank"><span class="status-success jenkins-status">usecase-ui-intent-analysis-newdelhi-verify-java</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-intent-analysis-master-merge-java/" target="_blank"><span class="status-success jenkins-status">usecase-ui-intent-analysis-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-intent-analysis-newdelhi-merge-java/" target="_blank"><span class="status-success jenkins-status">usecase-ui-intent-analysis-newdelhi-merge-java</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-intent-analysis-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">usecase-ui-intent-analysis-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-intent-analysis-maven-stage-newdelhi/" target="_blank"><span class="status-unknown jenkins-status">usecase-ui-intent-analysis-maven-stage-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-intent-analysis-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">usecase-ui-intent-analysis-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-intent-analysis-maven-docker-stage-newdelhi/" target="_blank"><span class="status-unknown jenkins-status">usecase-ui-intent-analysis-maven-docker-stage-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-intent-analysis-release-verify-master/" target="_blank"><span class="status-success jenkins-status">usecase-ui-intent-analysis-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-intent-analysis-release-verify-newdelhi/" target="_blank"><span class="status-success jenkins-status">usecase-ui-intent-analysis-release-verify-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-intent-analysis-release-merge-master/" target="_blank"><span class="status-success jenkins-status">usecase-ui-intent-analysis-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-intent-analysis-release-merge-newdelhi/" target="_blank"><span class="status-success jenkins-status">usecase-ui-intent-analysis-release-merge-newdelhi</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-intent-analysis-sonar/" target="_blank"><span class="status-success jenkins-status">usecase-ui-intent-analysis-sonar</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-intent-analysis-maven-clm-master/" target="_blank"><span class="status-warning jenkins-status">usecase-ui-intent-analysis-maven-clm-master</span></a> | 14 |
 | usecase-ui/llm-adaptation |  | 0 | <a href="https://jenkins.onap.org/job/usecase-ui-llm-adaptation-master-verify-java/" target="_blank"><span class="status-success jenkins-status">usecase-ui-llm-adaptation-master-verify-java</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-llm-adaptation-master-merge-java/" target="_blank"><span class="status-success jenkins-status">usecase-ui-llm-adaptation-master-merge-java</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-llm-adaptation-maven-stage-master/" target="_blank"><span class="status-success jenkins-status">usecase-ui-llm-adaptation-maven-stage-master</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-llm-adaptation-maven-docker-stage-master/" target="_blank"><span class="status-success jenkins-status">usecase-ui-llm-adaptation-maven-docker-stage-master</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-llm-adaptation-release-verify-master/" target="_blank"><span class="status-success jenkins-status">usecase-ui-llm-adaptation-release-verify-master</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-llm-adaptation-release-merge-master/" target="_blank"><span class="status-success jenkins-status">usecase-ui-llm-adaptation-release-merge-master</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-llm-adaptation-sonar/" target="_blank"><span class="status-success jenkins-status">usecase-ui-llm-adaptation-sonar</span></a><br><a href="https://jenkins.onap.org/job/usecase-ui-llm-adaptation-maven-clm-master/" target="_blank"><span class="status-warning jenkins-status">usecase-ui-llm-adaptation-maven-clm-master</span></a> | 8 |
