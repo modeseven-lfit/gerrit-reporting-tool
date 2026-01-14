@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: OPNFV
 
-**Generated:** January 13, 2026 at 07:22 UTC
+**Generated:** January 14, 2026 at 07:23 UTC
 **Schema Version:** 1.2.0
 
 ## 📈 Global Summary
@@ -521,8 +521,8 @@ The data presented in the table below covers the past 365 days.
 | 336 | Marco Varlese | 0 | +0 | 0 | - | 2 | suse.com |
 | 337 | Marcus Furlong | 0 | +0 | 0 | - | 1 | gmail.com |
 | 338 | Marius Cornea | 0 | +0 | 0 | - | 1 | redhat.com |
-| 339 | Mark Beierl | 0 | +0 | 0 | - | 3 | vmware.com |
-| 340 | Mark Beierl | 0 | +0 | 0 | - | 4 | dell.com |
+| 339 | Mark Beierl | 0 | +0 | 0 | - | 4 | dell.com |
+| 340 | Mark Beierl | 0 | +0 | 0 | - | 3 | vmware.com |
 | 341 | Mark Beierl | 0 | +0 | 0 | - | 4 | emc.com |
 | 342 | Mark Beierl | 0 | +0 | 0 | - | 1 | jemms.net |
 | 343 | Mark Chappell | 0 | +0 | 0 | - | 1 | redhat.com |
@@ -975,74 +975,74 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 |----------------|---------|---------|--------------|---------------|------------------|--------|
-| releng | 87 | -2316 | 1 | 89 | 2025-10-16 | ✅ |
-| functest | 32 | -2582 | 1 | 90 | 2025-10-15 | ✅ |
-| functest-kubernetes | 31 | +111 | 1 | 97 | 2025-10-08 | ✅ |
-| functest-xtesting | 3 | +0 | 1 | 277 | 2025-04-11 | ✅ |
-| .github | 0 | +0 | 0 | 853 | 2023-09-13 | ☑️ |
-| airship | 0 | +0 | 0 | 1,651 | 2021-07-07 | 🛑 |
-| apex | 0 | +0 | 0 | 2,449 | 2019-05-01 | 🛑 |
-| apex-os-net-config | 0 | +0 | 0 | 3,023 | 2017-10-04 | 🛑 |
-| apex-puppet-tripleo | 0 | +0 | 0 | 2,830 | 2018-04-15 | 🛑 |
-| apex-tripleo-heat-templates | 0 | +0 | 0 | 2,831 | 2018-04-14 | 🛑 |
-| barometer | 0 | +0 | 0 | 1,257 | 2022-08-05 | 🛑 |
-| bottlenecks | 0 | +0 | 0 | 2,265 | 2019-11-01 | 🛑 |
-| calipso | 0 | +0 | 0 | 2,624 | 2018-11-07 | 🛑 |
-| cirv | 0 | +0 | 0 | 1,614 | 2021-08-13 | 🛑 |
-| cirv-hdv | 0 | +0 | 0 | 1,882 | 2020-11-18 | 🛑 |
-| cirv-rapid | 0 | +0 | 0 | 2,106 | 2020-04-08 | 🛑 |
-| cirv-sdv | 0 | +0 | 0 | 1,492 | 2021-12-13 | 🛑 |
-| cirv-spirent | 0 | +0 | 0 | 2,216 | 2019-12-20 | 🛑 |
-| clover | 0 | +0 | 0 | 2,289 | 2019-10-08 | 🛑 |
-| conductor | 0 | +0 | 0 | 3,660 | 2016-01-06 | 🛑 |
-| container4nfv | 0 | +0 | 0 | 2,218 | 2019-12-18 | 🛑 |
-| cran | 0 | +0 | 0 | 2,442 | 2019-05-08 | 🛑 |
-| doctor | 0 | +0 | 0 | 1,917 | 2020-10-14 | 🛑 |
-| domino | 0 | +0 | 0 | 2,901 | 2018-02-03 | 🛑 |
-| dovetail | 0 | +0 | 0 | 2,169 | 2020-02-05 | 🛑 |
-| dovetail-webportal | 0 | +0 | 0 | 1,911 | 2020-10-20 | 🛑 |
-| edgecloud | 0 | +0 | 0 | 2,236 | 2019-11-30 | 🛑 |
-| enfv | 0 | +0 | 0 | 3,567 | 2016-04-08 | 🛑 |
-| fds | 0 | +0 | 0 | 2,673 | 2018-09-19 | 🛑 |
-| fuel | 0 | +0 | 0 | 2,034 | 2020-06-19 | 🛑 |
-| functest-requirements | 0 | +0 | 0 | 2,947 | 2017-12-19 | 🛑 |
-| infra | 0 | +0 | 0 | 2,964 | 2017-12-02 | 🛑 |
-| ipv6 | 0 | +0 | 0 | 2,390 | 2019-06-29 | 🛑 |
-| kuberef | 0 | +0 | 0 | 1,064 | 2023-02-14 | ☑️ |
-| laas | 0 | +0 | 0 | 809 | 2023-10-27 | ☑️ |
-| laas-reflab | 0 | +0 | 0 | 2,286 | 2019-10-11 | 🛑 |
-| models | 0 | +0 | 0 | 2,723 | 2018-07-31 | 🛑 |
-| moon | 0 | +0 | 0 | 2,049 | 2020-06-04 | 🛑 |
-| nfvbench | 0 | +0 | 0 | 1,102 | 2023-01-07 | 🛑 |
-| opera | 0 | +0 | 0 | 2,901 | 2018-02-03 | 🛑 |
-| opnfvdocs | 0 | +0 | 0 | 564 | 2024-06-28 | ☑️ |
-| opnfvtsc | 0 | +0 | 0 | 2,818 | 2018-04-27 | 🛑 |
-| orchestra | 0 | +0 | 0 | 2,673 | 2018-09-19 | 🛑 |
-| ovsnfv | 0 | +0 | 0 | 3,059 | 2017-08-29 | 🛑 |
-| parser | 0 | +0 | 0 | 2,377 | 2019-07-12 | 🛑 |
-| pharos | 0 | +0 | 0 | 2,183 | 2020-01-22 | 🛑 |
-| policytest | 0 | +0 | 0 | 3,770 | 2015-09-18 | 🛑 |
-| puppet-barometer | 0 | +0 | 0 | 2,723 | 2018-07-31 | 🛑 |
-| qtip | 0 | +0 | 0 | 2,786 | 2018-05-29 | 🛑 |
-| releng-anteater | 0 | +0 | 0 | 2,684 | 2018-09-08 | 🛑 |
-| releng-testresults | 0 | +0 | 0 | 1,749 | 2021-03-31 | 🛑 |
-| releng-utils | 0 | +0 | 0 | 2,940 | 2017-12-26 | 🛑 |
-| releng-xci | 0 | +0 | 0 | 2,323 | 2019-09-04 | 🛑 |
-| releng-xci-scenarios | 0 | +0 | 0 | 2,326 | 2019-09-01 | 🛑 |
-| rocket | 0 | +0 | 0 | 2,222 | 2019-12-14 | 🛑 |
-| samplevnf | 0 | +0 | 0 | 413 | 2024-11-26 | ☑️ |
-| sandbox | 0 | +0 | 0 | 2,929 | 2018-01-06 | 🛑 |
-| sandbox-zuul-config | 0 | +0 | 0 | 2,820 | 2018-04-25 | 🛑 |
-| sandbox-zuul-untrusted | 0 | +0 | 0 | 2,820 | 2018-04-25 | 🛑 |
-| securityscanning | 0 | +0 | 0 | 3,119 | 2017-06-30 | 🛑 |
-| spark-model-runner | 0 | +0 | 0 | 2,356 | 2019-08-02 | 🛑 |
-| stor4nfv | 0 | +0 | 0 | 2,443 | 2019-05-07 | 🛑 |
-| storperf | 0 | +0 | 0 | 2,169 | 2020-02-05 | 🛑 |
-| test | 0 | +0 | 0 | 2,435 | 2019-05-15 | 🛑 |
-| test/test1 | 0 | +0 | 0 | 2,237 | 2019-11-29 | 🛑 |
-| test2 | 0 | +0 | 0 | 2,544 | 2019-01-26 | 🛑 |
-| thoth | 0 | +0 | 0 | 964 | 2023-05-25 | ☑️ |
-| vineperf | 0 | +0 | 0 | 1,105 | 2023-01-04 | 🛑 |
+| releng | 87 | -2316 | 1 | 90 | 2025-10-16 | ✅ |
+| functest | 32 | -2582 | 1 | 91 | 2025-10-15 | ✅ |
+| functest-kubernetes | 31 | +111 | 1 | 98 | 2025-10-08 | ✅ |
+| functest-xtesting | 3 | +0 | 1 | 278 | 2025-04-11 | ✅ |
+| .github | 0 | +0 | 0 | 854 | 2023-09-13 | ☑️ |
+| airship | 0 | +0 | 0 | 1,652 | 2021-07-07 | 🛑 |
+| apex | 0 | +0 | 0 | 2,450 | 2019-05-01 | 🛑 |
+| apex-os-net-config | 0 | +0 | 0 | 3,024 | 2017-10-04 | 🛑 |
+| apex-puppet-tripleo | 0 | +0 | 0 | 2,831 | 2018-04-15 | 🛑 |
+| apex-tripleo-heat-templates | 0 | +0 | 0 | 2,832 | 2018-04-14 | 🛑 |
+| barometer | 0 | +0 | 0 | 1,258 | 2022-08-05 | 🛑 |
+| bottlenecks | 0 | +0 | 0 | 2,266 | 2019-11-01 | 🛑 |
+| calipso | 0 | +0 | 0 | 2,625 | 2018-11-07 | 🛑 |
+| cirv | 0 | +0 | 0 | 1,615 | 2021-08-13 | 🛑 |
+| cirv-hdv | 0 | +0 | 0 | 1,883 | 2020-11-18 | 🛑 |
+| cirv-rapid | 0 | +0 | 0 | 2,107 | 2020-04-08 | 🛑 |
+| cirv-sdv | 0 | +0 | 0 | 1,493 | 2021-12-13 | 🛑 |
+| cirv-spirent | 0 | +0 | 0 | 2,217 | 2019-12-20 | 🛑 |
+| clover | 0 | +0 | 0 | 2,290 | 2019-10-08 | 🛑 |
+| conductor | 0 | +0 | 0 | 3,661 | 2016-01-06 | 🛑 |
+| container4nfv | 0 | +0 | 0 | 2,219 | 2019-12-18 | 🛑 |
+| cran | 0 | +0 | 0 | 2,443 | 2019-05-08 | 🛑 |
+| doctor | 0 | +0 | 0 | 1,918 | 2020-10-14 | 🛑 |
+| domino | 0 | +0 | 0 | 2,902 | 2018-02-03 | 🛑 |
+| dovetail | 0 | +0 | 0 | 2,170 | 2020-02-05 | 🛑 |
+| dovetail-webportal | 0 | +0 | 0 | 1,912 | 2020-10-20 | 🛑 |
+| edgecloud | 0 | +0 | 0 | 2,237 | 2019-11-30 | 🛑 |
+| enfv | 0 | +0 | 0 | 3,568 | 2016-04-08 | 🛑 |
+| fds | 0 | +0 | 0 | 2,674 | 2018-09-19 | 🛑 |
+| fuel | 0 | +0 | 0 | 2,035 | 2020-06-19 | 🛑 |
+| functest-requirements | 0 | +0 | 0 | 2,948 | 2017-12-19 | 🛑 |
+| infra | 0 | +0 | 0 | 2,965 | 2017-12-02 | 🛑 |
+| ipv6 | 0 | +0 | 0 | 2,391 | 2019-06-29 | 🛑 |
+| kuberef | 0 | +0 | 0 | 1,065 | 2023-02-14 | ☑️ |
+| laas | 0 | +0 | 0 | 810 | 2023-10-27 | ☑️ |
+| laas-reflab | 0 | +0 | 0 | 2,287 | 2019-10-11 | 🛑 |
+| models | 0 | +0 | 0 | 2,724 | 2018-07-31 | 🛑 |
+| moon | 0 | +0 | 0 | 2,050 | 2020-06-04 | 🛑 |
+| nfvbench | 0 | +0 | 0 | 1,103 | 2023-01-07 | 🛑 |
+| opera | 0 | +0 | 0 | 2,902 | 2018-02-03 | 🛑 |
+| opnfvdocs | 0 | +0 | 0 | 565 | 2024-06-28 | ☑️ |
+| opnfvtsc | 0 | +0 | 0 | 2,819 | 2018-04-27 | 🛑 |
+| orchestra | 0 | +0 | 0 | 2,674 | 2018-09-19 | 🛑 |
+| ovsnfv | 0 | +0 | 0 | 3,060 | 2017-08-29 | 🛑 |
+| parser | 0 | +0 | 0 | 2,378 | 2019-07-12 | 🛑 |
+| pharos | 0 | +0 | 0 | 2,184 | 2020-01-22 | 🛑 |
+| policytest | 0 | +0 | 0 | 3,771 | 2015-09-18 | 🛑 |
+| puppet-barometer | 0 | +0 | 0 | 2,724 | 2018-07-31 | 🛑 |
+| qtip | 0 | +0 | 0 | 2,787 | 2018-05-29 | 🛑 |
+| releng-anteater | 0 | +0 | 0 | 2,685 | 2018-09-08 | 🛑 |
+| releng-testresults | 0 | +0 | 0 | 1,750 | 2021-03-31 | 🛑 |
+| releng-utils | 0 | +0 | 0 | 2,941 | 2017-12-26 | 🛑 |
+| releng-xci | 0 | +0 | 0 | 2,324 | 2019-09-04 | 🛑 |
+| releng-xci-scenarios | 0 | +0 | 0 | 2,327 | 2019-09-01 | 🛑 |
+| rocket | 0 | +0 | 0 | 2,223 | 2019-12-14 | 🛑 |
+| samplevnf | 0 | +0 | 0 | 414 | 2024-11-26 | ☑️ |
+| sandbox | 0 | +0 | 0 | 2,930 | 2018-01-06 | 🛑 |
+| sandbox-zuul-config | 0 | +0 | 0 | 2,821 | 2018-04-25 | 🛑 |
+| sandbox-zuul-untrusted | 0 | +0 | 0 | 2,821 | 2018-04-25 | 🛑 |
+| securityscanning | 0 | +0 | 0 | 3,120 | 2017-06-30 | 🛑 |
+| spark-model-runner | 0 | +0 | 0 | 2,357 | 2019-08-02 | 🛑 |
+| stor4nfv | 0 | +0 | 0 | 2,444 | 2019-05-07 | 🛑 |
+| storperf | 0 | +0 | 0 | 2,170 | 2020-02-05 | 🛑 |
+| test | 0 | +0 | 0 | 2,436 | 2019-05-15 | 🛑 |
+| test/test1 | 0 | +0 | 0 | 2,238 | 2019-11-29 | 🛑 |
+| test2 | 0 | +0 | 0 | 2,545 | 2019-01-26 | 🛑 |
+| thoth | 0 | +0 | 0 | 965 | 2023-05-25 | ☑️ |
+| vineperf | 0 | +0 | 0 | 1,106 | 2023-01-04 | 🛑 |
 
 **Total:** 68 repositories
 
@@ -1068,16 +1068,16 @@ The data presented in the table below covers the past 365 days.
 | test/test1 | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | apex-os-net-config | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | .github | None | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
-| cirv | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | apex | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| cirv | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | cirv-rapid | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | cirv-hdv | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | cirv-spirent | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| calipso | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | apex-puppet-tripleo | Ruby | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| calipso | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| conductor | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | bottlenecks | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | apex-tripleo-heat-templates | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| conductor | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | airship | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | cirv-sdv | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | domino | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
@@ -1087,8 +1087,8 @@ The data presented in the table below covers the past 365 days.
 | barometer | Go | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | dovetail | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | container4nfv | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| cran | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | functest-requirements | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| cran | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | dovetail-webportal | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | clover | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | fds | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
@@ -1097,37 +1097,37 @@ The data presented in the table below covers the past 365 days.
 | infra | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | laas-reflab | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | kuberef | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| opera | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | opnfvtsc | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | models | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| opera | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | nfvbench | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | orchestra | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | fuel | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | policytest | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | opnfvdocs | HTML | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ovsnfv | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| releng-anteater | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | puppet-barometer | Ruby | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| releng-anteater | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | releng-utils | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | pharos | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | rocket | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | releng-xci-scenarios | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| sandbox | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | releng-xci | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | sandbox-zuul-config | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| sandbox | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | sandbox-zuul-untrusted | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | securityscanning | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | spark-model-runner | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| samplevnf | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | test | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| parser | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| samplevnf | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | test2 | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | qtip | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| parser | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | storperf | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | releng-testresults | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| thoth | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| stor4nfv | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | moon | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| stor4nfv | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| thoth | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | vineperf | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 
 ## 🏁 Deployed CI/CD Jobs
