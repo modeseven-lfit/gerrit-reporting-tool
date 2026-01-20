@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: O-RAN-SC
 
-**Generated:** January 19, 2026 at 07:24 UTC
+**Generated:** January 20, 2026 at 07:23 UTC
 **Schema Version:** 1.2.0
 
 ## 📈 Global Summary
@@ -361,122 +361,122 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 |----------------|---------|---------|--------------|---------------|------------------|--------|
-| it/dep | 159 | +3557 | 7 | 12 | 2026-01-07 | ✅ |
-| nonrtric/plt/rappmanager | 107 | +12469 | 6 | 30 | 2025-12-20 | ✅ |
-| oam/oam-controller | 83 | +215911 | 5 | 38 | 2025-12-12 | ✅ |
-| aiml-fw/aimlfw-dep | 77 | +1786 | 17 | 32 | 2025-12-18 | ✅ |
-| aiml-fw/awmf/tm | 70 | +1990 | 17 | 32 | 2025-12-18 | ✅ |
-| oam | 58 | +4445 | 4 | 48 | 2025-12-02 | ✅ |
-| smo/teiv | 49 | +42761 | 4 | 33 | 2025-12-17 | ✅ |
-| ci-management | 39 | +83 | 8 | 5 | 2026-01-14 | ✅ |
-| aiml-fw/awmf/modelmgmtservice | 38 | +1854 | 9 | 34 | 2025-12-16 | ✅ |
-| it/test | 36 | +223 | 3 | 222 | 2025-06-11 | ✅ |
-| aiml-fw/athp/pipeline-components | 35 | +1367 | 6 | 88 | 2025-10-23 | ✅ |
-| portal/aiml-dashboard | 32 | +125 | 8 | 34 | 2025-12-16 | ✅ |
-| pti/rtp | 32 | +37002 | 4 | 33 | 2025-12-17 | ✅ |
-| pti/o2 | 30 | +1022 | 5 | 39 | 2025-12-11 | ✅ |
-| nonrtric | 25 | +981 | 5 | 5 | 2026-01-14 | ✅ |
-| aiml-fw/athp/sdk/model-storage | 23 | +625 | 5 | 88 | 2025-10-23 | ✅ |
-| o-du/l2 | 20 | +108490 | 3 | 219 | 2025-06-14 | ✅ |
-| nonrtric/plt/ranpm | 16 | +2163 | 3 | 62 | 2025-11-18 | ✅ |
-| nonrtric/plt/a1policymanagementservice | 15 | +10443 | 4 | 33 | 2025-12-17 | ✅ |
-| nonrtric/plt/sme | 15 | +290 | 3 | 102 | 2025-10-09 | ✅ |
-| aiml-fw/athp/data-extraction | 12 | +363 | 5 | 34 | 2025-12-16 | ✅ |
-| doc | 12 | +66 | 3 | 11 | 2026-01-08 | ✅ |
-| sim/a1-interface | 12 | +89 | 4 | 65 | 2025-11-15 | ✅ |
-| aiml-fw/athp/sdk/feature-store | 10 | +131 | 5 | 88 | 2025-10-23 | ✅ |
-| it/tifg | 10 | +11688 | 3 | 173 | 2025-07-30 | ✅ |
-| nonrtric/plt/informationcoordinatorservice | 9 | +44 | 3 | 62 | 2025-11-18 | ✅ |
-| smo/o2 | 9 | +3375 | 2 | 24 | 2025-12-26 | ✅ |
-| aiml-fw/athp/tps/kubeflow-adapter | 8 | +35 | 5 | 34 | 2025-12-16 | ✅ |
-| nonrtric/plt/rappcatalogue | 5 | +66 | 2 | 62 | 2025-11-18 | ✅ |
-| sim/o1-ofhmp-interfaces | 5 | +81810 | 2 | 107 | 2025-10-04 | ✅ |
-| nonrtric/plt/dmaapadapter | 4 | +50 | 3 | 62 | 2025-11-18 | ✅ |
-| portal/nonrtric-controlpanel | 4 | +70 | 3 | 65 | 2025-11-15 | ✅ |
-| nonrtric/plt/helmmanager | 3 | +50 | 2 | 62 | 2025-11-18 | ✅ |
-| nonrtric/rapp/orufhrecovery | 3 | +71 | 2 | 115 | 2025-09-26 | ✅ |
-| ric-plt/a1 | 3 | +0 | 1 | 68 | 2025-11-12 | ✅ |
-| ric-plt/alarm-go | 3 | +0 | 1 | 68 | 2025-11-12 | ✅ |
-| ric-plt/appmgr | 3 | +8 | 1 | 68 | 2025-11-12 | ✅ |
-| ric-plt/dbaas | 3 | +0 | 1 | 68 | 2025-11-12 | ✅ |
-| ric-plt/e2 | 3 | +0 | 1 | 68 | 2025-11-12 | ✅ |
-| ric-plt/e2mgr | 3 | +11 | 1 | 68 | 2025-11-12 | ✅ |
-| ric-plt/o1 | 3 | +7 | 1 | 68 | 2025-11-12 | ✅ |
-| ric-plt/rtmgr | 3 | +5 | 1 | 68 | 2025-11-12 | ✅ |
-| ric-plt/submgr | 3 | +0 | 1 | 68 | 2025-11-12 | ✅ |
-| sim/ns3-o-ran-e2 | 3 | +306 | 1 | 121 | 2025-09-20 | ✅ |
-| nonrtric/plt/dmaapmediatorproducer | 2 | +50 | 2 | 115 | 2025-09-26 | ✅ |
-| nonrtric/plt/sdnca1controller | 2 | +45 | 2 | 65 | 2025-11-15 | ✅ |
-| nonrtric/rapp/healthcheck | 2 | +51 | 2 | 115 | 2025-09-26 | ✅ |
-| nonrtric/rapp/ransliceassurance | 2 | +73 | 2 | 115 | 2025-09-26 | ✅ |
-| ric-plt/ric-dep | 2 | +342 | 1 | 33 | 2025-12-17 | ✅ |
-| ric-plt/xapp-frame-rust | 2 | +0 | 1 | 250 | 2025-05-14 | ✅ |
-| aiml-fw/apm/analysis-module | 1 | +12 | 1 | 115 | 2025-09-26 | ✅ |
-| aiml-fw/apm/influx-wrapper | 1 | +12 | 1 | 115 | 2025-09-26 | ✅ |
-| aiml-fw/apm/monitoring-server | 1 | +12 | 1 | 115 | 2025-09-26 | ✅ |
-| aiml-fw/awmf/cli | 1 | +12 | 1 | 115 | 2025-09-26 | ✅ |
-| ric-plt/vespamgr | 1 | +0 | 1 | 68 | 2025-11-12 | ✅ |
-| smo/o1 | 1 | +9 | 1 | 265 | 2025-04-29 | ✅ |
-| .github | 0 | +0 | 0 | 415 | 2024-11-30 | ☑️ |
-| aiml-fw | 0 | +0 | 0 | 633 | 2024-04-26 | ☑️ |
-| aiml-fw/aihp/ips/kserve-adapter | 0 | +0 | 0 | 417 | 2024-11-28 | ☑️ |
-| aiml-fw/aihp/tps/kserve-adapter | 0 | +0 | 0 | 1,210 | 2022-09-27 | 🛑 |
-| aiml-fw/apm/monitoring-agent | 0 | +0 | 0 | 447 | 2024-10-29 | ☑️ |
-| com/golog | 0 | +0 | 0 | 628 | 2024-05-01 | ☑️ |
-| com/gs-lite | 0 | +0 | 0 | 1,766 | 2021-03-20 | 🛑 |
-| com/log | 0 | +0 | 0 | 628 | 2024-05-01 | ☑️ |
-| com/pylog | 0 | +0 | 0 | 628 | 2024-05-01 | ☑️ |
-| it/dev | 0 | +0 | 0 | 628 | 2024-05-01 | ☑️ |
-| it/otf | 0 | +0 | 0 | 1,622 | 2021-08-11 | 🛑 |
-| o-du/phy | 0 | +0 | 0 | 369 | 2025-01-15 | ☑️ |
-| ric-app/ad | 0 | +0 | 0 | 634 | 2024-04-25 | ☑️ |
-| ric-app/ad-cell | 0 | +0 | 0 | 454 | 2024-10-22 | ☑️ |
-| ric-app/bouncer | 0 | +0 | 0 | 935 | 2023-06-29 | ☑️ |
-| ric-app/ccc | 0 | +0 | 0 | 857 | 2023-09-15 | ☑️ |
-| ric-app/hw | 0 | +0 | 0 | 1,787 | 2021-02-27 | 🛑 |
-| ric-app/hw-go | 0 | +0 | 0 | 1,130 | 2022-12-16 | 🛑 |
-| ric-app/hw-python | 0 | +0 | 0 | 1,129 | 2022-12-17 | 🛑 |
-| ric-app/hw-rust | 0 | +0 | 0 | 570 | 2024-06-28 | ☑️ |
-| ric-app/kpimon-go | 0 | +0 | 0 | 606 | 2024-05-23 | ☑️ |
-| ric-app/lp | 0 | +0 | 0 | 628 | 2024-05-01 | ☑️ |
-| ric-app/mc | 0 | +0 | 0 | 629 | 2024-04-30 | ☑️ |
-| ric-app/qp | 0 | +0 | 0 | 634 | 2024-04-25 | ☑️ |
-| ric-app/qp-aimlfw | 0 | +0 | 0 | 1,131 | 2022-12-15 | 🛑 |
-| ric-app/rc | 0 | +0 | 0 | 986 | 2023-05-09 | ☑️ |
-| ric-app/ric-sdk-py | 0 | +0 | 0 | 1,789 | 2021-02-25 | 🛑 |
-| ric-app/ts | 0 | +0 | 0 | 1,098 | 2023-01-17 | 🛑 |
-| ric-plt/alarm-cpp | 0 | +0 | 0 | 628 | 2024-05-01 | ☑️ |
-| ric-plt/asn1-documents | 0 | +0 | 0 | 871 | 2023-09-01 | ☑️ |
-| ric-plt/conflictmgr | 0 | +0 | 0 | 371 | 2025-01-13 | ☑️ |
-| ric-plt/dbaas/hiredis-vip | 0 | +0 | 0 | 720 | 2024-01-30 | ☑️ |
-| ric-plt/demo1 | 0 | +0 | 0 | 2,263 | 2019-11-09 | 🛑 |
-| ric-plt/jaegeradapter | 0 | +0 | 0 | 628 | 2024-05-01 | ☑️ |
-| ric-plt/lib/rmr | 0 | +0 | 0 | 628 | 2024-05-01 | ☑️ |
-| ric-plt/libe2ap | 0 | +0 | 0 | 628 | 2024-05-01 | ☑️ |
-| ric-plt/nodeb-rnib | 0 | +0 | 0 | 628 | 2024-05-01 | ☑️ |
-| ric-plt/ric-test | 0 | +0 | 0 | 2,263 | 2019-11-09 | 🛑 |
-| ric-plt/ricctl | 0 | +0 | 0 | 1,543 | 2021-10-29 | 🛑 |
-| ric-plt/ricdms | 0 | +0 | 0 | 720 | 2024-01-30 | ☑️ |
-| ric-plt/sdl | 0 | +0 | 0 | 628 | 2024-05-01 | ☑️ |
-| ric-plt/sdlgo | 0 | +0 | 0 | 626 | 2024-05-03 | ☑️ |
-| ric-plt/sdlpy | 0 | +0 | 0 | 628 | 2024-05-01 | ☑️ |
-| ric-plt/streaming-protobufs | 0 | +0 | 0 | 1,578 | 2021-09-24 | 🛑 |
-| ric-plt/stslgo | 0 | +0 | 0 | 1,217 | 2022-09-20 | 🛑 |
-| ric-plt/tracelibcpp | 0 | +0 | 0 | 1,966 | 2020-09-01 | 🛑 |
-| ric-plt/tracelibgo | 0 | +0 | 0 | 627 | 2024-05-02 | ☑️ |
-| ric-plt/utils | 0 | +0 | 0 | 1,997 | 2020-08-01 | 🛑 |
-| ric-plt/xapp-frame | 0 | +0 | 0 | 618 | 2024-05-11 | ☑️ |
-| ric-plt/xapp-frame-cpp | 0 | +0 | 0 | 628 | 2024-05-01 | ☑️ |
-| ric-plt/xapp-frame-py | 0 | +0 | 0 | 627 | 2024-05-02 | ☑️ |
-| scp/oam/modeling | 0 | +0 | 0 | 1,017 | 2023-04-08 | ☑️ |
-| scp/ocu/5gnr | 0 | +0 | 0 | 2,038 | 2020-06-21 | 🛑 |
-| scp/ric-app/kpimon | 0 | +0 | 0 | 1,804 | 2021-02-10 | 🛑 |
-| scp/ric-app/ssp | 0 | +0 | 0 | 1,922 | 2020-10-15 | 🛑 |
-| sim/e2-interface | 0 | +0 | 0 | 594 | 2024-06-04 | ☑️ |
-| sim/e2-interface-data | 0 | +0 | 0 | 1,892 | 2020-11-14 | 🛑 |
-| sim/o1-interface | 0 | +0 | 0 | 571 | 2024-06-27 | ☑️ |
-| smo/pkg | 0 | +0 | 0 | 1,384 | 2022-04-06 | 🛑 |
-| smo/ves | 0 | +0 | 0 | 646 | 2024-04-13 | ☑️ |
+| it/dep | 159 | +3557 | 7 | 13 | 2026-01-07 | ✅ |
+| nonrtric/plt/rappmanager | 107 | +12469 | 6 | 31 | 2025-12-20 | ✅ |
+| oam/oam-controller | 83 | +215911 | 5 | 39 | 2025-12-12 | ✅ |
+| aiml-fw/aimlfw-dep | 77 | +1786 | 17 | 33 | 2025-12-18 | ✅ |
+| aiml-fw/awmf/tm | 70 | +1990 | 17 | 33 | 2025-12-18 | ✅ |
+| oam | 58 | +4445 | 4 | 49 | 2025-12-02 | ✅ |
+| smo/teiv | 49 | +42761 | 4 | 34 | 2025-12-17 | ✅ |
+| ci-management | 39 | +83 | 8 | 6 | 2026-01-14 | ✅ |
+| aiml-fw/awmf/modelmgmtservice | 38 | +1854 | 9 | 35 | 2025-12-16 | ✅ |
+| it/test | 36 | +223 | 3 | 223 | 2025-06-11 | ✅ |
+| aiml-fw/athp/pipeline-components | 35 | +1367 | 6 | 89 | 2025-10-23 | ✅ |
+| portal/aiml-dashboard | 32 | +125 | 8 | 35 | 2025-12-16 | ✅ |
+| pti/rtp | 32 | +37002 | 4 | 34 | 2025-12-17 | ✅ |
+| pti/o2 | 30 | +1022 | 5 | 40 | 2025-12-11 | ✅ |
+| nonrtric | 25 | +981 | 5 | 6 | 2026-01-14 | ✅ |
+| aiml-fw/athp/sdk/model-storage | 23 | +625 | 5 | 89 | 2025-10-23 | ✅ |
+| o-du/l2 | 20 | +108490 | 3 | 220 | 2025-06-14 | ✅ |
+| nonrtric/plt/ranpm | 16 | +2163 | 3 | 63 | 2025-11-18 | ✅ |
+| nonrtric/plt/a1policymanagementservice | 15 | +10443 | 4 | 34 | 2025-12-17 | ✅ |
+| nonrtric/plt/sme | 15 | +290 | 3 | 103 | 2025-10-09 | ✅ |
+| aiml-fw/athp/data-extraction | 12 | +363 | 5 | 35 | 2025-12-16 | ✅ |
+| doc | 12 | +66 | 3 | 12 | 2026-01-08 | ✅ |
+| sim/a1-interface | 12 | +89 | 4 | 66 | 2025-11-15 | ✅ |
+| aiml-fw/athp/sdk/feature-store | 10 | +131 | 5 | 89 | 2025-10-23 | ✅ |
+| it/tifg | 10 | +11688 | 3 | 174 | 2025-07-30 | ✅ |
+| nonrtric/plt/informationcoordinatorservice | 9 | +44 | 3 | 63 | 2025-11-18 | ✅ |
+| smo/o2 | 9 | +3375 | 2 | 25 | 2025-12-26 | ✅ |
+| aiml-fw/athp/tps/kubeflow-adapter | 8 | +35 | 5 | 35 | 2025-12-16 | ✅ |
+| nonrtric/plt/rappcatalogue | 5 | +66 | 2 | 63 | 2025-11-18 | ✅ |
+| sim/o1-ofhmp-interfaces | 5 | +81810 | 2 | 108 | 2025-10-04 | ✅ |
+| nonrtric/plt/dmaapadapter | 4 | +50 | 3 | 63 | 2025-11-18 | ✅ |
+| portal/nonrtric-controlpanel | 4 | +70 | 3 | 66 | 2025-11-15 | ✅ |
+| nonrtric/plt/helmmanager | 3 | +50 | 2 | 63 | 2025-11-18 | ✅ |
+| nonrtric/rapp/orufhrecovery | 3 | +71 | 2 | 116 | 2025-09-26 | ✅ |
+| ric-plt/a1 | 3 | +0 | 1 | 69 | 2025-11-12 | ✅ |
+| ric-plt/alarm-go | 3 | +0 | 1 | 69 | 2025-11-12 | ✅ |
+| ric-plt/appmgr | 3 | +8 | 1 | 69 | 2025-11-12 | ✅ |
+| ric-plt/dbaas | 3 | +0 | 1 | 69 | 2025-11-12 | ✅ |
+| ric-plt/e2 | 3 | +0 | 1 | 69 | 2025-11-12 | ✅ |
+| ric-plt/e2mgr | 3 | +11 | 1 | 69 | 2025-11-12 | ✅ |
+| ric-plt/o1 | 3 | +7 | 1 | 69 | 2025-11-12 | ✅ |
+| ric-plt/rtmgr | 3 | +5 | 1 | 69 | 2025-11-12 | ✅ |
+| ric-plt/submgr | 3 | +0 | 1 | 69 | 2025-11-12 | ✅ |
+| sim/ns3-o-ran-e2 | 3 | +306 | 1 | 122 | 2025-09-20 | ✅ |
+| nonrtric/plt/dmaapmediatorproducer | 2 | +50 | 2 | 116 | 2025-09-26 | ✅ |
+| nonrtric/plt/sdnca1controller | 2 | +45 | 2 | 66 | 2025-11-15 | ✅ |
+| nonrtric/rapp/healthcheck | 2 | +51 | 2 | 116 | 2025-09-26 | ✅ |
+| nonrtric/rapp/ransliceassurance | 2 | +73 | 2 | 116 | 2025-09-26 | ✅ |
+| ric-plt/ric-dep | 2 | +342 | 1 | 34 | 2025-12-17 | ✅ |
+| ric-plt/xapp-frame-rust | 2 | +0 | 1 | 251 | 2025-05-14 | ✅ |
+| aiml-fw/apm/analysis-module | 1 | +12 | 1 | 116 | 2025-09-26 | ✅ |
+| aiml-fw/apm/influx-wrapper | 1 | +12 | 1 | 116 | 2025-09-26 | ✅ |
+| aiml-fw/apm/monitoring-server | 1 | +12 | 1 | 116 | 2025-09-26 | ✅ |
+| aiml-fw/awmf/cli | 1 | +12 | 1 | 116 | 2025-09-26 | ✅ |
+| ric-plt/vespamgr | 1 | +0 | 1 | 69 | 2025-11-12 | ✅ |
+| smo/o1 | 1 | +9 | 1 | 266 | 2025-04-29 | ✅ |
+| .github | 0 | +0 | 0 | 416 | 2024-11-30 | ☑️ |
+| aiml-fw | 0 | +0 | 0 | 634 | 2024-04-26 | ☑️ |
+| aiml-fw/aihp/ips/kserve-adapter | 0 | +0 | 0 | 418 | 2024-11-28 | ☑️ |
+| aiml-fw/aihp/tps/kserve-adapter | 0 | +0 | 0 | 1,211 | 2022-09-27 | 🛑 |
+| aiml-fw/apm/monitoring-agent | 0 | +0 | 0 | 448 | 2024-10-29 | ☑️ |
+| com/golog | 0 | +0 | 0 | 629 | 2024-05-01 | ☑️ |
+| com/gs-lite | 0 | +0 | 0 | 1,767 | 2021-03-20 | 🛑 |
+| com/log | 0 | +0 | 0 | 629 | 2024-05-01 | ☑️ |
+| com/pylog | 0 | +0 | 0 | 629 | 2024-05-01 | ☑️ |
+| it/dev | 0 | +0 | 0 | 629 | 2024-05-01 | ☑️ |
+| it/otf | 0 | +0 | 0 | 1,623 | 2021-08-11 | 🛑 |
+| o-du/phy | 0 | +0 | 0 | 370 | 2025-01-15 | ☑️ |
+| ric-app/ad | 0 | +0 | 0 | 635 | 2024-04-25 | ☑️ |
+| ric-app/ad-cell | 0 | +0 | 0 | 455 | 2024-10-22 | ☑️ |
+| ric-app/bouncer | 0 | +0 | 0 | 936 | 2023-06-29 | ☑️ |
+| ric-app/ccc | 0 | +0 | 0 | 858 | 2023-09-15 | ☑️ |
+| ric-app/hw | 0 | +0 | 0 | 1,788 | 2021-02-27 | 🛑 |
+| ric-app/hw-go | 0 | +0 | 0 | 1,131 | 2022-12-16 | 🛑 |
+| ric-app/hw-python | 0 | +0 | 0 | 1,130 | 2022-12-17 | 🛑 |
+| ric-app/hw-rust | 0 | +0 | 0 | 571 | 2024-06-28 | ☑️ |
+| ric-app/kpimon-go | 0 | +0 | 0 | 607 | 2024-05-23 | ☑️ |
+| ric-app/lp | 0 | +0 | 0 | 629 | 2024-05-01 | ☑️ |
+| ric-app/mc | 0 | +0 | 0 | 630 | 2024-04-30 | ☑️ |
+| ric-app/qp | 0 | +0 | 0 | 635 | 2024-04-25 | ☑️ |
+| ric-app/qp-aimlfw | 0 | +0 | 0 | 1,132 | 2022-12-15 | 🛑 |
+| ric-app/rc | 0 | +0 | 0 | 987 | 2023-05-09 | ☑️ |
+| ric-app/ric-sdk-py | 0 | +0 | 0 | 1,790 | 2021-02-25 | 🛑 |
+| ric-app/ts | 0 | +0 | 0 | 1,099 | 2023-01-17 | 🛑 |
+| ric-plt/alarm-cpp | 0 | +0 | 0 | 629 | 2024-05-01 | ☑️ |
+| ric-plt/asn1-documents | 0 | +0 | 0 | 872 | 2023-09-01 | ☑️ |
+| ric-plt/conflictmgr | 0 | +0 | 0 | 372 | 2025-01-13 | ☑️ |
+| ric-plt/dbaas/hiredis-vip | 0 | +0 | 0 | 721 | 2024-01-30 | ☑️ |
+| ric-plt/demo1 | 0 | +0 | 0 | 2,264 | 2019-11-09 | 🛑 |
+| ric-plt/jaegeradapter | 0 | +0 | 0 | 629 | 2024-05-01 | ☑️ |
+| ric-plt/lib/rmr | 0 | +0 | 0 | 629 | 2024-05-01 | ☑️ |
+| ric-plt/libe2ap | 0 | +0 | 0 | 629 | 2024-05-01 | ☑️ |
+| ric-plt/nodeb-rnib | 0 | +0 | 0 | 629 | 2024-05-01 | ☑️ |
+| ric-plt/ric-test | 0 | +0 | 0 | 2,264 | 2019-11-09 | 🛑 |
+| ric-plt/ricctl | 0 | +0 | 0 | 1,544 | 2021-10-29 | 🛑 |
+| ric-plt/ricdms | 0 | +0 | 0 | 721 | 2024-01-30 | ☑️ |
+| ric-plt/sdl | 0 | +0 | 0 | 629 | 2024-05-01 | ☑️ |
+| ric-plt/sdlgo | 0 | +0 | 0 | 627 | 2024-05-03 | ☑️ |
+| ric-plt/sdlpy | 0 | +0 | 0 | 629 | 2024-05-01 | ☑️ |
+| ric-plt/streaming-protobufs | 0 | +0 | 0 | 1,579 | 2021-09-24 | 🛑 |
+| ric-plt/stslgo | 0 | +0 | 0 | 1,218 | 2022-09-20 | 🛑 |
+| ric-plt/tracelibcpp | 0 | +0 | 0 | 1,967 | 2020-09-01 | 🛑 |
+| ric-plt/tracelibgo | 0 | +0 | 0 | 628 | 2024-05-02 | ☑️ |
+| ric-plt/utils | 0 | +0 | 0 | 1,998 | 2020-08-01 | 🛑 |
+| ric-plt/xapp-frame | 0 | +0 | 0 | 619 | 2024-05-11 | ☑️ |
+| ric-plt/xapp-frame-cpp | 0 | +0 | 0 | 629 | 2024-05-01 | ☑️ |
+| ric-plt/xapp-frame-py | 0 | +0 | 0 | 628 | 2024-05-02 | ☑️ |
+| scp/oam/modeling | 0 | +0 | 0 | 1,018 | 2023-04-08 | ☑️ |
+| scp/ocu/5gnr | 0 | +0 | 0 | 2,039 | 2020-06-21 | 🛑 |
+| scp/ric-app/kpimon | 0 | +0 | 0 | 1,805 | 2021-02-10 | 🛑 |
+| scp/ric-app/ssp | 0 | +0 | 0 | 1,923 | 2020-10-15 | 🛑 |
+| sim/e2-interface | 0 | +0 | 0 | 595 | 2024-06-04 | ☑️ |
+| sim/e2-interface-data | 0 | +0 | 0 | 1,893 | 2020-11-14 | 🛑 |
+| sim/o1-interface | 0 | +0 | 0 | 572 | 2024-06-27 | ☑️ |
+| smo/pkg | 0 | +0 | 0 | 1,385 | 2022-04-06 | 🛑 |
+| smo/ves | 0 | +0 | 0 | 647 | 2024-04-13 | ☑️ |
 
 **Total:** 116 repositories
 
@@ -520,8 +520,8 @@ The data presented in the table below covers the past 365 days.
 | nonrtric/rapp/orufhrecovery | Go | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/a1 | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/alarm-go | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
-| ric-plt/appmgr | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/dbaas | C++ | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| ric-plt/appmgr | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/o1 | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/e2 | C | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/rtmgr | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
@@ -534,68 +534,68 @@ The data presented in the table below covers the past 365 days.
 | nonrtric/rapp/ransliceassurance | Go | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/ric-dep | Smarty | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/xapp-frame-rust | Rust | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| aiml-fw/apm/analysis-module | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| aiml-fw/apm/monitoring-server | Go | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aiml-fw/apm/influx-wrapper | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| aiml-fw/apm/analysis-module | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aiml-fw/awmf/cli | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| aiml-fw/apm/monitoring-server | Go | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | ric-plt/vespamgr | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | smo/o1 | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | aiml-fw/aihp/tps/kserve-adapter | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | aiml-fw/apm/monitoring-agent | Go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | aiml-fw/aihp/ips/kserve-adapter | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/dbaas/hiredis-vip | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| ric-plt/lib/rmr | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | scp/oam/modeling | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | scp/ocu/5gnr | C | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| ric-plt/lib/rmr | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | scp/ric-app/ssp | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | scp/ric-app/kpimon | C | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | com/golog | Go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | com/gs-lite | C | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| com/log | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | com/pylog | Python | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
+| com/log | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | it/dev | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-app/ad | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-app/ad-cell | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | it/otf | TypeScript | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-app/ccc | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| o-du/phy | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-app/ad-cell | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-app/hw-go | Go | ❌ | ❌ | ✅ | ❌ | ❌ | 🛑 |
-| ric-app/bouncer | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-app/hw-python | Python | ❌ | ❌ | ✅ | ❌ | ❌ | 🛑 |
+| o-du/phy | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-app/bouncer | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-app/hw-rust | Rust | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | ric-app/hw | C | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-app/lp | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-app/ric-sdk-py | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ric-app/kpimon-go | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-app/qp-aimlfw | Go | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| ric-app/ric-sdk-py | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ric-app/qp | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-app/mc | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-app/qp | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/alarm-cpp | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-app/ts | C++ | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-plt/asn1-documents | Python | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
+| ric-app/rc | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/conflictmgr | Go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-plt/demo1 | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ric-app/rc | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/jaegeradapter | Python | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-plt/nodeb-rnib | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/libe2ap | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/ric-test | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ric-plt/ricctl | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ric-plt/ricdms | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-plt/sdlpy | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/sdlgo | Go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
+| ric-plt/sdlpy | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/stslgo | Go | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ric-plt/streaming-protobufs | Go | ❌ | ❌ | ✅ | ❌ | ❌ | 🛑 |
 | ric-plt/tracelibcpp | C++ | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-plt/tracelibgo | Go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-plt/sdl | C++ | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-plt/utils | C++ | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| ric-plt/xapp-frame-cpp | C++ | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | sim/e2-interface-data | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| ric-plt/xapp-frame-cpp | C++ | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/xapp-frame-py | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/xapp-frame | Go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| smo/pkg | Python | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | sim/e2-interface | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| smo/pkg | Python | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | .github | None | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | sim/o1-interface | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | smo/ves | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
