@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: Linux Foundation
 
-**Generated:** January 21, 2026 at 07:28 UTC
+**Generated:** January 22, 2026 at 07:27 UTC
 **Schema Version:** 1.2.0
 
 ## 📈 Global Summary
@@ -187,41 +187,41 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 |----------------|---------|---------|--------------|---------------|------------------|--------|
-| releng/info-master | 108 | +480 | 5 | 61 | 2025-11-21 | ✅ |
-| sandbox | 84 | +212138 | 2 | 13 | 2026-01-08 | ✅ |
-| releng/gerrit_to_platform | 40 | +700 | 5 | 6 | 2026-01-15 | ✅ |
-| releng/global-jjb | 27 | +359 | 6 | 0 | 2026-01-21 | ✅ |
-| releng/lftools | 25 | +984 | 4 | 5 | 2026-01-16 | ✅ |
-| releng/common-packer | 15 | +1524 | 4 | 13 | 2026-01-08 | ✅ |
-| ansible/roles | 10 | +0 | 1 | 11 | 2026-01-10 | ✅ |
-| ansible/roles/java-install | 8 | +88 | 2 | 40 | 2025-12-12 | ✅ |
-| ansible/roles/lf-recommended-tools | 8 | +56 | 2 | 13 | 2026-01-08 | ✅ |
-| ansible/roles/python-install | 8 | +13 | 2 | 31 | 2025-12-21 | ✅ |
-| ansible/roles/system-update | 8 | +34 | 1 | 23 | 2025-12-29 | ✅ |
-| ansible/roles/puppet-install | 7 | +60 | 2 | 12 | 2026-01-09 | ✅ |
-| releng/docs | 6 | +27 | 3 | 155 | 2025-08-19 | ✅ |
-| ansible/roles/lf-dev-libs | 5 | +111 | 1 | 36 | 2025-12-16 | ✅ |
-| ansible/roles/packer-install | 5 | +59 | 1 | 36 | 2025-12-16 | ✅ |
-| ansible/roles/docker-install | 4 | +8 | 1 | 13 | 2026-01-08 | ✅ |
-| ansible/roles/haveged-install | 4 | +23 | 1 | 36 | 2025-12-16 | ✅ |
-| ansible/roles/shellcheck-install | 4 | +69 | 1 | 36 | 2025-12-16 | ✅ |
-| ansible/roles/sysstat-install | 3 | +33 | 1 | 36 | 2025-12-16 | ✅ |
-| releng/docs-conf | 3 | +15 | 1 | 5 | 2026-01-16 | ✅ |
-| ansible/roles/mono-install | 2 | +72 | 1 | 36 | 2025-12-16 | ✅ |
-| ansible/roles/protobuf-install | 0 | +0 | 0 | 454 | 2024-10-24 | ☑️ |
-| clav2test/ccla-only-project | 0 | +0 | 0 | 2,574 | 2019-01-04 | 🛑 |
-| clav2test/icla-and-ccla-project | 0 | +0 | 0 | 1,771 | 2021-03-17 | 🛑 |
-| lfn/process | 0 | +0 | 0 | 2,783 | 2018-06-09 | 🛑 |
-| puppet/modules/gce | 0 | +0 | 0 | 3,274 | 2017-02-03 | 🛑 |
-| puppet/modules/mailman3 | 0 | +0 | 0 | 3,492 | 2016-06-30 | 🛑 |
-| releng | 0 | +0 | 0 | 686 | 2024-03-06 | ☑️ |
-| releng/ci-workshop | 0 | +0 | 0 | 1,235 | 2022-09-04 | 🛑 |
-| releng/license-checker | 0 | +0 | 0 | 2,790 | 2018-06-02 | 🛑 |
-| releng/nexus-upload | 0 | +0 | 0 | 600 | 2024-05-31 | ☑️ |
-| releng/pipelines | 0 | +0 | 0 | 1,262 | 2022-08-08 | 🛑 |
-| releng/python-one-password | 0 | +0 | 0 | 854 | 2023-09-20 | ☑️ |
-| releng/sigul-docker | 0 | +0 | 0 | 796 | 2023-11-17 | ☑️ |
-| sandbox-info-master | 0 | +0 | 0 | 1,945 | 2020-09-24 | 🛑 |
+| releng/info-master | 108 | +480 | 5 | 62 | 2025-11-21 | ✅ |
+| sandbox | 84 | +212138 | 2 | 14 | 2026-01-08 | ✅ |
+| releng/gerrit_to_platform | 40 | +700 | 5 | 7 | 2026-01-15 | ✅ |
+| releng/global-jjb | 27 | +359 | 6 | 1 | 2026-01-21 | ✅ |
+| releng/lftools | 25 | +984 | 4 | 6 | 2026-01-16 | ✅ |
+| releng/common-packer | 15 | +1524 | 4 | 14 | 2026-01-08 | ✅ |
+| ansible/roles | 10 | +0 | 1 | 12 | 2026-01-10 | ✅ |
+| ansible/roles/java-install | 8 | +88 | 2 | 41 | 2025-12-12 | ✅ |
+| ansible/roles/lf-recommended-tools | 8 | +56 | 2 | 14 | 2026-01-08 | ✅ |
+| ansible/roles/python-install | 8 | +13 | 2 | 32 | 2025-12-21 | ✅ |
+| ansible/roles/system-update | 8 | +34 | 1 | 24 | 2025-12-29 | ✅ |
+| ansible/roles/puppet-install | 7 | +60 | 2 | 13 | 2026-01-09 | ✅ |
+| releng/docs | 6 | +27 | 3 | 156 | 2025-08-19 | ✅ |
+| ansible/roles/lf-dev-libs | 5 | +111 | 1 | 37 | 2025-12-16 | ✅ |
+| ansible/roles/packer-install | 5 | +59 | 1 | 37 | 2025-12-16 | ✅ |
+| ansible/roles/docker-install | 4 | +8 | 1 | 14 | 2026-01-08 | ✅ |
+| ansible/roles/haveged-install | 4 | +23 | 1 | 37 | 2025-12-16 | ✅ |
+| ansible/roles/shellcheck-install | 4 | +69 | 1 | 37 | 2025-12-16 | ✅ |
+| ansible/roles/sysstat-install | 3 | +33 | 1 | 37 | 2025-12-16 | ✅ |
+| releng/docs-conf | 3 | +15 | 1 | 6 | 2026-01-16 | ✅ |
+| ansible/roles/mono-install | 2 | +72 | 1 | 37 | 2025-12-16 | ✅ |
+| ansible/roles/protobuf-install | 0 | +0 | 0 | 455 | 2024-10-24 | ☑️ |
+| clav2test/ccla-only-project | 0 | +0 | 0 | 2,575 | 2019-01-04 | 🛑 |
+| clav2test/icla-and-ccla-project | 0 | +0 | 0 | 1,772 | 2021-03-17 | 🛑 |
+| lfn/process | 0 | +0 | 0 | 2,784 | 2018-06-09 | 🛑 |
+| puppet/modules/gce | 0 | +0 | 0 | 3,275 | 2017-02-03 | 🛑 |
+| puppet/modules/mailman3 | 0 | +0 | 0 | 3,493 | 2016-06-30 | 🛑 |
+| releng | 0 | +0 | 0 | 687 | 2024-03-06 | ☑️ |
+| releng/ci-workshop | 0 | +0 | 0 | 1,236 | 2022-09-04 | 🛑 |
+| releng/license-checker | 0 | +0 | 0 | 2,791 | 2018-06-02 | 🛑 |
+| releng/nexus-upload | 0 | +0 | 0 | 601 | 2024-05-31 | ☑️ |
+| releng/pipelines | 0 | +0 | 0 | 1,263 | 2022-08-08 | 🛑 |
+| releng/python-one-password | 0 | +0 | 0 | 855 | 2023-09-20 | ☑️ |
+| releng/sigul-docker | 0 | +0 | 0 | 797 | 2023-11-17 | ☑️ |
+| sandbox-info-master | 0 | +0 | 0 | 1,946 | 2020-09-24 | 🛑 |
 
 **Total:** 35 repositories
 
@@ -238,14 +238,14 @@ The data presented in the table below covers the past 365 days.
 | ansible/roles | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | ansible/roles/lf-recommended-tools | Python | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/java-install | Python | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| ansible/roles/system-update | Python | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/python-install | Python | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| ansible/roles/system-update | Python | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/puppet-install | Python | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | releng/docs | Python | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
-| ansible/roles/lf-dev-libs | Python | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/packer-install | Python | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| ansible/roles/haveged-install | Python | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| ansible/roles/lf-dev-libs | Python | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/docker-install | Python | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| ansible/roles/haveged-install | Python | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/shellcheck-install | Python | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/sysstat-install | Python | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | releng/docs-conf | Python | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |
