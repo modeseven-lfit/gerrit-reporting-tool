@@ -10,15 +10,14 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Repository Reporting System">
     <meta name="theme" content="{{ config.theme | default('default') }}">
-    <title>{{ project.name }} - Repository Analysis Report</title>
+    <title>{{ project.name | default('Repository Analysis') }} - {% if project.project_type == 'github' %}GitHub{% else %}Gerrit{% endif %} Project Analysis Report</title>
 
-    {#- Theme CSS - Use relative path to themes directory -#}
-    <link rel="stylesheet" href="../themes/{{ config.theme | default('default') }}/theme.css">
+    {#- Theme CSS - Local file copied to output directory -#}
+    <link rel="stylesheet" href="theme.css">
 
-    {#- Fallback to default theme if custom theme fails to load -#}
-    <noscript>
-        <link rel="stylesheet" href="../themes/default/theme.css">
-    </noscript>
+    {#- DataTables CSS - Conditionally loaded from CDN -#}
+    {% import 'html/components/datatables_support.html.j2' as datatables %}
+    {{ datatables.datatables_css(config) }}
 
     {#- Inline styles for print -#}
     <style>
@@ -35,36 +34,36 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
     {#- Page Header -#}
     <header class="page-header">
         <div class="container">
-            <h1>{{ project.name }}</h1>
+            <h1>📊 {% if project.project_type == 'github' %}GitHub{% else %}Gerrit{% endif %} Project Analysis Report: {{ project.name | default('Repository Analysis') }}</h1>
             <div class="metadata">
                 <p class="generated-at">
                     <strong>Generated:</strong>
-                    <time datetime="{{ project.generated_at }}">{{ project.generated_at_formatted }}</time>
+                    <time datetime="{{ project.generated_at | default('') }}">{{ project.generated_at_formatted | default('Unknown') }}</time>
                 </p>
                 <p class="schema-version">
-                    <strong>Schema Version:</strong> {{ project.schema_version }}
+                    <strong>Schema Version:</strong> {{ project.schema_version | default('1.0') }}
                 </p>
             </div>
         </div>
     </header>
 
-    {#- Table of Contents -#}
-    {% include 'html/components/table_of_contents.html.j2' %}
-
     {#- Main Content -#}
     <main id="main-content" class="container">
+
+        {#- Table of Contents -#}
+        {% include 'html/components/table_of_contents.html.j2' %}
 
         {#- Summary Section -#}
         {% include 'html/sections/summary.html.j2' %}
 
-        {#- Repositories Section -#}
-        {% include 'html/sections/repositories.html.j2' %}
+        {#- Organizations Section -#}
+        {% include 'html/sections/organizations.html.j2' %}
 
         {#- Contributors Section -#}
         {% include 'html/sections/contributors.html.j2' %}
 
-        {#- Organizations Section -#}
-        {% include 'html/sections/organizations.html.j2' %}
+        {#- Repositories Section -#}
+        {% include 'html/sections/repositories.html.j2' %}
 
         {#- Features Section -#}
         {% include 'html/sections/features.html.j2' %}
@@ -74,6 +73,246 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
         {#- Orphaned Jobs Section -#}
         {% include 'html/sections/orphaned_jobs.html.j2' %}
+
+        {#- Unattributed Jobs Section -#}
+        {% include 'html/sections/unattributed_jobs.html.j2' %}
+
+        {#- INFO.yaml Sections -#}
+        {% if info_yaml.has_projects %}
+        <section id="info-yaml-committers" class="report-section">
+            <h2>📋 Committer INFO.yaml Report</h2>
+
+            <p>This report shows project information from INFO.yaml files, including lifecycle state, project leads, and committer activity status.</p>
+
+            {% set projects = info_yaml.projects %}
+            {% set group_by_server = (info_yaml.servers | length) > 1 %}
+
+            {% if group_by_server %}
+                {#- Group by server if multiple servers -#}
+                {% set projects_by_server = {} %}
+                {% for project in projects %}
+                    {% set server = project.gerrit_server | default('Unknown') %}
+                    {% if server not in projects_by_server %}
+                        {% set _ = projects_by_server.update({server: []}) %}
+                    {% endif %}
+                    {% set _ = projects_by_server[server].append(project) %}
+                {% endfor %}
+
+                {% for server, server_projects in projects_by_server.items()|sort %}
+                <h3>{{ server }}</h3>
+                <table class="info-yaml-table dt-enabled">
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Created</th>
+                            <th>Lifecycle/State</th>
+                            <th>Project Lead</th>
+                            <th>Committers</th>
+                            <th>Committers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for project in server_projects|sort(attribute='project_name') %}
+                        {%- set issue_tracking = project.issue_tracking -%}
+                        {%- set project_lead = project.project_lead -%}
+                        {%- set committers = project.committers -%}
+
+                        {#- Format project name with issue tracker link -#}
+                        {%- set full_url = issue_tracking.url -%}
+                        {%- if issue_tracking.key and issue_tracking.url -%}
+                          {#- Construct full URL with project key if URL is incomplete -#}
+                          {%- if issue_tracking.url.rstrip('/').endswith('/projects') -%}
+                            {%- set full_url = issue_tracking.url.rstrip('/') ~ '/' ~ issue_tracking.key -%}
+                          {%- endif -%}
+                        {%- endif -%}
+                        {%- if full_url -%}
+                          {%- if issue_tracking.is_valid -%}
+                            {%- set project_name_display = '<a href="' ~ full_url ~ '" target="_blank">' ~ project.project_name ~ '</a>' -%}
+                          {%- else -%}
+                            {%- set error_msg = issue_tracking.validation_error|default('Unknown error') -%}
+                            {%- set project_name_display = '<span style="color: red;" title="⚠️ Broken project issue-tracker link: ' ~ error_msg ~ '">' ~ project.project_name ~ '</span>' -%}
+                          {%- endif -%}
+                        {%- else -%}
+                          {%- set project_name_display = project.project_name -%}
+                        {%- endif -%}
+
+                        {#- Find project lead in committers for activity status -#}
+                        {%- set lead_name = project_lead.name if project_lead else 'Unknown' -%}
+                        {%- set lead_committer = None -%}
+                        {%- for c in committers -%}
+                          {%- if c.name == lead_name -%}
+                            {%- set lead_committer = c -%}
+                          {%- endif -%}
+                        {%- endfor -%}
+
+                        {#- Format project lead with color -#}
+                        {%- if lead_committer -%}
+                          {%- if lead_committer.activity_color == 'green' -%}
+                            {%- set lead_display = '<span style="color: green;" title="✅ Current - commits within last 365 days">' ~ lead_name ~ '</span>' -%}
+                          {%- elif lead_committer.activity_color == 'orange' -%}
+                            {%- set lead_display = '<span style="color: orange;" title="☑️ Active - commits between 365-1095 days">' ~ lead_name ~ '</span>' -%}
+                          {%- elif lead_committer.activity_color == 'red' -%}
+                            {%- set lead_display = '<span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">' ~ lead_name ~ '</span>' -%}
+                          {%- else -%}
+                            {%- set lead_display = '<span style="color: gray;" title="Unknown activity status">' ~ lead_name ~ '</span>' -%}
+                          {%- endif -%}
+                        {%- else -%}
+                          {%- set lead_display = '<span style="color: gray;" title="Unknown activity status">' ~ lead_name ~ '</span>' -%}
+                        {%- endif -%}
+
+                        {#- Format committers (excluding project lead) -#}
+                        {%- set committer_list = [] -%}
+                        {%- for c in committers -%}
+                          {%- if c.name != lead_name -%}
+                            {%- if c.activity_color == 'green' -%}
+                              {%- set colored_name = '<span style="color: green;" title="✅ Current - commits within last 365 days">' ~ c.name ~ '</span>' -%}
+                            {%- elif c.activity_color == 'orange' -%}
+                              {%- set colored_name = '<span style="color: orange;" title="☑️ Active - commits between 365-1095 days">' ~ c.name ~ '</span>' -%}
+                            {%- elif c.activity_color == 'red' -%}
+                              {%- set colored_name = '<span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">' ~ c.name ~ '</span>' -%}
+                            {%- else -%}
+                              {%- set colored_name = '<span style="color: gray;" title="Unknown activity status">' ~ c.name ~ '</span>' -%}
+                            {%- endif -%}
+                            {%- set _ = committer_list.append(colored_name) -%}
+                          {%- endif -%}
+                        {%- endfor -%}
+                        {%- set committers_display = committer_list|join('<br>') if committer_list else 'None' -%}
+
+                        <tr>
+                            <td>{{ project_name_display }}</td>
+                            <td>{{ project.creation_date }}</td>
+                            <td>{{ project.lifecycle_state }}</td>
+                            <td>{{ lead_display }}</td>
+                            <td>{{ project.committers|length }}</td>
+                            <td>{{ committers_display }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% endfor %}
+            {% else %}
+                {#- Single table for all projects -#}
+                <table class="info-yaml-table dt-enabled">
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Created</th>
+                            <th>Lifecycle/State</th>
+                            <th>Project Lead</th>
+                            <th>Committers</th>
+                            <th>Committers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for project in projects|sort(attribute='project_name') %}
+                        {%- set issue_tracking = project.issue_tracking -%}
+                        {%- set project_lead = project.project_lead -%}
+                        {%- set committers = project.committers -%}
+
+                        {#- Format project name with issue tracker link -#}
+                        {%- set full_url = issue_tracking.url -%}
+                        {%- if issue_tracking.key and issue_tracking.url -%}
+                          {#- Construct full URL with project key if URL is incomplete -#}
+                          {%- if issue_tracking.url.rstrip('/').endswith('/projects') -%}
+                            {%- set full_url = issue_tracking.url.rstrip('/') ~ '/' ~ issue_tracking.key -%}
+                          {%- endif -%}
+                        {%- endif -%}
+                        {%- if full_url -%}
+                          {%- if issue_tracking.is_valid -%}
+                            {%- set project_name_display = '<a href="' ~ full_url ~ '" target="_blank">' ~ project.project_name ~ '</a>' -%}
+                          {%- else -%}
+                            {%- set error_msg = issue_tracking.validation_error|default('Unknown error') -%}
+                            {%- set project_name_display = '<span style="color: red;" title="⚠️ Broken project issue-tracker link: ' ~ error_msg ~ '">' ~ project.project_name ~ '</span>' -%}
+                          {%- endif -%}
+                        {%- else -%}
+                          {%- set project_name_display = project.project_name -%}
+                        {%- endif -%}
+
+                        {#- Find project lead in committers for activity status -#}
+                        {%- set lead_name = project_lead.name if project_lead else 'Unknown' -%}
+                        {%- set lead_committer = None -%}
+                        {%- for c in committers -%}
+                          {%- if c.name == lead_name -%}
+                            {%- set lead_committer = c -%}
+                          {%- endif -%}
+                        {%- endfor -%}
+
+                        {#- Format project lead with color -#}
+                        {%- if lead_committer -%}
+                          {%- if lead_committer.activity_color == 'green' -%}
+                            {%- set lead_display = '<span style="color: green;" title="✅ Current - commits within last 365 days">' ~ lead_name ~ '</span>' -%}
+                          {%- elif lead_committer.activity_color == 'orange' -%}
+                            {%- set lead_display = '<span style="color: orange;" title="☑️ Active - commits between 365-1095 days">' ~ lead_name ~ '</span>' -%}
+                          {%- elif lead_committer.activity_color == 'red' -%}
+                            {%- set lead_display = '<span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">' ~ lead_name ~ '</span>' -%}
+                          {%- else -%}
+                            {%- set lead_display = '<span style="color: gray;" title="Unknown activity status">' ~ lead_name ~ '</span>' -%}
+                          {%- endif -%}
+                        {%- else -%}
+                          {%- set lead_display = '<span style="color: gray;" title="Unknown activity status">' ~ lead_name ~ '</span>' -%}
+                        {%- endif -%}
+
+                        {#- Format committers (excluding project lead) -#}
+                        {%- set committer_list = [] -%}
+                        {%- for c in committers -%}
+                          {%- if c.name != lead_name -%}
+                            {%- if c.activity_color == 'green' -%}
+                              {%- set colored_name = '<span style="color: green;" title="✅ Current - commits within last 365 days">' ~ c.name ~ '</span>' -%}
+                            {%- elif c.activity_color == 'orange' -%}
+                              {%- set colored_name = '<span style="color: orange;" title="☑️ Active - commits between 365-1095 days">' ~ c.name ~ '</span>' -%}
+                            {%- elif c.activity_color == 'red' -%}
+                              {%- set colored_name = '<span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">' ~ c.name ~ '</span>' -%}
+                            {%- else -%}
+                              {%- set colored_name = '<span style="color: gray;" title="Unknown activity status">' ~ c.name ~ '</span>' -%}
+                            {%- endif -%}
+                            {%- set _ = committer_list.append(colored_name) -%}
+                          {%- endif -%}
+                        {%- endfor -%}
+                        {%- set committers_display = committer_list|join('<br>') if committer_list else 'None' -%}
+
+                        <tr>
+                            <td>{{ project_name_display }}</td>
+                            <td>{{ project.creation_date }}</td>
+                            <td>{{ project.lifecycle_state }}</td>
+                            <td>{{ lead_display }}</td>
+                            <td>{{ project.committers|length }}</td>
+                            <td>{{ committers_display }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% endif %}
+        </section>
+        {% endif %}
+
+        {% if info_yaml.has_lifecycle_summary %}
+        <section id="info-yaml-lifecycle" class="report-section">
+            <h2>📊 INFO.yaml Lifecycle State Summary</h2>
+
+            <table class="lifecycle-summary-table">
+                <thead>
+                    <tr>
+                        <th>Lifecycle State</th>
+                        <th>Gerrit Project Count</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for summary in info_yaml.lifecycle_summary %}
+                    <tr>
+                        <td>{{ summary.state }}</td>
+                        <td>{{ summary.count }}</td>
+                        <td>{{ summary.percentage|round(1) }}%</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <p class="total-count">
+                <strong>Total Projects:</strong> {{ info_yaml.total_projects }}
+            </p>
+        </section>
+        {% endif %}
 
         {#- Time Windows Section -#}
         {% if time_windows is defined and time_windows is iterable and time_windows|length > 0 %}
@@ -130,12 +369,15 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
     {#- Page Footer -#}
     <footer class="page-footer">
         <div class="container">
-            <p class="attribution">Report generated by <strong>Repository Reporting System</strong></p>
+            <p class="attribution">Generated with ❤️ by <strong>Release Engineering</strong></p>
             <p class="timestamp">
                 <time datetime="{{ project.generated_at }}">{{ project.generated_at_formatted }}</time>
             </p>
         </div>
     </footer>
+
+    {#- DataTables JavaScript - Conditionally loaded from CDN -#}
+    {{ datatables.datatables_js(config) }}
 
 </body>
 </html>

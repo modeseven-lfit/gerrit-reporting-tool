@@ -312,8 +312,10 @@ def apply_auto_derivation(config: Dict[str, Any]) -> Dict[str, Any]:
     Apply intelligent auto-derivation of configuration values.
 
     Auto-derives:
-    - github_org from gerrit.host (e.g., gerrit.onap.org -> onap)
+    - github_org from gerrit.host (e.g., gerrit.onap.org -> onap) for Gerrit projects
+    - github_org from environment variable for GitHub-native projects
     - info_yaml.clone_url (uses standard LF location)
+    - gerrit.enabled based on gerrit.host presence
 
     Args:
         config: Configuration dictionary
@@ -324,23 +326,49 @@ def apply_auto_derivation(config: Dict[str, Any]) -> Dict[str, Any]:
     # Get Gerrit host if available
     gerrit_host = config.get('gerrit', {}).get('host', '')
 
-    # Auto-derive GitHub organization from Gerrit host
-    if gerrit_host and not config.get('extensions', {}).get('github_api', {}).get('github_org'):
-        # Extract org name from gerrit.{org}.org pattern
-        # Examples: gerrit.onap.org -> onap, gerrit.o-ran-sc.org -> o-ran-sc
-        parts = gerrit_host.split('.')
-        if len(parts) >= 2 and parts[0] == 'gerrit':
-            github_org = parts[1]
-            logger.debug(f"Auto-derived github_org '{github_org}' from Gerrit host '{gerrit_host}'")
+    # Auto-set gerrit.enabled based on host presence
+    if 'gerrit' not in config:
+        config['gerrit'] = {}
 
-            # Ensure extensions.github_api structure exists
+    if gerrit_host:
+        # Gerrit is available - ensure it's enabled
+        config['gerrit']['enabled'] = config.get('gerrit', {}).get('enabled', True)
+
+        # Auto-derive GitHub organization from Gerrit host for mirrored projects
+        if not config.get('extensions', {}).get('github_api', {}).get('github_org'):
+            # Extract org name from gerrit.{org}.org pattern
+            # Examples: gerrit.onap.org -> onap, gerrit.o-ran-sc.org -> o-ran-sc
+            parts = gerrit_host.split('.')
+            if len(parts) >= 2 and parts[0] == 'gerrit':
+                github_org = parts[1]
+                logger.debug(f"Auto-derived github_org '{github_org}' from Gerrit host '{gerrit_host}'")
+
+                # Ensure extensions.github_api structure exists
+                if 'extensions' not in config:
+                    config['extensions'] = {}
+                if 'github_api' not in config['extensions']:
+                    config['extensions']['github_api'] = {}
+
+                config['extensions']['github_api']['github_org'] = github_org
+                config['_github_org_auto_derived'] = True
+    else:
+        # No Gerrit host - disable Gerrit integration
+        config['gerrit']['enabled'] = False
+        logger.debug("No gerrit.host configured - Gerrit integration disabled (GitHub-native project)")
+
+        # For GitHub-native projects, github_org comes from GITHUB_ORG environment variable
+        # which is set by the workflow from PROJECTS_JSON matrix.github field
+        # The environment variable is read by util/github_org.py determine_github_org()
+        import os
+        github_org_env = os.environ.get('GITHUB_ORG', '')
+        if github_org_env and not config.get('extensions', {}).get('github_api', {}).get('github_org'):
+            logger.debug(f"Using GitHub org from environment: {github_org_env}")
             if 'extensions' not in config:
                 config['extensions'] = {}
             if 'github_api' not in config['extensions']:
                 config['extensions']['github_api'] = {}
-
-            config['extensions']['github_api']['github_org'] = github_org
-            config['_github_org_auto_derived'] = True
+            config['extensions']['github_api']['github_org'] = github_org_env
+            config['_github_org_from_env'] = True
 
     # Auto-derive info_yaml.clone_url (always use standard LF location)
     if 'info_yaml' not in config:

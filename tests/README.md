@@ -467,8 +467,8 @@ See `tests/mocks/api_mocks.py` for complete documentation.
 
 <!-- markdownlint-disable MD060 -->
 
-| Module Category | Target   | Status         |
-| --------------- | -------- | -------------- |
+| Module Category | Target   | Status          |
+| --------------- | -------- | --------------- |
 | Utilities       | 95%+     | ✅              |
 | API Clients     | 85%+     | ✅              |
 | Domain Models   | 95%+     | ✅              |

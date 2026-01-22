@@ -1,0 +1,49 @@
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2025 The Linux Foundation
+#
+# Example projects.json configuration file
+# Copy this to projects.json and add your actual credentials
+#
+# WARNING: Never commit projects.json with real credentials!
+# It is .gitignored for security.
+
+[
+  {
+    "project": "Example Project 1",
+    "slug": "example1",
+    "gerrit": "gerrit.example.org",
+    "jenkins": "jenkins.example.org"
+  },
+  {
+    "project": "Example Project 2",
+    "slug": "example2",
+    "gerrit": "gerrit.example2.org",
+    "jenkins": "jenkins.example2.org",
+    "github": "example-org"
+  },
+  {
+    "project": "Example with Jenkins Auth",
+    "slug": "example3",
+    "github": "example-github-org",
+    "jenkins": "jenkins.example3.org",
+    "jenkins_user": "your-jenkins-username",
+    "jenkins_token": "your-jenkins-api-token"
+  },
+  {
+    "project": "Example with JJB Attribution",
+    "slug": "example4",
+    "gerrit": "gerrit.example4.org",
+    "jenkins": "jenkins.example4.org",
+    "github": "example-org-4",
+    "jjb_attribution": {
+      "url": "https://gerrit.example4.org/r/ci-management",
+      "branch": "master",
+      "enabled": true
+    }
+  },
+  {
+    "project": "GitHub-only Project",
+    "slug": "example5",
+    "github": "github-only-org"
+  }
+]

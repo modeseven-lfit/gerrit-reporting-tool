@@ -3,37 +3,44 @@ SPDX-License-Identifier: Apache-2.0
 SPDX-FileCopyrightText: 2025 The Linux Foundation
 #}
 
-{#- Section: Workflows (CI/CD Jobs) -#}
+{#- Section: Workflows (CI/CD Jobs) (Markdown) -#}
 {#- Renders the workflows section with deployed CI/CD job information -#}
 {#-
     Context required:
-        - workflows (dict): CI/CD job data and status counts
+        - workflows (dict): CI/CD job data grouped by repository
         - config (dict): Configuration options
 
     This section displays:
-        - Job counts by status
-        - All deployed CI/CD jobs table
-        - Job status summaries
+        - Total counts for GitHub workflows and Jenkins jobs
+        - Table with jobs grouped by Gerrit project
+        - Each row shows: Project name, Workflows, Workflow count, Jenkins jobs, Job count
 -#}
 
 {% if config.include_sections.workflows and workflows.has_workflows %}
-## Deployed CI/CD Jobs
+{#- Determine if we have any GitHub workflows or Jenkins jobs across all repos -#}
+{%- set has_any_github_workflows = workflows.total_github_workflows | default(0) > 0 -%}
+{%- set has_any_jenkins_jobs = workflows.total_jenkins_jobs | default(0) > 0 -%}
 
-### Jobs by Status
+## 🏁 Deployed CI/CD Jobs
 
-{% for status, count in workflows.status_counts.items() %}
-- **{{ status }}:** {{ count }} jobs
+{% if has_any_github_workflows %}
+**Total GitHub workflows:** {{ workflows.total_github_workflows | default(0) }}
+
+{% endif %}
+{% if has_any_jenkins_jobs %}
+**Total Jenkins jobs:** {{ workflows.total_jenkins_jobs | default(0) }}
+
+{% endif %}
+| Gerrit Project |{% if has_any_github_workflows %} GitHub Workflows | Workflow Count |{% endif %}{% if has_any_jenkins_jobs %} Jenkins Jobs | Job Count |{% endif %}
+
+|----------------|{% if has_any_github_workflows %}-------------------|----------------|{% endif %}{% if has_any_jenkins_jobs %}--------------|-----------|{% endif %}
+
+{% for repo in workflows.repositories | sort(attribute='gerrit_project') %}
+| {{ repo.gerrit_project }} |{% if has_any_github_workflows %} {% if repo.github_workflows %}{% for workflow in repo.github_workflows | sort(attribute='name') %}{{ workflow.name | default(workflow.path | default('Unknown')) }}{% if not loop.last %}<br>{% endif %}{% endfor %}{% endif %} | {{ repo.github_workflow_count }} |{% endif %}{% if has_any_jenkins_jobs %} {% if repo.jenkins_jobs %}{% for job in repo.jenkins_jobs | sort(attribute='name') %}{{ job.name | default('Unknown') }}{% if not loop.last %}<br>{% endif %}{% endfor %}{% endif %} | {{ repo.jenkins_job_count }} |{% endif %}
+
 {% endfor %}
 
-### All Jobs
-
-| Job Name | Repository | Status |
-|----------|------------|--------|
-{% for job in workflows.all %}
-| {{ job.name }} | {{ job.repo }} | {{ job.status }} |
-{% endfor %}
-
-**Total Jobs:** {{ workflows.total_count }}
+**Total:** {{ workflows.total_repositories | default(0) }} repositories with CI/CD jobs
 
 ---
 {% endif %}

@@ -51,14 +51,16 @@ def full_data():
                 "total_lines_removed": 2000,
                 "activity_status": "active",
                 "features": {"has_ci": True, "has_tests": True},
-                "jenkins_jobs": [
-                    {
-                        "name": "job1",
-                        "status": "success",
-                        "color": "blue",
-                        "url": "http://jenkins/job1",
-                    }
-                ],
+                "jenkins": {
+                    "jobs": [
+                        {
+                            "name": "job1",
+                            "status": "success",
+                            "color": "blue",
+                            "url": "http://jenkins/job1",
+                        }
+                    ]
+                },
             },
             {
                 "gerrit_project": "repo2",
@@ -68,7 +70,7 @@ def full_data():
                 "total_lines_removed": 500,
                 "activity_status": "inactive",
                 "features": {"has_ci": False},
-                "jenkins_jobs": [],
+                "jenkins": {"jobs": []},
             },
         ],
         "metadata": {"generated_at": "2025-01-16T14:30:00Z", "report_version": "2.0.0"},
@@ -352,7 +354,7 @@ class TestContributorsContext:
         context = RenderContext(full_data, minimal_config)
         result = context.build()
 
-        assert result["contributors"]["limit"] == 20
+        assert result["contributors"]["limit"] == 30
 
     def test_contributors_limit_custom(self, full_data, full_config):
         """Test custom contributor limit from config."""
@@ -389,7 +391,7 @@ class TestOrganizationsContext:
         context = RenderContext(full_data, minimal_config)
         result = context.build()
 
-        assert result["organizations"]["limit"] == 20
+        assert result["organizations"]["limit"] == 30
 
     def test_organizations_limit_custom(self, full_data, full_config):
         """Test custom organization limit from config."""

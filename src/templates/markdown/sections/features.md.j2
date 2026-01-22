@@ -3,7 +3,7 @@ SPDX-License-Identifier: Apache-2.0
 SPDX-FileCopyrightText: 2025 The Linux Foundation
 #}
 
-{#- Section: Features -#}
+{#- Section: Features (Markdown) -#}
 {#- Renders the features section with repository feature matrix -#}
 {#-
     Context required:
@@ -12,21 +12,17 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
     This section displays:
         - Repository feature matrix showing which features are detected
-        - Feature counts and statistics
-        - Visual indicators for feature presence/absence
+        - Matches production format: Gerrit Project | Primary Type | Other Types | Dependabot | Pre-commit | ReadTheDocs | .gitreview | G2G | Status
 -#}
 
 {% if config.include_sections.features and features.has_features %}
-## Repository Feature Matrix
+## 🔧 Gerrit Project Feature Matrix
 
-| Repository | {% for feature in features.features_list %}{{ feature }} | {% endfor %}
-|------------|{% for feature in features.features_list %}:---:|{% endfor %}
+| Gerrit Project | Primary Type | Other Types | Dependabot | Pre-commit | ReadTheDocs | .gitreview | G2G | Status |
+|----------------|--------------|-------------|------------|------------|-------------|------------|-----|--------|
 {% for repo_data in features.matrix %}
-| {{ repo_data.repo_name }} | {% for feature in features.features_list %}{{ '✓' if repo_data.features[feature] else '✗' }} | {% endfor %}
+| {{ repo_data.repo_name }} | {{ repo_data.primary_type | default('N/A') }} | {% if repo_data.other_types %}{{ repo_data.other_types | join(', ') }}{% endif %} | {{ '✅' if repo_data.features.dependabot else '❌' }} | {{ '✅' if repo_data.features.pre_commit else '❌' }} | {{ '✅' if repo_data.features.readthedocs else '❌' }} | {{ '✅' if repo_data.features.gitreview else '❌' }} | {{ '✅' if repo_data.features.g2g else '❌' }} | {{ repo_data.status | default('✅') }} |
 {% endfor %}
-
-**Features Detected:** {{ features.feature_count }}
-**Repositories Analyzed:** {{ features.repositories_count }}
 
 ---
 {% endif %}

@@ -69,6 +69,10 @@ class JenkinsAPIClient(BaseAPIClient):
                 - enabled: Enable JJB Attribution (default: True if config provided)
             gerrit_host: Gerrit hostname (used to auto-derive ci-management URL)
             allow_http_fallback: If True, fallback to HTTP if HTTPS fails due to SSL errors
+
+        Environment Variables:
+            JENKINS_USER: Username for Jenkins authentication (optional)
+            JENKINS_API_TOKEN: API token for Jenkins authentication (optional)
         """
         self.host = host
         self.timeout = timeout
@@ -88,7 +92,21 @@ class JenkinsAPIClient(BaseAPIClient):
         if jjb_config and jjb_config.get("enabled", True):
             self._initialize_jjb_attribution(jjb_config, gerrit_host)
 
-        self.client = httpx.Client(timeout=timeout)
+        # Check for Jenkins authentication from environment
+        import os
+        jenkins_user = os.environ.get("JENKINS_USER")
+        jenkins_token = os.environ.get("JENKINS_API_TOKEN")
+
+        # Create httpx client with optional authentication
+        if jenkins_user and jenkins_token:
+            self.logger.info(f"Jenkins authentication enabled for user: {jenkins_user}")
+            self.client = httpx.Client(
+                timeout=timeout,
+                auth=(jenkins_user, jenkins_token)
+            )
+        else:
+            self.logger.debug("No Jenkins authentication configured (JENKINS_USER/JENKINS_API_TOKEN not set)")
+            self.client = httpx.Client(timeout=timeout)
 
         # Discover the correct API base path (and protocol)
         self._discover_api_base_path()
@@ -239,9 +257,19 @@ class JenkinsAPIClient(BaseAPIClient):
                 "Project configuration permits HTTP fallback (allow_http_fallback=True)"
             )
 
-            # Switch to HTTP
+            # Switch to HTTP (preserve authentication if present)
             self.base_url = f"http://{self.host}"
-            self.client = httpx.Client(timeout=self.timeout)
+            import os
+            jenkins_user = os.environ.get("JENKINS_USER")
+            jenkins_token = os.environ.get("JENKINS_API_TOKEN")
+
+            if jenkins_user and jenkins_token:
+                self.client = httpx.Client(
+                    timeout=self.timeout,
+                    auth=(jenkins_user, jenkins_token)
+                )
+            else:
+                self.client = httpx.Client(timeout=self.timeout)
 
             for pattern in api_patterns:
                 try:

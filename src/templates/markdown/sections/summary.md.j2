@@ -3,7 +3,7 @@ SPDX-License-Identifier: Apache-2.0
 SPDX-FileCopyrightText: 2025 The Linux Foundation
 #}
 
-{#- Section: Summary Statistics -#}
+{#- Section: Summary Statistics (Markdown) -#}
 {#- Renders the summary section with global repository statistics -#}
 {#-
     Context required:
@@ -13,68 +13,27 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
     This section displays:
         - Global statistics table
         - Repository counts by activity status
-        - Lines of code metrics
+        - Matches production format: 3 columns, "Gerrit Projects" terminology
 -#}
 
 {% if config.include_sections.summary %}
-## Summary
+## 📈 Global Summary
 
-### Global Statistics
+**✅ Current** commits within last 365 days
 
-{% set stats = [
-    {
-        'metric': 'Repositories Analyzed',
-        'value': summary.repositories_analyzed,
-        'total': summary.total_repositories
-    },
-    {
-        'metric': 'Contributors (Unique)',
-        'value': summary.unique_contributors,
-        'total': '-'
-    },
-    {
-        'metric': 'Total Commits',
-        'value': summary.total_commits_formatted,
-        'total': '-'
-    },
-    {
-        'metric': 'Total Organizations',
-        'value': summary.total_organizations,
-        'total': '-'
-    },
-    {
-        'metric': 'Active Repositories',
-        'value': summary.active_count,
-        'total': summary.repositories_analyzed
-    },
-    {
-        'metric': 'Inactive Repositories',
-        'value': summary.inactive_count,
-        'total': '-'
-    },
-    {
-        'metric': 'No Commit Repositories',
-        'value': summary.no_commit_count,
-        'total': '-'
-    },
-    {
-        'metric': 'Total Lines Added',
-        'value': summary.total_lines_added_formatted,
-        'total': '-'
-    },
-    {
-        'metric': 'Total Lines Removed',
-        'value': summary.total_lines_removed_formatted,
-        'total': '-'
-    },
-    {
-        'metric': 'Net Lines of Code',
-        'value': summary.net_lines_formatted,
-        'total': '-'
-    }
-] %}
+**☑️ Active** commits between 365-1095 days
 
-{% include 'markdown/components/stats_table.md.j2' %}
+**🛑 Inactive** no commits in 1095+ days
+
+| Metric | Count | Percentage |
+| --- | --- | --- |
+| Total {{ project.terminology.repositories }} | {{ summary.repositories_analyzed }} | 100% |
+| Current {{ project.terminology.repositories }} | {{ summary.current_count }} | {{ (summary.current_percentage | default(0) | round(1)) }}% |
+| Active {{ project.terminology.repositories }} | {{ summary.active_count }} | {{ (summary.active_percentage | default(0) | round(1)) }}% |
+| Inactive {{ project.terminology.repositories }} | {{ summary.inactive_count }} | {{ (summary.inactive_percentage | default(0) | round(1)) }}% |
+| No Apparent Commits | {{ summary.no_commit_count }} | {{ (summary.no_commit_percentage | default(0) | round(1)) }}% |
+| Total Commits | {{ summary.total_commits_formatted }} | - |
+| Total Lines of Code | {{ summary.net_lines_formatted }} | - |
 
 ---
 {% endif %}

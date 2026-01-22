@@ -12,42 +12,50 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
     This section displays:
         - Top contributors by commit count
-        - Top contributors by lines of code
         - Contributor statistics and rankings
+        - Matches production format: 8 columns, no email, includes LOC/Δ LOC
 -#}
 
 {% if config.include_sections.contributors and contributors.has_contributors %}
 <section id="contributors" class="report-section contributors-section">
-    <h2>Top Contributors</h2>
+    <h2>👥 Top Contributors</h2>
 
-    <div class="subsection">
-        {% set title = "By Commit Count" %}
-        {% set columns = [
-            {'key': 'name', 'label': 'Contributor', 'class': 'contributor-name'},
-            {'key': 'email', 'label': 'Email', 'class': 'email'},
-            {'key': 'total_commits', 'label': 'Commits', 'format': 'number'},
-            {'key': 'repositories_count', 'label': 'Repositories'}
-        ] %}
-        {% set rows = contributors.top_by_commits %}
-        {% set show_rank = true %}
-        {% set table_class = 'contributors-table' %}
-        {% include 'html/components/data_table.html.j2' %}
-    </div>
+    <p>The data presented in the table below covers the past 365 days.</p>
 
-    <div class="subsection">
-        {% set title = "By Lines of Code" %}
-        {% set columns = [
-            {'key': 'name', 'label': 'Contributor', 'class': 'contributor-name'},
-            {'key': 'email', 'label': 'Email', 'class': 'email'},
-            {'key': 'total_lines_added', 'label': 'Lines Added', 'format': 'number'},
-            {'key': 'total_lines_removed', 'label': 'Lines Removed', 'format': 'number'},
-            {'key': 'net_lines', 'label': 'Net Lines', 'format': 'number'}
-        ] %}
-        {% set rows = contributors.top_by_loc %}
-        {% set show_rank = true %}
-        {% set table_class = 'contributors-table' %}
-        {% include 'html/components/data_table.html.j2' %}
-    </div>
+    <p><strong>Contributors Found:</strong> {{ contributors.top_by_commits_count | default(0) | format_number_raw }}</p>
+
+    <table class="dt-enabled dt-no-pagination">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Contributor</th>
+                <th>Commits</th>
+                <th>LOC+</th>
+                <th>LOC−</th>
+                <th>LOCΔ</th>
+                <th>LOC±</th>
+                <th>LOC/Commit</th>
+                <th>Repos</th>
+                <th>Org</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for contributor in contributors.top_by_commits %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ contributor.name | default('Unknown') }}</td>
+                <td>{{ contributor.total_commits | default(0) }}</td>
+                <td>{{ contributor.total_lines_added | format_loc }}</td>
+                <td>{{ contributor.total_lines_removed | format_loc }}</td>
+                <td>{{ contributor.net_lines | format_loc }}</td>
+                <td>{{ contributor.delta_loc | default(0) }}</td>
+                <td>{{ contributor.avg_loc_per_commit | format_loc }}</td>
+                <td>{{ contributor.repositories_count | default(0) }}</td>
+                <td>{{ contributor.organization | default('Unknown') }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 
 </section>
 {% endif %}

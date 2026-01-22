@@ -22,10 +22,10 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 {% if show_total is not defined %}{% set show_total = true %}{% endif %}
 
 {% if show_total %}
-| Metric | Value | Total |
-|--------|-------|-------|
+| Metric | Value | Total | Percentage |
+|--------|-------|-------|------------|
 {% for stat in stats %}
-| {{ stat.metric }} | {{ stat.value }} | {{ stat.total | default('-') }} |
+| {{ stat.metric }} | {{ stat.value }} | {{ stat.total | default('-') }} | {{ stat.percentage | default('-') }} |
 {% endfor %}
 {% else %}
 | Metric | Value |

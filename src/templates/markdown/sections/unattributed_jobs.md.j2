@@ -1,0 +1,45 @@
+{#
+SPDX-License-Identifier: Apache-2.0
+SPDX-FileCopyrightText: 2025 The Linux Foundation
+#}
+
+{#- Section: Unattributed Jenkins Jobs -#}
+{#- Renders Jenkins jobs that could not be matched to any repository -#}
+{#-
+    Context required:
+        - unattributed_jobs (dict): Unattributed job data and counts
+        - config (dict): Configuration options
+
+    This section displays:
+        - List of Jenkins jobs that couldn't be matched to any repository
+        - Job details including name, URL, and status
+        - Summary statistics
+-#}
+
+{% if config.include_sections.unattributed_jobs and unattributed_jobs.has_unattributed_jobs %}
+## Unattributed Jenkins Jobs
+
+{% if unattributed_jobs.auth_warning %}
+> This project **requires authentication** to view configured jobs; you can use the URL below to login:
+>
+> [{{ unattributed_jobs.jenkins_url }}]({{ unattributed_jobs.jenkins_url }})
+
+{% endif %}
+
+{% if unattributed_jobs.description %}
+{{ unattributed_jobs.description }}
+
+{% endif %}
+
+**Total:** {{ unattributed_jobs.total_count | default(0) }} unattributed jobs
+
+### Job Details
+
+| Job Name | Status | URL |
+|----------|--------|-----|
+{% for job in unattributed_jobs.jobs %}
+| {{ job.name | default('Unknown') }} | {{ job.status | default('Unknown') }} | [View Job]({{ job.url }}) |
+{% endfor %}
+
+---
+{% endif %}

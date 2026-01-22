@@ -33,22 +33,23 @@ jobs:
     steps:
       - name: Harden Runner
         # yamllint disable-line rule:line-length
-        uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76 # v2.14.0
+        uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76  # v2.14.0
         with:
           egress-policy: audit
 
       - name: Checkout code
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        # yamllint disable-line rule:line-length
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8  # v6.0.1
         with:
           fetch-depth: 0  # Full history for comparison
 
       - name: Install uv
+        # yamllint disable-line rule:line-length
         uses: astral-sh/setup-uv@61cb8a9741eeb8a550a1b8544337180c0fc8476b  # v7.2.0
-        # v7.2.0
 
       - name: Set up Python 3.11
+        # yamllint disable-line rule:line-length
         uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405  # v6.2.0
-        # v6.1.0
         with:
           python-version: '3.11'
 
@@ -132,8 +133,9 @@ jobs:
 
       - name: Upload benchmark results
         if: always()
+        # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f  # v6.0.0
-        # v6.0.0
+        # v5.0.0
         with:
           name: performance-tracking-${{ github.run_number }}
           path: |
@@ -145,8 +147,9 @@ jobs:
 
       - name: Upload historical data
         if: always()
+        # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f  # v6.0.0
-        # v6.0.0
+        # v5.0.0
         with:
           name: benchmark-history
           path: .benchmarks/
@@ -199,8 +202,8 @@ jobs:
         if: >-
           steps.threshold-check.outcome == 'failure' &&
           github.ref == 'refs/heads/main'
+        # yamllint disable-line rule:line-length
         uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd  # v8.0.0
-        # v8.0.0
         with:
           script: |
             const fs = require('fs');
@@ -219,8 +222,8 @@ jobs:
 
       - name: Comment on recent PRs
         if: steps.threshold-check.outcome == 'failure'
+        # yamllint disable-line rule:line-length
         uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd  # v8.0.0
-        # v8.0.0
         with:
           script: |
             const { data: prs } = await github.rest.pulls.list({
@@ -256,20 +259,21 @@ jobs:
     steps:
       - name: Harden Runner
         # yamllint disable-line rule:line-length
-        uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76 # v2.14.0
+        uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76  # v2.14.0
         with:
           egress-policy: audit
 
       - name: Checkout code
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        # yamllint disable-line rule:line-length
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8  # v6.0.1
 
       - name: Install uv
+        # yamllint disable-line rule:line-length
         uses: astral-sh/setup-uv@61cb8a9741eeb8a550a1b8544337180c0fc8476b  # v7.2.0
-        # v7.2.0
 
       - name: Set up Python 3.11
+        # yamllint disable-line rule:line-length
         uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405  # v6.2.0
-        # v6.1.0
         with:
           python-version: '3.11'
 
@@ -306,8 +310,8 @@ jobs:
 
       - name: Upload memory profiles
         if: always()
+        # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f  # v6.0.0
-        # v6.0.0
         with:
           name: memory-profiles
           path: |
@@ -326,24 +330,25 @@ jobs:
     steps:
       - name: Harden Runner
         # yamllint disable-line rule:line-length
-        uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76 # v2.14.0
+        uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76  # v2.14.0
         with:
           egress-policy: audit
 
       - name: Checkout code
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        # yamllint disable-line rule:line-length
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8  # v6.0.1
 
       - name: Download benchmark results
+        # yamllint disable-line rule:line-length
         uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131  # v7.0.0
-        # v7.0.0
         with:
           pattern: performance-tracking-*
           path: ./performance-results/
           merge-multiple: true
 
       - name: Download memory profiles
+        # yamllint disable-line rule:line-length
         uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131  # v7.0.0
-        # v7.0.0
         with:
           name: memory-profiles
           path: ./memory-results/
@@ -399,8 +404,8 @@ jobs:
           EOF
 
       - name: Upload dashboard
+        # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f  # v6.0.0
-        # v6.0.0
         with:
           name: performance-dashboard
           path: performance-dashboard.md

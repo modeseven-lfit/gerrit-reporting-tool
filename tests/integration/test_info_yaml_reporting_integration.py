@@ -19,9 +19,9 @@ import pytest
 
 from domain.info_yaml import ProjectInfo
 from gerrit_reporting_tool.collectors.info_yaml import INFOYamlCollector
-from gerrit_reporting_tool.renderers.report import ReportRenderer
 from gerrit_reporting_tool.reporter import RepositoryReporter
 from rendering.info_yaml_renderer import InfoYamlRenderer
+from rendering.renderer import ModernReportRenderer
 
 
 @pytest.fixture
@@ -474,9 +474,9 @@ class TestEndToEndReportingIntegration:
 
         # Render report
         logger = logging.getLogger(__name__)
-        renderer = ReportRenderer(config_with_info_yaml, logger)
+        renderer = ModernReportRenderer(config_with_info_yaml, logger)
 
-        markdown = renderer._generate_markdown_content(report_data)
+        markdown = renderer.render_markdown(report_data)
 
         # Verify INFO.yaml section is present
         assert "📋 Committer INFO.yaml Report" in markdown
@@ -516,9 +516,9 @@ class TestEndToEndReportingIntegration:
 
         # Render report
         logger = logging.getLogger(__name__)
-        renderer = ReportRenderer(config, logger)
+        renderer = ModernReportRenderer(config, logger)
 
-        markdown = renderer._generate_markdown_content(report_data)
+        markdown = renderer.render_markdown(report_data)
 
         # Verify INFO.yaml section is NOT present
         assert "📋 Committer INFO.yaml Report" not in markdown
@@ -578,9 +578,9 @@ project: 'Bad Project'
         }
 
         logger = logging.getLogger(__name__)
-        renderer = ReportRenderer(config_with_info_yaml, logger)
+        renderer = ModernReportRenderer(config_with_info_yaml, logger)
 
-        markdown = renderer._generate_markdown_content(report_data)
+        markdown = renderer.render_markdown(report_data)
 
         # Should include error message
         assert "📋 Committer INFO.yaml Report" in markdown

@@ -48,10 +48,12 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
         ] %}
         {% set rows = orphaned_jobs.jobs %}
         {% set table_class = 'orphaned-jobs-table' %}
+        {% set enable_search = false %}
+        {% set enable_pagination = false %}
         {% include 'html/components/data_table.html.j2' %}
 
         <p class="total-count">
-            <strong>Total Orphaned Jobs:</strong> {{ orphaned_jobs.total_count }}
+            <strong>Total Orphaned Jobs:</strong> {{ orphaned_jobs.total_count | default(0) }}
         </p>
     </div>
 

@@ -49,7 +49,7 @@ try:
 except ImportError:
     __version__ = "0.0.0"  # Fallback if not installed
 
-SCHEMA_VERSION = "1.2.0"
+SCHEMA_VERSION = "1.5.0"
 DEFAULT_CONFIG_DIR = "configuration"
 DEFAULT_OUTPUT_DIR = "reports"
 
@@ -423,16 +423,19 @@ def main(args=None) -> int:
         config_path = project_output_dir / "config_resolved.json"
 
         # Write JSON report
-        reporter.renderer.render_json_report(report_data, json_path)
+        import json
+        logger.info(f"Writing JSON report to {json_path}")
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(report_data, f, indent=2, ensure_ascii=False, default=str)
 
-        # Generate Markdown report
-        markdown_content = reporter.renderer.render_markdown_report(
-            report_data, md_path
-        )
+        # Generate Markdown report using modern template system
+        logger.info(f"Generating Markdown report to {md_path}")
+        reporter.renderer.render_markdown_report(report_data, md_path)
 
-        # Generate HTML report (unless disabled)
+        # Generate HTML report using modern template system (unless disabled)
         if not (hasattr(args, 'no_html') and args.no_html):
-            reporter.renderer.render_html_report(markdown_content, html_path)
+            logger.info(f"Converting to HTML report at {html_path}")
+            reporter.renderer.render_html_report(report_data, html_path)
 
         # Write resolved configuration
         save_resolved_config(config, config_path)

@@ -149,8 +149,8 @@ class ValidationResult:
 class ConfigValidator:
     """Validates configuration against schema and semantic rules."""
 
-    CURRENT_SCHEMA_VERSION = "1.2.0"
-    COMPATIBLE_SCHEMA_VERSIONS = ["1.0.0", "1.1.0", "1.2.0"]
+    CURRENT_SCHEMA_VERSION = "1.5.0"
+    COMPATIBLE_SCHEMA_VERSIONS = ["1.0.0", "1.1.0", "1.2.0", "1.3.0", "1.4.0", "1.5.0"]
 
     def __init__(self, schema_path: Optional[Path] = None):
         """Initialize validator with optional custom schema.

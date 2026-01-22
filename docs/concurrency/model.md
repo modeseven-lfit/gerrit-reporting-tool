@@ -189,13 +189,13 @@ class APIStatistics:
 
 | Component                  | Shared? | Protection       | Notes                           |
 | -------------------------- | ------- | ---------------- | ------------------------------- |
-| `JenkinsAllocationContext` | ✅ Yes   | Internal lock    | Instance-level, not global      |
-| `APIStatistics`            | ✅ Yes   | Internal lock    | Shared across all threads       |
-| Configuration              | ✅ Yes   | Immutable        | Read-only after load            |
-| Logger                     | ✅ Yes   | Python stdlib    | Thread-safe by design           |
-| Git subprocess             | ❌ No    | Isolated         | Each thread runs own subprocess |
-| Parsed data                | ❌ No    | Thread-local     | Created per worker, no sharing  |
-| Results list               | ✅ Yes   | Main thread only | Only main thread writes         |
+| `JenkinsAllocationContext` | ✅ Yes  | Internal lock    | Instance-level, not global      |
+| `APIStatistics`            | ✅ Yes  | Internal lock    | Shared across all threads       |
+| Configuration              | ✅ Yes  | Immutable        | Read-only after load            |
+| Logger                     | ✅ Yes  | Python stdlib    | Thread-safe by design           |
+| Git subprocess             | ❌ No   | Isolated         | Each thread runs own subprocess |
+| Parsed data                | ❌ No   | Thread-local     | Created per worker, no sharing  |
+| Results list               | ✅ Yes  | Main thread only | Only main thread writes         |
 
 <!-- markdownlint-enable MD060 -->
 

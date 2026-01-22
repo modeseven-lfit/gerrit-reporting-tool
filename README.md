@@ -26,7 +26,7 @@ pip install .
 gerrit-reporting-tool generate \
   --project my-project \
   --repos-path ./repos
-```
+```text
 
 ---
 
@@ -69,7 +69,13 @@ gerrit-reporting-tool generate \
 ### 👨‍💻 Development
 
 - **[Developer Guide](docs/DEVELOPER_GUIDE.md)** - Architecture, API reference, and contributing
+- **[Template Development](docs/TEMPLATE_DEVELOPMENT.md)** - Customizing Jinja2 templates and creating new output formats
 - **[Testing Guide](docs/TESTING.md)** - Test suite documentation
+- **[Migration Guide](docs/MIGRATION_GUIDE.md)** - Production migration from legacy system
+
+### 🔍 Development Tools
+
+- **Template Audit Script** - `python scripts/audit_templates.py` - Comprehensive audit of all Jinja2 templates to verify field accesses match context builders, preventing runtime errors
 
 ---
 
@@ -86,7 +92,7 @@ uv sync
 
 # Run the tool
 uv run gerrit-reporting-tool generate --project my-project --repos-path ./repos
-```
+```text
 
 ### Using pip
 
@@ -98,7 +104,7 @@ pip install .
 # Note: repos-path should match the directory created by gerrit-clone-action
 # which defaults to the Gerrit server hostname (e.g., ./gerrit.o-ran-sc.org)
 gerrit-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org
-```
+```text
 
 **→ [Detailed Setup Instructions](SETUP.md)**
 
@@ -128,7 +134,7 @@ reports/
     ├── report.html                  # Interactive HTML (sortable tables)
     ├── config_resolved.json         # Applied configuration
     └── <PROJECT>_report_bundle.zip  # Complete bundle
-```
+```text
 
 ---
 
@@ -146,7 +152,7 @@ reports/
       --quiet
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
+```text
 
 ---
 
@@ -177,13 +183,35 @@ export CLASSIC_READ_ONLY_PAT_TOKEN=ghp_your_token_here
 
 # Then run the tool
 gerrit-reporting-tool generate --project my-project --repos-path ./repos
-```
+```text
 
 **Create token:** <https://github.com/settings/tokens>
 
 **Without a token:** The tool detects workflows but shows them as grey (unknown status) instead of colored status indicators.
 
 **See also:** [Configuration Guide](docs/CONFIGURATION.md#github-api-integration) for detailed token setup
+
+
+### Jenkins Authentication (Optional)
+
+Some Jenkins servers require authentication to view job information. If you encounter a "returned 0 jobs" error, you need to provide Jenkins credentials.
+
+**Setup:**
+
+```bash
+# Generate API token in Jenkins: User → Configure → API Token → Add new Token
+export JENKINS_USER="your-username"
+export JENKINS_API_TOKEN="your-api-token"
+
+# Then run the tool
+gerrit-reporting-tool generate --project my-project --repos-path ./repos
+```
+
+**Create token:** Log into your Jenkins instance → Your Username → Configure → API Token
+
+**Without credentials:** The tool will fail with an error if Jenkins requires authentication.
+
+**See also:** [Troubleshooting Guide](docs/TROUBLESHOOTING.md#jenkins-authentication) for detailed setup
 
 ---
 
@@ -210,6 +238,53 @@ gerrit-reporting-tool generate --project my-project --repos-path ./repos
 - 🐛 **Issues?** Check [Troubleshooting Guide](docs/TROUBLESHOOTING.md)
 - ❓ **Questions?** See [FAQ](docs/FAQ.md)
 - 📖 **Need help?** Run `gerrit-reporting-tool --help`
+- 🔍 **Developing templates?** Run `python scripts/audit_templates.py` to verify all field accesses
+
+---
+
+## 🛠️ Development Scripts
+
+### Template Audit Script
+
+```bash
+python scripts/audit_templates.py
+```text
+
+This script performs a comprehensive audit of all Jinja2 templates to:
+
+- Extract all field accesses from templates (e.g., `repo.field`, `org.field`)
+- Analyze context builders to see what fields they provide
+- Identify mismatches that could cause "Undefined variable" errors at runtime
+
+**When to use:**
+
+- Before committing template changes
+- After modifying context builders
+- When debugging template rendering errors
+- During code review to verify template correctness
+
+**Output:**
+
+- ✅ **Green checkmarks** - All required fields present
+- ⚠️ **Warnings** - Extra fields exist (safe, unused)
+- ❌ **Red errors** - Missing fields that will cause runtime failures
+
+**Example output:**
+
+```text
+================================================================================
+TEMPLATE FIELD ACCESS AUDIT
+================================================================================
+
+📄 html/sections/summary.html.j2
+  summary:
+    - active_count
+    - current_count
+    - repositories_analyzed
+
+✅ No critical issues found!
+   Extra fields are safe - they're unused.
+```text
 
 ---
 

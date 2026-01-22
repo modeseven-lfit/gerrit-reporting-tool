@@ -15,9 +15,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
         - class (str): Optional CSS class for the header
 
     Example usage:
-        {% set title = "Repository Analysis" %}
-        {% set count = 42 %}
-        {% include 'html/components/section_header.html.j2' with context %}
+        Set title and count variables then include component
 -#}
 
 {% if level is not defined or not level or level < 2 or level > 6 %}

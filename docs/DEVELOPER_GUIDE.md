@@ -61,7 +61,7 @@ report_data = reporter.analyze_repositories(Path('./repos'))
 | `generate_reports.py`   | Entry point, CLI, config | 1,861 | Main    |
 | `reporter.py`           | Main orchestration       | 522   | Phase 7 |
 | `collectors/git.py`     | Git data collection      | 1,155 | Phase 4 |
-| `renderers/report.py`   | Output generation        | 1,724 | Phase 6 |
+| `rendering/renderer.py` | Template-based rendering | ~450  | Phase 8 |
 | `features/registry.py`  | Feature detection        | 550   | Phase 3 |
 | `aggregators/data.py`   | Data aggregation         | 454   | Phase 5 |
 | `api/github_client.py`  | GitHub API               | ~330  | Phase 2 |
@@ -88,10 +88,15 @@ gerrit-reporting-tool/
     │   │   └── git.py
     │   ├── aggregators/
     │   │   └── data.py
-    │   ├── renderers/
-    │   │   └── report.py
     │   └── features/
     │       └── registry.py
+    ├── rendering/               # ⭐ Template-based rendering (Phase 8)
+    │   ├── renderer.py          # Modern report renderer
+    │   ├── context.py           # Context builder
+    │   └── formatters.py        # Template filters
+    ├── templates/               # Jinja2 templates
+    │   ├── html/
+    │   └── markdown/
     └── util/                    # Utilities
         ├── formatting.py
         ├── github_org.py
@@ -139,15 +144,16 @@ def compute_my_rollup(self, repos: list[dict]) -> dict:
 
 ### Adding a New Output Format
 
-1. **Edit:** `src/gerrit_reporting_tool/renderers/report.py`
-2. **Add method:** `def render_my_format(self, data: dict, path: Path) -> None:`
-3. **Call from:** `RepositoryReporter.generate_reports()`
+1. **Create template:** `src/templates/my_format/base.my_format.j2`
+2. **Add render method:** In `src/rendering/renderer.py`
+3. **Call from:** `main.py` or `RepositoryReporter.generate_reports()`
 
 ```python
-def render_my_format(self, data: dict, output_path: Path) -> None:
+# In renderer.py
+def render_my_format(self, data: Dict[str, Any]) -> str:
     """Render report in my custom format."""
-    # Your rendering logic
-    output_path.write_text(result)
+    context = RenderContext(data, self.config).build()
+    return self.template_renderer.render("my_format/base.my_format.j2", context)
 ```text
 
 ### Adding a New API Client
@@ -283,8 +289,9 @@ from gerrit_reporting_tool.features import FeatureRegistry
 # Aggregation
 from gerrit_reporting_tool.aggregators import DataAggregator
 
-# Rendering
-from gerrit_reporting_tool.renderers import ReportRenderer
+# Rendering (Modern Template-Based System)
+from rendering.renderer import ModernReportRenderer
+from rendering.context import RenderContext
 
 # Configuration
 from gerrit_reporting_tool.config import (
@@ -480,16 +487,25 @@ orgs = aggregator.compute_org_rollups(authors)
 summaries = aggregator.aggregate_global_data(repos)
 ```
 
-### ReportRenderer
+### ModernReportRenderer
 
-**Purpose:** Report generation
-**Location:** `src/gerrit_reporting_tool/renderers/report.py`
+**Purpose:** Template-based report generation (Phase 8)
+**Location:** `src/rendering/renderer.py`
 
 ```python
-renderer = ReportRenderer(config, logger)
-renderer.render_json_report(data, json_path)
+# Modern template-based rendering system
+renderer = ModernReportRenderer(config, logger)
+
+# JSON is handled separately (simple serialization)
+import json
+with open(json_path, 'w') as f:
+    json.dump(data, f, indent=2, ensure_ascii=False, default=str)
+
+# Markdown and HTML use Jinja2 templates
 renderer.render_markdown_report(data, md_path)
-renderer.render_html_report(markdown, html_path)
+renderer.render_html_report(data, html_path)
+```
+
 ```text
 
 ---

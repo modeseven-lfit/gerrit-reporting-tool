@@ -601,6 +601,74 @@ Solutions:
 
 ---
 
+### Error: Jenkins API - Authentication Required
+
+```text
+❌ FATAL: Jenkins server 'jenkins.aetherproject.org' is configured and accessible,
+   but returned 0 jobs. This indicates either:
+     1. The Jenkins server has no jobs configured (unlikely)
+     2. Authentication is required to view jobs (set JENKINS_USER and JENKINS_API_TOKEN)
+     3. The API endpoint is returning incomplete data
+   Please verify Jenkins configuration and permissions.
+   NOTE: No Jenkins authentication configured. If this server requires authentication,
+         set JENKINS_USER and JENKINS_API_TOKEN environment variables.
+
+💡 Suggestion: Jenkins server requires authentication to view jobs.
+
+📚 Documentation: docs/troubleshooting.md#jenkins-authentication
+```
+
+**Solution:**
+
+Many Jenkins servers require authentication to view job information. You need to provide Jenkins credentials via environment variables.
+
+1. **Generate Jenkins API Token:**
+
+   - Log into your Jenkins instance (e.g., <https://jenkins.aetherproject.org>)
+   - Click your username in top-right corner → Configure
+   - Under "API Token" section, click "Add new Token"
+   - Give it a name (e.g., "reporting-tool") and click "Generate"
+   - Copy the token immediately (it won't be shown again)
+
+2. **Set environment variables:**
+
+   ```bash
+   export JENKINS_USER="your-username"
+   export JENKINS_API_TOKEN="your-api-token-here"
+   ```
+
+3. **Run the tool with authentication:**
+
+   ```bash
+   # For local testing script
+   export JENKINS_USER="your-username"
+   export JENKINS_API_TOKEN="your-token"
+   ./testing/local-testing.sh --project Aether -vv
+
+   # Or for direct usage
+   JENKINS_USER="user" JENKINS_API_TOKEN="token" \
+   uv run gerrit-reporting-tool generate \
+     --project "Aether" \
+     --repos-path ./repos
+   ```
+
+4. **Verify authentication works:**
+
+   ```bash
+   # Test with curl using the same credentials
+   curl -u "username:api-token" \
+     "https://jenkins.aetherproject.org/api/json?tree=jobs[name]"
+   ```
+
+**Security Notes:**
+
+- Never commit Jenkins credentials to version control
+- Use API tokens, not passwords
+- Consider using a dedicated read-only service account for reporting
+- Tokens can be revoked at any time from Jenkins UI
+
+---
+
 ### Error: Network Connection Failed
 
 ```text

@@ -7,48 +7,142 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 {#- Renders the workflows section with deployed CI/CD job information -#}
 {#-
     Context required:
-        - workflows (dict): CI/CD job data and status counts
+        - workflows (dict): CI/CD job data grouped by repository
         - config (dict): Configuration options
 
     This section displays:
-        - Job counts by status
-        - All deployed CI/CD jobs table
-        - Job status summaries
+        - Total counts for GitHub workflows and Jenkins jobs
+        - Table with jobs grouped by Gerrit project
+        - Each row shows: Project name, Workflows, Workflow count, Jenkins jobs, Job count
 -#}
 
 {% if config.include_sections.workflows and workflows.has_workflows %}
+{#- Determine if we have any GitHub workflows or Jenkins jobs across all repos -#}
+{%- set has_any_github_workflows = workflows.total_github_workflows | default(0) > 0 -%}
+{%- set has_any_jenkins_jobs = workflows.total_jenkins_jobs | default(0) > 0 -%}
+
 <section id="workflows" class="report-section workflows-section">
-    <h2>Deployed CI/CD Jobs</h2>
+    <h2>🏁 Deployed CI/CD Jobs</h2>
 
-    <div class="subsection">
-        <h3>Jobs by Status</h3>
+    {% if has_any_github_workflows %}
+    <p><strong>Total GitHub workflows:</strong> {{ workflows.total_github_workflows | default(0) }}</p>
+    {% endif %}
+    {% if has_any_jenkins_jobs %}
+    <p><strong>Total Jenkins jobs:</strong> {{ workflows.total_jenkins_jobs | default(0) }}</p>
+    {% endif %}
 
-        <ul class="status-summary">
-            {% for status, count in workflows.status_counts.items() %}
-            <li>
-                <strong>{{ status }}:</strong>
-                <span class="count">{{ count }} {{ 'job' if count == 1 else 'jobs' }}</span>
-            </li>
+    <table class="data-table cicd-jobs-table dt-enabled dt-no-pagination">
+        <thead>
+            <tr>
+                <th scope="col" class="gerrit-project">Gerrit Project</th>
+                {% if has_any_github_workflows %}
+                <th scope="col" class="github-workflows">GitHub Workflows</th>
+                <th scope="col" class="workflow-count">Workflows</th>
+                {% endif %}
+                {% if has_any_jenkins_jobs %}
+                <th scope="col" class="jenkins-jobs">Jenkins Jobs</th>
+                <th scope="col" class="job-count">Jobs</th>
+                {% endif %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for repo in workflows.repositories | sort(attribute='gerrit_project') %}
+            <tr>
+                <td class="gerrit-project">{{ repo.gerrit_project }}</td>
+                {% if has_any_github_workflows %}
+                <td class="github-workflows">
+                    {% if repo.github_workflows %}
+                        {% for workflow in repo.github_workflows | sort(attribute='name') %}
+                            {%- set workflow_name = workflow.name | default(workflow.path | default('Unknown')) -%}
+                            {%- set workflow_state = workflow.state | default('unknown') -%}
+                            {%- set workflow_status = workflow.status | default('unknown') -%}
+
+                            {#- Determine CSS class based on state/status -#}
+                            {%- if workflow_state == 'active' -%}
+                                {%- if workflow_status == 'success' -%}
+                                    {%- set status_class = 'status-success' -%}
+                                {%- elif workflow_status == 'failure' -%}
+                                    {%- set status_class = 'status-failure' -%}
+                                {%- elif workflow_status == 'in_progress' or workflow_status == 'queued' -%}
+                                    {%- set status_class = 'status-in-progress' -%}
+                                {%- else -%}
+                                    {%- set status_class = 'status-no-runs' -%}
+                                {%- endif -%}
+                            {%- elif workflow_state == 'disabled' -%}
+                                {%- set status_class = 'status-disabled' -%}
+                            {%- else -%}
+                                {%- set status_class = 'status-unknown' -%}
+                            {%- endif -%}
+
+                            {#- Construct workflow URL if path is available -#}
+                            {%- set workflow_url = workflow.url | default('') -%}
+                            {%- if not workflow_url and workflow.path -%}
+                                {#- Extract filename from path for URL construction -#}
+                                {%- set workflow_file = workflow.path.split('/')[-1] -%}
+                                {%- set workflow_url = 'https://github.com/onap/' ~ repo.gerrit_project.replace('/', '-') ~ '/actions/workflows/' ~ workflow_file -%}
+                            {%- endif -%}
+
+                            {%- if workflow_url -%}
+                                <a href="{{ workflow_url }}" target="_blank"><span class="{{ status_class }} workflow-status">{{ workflow_name }}</span></a>
+                            {%- else -%}
+                                <span class="{{ status_class }} workflow-status">{{ workflow_name }}</span>
+                            {%- endif -%}
+
+                            {%- if not loop.last %}<br>{% endif -%}
+                        {% endfor %}
+                    {% endif %}
+                </td>
+                <td class="workflow-count">{{ repo.github_workflow_count }}</td>
+                {% endif %}
+                {% if has_any_jenkins_jobs %}
+                <td class="jenkins-jobs">
+                    {% if repo.jenkins_jobs %}
+                        {% for job in repo.jenkins_jobs | sort(attribute='name') %}
+                            {%- set job_name = job.name | default('Unknown') -%}
+                            {%- set job_color = job.color | default('notbuilt') -%}
+                            {%- set job_status = job.status | default('unknown') -%}
+
+                            {#- Map Jenkins color to CSS class -#}
+                            {%- if job_color == 'blue' or job_color == 'blue_anime' or job_status == 'success' -%}
+                                {%- set status_class = 'status-success' -%}
+                            {%- elif job_color == 'red' or job_color == 'red_anime' or job_status == 'failure' -%}
+                                {%- set status_class = 'status-failure' -%}
+                            {%- elif job_color == 'yellow' or job_color == 'yellow_anime' or job_status == 'unstable' -%}
+                                {%- set status_class = 'status-warning' -%}
+                            {%- elif job_color == 'aborted' or job_color == 'aborted_anime' -%}
+                                {%- set status_class = 'status-aborted' -%}
+                            {%- elif job_color == 'disabled' -%}
+                                {%- set status_class = 'status-disabled' -%}
+                            {%- elif job_color == 'notbuilt' or job_color == 'notbuilt_anime' or job_status == 'not_built' -%}
+                                {%- set status_class = 'status-unknown' -%}
+                            {%- elif '_anime' in job_color or job_status == 'building' -%}
+                                {%- set status_class = 'status-building' -%}
+                            {%- else -%}
+                                {%- set status_class = 'status-unknown' -%}
+                            {%- endif -%}
+
+                            {%- set job_url = job.url | default('') -%}
+
+                            {%- if job_url -%}
+                                <a href="{{ job_url }}" target="_blank"><span class="{{ status_class }} jenkins-status">{{ job_name }}</span></a>
+                            {%- else -%}
+                                <span class="{{ status_class }} jenkins-status">{{ job_name }}</span>
+                            {%- endif -%}
+
+                            {%- if not loop.last %}<br>{% endif -%}
+                        {% endfor %}
+                    {% endif %}
+                </td>
+                <td class="job-count">{{ repo.jenkins_job_count }}</td>
+                {% endif %}
+            </tr>
             {% endfor %}
-        </ul>
-    </div>
+        </tbody>
+    </table>
 
-    <div class="subsection">
-        <h3>All Jobs</h3>
-
-        {% set columns = [
-            {'key': 'name', 'label': 'Job Name', 'class': 'job-name'},
-            {'key': 'repo', 'label': 'Repository', 'class': 'repo-name'},
-            {'key': 'status', 'label': 'Status', 'class': 'status'}
-        ] %}
-        {% set rows = workflows.all %}
-        {% set table_class = 'workflows-table' %}
-        {% include 'html/components/data_table.html.j2' %}
-
-        <p class="total-count">
-            <strong>Total Jobs:</strong> {{ workflows.total_count }}
-        </p>
-    </div>
+    <p class="total-count">
+        <strong>Total:</strong> {{ workflows.total_repositories | default(0) }} repositories with CI/CD jobs
+    </p>
 
 </section>
 {% endif %}

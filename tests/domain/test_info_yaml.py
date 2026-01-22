@@ -267,6 +267,7 @@ class TestIssueTracking:
         assert result == {
             "type": "github",
             "url": "https://github.com/org/repo/issues",
+            "key": "",
             "is_valid": True,
             "validation_error": "",
         }

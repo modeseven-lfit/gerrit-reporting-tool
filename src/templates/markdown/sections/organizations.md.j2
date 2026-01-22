@@ -3,7 +3,7 @@ SPDX-License-Identifier: Apache-2.0
 SPDX-FileCopyrightText: 2025 The Linux Foundation
 #}
 
-{#- Section: Organizations -#}
+{#- Section: Organizations (Markdown) -#}
 {#- Renders the organizations section with top organization tables -#}
 {#-
     Context required:
@@ -12,20 +12,21 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
     This section displays:
         - Top organizations by commit count
-        - Organization statistics
-        - Contributor counts per organization
+        - Matches production format: 8 columns, no Domain, raw numbers
 -#}
 
 {% if config.include_sections.organizations and organizations.has_organizations %}
-## Top Organizations
+## 🏢 Top Organizations
 
-| Rank | Organization | Domain | Contributors | Commits | Repositories |
-|------|--------------|--------|--------------|---------|--------------|
+The data presented in the table below covers the past 365 days.
+
+**Organizations Found:** {{ organizations.total_count | default(0) }}
+
+| Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 {% for org in organizations.top %}
-| {{ loop.index }} | {{ org.name }} | {{ org.domain }} | {{ org.unique_contributors }} | {{ org.total_commits | format_number }} | {{ org.repositories_count }} |
+| {{ loop.index }} | {{ org.name | default('Unknown') }} | {{ org.unique_contributors | default(0) }} | {{ org.total_commits | default(0) }} | {{ org.total_lines_added | format_loc }} | {{ org.delta_loc | default(0) }} | {{ org.avg_loc_per_commit | format_loc }} | {{ org.repositories_count | default(0) }} |
 {% endfor %}
-
-**Total Organizations:** {{ organizations.total_count }}
 
 ---
 {% endif %}

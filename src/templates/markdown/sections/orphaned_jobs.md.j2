@@ -24,7 +24,7 @@ These Jenkins jobs are matched to archived or read-only Gerrit projects:
 ### By State
 
 {% for state, count in orphaned_jobs.by_state.items() %}
-- **{{ state }}:** {{ count }} jobs
+- **{{ state | default('Unknown') }}:** {{ count | default(0) }} jobs
 {% endfor %}
 
 ### Job Details
@@ -32,10 +32,10 @@ These Jenkins jobs are matched to archived or read-only Gerrit projects:
 | Job Name | Matched Project | State | Match Score |
 |----------|----------------|-------|-------------|
 {% for job in orphaned_jobs.jobs %}
-| {{ job.name }} | {{ job.project }} | {{ job.state }} | {{ job.score }}% |
+| {{ job.name | default('Unknown') }} | {{ job.project | default('N/A') }} | {{ job.state | default('UNKNOWN') }} | {{ job.score | default(0) }}% |
 {% endfor %}
 
-**Total Orphaned Jobs:** {{ orphaned_jobs.total_count }}
+**Total Orphaned Jobs:** {{ orphaned_jobs.total_count | default(0) }}
 
 ---
 {% endif %}

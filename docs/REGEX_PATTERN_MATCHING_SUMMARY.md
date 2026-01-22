@@ -293,8 +293,8 @@ Before deploying regex patterns:
 
 <!-- markdownlint-disable MD060 -->
 
-| Configuration Type     | Before          | After           | Status      |
-| ---------------------- | --------------- | --------------- | ----------- |
+| Configuration Type     | Before           | After            | Status      |
+| ---------------------- | ---------------- | ---------------- | ----------- |
 | Exact filenames only   | ✅ Works         | ✅ Works         | Compatible  |
 | Empty config           | ✅ Uses defaults | ✅ Uses defaults | Compatible  |
 | Missing workflow_files | ✅ Uses defaults | ✅ Uses defaults | Compatible  |

@@ -56,9 +56,9 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
     --font-size-xs: 0.75rem;
     --font-size-lg: 1.125rem;
     --font-size-xl: 1.25rem;
-    --font-size-h1: 2.5rem;
-    --font-size-h2: 2rem;
-    --font-size-h3: 1.5rem;
+    --font-size-h1: 2em;
+    --font-size-h2: 1.5em;
+    --font-size-h3: 1.17em;
     --font-size-h4: 1.25rem;
     --font-size-h5: 1.125rem;
     --font-size-h6: 1rem;
@@ -281,6 +281,56 @@ pre code {
 }
 
 /* ============================================================================
+   Table of Contents
+   ========================================================================== */
+
+.toc {
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.toc h2 {
+    color: var(--text-primary);
+    font-size: var(--font-size-xl);
+    margin-top: 0;
+    margin-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: var(--spacing-sm);
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-item {
+    margin-bottom: var(--spacing-sm);
+}
+
+.toc-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.toc-link:hover {
+    background-color: var(--surface-hover);
+    color: var(--primary-hover);
+}
+
+.toc-link:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* ============================================================================
    Statistics Grid
    ========================================================================== */
 
@@ -335,6 +385,7 @@ table {
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
     overflow: hidden;
+    font-size: 0.9em;
 }
 
 thead {
@@ -433,9 +484,9 @@ tbody tr:last-child td {
 
 @media (max-width: 768px) {
     :root {
-        --font-size-h1: 2rem;
-        --font-size-h2: 1.5rem;
-        --font-size-h3: 1.25rem;
+        --font-size-h1: 1.75em;
+        --font-size-h2: 1.35em;
+        --font-size-h3: 1.1em;
         --container-padding: var(--spacing-md);
     }
 
@@ -575,3 +626,364 @@ tbody tr:last-child td {
 .p-md { padding: var(--spacing-md); }
 .p-lg { padding: var(--spacing-lg); }
 .p-xl { padding: var(--spacing-xl); }
+
+/* ============================================================================
+   CI/CD Job Status Colors
+   ========================================================================== */
+
+/* Status color variables for dark theme */
+:root {
+    --status-success: #34d399;      /* Brighter green - passing */
+    --status-failure: #f87171;      /* Brighter red - failing */
+    --status-warning: #fbbf24;      /* Brighter orange/yellow - unstable */
+    --status-disabled: #9ca3af;     /* Gray - disabled */
+    --status-unknown: #6b7280;      /* Gray - never run/unknown */
+    --status-building: #60a5fa;     /* Brighter blue - in progress */
+    --status-aborted: #a78bfa;      /* Brighter purple - aborted */
+}
+
+/* GitHub Workflows and Jenkins Jobs - base link styles */
+.cicd-jobs-table .github-workflows a,
+.cicd-jobs-table .jenkins-jobs a {
+    text-decoration: none;
+    transition: opacity var(--transition-fast);
+    font-weight: var(--font-weight-medium);
+}
+
+.cicd-jobs-table .github-workflows a:hover,
+.cicd-jobs-table .jenkins-jobs a:hover {
+    opacity: 0.85;
+    text-decoration: underline;
+}
+
+/* Success/Passing - Green */
+.cicd-jobs-table .status-success {
+    color: var(--status-success);
+}
+
+/* Failure/Failed - Red */
+.cicd-jobs-table .status-failure {
+    color: var(--status-failure);
+}
+
+/* Warning/Unstable - Orange/Yellow */
+.cicd-jobs-table .status-warning {
+    color: var(--status-warning);
+}
+
+/* Disabled - Gray */
+.cicd-jobs-table .status-disabled {
+    color: var(--status-disabled);
+}
+
+/* Unknown/Never Run - Gray */
+.cicd-jobs-table .status-unknown,
+.cicd-jobs-table .status-no-runs {
+    color: var(--status-unknown);
+}
+
+/* Building/In Progress - Blue */
+.cicd-jobs-table .status-building,
+.cicd-jobs-table .status-in-progress {
+    color: var(--status-building);
+}
+
+/* Aborted - Purple */
+.cicd-jobs-table .status-aborted {
+    color: var(--status-aborted);
+}
+
+/* Ensure visited links maintain their status color */
+.cicd-jobs-table .github-workflows a:visited .status-success { color: var(--status-success); }
+.cicd-jobs-table .github-workflows a:visited .status-failure { color: var(--status-failure); }
+.cicd-jobs-table .github-workflows a:visited .status-warning { color: var(--status-warning); }
+.cicd-jobs-table .github-workflows a:visited .status-disabled { color: var(--status-disabled); }
+.cicd-jobs-table .github-workflows a:visited .status-unknown { color: var(--status-unknown); }
+.cicd-jobs-table .github-workflows a:visited .status-no-runs { color: var(--status-unknown); }
+.cicd-jobs-table .github-workflows a:visited .status-building { color: var(--status-building); }
+.cicd-jobs-table .github-workflows a:visited .status-in-progress { color: var(--status-building); }
+.cicd-jobs-table .github-workflows a:visited .status-aborted { color: var(--status-aborted); }
+
+.cicd-jobs-table .jenkins-jobs a:visited .status-success { color: var(--status-success); }
+.cicd-jobs-table .jenkins-jobs a:visited .status-failure { color: var(--status-failure); }
+.cicd-jobs-table .jenkins-jobs a:visited .status-warning { color: var(--status-warning); }
+.cicd-jobs-table .jenkins-jobs a:visited .status-disabled { color: var(--status-disabled); }
+.cicd-jobs-table .jenkins-jobs a:visited .status-unknown { color: var(--status-unknown); }
+.cicd-jobs-table .jenkins-jobs a:visited .status-no-runs { color: var(--status-unknown); }
+.cicd-jobs-table .jenkins-jobs a:visited .status-building { color: var(--status-building); }
+.cicd-jobs-table .jenkins-jobs a:visited .status-in-progress { color: var(--status-building); }
+.cicd-jobs-table .jenkins-jobs a:visited .status-aborted { color: var(--status-aborted); }
+
+/* Print-friendly: use text indicators for status */
+@media print {
+    .status-success::after { content: " [✓]"; }
+    .status-failure::after { content: " [✗]"; }
+    .status-warning::after { content: " [!]"; }
+    .status-disabled::after { content: " [disabled]"; }
+    .status-unknown::after { content: " [?]"; }
+    .status-building::after { content: " [building]"; }
+    .status-aborted::after { content: " [aborted]"; }
+}
+
+/* ============================================================================
+   DataTables Integration Styles
+   ========================================================================== */
+
+/* DataTables wrapper - overall container */
+.dataTable-wrapper {
+    margin: 1.5em 0;
+    font-size: var(--font-size-base);
+}
+
+/* DataTables top section (search and per-page selector) */
+.dataTable-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+/* DataTables bottom section (info and pagination) */
+.dataTable-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Search input container */
+.dataTable-search {
+    flex: 1 1 auto;
+    min-width: 200px;
+}
+
+.dataTable-search input {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-base);
+    font-family: var(--font-family-base);
+    background-color: var(--surface);
+    color: var(--text-primary);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dataTable-search input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.dataTable-search input::placeholder {
+    color: var(--text-tertiary);
+}
+
+/* Per-page selector */
+.dataTable-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dataTable-dropdown label {
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    white-space: nowrap;
+}
+
+.dataTable-selector {
+    flex-shrink: 0;
+}
+
+.dataTable-selector select {
+    padding: 0.5rem 2rem 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-base);
+    font-family: var(--font-family-base);
+    background-color: var(--surface);
+    color: var(--text-primary);
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%239ca3af' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dataTable-selector select:hover {
+    border-color: var(--border-color-dark);
+}
+
+.dataTable-selector select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Info text (showing X to Y of Z entries) */
+.dataTable-info {
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+/* Pagination container */
+.dataTable-pagination {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.dataTable-pagination ul {
+    display: flex;
+    gap: 0.25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dataTable-pagination li {
+    display: inline-block;
+}
+
+.dataTable-pagination a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--surface);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.dataTable-pagination a:hover:not(.active):not(.disabled) {
+    background-color: var(--surface-hover);
+    border-color: var(--border-color-dark);
+}
+
+.dataTable-pagination a.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-inverse);
+    cursor: default;
+}
+
+.dataTable-pagination a.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Sorting indicators */
+.dataTable-sorter {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dataTable-sorter::before,
+.dataTable-sorter::after {
+    content: "";
+    position: absolute;
+    right: 0.5rem;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    opacity: 0.3;
+}
+
+.dataTable-sorter::before {
+    bottom: 50%;
+    margin-bottom: 3px;
+    border-bottom: 4px solid var(--text-secondary);
+}
+
+.dataTable-sorter::after {
+    top: 50%;
+    margin-top: 3px;
+    border-top: 4px solid var(--text-secondary);
+}
+
+.dataTable-sorter:hover::before,
+.dataTable-sorter:hover::after {
+    opacity: 0.6;
+}
+
+.dataTable-ascending .dataTable-sorter::before {
+    opacity: 1;
+    border-bottom-color: var(--primary-color);
+}
+
+.dataTable-descending .dataTable-sorter::after {
+    opacity: 1;
+    border-top-color: var(--primary-color);
+}
+
+/* Empty state */
+.dataTable-empty {
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Loading state */
+.dataTable-loading {
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .dataTable-top,
+    .dataTable-bottom {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .dataTable-search input {
+        max-width: none;
+    }
+
+    .dataTable-dropdown {
+        justify-content: space-between;
+    }
+
+    .dataTable-pagination {
+        justify-content: center;
+    }
+
+    .dataTable-info {
+        text-align: center;
+    }
+}
+
+/* Print styles - hide DataTables controls */
+@media print {
+    .dataTable-top,
+    .dataTable-bottom {
+        display: none !important;
+    }
+
+    .dataTable-wrapper table {
+        page-break-inside: avoid;
+    }
+}

@@ -163,8 +163,13 @@ class GitDataCollector:
                     self.logger.error(
                         f"Failed to initialize Gerrit API client for {host}: {e}"
                     )
+                    # Re-raise to stop execution - Gerrit configuration is mandatory when enabled
+                    raise
             else:
-                self.logger.error("Gerrit enabled but no host configured")
+                error_msg = "Gerrit is enabled in configuration but no host is specified"
+                self.logger.error(error_msg)
+                from gerrit_reporting_tool.exceptions import ConfigurationError
+                raise ConfigurationError(error_msg)
 
         # Initialize Jenkins client
         if jenkins_host:
@@ -201,6 +206,8 @@ class GitDataCollector:
                     f"Failed to initialize Jenkins API client for {jenkins_host}: {e}"
                 )
                 self.jenkins_client = None
+                # Re-raise to stop execution - Jenkins configuration is mandatory when JENKINS_HOST is set
+                raise
         elif jenkins_config.get("enabled", False):
             # Fallback to config file (for backward compatibility)
             host = jenkins_config.get("host")
@@ -237,6 +244,8 @@ class GitDataCollector:
                     self.logger.error(
                         f"Failed to initialize Jenkins API client for {host}: {e}"
                     )
+                    # Re-raise to stop execution - Jenkins configuration is mandatory when enabled
+                    raise
             else:
                 self.logger.error("Jenkins enabled but no host configured")
 
@@ -250,6 +259,30 @@ class GitDataCollector:
             all_jobs = self.jenkins_client.get_all_jobs()
             self.jenkins_allocation_context.set_all_jobs(all_jobs)
             job_count = len(all_jobs.get("jobs", []))
+
+            # CRITICAL: If Jenkins is configured but returns 0 jobs, this is an ERROR
+            if job_count == 0:
+                jenkins_host = self.jenkins_client.host
+                import os
+                has_auth = bool(os.environ.get("JENKINS_USER") and os.environ.get("JENKINS_API_TOKEN"))
+                auth_hint = (
+                    "\n  NOTE: No Jenkins authentication configured. If this server requires authentication,\n"
+                    "        set JENKINS_USER and JENKINS_API_TOKEN environment variables."
+                ) if not has_auth else ""
+
+                error_msg = (
+                    f"FATAL: Jenkins server '{jenkins_host}' is configured and accessible, "
+                    f"but returned 0 jobs. This indicates either:\n"
+                    f"  1. The Jenkins server has no jobs configured (unlikely)\n"
+                    f"  2. Authentication is required to view jobs (set JENKINS_USER and JENKINS_API_TOKEN)\n"
+                    f"  3. The API endpoint is returning incomplete data\n"
+                    f"Please verify Jenkins configuration and permissions.{auth_hint}"
+                )
+                self.logger.error(error_msg)
+                # Raise exception to stop execution immediately
+                from gerrit_reporting_tool.exceptions import JenkinsAPIError
+                raise JenkinsAPIError(error_msg)
+
             self.logger.info(
                 f"Jenkins cache initialized: {job_count} total jobs available"
             )
@@ -257,6 +290,8 @@ class GitDataCollector:
         except Exception as e:
             self.logger.error(f"Failed to initialize Jenkins cache: {e}")
             self._jenkins_initialized = False
+            # Re-raise to stop execution
+            raise
 
     def _fetch_all_gerrit_projects(self) -> None:
         """Fetch all Gerrit project data upfront and cache it."""
@@ -270,10 +305,24 @@ class GitDataCollector:
                 self.gerrit_projects_cache = all_projects
                 self.logger.info(f"Cached {len(all_projects)} projects from Gerrit")
             else:
-                self.logger.warning("No projects returned from Gerrit API")
+                # CRITICAL: If Gerrit is configured but returns 0 projects, this is an ERROR
+                gerrit_host = self.gerrit_client.host
+                error_msg = (
+                    f"FATAL: Gerrit server '{gerrit_host}' is configured and accessible, "
+                    f"but returned 0 projects. This indicates either:\n"
+                    f"  1. The Gerrit server has no projects configured (unlikely)\n"
+                    f"  2. Authentication/permissions prevent viewing projects\n"
+                    f"  3. The API endpoint is returning incomplete data\n"
+                    f"Please verify Gerrit configuration and permissions."
+                )
+                self.logger.error(error_msg)
+                from gerrit_reporting_tool.exceptions import GerritAPIError
+                raise GerritAPIError(error_msg)
 
         except Exception as e:
             self.logger.error(f"Failed to fetch Gerrit projects: {e}")
+            # Re-raise to stop execution
+            raise
 
     def _extract_gerrit_project(self, repo_path: Path) -> str:
         """
@@ -353,6 +402,25 @@ class GitDataCollector:
             )
             return repo_path.name
 
+    def _extract_gerrit_path_prefix(self) -> str:
+        """
+        Extract the URL path prefix from the Gerrit API client's base URL.
+
+        Returns:
+            URL path prefix (e.g., "/r", "/gerrit", "") or empty string if no client
+        """
+        if not self.gerrit_client:
+            return ""
+
+        try:
+            from urllib.parse import urlparse
+            parsed = urlparse(self.gerrit_client.base_url)
+            path = parsed.path.rstrip("/")
+            return path if path else ""
+        except Exception as e:
+            self.logger.warning(f"Error extracting Gerrit path prefix: {e}")
+            return ""
+
     def _derive_gerrit_url(self, repo_path: Path) -> str:
         """
         Derive the full Gerrit URL from the repository path.
@@ -411,6 +479,63 @@ class GitDataCollector:
             except Exception:
                 pass  # Ignore cleanup errors
 
+    def _count_total_loc(self, repo_path: Path) -> int:
+        """
+        Count total lines of code in the current repository HEAD.
+
+        Uses git diff --shortstat against the empty tree to efficiently count
+        total lines. This is much faster than reading each file individually.
+
+        Args:
+            repo_path: Path to the git repository
+
+        Returns:
+            Total line count in current repository, or 0 if unable to count
+        """
+        try:
+            # Use git diff against empty tree (4b825dc...) to get total lines
+            # This is the hash of the empty tree in git
+            # --shortstat gives us total files, insertions, deletions
+            empty_tree = "4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+
+            # Get line count using git diff against empty tree
+            # This shows all lines as insertions (since we're diffing from nothing)
+            diff_cmd = ["git", "diff", "--shortstat", empty_tree, "HEAD"]
+            success, output = safe_git_command(diff_cmd, repo_path, self.logger)
+
+            if not success or not output:
+                # Try alternative method: check if repo is empty
+                rev_list_cmd = ["git", "rev-list", "-n", "1", "HEAD"]
+                has_commits, _ = safe_git_command(rev_list_cmd, repo_path, self.logger)
+                if not has_commits:
+                    self.logger.debug(f"Repository {repo_path.name} has no commits")
+                    return 0
+                self.logger.debug(f"Could not count LOC for {repo_path.name}")
+                return 0
+
+            # Parse output like: "123 files changed, 45678 insertions(+)"
+            # We want the insertions number
+            total_lines = 0
+            if "insertion" in output:
+                parts = output.split(",")
+                for part in parts:
+                    if "insertion" in part:
+                        # Extract number before "insertion"
+                        num_str = part.strip().split()[0]
+                        try:
+                            total_lines = int(num_str)
+                        except ValueError:
+                            self.logger.debug(f"Could not parse line count from: {part}")
+                            return 0
+                        break
+
+            self.logger.debug(f"Counted {total_lines} total lines in {repo_path.name}")
+            return total_lines
+
+        except Exception as e:
+            self.logger.warning(f"Error counting total LOC for {repo_path.name}: {e}")
+            return 0
+
     def collect_repo_git_metrics(self, repo_path: Path) -> dict[str, Any]:
         """
         Extract Git metrics for a single repository across all time windows.
@@ -420,17 +545,43 @@ class GitDataCollector:
         Collects: timestamps, author name/email, added/removed lines.
         Returns structured metrics or error descriptor.
         """
-        # Extract Gerrit project information
-        if self.repos_path:
-            gerrit_project = str(repo_path.relative_to(self.repos_path))
-        else:
-            gerrit_project = self._extract_gerrit_project(repo_path)
-        gerrit_host = self._extract_gerrit_host(repo_path)
-        gerrit_url = self._derive_gerrit_url(repo_path)
+        # Check if Gerrit is enabled for this project
+        gerrit_config = self.config.get("gerrit", {})
+        gerrit_enabled = gerrit_config.get("enabled", False)
 
-        self.logger.debug(
-            f"Collecting Git metrics for Gerrit project: {gerrit_project}"
-        )
+        # Extract repository information (Gerrit or GitHub)
+        if self.repos_path:
+            # Use relative path from repos_path as repository identifier
+            repo_identifier = str(repo_path.relative_to(self.repos_path))
+        else:
+            repo_identifier = self._extract_gerrit_project(repo_path)
+
+        # Extract host/org information conditionally
+        if gerrit_enabled:
+            # Gerrit project - extract Gerrit-specific information
+            gerrit_host = self._extract_gerrit_host(repo_path)
+            gerrit_url = self._derive_gerrit_url(repo_path)
+            gerrit_path_prefix = self._extract_gerrit_path_prefix()
+            self.logger.debug(
+                f"Collecting Git metrics for Gerrit project: {repo_identifier}"
+            )
+        else:
+            # GitHub-native project - use org name and construct GitHub URL
+            # For GitHub projects, repos_path is the org name (e.g., /tmp/opennetworkinglab)
+            if self.repos_path:
+                gerrit_host = self.repos_path.name  # org name
+                repo_name = repo_path.name
+                gerrit_url = f"https://github.com/{gerrit_host}/{repo_name}"
+            else:
+                gerrit_host = "unknown-github-org"
+                gerrit_url = ""
+            gerrit_path_prefix = ""  # GitHub doesn't use path prefix
+            self.logger.debug(
+                f"Collecting Git metrics for GitHub repository: {repo_identifier}"
+            )
+
+        # Use repo_identifier for gerrit_project field (works for both types)
+        gerrit_project = repo_identifier
 
         # Initialize metrics structure with Gerrit-centric model
         metrics: Dict[str, Any] = {
@@ -438,12 +589,14 @@ class GitDataCollector:
                 "gerrit_project": gerrit_project,  # PRIMARY identifier
                 "gerrit_host": gerrit_host,
                 "gerrit_url": gerrit_url,
+                "gerrit_path_prefix": gerrit_path_prefix,  # Discovered URL path (e.g., "/r", "/gerrit")
                 "local_path": str(repo_path),  # Secondary, for internal use
                 "last_commit_timestamp": None,
                 "days_since_last_commit": None,
                 "activity_status": "inactive",  # "current", "active", or "inactive"
                 "has_any_commits": False,  # Track if repo has ANY commits (regardless of time windows)
                 "total_commits_ever": 0,  # Total commits across all history
+                "total_loc": 0,  # Total lines of code in current repository HEAD (all-time)
                 "commit_counts": {window: 0 for window in self.time_windows},
                 "loc_stats": {
                     window: {"added": 0, "removed": 0, "net": 0}
@@ -495,6 +648,9 @@ class GitDataCollector:
             # Update total commit count regardless of time windows
             metrics["repository"]["total_commits_ever"] = len(commits_data)
             metrics["repository"]["has_any_commits"] = len(commits_data) > 0
+
+            # Count total lines of code in current repository HEAD
+            metrics["repository"]["total_loc"] = self._count_total_loc(repo_path)
 
             # Process commits into time windows
             for commit_data in commits_data:

@@ -1385,8 +1385,8 @@ Committers are color-coded based on Git activity:
 
 <!-- markdownlint-disable MD060 -->
 
-| Color    | Status   | Last Activity | Meaning            |
-| -------- | -------- | ------------- | ------------------ |
+| Color     | Status   | Last Activity | Meaning            |
+| --------- | -------- | ------------- | ------------------ |
 | 🟢 Green  | Current  | 0-365 days    | Active contributor |
 | 🟠 Orange | Active   | 365-1095 days | Moderately active  |
 | 🔴 Red    | Inactive | 1095+ days    | No recent activity |
@@ -1401,8 +1401,8 @@ Committers are color-coded based on Git activity:
 
 <!-- markdownlint-disable MD060 -->
 
-| Project   | Lifecycle State | Project Lead  | Committers                    |
-| --------- | --------------- | ------------- | ----------------------------- |
+| Project   | Lifecycle State | Project Lead   | Committers                      |
+| --------- | --------------- | -------------- | ------------------------------- |
 | Project A | Active          | 🟢 Alice Smith | 🟢 Bob Jones<br>🟠 Carol White  |
 | Project B | Incubation      | 🟠 David Brown | 🔴 Eve Davis<br>⚫ Frank Miller |
 

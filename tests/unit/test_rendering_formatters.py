@@ -24,11 +24,13 @@ from rendering.formatters import (
     format_bytes,
     format_date,
     format_list,
+    format_loc,
     format_number,
     format_percentage,
     format_timestamp,
     get_template_filters,
     slugify,
+    status_emoji,
     truncate,
 )
 
@@ -148,6 +150,41 @@ class TestFormatAge:
 
 
 # ============================================================================
+# format_loc Tests
+# ============================================================================
+
+
+class TestFormatLoc:
+    """Test Lines of Code formatting with + prefix."""
+
+    def test_format_loc_positive(self):
+        """Test formatting positive LOC values."""
+        assert format_loc(100) == "+100"
+        assert format_loc(1) == "+1"
+        assert format_loc(9999) == "+9999"
+
+    def test_format_loc_zero(self):
+        """Test formatting zero LOC value."""
+        assert format_loc(0) == "0"
+        assert format_loc(0.0) == "0"
+
+    def test_format_loc_negative(self):
+        """Test formatting negative LOC values."""
+        assert format_loc(-100) == "-100"
+        assert format_loc(-1) == "-1"
+
+    def test_format_loc_none(self):
+        """Test formatting None LOC value."""
+        assert format_loc(None) == "0"
+
+    def test_format_loc_float(self):
+        """Test formatting float LOC values (should convert to int)."""
+        assert format_loc(100.7) == "+100"
+        assert format_loc(99.1) == "+99"
+        assert format_loc(-50.9) == "-50"
+
+
+# ============================================================================
 # format_percentage Tests
 # ============================================================================
 
@@ -155,24 +192,44 @@ class TestFormatAge:
 class TestFormatPercentage:
     """Test percentage formatting."""
 
-    def test_format_percentage_basic(self):
-        """Test basic percentage formatting."""
-        assert format_percentage(0) == "0.0%"
-        assert format_percentage(50) == "50.0%"
-        assert format_percentage(75.5) == "75.5%"
-        assert format_percentage(100) == "100.0%"
+    def test_format_percentage_default(self):
+        """Test percentage formatting with default precision."""
+        assert format_percentage(45.678) == "45.7%"
+        assert format_percentage(100.0) == "100.0%"
+        assert format_percentage(0.0) == "0.0%"
 
-    def test_format_percentage_decimals(self):
-        """Test percentage with custom decimal places."""
+    def test_format_percentage_custom_decimals(self):
+        """Test percentage formatting with custom decimal places."""
         assert format_percentage(45.678, decimals=0) == "46%"
-        assert format_percentage(45.678, decimals=1) == "45.7%"
         assert format_percentage(45.678, decimals=2) == "45.68%"
         assert format_percentage(45.678, decimals=3) == "45.678%"
 
     def test_format_percentage_none(self):
-        """Test that None is treated as 0."""
+        """Test percentage formatting with None value."""
         assert format_percentage(None) == "0.0%"
         assert format_percentage(None, decimals=2) == "0.00%"
+
+    def test_format_percentage_with_total(self):
+        """Test percentage calculation from value and total."""
+        assert format_percentage(10, 100) == "10.0%"
+        assert format_percentage(25, 100) == "25.0%"
+        assert format_percentage(1, 3) == "33.3%"
+        assert format_percentage(2, 3) == "66.7%"
+
+    def test_format_percentage_with_total_custom_decimals(self):
+        """Test percentage calculation with custom decimals."""
+        assert format_percentage(1, 3, decimals=2) == "33.33%"
+        assert format_percentage(2, 3, decimals=0) == "67%"
+
+    def test_format_percentage_with_zero_total(self):
+        """Test percentage calculation with zero total."""
+        assert format_percentage(10, 0) == "0.0%"
+        assert format_percentage(0, 0) == "0.0%"
+
+    def test_format_percentage_with_none_total(self):
+        """Test percentage calculation with None total."""
+        # When total is None, use value as pre-calculated percentage
+        assert format_percentage(45.5, None) == "45.5%"
 
     def test_format_percentage_float(self):
         """Test formatting float percentages."""
@@ -461,6 +518,43 @@ class TestFormatBytes:
 
 
 # ============================================================================
+# status_emoji Tests
+# ============================================================================
+
+
+class TestStatusEmoji:
+    """Test status to emoji mapping."""
+
+    def test_status_emoji_current(self):
+        """Test mapping for current status."""
+        assert status_emoji("current") == "✅"
+        assert status_emoji("CURRENT") == "✅"
+        assert status_emoji("Current") == "✅"
+
+    def test_status_emoji_active(self):
+        """Test mapping for active status."""
+        assert status_emoji("active") == "☑️"
+        assert status_emoji("ACTIVE") == "☑️"
+        assert status_emoji("Active") == "☑️"
+
+    def test_status_emoji_inactive(self):
+        """Test mapping for inactive status."""
+        assert status_emoji("inactive") == "🛑"
+        assert status_emoji("INACTIVE") == "🛑"
+        assert status_emoji("Inactive") == "🛑"
+
+    def test_status_emoji_unknown(self):
+        """Test mapping for unknown status."""
+        assert status_emoji("unknown") == "❓"
+        assert status_emoji("invalid") == "❓"
+        assert status_emoji("") == "❓"
+
+    def test_status_emoji_none(self):
+        """Test mapping for None status."""
+        assert status_emoji(None) == "❓"
+
+
+# ============================================================================
 # get_template_filters Tests
 # ============================================================================
 
@@ -479,6 +573,7 @@ class TestGetTemplateFilters:
 
         expected_filters = [
             "format_number",
+            "format_loc",
             "format_age",
             "format_percentage",
             "slugify",
@@ -487,6 +582,7 @@ class TestGetTemplateFilters:
             "truncate",
             "format_list",
             "format_bytes",
+            "status_emoji",
         ]
 
         for filter_name in expected_filters:
@@ -504,6 +600,7 @@ class TestGetTemplateFilters:
         filters = get_template_filters()
 
         assert filters["format_number"] == format_number
+        assert filters["format_loc"] == format_loc
         assert filters["format_age"] == format_age
         assert filters["format_percentage"] == format_percentage
         assert filters["slugify"] == slugify
@@ -512,6 +609,7 @@ class TestGetTemplateFilters:
         assert filters["truncate"] == truncate
         assert filters["format_list"] == format_list
         assert filters["format_bytes"] == format_bytes
+        assert filters["status_emoji"] == status_emoji
 
 
 # ============================================================================

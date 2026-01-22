@@ -45,10 +45,12 @@ New to the tool? Begin with these essentials:
 
 ### Developer Documentation
 
-| Document                                  | Description                                   |
-| ----------------------------------------- | --------------------------------------------- |
-| [**Developer Guide**](DEVELOPER_GUIDE.md) | Architecture, API reference, and contributing |
-| [**Testing**](TESTING.md)                 | Test suite documentation                      |
+| Document                                            | Description                                   |
+| --------------------------------------------------- | --------------------------------------------- |
+| [**Developer Guide**](DEVELOPER_GUIDE.md)           | Architecture, API reference, and contributing |
+| [**Template Development**](TEMPLATE_DEVELOPMENT.md) | Customizing Jinja2 templates                  |
+| [**Testing**](TESTING.md)                           | Test suite documentation                      |
+| [**Migration Guide**](MIGRATION_GUIDE.md)           | Production migration from legacy system       |
 
 ---
 
@@ -120,10 +122,21 @@ New to the tool? Begin with these essentials:
   - INFO.yaml API
   - Extension points
   - Contribution guidelines
+- [Template Development Guide](TEMPLATE_DEVELOPMENT.md) - Template customization
+  - Template architecture
+  - Available filters
+  - Creating custom templates
+  - Component system
+  - Best practices
 - [Testing Guide](TESTING.md) - Test suite
   - Running tests
   - Writing tests
   - Test coverage
+- [Migration Guide](MIGRATION_GUIDE.md) - Production deployment
+  - Pre-migration checklist
+  - Deployment steps
+  - Validation procedures
+  - Rollback strategies
 
 ---
 
@@ -140,6 +153,8 @@ New to the tool? Begin with these essentials:
 - **Common problems?** → [Troubleshooting](TROUBLESHOOTING.md)
 - **Performance issues?** → [Performance](PERFORMANCE.md)
 - **CI/CD setup?** → [CI/CD Integration](CI_CD_INTEGRATION.md)
+- **Customizing templates?** → [Template Development](TEMPLATE_DEVELOPMENT.md)
+- **Migrating to production?** → [Migration Guide](MIGRATION_GUIDE.md)
 - **Contributing?** → [Developer Guide](DEVELOPER_GUIDE.md)
 - **Running tests?** → [Testing](TESTING.md)
 
@@ -185,9 +200,11 @@ The tool generates multiple report types:
 ### Advanced (Month 1)
 
 1. [Deployment](DEPLOYMENT.md) - Production operations
-2. [Developer Guide](DEVELOPER_GUIDE.md) - Understand architecture
-3. [Testing](TESTING.md) - Run and write tests
-4. Contribute improvements!
+2. [Template Development](TEMPLATE_DEVELOPMENT.md) - Customize templates
+3. [Migration Guide](MIGRATION_GUIDE.md) - Migrate legacy systems
+4. [Developer Guide](DEVELOPER_GUIDE.md) - Understand architecture
+5. [Testing](TESTING.md) - Run and write tests
+6. Contribute improvements!
 
 ---
 
@@ -244,10 +261,12 @@ DEPLOYMENT.md           - Production operations
 FEATURE_DISCOVERY_GUIDE.md - Feature detection system
 ```
 
-### Developer Documentation (2 files)
+### Developer Documentation (4 files)
 
 ```text
 DEVELOPER_GUIDE.md      - Architecture and API reference
+TEMPLATE_DEVELOPMENT.md - Template customization guide
+MIGRATION_GUIDE.md      - Production migration guide
 TESTING.md              - Test suite documentation
 ```
 
@@ -257,19 +276,18 @@ TESTING.md              - Test suite documentation
 INDEX.md                - This file
 ```
 
-**Total:** 14 core documentation files
+**Total:** 16 core documentation files
 
 ---
 
 ## 📊 Documentation Statistics
 
-- **Total Files:** 14 (streamlined from 48)
+- **Total Files:** 16 core documentation files
 - **User Guides:** 7 essential guides
 - **Advanced Topics:** 4 specialized guides
-- **Developer Docs:** 2 technical guides
-- **Total Lines:** ~15,000 (reduced from 29,000)
-- **Reduction:** 73% fewer files, 48% fewer lines
-- **Last Updated:** 2025-01-XX
+- **Developer Docs:** 4 technical guides (including template dev & migration)
+- **Total Lines:** ~18,500 (comprehensive coverage)
+- **Last Updated:** 2025-01-16
 
 ---
 

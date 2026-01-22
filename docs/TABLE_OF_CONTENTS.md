@@ -115,8 +115,10 @@ The TOC uses plain text titles (no emoji) for clean navigation:
 
 <!-- markdownlint-disable MD013 -->
 
+<!-- markdownlint-disable MD060 -->
+
 | Section        | Config Key      | TOC Title                 | Report Heading            |
-|----------------|-----------------|---------------------------|---------------------------|
+| -------------- | --------------- | ------------------------- | ------------------------- |
 | Global Summary | `summary`       | Global Summary            | 📈 Global Summary         |
 | Repositories   | `repositories`  | Gerrit Projects           | All Repositories          |
 | Contributors   | `contributors`  | Top Contributors          | Top Contributors          |
@@ -125,6 +127,8 @@ The TOC uses plain text titles (no emoji) for clean navigation:
 | Workflows      | `workflows`     | Deployed CI/CD Jobs       | Deployed CI/CD Jobs       |
 | Orphaned Jobs  | `orphaned_jobs` | Orphaned Jenkins Jobs     | Orphaned Jenkins Jobs     |
 | Time Windows   | N/A             | Time Windows              | Time Windows              |
+
+<!-- markdownlint-enable MD060 -->
 
 <!-- markdownlint-enable MD013 -->
 
@@ -368,16 +372,16 @@ output:
 
 **Solution:** Ensure section IDs match the TOC anchors:
 
-| TOC Anchor       | Required Section ID           |
-|------------------|-------------------------------|
-| `#summary`       | `<section id="summary">`      |
-| `#repositories`  | `<section id="repositories">` |
-| `#contributors`  | `<section id="contributors">` |
-| `#organizations` | `<section id="organizations">`|
-| `#features`      | `<section id="features">`     |
-| `#workflows`     | `<section id="workflows">`    |
-| `#orphaned-jobs` | `<section id="orphaned-jobs">`|
-| `#time-windows`  | `<section id="time-windows">` |
+| TOC Anchor       | Required Section ID            |
+| ---------------- | ------------------------------ |
+| `#summary`       | `<section id="summary">`       |
+| `#repositories`  | `<section id="repositories">`  |
+| `#contributors`  | `<section id="contributors">`  |
+| `#organizations` | `<section id="organizations">` |
+| `#features`      | `<section id="features">`      |
+| `#workflows`     | `<section id="workflows">`     |
+| `#orphaned-jobs` | `<section id="orphaned-jobs">` |
+| `#time-windows`  | `<section id="time-windows">`  |
 
 ---
 

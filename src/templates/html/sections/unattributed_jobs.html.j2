@@ -1,0 +1,88 @@
+{#
+SPDX-License-Identifier: Apache-2.0
+SPDX-FileCopyrightText: 2025 The Linux Foundation
+#}
+
+{#- Section: Unattributed Jenkins Jobs (HTML) -#}
+{#- Renders Jenkins jobs that could not be matched to any repository -#}
+{#-
+    Context required:
+        - unattributed_jobs (dict): Unattributed job data and counts
+        - config (dict): Configuration options
+
+    This section displays:
+        - List of Jenkins jobs that couldn't be matched to any repository
+        - Job details including name, URL, and status
+        - Summary statistics
+-#}
+
+{% if config.include_sections.unattributed_jobs and unattributed_jobs.has_unattributed_jobs %}
+<section id="unattributed-jobs" class="report-section unattributed-jobs-section">
+    <h2>Unattributed Jenkins Jobs</h2>
+
+    {% if unattributed_jobs.auth_warning %}
+    <div class="info-box auth-warning">
+        <p>This project <strong>requires authentication</strong> to view configured jobs; you can use the URL below to login:</p>
+        <p><a href="{{ unattributed_jobs.jenkins_url }}" target="_blank">{{ unattributed_jobs.jenkins_url }}</a></p>
+    </div>
+    {% endif %}
+
+    {% if unattributed_jobs.description %}
+    <p class="section-description">{{ unattributed_jobs.description }}</p>
+    {% endif %}
+
+    <p class="total-count">
+        <strong>Total:</strong> {{ unattributed_jobs.total_count | default(0) }} unattributed jobs
+    </p>
+
+    <div class="section-content">
+        <h3>Job Details</h3>
+        <div class="table-wrapper">
+            <table class="data-table unattributed-jobs-table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="job-name">Job Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for job in unattributed_jobs.jobs %}
+                    {%- set job_name = job.name | default('Unknown') -%}
+                    {%- set job_color = job.color | default('notbuilt') -%}
+                    {%- set job_status = job.status | default('unknown') -%}
+                    {%- set job_url = job.url | default('') -%}
+
+                    {#- Map Jenkins color to CSS class (same logic as workflows section) -#}
+                    {%- if job_color == 'blue' or job_color == 'blue_anime' or job_status == 'success' -%}
+                        {%- set status_class = 'status-success' -%}
+                    {%- elif job_color == 'red' or job_color == 'red_anime' or job_status == 'failure' -%}
+                        {%- set status_class = 'status-failure' -%}
+                    {%- elif job_color == 'yellow' or job_color == 'yellow_anime' or job_status == 'unstable' -%}
+                        {%- set status_class = 'status-warning' -%}
+                    {%- elif job_color == 'aborted' or job_color == 'aborted_anime' -%}
+                        {%- set status_class = 'status-aborted' -%}
+                    {%- elif job_color == 'disabled' -%}
+                        {%- set status_class = 'status-disabled' -%}
+                    {%- elif job_color == 'notbuilt' or job_color == 'notbuilt_anime' or job_status == 'not_built' -%}
+                        {%- set status_class = 'status-unknown' -%}
+                    {%- elif '_anime' in job_color or job_status == 'building' -%}
+                        {%- set status_class = 'status-building' -%}
+                    {%- else -%}
+                        {%- set status_class = 'status-unknown' -%}
+                    {%- endif -%}
+
+                    <tr>
+                        <td class="job-name">
+                            {%- if job_url -%}
+                                <a href="{{ job_url }}" target="_blank"><span class="{{ status_class }} jenkins-status">{{ job_name }}</span></a>
+                            {%- else -%}
+                                <span class="{{ status_class }} jenkins-status">{{ job_name }}</span>
+                            {%- endif -%}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+{% endif %}

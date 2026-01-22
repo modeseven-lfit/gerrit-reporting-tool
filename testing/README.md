@@ -98,6 +98,41 @@ Without API tokens, reports will be fast (~10-20 seconds) but will **NOT** inclu
 
 With API tokens, reports take longer (~5-10 minutes) but include complete data.
 
+## Report Comparison Workflow
+
+The testing script now automatically:
+
+1. **Copies all generated reports** from `/tmp/reports` to `testing/reports/` (preserving directory structure)
+2. **Downloads production reports** from GitHub Pages into each project directory as `production-report.html`
+
+This creates a convenient side-by-side comparison structure:
+
+```bash
+testing/reports/
+├── ONAP/
+│   ├── report.html              # Latest test run
+│   ├── production-report.html   # Current production baseline (from GitHub Pages)
+│   ├── theme.css                # Shared stylesheet (both reports can use it)
+│   ├── report_raw.json          # Complete test data
+│   ├── report.md                # Markdown report
+│   └── config_resolved.json     # Configuration used
+│
+└── Opendaylight/
+    ├── report.html              # Latest test run
+    ├── production-report.html   # Current production baseline
+    ├── theme.css                # Shared stylesheet
+    ├── report_raw.json
+    ├── report.md
+    └── config_resolved.json
+```
+
+**Benefits:**
+
+- CSS and assets share a location, so both reports render properly in the browser
+- Easy side-by-side comparison in separate browser tabs
+- All reports in one location for review
+- Production baseline automatically updated from GitHub Pages
+
 ## Quick Start
 
 Run the testing script:
@@ -131,7 +166,9 @@ The script will:
 
 ## Output Structure
 
-After successful execution, you'll have:
+After successful execution, you'll have reports in two locations:
+
+### 1. Source Reports (generated in /tmp)
 
 ```bash
 /tmp/
@@ -147,20 +184,45 @@ After successful execution, you'll have:
 │   ├── netconf/
 │   └── ...
 │
-└── reports/
-    ├── ONAP/                     # ONAP reports
-    │   ├── report_raw.json       # Complete dataset (canonical)
-    │   ├── report.md             # Markdown report (readable)
-    │   ├── report.html           # Interactive HTML (sortable tables)
-    │   ├── config_resolved.json  # Applied configuration
-    │   └── ONAP_report_bundle.zip # Complete bundle
+└── reports/                      # Initial report output
+    ├── ONAP/
+    │   ├── report_raw.json
+    │   ├── report.md
+    │   ├── report.html
+    │   ├── theme.css
+    │   ├── config_resolved.json
+    │   └── ONAP_report_bundle.zip
     │
-    └── OpenDaylight/             # OpenDaylight reports
+    └── Opendaylight/
         ├── report_raw.json
         ├── report.md
         ├── report.html
+        ├── theme.css
         ├── config_resolved.json
-        └── OpenDaylight_report_bundle.zip
+        └── Opendaylight_report_bundle.zip
+```
+
+### 2. Testing Directory (copied for comparison)
+
+```bash
+testing/reports/                  # Copied for easy comparison
+├── ONAP/
+│   ├── report.html              # Latest test run
+│   ├── production-report.html   # Downloaded from GitHub Pages
+│   ├── theme.css                # Shared stylesheet
+│   ├── report_raw.json          # Complete test data
+│   ├── report.md                # Markdown report
+│   ├── config_resolved.json     # Applied configuration
+│   └── ONAP_report_bundle.zip   # Bundle with all files
+│
+└── Opendaylight/
+    ├── report.html              # Latest test run
+    ├── production-report.html   # Downloaded from GitHub Pages
+    ├── theme.css                # Shared stylesheet
+    ├── report_raw.json
+    ├── report.md
+    ├── config_resolved.json
+    └── Opendaylight_report_bundle.zip
 ```
 
 ## Configuration
@@ -243,19 +305,23 @@ less /tmp/reports/OpenDaylight/report.md
 
 ### HTML Reports
 
-Interactive reports with sortable tables:
+Interactive reports with sortable tables (use testing/reports for side-by-side comparison):
 
 ```bash
-# ONAP report (macOS)
-open /tmp/reports/ONAP/report.html
+# Compare ONAP reports (macOS)
+open testing/reports/ONAP/report.html
+open testing/reports/ONAP/production-report.html
 
-# OpenDaylight report (macOS)
-open /tmp/reports/OpenDaylight/report.html
+# Compare OpenDaylight reports (macOS)
+open testing/reports/Opendaylight/report.html
+open testing/reports/Opendaylight/production-report.html
 
 # Linux
-xdg-open /tmp/reports/ONAP/report.html
-xdg-open /tmp/reports/OpenDaylight/report.html
+xdg-open testing/reports/ONAP/report.html &
+xdg-open testing/reports/ONAP/production-report.html &
 ```
+
+**Tip:** Open both reports in separate browser tabs to compare side-by-side. The CSS and all assets will load properly since they're in the same directory.
 
 ### JSON Data
 
@@ -263,10 +329,13 @@ Complete structured data for programmatic analysis:
 
 ```bash
 # ONAP data
-jq '.' /tmp/reports/ONAP/report_raw.json | less
+jq '.' testing/reports/ONAP/report_raw.json | less
 
 # OpenDaylight data
-jq '.' /tmp/reports/OpenDaylight/report_raw.json | less
+jq '.' testing/reports/Opendaylight/report_raw.json | less
+
+# Compare specific metrics
+jq '.organizations[] | select(.domain == "est.tech")' testing/reports/ONAP/report_raw.json
 ```
 
 ## Troubleshooting
@@ -563,3 +632,113 @@ This metadata automatically configures API endpoints for each project.
 - [gerrit-reporting-tool documentation](../README.md)
 - [Configuration guide](../docs/CONFIGURATION.md)
 - [Performance guide](../docs/PERFORMANCE.md)
+
+---
+
+## Projects Configuration (projects.json)
+
+### Security Notice
+
+**IMPORTANT:** The `testing/projects.json` file is `.gitignored` because it may contain sensitive credentials.
+
+- ✅ **Local testing:** Use actual credentials in `testing/projects.json`
+- ✅ **Production:** Credentials are in GitHub Secrets `PROJECTS_JSON`
+- ❌ **Never commit** `testing/projects.json` to the repository
+
+### Schema
+
+The `projects.json` file defines project configurations. See `projects.json.example` for the complete schema.
+
+**Basic/Gerrit project:**
+
+```json
+{
+  "project": "Project Name",
+  "slug": "project-slug",
+  "gerrit": "gerrit.example.org",
+  "jenkins": "jenkins.example.org"
+}
+```
+
+**Project with Jenkins authentication:**
+
+```json
+{
+  "project": "Aether",
+  "slug": "aether",
+  "github": "opennetworkinglab",
+  "jenkins": "jenkins.aetherproject.org",
+  "jenkins_user": "your-jenkins-username",
+  "jenkins_token": "your-jenkins-api-token"
+}
+```
+
+**GitHub project:**
+
+```json
+{
+  "project": "GitHub Project",
+  "slug": "gh-project",
+  "github": "github-org-name"
+}
+```
+
+### Fields Reference
+
+| Field             | Required | Description                          |
+| ----------------- | -------- | ------------------------------------ |
+| `project`         | Yes      | Human-readable project name          |
+| `slug`            | Yes      | Short identifier (URL-safe)          |
+| `gerrit`          | No       | Gerrit server hostname               |
+| `jenkins`         | No       | Jenkins server hostname              |
+| `jenkins_user`    | No       | Jenkins username for authentication  |
+| `jenkins_token`   | No       | Jenkins API token for authentication |
+| `github`          | No       | GitHub organization name             |
+| `jjb_attribution` | No       | JJB configuration object             |
+
+### Setup for Local Testing
+
+1. **Copy the example file:**
+
+   ```bash
+   cp testing/projects.json.example testing/projects.json
+   ```
+
+2. **Add your projects** with actual credentials:
+
+   ```bash
+   vim testing/projects.json
+   ```
+
+3. **Verify it's .gitignored:**
+
+   ```bash
+   git status testing/projects.json
+   # Should show: "No changes" or not listed
+   ```
+
+### Production Setup (GitHub Actions)
+
+In production, the `PROJECTS_JSON` secret contains the same structure,
+containing authentication credentials:
+
+1. Go to repository secrets: <https://github.com/modeseven-lfit/test-gerrit-reporting-tool/settings/secrets/actions>
+2. Update `PROJECTS_JSON` secret with the JSON array
+3. Add the credential fields, `jenkins_user` and `jenkins_token`
+
+**Example production PROJECTS_JSON value:**
+
+```json
+[
+  {
+    "project": "Aether",
+    "slug": "aether",
+    "github": "opennetworkinglab",
+    "jenkins": "jenkins.aetherproject.org",
+    "jenkins_user": "actual-username-here",
+    "jenkins_token": "actual-token-here"
+  }
+]
+```
+
+The GitHub workflow automatically passes credentials from the JSON to environment variables.

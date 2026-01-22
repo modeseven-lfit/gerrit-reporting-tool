@@ -23,6 +23,9 @@ PROJECTS_JSON="${SCRIPT_DIR}/projects.json"
 # SSH key configuration
 SSH_KEY_PATH="${HOME}/.ssh/gerrit.linuxfoundation.org"
 
+# Default verbosity level (empty for normal, -v, -vv, or -vvv)
+VERBOSE_FLAG=""
+
 # Logging
 log_info() {
     echo -e "${BLUE}[INFO]${NC} $*"
@@ -38,6 +41,77 @@ log_warning() {
 
 log_error() {
     echo -e "${RED}[ERROR]${NC} $*"
+}
+
+# Copy reports to testing directory preserving structure
+copy_reports_to_testing() {
+    log_info "Copying reports to testing directory..."
+
+    local testing_reports_dir="${SCRIPT_DIR}/reports"
+
+    # Remove old testing/reports directory if it exists
+    if [ -d "${testing_reports_dir}" ]; then
+        log_info "  Removing old ${testing_reports_dir}"
+        rm -rf "${testing_reports_dir}"
+    fi
+
+    # Copy entire /tmp/reports structure to testing/reports
+    if [ -d "${REPORT_BASE_DIR}" ]; then
+        log_info "  Copying ${REPORT_BASE_DIR} to ${testing_reports_dir}"
+        cp -r "${REPORT_BASE_DIR}" "${testing_reports_dir}"
+        log_success "  ✅ Reports copied successfully"
+    else
+        log_warning "  ⚠️  Report directory not found: ${REPORT_BASE_DIR}"
+        return 1
+    fi
+
+    echo ""
+}
+
+# Download production reports from GitHub Pages into project directories
+download_production_reports() {
+    log_info "Downloading production reports from GitHub Pages..."
+
+    local github_pages_base="https://modeseven-lfit.github.io/gerrit-reporting-tool"
+    local testing_reports_dir="${SCRIPT_DIR}/reports"
+
+    local production_reports=(
+        "onap:ONAP"
+        "odl:Opendaylight"
+    )
+
+    for report_spec in "${production_reports[@]}"; do
+        IFS=':' read -r project_slug project_dir <<< "$report_spec"
+        local url="${github_pages_base}/${project_slug}/report.html"
+        local output_dir="${testing_reports_dir}/${project_dir}"
+        local output_path="${output_dir}/production-report.html"
+
+        # Create directory if it doesn't exist
+        if [ ! -d "${output_dir}" ]; then
+            log_info "  Creating directory ${output_dir}"
+            mkdir -p "${output_dir}"
+        fi
+
+        log_info "  Downloading ${project_slug} production report..."
+        if command -v curl &> /dev/null; then
+            if curl -fsSL -o "${output_path}" "${url}"; then
+                log_success "  ✅ Downloaded to ${project_dir}/production-report.html"
+            else
+                log_warning "  ⚠️  Failed to download ${project_slug} report from ${url}"
+            fi
+        elif command -v wget &> /dev/null; then
+            if wget -q -O "${output_path}" "${url}"; then
+                log_success "  ✅ Downloaded to ${project_dir}/production-report.html"
+            else
+                log_warning "  ⚠️  Failed to download ${project_slug} report from ${url}"
+            fi
+        else
+            log_error "Neither curl nor wget is available. Cannot download production reports."
+            return 1
+        fi
+    done
+
+    echo ""
 }
 
 # Load project metadata
@@ -266,15 +340,98 @@ clone_project() {
     fi
 }
 
+# Clone GitHub project repositories
+clone_github_project() {
+    local project_name="$1"
+    local github_org="$2"
+    local clone_dir="${CLONE_BASE_DIR}/${github_org}"
+
+    if [ -d "${clone_dir}" ]; then
+        log_warning "${project_name} repositories already exist at ${clone_dir}"
+        log_warning "To re-clone with fresh data, delete the directory first:"
+        log_warning "  rm -rf ${clone_dir}"
+        log_info "Skipping clone, using existing repositories"
+        return 0
+    fi
+
+    log_info "Cloning ${project_name} repositories from GitHub org ${github_org} to ${clone_dir}..."
+
+    # Check if gerrit-clone CLI is available
+    if ! command -v gerrit-clone &> /dev/null; then
+        log_error "gerrit-clone CLI is not installed"
+        log_error "Please install it from: https://github.com/lfit/releng-lftools"
+        log_error "Or use: pip install gerrit-clone"
+        return 1
+    fi
+
+    # Set up GitHub token for authentication
+    local github_token="${CLASSIC_READ_ONLY_PAT_TOKEN:-${GITHUB_TOKEN:-}}"
+    if [ -z "${github_token}" ]; then
+        log_warning "No GitHub token found in CLASSIC_READ_ONLY_PAT_TOKEN or GITHUB_TOKEN"
+        log_warning "Proceeding without authentication (may hit rate limits)"
+    fi
+
+    # Use gerrit-clone (the CLI tool) for multi-threaded GitHub cloning
+    local clone_args=(
+        --host "github.com/${github_org}"
+        --source-type github
+        --path-prefix "${CLONE_BASE_DIR}"
+        --skip-archived
+        --threads 8
+        --clone-timeout 600
+        --retry-attempts 5
+        --retry-base-delay 3.0
+        --retry-max-delay 60.0
+        --https
+    )
+
+    # Add GitHub token if available
+    if [ -n "${github_token}" ]; then
+        clone_args+=(--github-token "${github_token}")
+    fi
+
+    # Add verbosity flag if set
+    if [ -n "${VERBOSE_FLAG}" ]; then
+        clone_args+=("${VERBOSE_FLAG}")
+    fi
+
+    log_info "Running gerrit-clone with multi-threaded GitHub cloning..."
+    if gerrit-clone clone "${clone_args[@]}"; then
+        log_success "${project_name} repositories cloned successfully"
+        log_info "Clone directory: ${clone_dir}"
+        return 0
+    else
+        log_error "Failed to clone ${project_name} repositories"
+        return 1
+    fi
+}
+
 # Generate project report
 generate_project_report() {
     local project_name="$1"
-    local gerrit_host="$2"
+    local source_identifier="$2"  # Either gerrit_host or github_org
     local jenkins_host="$3"
     local github_org="$4"
-    local clone_dir="${CLONE_BASE_DIR}/${gerrit_host}"
+    local clone_dir="${CLONE_BASE_DIR}/${source_identifier}"
 
     log_info "Generating ${project_name} report..."
+
+    # Extract Jenkins credentials from projects.json if available
+    local jenkins_user
+    local jenkins_token
+    jenkins_user=$(get_project_info "${project_name}" "jenkins_user")
+    jenkins_token=$(get_project_info "${project_name}" "jenkins_token")
+
+    # Clear any existing Jenkins credentials to prevent cross-project contamination
+    unset JENKINS_USER
+    unset JENKINS_API_TOKEN
+
+    # Set Jenkins credentials if found in projects.json
+    if [ -n "${jenkins_user}" ] && [ -n "${jenkins_token}" ]; then
+        export JENKINS_USER="${jenkins_user}"
+        export JENKINS_API_TOKEN="${jenkins_token}"
+        log_info "Using Jenkins credentials from projects.json for ${project_name}"
+    fi
 
     if [ ! -d "${clone_dir}" ]; then
         log_error "${project_name} clone directory not found: ${clone_dir}"
@@ -296,16 +453,22 @@ generate_project_report() {
         --cache \
         --workers 4"
 
+    # Add verbose flag if set
+    if [ -n "${VERBOSE_FLAG}" ]; then
+        cmd="${cmd} ${VERBOSE_FLAG}"
+    fi
+
     # Add github-token-env flag if using CLASSIC_READ_ONLY_PAT_TOKEN
     if [ -n "${GITHUB_TOKEN_ENV:-}" ] && [ "${GITHUB_TOKEN_ENV}" != "GITHUB_TOKEN" ]; then
         cmd="${cmd} \
         --github-token-env \"${GITHUB_TOKEN_ENV}\""
     fi
 
-    # Add Gerrit host if available
-    if [ -n "${gerrit_host}" ]; then
-        export GERRIT_HOST="${gerrit_host}"
-        export GERRIT_BASE_URL="https://${gerrit_host}"
+    # Add Gerrit host if available (only for Gerrit projects)
+    # For GitHub-native projects, source_identifier is the GitHub org
+    if [ -n "${source_identifier}" ] && [[ "${source_identifier}" == *"gerrit"* || "${source_identifier}" == *"git."* ]]; then
+        export GERRIT_HOST="${source_identifier}"
+        export GERRIT_BASE_URL="https://${source_identifier}"
     fi
 
     # Add Jenkins host if available
@@ -344,44 +507,134 @@ show_summary() {
         project=$(echo "$project_data" | jq -r '.project // "Unknown"' 2>/dev/null)
         local gerrit
         gerrit=$(echo "$project_data" | jq -r '.gerrit // empty' 2>/dev/null)
+        local github_org
+        github_org=$(echo "$project_data" | jq -r '.github // empty' 2>/dev/null)
 
         if [ -n "${gerrit}" ]; then
             local clone_dir="${CLONE_BASE_DIR}/${gerrit}"
             if [ -d "${clone_dir}" ]; then
-                echo "  - ${project}: ${clone_dir}"
+                echo "  - ${project} (Gerrit): ${clone_dir}"
+            fi
+        elif [ -n "${github_org}" ]; then
+            local clone_dir="${CLONE_BASE_DIR}/${github_org}"
+            if [ -d "${clone_dir}" ]; then
+                echo "  - ${project} (GitHub): ${clone_dir}"
             fi
         fi
     done
     echo ""
 
     log_info "Report Directories:"
-    echo "  - All reports: ${REPORT_BASE_DIR}"
+    echo "  - Source: ${REPORT_BASE_DIR}"
+    echo "  - Testing copy: ${SCRIPT_DIR}/reports"
     echo ""
 
-    log_info "Generated Reports:"
-    for project_dir in "${REPORT_BASE_DIR}"/*; do
-        if [ -d "${project_dir}" ]; then
-            local project_name
-            project_name=$(basename "${project_dir}")
-            echo "  ${project_name} reports:"
-            find "${project_dir}" -maxdepth 1 -type f -exec basename {} \; | while read -r file; do
-                size=$(du -h "${project_dir}/${file}" 2>/dev/null | cut -f1)
-                echo "    ${file} (${size})"
-            done
-            echo ""
-        fi
+    log_info "Generated Reports in testing/reports/:"
+    local testing_reports_dir="${SCRIPT_DIR}/reports"
+    if [ -d "${testing_reports_dir}" ]; then
+        for project_dir in "${testing_reports_dir}"/*; do
+            if [ -d "${project_dir}" ]; then
+                local project_name
+                project_name=$(basename "${project_dir}")
+                echo "  ${project_name}:"
+
+                # Show main reports
+                [ -f "${project_dir}/report.html" ] && echo "    📊 report.html ($(du -h "${project_dir}/report.html" 2>/dev/null | cut -f1))"
+                [ -f "${project_dir}/production-report.html" ] && echo "    📊 production-report.html ($(du -h "${project_dir}/production-report.html" 2>/dev/null | cut -f1))"
+
+                # Show other files
+                [ -f "${project_dir}/report.md" ] && echo "    📄 report.md ($(du -h "${project_dir}/report.md" 2>/dev/null | cut -f1))"
+                [ -f "${project_dir}/report_raw.json" ] && echo "    📄 report_raw.json ($(du -h "${project_dir}/report_raw.json" 2>/dev/null | cut -f1))"
+                [ -f "${project_dir}/theme.css" ] && echo "    🎨 theme.css"
+
+                echo ""
+            fi
+        done
+    else
+        log_warning "No reports found in ${testing_reports_dir}"
+    fi
+
+    log_success "You can now review the reports!"
+    echo ""
+    log_info "To compare reports, run the command:"
+    echo "    open testing/reports/*/*report.html"
+    echo ""
+}
+
+# Parse command-line arguments
+parse_arguments() {
+    SELECTED_PROJECT=""
+
+    while [[ $# -gt 0 ]]; do
+        case $1 in
+            --project)
+                SELECTED_PROJECT="$2"
+                shift 2
+                ;;
+            -v|--verbose)
+                VERBOSE_FLAG="-v"
+                shift
+                ;;
+            -vv|--debug)
+                VERBOSE_FLAG="-vv"
+                shift
+                ;;
+            -vvv|--trace)
+                VERBOSE_FLAG="-vvv"
+                shift
+                ;;
+            -h|--help)
+                echo "Usage: $0 [OPTIONS]"
+                echo ""
+                echo "Options:"
+                echo "  --project NAME       Generate report for specific project only"
+                echo "  -v, --verbose        Enable verbose output (INFO level)"
+                echo "  -vv, --debug         Enable debug output (DEBUG level)"
+                echo "  -vvv, --trace        Enable trace output (maximum verbosity)"
+                echo "  -h, --help           Show this help message"
+                echo ""
+                echo "Examples:"
+                echo "  $0                         # Process all projects"
+                echo "  $0 --project Aether        # Process only Aether project"
+                echo "  $0 --project ONAP -vv      # Process ONAP with debug output"
+                echo "  $0 -v                      # Process all with verbose output"
+                exit 0
+                ;;
+            *)
+                log_error "Unknown option: $1"
+                echo "Use --help for usage information"
+                exit 1
+                ;;
+        esac
     done
+}
 
-    log_success "You can now review the reports manually!"
-    echo ""
+# Get list of projects to process
+get_projects_to_process() {
+    if [ -n "${SELECTED_PROJECT}" ]; then
+        # Single project specified via --project flag
+        echo "${SELECTED_PROJECT}"
+    else
+        # All projects from projects.json
+        jq -r '.[].project' "${PROJECTS_JSON}"
+    fi
 }
 
 # Main execution
 main() {
+    # Parse command-line arguments first
+    parse_arguments "$@"
+
     log_info "=========================================="
     log_info "Local Testing Script for Reporting Tool"
     log_info "=========================================="
     echo ""
+
+    # Show verbosity setting if enabled
+    if [ -n "${VERBOSE_FLAG}" ]; then
+        log_info "Verbosity: ${VERBOSE_FLAG}"
+        echo ""
+    fi
 
     # Step 1: Load project metadata
     load_project_metadata
@@ -401,31 +654,55 @@ main() {
     mkdir -p "${CLONE_BASE_DIR}"
     mkdir -p "${REPORT_BASE_DIR}"
 
-    # Get projects to process (ONAP and Opendaylight for now)
-    local projects=("ONAP" "Opendaylight")
+    # Get projects to process
+    local projects
+    readarray -t projects < <(get_projects_to_process)
+
+    if [ ${#projects[@]} -eq 0 ]; then
+        log_error "No projects to process"
+        exit 1
+    fi
+
+    if [ -n "${SELECTED_PROJECT}" ]; then
+        log_info "Processing single project: ${SELECTED_PROJECT}"
+    else
+        log_info "Processing all projects: ${projects[*]}"
+    fi
+    echo ""
 
     # Step 6: Clone repositories
-    log_info "Step 1/2: Cloning Gerrit Repositories"
+    log_info "Step 1/3: Cloning Repositories"
     log_info "------------------------------------------"
     echo ""
-    log_info "💡 To get fresh/complete data, delete existing clone directories first:"
-    log_info "   rm -rf /tmp/gerrit.onap.org"
-    log_info "   rm -rf /tmp/git.opendaylight.org"
-    echo ""
+    if [ -z "${SELECTED_PROJECT}" ]; then
+        log_info "💡 To get fresh/complete data, delete existing clone directories first:"
+        log_info "   rm -rf /tmp/gerrit.onap.org"
+        log_info "   rm -rf /tmp/git.opendaylight.org"
+        log_info "   rm -rf /tmp/opennetworkinglab"
+        echo ""
+    fi
     for project in "${projects[@]}"; do
         local gerrit_host
         gerrit_host=$(get_project_info "${project}" "gerrit")
+        local github_org
+        github_org=$(get_project_info "${project}" "github")
 
+        # Determine project type and clone accordingly
         if [ -n "${gerrit_host}" ]; then
+            # Gerrit-based project
             clone_project "${project}" "${gerrit_host}"
             echo ""
+        elif [ -n "${github_org}" ]; then
+            # GitHub-native project
+            clone_github_project "${project}" "${github_org}"
+            echo ""
         else
-            log_warning "No Gerrit host found for ${project}, skipping clone"
+            log_warning "No source system found for ${project} (needs 'gerrit' or 'github' field)"
         fi
     done
 
     # Step 7: Generate reports
-    log_info "Step 2/2: Generating Reports"
+    log_info "Step 2/3: Generating Reports"
     log_info "------------------------------------------"
     for project in "${projects[@]}"; do
         local gerrit_host
@@ -435,21 +712,35 @@ main() {
         local github_org
         github_org=$(get_project_info "${project}" "github")
 
+        # Determine source identifier (gerrit_host or github_org)
+        local source_identifier=""
         if [ -n "${gerrit_host}" ]; then
+            source_identifier="${gerrit_host}"
+        elif [ -n "${github_org}" ]; then
+            source_identifier="${github_org}"
+        fi
+
+        if [ -n "${source_identifier}" ]; then
             # Clean up existing report directory for this project
             if [ -d "${REPORT_BASE_DIR}/${project}" ] && [ -n "${REPORT_BASE_DIR}" ] && [ -n "${project}" ]; then
                 log_warning "Removing existing ${REPORT_BASE_DIR}/${project}"
                 rm -rf "${REPORT_BASE_DIR:?}/${project}"
             fi
 
-            generate_project_report "${project}" "${gerrit_host}" "${jenkins_host}" "${github_org}"
+            generate_project_report "${project}" "${source_identifier}" "${jenkins_host}" "${github_org}"
             echo ""
         else
-            log_warning "No Gerrit host found for ${project}, skipping report generation"
+            log_warning "No source system found for ${project}, skipping report generation"
         fi
     done
 
-    # Step 8: Show summary
+    # Step 8: Copy reports to testing directory
+    copy_reports_to_testing
+
+    # Step 9: Download production reports
+    download_production_reports
+
+    # Step 10: Show summary
     show_summary
 }
 

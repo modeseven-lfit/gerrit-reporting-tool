@@ -31,8 +31,8 @@ info_yaml:
 
 <!-- markdownlint-disable MD060 -->
 
-| Color    | Status   | Meaning                       |
-| -------- | -------- | ----------------------------- |
+| Color     | Status   | Meaning                       |
+| --------- | -------- | ----------------------------- |
 | 🟢 Green  | Current  | Commits within last 365 days  |
 | 🟠 Orange | Active   | Commits between 365-1095 days |
 | 🔴 Red    | Inactive | No commits in 1095+ days      |

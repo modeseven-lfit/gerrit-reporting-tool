@@ -31,7 +31,7 @@ from typing import Any, Optional, cast
 from gerrit_reporting_tool.aggregators import DataAggregator
 from gerrit_reporting_tool.collectors import GitDataCollector, INFOYamlCollector
 from gerrit_reporting_tool.features import FeatureRegistry
-from gerrit_reporting_tool.renderers import ReportRenderer
+from rendering.renderer import ModernReportRenderer
 from util.git import safe_git_command
 from util.zip_bundle import create_report_bundle
 from gerrit_reporting_tool.config import save_resolved_config
@@ -58,7 +58,7 @@ class RepositoryReporter:
         self.git_collector = GitDataCollector(config, {}, logger, api_stats=api_stats)
         self.feature_registry = FeatureRegistry(config, logger, api_stats=api_stats)
         self.aggregator = DataAggregator(config, logger)
-        self.renderer = ReportRenderer(config, logger)
+        self.renderer = ModernReportRenderer(config, logger)
         self.info_yaml_collector = INFOYamlCollector(config)
         self.info_master_temp_dir: Optional[str] = None
 
@@ -168,6 +168,20 @@ class RepositoryReporter:
             "summaries": {},
             "errors": [],
         }
+
+        # Add Jenkins metadata if Jenkins is configured
+        jenkins_config = self.config.get("jenkins", {})
+        import os
+        jenkins_host = os.environ.get("JENKINS_HOST") or jenkins_config.get("host", "")
+
+        if jenkins_host or jenkins_config.get("enabled"):
+            jenkins_metadata = {
+                "host": jenkins_host,
+                "requires_auth": bool(
+                    os.environ.get("JENKINS_USER") and os.environ.get("JENKINS_API_TOKEN")
+                ),
+            }
+            report_data["jenkins_metadata"] = jenkins_metadata
 
         # Update git collector with time windows
         self.git_collector.time_windows = cast(
@@ -280,13 +294,24 @@ class RepositoryReporter:
             # Add allocation data to report for debugging
             report_data["jenkins_allocation"] = allocation_summary
 
-            # Get unallocated job names for the report
+            # Get unallocated job names and details for the report
             if allocation_summary.get("unallocated_jobs", 0) > 0:
                 all_jobs = self.git_collector.jenkins_allocation_context.get_all_jobs()
-                all_job_names = {job.get("name", "") for job in all_jobs.get("jobs", [])}
+                all_jobs_list = all_jobs.get("jobs", [])
+                all_job_names = {job.get("name", "") for job in all_jobs_list}
                 allocated_job_names = set(allocation_summary.get("allocated_job_names", []))
                 unallocated_job_names = sorted(all_job_names - allocated_job_names)
                 report_data["jenkins_allocation"]["unallocated_job_names"] = unallocated_job_names
+
+                # Store basic job data for unallocated jobs (same structure as cache)
+                # This includes: name, url, color, buildable, disabled
+                unallocated_job_details = []
+                for job in all_jobs_list:
+                    job_name = job.get("name", "")
+                    if job_name in unallocated_job_names:
+                        unallocated_job_details.append(job)
+
+                report_data["jenkins_allocation"]["unallocated_job_details"] = unallocated_job_details
 
             # Add orphaned jobs data to report
             orphaned_summary = self.git_collector.get_orphaned_jenkins_jobs_summary()

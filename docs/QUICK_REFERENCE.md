@@ -37,7 +37,7 @@ https://<owner>.github.io/<repo>/pr-preview/<pr-number>/
 
 | Secret                          | Required    | Purpose                   |
 | ------------------------------- | ----------- | ------------------------- |
-| `CLASSIC_READ_ONLY_PAT_TOKEN`   | ✅ Yes       | GitHub API access         |
+| `CLASSIC_READ_ONLY_PAT_TOKEN`   | ✅ Yes      | GitHub API access         |
 | `LF_GERRIT_INFO_MASTER_SSH_KEY` | ⚠️ Optional | SSH clone for info-master |
 
 <!-- markdownlint-enable MD060 -->

@@ -18,63 +18,58 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 {% if config.include_sections.summary %}
 <section id="summary" class="report-section summary-section">
-    <h2>Summary</h2>
+    <h2>📈 Global Summary</h2>
 
-    {% set stats = [
-        {
-            'metric': 'Repositories Analyzed',
-            'value': summary.repositories_analyzed,
-            'total': summary.total_repositories
-        },
-        {
-            'metric': 'Contributors (Unique)',
-            'value': summary.unique_contributors,
-            'total': '—'
-        },
-        {
-            'metric': 'Total Commits',
-            'value': summary.total_commits_formatted,
-            'total': '—'
-        },
-        {
-            'metric': 'Total Organizations',
-            'value': summary.total_organizations,
-            'total': '—'
-        },
-        {
-            'metric': 'Active Repositories',
-            'value': summary.active_count,
-            'total': summary.repositories_analyzed
-        },
-        {
-            'metric': 'Inactive Repositories',
-            'value': summary.inactive_count,
-            'total': '—'
-        },
-        {
-            'metric': 'No Commit Repositories',
-            'value': summary.no_commit_count,
-            'total': '—'
-        },
-        {
-            'metric': 'Total Lines Added',
-            'value': summary.total_lines_added_formatted,
-            'total': '—'
-        },
-        {
-            'metric': 'Total Lines Removed',
-            'value': summary.total_lines_removed_formatted,
-            'total': '—'
-        },
-        {
-            'metric': 'Net Lines of Code',
-            'value': summary.net_lines_formatted,
-            'total': '—'
-        }
-    ] %}
+    <p><strong>✅ Current</strong> commits within last 365 days</p>
+    <p><strong>☑️ Active</strong> commits between 365-1095 days</p>
+    <p><strong>🛑 Inactive</strong> no commits in 1095+ days</p>
 
-    {% set title = "Global Statistics" %}
-    {% include 'html/components/stats_table.html.j2' %}
+    <table class="no-search no-pagination">
+        <thead>
+            <tr>
+                <th>Metric</th>
+                <th>Count</th>
+                <th>Percentage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Total {{ project.terminology.repositories }}</td>
+                <td>{{ summary.repositories_analyzed }}</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>Current {{ project.terminology.repositories }}</td>
+                <td>{{ summary.current_count }}</td>
+                <td>{{ (summary.current_percentage | default(0) | round(1)) }}%</td>
+            </tr>
+            <tr>
+                <td>Active {{ project.terminology.repositories }}</td>
+                <td>{{ summary.active_count }}</td>
+                <td>{{ (summary.active_percentage | default(0) | round(1)) }}%</td>
+            </tr>
+            <tr>
+                <td>Inactive {{ project.terminology.repositories }}</td>
+                <td>{{ summary.inactive_count }}</td>
+                <td>{{ (summary.inactive_percentage | default(0) | round(1)) }}%</td>
+            </tr>
+            <tr>
+                <td>No Apparent Commits</td>
+                <td>{{ summary.no_commit_count }}</td>
+                <td>{{ (summary.no_commit_percentage | default(0) | round(1)) }}%</td>
+            </tr>
+            <tr>
+                <td>Total Commits</td>
+                <td>{{ summary.total_commits_formatted }}</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Total Lines of Code</td>
+                <td>{{ summary.net_lines_formatted }}</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
 
 </section>
 {% endif %}

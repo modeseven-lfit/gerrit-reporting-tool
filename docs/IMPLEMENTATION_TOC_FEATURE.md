@@ -298,8 +298,10 @@ Comprehensive documentation covering:
 
 <!-- markdownlint-disable MD013 -->
 
+<!-- markdownlint-disable MD060 -->
+
 | Section ID      | Config Key      | TOC Title                 | Report Heading            |
-|-----------------|-----------------|---------------------------|---------------------------|
+| --------------- | --------------- | ------------------------- | ------------------------- |
 | `summary`       | `summary`       | Global Summary            | 📈 Global Summary         |
 | `repositories`  | `repositories`  | Gerrit Projects           | All Repositories          |
 | `contributors`  | `contributors`  | Top Contributors          | Top Contributors          |
@@ -308,6 +310,8 @@ Comprehensive documentation covering:
 | `workflows`     | `workflows`     | Deployed CI/CD Jobs       | Deployed CI/CD Jobs       |
 | `orphaned-jobs` | `orphaned_jobs` | Orphaned Jenkins Jobs     | Orphaned Jenkins Jobs     |
 | `time-windows`  | N/A             | Time Windows              | Time Windows              |
+
+<!-- markdownlint-enable MD060 -->
 
 <!-- markdownlint-enable MD013 -->
 

@@ -305,12 +305,12 @@ def _analyze_repositories_parallel(self, repo_dirs: List[Path]) -> List[Dict]:
 
 | Class/Module       | Variable                   | Type    | Thread-Safe? | Protection  | Priority          |
 | ------------------ | -------------------------- | ------- | ------------ | ----------- | ----------------- |
-| `APIStatistics`    | `stats`                    | dict    | ❌ No         | None        | High              |
-| `GerritAPIClient`  | All instance vars          | various | ✅ Yes        | Immutable   | N/A               |
+| `APIStatistics`    | `stats`                    | dict    | ❌ No        | None        | High              |
+| `GerritAPIClient`  | All instance vars          | various | ✅ Yes       | Immutable   | N/A               |
 | `JenkinsAPIClient` | `_jobs_cache`              | dict    | ⚠️ Unknown   | None?       | Medium            |
 | `JenkinsAPIClient` | `_cache_populated`         | bool    | ⚠️ Unknown   | None?       | Medium            |
-| `GitDataCollector` | `allocated_jenkins_jobs`   | set     | ✅ Yes        | Global lock | Critical Refactor |
-| `GitDataCollector` | `jenkins_jobs_cache`       | dict    | ✅ Yes        | Global lock | Critical Refactor |
+| `GitDataCollector` | `allocated_jenkins_jobs`   | set     | ✅ Yes       | Global lock | Critical Refactor |
+| `GitDataCollector` | `jenkins_jobs_cache`       | dict    | ✅ Yes       | Global lock | Critical Refactor |
 | Module-level       | `_jenkins_allocation_lock` | Lock    | N/A          | N/A         | Critical Refactor |
 | `FeatureRegistry`  | TBD                        | TBD     | ⚠️ Unknown   | TBD         | Medium            |
 | `ReportRenderer`   | TBD                        | TBD     | ⚠️ Unknown   | TBD         | Medium            |

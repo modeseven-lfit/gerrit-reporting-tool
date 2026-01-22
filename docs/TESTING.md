@@ -652,10 +652,10 @@ tests/
 
 | Module           | Target | Current | Status |
 | ---------------- | ------ | ------- | ------ |
-| src/performance/ | 90%    | 100%    | ✅      |
-| src/util/        | 90%    | 96%     | ✅      |
-| src/rendering/   | 85%    | 95%     | ✅      |
-| src/cli/         | 85%    | 90%     | ✅      |
+| src/performance/ | 90%    | 100%    | ✅     |
+| src/util/        | 90%    | 96%     | ✅     |
+| src/rendering/   | 85%    | 95%     | ✅     |
+| src/cli/         | 85%    | 90%     | ✅     |
 | src/config/      | 85%    | ~75%    | ⚠️     |
 | src/domain/      | 85%    | ~60%    | ⚠️     |
 | src/api/         | 85%    | 50%     | ⚠️     |

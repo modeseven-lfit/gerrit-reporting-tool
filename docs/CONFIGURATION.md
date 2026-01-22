@@ -1218,8 +1218,8 @@ GitHub offers two types of Personal Access Tokens (PAT):
 
 | Type                 | Multi-Organization | Use Case                                         |
 | -------------------- | ------------------ | ------------------------------------------------ |
-| **Classic PAT**      | ✅ Yes              | **Recommended** - Works across all organizations |
-| **Fine-Grained PAT** | ❌ No               | Single organization only                         |
+| **Classic PAT**      | ✅ Yes             | **Recommended** - Works across all organizations |
+| **Fine-Grained PAT** | ❌ No              | Single organization only                         |
 
 <!-- markdownlint-enable MD060 -->
 
@@ -1568,6 +1568,168 @@ generate-report:
   variables:
     GITHUB_TOKEN: $GITHUB_TOKEN
 ```
+
+---
+
+## Template Filters and Formatting
+
+The reporting system includes built-in template filters for consistent data formatting across Markdown and HTML outputs.
+
+### Available Filters
+
+#### `format_number` - Number Abbreviation
+
+Formats large numbers with K/M/B abbreviations.
+
+```jinja2
+{{ 1234 | format_number }}          {# → "1.2K" #}
+{{ 1234567 | format_number }}       {# → "1.2M" #}
+{{ 1234567890 | format_number }}    {# → "1.2B" #}
+{{ 42 | format_number }}            {# → "42" (< 1000) #}
+```
+
+**Use for:** Commit counts, LOC totals, large metrics
+
+---
+
+#### `format_loc` - Lines of Code with '+' Prefix
+
+Formats LOC values with a '+' prefix for clarity.
+
+```jinja2
+{{ 12345 | format_loc }}     {# → "+12.3K" #}
+{{ 500 | format_loc }}       {# → "+500" #}
+{{ 0 | format_loc }}         {# → "+0" #}
+```
+
+**Use for:** Lines added columns, LOC metrics, diff statistics
+
+---
+
+#### `format_percentage` - Percentage Formatting
+
+Formats percentages with 1 decimal place. Supports both pre-calculated and calculated percentages.
+
+```jinja2
+{# Pre-calculated percentage #}
+{{ 75.5 | format_percentage }}                    {# → "75.5%" #}
+
+{# Calculate from numerator/denominator #}
+{{ format_percentage(25, 100) }}                  {# → "25.0%" #}
+{{ format_percentage(1, 3) }}                     {# → "33.3%" #}
+```
+
+**Use for:** Activity percentages, distribution metrics, contribution shares
+
+---
+
+#### `format_date` - Date Formatting
+
+Formats ISO timestamps as human-readable dates.
+
+```jinja2
+{{ "2025-01-15T10:30:00Z" | format_date }}   {# → "2025-01-15" #}
+{{ commit.date | format_date }}              {# → "2024-12-20" #}
+```
+
+**Use for:** Last commit dates, report timestamps, activity dates
+
+---
+
+#### `status_emoji` - Status to Emoji
+
+Maps activity status strings to emoji indicators.
+
+```jinja2
+{{ "active" | status_emoji }}       {# → "✅" #}
+{{ "stale" | status_emoji }}        {# → "☑️" #}
+{{ "inactive" | status_emoji }}     {# → "🛑" #}
+{{ "unknown" | status_emoji }}      {# → "❓" #}
+```
+
+**Status Mappings:**
+
+- `active` → ✅ (green checkmark)
+- `stale` → ☑️ (ballot box with check)
+- `inactive` → 🛑 (stop sign)
+- `unknown` / default → ❓ (question mark)
+
+**Use for:** Repository status column, activity indicators, health metrics
+
+---
+
+#### `format_feature_name` - Feature Name Formatting
+
+Formats feature identifiers as human-readable names.
+
+```jinja2
+{{ "ci_cd" | format_feature_name }}              {# → "CI/CD" #}
+{{ "documentation" | format_feature_name }}      {# → "Documentation" #}
+{{ "dependency_management" | format_feature_name }}  {# → "Dependency Management" #}
+```
+
+**Use for:** Feature matrix, feature detection results, configuration labels
+
+---
+
+### Filter Configuration
+
+Filters are automatically available in all templates. No configuration needed.
+
+**Custom Templates:**
+
+If you're creating custom templates, all filters are registered globally:
+
+```jinja2
+{# In your custom template #}
+<td>{{ repository.total_commits | format_number }}</td>
+<td>{{ repository.total_lines_added | format_loc }}</td>
+<td>{{ repository.last_commit_date | format_date }}</td>
+<td>{{ repository.activity_status | status_emoji }}</td>
+```
+
+**See also:**
+
+- [Template Development Guide](TEMPLATE_DEVELOPMENT.md) - Complete template customization guide
+- [Developer Guide](DEVELOPER_GUIDE.md#template-filters) - Filter implementation details
+
+---
+
+### Output Format Customization
+
+Configure which output formats to generate:
+
+```yaml
+output:
+  formats:
+    - json      # Complete data (always recommended)
+    - markdown  # Readable text format
+    - html      # Interactive web format
+
+  create_bundle: true   # Create ZIP with all formats
+
+  paths:
+    json: "report_raw.json"
+    markdown: "report.md"
+    html: "report.html"
+    config: "config_resolved.json"
+```
+
+**Format Options:**
+
+| Format     | Description        | File Size | Interactive |
+| ---------- | ------------------ | --------- | ----------- |
+| `json`     | Complete data      | ~500KB    | No          |
+| `markdown` | Readable report    | ~100KB    | No          |
+| `html`     | Interactive tables | ~150KB    | Yes         |
+| `bundle`   | ZIP of all formats | ~200KB    | N/A         |
+
+**Recommendations:**
+
+- Always generate JSON (canonical data source)
+- Use Markdown for documentation, emails, README
+- Use HTML for interactive viewing, sorting, searching
+- Enable bundle for complete archival
 
 ---
 

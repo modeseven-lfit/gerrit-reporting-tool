@@ -12,51 +12,43 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
     This section displays:
         - Repository feature matrix showing which features are detected
-        - Feature counts and statistics
-        - Visual indicators for feature presence/absence
+        - Matches production format: Gerrit Project | Type | Dependabot | Pre-commit | ReadTheDocs | .gitreview | G2G | Status
 -#}
 
 {% if config.include_sections.features and features.has_features %}
 <section id="features" class="report-section features-section">
-    <h2>Repository Feature Matrix</h2>
+    <h2>🔧 Gerrit Project Feature Matrix</h2>
 
-    <div class="feature-matrix-wrapper">
-        <table class="feature-matrix">
-            <thead>
-                <tr>
-                    <th scope="col">Repository</th>
-                    {% for feature in features.features_list %}
-                    <th scope="col" class="feature-col">{{ feature }}</th>
-                    {% endfor %}
-                </tr>
-            </thead>
-            <tbody>
-                {% for repo_data in features.matrix %}
-                <tr>
-                    <td class="repo-name">{{ repo_data.repo_name }}</td>
-                    {% for feature in features.features_list %}
-                    <td class="feature-indicator">
-                        {% if repo_data.features[feature] %}
-                        <span class="feature-present" title="{{ feature }} detected">✓</span>
-                        {% else %}
-                        <span class="feature-absent" title="{{ feature }} not detected">✗</span>
-                        {% endif %}
-                    </td>
-                    {% endfor %}
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
-
-    <div class="feature-summary">
-        <p>
-            <strong>Features Detected:</strong> {{ features.feature_count }}
-        </p>
-        <p>
-            <strong>Repositories Analyzed:</strong> {{ features.repositories_count }}
-        </p>
-    </div>
+    <table class="dt-enabled dt-no-search dt-no-pagination feature-matrix-table">
+        <thead>
+            <tr>
+                <th>Gerrit Project</th>
+                <th>Primary Type</th>
+                <th>Other Types</th>
+                <th>Dependabot</th>
+                <th>Pre-commit</th>
+                <th>ReadTheDocs</th>
+                <th>.gitreview</th>
+                <th>G2G</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for repo_data in features.matrix %}
+            <tr>
+                <td>{{ repo_data.repo_name }}</td>
+                <td>{{ repo_data.primary_type | default('N/A') }}</td>
+                <td>{% if repo_data.other_types %}{{ repo_data.other_types | join('<br>') | safe }}{% endif %}</td>
+                <td>{{ '✅' if repo_data.features.get('dependabot', False) else '❌' }}</td>
+                <td>{{ '✅' if repo_data.features.get('pre_commit', False) else '❌' }}</td>
+                <td>{{ '✅' if repo_data.features.get('readthedocs', False) else '❌' }}</td>
+                <td>{{ '✅' if repo_data.features.get('gitreview', False) else '❌' }}</td>
+                <td>{{ '✅' if repo_data.features.get('g2g', False) else '❌' }}</td>
+                <td>{{ repo_data.status | default('✅') }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 
 </section>
 {% endif %}

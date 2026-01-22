@@ -33,6 +33,13 @@ from fixtures.repositories import (
     test_config_with_repos,
 )
 
+# Import integration-specific fixtures
+from tests.integration.fixtures import (
+    full_config,
+    minimal_config,
+    realistic_report_data,
+)
+
 
 # Make fixtures available to integration tests
 __all__ = [
@@ -51,4 +58,7 @@ __all__ = [
     "sample_json_file",
     "mock_github_env",
     "clean_environment",
+    "realistic_report_data",
+    "minimal_config",
+    "full_config",
 ]

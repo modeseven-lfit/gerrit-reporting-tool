@@ -166,12 +166,14 @@ class IssueTracking:
     Attributes:
         type: Type of issue tracker (e.g., "jira", "github")
         url: URL to the issue tracker
+        key: Project key/identifier (e.g., "CIMAN" for JIRA)
         is_valid: Whether the URL has been validated
         validation_error: Error message if URL validation failed
     """
 
     type: str = ""
     url: str = ""
+    key: str = ""
     is_valid: bool = False
     validation_error: str = ""
 
@@ -180,6 +182,7 @@ class IssueTracking:
         return {
             "type": self.type,
             "url": self.url,
+            "key": self.key,
             "is_valid": self.is_valid,
             "validation_error": self.validation_error,
         }
@@ -193,14 +196,34 @@ class IssueTracking:
         return cls(
             type=data.get("type", ""),
             url=data.get("url", ""),
+            key=data.get("key", ""),
             is_valid=data.get("is_valid", False),
             validation_error=data.get("validation_error", ""),
         )
 
     @property
     def has_url(self) -> bool:
-        """Check if a URL is configured."""
+        """Check if URL is configured."""
         return bool(self.url)
+
+    def get_full_url(self) -> str:
+        """
+        Get the full issue tracker URL.
+
+        If the URL ends with a trailing slash and we have a key,
+        append the key to create the complete project URL.
+
+        Returns:
+            Complete URL with project key if available, otherwise base URL
+        """
+        if not self.url:
+            return ""
+
+        # If we have a key and the URL looks incomplete (ends with /), append the key
+        if self.key and self.url.rstrip('/').endswith('/projects'):
+            return f"{self.url.rstrip('/')}/{self.key}"
+
+        return self.url
 
 
 @dataclass

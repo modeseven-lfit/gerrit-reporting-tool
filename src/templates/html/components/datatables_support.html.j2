@@ -1,0 +1,165 @@
+{#
+SPDX-License-Identifier: Apache-2.0
+SPDX-FileCopyrightText: 2025 The Linux Foundation
+#}
+
+{#-
+    DataTables Support Macros
+
+    Provides reusable macros for integrating Simple-DataTables library
+    into HTML reports with configurable features.
+
+    Features:
+    - Conditional loading based on configuration
+    - Per-table feature control via CSS classes
+    - Performance optimization (skip small tables)
+    - Customizable labels and pagination options
+
+    Usage:
+        {% import 'html/components/datatables_support.html.j2' as datatables %}
+        {{ datatables.datatables_css() }}
+        {{ datatables.datatables_js() }}
+-#}
+
+{#-
+    Macro: DataTables CSS
+
+    Injects Simple-DataTables CSS from CDN if sorting is enabled in configuration.
+    Should be called in the <head> section of the HTML document.
+
+    Returns:
+        HTML link tag for DataTables CSS, or empty string if disabled
+-#}
+{% macro datatables_css(config) %}
+{% if config.html_tables.sortable | default(true) %}
+<!-- Simple-DataTables CSS -->
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+{% endif %}
+{% endmacro %}
+
+{#-
+    Macro: DataTables JavaScript
+
+    Injects Simple-DataTables JavaScript from CDN and initialization script.
+    Should be called before the closing </body> tag.
+
+    Configuration options (from config.html_tables):
+    - sortable: Enable/disable DataTables globally (default: true)
+    - searchable: Enable/disable search feature (default: true)
+    - pagination: Enable/disable pagination (default: true)
+    - entries_per_page: Default number of entries per page (default: 20)
+    - page_size_options: Available page size options (default: [20, 50, 100, 200])
+    - min_rows_for_sorting: Minimum rows to enable DataTables (default: 3)
+
+    CSS Classes for per-table control:
+    - dt-enabled: Enable DataTables on this table
+    - dt-no-search: Disable search for this table
+    - dt-no-pagination: Disable pagination for this table
+    - dt-no-sort: Disable sorting for this table
+
+    Returns:
+        HTML script tags with DataTables library and initialization, or empty string if disabled
+-#}
+{% macro datatables_js(config) %}
+{% if config.html_tables.sortable | default(true) %}
+<!-- Simple-DataTables JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript"></script>
+<script>
+// DataTables initialization
+document.addEventListener('DOMContentLoaded', function() {
+    // Configuration from YAML
+    const config = {
+        minRows: {{ config.html_tables.min_rows_for_sorting | default(3) }},
+        searchable: {{ config.html_tables.searchable | default(true) | lower }},
+        sortable: {{ config.html_tables.sortable | default(true) | lower }},
+        pagination: {{ config.html_tables.pagination | default(true) | lower }},
+        perPage: {{ config.html_tables.entries_per_page | default(20) }},
+        perPageSelect: {{ config.html_tables.page_size_options | default([20, 50, 100, 200]) | tojson }},
+        labels: {
+            placeholder: "Search...",
+            perPage: "entries per page",
+            noRows: "No entries found",
+            info: "Showing {start} to {end} of {rows} entries"
+        }
+    };
+
+    // Initialize all tables with dt-enabled class
+    document.querySelectorAll('table.dt-enabled').forEach(function(table) {
+        const rows = table.querySelectorAll('tbody tr');
+
+        // Skip tables that are too small to benefit from DataTables
+        if (rows.length < config.minRows) {
+            return;
+        }
+
+        // Check for per-table feature overrides via CSS classes
+        const hasNoSearch = table.classList.contains('dt-no-search');
+        const hasNoPagination = table.classList.contains('dt-no-pagination');
+        const hasNoSort = table.classList.contains('dt-no-sort');
+
+        // Build table-specific configuration
+        const tableConfig = {
+            searchable: hasNoSearch ? false : config.searchable,
+            sortable: hasNoSort ? false : config.sortable,
+            paging: hasNoPagination ? false : config.pagination,
+            perPage: config.perPage,
+            perPageSelect: config.perPageSelect,
+            labels: config.labels,
+            classes: {
+                active: "active",
+                disabled: "disabled"
+            }
+        };
+
+        // Initialize DataTable
+        try {
+            new simpleDatatables.DataTable(table, tableConfig);
+        } catch (error) {
+            console.error('Failed to initialize DataTable:', error);
+        }
+    });
+});
+</script>
+{% endif %}
+{% endmacro %}
+
+{#-
+    Macro: DataTables CSS Classes Helper
+
+    Generates appropriate CSS classes for a table based on desired features.
+    This is a helper macro for components that need to build class strings.
+
+    Parameters:
+        enable_datatables (bool): Enable DataTables (default: from config)
+        enable_search (bool): Enable search (default: from config)
+        enable_pagination (bool): Enable pagination (default: from config)
+        enable_sorting (bool): Enable sorting (default: from config)
+        base_classes (string): Additional CSS classes to include
+
+    Returns:
+        String of space-separated CSS classes
+
+    Example:
+        {{ datatables_classes(enable_search=false, enable_pagination=false, base_classes='my-table') }}
+        Result: "my-table dt-enabled dt-no-search dt-no-pagination"
+-#}
+{% macro datatables_classes(config, enable_datatables=None, enable_search=None, enable_pagination=None, enable_sorting=None, base_classes='') %}
+{%- set dt_enabled = enable_datatables if enable_datatables is not none else config.html_tables.sortable | default(true) -%}
+{%- set classes = [base_classes] if base_classes else [] -%}
+{%- if dt_enabled -%}
+    {%- set _ = classes.append('dt-enabled') -%}
+    {%- set search_enabled = enable_search if enable_search is not none else config.html_tables.searchable | default(true) -%}
+    {%- set pagination_enabled = enable_pagination if enable_pagination is not none else config.html_tables.pagination | default(true) -%}
+    {%- set sorting_enabled = enable_sorting if enable_sorting is not none else config.html_tables.sortable | default(true) -%}
+    {%- if not search_enabled -%}
+        {%- set _ = classes.append('dt-no-search') -%}
+    {%- endif -%}
+    {%- if not pagination_enabled -%}
+        {%- set _ = classes.append('dt-no-pagination') -%}
+    {%- endif -%}
+    {%- if not sorting_enabled -%}
+        {%- set _ = classes.append('dt-no-sort') -%}
+    {%- endif -%}
+{%- endif -%}
+{{ classes | join(' ') }}
+{%- endmacro %}

@@ -99,7 +99,27 @@ Tests command-line interface functionality.
   - Single/multiple repository workflows
   - Incremental updates
 
-### 5. Data Pipeline (`test_data_pipeline.py`)
+### 5. Gerrit URL Validation (`test_gerrit_url_validation.py`)
+
+**Tests:** 5 | **Status:** ✅ All Passing
+Tests that Gerrit admin URLs with discovered path prefixes are valid and don't return 404 errors.
+
+**Test Coverage:**
+
+- Admin URL validation for ONAP (uses `/r` prefix)
+- Admin URL validation for OpenDaylight (uses `/gerrit` prefix)
+- Path prefix discovery via redirects
+- API endpoint discovery mechanism
+- Projects API accessibility
+
+**Network Testing:**
+
+- Uses robust retry logic (3 attempts, 2-second delays)
+- Reasonable timeouts (10 seconds)
+- Can be skipped in CI with `-m "not integration"`
+- Validates both 200 (OK) and 403 (Forbidden/Auth required) responses
+
+### 6. Data Pipeline (`test_data_pipeline.py`)
 
 **Tests:** 30 | **Status:** ✅ All Passing
 Tests the complete data collection and processing pipeline.
@@ -135,11 +155,27 @@ Tests the complete data collection and processing pipeline.
 ### Run All Integration Tests
 
 ```bash
-# Run all 122 integration tests (~17 minutes)
+# Run all integration tests including network tests (~17 minutes)
 pytest tests/integration -v
 
 # Run with quieter output
 pytest tests/integration -q
+
+# Skip network-dependent tests (for offline or CI environments)
+pytest tests/integration -v -m "not integration"
+```
+
+### Run Gerrit URL Validation Tests
+
+```bash
+# Run Gerrit URL validation tests (requires network access)
+pytest tests/integration/test_gerrit_url_validation.py -v
+
+# Run with retry debugging
+pytest tests/integration/test_gerrit_url_validation.py -v -s
+
+# Skip these tests if network is unavailable
+pytest tests/integration -v -m "not integration"
 ```
 
 ### Run Specific Test File
@@ -156,6 +192,9 @@ pytest tests/integration/test_api_integration.py -v
 
 # CLI integration tests (28 tests, ~2 seconds)
 pytest tests/integration/test_cli_integration.py -v
+
+# Gerrit URL validation tests (5 tests, ~10-30 seconds - live HTTP)
+pytest tests/integration/test_gerrit_url_validation.py -v
 
 # Data pipeline tests (30 tests, ~12 minutes)
 pytest tests/integration/test_data_pipeline.py -v
@@ -321,7 +360,7 @@ def test_handles_missing_repository(tmp_path):
 ## Coverage Goals
 
 - **Target:** 80+ integration tests
-- **Achieved:** 122 integration tests (152% of target) ✅
+- **Achieved:** 127 integration tests (159% of target) ✅
 
 ### Coverage by Area
 
@@ -330,6 +369,7 @@ def test_handles_missing_repository(tmp_path):
 - ✅ Error handling (15+ tests across all files)
 - ✅ API integration (21 tests)
 - ✅ CLI functionality (28 tests)
+- ✅ Gerrit URL validation (5 tests) **NEW**
 - ✅ Data pipeline (30 tests)
 - ✅ Time window calculations (7 tests)
 - ✅ Author aggregation (4 tests)
@@ -375,6 +415,7 @@ When adding new integration tests:
    - Git operations → `test_data_pipeline.py`
    - Report generation → `test_report_generation.py`
    - User workflows → `test_workflows.py`
+   - Gerrit URL validation → `test_gerrit_url_validation.py`
 
 2. **Use fixtures** - Leverage existing fixtures for consistency:
    - Use `create_synthetic_repository()` for git repos

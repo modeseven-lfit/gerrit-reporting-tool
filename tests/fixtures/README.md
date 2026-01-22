@@ -11,24 +11,90 @@ This directory contains test fixtures for the Repository Reporting System tests.
 
 ```text
 fixtures/
-├── README.md                    # This file
-├── synthetic_repos/             # Synthetic git repositories for testing
-│   ├── active_project/          # Repository with recent commits
-│   ├── inactive_project/        # Repository with old commits
-│   ├── no_commits/              # Empty repository
-│   └── multi_contributor/       # Repository with multiple authors
-├── configs/                     # Test configuration files
-│   ├── minimal.yaml             # Minimal valid configuration
-│   ├── full_featured.yaml       # Complete configuration with all features
-│   └── invalid.yaml             # Invalid configuration for error testing
-├── expected_outputs/            # Expected JSON schema snapshots
-│   ├── baseline_schema.json     # Baseline JSON schema digest
-│   └── snapshots/               # Output snapshots for regression tests
-└── api_responses/               # Mock API responses
-    ├── github/                  # GitHub API mock responses
-    ├── gerrit/                  # Gerrit API mock responses
-    └── jenkins/                 # Jenkins API mock responses
+├── README.md                          # This file
+├── minimal_production_data.json       # Real production data (minimal subset)
+├── synthetic_repos/                   # Synthetic git repositories for testing
+│   ├── active_project/                # Repository with recent commits
+│   ├── inactive_project/              # Repository with old commits
+│   ├── no_commits/                    # Empty repository
+│   └── multi_contributor/             # Repository with multiple authors
+├── configs/                           # Test configuration files
+│   ├── minimal.yaml                   # Minimal valid configuration
+│   ├── full_featured.yaml             # Complete configuration with all features
+│   └── invalid.yaml                   # Invalid configuration for error testing
+├── expected_outputs/                  # Expected JSON schema snapshots
+│   ├── baseline_schema.json           # Baseline JSON schema digest
+│   └── snapshots/                     # Output snapshots for regression tests
+└── api_responses/                     # Mock API responses
+    ├── github/                        # GitHub API mock responses
+    ├── gerrit/                        # Gerrit API mock responses
+    └── jenkins/                       # Jenkins API mock responses
 ```
+
+## Production Data Fixture
+
+### minimal_production_data.json
+
+**Real production data** extracted from OpenDaylight project report (January 2026).
+
+This is a **minimal subset** (724 KB, 96.6% reduction from 20.7 MB original) containing:
+
+- **2 repositories** from summaries (controller, netconf)
+- **2 repositories** with full data (integration/distribution, transportpce/models)
+- **2 organizations** (pantheon.tech, linuxfoundation.org)
+- **2 contributors** by commits (Robert Varga, Anil Belur)
+- **Real Jenkins jobs, GitHub workflows, and feature detection data**
+
+**Source:** `examples/Opendaylight/report_raw.json` (full production run)
+
+**Purpose:**
+
+- Validate templates with real data structures
+- Test context builders with actual production schemas
+- Verify rendering pipeline with real-world edge cases
+- Used automatically by `scripts/audit_templates.py` for runtime verification
+
+**Data Characteristics:**
+
+- Real repository names (e.g., "integration/distribution")
+- Real contributor emails and domains
+- Actual Jenkins job names and statuses
+- Real feature detection results
+- Time-windowed metrics (last_30, last_90, last_365, last_3_years)
+- Nested structures matching production schema
+
+**Regenerating:**
+
+```bash
+# Extract fresh minimal dataset from new production run
+python scripts/extract_minimal_test_data.py \
+  --input examples/Opendaylight/report_raw.json \
+  --output tests/fixtures/minimal_production_data.json \
+  --repos 2 --orgs 2 --contributors 2
+```
+
+**Usage in Tests:**
+
+```python
+import json
+from pathlib import Path
+
+def load_production_fixture():
+    fixture_path = Path(__file__).parent / "fixtures" / "minimal_production_data.json"
+    with open(fixture_path) as f:
+        return json.load(f)
+
+# Use in tests
+def test_with_real_data():
+    data = load_production_fixture()
+    assert data['summaries']['top_organizations'][0]['domain'] == 'pantheon.tech'
+```
+
+**Used By:**
+
+- `scripts/audit_templates.py` - Template field verification with real data
+- Integration tests - End-to-end rendering validation
+- Context builder tests - Verify handling of production data structures
 
 ## Synthetic Repositories
 

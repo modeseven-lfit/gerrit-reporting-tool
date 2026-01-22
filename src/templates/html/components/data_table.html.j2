@@ -4,7 +4,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 #}
 
 {#- Component: Data Table (HTML) -#}
-{#- Renders a flexible data table with configurable columns -#}
+{#- Renders a flexible data table with configurable columns and optional DataTables support -#}
 {#-
     Parameters:
         - title (str): Optional section title
@@ -12,20 +12,24 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
         - rows (list): List of data dictionaries
         - table_class (str): Optional CSS class for the table
         - show_rank (bool): Whether to show rank column (default: false)
+        - enable_datatables (bool): Enable DataTables features (default: from config)
+        - enable_search (bool): Enable search feature (default: from config)
+        - enable_pagination (bool): Enable pagination (default: from config)
+        - enable_sorting (bool): Enable sorting (default: from config)
 
     Column definition:
         - key: Data key to access in row dict
         - label: Column header label
         - class: Optional CSS class for column
-        - format: Optional format filter name ('number', 'age', 'percentage', 'bytes')
+        - format: Optional format filter name ('number', 'age', 'percentage', 'bytes', 'date', 'status_emoji', 'loc')
 
     Example usage:
-        {% set columns = [
-            {'key': 'name', 'label': 'Repository', 'class': 'repo-name'},
-            {'key': 'commits', 'label': 'Commits', 'format': 'number'}
-        ] %}
-        {% set rows = repositories.all %}
-        {% include 'html/components/data_table.html.j2' with context %}
+        Set variables then include the component:
+
+        columns = [{'key': 'name', 'label': 'Repository'}]
+        rows = repositories.all
+        enable_search = false
+        enable_pagination = false
 -#}
 
 {% if title is defined and title %}
@@ -34,7 +38,24 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 {% if show_rank is not defined %}{% set show_rank = false %}{% endif %}
 
-<table class="data-table {{ table_class if table_class is defined else '' }}">
+{#- Set defaults for DataTables parameters if not defined -#}
+{% if enable_datatables is not defined %}{% set enable_datatables = None %}{% endif %}
+{% if enable_search is not defined %}{% set enable_search = None %}{% endif %}
+{% if enable_pagination is not defined %}{% set enable_pagination = None %}{% endif %}
+{% if enable_sorting is not defined %}{% set enable_sorting = None %}{% endif %}
+
+{#- Build CSS classes for DataTables support -#}
+{% import 'html/components/datatables_support.html.j2' as dt_support %}
+{% set dt_classes = dt_support.datatables_classes(
+    config,
+    enable_datatables=enable_datatables,
+    enable_search=enable_search,
+    enable_pagination=enable_pagination,
+    enable_sorting=enable_sorting,
+    base_classes='data-table ' + (table_class if table_class is defined else '')
+) %}
+
+<table class="{{ dt_classes }}">
     <thead>
         <tr>
             {% if show_rank %}
@@ -55,24 +76,36 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
             {% endif %}
             {% for col in columns %}
             <td class="{{ col.class if col.class is defined else '' }}">
-                {% set value = row[col.key] | default('—') %}
-                {% if col.format is defined and col.format %}
-                    {% if col.format == 'number' %}
+                {%- if col.format is defined and col.format -%}
+                    {%- if col.format == 'number' -%}
+                        {% set value = row[col.key] | default(0) %}
                         {{ value | format_number }}
-                    {% elif col.format == 'age' %}
+                    {%- elif col.format == 'age' -%}
+                        {% set value = row[col.key] | default(0) %}
                         {{ value | format_age }}
-                    {% elif col.format == 'percentage' %}
+                    {%- elif col.format == 'percentage' -%}
+                        {% set value = row[col.key] | default(0) %}
                         {{ value | format_percentage }}
-                    {% elif col.format == 'bytes' %}
+                    {%- elif col.format == 'bytes' -%}
+                        {% set value = row[col.key] | default(0) %}
                         {{ value | format_bytes }}
-                    {% elif col.format == 'date' %}
+                    {%- elif col.format == 'date' -%}
+                        {% set value = row[col.key] | default('—') %}
                         {{ value | format_date }}
-                    {% else %}
+                    {%- elif col.format == 'status_emoji' -%}
+                        {% set value = row[col.key] | default('unknown') %}
+                        {{ value | status_emoji }}
+                    {%- elif col.format == 'loc' -%}
+                        {% set value = row[col.key] | default(0) %}
+                        {{ value | format_loc }}
+                    {%- else -%}
+                        {% set value = row[col.key] | default('—') %}
                         {{ value }}
-                    {% endif %}
-                {% else %}
+                    {%- endif -%}
+                {%- else -%}
+                    {% set value = row[col.key] | default('—') %}
                     {{ value }}
-                {% endif %}
+                {%- endif -%}
             </td>
             {% endfor %}
         </tr>

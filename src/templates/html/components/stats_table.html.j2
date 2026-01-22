@@ -13,8 +13,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
         - class (str): Optional CSS class for the table
 
     Example usage:
-        {% set stats = [...] %}
-        {% include 'html/components/stats_table.html.j2' with context %}
+        Set stats variable then include component
 -#}
 
 {% if title is defined and title %}
@@ -30,6 +29,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
             <th scope="col">Value</th>
             {% if show_total %}
             <th scope="col">Total</th>
+            <th scope="col">Percentage</th>
             {% endif %}
         </tr>
     </thead>
@@ -40,6 +40,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
             <td class="value">{{ stat.value }}</td>
             {% if show_total %}
             <td class="total">{{ stat.total | default('—') }}</td>
+            <td class="percentage">{{ stat.percentage | default('—') }}</td>
             {% endif %}
         </tr>
         {% endfor %}

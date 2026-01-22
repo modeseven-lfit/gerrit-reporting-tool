@@ -2,28 +2,26 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-Rendering package for repository reporting system.
+Modern template-based rendering system for repository reports.
 
-This package provides template-based rendering for reports in multiple formats
-(Markdown, HTML). It separates data preparation from presentation using Jinja2
-templates and supports theme customization.
+This package provides Jinja2 template-based rendering for reports in multiple
+formats (Markdown, HTML). It separates data preparation from presentation
+using a clean component-based architecture.
 
 Architecture:
     - context.py: RenderContext for preparing data for templates
-    - context_builder.py: RenderContextBuilder for data preparation (Phase 8)
-    - template_renderer.py: Jinja2 template renderer (Phase 8)
-    - modern_renderer.py: Modern renderer orchestrator (Phase 8)
-    - renderer.py: ModernReportRenderer orchestrator (legacy)
-    - formatters.py: Reusable formatting utilities (filters)
-    - legacy_adapter.py: Backward compatibility wrapper for gradual migration
+    - renderer.py: ModernReportRenderer orchestrator with TemplateRenderer
+    - formatters.py: Reusable formatting utilities (Jinja2 filters)
+    - info_yaml_renderer.py: Specialized renderer for INFO.yaml reports
 
-Phase: 8 - Renderer Modernization
+Usage:
+    >>> from rendering.renderer import ModernReportRenderer
+    >>> renderer = ModernReportRenderer(config, logger)
+    >>> renderer.render_markdown_report(data, output_path)
+    >>> renderer.render_html_report(data, output_path)
 """
 
 from .context import RenderContext
-from .context_builder import RenderContextBuilder
-from .template_renderer import TemplateRenderer as ModernTemplateRenderer
-from .modern_renderer import ModernReportRenderer as NewModernReportRenderer
 from .renderer import ModernReportRenderer, TemplateRenderer
 from .formatters import (
     format_number,
@@ -32,17 +30,11 @@ from .formatters import (
     slugify,
     format_date,
 )
-from .legacy_adapter import LegacyRendererAdapter, create_legacy_renderer
 
 __all__ = [
     "RenderContext",
-    "RenderContextBuilder",
-    "ModernTemplateRenderer",
-    "NewModernReportRenderer",
     "ModernReportRenderer",
     "TemplateRenderer",
-    "LegacyRendererAdapter",
-    "create_legacy_renderer",
     "format_number",
     "format_age",
     "format_percentage",
@@ -50,4 +42,4 @@ __all__ = [
     "format_date",
 ]
 
-__version__ = "1.0.0"
+__version__ = "2.0.0"

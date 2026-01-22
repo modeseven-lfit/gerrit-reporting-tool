@@ -287,10 +287,12 @@ class INFOYamlParser:
 
         tracker_type = issue_data.get("type", "")
         url = issue_data.get("url", "")
+        key = issue_data.get("key", "")
 
         return IssueTracking(
             type=tracker_type,
             url=url,
+            key=key,
             is_valid=False,  # Will be validated later
             validation_error="",
         )

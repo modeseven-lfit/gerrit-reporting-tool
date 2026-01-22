@@ -3,7 +3,7 @@ SPDX-License-Identifier: Apache-2.0
 SPDX-FileCopyrightText: 2025 The Linux Foundation
 #}
 
-{#- Section: Contributors -#}
+{#- Section: Contributors (Markdown) -#}
 {#- Renders the contributors section with top contributor tables -#}
 {#-
     Context required:
@@ -12,22 +12,21 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
     This section displays:
         - Top contributors by commit count
-        - Top contributors by lines of code
-        - Contributor statistics and rankings
+        - Matches production format: 8 columns, no Email, includes LOC/Δ LOC
 -#}
 
 {% if config.include_sections.contributors and contributors.has_contributors %}
-## Top Contributors
+## 👥 Top Contributors
 
-{% set title = "By Commit Count" %}
-{% set sort_by = "commits" %}
-{% set contributor_list = contributors.top_by_commits %}
-{% include 'markdown/components/contributor_table.md.j2' %}
+The data presented in the table below covers the past 365 days.
 
-{% set title = "By Lines of Code" %}
-{% set sort_by = "loc" %}
-{% set contributor_list = contributors.top_by_loc %}
-{% include 'markdown/components/contributor_table.md.j2' %}
+**Contributors Found:** {{ contributors.top_by_commits_count | default(0) | format_number_raw }}
+
+| Rank | Contributor | Commits | LOC | Δ LOC | Avg LOC/Commit | Repositories | Organization |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+{% for contributor in contributors.top_by_commits %}
+| {{ loop.index }} | {{ contributor.name | default('Unknown') }} | {{ contributor.total_commits | default(0) }} | {{ contributor.total_lines_added | format_loc }} | {{ contributor.delta_loc | default(0) }} | {{ contributor.avg_loc_per_commit | format_loc }} | {{ contributor.repositories_count | default(0) }} | {{ contributor.organization | default('Unknown') }} |
+{% endfor %}
 
 ---
 {% endif %}

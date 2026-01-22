@@ -35,13 +35,13 @@ jobs:
     steps:
       # Harden the runner
       # yamllint disable-line rule:line-length
-      - uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76 # v2.14.0
+      - uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76  # v2.14.0
         with:
           egress-policy: "audit"
 
       - name: "Checkout pull request"
         # yamllint disable-line rule:line-length
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8  # v6.0.1
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
@@ -164,19 +164,19 @@ jobs:
     steps:
       # Harden the runner
       # yamllint disable-line rule:line-length
-      - uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76 # v2.14.0
+      - uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76  # v2.14.0
         with:
           egress-policy: "audit"
 
       - name: "Checkout pull request"
         # yamllint disable-line rule:line-length
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8  # v6.0.1
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: "Clone Gerrit repos for ${{ matrix.project }}"
         # yamllint disable-line rule:line-length
-        uses: lfreleng-actions/gerrit-clone-action@a1e7ebddeaa2a4096b361254dc0f8291c8b122c5 # v0.1.13
+        uses: lfreleng-actions/gerrit-clone-action@a1e7ebddeaa2a4096b361254dc0f8291c8b122c5  # v0.1.13
         id: clone
         with:
           host: ${{ matrix.gerrit }}
@@ -202,7 +202,7 @@ jobs:
 
       - name: "Install uv"
         # yamllint disable-line rule:line-length
-        uses: astral-sh/setup-uv@61cb8a9741eeb8a550a1b8544337180c0fc8476b # v7.2.0
+        uses: astral-sh/setup-uv@61cb8a9741eeb8a550a1b8544337180c0fc8476b  # v7.2.0
 
       - name: "Set up Python"
         # yamllint disable-line rule:line-length
@@ -305,7 +305,7 @@ jobs:
       - name: "Upload raw data artifacts"
         if: always()
         # yamllint disable-line rule:line-length
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f  # v6.0.0
         with:
           name: previews-raw-data-${{ matrix.slug }}
           path: ./temp-raw-data-${{ matrix.slug }}/
@@ -316,7 +316,7 @@ jobs:
       - name: "Upload preview artifacts"
         if: always()
         # yamllint disable-line rule:line-length
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f  # v6.0.0
         with:
           name: previews-reports-${{ matrix.slug }}
           path: ./reports/${{ matrix.project }}/
@@ -327,7 +327,7 @@ jobs:
       - name: "Upload clone manifest"
         if: always()
         # yamllint disable-line rule:line-length
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f  # v6.0.0
         with:
           name: previews-clone-manifest-${{ matrix.slug }}
           path: "./${{ matrix.gerrit }}/clone-manifest.json"
@@ -346,13 +346,13 @@ jobs:
     steps:
       # Harden the runner
       # yamllint disable-line rule:line-length
-      - uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76 # v2.14.0
+      - uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76  # v2.14.0
         with:
           egress-policy: "audit"
 
       - name: "Checkout pull request branch for scripts"
         # yamllint disable-line rule:line-length
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8  # v6.0.1
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
@@ -364,14 +364,14 @@ jobs:
 
       - name: "Checkout gh-pages branch"
         # yamllint disable-line rule:line-length
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8  # v6.0.1
         with:
           ref: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: "Download all preview artifacts"
         # yamllint disable-line rule:line-length
-        uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0
+        uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131  # v7.0.0
         with:
           pattern: previews-reports-*
           path: ./downloaded-reports
@@ -776,7 +776,7 @@ jobs:
     steps:
       # Harden the runner
       # yamllint disable-line rule:line-length
-      - uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76 # v2.14.0
+      - uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76  # v2.14.0
         with:
           egress-policy: "audit"
 

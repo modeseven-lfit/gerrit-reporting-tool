@@ -107,7 +107,7 @@ class TestAPIStatisticsWiring:
         with patch("gerrit_reporting_tool.collectors.git.GerritAPIClient") as mock_gerrit:
             mock_instance = MagicMock()
             mock_gerrit.return_value = mock_instance
-            mock_instance.get_all_projects.return_value = {}
+            mock_instance.get_all_projects.return_value = {"test-project": {"id": "test-project"}}
 
             GitDataCollector(config, {}, logger, api_stats=api_stats)
 
@@ -132,7 +132,7 @@ class TestAPIStatisticsWiring:
         ):
             mock_instance = MagicMock()
             mock_jenkins.return_value = mock_instance
-            mock_instance.get_all_jobs.return_value = {"jobs": []}
+            mock_instance.get_all_jobs.return_value = {"jobs": [{"name": "test-job"}]}
 
             GitDataCollector(config, {}, logger, api_stats=api_stats)
 
@@ -157,7 +157,7 @@ class TestAPIStatisticsWiring:
         with patch("gerrit_reporting_tool.collectors.git.JenkinsAPIClient") as mock_jenkins:
             mock_instance = MagicMock()
             mock_jenkins.return_value = mock_instance
-            mock_instance.get_all_jobs.return_value = {"jobs": []}
+            mock_instance.get_all_jobs.return_value = {"jobs": [{"name": "test-job"}]}
 
             GitDataCollector(config, {}, logger, api_stats=api_stats)
 
@@ -434,7 +434,7 @@ class TestAPIStatisticsGuarantees:
         with patch("gerrit_reporting_tool.collectors.git.GerritAPIClient") as mock_gerrit:
             mock_instance = MagicMock()
             mock_gerrit.return_value = mock_instance
-            mock_instance.get_all_projects.return_value = {}
+            mock_instance.get_all_projects.return_value = {"test-project": {"id": "test-project"}}
 
             # This should work but not track stats
             GitDataCollector(config, {}, logger, api_stats=None)

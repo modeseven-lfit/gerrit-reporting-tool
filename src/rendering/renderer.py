@@ -11,6 +11,7 @@ Phase: 8 - Renderer Modernization
 """
 
 import logging
+import shutil
 from pathlib import Path
 from typing import Any, Dict, Optional
 
@@ -252,6 +253,65 @@ class ModernReportRenderer:
             f.write(html)
 
         self.logger.info(f"HTML report written to {output_path}")
+
+        # Copy CSS file to output directory for standalone HTML
+        self._copy_theme_css(output_path.parent)
+
+    def render_json_report(self, data: Dict[str, Any], output_path: Path) -> None:
+        """
+        Render JSON report and write to file.
+
+        This is a compatibility method matching the old API.
+
+        Args:
+            data: Report data dictionary
+            output_path: Path to write JSON file
+        """
+        import json
+
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, default=str, sort_keys=True)
+
+        self.logger.info(f"JSON report written to {output_path}")
+
+    def _copy_theme_css(self, output_dir: Path) -> None:
+        """
+        Copy theme CSS file to output directory.
+
+        This ensures HTML reports are self-contained and can be viewed
+        standalone without requiring the source theme directory structure.
+
+        Args:
+            output_dir: Directory where HTML report is written
+        """
+        try:
+            # Determine theme from config
+            theme = self.config.get("theme", "default")
+
+            # Find CSS source file
+            # CSS is in src/themes/{theme}/theme.css
+            themes_dir = Path(__file__).parent.parent / "themes"
+            css_source = themes_dir / theme / "theme.css"
+
+            # Fallback to default theme if specified theme not found
+            if not css_source.exists():
+                self.logger.warning(f"Theme CSS not found: {css_source}, falling back to default")
+                css_source = themes_dir / "default" / "theme.css"
+
+            if not css_source.exists():
+                self.logger.error(f"Default theme CSS not found: {css_source}")
+                return
+
+            # Copy to output directory as theme.css
+            css_dest = output_dir / "theme.css"
+            shutil.copy2(css_source, css_dest)
+
+            self.logger.info(f"Copied theme CSS to {css_dest}")
+
+        except Exception as e:
+            self.logger.error(f"Failed to copy theme CSS: {e}")
+            # Don't fail report generation if CSS copy fails
 
     def get_theme_path(self) -> Path:
         """

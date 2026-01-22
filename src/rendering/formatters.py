@@ -57,6 +57,33 @@ def format_number(value: Union[int, float, None]) -> str:
         return str(int(value))
 
 
+def format_number_raw(value: Union[int, float, None]) -> str:
+    """
+    Format a number without abbreviation (raw number with comma separators).
+
+    Args:
+        value: Number to format (can be None)
+
+    Returns:
+        Formatted string with comma separators (e.g., "1,234", "1,234,567")
+        Returns "0" for None or zero values
+
+    Examples:
+        >>> format_number_raw(1234)
+        '1,234'
+        >>> format_number_raw(1234567)
+        '1,234,567'
+        >>> format_number_raw(42)
+        '42'
+        >>> format_number_raw(None)
+        '0'
+    """
+    if value is None or value == 0:
+        return "0"
+
+    return f"{int(value):,}"
+
+
 def format_age(days: Union[int, float, None]) -> str:
     """
     Format age in days as human-readable string.
@@ -99,12 +126,47 @@ def format_age(days: Union[int, float, None]) -> str:
         return f"{years}y"
 
 
-def format_percentage(value: Union[int, float, None], decimals: int = 1) -> str:
+def format_loc(value: Union[int, float, None]) -> str:
+    """
+    Format Lines of Code with '+' prefix for positive numbers.
+
+    Args:
+        value: LOC value to format (can be None)
+
+    Returns:
+        Formatted string with '+' prefix for positive numbers
+
+    Examples:
+        >>> format_loc(100)
+        '+100'
+        >>> format_loc(0)
+        '0'
+        >>> format_loc(-50)
+        '-50'
+        >>> format_loc(None)
+        '0'
+    """
+    if value is None or value == 0:
+        return "0"
+
+    num_value = int(value)
+    if num_value > 0:
+        return f"+{num_value}"
+    else:
+        return str(num_value)
+
+
+def format_percentage(value: Union[int, float, None], total: Union[int, float, None] = None, decimals: int = 1) -> str:
     """
     Format a number as a percentage.
 
+    Can be used in two ways:
+    1. Pass pre-calculated percentage (0-100 range): format_percentage(45.678)
+    2. Calculate from value and total: format_percentage(10, 100)
+
     Args:
-        value: Number to format (0-100 range)
+        value: Number to format or numerator for calculation
+        total: Optional denominator for percentage calculation
         decimals: Number of decimal places
 
     Returns:
@@ -113,13 +175,23 @@ def format_percentage(value: Union[int, float, None], decimals: int = 1) -> str:
     Examples:
         >>> format_percentage(45.678)
         '45.7%'
-        >>> format_percentage(45.678, decimals=2)
-        '45.68%'
+        >>> format_percentage(10, 100)
+        '10.0%'
+        >>> format_percentage(10, 100, decimals=2)
+        '10.00%'
         >>> format_percentage(None)
+        '0.0%'
+        >>> format_percentage(10, 0)
         '0.0%'
     """
     if value is None:
         value = 0.0
+
+    # If total is provided, calculate percentage
+    if total is not None:
+        if total == 0:
+            return f"{0.0:.{decimals}f}%"
+        value = (float(value) / float(total)) * 100.0
 
     return f"{value:.{decimals}f}%"
 
@@ -333,6 +405,83 @@ def pluralize(count: Union[int, float, None], singular: str = "", plural: str = 
     return singular if abs(count) == 1 else plural
 
 
+def format_feature_name(name: str) -> str:
+    """
+    Format feature name from snake_case to Title Case.
+
+    Args:
+        name: Feature name in snake_case
+
+    Returns:
+        Formatted feature name in Title Case
+
+    Examples:
+        >>> format_feature_name("dependabot")
+        'Dependabot'
+        >>> format_feature_name("pre_commit")
+        'Pre-commit'
+        >>> format_feature_name("github2gerrit_workflow")
+        'GitHub2Gerrit Workflow'
+        >>> format_feature_name("readthedocs")
+        'ReadTheDocs'
+    """
+    if not name:
+        return ""
+
+    # Special cases for known feature names
+    special_cases = {
+        'dependabot': 'Dependabot',
+        'pre_commit': 'Pre-commit',
+        'readthedocs': 'ReadTheDocs',
+        'gitreview': '.gitreview',
+        'g2g': 'G2G',
+        'github2gerrit_workflow': 'GitHub2Gerrit',
+        'sonatype_config': 'Sonatype Config',
+        'project_types': 'Type',
+        'workflows': 'Workflows',
+    }
+
+    if name.lower() in special_cases:
+        return special_cases[name.lower()]
+
+    # Default: Convert snake_case to Title Case
+    return ' '.join(word.capitalize() for word in name.split('_'))
+
+
+def status_emoji(status: Optional[str]) -> str:
+    """
+    Map repository activity status to emoji.
+
+    Args:
+        status: Activity status string ('current', 'active', 'inactive')
+
+    Returns:
+        Emoji representing the status
+
+    Examples:
+        >>> status_emoji('current')
+        '✅'
+        >>> status_emoji('active')
+        '☑️'
+        >>> status_emoji('inactive')
+        '🛑'
+        >>> status_emoji('unknown')
+        '❓'
+        >>> status_emoji(None)
+        '❓'
+    """
+    if not status:
+        return '❓'
+
+    status_map = {
+        'current': '✅',
+        'active': '☑️',
+        'inactive': '🛑',
+    }
+
+    return status_map.get(status.lower(), '❓')
+
+
 # Jinja2 filter registration helper
 def get_template_filters() -> dict:
     """
@@ -343,6 +492,8 @@ def get_template_filters() -> dict:
     """
     return {
         'format_number': format_number,
+        'format_number_raw': format_number_raw,
+        'format_loc': format_loc,
         'format_age': format_age,
         'format_percentage': format_percentage,
         'slugify': slugify,
@@ -352,4 +503,6 @@ def get_template_filters() -> dict:
         'format_list': format_list,
         'format_bytes': format_bytes,
         'pluralize': pluralize,
+        'format_feature_name': format_feature_name,
+        'status_emoji': status_emoji,
     }

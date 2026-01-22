@@ -18,23 +18,44 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 {% if config.include_sections.organizations and organizations.has_organizations %}
 <section id="organizations" class="report-section organizations-section">
-    <h2>Top Organizations</h2>
+    <h2>🏢 Top Organizations</h2>
 
-    {% set columns = [
-        {'key': 'name', 'label': 'Organization', 'class': 'org-name'},
-        {'key': 'domain', 'label': 'Domain', 'class': 'domain'},
-        {'key': 'unique_contributors', 'label': 'Contributors'},
-        {'key': 'total_commits', 'label': 'Commits', 'format': 'number'},
-        {'key': 'repositories_count', 'label': 'Repositories'}
-    ] %}
-    {% set rows = organizations.top %}
-    {% set show_rank = true %}
-    {% set table_class = 'organizations-table' %}
-    {% include 'html/components/data_table.html.j2' %}
+    <p>The data presented in the table below covers the past 365 days.</p>
 
-    <p class="total-count">
-        <strong>Total Organizations:</strong> {{ organizations.total_count }}
-    </p>
+    <p><strong>Organizations Found:</strong> {{ organizations.total_count | default(0) }}</p>
+
+    <table class="dt-enabled dt-no-pagination">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Organization</th>
+                <th>Contributors</th>
+                <th>Commits</th>
+                <th>LOC+</th>
+                <th>LOC−</th>
+                <th>LOCΔ</th>
+                <th>LOC±</th>
+                <th>LOC/Commit</th>
+                <th>Repos</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for org in organizations.top %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ org.name | default('Unknown') }}</td>
+                <td>{{ org.unique_contributors | default(0) }}</td>
+                <td>{{ org.total_commits | default(0) }}</td>
+                <td>{{ org.total_lines_added | format_loc }}</td>
+                <td>{{ org.total_lines_removed | format_loc }}</td>
+                <td>{{ org.net_lines | format_loc }}</td>
+                <td>{{ org.delta_loc | default(0) }}</td>
+                <td>{{ org.avg_loc_per_commit | format_loc }}</td>
+                <td>{{ org.repositories_count | default(0) }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 
 </section>
 {% endif %}

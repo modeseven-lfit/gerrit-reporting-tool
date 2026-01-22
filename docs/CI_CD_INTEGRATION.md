@@ -579,10 +579,10 @@ Example:
 
 | Check                | Status     |
 | -------------------- | ---------- |
-| Quick Validation     | ✅ success  |
-| Fast Tests           | ✅ success  |
+| Quick Validation     | ✅ success |
+| Fast Tests           | ✅ success |
 | Linting & Formatting | ⚠️ failure |
-| Security Scan        | ✅ success  |
+| Security Scan        | ✅ success |
 
 <!-- markdownlint-enable MD060 -->
 
@@ -899,10 +899,10 @@ See `tests/performance/conftest.py` for complete list.
 
 | Module           | Target | Current |
 | ---------------- | ------ | ------- |
-| src/performance/ | 90%    | 100% ✅  |
-| src/util/        | 90%    | 96% ✅   |
-| src/rendering/   | 85%    | 95% ✅   |
-| src/cli/         | 85%    | 90% ✅   |
+| src/performance/ | 90%    | 100% ✅ |
+| src/util/        | 90%    | 96% ✅  |
+| src/rendering/   | 85%    | 95% ✅  |
+| src/cli/         | 85%    | 90% ✅  |
 | Overall          | 85%    | ~62%    |
 
 <!-- markdownlint-enable MD060 -->

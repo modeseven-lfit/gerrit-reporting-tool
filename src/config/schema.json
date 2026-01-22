@@ -60,6 +60,10 @@
             "orphaned_jobs": {
               "type": "boolean",
               "description": "Include orphaned Jenkins jobs section"
+            },
+            "unattributed_jobs": {
+              "type": "boolean",
+              "description": "Include unattributed Jenkins jobs section"
             }
           },
           "additionalProperties": false
