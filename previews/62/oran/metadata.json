@@ -1,0 +1,16 @@
+{
+  "project": "O-RAN-SC",
+  "slug": "oran",
+  "gerrit_server": "gerrit.o-ran-sc.org",
+  "jenkins_server": "jenkins.o-ran-sc.org",
+  "github_org": "",
+  "generated_at": "2026-01-24T09:24:03Z",
+  "workflow_run_id": "21312875927",
+  "workflow_run_number": "51",
+  "workflow_run_attempt": "1",
+  "git_sha": "a81cc0487b8d394cb8e6550fc2b721706511fd95",
+  "git_ref": "fix-production-workflow",
+  "pr_number": 62,
+  "pr_author": "ModeSevenIndustrialSolutions",
+  "environment": "previews"
+}
