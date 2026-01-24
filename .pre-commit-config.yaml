@@ -119,3 +119,13 @@ repos:
         types:
           - yaml
       - id: check-readthedocs
+
+  # Check testing/projects.json schema
+  - repo: local
+    hooks:
+      - id: check-projects-json
+        name: Check projects.json schema
+        entry: scripts/check-projects-json.sh
+        language: script
+        files: ^testing/projects\.json$
+        pass_filenames: true
