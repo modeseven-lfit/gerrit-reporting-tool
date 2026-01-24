@@ -216,9 +216,7 @@ jobs:
             .[] | . + {
               gerrit: (.gerrit // ""),
               github: (.github // ""),
-              jenkins: (.jenkins // ""),
-              jenkins_user: (.jenkins_user // ""),
-              jenkins_token: (.jenkins_token // "")
+              jenkins: (.jenkins // "")
             }
           ]')
           # yamllint enable rule:line-length
@@ -377,16 +375,24 @@ jobs:
           CLASSIC_READ_ONLY_PAT_TOKEN: ${{ secrets.CLASSIC_READ_ONLY_PAT_TOKEN }}
           GITHUB_ORG: ${{ matrix.github }}
           SSH_AVAILABLE: ${{ env.SSH_AVAILABLE }}
+          PROJECTS_JSON: ${{ secrets.PROJECTS_JSON }}
+          PROJECT_SLUG: ${{ matrix.slug }}
         # yamllint disable rule:line-length
         run: |
           project="${{ matrix.project }}"
           echo "📊 Generating reports for $project"
 
           # Set up Jenkins authentication if project specifies credentials
-          if [ -n "${{ matrix.jenkins_user }}" ] && [ -n "${{ matrix.jenkins_token }}" ]; then
+          # Extract credentials from PROJECTS_JSON using the project slug
+          jenkins_user=$(echo "$PROJECTS_JSON" | jq -r --arg slug "$PROJECT_SLUG" \
+            '.[] | select(.slug == $slug) | .jenkins_user // ""')
+          jenkins_token=$(echo "$PROJECTS_JSON" | jq -r --arg slug "$PROJECT_SLUG" \
+            '.[] | select(.slug == $slug) | .jenkins_token // ""')
+
+          if [ -n "$jenkins_user" ] && [ -n "$jenkins_token" ]; then
             echo "🔐 Setting up Jenkins authentication for $project"
-            export JENKINS_USER="${{ matrix.jenkins_user }}"
-            export JENKINS_API_TOKEN="${{ matrix.jenkins_token }}"
+            export JENKINS_USER="$jenkins_user"
+            export JENKINS_API_TOKEN="$jenkins_token"
             echo "✅ Jenkins credentials configured (user: ${JENKINS_USER})"
           fi
 
