@@ -826,6 +826,72 @@ The validation checks that:
 - Verify each project object has all required fields
 - At least one of `gerrit` or `github` must be present
 
+#### How the Matrix Works (ACTIVE_PROJECTS Approach)
+
+The production workflow uses a secure, two-variable approach to handle secrets:
+
+**The Problem We Solved:**
+
+GitHub Actions automatically redacts job outputs that contain or reference secrets, even if you extract non-secret data from them. GitHub traces any data derived from a secret and redacts it, which caused:
+
+```text
+Skip output 'matrix' since it may contain secret.
+Error from function 'fromJSON': empty input
+```
+
+**The Solution:**
+
+We use **two distinct sources** to isolate secrets from the matrix:
+
+1. **ACTIVE_PROJECTS variable** (public, no secrets):
+
+   ```json
+   ["oran", "onap", "odl", "agl", "opnfv", "fdio", "lfbroadband", "lfit", "aether"]
+   ```
+
+   - Simple array of project slugs
+   - Stored as a GitHub repository **variable** (not a secret)
+   - Used to build the matrix (no secret trace)
+
+2. **PROJECTS_JSON secret** (contains credentials):
+   - Full project configurations including `jenkins_user`, `jenkins_token`
+   - Each job reads this directly using its slug
+   - Never touches job outputs
+
+**Workflow Steps:**
+
+1. **Verify Job** - Validates and creates matrix:
+   - Validates `PROJECTS_JSON` schema
+   - Verifies all slugs in `ACTIVE_PROJECTS` exist in `PROJECTS_JSON`
+   - Creates matrix from `ACTIVE_PROJECTS`: `{"slug": ["oran", "onap", ...]}`
+
+2. **Matrix Jobs** - Each job independently fetches its configuration:
+   - Receives: `slug="aether"` (from ACTIVE_PROJECTS)
+   - Reads `PROJECTS_JSON` secret directly
+   - Extracts: `project`, `gerrit`, `github`, `jenkins`, `jenkins_user`, `jenkins_token`
+   - Sets credentials in `GITHUB_ENV` (not in outputs)
+
+**Benefits:**
+
+- ✅ Matrix built from variable, not secret (no trace)
+- ✅ Secrets never touch job outputs
+- ✅ Each job is self-contained and secure
+- ✅ Easy to add/remove projects by updating ACTIVE_PROJECTS
+
+**Maintaining ACTIVE_PROJECTS:**
+
+When you add or remove a project:
+
+1. Update `testing/projects.json`
+2. Extract the slugs:
+
+   ```bash
+   cat testing/projects.json | jq -c '[.[] | .slug]'
+   ```
+
+3. Update the ACTIVE_PROJECTS variable at:
+   `https://github.com/modeseven-lfit/gerrit-reporting-tool/settings/variables/actions`
+
 #### Why Did the Workflow Fail?
 
 If you encountered this error in the GitHub Actions workflow:

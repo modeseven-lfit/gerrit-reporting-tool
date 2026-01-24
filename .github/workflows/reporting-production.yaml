@@ -24,14 +24,13 @@ concurrency:
 permissions: {}
 
 jobs:
-  verify:
-    name: "Verify Configuration"
+  validate-secrets:
+    name: "Validate Secrets"
     runs-on: ubuntu-latest
     permissions:
       contents: read
     timeout-minutes: 5
     outputs:
-      matrix: ${{ steps.parse-projects.outputs.matrix }}
       run_timestamp: ${{ steps.metadata.outputs.timestamp }}
       run_id: ${{ steps.metadata.outputs.run_id }}
     steps:
@@ -175,9 +174,9 @@ jobs:
           echo "✅ All required secrets validated"
         # yamllint enable rule:line-length
 
-      - name: "Parse and validate PROJECTS_JSON"
-        id: parse-projects
+      - name: "Validate PROJECTS_JSON schema"
         shell: bash
+        # yamllint disable rule:line-length
         run: |
           projects_json='${{ secrets.PROJECTS_JSON }}'
 
@@ -194,7 +193,6 @@ jobs:
           fi
 
           # Validate required fields
-          # yamllint disable rule:line-length
           # Each project must have 'project' and 'slug',
           # plus either 'gerrit' or 'github'
           if ! echo "$projects_json" | \
@@ -204,60 +202,19 @@ jobs:
               "'slug' fields, plus at least one of 'gerrit' or 'github' fields"
             exit 1
           fi
-          # yamllint enable rule:line-length
 
           project_count=$(echo "$projects_json" | jq '. | length')
-          echo "✅ Found $project_count project(s) to process"
+          echo "✅ PROJECTS_JSON schema valid - $project_count project(s) defined"
+        # yamllint enable rule:line-length
 
-          # yamllint disable rule:line-length
-          # Normalize projects: ensure gerrit and github fields exist
-          # (empty string if not set)
-          normalized_json=$(echo "$projects_json" | jq -c '[
-            .[] | . + {
-              gerrit: (.gerrit // ""),
-              github: (.github // ""),
-              jenkins: (.jenkins // ""),
-              jenkins_user: (.jenkins_user // ""),
-              jenkins_token: (.jenkins_token // "")
-            }
-          ]')
-          # yamllint enable rule:line-length
-
-          # Create matrix
-          matrix=$(echo "$normalized_json" | jq -c '{include: .}')
-          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
-
-          {
-            echo "### Projects to Process"
-            echo ""
-            echo "**Total projects:** $project_count"
-            echo ""
-          } >> "$GITHUB_STEP_SUMMARY"
-          # Format project list for summary
-          # yamllint disable rule:line-length
-          echo "$normalized_json" | jq -r '
-            .[] |
-            if .gerrit != "" then
-              "- **\(.project):** Gerrit: `\(.gerrit)`" +
-              (if .github != "" then ", GitHub: `\(.github)`" else "" end) +
-              " [\(.slug)]"
-            else
-              "- **\(.project):** GitHub: `\(.github)` [\(.slug)]"
-            end
-          ' >> "$GITHUB_STEP_SUMMARY"
-          # yamllint enable rule:line-length
-
-  analyze:
-    name: "${{ matrix.project }}"
-    needs: verify
+  build-matrix:
+    name: "Build Matrix"
     runs-on: ubuntu-latest
     permissions:
       contents: read
-    timeout-minutes: 90
-    strategy:
-      fail-fast: false
-      max-parallel: 4
-      matrix: ${{ fromJSON(needs.verify.outputs.matrix) }}
+    timeout-minutes: 5
+    outputs:
+      matrix: ${{ steps.create-matrix.outputs.matrix }}
     steps:
       # Harden the runner
       # yamllint disable-line rule:line-length
@@ -265,19 +222,106 @@ jobs:
         with:
           egress-policy: "audit"
 
+      - name: "Create matrix from ACTIVE_PROJECTS"
+        id: create-matrix
+        shell: bash
+        run: |
+          # Build matrix from ACTIVE_PROJECTS variable
+          # This job does NOT access any secrets
+          active_projects='${{ vars.ACTIVE_PROJECTS }}'
+
+          if [ -z "$active_projects" ]; then
+            echo "::error::ACTIVE_PROJECTS variable is not set"
+            exit 1
+          fi
+
+          matrix=$(echo "{\"slug\": $active_projects}" | jq -c .)
+          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
+
+          project_count=$(echo "$active_projects" | jq '. | length')
+
+          {
+            echo "### Projects to Process"
+            echo ""
+            echo "**Total projects:** $project_count"
+            echo ""
+            echo "$active_projects" | jq -r '.[] | "- \(.)"'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  analyze:
+    name: "${{ matrix.slug }}"
+    needs: [validate-secrets, build-matrix]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJSON(needs.build-matrix.outputs.matrix) }}
+    steps:
+      # Harden the runner
+      # yamllint disable-line rule:line-length
+      - uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76  # v2.14.0
+        with:
+          egress-policy: "audit"
+
+      - name: "Extract project configuration"
+        id: config
+        shell: bash
+        env:
+          PROJECTS_JSON: ${{ secrets.PROJECTS_JSON }}
+          SLUG: ${{ matrix.slug }}
+        run: |
+          # Extract this project's configuration from PROJECTS_JSON
+          # Validate that this slug exists
+          if ! echo "$PROJECTS_JSON" | jq -e --arg slug "$SLUG" \
+            '.[] | select(.slug == $slug)' > /dev/null; then
+            echo "::error::Slug '$SLUG' not found in PROJECTS_JSON"
+            echo "::error::Update ACTIVE_PROJECTS to match PROJECTS_JSON"
+            exit 1
+          fi
+
+          project=$(echo "$PROJECTS_JSON" | jq -r \
+            --arg slug "$SLUG" '.[] | select(.slug == $slug) | .project')
+          gerrit=$(echo "$PROJECTS_JSON" | jq -r \
+            --arg slug "$SLUG" '.[] | select(.slug == $slug) | .gerrit // ""')
+          github=$(echo "$PROJECTS_JSON" | jq -r \
+            --arg slug "$SLUG" '.[] | select(.slug == $slug) | .github // ""')
+          jenkins=$(echo "$PROJECTS_JSON" | jq -r \
+            --arg slug "$SLUG" '.[] | select(.slug == $slug) | .jenkins // ""')
+          jenkins_user=$(echo "$PROJECTS_JSON" | jq -r \
+            --arg slug "$SLUG" \
+            '.[] | select(.slug == $slug) | .jenkins_user // ""')
+          jenkins_token=$(echo "$PROJECTS_JSON" | jq -r \
+            --arg slug "$SLUG" \
+            '.[] | select(.slug == $slug) | .jenkins_token // ""')
+
+          # Set outputs (non-secret values only)
+          echo "project=$project" >> "$GITHUB_OUTPUT"
+          echo "gerrit=$gerrit" >> "$GITHUB_OUTPUT"
+          echo "github=$github" >> "$GITHUB_OUTPUT"
+          echo "jenkins=$jenkins" >> "$GITHUB_OUTPUT"
+
+          # Set environment variables for secrets
+          echo "JENKINS_USER=$jenkins_user" >> "$GITHUB_ENV"
+          echo "JENKINS_API_TOKEN=$jenkins_token" >> "$GITHUB_ENV"
+
+          echo "📋 Loaded configuration for: $project [$SLUG]"
+
       - name: "Checkout repository"
         # yamllint disable-line rule:line-length
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
 
-      - name: "Clone Gerrit repositories for ${{ matrix.project }}"
-        if: matrix.gerrit != ''
+      - name: "Clone Gerrit repositories"
+        if: steps.config.outputs.gerrit != ''
         # yamllint disable-line rule:line-length
         uses: lfreleng-actions/gerrit-clone-action@a1e7ebddeaa2a4096b361254dc0f8291c8b122c5  # v0.1.13
         id: clone-gerrit
         continue-on-error: true
         with:
-          host: ${{ matrix.gerrit }}
-          path-prefix: "./${{ matrix.gerrit }}"
+          host: ${{ steps.config.outputs.gerrit }}
+          path-prefix: "./${{ steps.config.outputs.gerrit }}"
           skip-archived: "true"
           threads: "4"
           clone-timeout: "600"
@@ -287,8 +331,10 @@ jobs:
           use-https: "true"
           move-conflicting: "true"
 
-      - name: "Clone GitHub repositories for ${{ matrix.project }}"
-        if: matrix.gerrit == '' && matrix.github != ''
+      - name: "Clone GitHub repositories"
+        if: |
+          steps.config.outputs.gerrit == '' &&
+          steps.config.outputs.github != ''
         # yamllint disable-line rule:line-length
         uses: lfreleng-actions/gerrit-clone-action@a1e7ebddeaa2a4096b361254dc0f8291c8b122c5  # v0.1.13
         id: clone-github
@@ -311,26 +357,26 @@ jobs:
         # yamllint disable rule:line-length
         run: |
           # Determine which clone step ran and check its outcome
-          if [ -n "${{ matrix.gerrit }}" ]; then
+          if [ -n "${{ steps.config.outputs.gerrit }}" ]; then
             # Gerrit project
             if [ "${{ steps.clone-gerrit.outcome }}" != "success" ]; then
-              echo "::warning::Failed to clone Gerrit repositories for ${{ matrix.project }}"
+              echo "::warning::Failed to clone Gerrit repositories for ${{ steps.config.outputs.project }}"
               echo "::warning::Gerrit server may be unavailable or decommissioned"
               echo "CLONE_FAILED=true" >> "$GITHUB_ENV"
               # Create empty directory structure so subsequent steps don't fail
-              mkdir -p "./${{ matrix.gerrit }}"
+              mkdir -p "./${{ steps.config.outputs.gerrit }}"
             else
               echo "✅ Successfully cloned Gerrit repositories"
               echo "CLONE_FAILED=false" >> "$GITHUB_ENV"
             fi
-          elif [ -n "${{ matrix.github }}" ]; then
+          elif [ -n "${{ steps.config.outputs.github }}" ]; then
             # GitHub-only project
             if [ "${{ steps.clone-github.outcome }}" != "success" ]; then
-              echo "::warning::Failed to clone GitHub repositories for ${{ matrix.project }}"
+              echo "::warning::Failed to clone GitHub repositories for ${{ steps.config.outputs.project }}"
               echo "::warning::GitHub organization may be unavailable or inaccessible"
               echo "CLONE_FAILED=true" >> "$GITHUB_ENV"
               # Create empty directory structure so subsequent steps don't fail
-              mkdir -p "./${{ matrix.github }}"
+              mkdir -p "./${{ steps.config.outputs.github }}"
             else
               echo "✅ Successfully cloned GitHub repositories"
               echo "CLONE_FAILED=false" >> "$GITHUB_ENV"
@@ -368,25 +414,23 @@ jobs:
         shell: bash
         run: uv sync --all-extras
 
-      - name: "Generate reports for ${{ matrix.project }}"
+      - name: "Generate reports for ${{ steps.config.outputs.project }}"
         if: env.CLONE_FAILED != 'true'
         shell: bash
         env:
-          JENKINS_HOST: ${{ matrix.jenkins }}
+          JENKINS_HOST: ${{ steps.config.outputs.jenkins }}
           # yamllint disable-line rule:line-length
           CLASSIC_READ_ONLY_PAT_TOKEN: ${{ secrets.CLASSIC_READ_ONLY_PAT_TOKEN }}
-          GITHUB_ORG: ${{ matrix.github }}
+          GITHUB_ORG: ${{ steps.config.outputs.github }}
           SSH_AVAILABLE: ${{ env.SSH_AVAILABLE }}
         # yamllint disable rule:line-length
         run: |
-          project="${{ matrix.project }}"
+          project="${{ steps.config.outputs.project }}"
           echo "📊 Generating reports for $project"
 
-          # Set up Jenkins authentication if project specifies credentials
-          if [ -n "${{ matrix.jenkins_user }}" ] && [ -n "${{ matrix.jenkins_token }}" ]; then
-            echo "🔐 Setting up Jenkins authentication for $project"
-            export JENKINS_USER="${{ matrix.jenkins_user }}"
-            export JENKINS_API_TOKEN="${{ matrix.jenkins_token }}"
+          # Jenkins credentials already set in GITHUB_ENV by config step
+          if [ -n "$JENKINS_USER" ] && [ -n "$JENKINS_API_TOKEN" ]; then
+            echo "🔐 Using Jenkins authentication for $project"
             echo "✅ Jenkins credentials configured (user: ${JENKINS_USER})"
           fi
 
@@ -447,10 +491,10 @@ jobs:
           fi
 
           # Determine repos path based on project type
-          if [ -n "${{ matrix.gerrit }}" ]; then
-            repos_path="./${{ matrix.gerrit }}"
-          elif [ -n "${{ matrix.github }}" ]; then
-            repos_path="./${{ matrix.github }}"
+          if [ -n "${{ steps.config.outputs.gerrit }}" ]; then
+            repos_path="./${{ steps.config.outputs.gerrit }}"
+          elif [ -n "${{ steps.config.outputs.github }}" ]; then
+            repos_path="./${{ steps.config.outputs.github }}"
           else
             echo "::error::Cannot determine repos path - no gerrit or github configured"
             exit 1
@@ -473,19 +517,19 @@ jobs:
         shell: bash
         # yamllint disable rule:line-length
         run: |
-          project="${{ matrix.project }}"
+          project="${{ steps.config.outputs.project }}"
 
           # Determine project type and reason for failure
-          if [ -n "${{ matrix.gerrit }}" ]; then
+          if [ -n "${{ steps.config.outputs.gerrit }}" ]; then
             echo "⚠️ Skipping report generation for $project due to Gerrit clone failure"
             echo "::warning::Report generation skipped for $project - Gerrit server unavailable"
             reason="Gerrit server unavailable or decommissioned"
-            source_field='"gerrit_host": "${{ matrix.gerrit }}"'
-          elif [ -n "${{ matrix.github }}" ]; then
+            source_field='"gerrit_host": "${{ steps.config.outputs.gerrit }}"'
+          elif [ -n "${{ steps.config.outputs.github }}" ]; then
             echo "⚠️ Skipping report generation for $project due to GitHub clone failure"
             echo "::warning::Report generation skipped for $project - GitHub organization unavailable"
             reason="GitHub organization unavailable or inaccessible"
-            source_field='"github_org": "${{ matrix.github }}"'
+            source_field='"github_org": "${{ steps.config.outputs.github }}"'
           else
             echo "⚠️ Skipping report generation for $project - no source configured"
             echo "::warning::Report generation skipped for $project - no source configured"
@@ -509,7 +553,7 @@ jobs:
       - name: "Create report metadata"
         shell: bash
         run: |
-          project="${{ matrix.project }}"
+          project="${{ steps.config.outputs.project }}"
           report_dir="./reports/$project"
 
           if [ ! -d "$report_dir" ]; then
@@ -522,10 +566,11 @@ jobs:
           {
             "project": "$project",
             "slug": "${{ matrix.slug }}",
-            "gerrit_server": "${{ matrix.gerrit }}",
-            "jenkins_server": "${{ matrix.jenkins }}",
-            "github_org": "${{ matrix.github }}",
-            "generated_at": "${{ needs.verify.outputs.run_timestamp }}",
+            "gerrit_server": "${{ steps.config.outputs.gerrit }}",
+            "jenkins_server": "${{ steps.config.outputs.jenkins }}",
+            "github_org": "${{ steps.config.outputs.github }}",
+            "generated_at": \
+              "${{ needs.validate-secrets.outputs.run_timestamp }}",
             "workflow_run_id": "${{ github.run_id }}",
             "workflow_run_number": "${{ github.run_number }}",
             "workflow_run_attempt": "${{ github.run_attempt }}",
@@ -578,7 +623,7 @@ jobs:
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f  # v6.0.0
         with:
           name: reports-${{ matrix.slug }}
-          path: ./reports/${{ matrix.project }}/
+          path: ./reports/${{ steps.config.outputs.project }}/
           retention-days: 90
           if-no-files-found: warn
           compression-level: 6
@@ -607,8 +652,8 @@ jobs:
 
   publish:
     name: "Publish GitHub Pages"
-    needs: [verify, analyze]
-    if: always() && needs.verify.result == 'success'
+    needs: [validate-secrets, build-matrix, analyze]
+    if: always() && needs.validate-secrets.result == 'success'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -765,10 +810,8 @@ jobs:
 
   copy-to-gerrit-reports:
     name: "Transfer/Copy Artifacts"
-    needs: [verify, analyze]
-    # DISABLED: Job is disabled until further notice
-    # actionlint-ignore: if-cond
-    if: false
+    needs: [validate-secrets, build-matrix, analyze]
+    if: always() && needs.validate-secrets.result == 'success'
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -847,11 +890,16 @@ jobs:
             echo "https://github.com/modeseven-lfit/gerrit-reports/tree/main/data/artifacts/${{ steps.date.outputs.folder }}"
             echo ""
           } >> "$GITHUB_STEP_SUMMARY"
-      # yamllint enable rule:line-length
+        # yamllint enable rule:line-length
 
   summary:
     name: "Workflow Summary"
-    needs: [verify, analyze, publish, copy-to-gerrit-reports]
+    needs:
+      - validate-secrets
+      - build-matrix
+      - analyze
+      - publish
+      - copy-to-gerrit-reports
     if: always()
     runs-on: ubuntu-latest
     permissions:
