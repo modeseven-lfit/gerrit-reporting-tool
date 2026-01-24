@@ -742,3 +742,113 @@ containing authentication credentials:
 ```
 
 The GitHub workflow automatically passes credentials from the JSON to environment variables.
+
+### Validation
+
+A pre-commit hook checks the `testing/projects.json` file to ensure it matches the schema requirements before committing.
+
+#### Validation Scripts
+
+Two scripts work together to ensure `projects.json` correctness:
+
+1. **`scripts/check-projects-json.sh`** - The schema checker
+   - Checks a single `projects.json` file against the schema
+   - Used by the pre-commit hook
+   - Mirrors the exact validation logic from the GitHub Actions workflow
+
+2. **`scripts/test-projects-json-checks.sh`** - The test suite
+   - Tests the checker script itself
+   - Runs 15 test cases with valid and invalid configurations
+   - Ensures the validation logic works as expected
+
+#### Automatic Validation (Pre-commit Hook)
+
+The hook runs automatically when you commit changes to `testing/projects.json`:
+
+```bash
+git add testing/projects.json
+git commit -m "Update projects configuration"
+# Validation runs automatically
+```
+
+#### Manual Schema Check
+
+You can manually check the file at any time:
+
+```bash
+# Check the testing projects.json
+./scripts/check-projects-json.sh testing/projects.json
+
+# Or run the pre-commit hook directly
+pre-commit run check-projects-json --files testing/projects.json
+```
+
+#### Running All Schema Tests
+
+A comprehensive test suite verifies the schema checking logic:
+
+```bash
+./scripts/test-projects-json-checks.sh
+```
+
+This tests both valid and invalid configurations to ensure the schema checks work as expected.
+
+#### Schema Requirements
+
+The validation checks that:
+
+1. **JSON is valid** - No syntax errors
+2. **Structure is an array** - Must be `[...]` not `{...}`
+3. **Required fields exist** for each project:
+   - `project` - Human-readable name
+   - `slug` - Short identifier
+   - At least one of `gerrit` or `github` - Data source
+
+4. **Optional fields** you can include:
+   - `jenkins` - Jenkins server hostname
+   - `jenkins_user` - Jenkins username
+   - `jenkins_token` - Jenkins API token
+   - `jjb_attribution` - JJB configuration object
+
+#### Troubleshooting Validation Errors
+
+**Error: "PROJECTS_JSON contains invalid JSON"**
+
+- Check for syntax errors (missing commas, brackets, quotes)
+- Use a JSON validator: `jq . testing/projects.json`
+
+**Error: "PROJECTS_JSON must be an array"**
+
+- Ensure the file starts with `[` and ends with `]`
+
+**Error: "Each project must have 'project' and 'slug' fields..."**
+
+- Verify each project object has all required fields
+- At least one of `gerrit` or `github` must be present
+
+#### Why Did the Workflow Fail?
+
+If you encountered this error in the GitHub Actions workflow:
+
+```text
+❌ Verify Configuration failed
+PROJECTS_JSON contains invalid JSON
+```
+
+**Root Cause:** The `PROJECTS_JSON` secret in GitHub contained invalid JSON or didn't match the expected schema.
+
+**Solution:**
+
+1. Copy the exact content from `testing/projects.json` (which now passes validation)
+2. Go to: `https://github.com/modeseven-lfit/gerrit-reporting-tool/settings/secrets/actions`
+3. Update the `PROJECTS_JSON` secret with the copied content
+4. Ensure no extra whitespace, newlines, or formatting changes when pasting
+5. Re-run the workflow
+
+**Verification:** The local validation script performs the exact same checks as the GitHub workflow:
+
+```bash
+./scripts/check-projects-json.sh testing/projects.json
+```
+
+If this passes locally, the workflow will pass in GitHub (assuming the secret matches).
