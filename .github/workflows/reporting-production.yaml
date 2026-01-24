@@ -699,6 +699,7 @@ jobs:
 
       - name: "Prepare production reports at root"
         shell: bash
+        # yamllint disable rule:line-length
         run: |
           echo "📦 Preparing production reports at root level"
 
@@ -719,21 +720,31 @@ jobs:
             target_dir="$slug"
             mkdir -p "$target_dir"
 
-            # Copy all report files
-            if [ -f "$artifact_dir/report.html" ]; then
-              cp "$artifact_dir/report.html" "$target_dir/"
+            # Find and copy report files (handle nested directory structure)
+            # Artifacts may contain project directory, so search recursively
+            report_html=$(find "$artifact_dir" -name "report.html" -type f | head -n 1)
+            if [ -n "$report_html" ]; then
+              cp "$report_html" "$target_dir/"
             fi
 
-            if [ -f "$artifact_dir/report_raw.json" ]; then
-              cp "$artifact_dir/report_raw.json" "$target_dir/"
+            report_json=$(find "$artifact_dir" -name "report_raw.json" -type f | head -n 1)
+            if [ -n "$report_json" ]; then
+              cp "$report_json" "$target_dir/"
             fi
 
-            if [ -f "$artifact_dir/report.md" ]; then
-              cp "$artifact_dir/report.md" "$target_dir/"
+            report_md=$(find "$artifact_dir" -name "report.md" -type f | head -n 1)
+            if [ -n "$report_md" ]; then
+              cp "$report_md" "$target_dir/"
             fi
 
-            if [ -f "$artifact_dir/metadata.json" ]; then
-              cp "$artifact_dir/metadata.json" "$target_dir/"
+            metadata=$(find "$artifact_dir" -name "metadata.json" -type f | head -n 1)
+            if [ -n "$metadata" ]; then
+              cp "$metadata" "$target_dir/"
+            fi
+
+            theme_css=$(find "$artifact_dir" -name "theme.css" -type f | head -n 1)
+            if [ -n "$theme_css" ]; then
+              cp "$theme_css" "$target_dir/"
             fi
 
             report_count=$((report_count + 1))
@@ -742,6 +753,7 @@ jobs:
 
           echo "REPORT_COUNT=$report_count" >> "$GITHUB_ENV"
           echo "✅ Prepared $report_count project report(s) at root"
+        # yamllint enable rule:line-length
 
       - name: "Generate index page"
         shell: bash
