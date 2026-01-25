@@ -345,7 +345,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.CLASSIC_READ_ONLY_PAT_TOKEN }}
         with:
           host: "github.com/${{ steps.config.outputs.github }}"
-          path-prefix: "."
+          path-prefix: "./github.com/${{ steps.config.outputs.github }}"
           skip-archived: "true"
           threads: "8"
           clone-timeout: "600"
