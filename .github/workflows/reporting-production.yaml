@@ -318,7 +318,6 @@ jobs:
         # yamllint disable-line rule:line-length
         uses: lfreleng-actions/gerrit-clone-action@a1e7ebddeaa2a4096b361254dc0f8291c8b122c5  # v0.1.13
         id: clone-gerrit
-        continue-on-error: true
         with:
           host: ${{ steps.config.outputs.gerrit }}
           path-prefix: "./${{ steps.config.outputs.gerrit }}"
@@ -338,9 +337,8 @@ jobs:
         # yamllint disable-line rule:line-length
         uses: lfreleng-actions/gerrit-clone-action@a1e7ebddeaa2a4096b361254dc0f8291c8b122c5  # v0.1.13
         id: clone-github
-        continue-on-error: true
         with:
-          host: "github.com/${{ matrix.github }}"
+          host: "github.com/${{ steps.config.outputs.github }}"
           source-type: "github"
           github-token: ${{ secrets.CLASSIC_READ_ONLY_PAT_TOKEN }}
           path-prefix: "."
@@ -360,30 +358,24 @@ jobs:
           if [ -n "${{ steps.config.outputs.gerrit }}" ]; then
             # Gerrit project
             if [ "${{ steps.clone-gerrit.outcome }}" != "success" ]; then
-              echo "::warning::Failed to clone Gerrit repositories for ${{ steps.config.outputs.project }}"
-              echo "::warning::Gerrit server may be unavailable or decommissioned"
-              echo "CLONE_FAILED=true" >> "$GITHUB_ENV"
-              # Create empty directory structure so subsequent steps don't fail
-              mkdir -p "./${{ steps.config.outputs.gerrit }}"
+              echo "::error::Failed to clone Gerrit repositories for ${{ steps.config.outputs.project }}"
+              echo "::error::Gerrit server may be unavailable or decommissioned"
+              exit 1
             else
               echo "✅ Successfully cloned Gerrit repositories"
-              echo "CLONE_FAILED=false" >> "$GITHUB_ENV"
             fi
           elif [ -n "${{ steps.config.outputs.github }}" ]; then
             # GitHub-only project
             if [ "${{ steps.clone-github.outcome }}" != "success" ]; then
-              echo "::warning::Failed to clone GitHub repositories for ${{ steps.config.outputs.project }}"
-              echo "::warning::GitHub organization may be unavailable or inaccessible"
-              echo "CLONE_FAILED=true" >> "$GITHUB_ENV"
-              # Create empty directory structure so subsequent steps don't fail
-              mkdir -p "./${{ steps.config.outputs.github }}"
+              echo "::error::Failed to clone GitHub repositories for ${{ steps.config.outputs.project }}"
+              echo "::error::GitHub organization may be unavailable or inaccessible"
+              exit 1
             else
               echo "✅ Successfully cloned GitHub repositories"
-              echo "CLONE_FAILED=false" >> "$GITHUB_ENV"
             fi
           else
             echo "::error::Project has neither gerrit nor github configured"
-            echo "CLONE_FAILED=true" >> "$GITHUB_ENV"
+            exit 1
           fi
         # yamllint enable rule:line-length
 
@@ -415,7 +407,6 @@ jobs:
         run: uv sync --all-extras
 
       - name: "Generate reports for ${{ steps.config.outputs.project }}"
-        if: env.CLONE_FAILED != 'true'
         shell: bash
         env:
           JENKINS_HOST: ${{ steps.config.outputs.jenkins }}
@@ -512,44 +503,6 @@ jobs:
           echo "✅ Reports generated for $project"
         # yamllint enable rule:line-length
 
-      - name: "Report skipped due to clone failure"
-        if: env.CLONE_FAILED == 'true'
-        shell: bash
-        # yamllint disable rule:line-length
-        run: |
-          project="${{ steps.config.outputs.project }}"
-
-          # Determine project type and reason for failure
-          if [ -n "${{ steps.config.outputs.gerrit }}" ]; then
-            echo "⚠️ Skipping report generation for $project due to Gerrit clone failure"
-            echo "::warning::Report generation skipped for $project - Gerrit server unavailable"
-            reason="Gerrit server unavailable or decommissioned"
-            source_field='"gerrit_host": "${{ steps.config.outputs.gerrit }}"'
-          elif [ -n "${{ steps.config.outputs.github }}" ]; then
-            echo "⚠️ Skipping report generation for $project due to GitHub clone failure"
-            echo "::warning::Report generation skipped for $project - GitHub organization unavailable"
-            reason="GitHub organization unavailable or inaccessible"
-            source_field='"github_org": "${{ steps.config.outputs.github }}"'
-          else
-            echo "⚠️ Skipping report generation for $project - no source configured"
-            echo "::warning::Report generation skipped for $project - no source configured"
-            reason="No source repository configured"
-            source_field='"error": "no_source_configured"'
-          fi
-
-          # Create minimal metadata to indicate failure
-          mkdir -p "./reports/$project"
-          cat > "./reports/$project/metadata.json" <<EOF
-          {
-            "project": "$project",
-            "status": "failed",
-            "reason": "$reason",
-            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
-            $source_field
-          }
-          EOF
-        # yamllint enable rule:line-length
-
       - name: "Create report metadata"
         shell: bash
         run: |
@@ -583,14 +536,13 @@ jobs:
           echo "✅ Metadata created"
 
       - name: "Copy raw data files to temp directory"
-        if: always()
         shell: bash
         run: |
           # Create temp directory for raw data files
           mkdir -p ./temp-raw-data-${{ matrix.slug }}
 
           # Copy JSON files to temp directory (flattening the structure)
-          project="${{ matrix.project }}"
+          project="${{ steps.config.outputs.project }}"
           if [ -f "./reports/$project/report_raw.json" ]; then
             cp "./reports/$project/report_raw.json" \
               ./temp-raw-data-${{ matrix.slug }}/
@@ -607,7 +559,6 @@ jobs:
           echo "Raw data files prepared for upload"
 
       - name: "Upload raw data artifacts"
-        if: always()
         # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f  # v6.0.0
         with:
@@ -618,7 +569,6 @@ jobs:
           compression-level: 9
 
       - name: "Upload report artifacts"
-        if: always()
         # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f  # v6.0.0
         with:
@@ -629,31 +579,30 @@ jobs:
           compression-level: 6
 
       - name: "Upload clone manifest"
-        if: always()
         # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f  # v6.0.0
         with:
           name: clone-manifest-${{ matrix.slug }}
           # yamllint disable-line rule:line-length
-          path: "./${{ matrix.gerrit != '' && matrix.gerrit || matrix.github }}/clone-manifest.json"
+          path: "./${{ steps.config.outputs.gerrit != '' && steps.config.outputs.gerrit || steps.config.outputs.github }}/clone-manifest.json"
           retention-days: 90
           if-no-files-found: warn
 
       - name: "Upload clone log"
-        if: always()
         # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f  # v6.0.0
         with:
           name: clone-log-${{ matrix.slug }}
           # yamllint disable-line rule:line-length
-          path: "./${{ matrix.gerrit != '' && matrix.gerrit || matrix.github }}.log"
+          path: "./${{ steps.config.outputs.gerrit != '' && steps.config.outputs.gerrit || steps.config.outputs.github }}.log"
           retention-days: 90
           if-no-files-found: warn
 
   publish:
     name: "Publish GitHub Pages"
     needs: [validate-secrets, build-matrix, analyze]
-    if: always() && needs.validate-secrets.result == 'success'
+    # yamllint disable-line rule:line-length
+    if: needs.validate-secrets.result == 'success' && needs.analyze.result == 'success'
     runs-on: ubuntu-latest
     permissions:
       contents: write
