@@ -13,6 +13,11 @@ on:
         required: false
         type: boolean
         default: false
+      skip_artifact_transfer:
+        description: 'Skip artifact transfer to gerrit-reports repository'
+        required: false
+        type: boolean
+        default: true
   schedule:
     # Run every day at 7:00 AM UTC
     - cron: "0 7 * * *"
@@ -772,7 +777,8 @@ jobs:
   copy-to-gerrit-reports:
     name: "Transfer/Copy Artifacts"
     needs: [validate-secrets, build-matrix, analyze]
-    if: always() && needs.validate-secrets.result == 'success'
+    # yamllint disable-line rule:line-length
+    if: github.event_name != 'workflow_dispatch' || inputs.skip_artifact_transfer == false
     runs-on: ubuntu-latest
     permissions:
       contents: read
