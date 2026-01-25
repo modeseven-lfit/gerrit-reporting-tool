@@ -1,6 +1,6 @@
 # 📊 GitHub Project Analysis Report: OPNFV
 
-**Generated:** 2026-01-25 07:19:16 UTC
+**Generated:** 2026-01-25 15:06:36 UTC
 **Schema Version:** 1.5.0
 
 ---## Table of Contents
@@ -117,74 +117,74 @@ The data presented in the table below covers the past 365 days.
 
 | Repository | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| [opnfvdocs](https://github.com/gerrit.opnfv.org/opnfvdocs) | 10785 | 0 | 0 | 576 | 2024-06-27 | ☑️ |
+| [opnfvdocs](https://github.com/gerrit.opnfv.org/opnfvdocs) | 10785 | 0 | 0 | 577 | 2024-06-27 | ☑️ |
 | [releng](https://github.com/gerrit.opnfv.org/releng) | 8547 | +785 | 1 | 101 | 2025-10-15 | ✅ |
 | [apex-tripleo-heat-templates](https://github.com/gerrit.opnfv.org/apex-tripleo-heat-templates) | 5611 | 0 | 0 | 2843 | 2018-04-13 | 🛑 |
 | [functest](https://github.com/gerrit.opnfv.org/functest) | 4478 | +351 | 1 | 102 | 2025-10-14 | ✅ |
-| [functest-xtesting](https://github.com/gerrit.opnfv.org/functest-xtesting) | 3454 | +38 | 1 | 289 | 2025-04-10 | ✅ |
-| [fuel](https://github.com/gerrit.opnfv.org/fuel) | 1951 | 0 | 0 | 2046 | 2020-06-18 | 🛑 |
-| [apex-puppet-tripleo](https://github.com/gerrit.opnfv.org/apex-puppet-tripleo) | 1580 | 0 | 0 | 2842 | 2018-04-14 | 🛑 |
+| [functest-xtesting](https://github.com/gerrit.opnfv.org/functest-xtesting) | 3454 | +38 | 1 | 290 | 2025-04-10 | ✅ |
+| [fuel](https://github.com/gerrit.opnfv.org/fuel) | 1951 | 0 | 0 | 2047 | 2020-06-18 | 🛑 |
+| [apex-puppet-tripleo](https://github.com/gerrit.opnfv.org/apex-puppet-tripleo) | 1580 | 0 | 0 | 2843 | 2018-04-14 | 🛑 |
 | [apex](https://github.com/gerrit.opnfv.org/apex) | 1413 | 0 | 0 | 2461 | 2019-04-30 | 🛑 |
-| [qtip](https://github.com/gerrit.opnfv.org/qtip) | 1151 | 0 | 0 | 2798 | 2018-05-28 | 🛑 |
-| [releng-xci](https://github.com/gerrit.opnfv.org/releng-xci) | 928 | 0 | 0 | 2335 | 2019-09-03 | 🛑 |
-| [vineperf](https://github.com/gerrit.opnfv.org/vineperf) | 901 | 0 | 0 | 1117 | 2023-01-03 | 🛑 |
-| [releng-testresults](https://github.com/gerrit.opnfv.org/releng-testresults) | 867 | 0 | 0 | 1761 | 2021-03-30 | 🛑 |
-| [moon](https://github.com/gerrit.opnfv.org/moon) | 792 | 0 | 0 | 2061 | 2020-06-03 | 🛑 |
+| [qtip](https://github.com/gerrit.opnfv.org/qtip) | 1151 | 0 | 0 | 2799 | 2018-05-28 | 🛑 |
+| [releng-xci](https://github.com/gerrit.opnfv.org/releng-xci) | 928 | 0 | 0 | 2336 | 2019-09-03 | 🛑 |
+| [vineperf](https://github.com/gerrit.opnfv.org/vineperf) | 901 | 0 | 0 | 1118 | 2023-01-03 | 🛑 |
+| [releng-testresults](https://github.com/gerrit.opnfv.org/releng-testresults) | 867 | 0 | 0 | 1762 | 2021-03-30 | 🛑 |
+| [moon](https://github.com/gerrit.opnfv.org/moon) | 792 | 0 | 0 | 2062 | 2020-06-03 | 🛑 |
 | [dovetail](https://github.com/gerrit.opnfv.org/dovetail) | 721 | 0 | 0 | 2181 | 2020-02-04 | 🛑 |
-| [samplevnf](https://github.com/gerrit.opnfv.org/samplevnf) | 571 | 0 | 0 | 425 | 2024-11-25 | ☑️ |
+| [samplevnf](https://github.com/gerrit.opnfv.org/samplevnf) | 571 | 0 | 0 | 426 | 2024-11-25 | ☑️ |
 | [barometer](https://github.com/gerrit.opnfv.org/barometer) | 563 | 0 | 0 | 1269 | 2022-08-04 | 🛑 |
 | [bottlenecks](https://github.com/gerrit.opnfv.org/bottlenecks) | 523 | 0 | 0 | 2277 | 2019-11-01 | 🛑 |
-| [laas](https://github.com/gerrit.opnfv.org/laas) | 484 | 0 | 0 | 821 | 2023-10-26 | ☑️ |
+| [laas](https://github.com/gerrit.opnfv.org/laas) | 484 | 0 | 0 | 822 | 2023-10-26 | ☑️ |
 | [pharos](https://github.com/gerrit.opnfv.org/pharos) | 465 | 0 | 0 | 2195 | 2020-01-21 | 🛑 |
-| [doctor](https://github.com/gerrit.opnfv.org/doctor) | 447 | 0 | 0 | 1929 | 2020-10-13 | 🛑 |
-| [functest-kubernetes](https://github.com/gerrit.opnfv.org/functest-kubernetes) | 418 | +184 | 1 | 109 | 2025-10-07 | ✅ |
+| [doctor](https://github.com/gerrit.opnfv.org/doctor) | 447 | 0 | 0 | 1930 | 2020-10-13 | 🛑 |
+| [functest-kubernetes](https://github.com/gerrit.opnfv.org/functest-kubernetes) | 418 | +184 | 1 | 110 | 2025-10-07 | ✅ |
 | [nfvbench](https://github.com/gerrit.opnfv.org/nfvbench) | 328 | 0 | 0 | 1114 | 2023-01-06 | 🛑 |
-| [storperf](https://github.com/gerrit.opnfv.org/storperf) | 313 | 0 | 0 | 2181 | 2020-02-04 | 🛑 |
+| [storperf](https://github.com/gerrit.opnfv.org/storperf) | 313 | 0 | 0 | 2182 | 2020-02-04 | 🛑 |
 | [parser](https://github.com/gerrit.opnfv.org/parser) | 308 | 0 | 0 | 2389 | 2019-07-11 | 🛑 |
 | [ipv6](https://github.com/gerrit.opnfv.org/ipv6) | 235 | 0 | 0 | 2402 | 2019-06-28 | 🛑 |
 | [models](https://github.com/gerrit.opnfv.org/models) | 227 | 0 | 0 | 2735 | 2018-07-30 | 🛑 |
 | [apex-os-net-config](https://github.com/gerrit.opnfv.org/apex-os-net-config) | 225 | 0 | 0 | 3035 | 2017-10-03 | 🛑 |
 | [calipso](https://github.com/gerrit.opnfv.org/calipso) | 206 | 0 | 0 | 2636 | 2018-11-06 | 🛑 |
-| [container4nfv](https://github.com/gerrit.opnfv.org/container4nfv) | 204 | 0 | 0 | 2230 | 2019-12-17 | 🛑 |
-| [clover](https://github.com/gerrit.opnfv.org/clover) | 188 | 0 | 0 | 2301 | 2019-10-07 | 🛑 |
+| [container4nfv](https://github.com/gerrit.opnfv.org/container4nfv) | 204 | 0 | 0 | 2231 | 2019-12-17 | 🛑 |
+| [clover](https://github.com/gerrit.opnfv.org/clover) | 188 | 0 | 0 | 2302 | 2019-10-07 | 🛑 |
 | [airship](https://github.com/gerrit.opnfv.org/airship) | 116 | 0 | 0 | 1663 | 2021-07-06 | 🛑 |
-| [kuberef](https://github.com/gerrit.opnfv.org/kuberef) | 114 | 0 | 0 | 1076 | 2023-02-13 | ☑️ |
+| [kuberef](https://github.com/gerrit.opnfv.org/kuberef) | 114 | 0 | 0 | 1077 | 2023-02-13 | ☑️ |
 | [dovetail-webportal](https://github.com/gerrit.opnfv.org/dovetail-webportal) | 105 | 0 | 0 | 1923 | 2020-10-20 | 🛑 |
-| [releng-anteater](https://github.com/gerrit.opnfv.org/releng-anteater) | 99 | 0 | 0 | 2696 | 2018-09-07 | 🛑 |
+| [releng-anteater](https://github.com/gerrit.opnfv.org/releng-anteater) | 99 | 0 | 0 | 2697 | 2018-09-07 | 🛑 |
 | [domino](https://github.com/gerrit.opnfv.org/domino) | 94 | 0 | 0 | 2913 | 2018-02-02 | 🛑 |
-| [fds](https://github.com/gerrit.opnfv.org/fds) | 87 | 0 | 0 | 2685 | 2018-09-18 | 🛑 |
-| [ovsnfv](https://github.com/gerrit.opnfv.org/ovsnfv) | 86 | 0 | 0 | 3071 | 2017-08-28 | 🛑 |
+| [fds](https://github.com/gerrit.opnfv.org/fds) | 87 | 0 | 0 | 2686 | 2018-09-18 | 🛑 |
+| [ovsnfv](https://github.com/gerrit.opnfv.org/ovsnfv) | 86 | 0 | 0 | 3072 | 2017-08-28 | 🛑 |
 | [stor4nfv](https://github.com/gerrit.opnfv.org/stor4nfv) | 56 | 0 | 0 | 2455 | 2019-05-07 | 🛑 |
-| [releng-utils](https://github.com/gerrit.opnfv.org/releng-utils) | 46 | 0 | 0 | 2952 | 2017-12-25 | 🛑 |
+| [releng-utils](https://github.com/gerrit.opnfv.org/releng-utils) | 46 | 0 | 0 | 2953 | 2017-12-25 | 🛑 |
 | [opera](https://github.com/gerrit.opnfv.org/opera) | 41 | 0 | 0 | 2913 | 2018-02-02 | 🛑 |
-| [releng-xci-scenarios](https://github.com/gerrit.opnfv.org/releng-xci-scenarios) | 34 | 0 | 0 | 2338 | 2019-08-31 | 🛑 |
+| [releng-xci-scenarios](https://github.com/gerrit.opnfv.org/releng-xci-scenarios) | 34 | 0 | 0 | 2339 | 2019-08-31 | 🛑 |
 | [cirv-sdv](https://github.com/gerrit.opnfv.org/cirv-sdv) | 32 | 0 | 0 | 1504 | 2021-12-13 | 🛑 |
 | [laas-reflab](https://github.com/gerrit.opnfv.org/laas-reflab) | 30 | 0 | 0 | 2298 | 2019-10-10 | 🛑 |
-| [cirv](https://github.com/gerrit.opnfv.org/cirv) | 23 | 0 | 0 | 1626 | 2021-08-12 | 🛑 |
-| [thoth](https://github.com/gerrit.opnfv.org/thoth) | 22 | 0 | 0 | 976 | 2023-05-24 | ☑️ |
-| [edgecloud](https://github.com/gerrit.opnfv.org/edgecloud) | 15 | 0 | 0 | 2248 | 2019-11-29 | 🛑 |
-| [sandbox](https://github.com/gerrit.opnfv.org/sandbox) | 15 | 0 | 0 | 2941 | 2018-01-05 | 🛑 |
-| [enfv](https://github.com/gerrit.opnfv.org/enfv) | 14 | 0 | 0 | 3579 | 2016-04-07 | 🛑 |
+| [cirv](https://github.com/gerrit.opnfv.org/cirv) | 23 | 0 | 0 | 1627 | 2021-08-12 | 🛑 |
+| [thoth](https://github.com/gerrit.opnfv.org/thoth) | 22 | 0 | 0 | 977 | 2023-05-24 | ☑️ |
+| [edgecloud](https://github.com/gerrit.opnfv.org/edgecloud) | 15 | 0 | 0 | 2249 | 2019-11-29 | 🛑 |
+| [sandbox](https://github.com/gerrit.opnfv.org/sandbox) | 15 | 0 | 0 | 2942 | 2018-01-05 | 🛑 |
+| [enfv](https://github.com/gerrit.opnfv.org/enfv) | 14 | 0 | 0 | 3580 | 2016-04-07 | 🛑 |
 | [securityscanning](https://github.com/gerrit.opnfv.org/securityscanning) | 14 | 0 | 0 | 3131 | 2017-06-30 | 🛑 |
 | [cirv-hdv](https://github.com/gerrit.opnfv.org/cirv-hdv) | 13 | 0 | 0 | 1894 | 2020-11-18 | 🛑 |
-| [cran](https://github.com/gerrit.opnfv.org/cran) | 12 | 0 | 0 | 2454 | 2019-05-07 | 🛑 |
-| [orchestra](https://github.com/gerrit.opnfv.org/orchestra) | 11 | 0 | 0 | 2685 | 2018-09-18 | 🛑 |
+| [cran](https://github.com/gerrit.opnfv.org/cran) | 12 | 0 | 0 | 2455 | 2019-05-07 | 🛑 |
+| [orchestra](https://github.com/gerrit.opnfv.org/orchestra) | 11 | 0 | 0 | 2686 | 2018-09-18 | 🛑 |
 | [conductor](https://github.com/gerrit.opnfv.org/conductor) | 8 | 0 | 0 | 3672 | 2016-01-06 | 🛑 |
 | [test](https://github.com/gerrit.opnfv.org/test) | 8 | 0 | 0 | 2447 | 2019-05-14 | 🛑 |
 | [puppet-barometer](https://github.com/gerrit.opnfv.org/puppet-barometer) | 6 | 0 | 0 | 2735 | 2018-07-30 | 🛑 |
-| [sandbox-zuul-config](https://github.com/gerrit.opnfv.org/sandbox-zuul-config) | 5 | 0 | 0 | 2832 | 2018-04-24 | 🛑 |
+| [sandbox-zuul-config](https://github.com/gerrit.opnfv.org/sandbox-zuul-config) | 5 | 0 | 0 | 2833 | 2018-04-24 | 🛑 |
 | [sandbox-zuul-untrusted](https://github.com/gerrit.opnfv.org/sandbox-zuul-untrusted) | 5 | 0 | 0 | 2832 | 2018-04-24 | 🛑 |
 | [test/test1](https://github.com/gerrit.opnfv.org/test/test1) | 5 | 0 | 0 | 2249 | 2019-11-28 | 🛑 |
 | [infra](https://github.com/gerrit.opnfv.org/infra) | 4 | 0 | 0 | 2976 | 2017-12-01 | 🛑 |
-| [.github](https://github.com/gerrit.opnfv.org/.github) | 3 | 0 | 0 | 865 | 2023-09-12 | ☑️ |
-| [rocket](https://github.com/gerrit.opnfv.org/rocket) | 3 | 0 | 0 | 2234 | 2019-12-13 | 🛑 |
+| [.github](https://github.com/gerrit.opnfv.org/.github) | 3 | 0 | 0 | 866 | 2023-09-12 | ☑️ |
+| [rocket](https://github.com/gerrit.opnfv.org/rocket) | 3 | 0 | 0 | 2235 | 2019-12-13 | 🛑 |
 | [opnfvtsc](https://github.com/gerrit.opnfv.org/opnfvtsc) | 2 | 0 | 0 | 2830 | 2018-04-26 | 🛑 |
 | [policytest](https://github.com/gerrit.opnfv.org/policytest) | 2 | 0 | 0 | 3782 | 2015-09-17 | 🛑 |
 | [test2](https://github.com/gerrit.opnfv.org/test2) | 2 | 0 | 0 | 2556 | 2019-01-25 | 🛑 |
 | [cirv-rapid](https://github.com/gerrit.opnfv.org/cirv-rapid) | 1 | 0 | 0 | 2118 | 2020-04-08 | 🛑 |
 | [cirv-spirent](https://github.com/gerrit.opnfv.org/cirv-spirent) | 1 | 0 | 0 | 2228 | 2019-12-20 | 🛑 |
 | [functest-requirements](https://github.com/gerrit.opnfv.org/functest-requirements) | 1 | 0 | 0 | 2959 | 2017-12-18 | 🛑 |
-| [spark-model-runner](https://github.com/gerrit.opnfv.org/spark-model-runner) | 1 | 0 | 0 | 2368 | 2019-08-01 | 🛑 |
+| [spark-model-runner](https://github.com/gerrit.opnfv.org/spark-model-runner) | 1 | 0 | 0 | 2369 | 2019-08-01 | 🛑 |
 
 **Total:** 68 repositories
 
@@ -196,45 +196,45 @@ The data presented in the table below covers the past 365 days.
 | test/test | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | test/test1 | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | apex-os-net-config | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| apex | Python | Shell, D | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | .github | N/A |  | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | cirv | Python |  | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| apex | Python | Shell, D | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | cirv-rapid | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | cirv-hdv | Python | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | cirv-spirent | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | apex-puppet-tripleo | Ruby | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | calipso | Python | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| conductor | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| airship | Shell | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | bottlenecks | Python | JavaScript, Shell, HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| cirv-sdv | Python | JavaScript, Shell, HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | apex-tripleo-heat-templates | Shell | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| airship | Shell | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| conductor | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| cirv-sdv | Python | JavaScript, Shell, HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | domino | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | doctor | Python | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | edgecloud | Python |  | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| barometer | Go | Python, Shell, C, Ruby | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | enfv | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| container4nfv | Shell | Python, Go | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| barometer | Go | Python, Shell, C, Ruby | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | dovetail | Python | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| container4nfv | Shell | Python, Go | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | cran | Python | Shell, C | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | functest-requirements | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | dovetail-webportal | Python | JavaScript, Shell, D, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| clover | Python | JavaScript, Shell, Go, C, Scala, HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | functest-kubernetes | Python | JavaScript, Shell, D, HTML | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | fds | Python | Shell, Robot Framework | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| clover | Python | JavaScript, Shell, Go, C, Scala, HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| ipv6 | Python |  | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | laas | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | infra | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ipv6 | Python |  | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| functest-xtesting | Python | JavaScript, Shell, Robot Framework, D, HTML | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | laas-reflab | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| functest-xtesting | Python | JavaScript, Shell, Robot Framework, D, HTML | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | kuberef | Shell | Python, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| opera | Shell | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | opnfvtsc | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| opera | Shell | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | models | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| fuel | Shell | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| orchestra | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| functest | Python | JavaScript, Shell, D, HTML, CSS | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
 | nfvbench | Python | Shell, D | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| functest | Python | JavaScript, Shell, D, HTML, CSS | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
+| orchestra | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| fuel | Shell | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | policytest | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ovsnfv | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | opnfvdocs | HTML | Python, Shell, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
@@ -243,20 +243,20 @@ The data presented in the table below covers the past 365 days.
 | releng-utils | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | pharos | Python | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | rocket | Python |  | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| releng-xci-scenarios | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | releng | Python | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
-| sandbox | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| sandbox-zuul-config | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| releng-xci-scenarios | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | releng-xci | Shell | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| sandbox-zuul-config | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| sandbox | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | sandbox-zuul-untrusted | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| spark-model-runner | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | securityscanning | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| spark-model-runner | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | test | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| qtip | Python | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| test2 | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| samplevnf | C | JavaScript, Python, Shell, C++, D, CSS, Lua | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| storperf | Python | JavaScript, Shell, D, HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | parser | Python | Shell, Java | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| samplevnf | C | JavaScript, Python, Shell, C++, D, CSS, Lua | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| test2 | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| qtip | Python | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| storperf | Python | JavaScript, Shell, D, HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | releng-testresults | JavaScript | TypeScript, Python, Shell, SCSS, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | stor4nfv | Shell | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | thoth | Python |  | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
