@@ -593,13 +593,34 @@ jobs:
           retention-days: 90
           if-no-files-found: warn
 
+      - name: "Determine log file path"
+        id: log-path
+        shell: bash
+        run: |
+          # Log file location based on gerrit-clone-action v0.1.14 behavior:
+          # - Gerrit: placed in path_prefix dir with hostname as filename
+          # - GitHub: placed at root (path_prefix=".") with sanitized hostname
+          #   (slashes replaced with underscores)
+          if [ -n "${{ steps.config.outputs.gerrit }}" ]; then
+            # Gerrit: ./gerrit.example.org/gerrit.example.org.log
+            gerrit_host="${{ steps.config.outputs.gerrit }}"
+            log_path="./${gerrit_host}/${gerrit_host}.log"
+          else
+            # GitHub: ./github.com_orgname.log (slashes -> underscores)
+            # host is "github.com/orgname", sanitized to "github.com_orgname"
+            github_org="${{ steps.config.outputs.github }}"
+            sanitized_host="github.com_${github_org}"
+            log_path="./${sanitized_host}.log"
+          fi
+          echo "path=$log_path" >> "$GITHUB_OUTPUT"
+          echo "Log file path: $log_path"
+
       - name: "Upload clone log"
         # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f  # v6.0.0
         with:
           name: clone-log-${{ matrix.slug }}
-          # yamllint disable-line rule:line-length
-          path: "./${{ steps.config.outputs.gerrit != '' && steps.config.outputs.gerrit || steps.config.outputs.github }}.log"
+          path: ${{ steps.log-path.outputs.path }}
           retention-days: 90
           if-no-files-found: warn
 
