@@ -624,8 +624,10 @@ jobs:
   publish:
     name: "Publish GitHub Pages"
     needs: [validate-secrets, build-matrix, analyze]
+    # Run if validation succeeded and analyze completed (even with failures)
+    # This allows publishing reports from successful matrix jobs
     # yamllint disable-line rule:line-length
-    if: needs.validate-secrets.result == 'success' && needs.analyze.result == 'success'
+    if: always() && needs.validate-secrets.result == 'success' && (needs.analyze.result == 'success' || needs.analyze.result == 'failure')
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -669,7 +671,25 @@ jobs:
           path: ./downloaded-reports
         continue-on-error: true
 
+      - name: "Check for available reports"
+        id: check-reports
+        shell: bash
+        run: |
+          if [ -d "./downloaded-reports" ]; then
+            report_count=$(find ./downloaded-reports -mindepth 1 \
+              -maxdepth 1 -type d | wc -l)
+            echo "count=$report_count" >> "$GITHUB_OUTPUT"
+            echo "📦 Found $report_count report artifact(s)"
+            if [ "$report_count" -eq 0 ]; then
+              echo "::warning::No report artifacts found to publish"
+            fi
+          else
+            echo "count=0" >> "$GITHUB_OUTPUT"
+            echo "::warning::No downloaded-reports directory found"
+          fi
+
       - name: "Prepare production reports at root"
+        if: steps.check-reports.outputs.count != '0'
         shell: bash
         # yamllint disable rule:line-length
         run: |
@@ -728,6 +748,7 @@ jobs:
         # yamllint enable rule:line-length
 
       - name: "Generate index page"
+        if: steps.check-reports.outputs.count != '0'
         shell: bash
         run: |
           # Create .nojekyll to disable Jekyll processing
@@ -738,6 +759,7 @@ jobs:
           bash /tmp/main-scripts/generate-index.sh . production
 
       - name: "Commit and push changes"
+        if: steps.check-reports.outputs.count != '0'
         shell: bash
         run: |
           git config user.name "lf-releng-reports-bot"
@@ -792,11 +814,24 @@ jobs:
             echo ""
           } >> "$GITHUB_STEP_SUMMARY"
 
+      - name: "Report publish status"
+        if: steps.check-reports.outputs.count == '0'
+        shell: bash
+        run: |
+          {
+            echo "## ⚠️ No Reports Published"
+            echo ""
+            echo "No report artifacts were available to publish."
+            echo "This may occur if all matrix jobs failed."
+            echo ""
+          } >> "$GITHUB_STEP_SUMMARY"
+
   copy-to-gerrit-reports:
     name: "Transfer/Copy Artifacts"
     needs: [validate-secrets, build-matrix, analyze]
+    # Run if validation succeeded and analyze completed (even with failures)
     # yamllint disable-line rule:line-length
-    if: github.event_name != 'workflow_dispatch' || inputs.skip_artifact_transfer == false
+    if: always() && needs.validate-secrets.result == 'success' && (needs.analyze.result == 'success' || needs.analyze.result == 'failure') && (github.event_name != 'workflow_dispatch' || inputs.skip_artifact_transfer == false)
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -818,7 +853,24 @@ jobs:
         with:
           path: ./downloaded-artifacts
           merge-multiple: false
-        continue-on-error: false
+        continue-on-error: true
+
+      - name: "Check for available artifacts"
+        id: check-artifacts
+        shell: bash
+        run: |
+          if [ -d "./downloaded-artifacts" ]; then
+            artifact_count=$(find ./downloaded-artifacts -mindepth 1 \
+              -maxdepth 1 -type d | wc -l)
+            echo "count=$artifact_count" >> "$GITHUB_OUTPUT"
+            echo "📦 Found $artifact_count artifact(s)"
+            if [ "$artifact_count" -eq 0 ]; then
+              echo "::warning::No artifacts found to transfer"
+            fi
+          else
+            echo "count=0" >> "$GITHUB_OUTPUT"
+            echo "::warning::No downloaded-artifacts directory found"
+          fi
 
       - name: "Generate date folder name"
         id: date
@@ -829,6 +881,7 @@ jobs:
           echo "Date folder: ${DATE_FOLDER}"
 
       - name: "Debug: Show downloaded artifacts"
+        if: steps.check-artifacts.outputs.count != '0'
         shell: bash
         run: |
           echo "=== Downloaded artifacts structure ==="
@@ -846,6 +899,7 @@ jobs:
           fi
 
       - name: "Copy artifacts to gerrit-reports repository"
+        if: steps.check-artifacts.outputs.count != '0'
         shell: bash
         env:
           GERRIT_REPORTS_PAT_TOKEN: ${{ secrets.GERRIT_REPORTS_PAT_TOKEN }}
@@ -869,6 +923,7 @@ jobs:
             echo "**Workflow Run:** ${{ github.run_id }}"
             echo "**Target Repository:** modeseven-lfit/gerrit-reports"
             echo "**Status:** ${{ job.status }}"
+            echo "**Artifacts Found:** ${{ steps.check-artifacts.outputs.count }}"
             echo ""
             echo "### 🔗 View in Repository"
             echo ""
@@ -922,7 +977,8 @@ jobs:
             echo ""
             echo "### Job Results"
             echo ""
-            echo "- **Verify:** $(result_emoji '${{ needs.verify.result }}')"
+            echo "- **Validate Secrets:** $(result_emoji \
+              '${{ needs.validate-secrets.result }}')"
             echo "- **Analyze:** $(result_emoji \
               '${{ needs.analyze.result }}')"
             echo "- **Publish:** $(result_emoji \
@@ -930,6 +986,15 @@ jobs:
             echo "- **Copy:** $(result_emoji \
               '${{ needs.copy-to-gerrit-reports.result }}')"
             echo ""
+
+            # Note about partial failures
+            if [ "${{ needs.analyze.result }}" = "failure" ]; then
+              echo "### ⚠️ Partial Matrix Failure"
+              echo ""
+              echo "Some project analysis jobs failed, but reports from"
+              echo "successful jobs were still published."
+              echo ""
+            fi
 
             # Add links to project reports if publish succeeded
             if [ "${{ needs.publish.result }}" = "success" ]; then
@@ -991,7 +1056,7 @@ jobs:
           EMAIL_EOF
 
           date_completed=$(date -u +%Y-%m-%dT%H:%M:%SZ)
-          verify_result="${{ needs.verify.result }}"
+          validate_result="${{ needs.validate-secrets.result }}"
           analyze_result="${{ needs.analyze.result }}"
           publish_result="${{ needs.publish.result }}"
           copy_result="${{ needs.copy-to-gerrit-reports.result }}"
@@ -1001,8 +1066,8 @@ jobs:
             echo "Status: ${publish_result}"
             echo ""
             echo "Job Results:"
-            verify_emoji=$(result_emoji "${verify_result}")
-            echo "- Verify: ${verify_emoji} ${verify_result}"
+            validate_emoji=$(result_emoji "${validate_result}")
+            echo "- Validate: ${validate_emoji} ${validate_result}"
             analyze_emoji=$(result_emoji "${analyze_result}")
             echo "- Analyze: ${analyze_emoji} ${analyze_result}"
             publish_emoji=$(result_emoji "${publish_result}")
@@ -1011,6 +1076,16 @@ jobs:
             echo "- Copy: ${copy_emoji} ${copy_result}"
             echo ""
           } >> /tmp/email_body.txt
+
+          # Add note about partial failures
+          if [ "${analyze_result}" = "failure" ]; then
+            {
+              echo "⚠️ Partial Matrix Failure"
+              echo "Some project analysis jobs failed, but reports from"
+              echo "successful jobs were still published."
+              echo ""
+            } >> /tmp/email_body.txt
+          fi
 
           # Add project reports if publish succeeded
           if [ "${publish_result}" = "success" ]; then
