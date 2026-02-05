@@ -114,7 +114,7 @@ clone_project() {
     # Run the clone operation
     if gerrit-clone clone \
         --host "${gerrit_host}" \
-        --path-prefix "${clone_dir}" \
+        --output-path "${clone_dir}" \
         --skip-archived \
         --threads 4 \
         --clone-timeout 600 \
