@@ -826,6 +826,13 @@ jobs:
             echo ""
           } >> "$GITHUB_STEP_SUMMARY"
 
+      - name: "Fail job if no reports were published"
+        if: steps.check-reports.outputs.count == '0'
+        shell: bash
+        run: |
+          echo "::error::No report artifacts were available to publish"
+          exit 1
+
   copy-to-gerrit-reports:
     name: "Transfer/Copy Artifacts"
     needs: [validate-secrets, build-matrix, analyze]
@@ -931,6 +938,13 @@ jobs:
             echo ""
           } >> "$GITHUB_STEP_SUMMARY"
         # yamllint enable rule:line-length
+
+      - name: "Fail job if no artifacts were transferred"
+        if: steps.check-artifacts.outputs.count == '0'
+        shell: bash
+        run: |
+          echo "::error::No artifacts were available to transfer"
+          exit 1
 
   summary:
     name: "Workflow Summary"
