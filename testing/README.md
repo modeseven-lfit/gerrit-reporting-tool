@@ -453,7 +453,7 @@ You can run individual steps manually:
 ```bash
 uvx gerrit-clone clone \
     --host gerrit.onap.org \
-    --path-prefix /tmp \
+    --output-path /tmp \
     --https \
     --skip-archived \
     --threads 4 \
@@ -465,7 +465,7 @@ uvx gerrit-clone clone \
 ```bash
 uvx gerrit-clone clone \
     --host git.opendaylight.org \
-    --path-prefix /tmp \
+    --output-path /tmp \
     --https \
     --skip-archived \
     --threads 4 \
@@ -543,7 +543,7 @@ The script processes ONAP and Opendaylight by default. To test other projects:
    # Clone O-RAN-SC
    uvx gerrit-clone clone \
        --host gerrit.o-ran-sc.org \
-       --path-prefix /tmp/gerrit.o-ran-sc.org
+       --output-path /tmp/gerrit.o-ran-sc.org
 
    # Generate report
    cd gerrit-reporting-tool
@@ -561,7 +561,7 @@ If you have SSH keys configured:
 # Remove --https and add SSH options
 uvx gerrit-clone clone \
     --host gerrit.onap.org \
-    --path-prefix /tmp \
+    --output-path /tmp \
     --ssh-user your-username \
     --ssh-private-key ~/.ssh/id_rsa \
     --threads 4 \

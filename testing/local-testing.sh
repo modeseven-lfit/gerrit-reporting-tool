@@ -326,7 +326,7 @@ clone_project() {
     # Use gerrit-clone (the CLI tool) instead of gerrit-clone-action (the GitHub Action)
     if gerrit-clone clone \
         --host "${gerrit_host}" \
-        --path-prefix "${clone_dir}" \
+        --output-path "${clone_dir}" \
         --skip-archived \
         --threads 4 \
         --clone-timeout 600 \
@@ -375,7 +375,7 @@ clone_github_project() {
     local clone_args=(
         --host "github.com/${github_org}"
         --source-type github
-        --path-prefix "${CLONE_BASE_DIR}"
+        --output-path "${CLONE_BASE_DIR}"
         --skip-archived
         --threads 8
         --clone-timeout 600

@@ -127,7 +127,7 @@ The following `gerrit-clone clone` options are used for GitHub projects:
 | `--host`           | `github.com/<org>` | Auto-detects as GitHub source                    |
 | `--source-type`    | `github`           | Explicit source type (optional, auto-detected)   |
 | `--github-token`   | Token from secrets | Authentication for private repos and rate limits |
-| `--path-prefix`    | `.`                | Clone to current directory                       |
+| `--output-path`    | `.`                | Clone to current directory                       |
 | `--skip-archived`  | `true`             | Skip archived repositories                       |
 | `--threads`        | `8`                | Parallel clone threads (vs 4 for Gerrit)         |
 | `--clone-timeout`  | `600`              | 10 minute timeout per repo                       |

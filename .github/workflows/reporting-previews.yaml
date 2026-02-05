@@ -180,7 +180,7 @@ jobs:
         id: clone
         with:
           host: ${{ matrix.gerrit }}
-          path-prefix: "./${{ matrix.gerrit }}"
+          output-path: "./${{ matrix.gerrit }}"
           skip-archived: "true"
           threads: "4"
           clone-timeout: "600"
