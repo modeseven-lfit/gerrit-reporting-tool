@@ -23,6 +23,7 @@ from .base_client import BaseAPIClient
 # Optional JJB Attribution integration
 try:
     from jjb_attribution import JJBAttribution, JJBRepoManager
+
     JJB_ATTRIBUTION_AVAILABLE = True
 except ImportError:
     JJB_ATTRIBUTION_AVAILABLE = False
@@ -53,7 +54,7 @@ class JenkinsAPIClient(BaseAPIClient):
         stats: Any | None = None,
         jjb_config: dict[str, Any] | None = None,
         gerrit_host: str | None = None,
-        allow_http_fallback: bool = False
+        allow_http_fallback: bool = False,
     ):
         """
         Initialize Jenkins API client.
@@ -94,27 +95,25 @@ class JenkinsAPIClient(BaseAPIClient):
 
         # Check for Jenkins authentication from environment
         import os
+
         jenkins_user = os.environ.get("JENKINS_USER")
         jenkins_token = os.environ.get("JENKINS_API_TOKEN")
 
         # Create httpx client with optional authentication
         if jenkins_user and jenkins_token:
             self.logger.info(f"Jenkins authentication enabled for user: {jenkins_user}")
-            self.client = httpx.Client(
-                timeout=timeout,
-                auth=(jenkins_user, jenkins_token)
-            )
+            self.client = httpx.Client(timeout=timeout, auth=(jenkins_user, jenkins_token))
         else:
-            self.logger.debug("No Jenkins authentication configured (JENKINS_USER/JENKINS_API_TOKEN not set)")
+            self.logger.debug(
+                "No Jenkins authentication configured (JENKINS_USER/JENKINS_API_TOKEN not set)"
+            )
             self.client = httpx.Client(timeout=timeout)
 
         # Discover the correct API base path (and protocol)
         self._discover_api_base_path()
 
     def _initialize_jjb_attribution(
-        self,
-        config: dict[str, Any],
-        gerrit_host: str | None = None
+        self, config: dict[str, Any], gerrit_host: str | None = None
     ) -> None:
         """
         Initialize JJB Attribution for authoritative job allocation.
@@ -127,8 +126,7 @@ class JenkinsAPIClient(BaseAPIClient):
         """
         if not JJB_ATTRIBUTION_AVAILABLE:
             self.logger.warning(
-                "JJB Attribution modules not available. "
-                "Falling back to fuzzy matching."
+                "JJB Attribution modules not available. Falling back to fuzzy matching."
             )
             return
 
@@ -172,8 +170,7 @@ class JenkinsAPIClient(BaseAPIClient):
 
         except Exception as e:
             self.logger.warning(
-                f"Failed to initialize JJB Attribution: {e}. "
-                f"Falling back to fuzzy matching."
+                f"Failed to initialize JJB Attribution: {e}. Falling back to fuzzy matching."
             )
             self.jjb_attribution = None
             self.jjb_attribution_enabled = False
@@ -250,9 +247,7 @@ class JenkinsAPIClient(BaseAPIClient):
 
         # If HTTPS failed with SSL error and fallback is allowed, try HTTP
         if ssl_error_occurred and self.allow_http_fallback:
-            self.logger.warning(
-                f"HTTPS certificate validation failure [{self.host}]"
-            )
+            self.logger.warning(f"HTTPS certificate validation failure [{self.host}]")
             self.logger.warning(
                 "Project configuration permits HTTP fallback (allow_http_fallback=True)"
             )
@@ -260,14 +255,12 @@ class JenkinsAPIClient(BaseAPIClient):
             # Switch to HTTP (preserve authentication if present)
             self.base_url = f"http://{self.host}"
             import os
+
             jenkins_user = os.environ.get("JENKINS_USER")
             jenkins_token = os.environ.get("JENKINS_API_TOKEN")
 
             if jenkins_user and jenkins_token:
-                self.client = httpx.Client(
-                    timeout=self.timeout,
-                    auth=(jenkins_user, jenkins_token)
-                )
+                self.client = httpx.Client(timeout=self.timeout, auth=(jenkins_user, jenkins_token))
             else:
                 self.client = httpx.Client(timeout=self.timeout)
 
@@ -339,7 +332,9 @@ class JenkinsAPIClient(BaseAPIClient):
             return {}
 
         try:
-            url = f"{self.base_url}{self.api_base_path}?tree=jobs[name,url,color,buildable,disabled]"
+            url = (
+                f"{self.base_url}{self.api_base_path}?tree=jobs[name,url,color,buildable,disabled]"
+            )
             self.logger.debug(f"Fetching Jenkins jobs from: {url}")
             response = self.client.get(url)
 
@@ -371,9 +366,7 @@ class JenkinsAPIClient(BaseAPIClient):
             return {}
 
     def get_jobs_for_project(
-        self,
-        project_name: str,
-        allocated_jobs: set[str]
+        self, project_name: str, allocated_jobs: set[str]
     ) -> list[dict[str, Any]]:
         """
         Get jobs related to a specific Gerrit project with duplicate prevention.
@@ -446,9 +439,7 @@ class JenkinsAPIClient(BaseAPIClient):
                     f"(total: {len(all_jobs)})"
                 )
         except Exception as e:
-            self.logger.warning(
-                f"Fuzzy matching failed for {project_name}: {e}"
-            )
+            self.logger.warning(f"Fuzzy matching failed for {project_name}: {e}")
 
         # Log summary of hybrid approach
         if all_jobs:
@@ -459,16 +450,13 @@ class JenkinsAPIClient(BaseAPIClient):
                 sources.append(f"{len(all_jobs) - len(jjb_jobs)} fuzzy")
 
             self.logger.debug(
-                f"Hybrid matching for {project_name}: {len(all_jobs)} jobs "
-                f"({', '.join(sources)})"
+                f"Hybrid matching for {project_name}: {len(all_jobs)} jobs ({', '.join(sources)})"
             )
 
         return all_jobs
 
     def _get_jobs_via_jjb_attribution(
-        self,
-        project_name: str,
-        allocated_jobs: set[str]
+        self, project_name: str, allocated_jobs: set[str]
     ) -> list[dict[str, Any]]:
         """
         Get jobs using JJB Attribution authoritative definitions.
@@ -490,24 +478,18 @@ class JenkinsAPIClient(BaseAPIClient):
         expected_jobs = self.jjb_attribution.parse_project_jobs(project_name)
 
         # Filter out unresolved template variables
-        resolved_jobs = [j for j in expected_jobs if '{' not in j]
+        resolved_jobs = [j for j in expected_jobs if "{" not in j]
 
         if not resolved_jobs:
-            self.logger.debug(
-                f"No resolved jobs found in JJB for {project_name}"
-            )
+            self.logger.debug(f"No resolved jobs found in JJB for {project_name}")
             return []
 
-        self.logger.debug(
-            f"JJB expects {len(resolved_jobs)} jobs for {project_name}"
-        )
+        self.logger.debug(f"JJB expects {len(resolved_jobs)} jobs for {project_name}")
 
         # Get all Jenkins jobs
         all_jobs = self.get_all_jobs()
         if "jobs" not in all_jobs:
-            self.logger.debug(
-                f"No 'jobs' key found in Jenkins API response for {project_name}"
-            )
+            self.logger.debug(f"No 'jobs' key found in Jenkins API response for {project_name}")
             return []
 
         # Build a lookup map of available Jenkins jobs
@@ -520,9 +502,7 @@ class JenkinsAPIClient(BaseAPIClient):
         for expected_job in resolved_jobs:
             # Skip if already allocated
             if expected_job in allocated_jobs:
-                self.logger.debug(
-                    f"Skipping already allocated job: {expected_job}"
-                )
+                self.logger.debug(f"Skipping already allocated job: {expected_job}")
                 continue
 
             # Check if job exists in Jenkins
@@ -534,30 +514,21 @@ class JenkinsAPIClient(BaseAPIClient):
                     # NOTE: Do NOT add to allocated_jobs here - that's done by
                     # JenkinsAllocationContext.allocate_jobs() to avoid double-allocation
                     matched_count += 1
-                    self.logger.debug(
-                        f"✓ Matched JJB job '{expected_job}' to {project_name}"
-                    )
+                    self.logger.debug(f"✓ Matched JJB job '{expected_job}' to {project_name}")
                 else:
-                    self.logger.warning(
-                        f"Failed to get details for Jenkins job: {expected_job}"
-                    )
+                    self.logger.warning(f"Failed to get details for Jenkins job: {expected_job}")
             else:
-                self.logger.debug(
-                    f"Job '{expected_job}' defined in JJB but not found in Jenkins"
-                )
+                self.logger.debug(f"Job '{expected_job}' defined in JJB but not found in Jenkins")
 
         accuracy = (matched_count / len(resolved_jobs) * 100) if resolved_jobs else 0
         self.logger.debug(
-            f"JJB: {matched_count}/{len(resolved_jobs)} jobs "
-            f"({accuracy:.1f}%) for {project_name}"
+            f"JJB: {matched_count}/{len(resolved_jobs)} jobs ({accuracy:.1f}%) for {project_name}"
         )
 
         return project_jobs
 
     def _get_jobs_via_fuzzy_matching(
-        self,
-        project_name: str,
-        allocated_jobs: set[str]
+        self, project_name: str, allocated_jobs: set[str]
     ) -> list[dict[str, Any]]:
         """
         Get jobs using fuzzy matching algorithm (fallback method).
@@ -575,16 +546,12 @@ class JenkinsAPIClient(BaseAPIClient):
         project_jobs: list[dict[str, Any]] = []
 
         if "jobs" not in all_jobs:
-            self.logger.debug(
-                f"No 'jobs' key found in Jenkins API response for {project_name}"
-            )
+            self.logger.debug(f"No 'jobs' key found in Jenkins API response for {project_name}")
             return project_jobs
 
         # Convert project name to job name format (replace / with -)
         project_job_name = project_name.replace("/", "-")
-        self.logger.debug(
-            f"Searching for Jenkins jobs matching pattern: {project_job_name}"
-        )
+        self.logger.debug(f"Searching for Jenkins jobs matching pattern: {project_job_name}")
 
         total_jobs = len(all_jobs["jobs"])
         self.logger.debug(f"Checking {total_jobs} total Jenkins jobs for matches")
@@ -601,9 +568,7 @@ class JenkinsAPIClient(BaseAPIClient):
                 continue
 
             # Calculate match score for better job attribution
-            score = self._calculate_job_match_score(
-                job_name, project_name, project_job_name
-            )
+            score = self._calculate_job_match_score(job_name, project_name, project_job_name)
             if score > 0:
                 candidates.append((job, score))
 
@@ -632,22 +597,27 @@ class JenkinsAPIClient(BaseAPIClient):
         return project_jobs
 
     def _calculate_job_match_score(
-        self,
-        job_name: str,
-        project_name: str,
-        project_job_name: str
+        self, job_name: str, project_name: str, project_job_name: str
     ) -> int:
         """
-        Calculate a match score for Jenkins job attribution using STRICT PREFIX MATCHING ONLY.
+        Calculate a match score for Jenkins job attribution.
+
+        Supports multiple job naming patterns used across LF projects:
+
+        1. PREFIX PATTERN (ONAP, OpenDaylight style):
+           {project-name}-{job-type}-{stream}
+           Example: aai-babel-maven-verify-master -> aai/babel
+
+        2. SUFFIX PATTERN (LF Broadband style):
+           {job-type}_{project-name}
+           Example: docker-publish_bbsim -> bbsim
+
+        3. INFIX PATTERN (LF Broadband verify jobs):
+           verify_{project-name}_{job-type}
+           Example: verify_aaa_maven-test -> aaa
 
         This prevents duplicate allocation by ensuring jobs can only match one project.
         Higher scores indicate better matches. Returns 0 for no match.
-
-        Job name must either:
-        1. Be exactly equal to project name, OR
-        2. Start with project name followed by a dash (-)
-
-        This prevents sdc-tosca-* from matching sdc.
 
         Args:
             job_name: Jenkins job name
@@ -657,50 +627,79 @@ class JenkinsAPIClient(BaseAPIClient):
         Returns:
             Match score (0 = no match, higher = better match)
         """
-        job_name_lower = job_name.lower()
-        project_job_name_lower = project_job_name.lower()
-        project_name_lower = project_name.lower()
-
-        # STRICT PREFIX MATCHING WITH WORD BOUNDARY ONLY
-        if job_name_lower == project_job_name_lower:
-            # Exact match - highest priority
-            pass
-        elif job_name_lower.startswith(project_job_name_lower + "-"):
-            # Prefix with dash separator - valid match
-            pass
-        else:
-            # No match - neither exact nor proper prefix
+        if not job_name or not project_job_name:
             return 0
 
+        job_name_lower = job_name.lower()
+        project_job_name_lower = project_job_name.lower()
+
         score = 0
+        match_type = None
 
-        # Higher score for exact match
+        # =================================================================
+        # PATTERN 1: Exact match (highest priority)
+        # =================================================================
         if job_name_lower == project_job_name_lower:
-            score += 1000
-            return score
+            match_type = "exact"
+            score = 1000
 
-        # High score for exact prefix match with separator (project-*)
-        if job_name_lower.startswith(project_job_name_lower + "-"):
-            score += 500
-        else:
-            score += 100
+        # =================================================================
+        # PATTERN 2: Prefix match - {project}-* (ONAP, ODL style)
+        # Example: aai-babel-maven-verify-master matches aai/babel
+        # =================================================================
+        elif job_name_lower.startswith(project_job_name_lower + "-"):
+            match_type = "prefix"
+            score = 500
+
+        # =================================================================
+        # PATTERN 3: Suffix match with underscore - *_{project}
+        # Example: docker-publish_bbsim matches bbsim
+        # Example: maven-publish_aaa matches aaa
+        # Example: github-release_voltctl matches voltctl
+        # =================================================================
+        elif job_name_lower.endswith("_" + project_job_name_lower):
+            match_type = "suffix_underscore"
+            score = 450
+
+        # =================================================================
+        # PATTERN 4: Infix match - verify_{project}_* (LF Broadband verify)
+        # Example: verify_aaa_licensed matches aaa
+        # Example: verify_bbsim_unit-test matches bbsim
+        # =================================================================
+        elif (
+            job_name_lower.startswith("verify_" + project_job_name_lower + "_")
+            or job_name_lower == "verify_" + project_job_name_lower
+        ):
+            match_type = "infix_verify"
+            score = 400
+
+        # =================================================================
+        # No match found
+        # =================================================================
+        if match_type is None:
+            return 0
+
+        # =================================================================
+        # Apply bonuses for more specific matches
+        # =================================================================
 
         # Bonus for longer/more specific project paths (child projects get priority)
         path_parts = project_name.count("/") + 1
         score += path_parts * 50
 
-        # Bonus for containing full project name components in order
-        project_parts = project_name_lower.replace("/", "-").split("-")
-        consecutive_matches = 0
-        job_parts = job_name_lower.split("-")
+        # For prefix matches, add bonus for consecutive component matches
+        if match_type == "prefix":
+            project_parts = project_job_name_lower.split("-")
+            job_parts = job_name_lower.split("-")
+            consecutive_matches = 0
 
-        for i, project_part in enumerate(project_parts):
-            if i < len(job_parts) and job_parts[i] == project_part:
-                consecutive_matches += 1
-            else:
-                break
+            for i, project_part in enumerate(project_parts):
+                if i < len(job_parts) and job_parts[i] == project_part:
+                    consecutive_matches += 1
+                else:
+                    break
 
-        score += consecutive_matches * 25
+            score += consecutive_matches * 25
 
         return score
 
@@ -722,11 +721,7 @@ class JenkinsAPIClient(BaseAPIClient):
         """
         try:
             # Extract base path without /api/json suffix for job URLs
-            base_path = (
-                self.api_base_path.replace("/api/json", "")
-                if self.api_base_path
-                else ""
-            )
+            base_path = self.api_base_path.replace("/api/json", "") if self.api_base_path else ""
             url = f"{self.base_url}{base_path}/job/{job_name}/api/json"
             response = self.client.get(url)
 
@@ -777,9 +772,7 @@ class JenkinsAPIClient(BaseAPIClient):
                     "last_build": last_build_info,
                 }
             else:
-                self.logger.debug(
-                    f"Jenkins job API returned {response.status_code} for {job_name}"
-                )
+                self.logger.debug(f"Jenkins job API returned {response.status_code} for {job_name}")
                 return {}
 
         except Exception as e:
@@ -864,11 +857,7 @@ class JenkinsAPIClient(BaseAPIClient):
         """
         try:
             # Extract base path without /api/json suffix for job URLs
-            base_path = (
-                self.api_base_path.replace("/api/json", "")
-                if self.api_base_path
-                else ""
-            )
+            base_path = self.api_base_path.replace("/api/json", "") if self.api_base_path else ""
             url = f"{self.base_url}{base_path}/job/{job_name}/lastBuild/api/json?tree=result,duration,timestamp,building,number"
             response = self.client.get(url)
 
