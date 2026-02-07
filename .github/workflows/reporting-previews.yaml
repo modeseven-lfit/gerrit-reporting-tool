@@ -66,15 +66,19 @@ jobs:
 
       - name: "Verify PROJECTS_JSON variable"
         shell: bash
+        env:
+          PROJECTS_JSON_B64: ${{ vars.PROJECTS_JSON }}
         run: |
-          if [ -z "${{ vars.PROJECTS_JSON }}" ]; then
-            echo "::error::PROJECTS_JSON variable is not set"
+          # Check if variable is set and non-empty
+          if [ -z "$PROJECTS_JSON_B64" ]; then
+            echo "::error::PROJECTS_JSON variable is not set or not available"
+            echo "Note: Variables may not be available for" \
+              "pull_request events from forks"
             exit 1
           fi
 
           # Verify it's valid base64
-          if ! echo "${{ vars.PROJECTS_JSON }}" \
-            | base64 -d > /dev/null 2>&1; then
+          if ! echo "$PROJECTS_JSON_B64" | base64 -d > /dev/null 2>&1; then
             echo "::error::PROJECTS_JSON is not valid base64 encoded"
             exit 1
           fi
@@ -116,9 +120,11 @@ jobs:
       - name: "Parse and validate PROJECTS_JSON"
         id: parse-projects
         shell: bash
+        env:
+          PROJECTS_JSON_B64: ${{ vars.PROJECTS_JSON }}
         run: |
           # Decode base64-encoded PROJECTS_JSON variable
-          projects_json=$(echo '${{ vars.PROJECTS_JSON }}' | base64 -d)
+          projects_json=$(echo "$PROJECTS_JSON_B64" | base64 -d)
 
           # Validate JSON
           if ! echo "$projects_json" | jq . > /dev/null 2>&1; then

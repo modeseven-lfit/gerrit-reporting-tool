@@ -68,15 +68,17 @@ jobs:
 
       - name: "Verify PROJECTS_JSON secret"
         shell: bash
+        env:
+          PROJECTS_JSON_B64: ${{ secrets.PROJECTS_JSON }}
         run: |
-          if [ -z "${{ secrets.PROJECTS_JSON }}" ]; then
-            echo "::error::PROJECTS_JSON secret is not set"
+          # Check if secret is set and non-empty
+          if [ -z "$PROJECTS_JSON_B64" ]; then
+            echo "::error::PROJECTS_JSON secret is not set or not available"
             exit 1
           fi
 
           # Verify it's valid base64
-          if ! echo "${{ secrets.PROJECTS_JSON }}" \
-            | base64 -d > /dev/null 2>&1; then
+          if ! echo "$PROJECTS_JSON_B64" | base64 -d > /dev/null 2>&1; then
             echo "::error::PROJECTS_JSON is not valid base64 encoded"
             exit 1
           fi
@@ -188,10 +190,12 @@ jobs:
 
       - name: "Validate PROJECTS_JSON schema"
         shell: bash
+        env:
+          PROJECTS_JSON_B64: ${{ secrets.PROJECTS_JSON }}
         # yamllint disable rule:line-length
         run: |
           # Decode base64-encoded PROJECTS_JSON secret
-          projects_json=$(echo '${{ secrets.PROJECTS_JSON }}' | base64 -d)
+          projects_json=$(echo "$PROJECTS_JSON_B64" | base64 -d)
 
           # Validate JSON syntax
           if ! echo "$projects_json" | jq . > /dev/null 2>&1; then
@@ -934,19 +938,45 @@ jobs:
         shell: bash
         # yamllint disable rule:line-length
         run: |
+          artifact_count="${{ steps.check-artifacts.outputs.count }}"
+
+          # Determine actual status based on artifact count
+          if [ "$artifact_count" -eq 0 ] 2>/dev/null || [ -z "$artifact_count" ]; then
+            status="failure"
+            status_emoji="❌"
+          else
+            status="success"
+            status_emoji="✅"
+          fi
+
           {
             echo "## 📦 Artifacts Transferred"
             echo ""
             echo "**Date Folder:** ${{ steps.date.outputs.folder }}"
             echo "**Workflow Run:** ${{ github.run_id }}"
             echo "**Target Repository:** modeseven-lfit/gerrit-reports"
-            echo "**Status:** ${{ job.status }}"
-            echo "**Artifacts Found:** ${{ steps.check-artifacts.outputs.count }}"
+            echo "**Status:** ${status_emoji} ${status}"
+            echo "**Artifacts Found:** ${artifact_count:-0}"
             echo ""
-            echo "### 🔗 View in Repository"
-            echo ""
-            echo "https://github.com/modeseven-lfit/gerrit-reports/tree/main/data/artifacts/${{ steps.date.outputs.folder }}"
-            echo ""
+
+            # Only show repository link if artifacts were actually transferred
+            if [ "$artifact_count" -gt 0 ] 2>/dev/null; then
+              echo "### 🔗 View in Repository"
+              echo ""
+              echo "https://github.com/modeseven-lfit/gerrit-reports/tree/main/data/artifacts/${{ steps.date.outputs.folder }}"
+              echo ""
+            else
+              echo "### ⚠️ No Artifacts Transferred"
+              echo ""
+              echo "No artifacts were available to transfer to the target repository."
+              echo "This occurs when all matrix analysis jobs fail."
+              echo ""
+              echo "**Troubleshooting:**"
+              echo "- Check the **Analyze** job logs for errors"
+              echo "- Verify the PROJECTS_JSON secret is properly base64-encoded"
+              echo "- Ensure Gerrit/GitHub servers are accessible"
+              echo ""
+            fi
           } >> "$GITHUB_STEP_SUMMARY"
         # yamllint enable rule:line-length
 
@@ -979,6 +1009,8 @@ jobs:
 
       - name: "Generate workflow summary"
         shell: bash
+        env:
+          PROJECTS_JSON_B64: ${{ secrets.PROJECTS_JSON }}
         run: |
           # Helper function to convert result to emoji
           result_emoji() {
@@ -992,7 +1024,7 @@ jobs:
           }
 
           # Parse projects JSON to get slugs (decode from base64)
-          projects_json=$(echo '${{ secrets.PROJECTS_JSON }}' | base64 -d)
+          projects_json=$(echo "$PROJECTS_JSON_B64" | base64 -d)
 
           {
             echo "## 📊 Production Report Generation Complete"
@@ -1012,13 +1044,31 @@ jobs:
               '${{ needs.copy-to-gerrit-reports.result }}')"
             echo ""
 
-            # Note about partial failures
+            # Note about failures - partial vs complete failure
             if [ "${{ needs.analyze.result }}" = "failure" ]; then
-              echo "### ⚠️ Partial Matrix Failure"
-              echo ""
-              echo "Some project analysis jobs failed, but reports from"
-              echo "successful jobs were still published."
-              echo ""
+              # Check if publish also failed (indicates complete failure)
+              if [ "${{ needs.publish.result }}" = "failure" ] && \
+                 [ "${{ needs.copy-to-gerrit-reports.result }}" = "failure" ]
+              then
+                echo "### ❌ Complete Matrix Failure"
+                echo ""
+                echo "All project analysis jobs failed." \
+                  "No reports were generated."
+                echo ""
+                echo "**Troubleshooting:**"
+                echo "- Check the **Analyze** job logs for specific errors"
+                echo "- Verify the PROJECTS_JSON secret is properly" \
+                  "base64-encoded"
+                echo "- Ensure Gerrit/GitHub servers are accessible"
+                echo "- Check for network connectivity issues"
+                echo ""
+              else
+                echo "### ⚠️ Partial Matrix Failure"
+                echo ""
+                echo "Some project analysis jobs failed, but reports from"
+                echo "successful jobs were still published."
+                echo ""
+              fi
             fi
 
             # Add links to project reports if publish succeeded
@@ -1047,6 +1097,8 @@ jobs:
       - name: "Prepare email notification"
         if: always() && vars.SEND_EMAIL_NOTIFICATIONS == 'true'
         shell: bash
+        env:
+          PROJECTS_JSON_B64: ${{ secrets.PROJECTS_JSON }}
         run: |
           # Print mail configuration for debugging
           echo "=== Email Configuration ==="
@@ -1069,7 +1121,7 @@ jobs:
           }
 
           # Parse projects JSON to get slugs (decode from base64)
-          projects_json=$(echo '${{ secrets.PROJECTS_JSON }}' | base64 -d)
+          projects_json=$(echo "$PROJECTS_JSON_B64" | base64 -d)
           owner="${{ github.repository_owner }}"
           repo="${{ github.event.repository.name }}"
           base_url="https://${owner}.github.io/${repo}"
