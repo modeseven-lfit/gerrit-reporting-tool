@@ -13,7 +13,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 ## Summary
 
 Integrated Simple-DataTables library into the
-test-gerrit-reporting-tool HTML reports, providing sorting, searching,
+project-reporting-tool HTML reports, providing sorting, searching,
 and pagination features for tables.
 
 ## Issues Resolved

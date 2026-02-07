@@ -17,17 +17,17 @@ Key Features:
 
 Usage:
     From command line:
-        $ gerrit-reporting-tool generate --project my-project --repos-path ./repos
+        $ project-reporting-tool generate --project my-project --repos-path ./repos
 
     With configuration:
-        $ gerrit-reporting-tool generate --project my-project --config-dir ./config
+        $ project-reporting-tool generate --project my-project --config-dir ./config
 
 For more information:
-    - GitHub: https://github.com/modeseven-lfit/gerrit-reporting-tool
+    - GitHub: https://github.com/modeseven-lfit/project-reporting-tool
     - License: Apache-2.0
 """
 
-from gerrit_reporting_tool._version import __version__
+from project_reporting_tool._version import __version__
 
 __author__ = "The Linux Foundation"
 __license__ = "Apache-2.0"

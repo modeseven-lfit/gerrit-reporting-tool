@@ -11,7 +11,7 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-# Script directory (assuming script is in gerrit-reporting-tool/testing/)
+# Script directory (assuming script is in project-reporting-tool/testing/)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 
@@ -72,7 +72,7 @@ copy_reports_to_testing() {
 download_production_reports() {
     log_info "Downloading production reports from GitHub Pages..."
 
-    local github_pages_base="https://modeseven-lfit.github.io/gerrit-reporting-tool"
+    local github_pages_base="https://modeseven-lfit.github.io/project-reporting-tool"
     local testing_reports_dir="${SCRIPT_DIR}/reports"
 
     local production_reports=(
@@ -446,7 +446,7 @@ generate_project_report() {
     cd "${REPO_ROOT}"
 
     # Build command with optional parameters
-    local cmd="uv run gerrit-reporting-tool generate \
+    local cmd="uv run project-reporting-tool generate \
         --project \"${project_name}\" \
         --repos-path \"${clone_dir}\" \
         --output-dir \"${REPORT_BASE_DIR}\" \

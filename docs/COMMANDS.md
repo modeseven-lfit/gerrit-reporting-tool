@@ -15,16 +15,16 @@ Essential commands for daily use:
 
 ```bash
 # Generate report
-gerrit-reporting-tool generate --project NAME --repos-path PATH
+project-reporting-tool generate --project NAME --repos-path PATH
 
 # With optimization
-gerrit-reporting-tool generate --project NAME --repos-path PATH --cache --workers 8
+project-reporting-tool generate --project NAME --repos-path PATH --cache --workers 8
 
 # Dry run (validate only)
-gerrit-reporting-tool generate --project NAME --repos-path PATH --dry-run
+project-reporting-tool generate --project NAME --repos-path PATH --dry-run
 
 # Show help
-gerrit-reporting-tool --help
+project-reporting-tool --help
 ```
 
 ---
@@ -81,13 +81,13 @@ The Repository Analysis Report Generator is a command-line tool that analyzes Gi
 
 ```bash
 # Basic usage
-gerrit-reporting-tool generate --project my-project --repos-path /path/to/repos
+project-reporting-tool generate --project my-project --repos-path /path/to/repos
 
 # Validate configuration first
-gerrit-reporting-tool generate --project my-project --repos-path /path/to/repos --dry-run
+project-reporting-tool generate --project my-project --repos-path /path/to/repos --dry-run
 
 # Generate with verbose output
-gerrit-reporting-tool generate --project my-project --repos-path /path/to/repos -vv
+project-reporting-tool generate --project my-project --repos-path /path/to/repos -vv
 ```text
 
 ---
@@ -95,7 +95,7 @@ gerrit-reporting-tool generate --project my-project --repos-path /path/to/repos 
 ## Command Syntax
 
 ```text
-gerrit-reporting-tool generate [OPTIONS]
+project-reporting-tool generate [OPTIONS]
 ```text
 
 All options can be specified in any order, but `--project` and `--repos-path` are required.
@@ -345,9 +345,11 @@ Verbosity and quiet mode are mutually exclusive.
 Examples:
 
 ```bash
-gerrit-reporting-tool generate --project test --repos-path ./repos -v     # INFO
-gerrit-reporting-tool generate --project test --repos-path ./repos -vv    # DEBUG
-gerrit-reporting-tool generate --project test --repos-path ./repos -vvv   # TRACE
+project-reporting-tool generate --project test --repos-path ./repos -v     # INFO
+project-reporting-tool generate --project test --repos-path ./repos -vv    # DEBUG
+project-reporting-tool generate --project test --repos-path ./repos -vvv   # TRACE
+```
+
 ```text
 
 Use Cases:
@@ -367,7 +369,7 @@ Use Cases:
 Example:
 
 ```bash
-gerrit-reporting-tool generate --project test --repos-path ./repos --quiet
+project-reporting-tool generate --project test --repos-path ./repos --quiet
 ```text
 
 Behavior:
@@ -390,7 +392,7 @@ Behavior:
 Example:
 
 ```bash
-gerrit-reporting-tool generate --project test --repos-path ./repos --dry-run
+project-reporting-tool generate --project test --repos-path ./repos --dry-run
 ```
 
 Validation Checks:
@@ -493,16 +495,16 @@ Performance metrics are automatically collected during report generation and dis
 
 ```bash
 # Basic timing (default)
-gerrit-reporting-tool generate --project test --repos-path ./repos
+project-reporting-tool generate --project test --repos-path ./repos
 
 # Detailed metrics (verbose)
-gerrit-reporting-tool generate --project test --repos-path ./repos -v
+project-reporting-tool generate --project test --repos-path ./repos -v
 
 # Debug-level profiling (very verbose)
-gerrit-reporting-tool generate --project test --repos-path ./repos -vv
+project-reporting-tool generate --project test --repos-path ./repos -vv
 
 # Trace-level profiling (maximum detail)
-gerrit-reporting-tool generate --project test --repos-path ./repos -vvv
+project-reporting-tool generate --project test --repos-path ./repos -vvv
 ```
 
 ### Output Levels
@@ -633,7 +635,7 @@ Usage in Scripts:
 
 ```bash
 #!/bin/bash
-gerrit-reporting-tool generate --project test --repos-path ./repos
+project-reporting-tool generate --project test --repos-path ./repos
 EXIT_CODE=$?
 
 case $EXIT_CODE in
@@ -657,7 +659,7 @@ MAX_RETRIES=3
 RETRY=0
 
 while [ $RETRY -lt $MAX_RETRIES ]; do
-  gerrit-reporting-tool generate --project test --repos-path ./repos
+  project-reporting-tool generate --project test --repos-path ./repos
   EXIT_CODE=$?
 
   case $EXIT_CODE in
@@ -691,7 +693,7 @@ Example:
 
 ```bash
 export GITHUB_TOKEN="ghp_abc123..."
-gerrit-reporting-tool generate --project test --repos-path ./repos
+project-reporting-tool generate --project test --repos-path ./repos
 ```
 
 **Alternative:** Configure in `config/template.config` or `config/{project}.config`
@@ -708,7 +710,7 @@ Example:
 ```bash
 export GERRIT_USERNAME="myuser"
 export GERRIT_PASSWORD="mypass"
-gerrit-reporting-tool generate --project test --repos-path ./repos
+project-reporting-tool generate --project test --repos-path ./repos
 ```text
 
 ---
@@ -721,7 +723,7 @@ gerrit-reporting-tool generate --project test --repos-path ./repos
 Example:
 
 ```bash
-NO_COLOR=1 gerrit-reporting-tool generate --project test --repos-path ./repos
+NO_COLOR=1 project-reporting-tool generate --project test --repos-path ./repos
 ```text
 
 ---
@@ -732,12 +734,12 @@ NO_COLOR=1 gerrit-reporting-tool generate --project test --repos-path ./repos
 
 ```bash
 # Minimal command
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project kubernetes \
   --repos-path /workspace/k8s-repos
 
 # With custom output directory
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project kubernetes \
   --repos-path /workspace/k8s-repos \
   --output-dir /var/reports/k8s
@@ -747,13 +749,13 @@ gerrit-reporting-tool generate \
 
 ```bash
 # Validate configuration
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --dry-run
 
 # View resolved configuration with dry-run
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --show-config
@@ -763,19 +765,19 @@ gerrit-reporting-tool generate \
 
 ```bash
 # Enable caching for faster subsequent runs
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --cache
 
 # Increase parallelism
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --workers 16
 
 # Both optimizations
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --cache \
@@ -786,13 +788,13 @@ gerrit-reporting-tool generate \
 
 ```bash
 # Generate only JSON (no HTML/Markdown)
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --output-format json
 
 # Generate HTML only (no ZIP)
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --output-format html \
@@ -803,19 +805,19 @@ gerrit-reporting-tool generate \
 
 ```bash
 # Verbose output
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   -vv
 
 # Maximum debug information
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   -vvv
 
 # Single-threaded for easier debugging
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --workers 1 \
@@ -826,19 +828,19 @@ gerrit-reporting-tool generate \
 
 ```bash
 # Quiet mode for scripts
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --quiet
 
 # With error handling
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --quiet || echo "Report generation failed with exit code $?"
 
 # Scheduled report generation
-0 2 * * * cd /workspace && gerrit-reporting-tool generate \
+0 2 * * * cd /workspace && project-reporting-tool generate \
   --project nightly \
   --repos-path ./repos \
   --output-dir /reports/$(date +\%Y-\%m-\%d) \
@@ -849,14 +851,14 @@ gerrit-reporting-tool generate \
 
 ```bash
 # Override specific settings
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --config-override activity_thresholds.active_days=180 \
   --config-override api.github.enabled=false
 
 # Multiple overrides
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --config-override activity_thresholds.active_days=90 \
@@ -965,25 +967,25 @@ Solutions:
 Run validation:
 
 ```bash
-gerrit-reporting-tool generate --project test --repos-path ./repos --dry-run
+project-reporting-tool generate --project test --repos-path ./repos --dry-run
 ```
 
 Enable verbose logging:
 
 ```bash
-gerrit-reporting-tool generate --project test --repos-path ./repos -vv
+project-reporting-tool generate --project test --repos-path ./repos -vv
 ```text
 
 Check configuration:
 
 ```bash
-gerrit-reporting-tool generate --project test --repos-path ./repos --show-config
+project-reporting-tool generate --project test --repos-path ./repos --show-config
 ```text
 
 Configuration validation:
 
 ```bash
-gerrit-reporting-tool generate --project test --repos-path ./repos --dry-run
+project-reporting-tool generate --project test --repos-path ./repos --dry-run
 ```
 
 ---

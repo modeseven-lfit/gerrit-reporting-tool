@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-Data analysis for the gerrit-reporting-tool package.
+Data analysis for the project-reporting-tool package.
 
 This package contains modules for analyzing and aggregating collected data:
 - Data aggregation (combining repository metrics)

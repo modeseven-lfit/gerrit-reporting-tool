@@ -512,7 +512,7 @@ jobs:
 
           echo "📂 Using repos path: ${repos_path}"
 
-          uv run gerrit-reporting-tool generate \
+          uv run project-reporting-tool generate \
             --project "$project" \
             --repos-path "${repos_path}" \
             --output-dir "./reports" \

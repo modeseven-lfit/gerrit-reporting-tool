@@ -6,7 +6,7 @@ requires = ["hatchling>=1.21.0", "hatch-vcs>=0.3.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "gerrit-reporting-tool"
+name = "project-reporting-tool"
 dynamic = ["version"]
 description = "Comprehensive multi-repository analysis tool for Linux Foundation projects"
 readme = "README.md"
@@ -68,20 +68,20 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/lfit/gerrit-reporting-tool"
-Repository = "https://github.com/lfit/gerrit-reporting-tool"
-Issues = "https://github.com/lfit/gerrit-reporting-tool/issues"
-Changelog = "https://github.com/lfit/gerrit-reporting-tool/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/modeseven-lfit/project-reporting-tool"
+Repository = "https://github.com/modeseven-lfit/project-reporting-tool"
+Issues = "https://github.com/modeseven-lfit/project-reporting-tool/issues"
+Changelog = "https://github.com/modeseven-lfit/project-reporting-tool/blob/main/CHANGELOG.md"
 
 [project.scripts]
-gerrit-reporting-tool = "gerrit_reporting_tool.cli:cli_main"
+project-reporting-tool = "project_reporting_tool.cli:cli_main"
 
 # Hatchling configuration
 [tool.hatch.version]
 source = "vcs"
 
 [tool.hatch.build.hooks.vcs]
-version-file = "src/gerrit_reporting_tool/_version.py"
+version-file = "src/project_reporting_tool/_version.py"
 
 [tool.hatch.build.targets.sdist]
 include = [
@@ -111,15 +111,15 @@ exclude = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/gerrit_reporting_tool"]
+packages = ["src/project_reporting_tool"]
 include = [
     "/config/**/*",
 ]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"config" = "share/gerrit-reporting-tool/config"
-"examples" = "share/gerrit-reporting-tool/examples"
-"docs" = "share/gerrit-reporting-tool/docs"
+"config" = "share/project-reporting-tool/config"
+"examples" = "share/project-reporting-tool/examples"
+"docs" = "share/project-reporting-tool/docs"
 
 # UV configuration
 [tool.uv]
@@ -281,7 +281,7 @@ ignore = [
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["gerrit_reporting_tool"]
+known-first-party = ["project_reporting_tool"]
 force-single-line = false
 lines-after-imports = 2
 

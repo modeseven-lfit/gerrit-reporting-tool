@@ -44,7 +44,7 @@ Benefits:
 Recommended: Interactive wizard
 
 ```bash
-gerrit-reporting-tool init
+project-reporting-tool init
 ```text
 
 Follow the prompts to create your configuration. Takes ~2 minutes.
@@ -54,7 +54,7 @@ Follow the prompts to create your configuration. Takes ~2 minutes.
 Quick setup with template
 
 ```bash
-gerrit-reporting-tool init --template standard --project my-project
+project-reporting-tool init --template standard --project my-project
 ```
 
 Creates a configuration in 10 seconds.
@@ -68,7 +68,7 @@ Creates a configuration in 10 seconds.
 Command:
 
 ```bash
-gerrit-reporting-tool init [--config-output PATH]
+project-reporting-tool init [--config-output PATH]
 ```text
 
 When to use:
@@ -87,7 +87,7 @@ When to use:
 Command:
 
 ```bash
-gerrit-reporting-tool init --template TEMPLATE --project NAME [--config-output PATH]
+project-reporting-tool init --template TEMPLATE --project NAME [--config-output PATH]
 ```
 
 When to use:
@@ -128,7 +128,7 @@ Use when:
 Command:
 
 ```bash
-gerrit-reporting-tool init --template minimal --project test-project
+project-reporting-tool init --template minimal --project test-project
 ```text
 
 ---
@@ -160,7 +160,7 @@ Use when:
 Command:
 
 ```bash
-gerrit-reporting-tool init --template standard --project my-project
+project-reporting-tool init --template standard --project my-project
 ```
 
 ---
@@ -187,7 +187,7 @@ Use when:
 Command:
 
 ```bash
-gerrit-reporting-tool init --template full --project production-project
+project-reporting-tool init --template full --project production-project
 ```text
 
 ---
@@ -355,10 +355,10 @@ The wizard shows you what to do next:
    cat config/acme-tools.yaml
 
 2. Validate your setup:
-   gerrit-reporting-tool generate --config config/acme-tools.yaml --dry-run
+   project-reporting-tool generate --config config/acme-tools.yaml --dry-run
 
 3. Generate your first report:
-   gerrit-reporting-tool generate --project acme-tools \
+   project-reporting-tool generate --project acme-tools \
      --config config/acme-tools.yaml \
      --repos-path /path/to/repositories
 
@@ -373,19 +373,19 @@ The wizard shows you what to do next:
 Minimal config:
 
 ```bash
-gerrit-reporting-tool init --template minimal --project my-project
+project-reporting-tool init --template minimal --project my-project
 ```
 
 Standard config:
 
 ```bash
-gerrit-reporting-tool init --template standard --project my-project
+project-reporting-tool init --template standard --project my-project
 ```text
 
 Full config:
 
 ```bash
-gerrit-reporting-tool init --template full --project my-project
+project-reporting-tool init --template full --project my-project
 ```
 
 ---
@@ -395,7 +395,7 @@ gerrit-reporting-tool init --template full --project my-project
 Specify output location:
 
 ```bash
-gerrit-reporting-tool init --template standard \
+project-reporting-tool init --template standard \
   --project my-project \
   --config-output custom/path/config.yaml
 ```text
@@ -439,7 +439,7 @@ print(f"Configuration created: {config_path}")
 
 ```bash
 # Step 1: Run interactive wizard
-gerrit-reporting-tool init
+project-reporting-tool init
 
 # Answer prompts:
 # - Template: 2 (standard)
@@ -452,10 +452,10 @@ gerrit-reporting-tool init
 cat config/acme-tools.yaml
 
 # Step 3: Validate
-gerrit-reporting-tool generate --config config/acme-tools.yaml --dry-run
+project-reporting-tool generate --config config/acme-tools.yaml --dry-run
 
 # Step 4: Generate report
-gerrit-reporting-tool generate --project acme-tools \
+project-reporting-tool generate --project acme-tools \
   --config config/acme-tools.yaml \
   --repos-path /workspace/repos
 ```
@@ -470,10 +470,10 @@ gerrit-reporting-tool generate --project acme-tools \
 
 ```bash
 # Create minimal config (10 seconds)
-gerrit-reporting-tool init --template minimal --project test
+project-reporting-tool init --template minimal --project test
 
 # Generate report immediately
-gerrit-reporting-tool generate --project test \
+project-reporting-tool generate --project test \
   --repos-path /tmp/test-repos \
   --quiet
 ```text
@@ -488,7 +488,7 @@ gerrit-reporting-tool generate --project test \
 
 ```bash
 # Create full config
-gerrit-reporting-tool init --template full \
+project-reporting-tool init --template full \
   --project production \
   --config-output /etc/repo-reports/config.yaml
 
@@ -496,12 +496,12 @@ gerrit-reporting-tool init --template full \
 vim /etc/repo-reports/config.yaml
 
 # Validate configuration
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --config /etc/repo-reports/config.yaml \
   --dry-run
 
 # Generate reports
-gerrit-reporting-tool generate --project production \
+project-reporting-tool generate --project production \
   --config /etc/repo-reports/config.yaml \
   --repos-path /data/repositories \
   --workers 16 \
@@ -530,7 +530,7 @@ jobs:
 
       - name: Create configuration
         run: |
-          gerrit-reporting-tool init --template standard \
+          project-reporting-tool init --template standard \
             --project ${{ github.repository }} \
             --config-output /tmp/config.yaml
 
@@ -538,7 +538,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gerrit-reporting-tool generate --project ${{ github.repository }} \
+          project-reporting-tool generate --project ${{ github.repository }} \
             --config /tmp/config.yaml \
             --repos-path ./repos \
             --quiet
@@ -559,7 +559,7 @@ jobs:
 ```bash
 # Create configs for each project
 for project in api-gateway user-service data-processor; do
-  gerrit-reporting-tool init --template standard \
+  project-reporting-tool init --template standard \
     --project "$project" \
     --config-output "config/${project}.yaml"
 done
@@ -567,7 +567,7 @@ done
 # Generate reports for all
 for config in config/*.yaml; do
   project=$(basename "$config" .yaml)
-  gerrit-reporting-tool generate --project "$project" \
+  project-reporting-tool generate --project "$project" \
     --config "$config" \
     --repos-path "repos/$project"
 done
@@ -585,7 +585,7 @@ Solution:
 
 ```bash
 # Use template-based creation instead
-gerrit-reporting-tool init --template standard --project my-project
+project-reporting-tool init --template standard --project my-project
 ```text
 
 ---
@@ -604,7 +604,7 @@ export GITHUB_TOKEN=ghp_your_token_here
 set GITHUB_TOKEN=ghp_your_token_here
 
 # Or run without token (public repos only, lower rate limits)
-gerrit-reporting-tool init
+project-reporting-tool init
 ```
 
 ---
@@ -617,12 +617,12 @@ Solution:
 
 ```bash
 # Use a writable directory
-gerrit-reporting-tool init --config-output ~/config.yaml
+project-reporting-tool init --config-output ~/config.yaml
 
 # Or create directory first
 mkdir -p config
 chmod 755 config
-gerrit-reporting-tool init
+project-reporting-tool init
 ```text
 
 ---
@@ -636,11 +636,11 @@ Solution:
 vim config/my-project.yaml
 
 # Option 2: Re-run the wizard
-gerrit-reporting-tool init --config-output config/my-project.yaml
+project-reporting-tool init --config-output config/my-project.yaml
 # (overwrites existing file)
 
 # Option 3: Create new config with different name
-gerrit-reporting-tool init --config-output config/my-project-v2.yaml
+project-reporting-tool init --config-output config/my-project-v2.yaml
 ```
 
 ---
@@ -651,7 +651,7 @@ Solution:
 
 ```bash
 # Use dry-run mode
-gerrit-reporting-tool generate --config config/my-project.yaml --dry-run
+project-reporting-tool generate --config config/my-project.yaml --dry-run
 
 # Shows validation results:
 # ✓ Configuration valid
@@ -675,13 +675,13 @@ gerrit-reporting-tool generate --config config/my-project.yaml --dry-run
 2. **Validate your setup**
 
    ```bash
-   gerrit-reporting-tool generate --config config/my-project.yaml --dry-run
+   project-reporting-tool generate --config config/my-project.yaml --dry-run
    ```
 
 3. **Generate your first report**
 
    ```bash
-   gerrit-reporting-tool generate --project my-project \
+   project-reporting-tool generate --project my-project \
      --config config/my-project.yaml \
      --repos-path /path/to/repos
    ```
@@ -738,7 +738,7 @@ gerrit-reporting-tool generate --config config/my-project.yaml --dry-run
 ### Interactive Mode
 
 ```bash
-gerrit-reporting-tool init [OPTIONS]
+project-reporting-tool init [OPTIONS]
 
 Options:
   --config-output PATH    Output path for config file
@@ -747,7 +747,7 @@ Options:
 ### Template Mode
 
 ```bash
-gerrit-reporting-tool init --template TEMPLATE --project NAME [OPTIONS]
+project-reporting-tool init --template TEMPLATE --project NAME [OPTIONS]
 
 Required:
   --project NAME          Project name
@@ -826,7 +826,7 @@ A: No, you can create config files manually. The wizard just makes it easier.
 Ready to get started?
 
 ```bash
-gerrit-reporting-tool init
+project-reporting-tool init
 ```
 
 ---
@@ -895,7 +895,7 @@ info_yaml:
     max_concurrent_urls: 20  # Concurrent requests
     cache_enabled: true
     cache_ttl: 3600  # Cache lifetime (seconds)
-    cache_dir: "~/.cache/gerrit-reporting-tool/info-yaml"
+    cache_dir: "~/.cache/project-reporting-tool/info-yaml"
     max_cache_entries: 1000
     max_cache_size_mb: 100
 
@@ -998,7 +998,7 @@ info_yaml:
   performance:
     cache_enabled: true
     cache_ttl: 3600  # 1 hour
-    cache_dir: "/var/cache/gerrit-reporting-tool"
+    cache_dir: "/var/cache/project-reporting-tool"
     max_cache_entries: 1000
 ```
 
@@ -1053,7 +1053,7 @@ info_yaml:
 git clone https://gerrit.linuxfoundation.org/infra/releng/info-master /data/info-master
 
 # Fast subsequent runs
-gerrit-reporting-tool generate --config config.yaml
+project-reporting-tool generate --config config.yaml
 ```
 
 ### Environment Variables
@@ -1062,20 +1062,20 @@ Override configuration with environment variables:
 
 ```bash
 # Enable/disable
-export GERRIT_REPORTING_TOOL_INFO_YAML_ENABLED=true
+export PROJECT_REPORTING_TOOL_INFO_YAML_ENABLED=true
 
 # Data source
-export GERRIT_REPORTING_TOOL_INFO_YAML_SOURCE_URL="https://gerrit.linuxfoundation.org/infra/releng/info-master"
-export GERRIT_REPORTING_TOOL_INFO_YAML_SOURCE_LOCAL_PATH="/data/info-master"
+export PROJECT_REPORTING_TOOL_INFO_YAML_SOURCE_URL="https://gerrit.linuxfoundation.org/infra/releng/info-master"
+export PROJECT_REPORTING_TOOL_INFO_YAML_SOURCE_LOCAL_PATH="/data/info-master"
 
 # Performance
-export GERRIT_REPORTING_TOOL_INFO_YAML_ASYNC_VALIDATION=true
-export GERRIT_REPORTING_TOOL_INFO_YAML_MAX_CONCURRENT_URLS=30
-export GERRIT_REPORTING_TOOL_INFO_YAML_CACHE_ENABLED=true
+export PROJECT_REPORTING_TOOL_INFO_YAML_ASYNC_VALIDATION=true
+export PROJECT_REPORTING_TOOL_INFO_YAML_MAX_CONCURRENT_URLS=30
+export PROJECT_REPORTING_TOOL_INFO_YAML_CACHE_ENABLED=true
 
 # Activity windows
-export GERRIT_REPORTING_TOOL_INFO_YAML_ACTIVITY_WINDOW_CURRENT=365
-export GERRIT_REPORTING_TOOL_INFO_YAML_ACTIVITY_WINDOW_ACTIVE=1095
+export PROJECT_REPORTING_TOOL_INFO_YAML_ACTIVITY_WINDOW_CURRENT=365
+export PROJECT_REPORTING_TOOL_INFO_YAML_ACTIVITY_WINDOW_ACTIVE=1095
 ```
 
 ### Configuration Examples
@@ -1151,10 +1151,10 @@ Test your configuration before running:
 
 ```bash
 # Dry run to validate config
-gerrit-reporting-tool generate --config config.yaml --dry-run
+project-reporting-tool generate --config config.yaml --dry-run
 
 # Check INFO.yaml-specific config
-gerrit-reporting-tool config show | grep -A 20 "info_yaml:"
+project-reporting-tool config show | grep -A 20 "info_yaml:"
 ```
 
 ### Troubleshooting Configuration
@@ -1233,7 +1233,7 @@ GitHub offers two types of Personal Access Tokens (PAT):
 
 2. **Generate New Token (Classic)**
    - Click "Generate new token (classic)"
-   - Give it a descriptive name: `gerrit-reporting-tool-access`
+   - Give it a descriptive name: `project-reporting-tool-access`
    - Set expiration (recommend 90 days or custom)
 
 3. **Select Scopes**
@@ -1260,7 +1260,7 @@ GitHub offers two types of Personal Access Tokens (PAT):
 export GITHUB_TOKEN=ghp_your_token_here
 
 # Run tool
-gerrit-reporting-tool generate --project my-project --repos-path ./repos
+project-reporting-tool generate --project my-project --repos-path ./repos
 ```
 
 #### Option 2: Configuration File
@@ -1334,7 +1334,7 @@ curl -H "Authorization: token ghp_your_token_here" \
   https://api.github.com/rate_limit
 
 # Test with the tool
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --dry-run \
@@ -1554,7 +1554,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gerrit-reporting-tool generate \
+          project-reporting-tool generate \
             --project my-project \
             --repos-path ./repos
 ```
@@ -1564,7 +1564,7 @@ jobs:
 ```yaml
 generate-report:
   script:
-    - gerrit-reporting-tool generate --project my-project --repos-path ./repos
+    - project-reporting-tool generate --project my-project --repos-path ./repos
   variables:
     GITHUB_TOKEN: $GITHUB_TOKEN
 ```

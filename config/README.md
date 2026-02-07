@@ -5,7 +5,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 # Configuration Templates
 
-This directory contains **template configuration files** that the gerrit-reporting-tool Python package bundles and distributes.
+This directory contains **template configuration files** that the project-reporting-tool Python package bundles and distributes.
 
 ## 📋 Purpose
 
@@ -38,7 +38,7 @@ cp config/default.yaml configuration/my-project.yaml
 vim configuration/my-project.yaml
 
 # Run with your configuration
-gerrit-reporting-tool generate --project my-project --repos-path ./repos
+project-reporting-tool generate --project my-project --repos-path ./repos
 ```
 
 ### Configuration Location Priority
@@ -73,7 +73,7 @@ The reporting tool looks for configurations in this order:
 
 ## 🔧 For Developers
 
-If you're developing the gerrit-reporting-tool package:
+If you're developing the project-reporting-tool package:
 
 - Edit templates in `/config/` to change default behavior
 - Test changes with `test-project.yaml`

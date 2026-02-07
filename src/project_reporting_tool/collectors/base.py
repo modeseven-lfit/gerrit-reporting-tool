@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-Base collector interface for the gerrit-reporting-tool package.
+Base collector interface for the project-reporting-tool package.
 
 This module defines the abstract base class that all data collectors
 must implement, providing a consistent interface for data collection

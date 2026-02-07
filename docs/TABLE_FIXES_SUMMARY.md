@@ -13,7 +13,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 ## Overview
 
-Systematically fixed all table structure mismatches between the new reporting system (`test-gerrit-reporting-tool`) and the production system (`gerrit-reporting-tool`) to ensure output parity.
+Systematically fixed all table structure mismatches between the new reporting system (`test-project-reporting-tool`) and the production system (`project-reporting-tool`) to ensure output parity.
 
 ---
 
@@ -406,7 +406,7 @@ Use this checklist to verify production parity:
 
 ## References
 
-- **Production system:** `gerrit-reporting-tool/src/gerrit_reporting_tool/renderers/report.py`
+- **Production system:** `project-reporting-tool/src/project_reporting_tool/renderers/report.py`
 - **Comparison document:** `docs/TABLE_COMPARISON.md`
 - **CI/CD fix document:** `docs/CICD_TABLE_FIX.md`
 - **Production report sample:** `testing/onap-production-report.html`

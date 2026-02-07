@@ -314,7 +314,7 @@ Language Detection Gaps:
 
 For each language in gaps:
 
-- Check if it's in `src/gerrit_reporting_tool/features/registry.py`
+- Check if it's in `src/project_reporting_tool/features/registry.py`
 - If missing, add it with appropriate patterns
 - If present, check if patterns match GitHub's
 
@@ -419,7 +419,7 @@ Review the report and identify top mismatches.
 
 ### 5. Improve Detection
 
-Edit `src/gerrit_reporting_tool/features/registry.py` based on gaps.
+Edit `src/project_reporting_tool/features/registry.py` based on gaps.
 
 ### 6. Test Changes
 
@@ -483,7 +483,7 @@ For ONAP (~245 repos):
 pip install httpx
 ```
 
-### Error: "No module named 'gerrit_reporting_tool'"
+### Error: "No module named 'project_reporting_tool'"
 
 Run from repository root or install package:
 

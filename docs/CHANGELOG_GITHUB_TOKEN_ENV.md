@@ -38,7 +38,7 @@ If you already use `GITHUB_TOKEN`, no changes needed:
 
 ```bash
 export GITHUB_TOKEN="ghp_your_token_here"
-gerrit-reporting-tool generate --project my-project --repos-path ./repos
+project-reporting-tool generate --project my-project --repos-path ./repos
 ```
 
 ### For CI/CD Environments (Choose One Option)
@@ -66,7 +66,7 @@ env:
 Keep using `CLASSIC_READ_ONLY_PAT_TOKEN` and specify it explicitly:
 
 ```bash
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos \
   --github-token-env CLASSIC_READ_ONLY_PAT_TOKEN
@@ -77,7 +77,7 @@ gerrit-reporting-tool generate \
 ```yaml
 - name: Generate Report
   run: |
-    gerrit-reporting-tool generate \
+    project-reporting-tool generate \
       --project ${{ matrix.project }} \
       --repos-path ./repos \
       --github-token-env CLASSIC_READ_ONLY_PAT_TOKEN
@@ -89,7 +89,7 @@ gerrit-reporting-tool generate \
 
 ### Files Modified
 
-1. **`src/gerrit_reporting_tool/cli.py`**
+1. **`src/project_reporting_tool/cli.py`**
    - Added `--github-token-env` option to Typer CLI
    - Default value: `"GITHUB_TOKEN"`
 
@@ -97,11 +97,11 @@ gerrit-reporting-tool generate \
    - Added `--github-token-env` option to legacy argument parser
    - Default value: `"GITHUB_TOKEN"`
 
-3. **`src/gerrit_reporting_tool/main.py`**
+3. **`src/project_reporting_tool/main.py`**
    - Stores `github_token_env` in config as `_github_token_env`
    - Logs which environment variable is being used
 
-4. **`src/gerrit_reporting_tool/features/registry.py`**
+4. **`src/project_reporting_tool/features/registry.py`**
    - Updated `_check_workflows()` to use configured token env var
    - Updated `_check_github_mirror_exists()` to use configured token env var
    - Changed from hardcoded `CLASSIC_READ_ONLY_PAT_TOKEN` to dynamic lookup
@@ -153,14 +153,14 @@ gerrit-reporting-tool generate \
 
 ```bash
 export GITHUB_TOKEN="ghp_xxxxxxxxxxxxxxxxxxxx"
-gerrit-reporting-tool generate --project ONAP --repos-path ./repos
+project-reporting-tool generate --project ONAP --repos-path ./repos
 ```
 
 ### GitHub Actions (New Style)
 
 ```yaml
 - name: Generate Report
-  run: gerrit-reporting-tool generate --project ONAP --repos-path ./repos
+  run: project-reporting-tool generate --project ONAP --repos-path ./repos
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -170,7 +170,7 @@ gerrit-reporting-tool generate --project ONAP --repos-path ./repos
 ```yaml
 - name: Generate Report
   run: |
-    gerrit-reporting-tool generate \
+    project-reporting-tool generate \
       --project ONAP \
       --repos-path ./repos \
       --github-token-env CLASSIC_READ_ONLY_PAT_TOKEN
@@ -182,7 +182,7 @@ gerrit-reporting-tool generate --project ONAP --repos-path ./repos
 
 ```bash
 export MY_CUSTOM_GH_TOKEN="ghp_xxxxxxxxxxxxxxxxxxxx"
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos \
   --github-token-env MY_CUSTOM_GH_TOKEN

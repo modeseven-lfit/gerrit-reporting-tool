@@ -77,7 +77,7 @@ export JENKINS_HOST="jenkins.onap.org"
 export JENKINS_BASE_URL="https://jenkins.onap.org"
 
 # Run the test script
-cd gerrit-reporting-tool/testing
+cd project-reporting-tool/testing
 ./local-testing.sh
 ```
 
@@ -141,7 +141,7 @@ Then update the test script to use these configurations:
 
 ```bash
 # In local-testing.sh, add --config-dir flag:
-uv run gerrit-reporting-tool generate \
+uv run project-reporting-tool generate \
     --project "ONAP" \
     --repos-path "${ONAP_CLONE_DIR}" \
     --output-dir "${ONAP_REPORT_DIR}" \
@@ -256,7 +256,7 @@ export GITHUB_TOKEN="ghp_xxxxxxxxxxxxxxxxxxxx"
 # export JENKINS_HOST="jenkins.onap.org"
 
 # Run the test script
-cd gerrit-reporting-tool/testing
+cd project-reporting-tool/testing
 ./local-testing.sh
 ```
 

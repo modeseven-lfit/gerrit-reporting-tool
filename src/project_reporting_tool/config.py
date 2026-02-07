@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-Configuration management for the gerrit-reporting-tool package.
+Configuration management for the project-reporting-tool package.
 
 This module handles:
 - Loading YAML configuration files

@@ -5,7 +5,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 # GitHub Native Project Support - Implementation Summary
 
-> Summary of changes implementing GitHub-native project support in gerrit-reporting-tool
+> Summary of changes implementing GitHub-native project support in project-reporting-tool
 
 **Status:** ✅ Complete
 **Schema Version:** 1.4.0 → 1.5.0
@@ -16,7 +16,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 ## Quick Summary
 
-The gerrit-reporting-tool now supports **two types of projects**:
+The project-reporting-tool now supports **two types of projects**:
 
 1. **Gerrit-based projects** - Traditional projects with Gerrit as primary SCM (with optional GitHub mirrors)
 2. **GitHub-native projects** - Projects hosted entirely on GitHub with no Gerrit backend
@@ -45,7 +45,7 @@ The gerrit-reporting-tool now supports **two types of projects**:
 
 **Files Modified:**
 
-- `src/gerrit_reporting_tool/config.py`
+- `src/project_reporting_tool/config.py`
 - `config/default.yaml`
 - `configuration/default.yaml`
 
@@ -162,7 +162,7 @@ project_context = {
 **Files Modified:**
 
 - `src/config/validator.py`
-- `src/gerrit_reporting_tool/main.py`
+- `src/project_reporting_tool/main.py`
 
 **Changes:**
 
@@ -179,8 +179,8 @@ project_context = {
 **Core Implementation (8 files):**
 
 1. `src/config/validator.py` - Schema version bump
-2. `src/gerrit_reporting_tool/main.py` - Schema version constant
-3. `src/gerrit_reporting_tool/config.py` - Auto-derivation logic
+2. `src/project_reporting_tool/main.py` - Schema version constant
+3. `src/project_reporting_tool/config.py` - Auto-derivation logic
 4. `src/rendering/context.py` - Project type detection & terminology
 5. `config/default.yaml` - Schema version
 6. `configuration/default.yaml` - Schema version
@@ -281,7 +281,7 @@ project_context = {
 
 ```bash
 # Clone and setup
-cd test-gerrit-reporting-tool
+cd test-project-reporting-tool
 
 # Test GitHub-native project
 cd testing
@@ -329,7 +329,7 @@ For production deployment:
 
 ### Phase 1: Test Repository (Current)
 
-- ✅ Implement in `test-gerrit-reporting-tool`
+- ✅ Implement in `test-project-reporting-tool`
 - ✅ Test locally with Aether
 - ✅ Verify all functionality
 
@@ -341,7 +341,7 @@ For production deployment:
 
 ### Phase 3: Production Deployment
 
-- Port changes to `gerrit-reporting-tool` (production)
+- Port changes to `project-reporting-tool` (production)
 - Update production `PROJECTS_JSON` variable
 - Deploy to production workflow
 

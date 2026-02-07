@@ -13,7 +13,7 @@ from argparse import Namespace
 from pathlib import Path
 from unittest.mock import Mock, patch
 
-from gerrit_reporting_tool.features.registry import FeatureRegistry
+from project_reporting_tool.features.registry import FeatureRegistry
 
 
 class TestGitHubTokenEnvConfiguration:

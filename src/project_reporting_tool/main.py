@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-Main entry point for gerrit-reporting-tool.
+Main entry point for project-reporting-tool.
 
 This module provides the core orchestration logic for report generation,
 coordinating configuration loading, repository analysis, and output generation.
@@ -29,14 +29,14 @@ from util.zip_bundle import create_report_bundle
 from util.github_org import determine_github_org
 
 # Import configuration utilities
-from gerrit_reporting_tool.config import (
+from project_reporting_tool.config import (
     save_resolved_config,
     load_configuration,
     compute_config_digest,
 )
 
 # Import main orchestration
-from gerrit_reporting_tool.reporter import RepositoryReporter
+from project_reporting_tool.reporter import RepositoryReporter
 
 
 # =============================================================================
@@ -45,7 +45,7 @@ from gerrit_reporting_tool.reporter import RepositoryReporter
 
 # Import version from package
 try:
-    from gerrit_reporting_tool import __version__
+    from project_reporting_tool import __version__
 except ImportError:
     __version__ = "0.0.0"  # Fallback if not installed
 

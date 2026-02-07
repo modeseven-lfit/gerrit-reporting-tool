@@ -170,7 +170,7 @@ Generated on: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
 - **Date**: ${DATE_FOLDER}
 - **Total Artifacts**: ${TOTAL_ARTIFACTS}
 - **Total Files**: ${TOTAL_FILES}
-- **Workflow Run**: [${WORKFLOW_RUN_ID}](https://github.com/modeseven-lfit/gerrit-reporting-tool/actions/runs/${WORKFLOW_RUN_ID})
+- **Workflow Run**: [${WORKFLOW_RUN_ID}](https://github.com/modeseven-lfit/project-reporting-tool/actions/runs/${WORKFLOW_RUN_ID})
 
 ## Contents
 

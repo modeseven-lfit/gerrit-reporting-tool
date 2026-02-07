@@ -105,7 +105,7 @@ compatible.
 
 ### 4. Main Module Updates
 
-**File:** `src/gerrit_reporting_tool/main.py`
+**File:** `src/project_reporting_tool/main.py`
 
 **Changes:**
 
@@ -509,7 +509,7 @@ Potential future improvements (not in scope for this implementation):
 2. `configuration/default.yaml` - Added TOC default, bumped schema version
 3. `config/default.yaml` - Added TOC default, bumped schema version
 4. `src/config/validator.py` - Updated version constants
-5. `src/gerrit_reporting_tool/main.py` - Updated schema version constant
+5. `src/project_reporting_tool/main.py` - Updated schema version constant
 
 ### Rendering (3 files)
 

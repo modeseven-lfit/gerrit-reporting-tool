@@ -13,7 +13,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 ## Problem Statement
 
-The new reporting system (`test-gerrit-reporting-tool`) was generating tables with different structures than the production system (`gerrit-reporting-tool`), causing incompatibility and preventing direct production replacement.
+The new reporting system (`test-project-reporting-tool`) was generating tables with different structures than the production system (`project-reporting-tool`), causing incompatibility and preventing direct production replacement.
 
 ---
 
@@ -405,7 +405,7 @@ The context extracts `last_3_years` or falls back to other windows.
 
 ## References
 
-- **Production Code:** `gerrit-reporting-tool/src/gerrit_reporting_tool/renderers/report.py`
+- **Production Code:** `project-reporting-tool/src/project_reporting_tool/renderers/report.py`
 - **Table Comparison:** `docs/TABLE_COMPARISON.md`
 - **Fix Summary:** `docs/TABLE_FIXES_SUMMARY.md`
 - **CI/CD Fix:** `docs/CICD_TABLE_FIX.md`

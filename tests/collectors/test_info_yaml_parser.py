@@ -17,7 +17,7 @@ from pathlib import Path
 import pytest
 
 from domain.info_yaml import CommitterInfo, ProjectInfo
-from gerrit_reporting_tool.collectors.info_yaml.parser import (
+from project_reporting_tool.collectors.info_yaml.parser import (
     INFOYamlParser,
     parse_info_yaml_directory,
     parse_info_yaml_file,

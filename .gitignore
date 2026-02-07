@@ -4,7 +4,7 @@
 testing/projects.json
 
 # Auto-generated version file
-src/gerrit_reporting_tool/_version.py
+src/project_reporting_tool/_version.py
 
 testing/ONAP
 testing/reports

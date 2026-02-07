@@ -60,7 +60,7 @@ echo ""
 
 cd "${PROJECT_ROOT}"
 
-if uv run gerrit-reporting-tool generate \
+if uv run project-reporting-tool generate \
     --project "TestProject" \
     --repos-path "${REPOS_DIR}" \
     --output-dir "${OUTPUT_DIR}" \

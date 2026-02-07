@@ -42,7 +42,7 @@ Before diving into detailed troubleshooting, check these common issues:
 
 ```bash
 # Quick fix:
-gerrit-reporting-tool init --project my-project
+project-reporting-tool init --project my-project
 ```text
 
 [Full details →](#error-configuration-file-not-found)
@@ -78,7 +78,7 @@ chmod u+w output/
 
 ```bash
 # Diagnose:
-gerrit-reporting-tool generate ... -vv 2>&1 | tee debug.log
+project-reporting-tool generate ... -vv 2>&1 | tee debug.log
 ```text
 
 [Full details →](#exit-codes-reference)
@@ -131,7 +131,7 @@ Interactive Decision Tree:
 **Still unsure?** Run diagnostics:
 
 ```bash
-gerrit-reporting-tool generate --project test --repos-path ./repos --dry-run
+project-reporting-tool generate --project test --repos-path ./repos --dry-run
 ```
 
 ---
@@ -143,7 +143,7 @@ Before diving into specific errors, try these quick diagnostic steps:
 ### 1. Run Validation
 
 ```bash
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path /workspace/repos \
   --dry-run
@@ -154,7 +154,7 @@ This performs comprehensive pre-flight checks and reports any issues.
 ### 2. Check Configuration
 
 ```bash
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path /workspace/repos \
   --show-config
@@ -165,7 +165,7 @@ Verify your configuration is being loaded correctly.
 ### 3. Enable Verbose Logging
 
 ```bash
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path /workspace/repos \
   -vv
@@ -187,7 +187,7 @@ Error Message:
 
 💡 Suggestion: Create config file using --init wizard
 
-🔧 Quick Fix: gerrit-reporting-tool init --project my-project
+🔧 Quick Fix: project-reporting-tool init --project my-project
 
 📚 Documentation: docs/CLI_QUICK_START.md
 
@@ -205,19 +205,19 @@ Solutions:
 1. **Run configuration wizard (recommended):**
 
    ```bash
-   gerrit-reporting-tool init --project my-project
+   project-reporting-tool init --project my-project
    ```
 
 2. **Use template:**
 
    ```bash
-   gerrit-reporting-tool init --template standard --project my-project
+   project-reporting-tool init --template standard --project my-project
    ```
 
 3. **Specify custom config directory:**
 
    ```bash
-   gerrit-reporting-tool generate --project my-project --repos-path ./repos --config-dir /path/to/custom/config
+   project-reporting-tool generate --project my-project --repos-path ./repos --config-dir /path/to/custom/config
    ```
 
 4. **Check project name matches filename:**
@@ -359,7 +359,7 @@ Solution:
 cp config/template.config.example config/template.config
 
 # Or specify different config directory
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path /workspace/repos \
   --config-dir /custom/path
@@ -647,7 +647,7 @@ Many Jenkins servers require authentication to view job information. You need to
 
    # Or for direct usage
    JENKINS_USER="user" JENKINS_API_TOKEN="token" \
-   uv run gerrit-reporting-tool generate \
+   uv run project-reporting-tool generate \
      --project "Aether" \
      --repos-path ./repos
    ```
@@ -774,7 +774,7 @@ Solutions:
 
    ```bash
    # Only if absolutely necessary
-   sudo gerrit-reporting-tool generate ...
+   sudo project-reporting-tool generate ...
    ```
 
 ---
@@ -949,7 +949,7 @@ Solutions:
 1. **Disable parallel execution temporarily:**
 
    ```bash
-   gerrit-reporting-tool generate --project test --repos-path ./repos --workers 1
+   project-reporting-tool generate --project test --repos-path ./repos --workers 1
    ```
 
 2. **Check for resource contention:**
@@ -964,7 +964,7 @@ Solutions:
 3. **Enable debug logging:**
 
    ```bash
-   gerrit-reporting-tool generate --project test --repos-path ./repos --workers 1 -vvv 2>&1 | tee debug.log
+   project-reporting-tool generate --project test --repos-path ./repos --workers 1 -vvv 2>&1 | tee debug.log
    ```
 
 See Also:
@@ -1038,14 +1038,14 @@ Solutions:
 2. **Use custom cache directory:**
 
    ```bash
-   gerrit-reporting-tool generate --project test --repos-path ./repos --cache-dir /tmp/fresh-cache
+   project-reporting-tool generate --project test --repos-path ./repos --cache-dir /tmp/fresh-cache
    ```
 
 3. **Disable caching temporarily:**
 
    ```bash
    # Don't use --cache flag
-   gerrit-reporting-tool generate --project test --repos-path ./repos
+   project-reporting-tool generate --project test --repos-path ./repos
    ```
 
 See Also:
@@ -1079,7 +1079,7 @@ Solutions:
 2. **Use different cache location:**
 
    ```bash
-   gerrit-reporting-tool generate --project test --repos-path ./repos --cache-dir ~/cache/reports
+   project-reporting-tool generate --project test --repos-path ./repos --cache-dir ~/cache/reports
    ```
 
 3. **Clear and recreate:**
@@ -1128,7 +1128,7 @@ Solutions:
 
    ```bash
    rm -rf output/
-   gerrit-reporting-tool generate ...
+   project-reporting-tool generate ...
    ```
 
 2. **Try different browser:**
@@ -1164,7 +1164,7 @@ Solution:
 
 ```bash
 # Regenerate with verbose logging
-gerrit-reporting-tool generate ... -vv
+project-reporting-tool generate ... -vv
 ```text
 
 ---
@@ -1185,7 +1185,7 @@ Using in scripts:
 
 ```bash
 #!/bin/bash
-gerrit-reporting-tool generate --project test --repos-path ./repos
+project-reporting-tool generate --project test --repos-path ./repos
 EXIT_CODE=$?
 
 case $EXIT_CODE in
@@ -1210,7 +1210,7 @@ MAX_RETRIES=3
 RETRY=0
 
 while [ $RETRY -lt $MAX_RETRIES ]; do
-  gerrit-reporting-tool generate --project test --repos-path ./repos
+  project-reporting-tool generate --project test --repos-path ./repos
   EXIT_CODE=$?
 
   # Success - exit
@@ -1241,7 +1241,7 @@ See Also:
 ### Enable Maximum Verbosity
 
 ```bash
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path /workspace/repos \
   -vvv  # TRACE level
@@ -1251,7 +1251,7 @@ gerrit-reporting-tool generate \
 
 ```bash
 # Easier to debug without parallelism
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path /workspace/repos \
   --workers 1 \
@@ -1262,7 +1262,7 @@ gerrit-reporting-tool generate \
 
 ```bash
 # Add breakpoint in code
-python -m pdb -m gerrit_reporting_tool.main \
+python -m pdb -m project_reporting_tool.main \
   --project my-project \
   --repos-path /workspace/repos
 ```
@@ -1270,7 +1270,7 @@ python -m pdb -m gerrit_reporting_tool.main \
 ### Capture Full Logs
 
 ```bash
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path /workspace/repos \
   -vv 2>&1 | tee debug.log
@@ -1282,7 +1282,7 @@ gerrit-reporting-tool generate \
 # Isolate problematic repository
 mkdir test
 cp -r repos/problematic-repo test/
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path test/ \
   -vv
@@ -1463,10 +1463,10 @@ grep "info_yaml:" config.yaml -A 3
 find /path/to/info-master -name "INFO.yaml" | wc -l
 
 # 3. Verify configuration
-gerrit-reporting-tool config show | grep -A 20 "info_yaml:"
+project-reporting-tool config show | grep -A 20 "info_yaml:"
 
 # 4. Check logs
-tail -f logs/gerrit-reporting-tool.log | grep -i "info.yaml"
+tail -f logs/project-reporting-tool.log | grep -i "info.yaml"
 ```
 
 **Fix:**
@@ -1569,7 +1569,7 @@ info_yaml:
 
 ```bash
 # Check for parse errors
-tail -f logs/gerrit-reporting-tool.log | grep -i "parse error"
+tail -f logs/project-reporting-tool.log | grep -i "parse error"
 
 # List all INFO.yaml files
 find info-master/ -name "INFO.yaml" -exec dirname {} \;
@@ -1614,10 +1614,10 @@ project_lead:
 
 ```bash
 # Clear cache
-rm -rf ~/.cache/gerrit-reporting-tool/info-yaml/*
+rm -rf ~/.cache/project-reporting-tool/info-yaml/*
 
 # Verify cache cleared
-ls -la ~/.cache/gerrit-reporting-tool/info-yaml/
+ls -la ~/.cache/project-reporting-tool/info-yaml/
 
 # Disable cache temporarily
 ```
@@ -1756,10 +1756,10 @@ info_yaml:
 
 ```bash
 # Run with debug logging
-GERRIT_REPORTING_TOOL_INFO_YAML_LOG_LEVEL=DEBUG gerrit-reporting-tool generate --config config.yaml
+PROJECT_REPORTING_TOOL_INFO_YAML_LOG_LEVEL=DEBUG project-reporting-tool generate --config config.yaml
 
 # Filter logs
-tail -f logs/gerrit-reporting-tool.log | grep "INFO.yaml"
+tail -f logs/project-reporting-tool.log | grep "INFO.yaml"
 ```
 
 ---

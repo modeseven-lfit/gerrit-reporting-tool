@@ -14,7 +14,7 @@ from pathlib import Path
 import pytest
 import yaml
 
-from gerrit_reporting_tool.features.registry import FeatureRegistry
+from project_reporting_tool.features.registry import FeatureRegistry
 
 
 @pytest.fixture

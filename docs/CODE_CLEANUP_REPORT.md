@@ -24,7 +24,7 @@ Comprehensive code hygiene audit and cleanup performed following Phase 8 migrati
 
 **Problem**:
 
-- Method called in `src/gerrit_reporting_tool/reporter.py:343`
+- Method called in `src/project_reporting_tool/reporter.py:343`
 - Method did not exist in `ModernReportRenderer` class
 - Would cause `AttributeError` at runtime when generating reports
 
@@ -216,7 +216,7 @@ from rendering.renderer import ModernReportRenderer, TemplateRenderer
 
 ```bash
 # Reporter uses correct renderer
-✅ src/gerrit_reporting_tool/reporter.py:59
+✅ src/project_reporting_tool/reporter.py:59
     self.renderer = ModernReportRenderer(config, logger)
 
 # Renderer has all required methods

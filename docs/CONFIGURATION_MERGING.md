@@ -107,7 +107,7 @@ From `default.yaml`, OpenDaylight automatically inherits:
 
 ```bash
 # View the resolved configuration
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project OpenDaylight \
   --repos-path ./gerrit.opendaylight.org \
   --show-config \
@@ -283,7 +283,7 @@ Projects can run with **zero configuration** beyond `default.yaml`!
 ### Method 1: Dry Run with Config Display
 
 ```bash
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project OpenDaylight \
   --repos-path ./gerrit.opendaylight.org \
   --show-config \
@@ -296,7 +296,7 @@ Shows the fully merged configuration without running analysis.
 
 ```python
 from pathlib import Path
-from gerrit_reporting_tool.config import load_configuration
+from project_reporting_tool.config import load_configuration
 
 config = load_configuration(
     project='opendaylight',
@@ -317,7 +317,7 @@ cat configuration/default.yaml
 cat configuration/opendaylight.yaml
 
 # Show merged result
-gerrit-reporting-tool generate --project OpenDaylight --repos-path . --show-config --dry-run
+project-reporting-tool generate --project OpenDaylight --repos-path . --show-config --dry-run
 ```
 
 ---
@@ -342,7 +342,7 @@ output_formats:
 # ... 50+ more lines ...
 ```
 
-### Modern Pattern (gerrit-reporting-tool)
+### Modern Pattern (project-reporting-tool)
 
 ```yaml
 # New style: Only overrides in project.yaml
@@ -401,10 +401,10 @@ cat configuration/default.yaml
 cat configuration/myproject.yaml
 
 # 3. View merged result
-gerrit-reporting-tool generate --project myproject --repos-path . --show-config --dry-run
+project-reporting-tool generate --project myproject --repos-path . --show-config --dry-run
 
 # 4. Enable debug logging
-gerrit-reporting-tool generate --project myproject --repos-path . --log-level DEBUG
+project-reporting-tool generate --project myproject --repos-path . --log-level DEBUG
 ```
 
 ---
@@ -422,7 +422,7 @@ gerrit-reporting-tool generate --project myproject --repos-path . --log-level DE
 
 ### Source Code
 
-The merging logic is implemented in `src/gerrit_reporting_tool/config.py`:
+The merging logic is implemented in `src/project_reporting_tool/config.py`:
 
 - `deep_merge_dicts()` - Recursive merge function
 - `load_configuration()` - Configuration loading with merge

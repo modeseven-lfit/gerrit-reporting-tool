@@ -121,7 +121,7 @@ html = renderer.render_template('repository.html', data)
 
 ```bash
 # Generate report with specific theme
-gerrit-reporting-tool generate --theme dark owner/repo
+project-reporting-tool generate --theme dark owner/repo
 ```
 
 ---
@@ -714,7 +714,7 @@ def test_theme_contrast():
 ```bash
 # Generate test reports with all themes
 for theme in default dark minimal my-theme; do
-    gerrit-reporting-tool generate --theme $theme --output test_$theme.html
+    project-reporting-tool generate --theme $theme --output test_$theme.html
 done
 
 # Compare visually or use screenshot tools

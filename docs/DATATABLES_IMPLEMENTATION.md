@@ -12,7 +12,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 ## Overview
 
 This document summarizes the implementation of DataTables integration for
-the test-gerrit-reporting-tool HTML reports. The implementation adds
+the test-project-reporting-tool HTML reports. The implementation adds
 sorting, searching, and pagination features to HTML tables using the
 Simple-DataTables library.
 
@@ -308,7 +308,7 @@ The implementation is backward compatible:
 - [Simple-DataTables
   GitHub](https://github.com/fiduswriter/Simple-DataTables)
 - [DataTables Usage Guide](DATATABLES_USAGE.md)
-- [Legacy Implementation](../../gerrit-reporting-tool/src/gerrit_reporting_tool/renderers/report.py)
+- [Legacy Implementation](../../project-reporting-tool/src/project_reporting_tool/renderers/report.py)
 
 ## Contributors
 

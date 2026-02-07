@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-Feature detection for the gerrit-reporting-tool package.
+Feature detection for the project-reporting-tool package.
 
 This package contains modules for detecting features in repositories:
 - CI/CD systems (Jenkins, GitHub Actions, GitLab CI)

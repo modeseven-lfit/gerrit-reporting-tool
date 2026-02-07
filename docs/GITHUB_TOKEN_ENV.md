@@ -15,7 +15,7 @@ By default, the tool reads the GitHub token from the **`GITHUB_TOKEN`** environm
 
 ```bash
 export GITHUB_TOKEN="ghp_your_token_here"
-gerrit-reporting-tool generate --project my-project --repos-path ./repos
+project-reporting-tool generate --project my-project --repos-path ./repos
 ```
 
 ## Custom Environment Variable
@@ -24,7 +24,7 @@ You can specify a different environment variable name using the `--github-token-
 
 ```bash
 export CUSTOM_TOKEN_VAR="ghp_your_token_here"
-gerrit-reporting-tool generate --project my-project --repos-path ./repos \
+project-reporting-tool generate --project my-project --repos-path ./repos \
   --github-token-env CUSTOM_TOKEN_VAR
 ```
 
@@ -34,7 +34,7 @@ For existing CI/CD workflows that use `CLASSIC_READ_ONLY_PAT_TOKEN`, you can spe
 
 ```bash
 export CLASSIC_READ_ONLY_PAT_TOKEN="ghp_your_token_here"
-gerrit-reporting-tool generate --project my-project --repos-path ./repos \
+project-reporting-tool generate --project my-project --repos-path ./repos \
   --github-token-env CLASSIC_READ_ONLY_PAT_TOKEN
 ```
 
@@ -47,7 +47,7 @@ gerrit-reporting-tool generate --project my-project --repos-path ./repos \
 export GITHUB_TOKEN="ghp_xxxxxxxxxxxxxxxxxxxx"
 
 # Run the tool (uses GITHUB_TOKEN by default)
-gerrit-reporting-tool generate --project ONAP --repos-path ./repos
+project-reporting-tool generate --project ONAP --repos-path ./repos
 ```
 
 ### GitHub Actions Workflow
@@ -55,7 +55,7 @@ gerrit-reporting-tool generate --project ONAP --repos-path ./repos
 ```yaml
 - name: Generate Report
   run: |
-    gerrit-reporting-tool generate \
+    project-reporting-tool generate \
       --project ${{ matrix.project }} \
       --repos-path /workspace/repos \
       --github-token-env CLASSIC_READ_ONLY_PAT_TOKEN
@@ -69,7 +69,7 @@ gerrit-reporting-tool generate --project ONAP --repos-path ./repos
 generate_report:
   script:
     - export MY_GITHUB_TOKEN="${CI_GITHUB_TOKEN}"
-    - gerrit-reporting-tool generate
+    - project-reporting-tool generate
         --project my-project
         --repos-path ./repos
         --github-token-env MY_GITHUB_TOKEN
@@ -157,11 +157,11 @@ Fine-grained tokens are scoped to a single organization, but the reporting tool 
    ```bash
    # Wrong - variable is CUSTOM_TOKEN but flag says GITHUB_TOKEN
    export CUSTOM_TOKEN="ghp_xxx"
-   gerrit-reporting-tool generate --project test --repos-path ./repos
+   project-reporting-tool generate --project test --repos-path ./repos
 
    # Correct - flag matches variable name
    export CUSTOM_TOKEN="ghp_xxx"
-   gerrit-reporting-tool generate --project test --repos-path ./repos \
+   project-reporting-tool generate --project test --repos-path ./repos \
      --github-token-env CUSTOM_TOKEN
    ```
 
@@ -207,7 +207,7 @@ export GITHUB_TOKEN="ghp_xxx"
 export CLASSIC_READ_ONLY_PAT_TOKEN="ghp_xxx"
 
 # Specify it explicitly
-gerrit-reporting-tool generate --project my-project --repos-path ./repos \
+project-reporting-tool generate --project my-project --repos-path ./repos \
   --github-token-env CLASSIC_READ_ONLY_PAT_TOKEN
 ```
 
@@ -226,7 +226,7 @@ env:
 
 # New (Option B: Keep secret name, use flag)
 run: |
-  gerrit-reporting-tool generate \
+  project-reporting-tool generate \
     --project ${{ matrix.project }} \
     --repos-path ./repos \
     --github-token-env CLASSIC_READ_ONLY_PAT_TOKEN

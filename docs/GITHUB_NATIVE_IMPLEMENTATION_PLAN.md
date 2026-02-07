@@ -5,7 +5,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 # GitHub Native Project Support - Implementation Plan
 
-> Implementation plan for adding GitHub-only project support to the gerrit-reporting-tool
+> Implementation plan for adding GitHub-only project support to the project-reporting-tool
 
 **Status:** ✅ Implemented
 **Created:** 2025-01-XX
@@ -34,7 +34,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 **✅ IMPLEMENTATION COMPLETE**
 
-The gerrit-reporting-tool now supports both Gerrit-based projects and **GitHub-native projects** that have no Gerrit backend. This implementation adds the ability to analyze and report on projects hosted entirely on GitHub while maintaining full backward compatibility with existing Gerrit-based projects.
+The project-reporting-tool now supports both Gerrit-based projects and **GitHub-native projects** that have no Gerrit backend. This implementation adds the ability to analyze and report on projects hosted entirely on GitHub while maintaining full backward compatibility with existing Gerrit-based projects.
 
 **Key Changes Implemented:**
 
@@ -129,7 +129,7 @@ PROJECTS_JSON → Configuration → Clone Action → Git Metrics → Rendering �
 
 #### 1. Configuration System
 
-**Location:** `src/gerrit_reporting_tool/config.py`
+**Location:** `src/project_reporting_tool/config.py`
 
 **Current Behavior:**
 
@@ -145,7 +145,7 @@ PROJECTS_JSON → Configuration → Clone Action → Git Metrics → Rendering �
 
 #### 2. Git Data Collector
 
-**Location:** `src/gerrit_reporting_tool/collectors/git.py`
+**Location:** `src/project_reporting_tool/collectors/git.py`
 
 **Current Behavior:**
 
@@ -381,7 +381,7 @@ clone_github_repos() {
 
 **Files Modified:**
 
-- `src/gerrit_reporting_tool/config.py`
+- `src/project_reporting_tool/config.py`
 - `src/rendering/context.py`
 - `docs/CONFIGURATION.md`
 
@@ -533,7 +533,7 @@ clone_github_repos() {
 **Step 1: Deploy to Test Repository**
 
 ```bash
-# In test-gerrit-reporting-tool
+# In test-project-reporting-tool
 git checkout -b github-native-support
 # ... implement changes ...
 ./testing/local-testing.sh --project aether
@@ -556,7 +556,7 @@ git checkout -b github-native-support
 **Step 4: Port to Production Repository**
 
 ```bash
-# In gerrit-reporting-tool (production)
+# In project-reporting-tool (production)
 git checkout -b github-native-support
 # Cherry-pick changes from test repo
 # Update PROJECTS_JSON variable in production
@@ -764,7 +764,7 @@ jenkins:
 
 ### Modified Files (Estimated)
 
-1. `src/gerrit_reporting_tool/config.py` - Make gerrit.host optional
+1. `src/project_reporting_tool/config.py` - Make gerrit.host optional
 2. `src/rendering/context.py` - Add terminology context, URL builder
 3. `src/templates/markdown/sections/summary.md.j2` - Use terminology variables
 4. `src/templates/markdown/sections/repositories.md.j2` - Use terminology variables
@@ -792,7 +792,7 @@ jenkins:
 
 ## Conclusion
 
-This implementation plan provides a minimal-impact approach to adding GitHub-native project support to the gerrit-reporting-tool. By preserving existing data structures and using template-driven terminology changes, we can support both Gerrit and GitHub projects with minimal code changes and zero breaking changes to existing functionality.
+This implementation plan provides a minimal-impact approach to adding GitHub-native project support to the project-reporting-tool. By preserving existing data structures and using template-driven terminology changes, we can support both Gerrit and GitHub projects with minimal code changes and zero breaking changes to existing functionality.
 
 The phased approach allows for incremental validation and testing, reducing deployment risk. The Aether project will serve as the first GitHub-native implementation, validating the approach before broader adoption.
 

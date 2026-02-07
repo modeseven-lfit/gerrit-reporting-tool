@@ -25,14 +25,14 @@ The Phase 8 migration to the modern template-based rendering system is now **COM
 
 **Removed:**
 
-- `src/gerrit_reporting_tool/renderers/report.py` (~1,700 lines of programmatic rendering)
-- `src/gerrit_reporting_tool/renderers/__init__.py`
-- Entire `src/gerrit_reporting_tool/renderers/` directory
+- `src/project_reporting_tool/renderers/report.py` (~1,700 lines of programmatic rendering)
+- `src/project_reporting_tool/renderers/__init__.py`
+- Entire `src/project_reporting_tool/renderers/` directory
 
 **Updated:**
 
-- `src/gerrit_reporting_tool/reporter.py` - Now uses `ModernReportRenderer`
-- `src/gerrit_reporting_tool/main.py` - Simplified to use template-based rendering
+- `src/project_reporting_tool/reporter.py` - Now uses `ModernReportRenderer`
+- `src/project_reporting_tool/main.py` - Simplified to use template-based rendering
 
 ### 2. Removed All Compatibility/Adapter Code
 
@@ -50,7 +50,7 @@ The Phase 8 migration to the modern template-based rendering system is now **COM
 
 ```python
 # OLD (Legacy)
-from gerrit_reporting_tool.renderers import ReportRenderer
+from project_reporting_tool.renderers import ReportRenderer
 self.renderer = ReportRenderer(config, logger)
 
 # NEW (Modern)
@@ -60,8 +60,8 @@ self.renderer = ModernReportRenderer(config, logger)
 
 **Files Updated:**
 
-- `src/gerrit_reporting_tool/reporter.py`
-- `src/gerrit_reporting_tool/main.py`
+- `src/project_reporting_tool/reporter.py`
+- `src/project_reporting_tool/main.py`
 - `tests/integration/test_info_yaml_reporting_integration.py`
 - `docs/DEVELOPER_GUIDE.md`
 
@@ -267,7 +267,7 @@ output:
 **Old tests using:**
 
 ```python
-from gerrit_reporting_tool.renderers.report import ReportRenderer
+from project_reporting_tool.renderers.report import ReportRenderer
 ```
 
 **Must change to:**
@@ -354,7 +354,7 @@ Instead:
 
 - [x] Replace `ReportRenderer` with `ModernReportRenderer` in `reporter.py`
 - [x] Update `main.py` to use modern rendering API
-- [x] Delete `src/gerrit_reporting_tool/renderers/` directory
+- [x] Delete `src/project_reporting_tool/renderers/` directory
 - [x] Delete all adapter/compatibility files
 - [x] Update `src/rendering/__init__.py` exports
 - [x] Update test imports
@@ -372,14 +372,14 @@ Instead:
 1. **Test the changes:**
 
    ```bash
-   cd test-gerrit-reporting-tool
+   cd test-project-reporting-tool
    python -m pytest tests/unit/test_rendering_context.py -v
    ```
 
 2. **Generate a test report:**
 
    ```bash
-   uv run gerrit-reporting-tool generate \
+   uv run project-reporting-tool generate \
      --project "test" \
      --repos-path "./repos" \
      --output-dir "./test-output"
@@ -405,16 +405,16 @@ Now that we have a clean template-based system:
 
 ### Deleted (Legacy System)
 
-- `src/gerrit_reporting_tool/renderers/report.py`
-- `src/gerrit_reporting_tool/renderers/__init__.py`
+- `src/project_reporting_tool/renderers/report.py`
+- `src/project_reporting_tool/renderers/__init__.py`
 - `src/rendering/legacy_adapter.py`
 - `src/rendering/adapter.py`
 - `src/rendering/modern_renderer.py`
 
 ### Modified (Integration)
 
-- `src/gerrit_reporting_tool/reporter.py`
-- `src/gerrit_reporting_tool/main.py`
+- `src/project_reporting_tool/reporter.py`
+- `src/project_reporting_tool/main.py`
 - `src/rendering/__init__.py`
 
 ### Updated (Documentation)
@@ -435,7 +435,7 @@ Now that we have a clean template-based system:
 ### Check Modern Renderer Works
 
 ```bash
-cd test-gerrit-reporting-tool
+cd test-project-reporting-tool
 python -c "
 import sys
 sys.path.insert(0, 'src')

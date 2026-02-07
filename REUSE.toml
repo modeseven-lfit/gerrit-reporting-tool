@@ -1,7 +1,7 @@
 version = 1
-SPDX-PackageName = "gerrit-reporting-tool"
+SPDX-PackageName = "project-reporting-tool"
 SPDX-PackageSupplier = "The Linux Foundation"
-SPDX-PackageDownloadLocation = "https://github.com/lfit/gerrit-reporting-tool"
+SPDX-PackageDownloadLocation = "https://github.com/modeseven-lfit/project-reporting-tool"
 
 [[annotations]]
 path = ["tests/regression/snapshots/**", "tests/regression/__snapshots__/**.ambr"]

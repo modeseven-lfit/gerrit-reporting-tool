@@ -7,7 +7,7 @@
 
 ## Overview
 
-The gerrit-reporting-tool now supports GitHub-only projects (projects without a Gerrit server) by leveraging the `gerrit-clone-action` v0.1.13, which includes multi-threaded GitHub repository cloning capabilities.
+The project-reporting-tool now supports GitHub-only projects (projects without a Gerrit server) by leveraging the `gerrit-clone-action` v0.1.13, which includes multi-threaded GitHub repository cloning capabilities.
 
 ## What Changed
 

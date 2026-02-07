@@ -13,7 +13,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 ## Problem Description
 
-The new templating system (`test-gerrit-reporting-tool`) was rendering the CI/CD Jobs table with a completely different structure than the production system (`gerrit-reporting-tool`).
+The new templating system (`test-project-reporting-tool`) was rendering the CI/CD Jobs table with a completely different structure than the production system (`project-reporting-tool`).
 
 ### Production System Table Format
 
@@ -235,4 +235,4 @@ Created sample test data with:
 ## Related Issues
 
 - Thread: [Gerrit Reporting Tool Documentation Updates](zed://agent/thread/2a86412b-d89b-46e1-8b5d-2272084cec29)
-- Production system reference: `gerrit-reporting-tool/src/gerrit_reporting_tool/renderers/report.py`
+- Production system reference: `project-reporting-tool/src/project_reporting_tool/renderers/report.py`

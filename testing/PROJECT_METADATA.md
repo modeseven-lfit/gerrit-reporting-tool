@@ -348,7 +348,7 @@ sudo dnf install jq
 Ensure you're running the script from the testing directory:
 
 ```bash
-cd gerrit-reporting-tool/testing
+cd project-reporting-tool/testing
 ./local-testing.sh
 ```
 

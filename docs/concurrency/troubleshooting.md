@@ -107,10 +107,10 @@ python -c "import faulthandler; faulthandler.dump_traceback_later(10)" generate_
 
 ```bash
 # Run sequentially (no concurrency)
-gerrit-reporting-tool generate --max-workers 1
+project-reporting-tool generate --max-workers 1
 
 # Compare with concurrent run
-gerrit-reporting-tool generate --max-workers 8
+project-reporting-tool generate --max-workers 8
 
 # Results should be identical
 diff output_sequential.json output_concurrent.json
@@ -395,7 +395,7 @@ pip install py-spy
 py-spy top --pid $(pgrep -f generate_reports)
 
 # Generate flamegraph
-py-spy record -o profile.svg -- gerrit-reporting-tool generate
+py-spy record -o profile.svg -- project-reporting-tool generate
 ```text
 
 ---
@@ -672,7 +672,7 @@ top -H -p $(pgrep -f generate_reports)
 3. **Lower priority**:
 
    ```bash
-   nice -n 10 gerrit-reporting-tool generate
+   nice -n 10 project-reporting-tool generate
    ```
 
 ---
@@ -702,7 +702,7 @@ top -H -p $(pgrep -f generate_reports)
 
    ```bash
    # Full error with traceback
-   gerrit-reporting-tool generate 2>&1 | tee error.log
+   project-reporting-tool generate 2>&1 | tee error.log
    ```
 
 4. **Profiling data**:
@@ -736,7 +736,7 @@ Brief description of the problem
 ## Steps to Reproduce
 
 1. Clone repositories
-2. Run: `gerrit-reporting-tool generate --config config.json`
+2. Run: `project-reporting-tool generate --config config.json`
 3. Observe error
 
 ## Expected Behavior

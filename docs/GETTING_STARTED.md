@@ -40,7 +40,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 uv sync
 
 # Verify installation
-uv run gerrit-reporting-tool --version
+uv run project-reporting-tool --version
 ```
 
 #### Using pip
@@ -50,7 +50,7 @@ uv run gerrit-reporting-tool --version
 pip install .
 
 # Verify installation
-gerrit-reporting-tool --version
+project-reporting-tool --version
 ```
 
 ### Step 2: Setup Configuration
@@ -58,7 +58,7 @@ gerrit-reporting-tool --version
 **Interactive wizard** (easiest for first-time users):
 
 ```bash
-gerrit-reporting-tool init --project my-project
+project-reporting-tool init --project my-project
 ```
 
 Follow the prompts:
@@ -70,7 +70,7 @@ Follow the prompts:
 **Or use a template** (quick setup):
 
 ```bash
-gerrit-reporting-tool init --project my-project --template standard
+project-reporting-tool init --project my-project --template standard
 ```
 
 This creates `config/my-project.yaml` with sensible defaults.
@@ -78,7 +78,7 @@ This creates `config/my-project.yaml` with sensible defaults.
 ### Step 3: Generate Your First Report
 
 ```bash
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos
 ```
@@ -116,7 +116,7 @@ git clone https://github.com/example/my-repo.git
 cd ..
 
 # Generate report
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-repo \
   --repos-path ./repos
 ```
@@ -133,7 +133,7 @@ git clone https://github.com/example/repo3.git
 cd ..
 
 # Generate combined report
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-organization \
   --repos-path ./repos
 ```
@@ -142,16 +142,16 @@ gerrit-reporting-tool generate \
 
 ```bash
 # Create sample config
-gerrit-reporting-tool init --project sample --template standard
+project-reporting-tool init --project sample --template standard
 
 # Preview configuration (dry run)
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project sample \
   --repos-path ./repos \
   --dry-run
 
 # Generate if looks good
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project sample \
   --repos-path ./repos
 ```
@@ -160,7 +160,7 @@ gerrit-reporting-tool generate \
 
 ```bash
 # Quick analysis with minimal output
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project quick-test \
   --repos-path ./repos \
   --quiet
@@ -204,7 +204,7 @@ github_api:
 ```bash
 # Or pass via environment
 export GITHUB_TOKEN=ghp_your_token_here
-gerrit-reporting-tool generate --project my-project --repos-path ./repos
+project-reporting-tool generate --project my-project --repos-path ./repos
 ```
 
 ### Enable INFO.yaml Reports
@@ -232,7 +232,7 @@ performance:
 
 ```bash
 # Or use command-line flags
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos \
   --cache \
@@ -247,10 +247,10 @@ gerrit-reporting-tool generate \
 
 ```bash
 # Show resolved configuration
-gerrit-reporting-tool config show --project my-project
+project-reporting-tool config show --project my-project
 
 # Validate without generating
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos \
   --dry-run
@@ -260,10 +260,10 @@ gerrit-reporting-tool generate \
 
 ```bash
 # List all features the tool can detect
-gerrit-reporting-tool list-features
+project-reporting-tool list-features
 
 # Check features in your repos
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos \
   --dry-run \
@@ -274,12 +274,12 @@ gerrit-reporting-tool generate \
 
 ```bash
 # General help
-gerrit-reporting-tool --help
+project-reporting-tool --help
 
 # Command-specific help
-gerrit-reporting-tool generate --help
-gerrit-reporting-tool init --help
-gerrit-reporting-tool config --help
+project-reporting-tool generate --help
+project-reporting-tool init --help
+project-reporting-tool config --help
 ```
 
 ---
@@ -323,13 +323,13 @@ Now that you have your first report:
 
 ```bash
 # Enable caching (60-70% faster on subsequent runs)
-gerrit-reporting-tool generate --project my-project --repos-path ./repos --cache
+project-reporting-tool generate --project my-project --repos-path ./repos --cache
 
 # Use parallel processing
-gerrit-reporting-tool generate --project my-project --repos-path ./repos --workers 8
+project-reporting-tool generate --project my-project --repos-path ./repos --workers 8
 
 # Combine both
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos \
   --cache \
@@ -340,7 +340,7 @@ gerrit-reporting-tool generate \
 
 ```bash
 # Minimal output (good for automation)
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos \
   --quiet
@@ -350,7 +350,7 @@ gerrit-reporting-tool generate \
 
 ```bash
 # Detailed output (troubleshooting)
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos \
   --verbose
@@ -360,13 +360,13 @@ gerrit-reporting-tool generate \
 
 ```bash
 # HTML only
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos \
   --output-format html
 
 # JSON only
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos \
   --output-format json
@@ -376,12 +376,12 @@ gerrit-reporting-tool generate \
 
 ## ❓ Troubleshooting
 
-### "Command not found: gerrit-reporting-tool"
+### "Command not found: project-reporting-tool"
 
 **Using UV:**
 
 ```bash
-uv run gerrit-reporting-tool --help
+uv run project-reporting-tool --help
 ```
 
 **Using pip:** Ensure installed correctly:
@@ -403,7 +403,7 @@ ls -la ./repos  # Should show .git directories
 Create configuration first:
 
 ```bash
-gerrit-reporting-tool init --project my-project
+project-reporting-tool init --project my-project
 ```
 
 ### Reports Take Too Long
@@ -411,7 +411,7 @@ gerrit-reporting-tool init --project my-project
 Enable caching and parallel processing:
 
 ```bash
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos \
   --cache \
@@ -422,7 +422,7 @@ gerrit-reporting-tool generate \
 
 - [FAQ](FAQ.md) - Frequently asked questions
 - [Troubleshooting Guide](TROUBLESHOOTING.md) - Common issues
-- [GitHub Issues](https://github.com/modeseven-lfit/gerrit-reporting-tool/issues) - Report bugs
+- [GitHub Issues](https://github.com/modeseven-lfit/project-reporting-tool/issues) - Report bugs
 
 ---
 

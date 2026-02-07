@@ -9,7 +9,7 @@ from pathlib import Path
 
 import pytest
 
-from gerrit_reporting_tool.features.registry import FeatureRegistry
+from project_reporting_tool.features.registry import FeatureRegistry
 
 
 class TestProjectTypeDetection:

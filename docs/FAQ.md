@@ -39,13 +39,13 @@ Phase: 14 - CLI Documentation Polish
 However, first-time users should start with the configuration wizard:
 
 ```bash
-gerrit-reporting-tool init --project my-project
+project-reporting-tool init --project my-project
 ```
 
 After creating a configuration file, you can run with just:
 
 ```bash
-gerrit-reporting-tool generate --project my-project --repos-path ./repos
+project-reporting-tool generate --project my-project --repos-path ./repos
 ```text
 
 ---
@@ -57,19 +57,19 @@ gerrit-reporting-tool generate --project my-project --repos-path ./repos
 Step 1: Run the configuration wizard
 
 ```bash
-gerrit-reporting-tool init --project my-project
+project-reporting-tool init --project my-project
 ```
 
 Step 2: Validate your setup
 
 ```bash
-gerrit-reporting-tool generate --project my-project --repos-path ./repos --dry-run
+project-reporting-tool generate --project my-project --repos-path ./repos --dry-run
 ```text
 
 Step 3: Generate the report
 
 ```bash
-gerrit-reporting-tool generate --project my-project --repos-path ./repos
+project-reporting-tool generate --project my-project --repos-path ./repos
 ```
 
 Your report will be in the `output/` directory.
@@ -83,13 +83,13 @@ A:
 - **`--init`**: Interactive wizard that asks you questions
   - Best for: First-time users, custom configurations
   - Time: 2-3 minutes
-  - Example: `gerrit-reporting-tool init --project my-project`
+  - Example: `project-reporting-tool init --project my-project`
 
 - **`--init-template TEMPLATE`**: Non-interactive, uses a preset template
   - Best for: CI/CD, quick setup, standard configurations
   - Time: 10 seconds
   - Templates: `minimal`, `standard`, `full`
-  - Example: `gerrit-reporting-tool init --template standard --project my-project`
+  - Example: `project-reporting-tool init --template standard --project my-project`
 
 When to use which:
 
@@ -126,19 +126,19 @@ You can customize with:
 
 ```bash
 # Standard output (INFO level)
-gerrit-reporting-tool generate --project test --repos-path ./repos
+project-reporting-tool generate --project test --repos-path ./repos
 
 # Verbose (detailed progress)
-gerrit-reporting-tool generate --project test --repos-path ./repos -v
+project-reporting-tool generate --project test --repos-path ./repos -v
 
 # Debug (very detailed)
-gerrit-reporting-tool generate --project test --repos-path ./repos -vv
+project-reporting-tool generate --project test --repos-path ./repos -vv
 
 # Trace (everything)
-gerrit-reporting-tool generate --project test --repos-path ./repos -vvv
+project-reporting-tool generate --project test --repos-path ./repos -vvv
 
 # Quiet (errors only)
-gerrit-reporting-tool generate --project test --repos-path ./repos --quiet
+project-reporting-tool generate --project test --repos-path ./repos --quiet
 ```
 
 **Recommendation:** Use `-v` for development, `--quiet` for production.
@@ -175,13 +175,13 @@ You can customize the directory with:
 
 ```bash
 # Single override
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --config-override cache.enabled=true
 
 # Multiple overrides
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --config-override time_windows.90d.days=60 \
@@ -222,7 +222,7 @@ Example:
 **A:** Use `--show-config`:
 
 ```bash
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos \
   --show-config
@@ -238,13 +238,13 @@ This shows the final merged configuration after all overrides are applied.
 
 ```bash
 # Shared config at config/shared.yaml
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project project-a \
   --repos-path ./repos-a \
   --config-dir ./config \
   --config-override project=project-a
 
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project project-b \
   --repos-path ./repos-b \
   --config-dir ./config \
@@ -268,7 +268,7 @@ project: my-project
 **A:** Use these optimization flags:
 
 ```bash
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos \
   --cache \              # Enable caching (biggest impact)
@@ -372,7 +372,7 @@ Combined with caching:
 Step 1: Check exit code
 
 ```bash
-gerrit-reporting-tool generate --project test --repos-path ./repos
+project-reporting-tool generate --project test --repos-path ./repos
 echo $?
 ```
 
@@ -385,13 +385,13 @@ echo $?
 Step 2: Run with debug logging
 
 ```bash
-gerrit-reporting-tool generate --project test --repos-path ./repos -vvv 2>&1 | tee debug.log
+project-reporting-tool generate --project test --repos-path ./repos -vvv 2>&1 | tee debug.log
 ```text
 
 Step 3: Validate configuration
 
 ```bash
-gerrit-reporting-tool generate --project test --repos-path ./repos --dry-run
+project-reporting-tool generate --project test --repos-path ./repos --dry-run
 ```
 
 ---
@@ -413,7 +413,7 @@ export GITHUB_TOKEN="ghp_your_token_here"
 Step 2: Run with API logging
 
 ```bash
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   -vv 2>&1 | grep -i "api"
@@ -451,13 +451,13 @@ Exit 1 (ERROR):
 
 ```bash
 # Run validation
-gerrit-reporting-tool validate --project test --repos-path ./repos --validate-only
+project-reporting-tool validate --project test --repos-path ./repos --validate-only
 
 # Check configuration
-gerrit-reporting-tool generate --project test --repos-path ./repos --show-config
+project-reporting-tool generate --project test --repos-path ./repos --show-config
 
 # Review logs
-gerrit-reporting-tool generate --project test --repos-path ./repos -vv
+project-reporting-tool generate --project test --repos-path ./repos -vv
 ```text
 
 Exit 2 (PARTIAL):
@@ -474,10 +474,10 @@ Exit 3 (USAGE_ERROR):
 
 ```bash
 # Check required arguments
-gerrit-reporting-tool --help
+project-reporting-tool --help
 
 # Verify syntax
-gerrit-reporting-tool generate --project test --repos-path ./repos --dry-run
+project-reporting-tool generate --project test --repos-path ./repos --dry-run
 ```text
 
 Exit 4 (SYSTEM_ERROR):
@@ -519,21 +519,21 @@ Diagnostic steps:
 
 ```bash
 # Run with -v to see cache hit rate
-gerrit-reporting-tool generate --project test --repos-path ./repos --cache -v | grep cache
+project-reporting-tool generate --project test --repos-path ./repos --cache -v | grep cache
 ```
 
 2. Check worker utilization
 
 ```bash
 # Run with top/htop in another terminal
-gerrit-reporting-tool generate --project test --repos-path ./repos --workers auto
+project-reporting-tool generate --project test --repos-path ./repos --workers auto
 ```text
 
 3. Profile performance
 
 ```bash
 # Use Python profiler
-python -m cProfile -o profile.stats -m gerrit_reporting_tool.main \
+python -m cProfile -o profile.stats -m project_reporting_tool.main \
   --project test --repos-path ./repos
 ```
 
@@ -565,21 +565,21 @@ Option 1: Create the configuration file
 
 ```bash
 # Run the wizard
-gerrit-reporting-tool init --project my-project
+project-reporting-tool init --project my-project
 ```
 
 Option 2: Use a template
 
 ```bash
 # Create from template
-gerrit-reporting-tool init --template standard --project my-project
+project-reporting-tool init --template standard --project my-project
 ```text
 
 Option 3: Specify custom config directory
 
 ```bash
 # If config is elsewhere
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos \
   --config-dir /custom/path
@@ -602,7 +602,7 @@ Option 4: Check file naming
 **A:** Yes! Import and use the main function:
 
 ```python
-from gerrit_reporting_tool.main import main
+from project_reporting_tool.main import main
 from argparse import Namespace
 
 # Set up arguments
@@ -651,12 +651,12 @@ GitHub Actions:
 ```yaml
 - name: Generate Report
   run: |
-    gerrit-reporting-tool init \
+    project-reporting-tool init \
       --init-template standard \
       --project ${{ matrix.project }} \
       --config-output /tmp/config.yaml
 
-    gerrit-reporting-tool generate \
+    project-reporting-tool generate \
       --project ${{ matrix.project }} \
       --repos-path ./repos \
       --cache \
@@ -671,8 +671,8 @@ GitLab CI:
 ```yaml
 generate-report:
   script:
-    - gerrit-reporting-tool init --template standard --project $CI_PROJECT_NAME
-    - gerrit-reporting-tool generate --project $CI_PROJECT_NAME --repos-path ./repos --cache --quiet
+    - project-reporting-tool init --template standard --project $CI_PROJECT_NAME
+    - project-reporting-tool generate --project $CI_PROJECT_NAME --repos-path ./repos --cache --quiet
   artifacts:
     paths:
       - output/
@@ -682,8 +682,8 @@ Jenkins:
 
 ```groovy
 sh """
-  gerrit-reporting-tool init --template standard --project ${PROJECT_NAME}
-  gerrit-reporting-tool generate --project ${PROJECT_NAME} --repos-path ./repos --cache --quiet
+  project-reporting-tool init --template standard --project ${PROJECT_NAME}
+  project-reporting-tool generate --project ${PROJECT_NAME} --repos-path ./repos --cache --quiet
 """
 ```
 
@@ -695,25 +695,25 @@ sh """
 
 ```bash
 # Generate only HTML
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --output-format html
 
 # Generate only JSON
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --output-format json
 
 # Generate only Markdown
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --output-format md
 
 # Generate all formats (default)
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project test \
   --repos-path ./repos \
   --output-format all
@@ -750,7 +750,7 @@ mkdir -p /tmp/filtered-repos
 cp -r ./repos/project-* /tmp/filtered-repos/
 
 # Run report on filtered set
-gerrit-reporting-tool generate --project test --repos-path /tmp/filtered-repos
+project-reporting-tool generate --project test --repos-path /tmp/filtered-repos
 ```
 
 ---
@@ -766,7 +766,7 @@ Crontab (Linux/Mac):
 crontab -e
 
 # Add daily report at 2 AM
-0 2 * * * cd /path/to/project && gerrit-reporting-tool generate \
+0 2 * * * cd /path/to/project && project-reporting-tool generate \
   --project daily \
   --repos-path ./repos \
   --cache \
@@ -792,7 +792,7 @@ WantedBy=timers.target
 Windows Task Scheduler:
 
 ```powershell
-schtasks /create /tn "Repository Report" /tr "gerrit-reporting-tool generate --project daily --repos-path C:\repos --cache --quiet" /sc daily /st 02:00
+schtasks /create /tn "Repository Report" /tr "project-reporting-tool generate --project daily --repos-path C:\repos --cache --quiet" /sc daily /st 02:00
 ```text
 
 ---
@@ -868,10 +868,10 @@ EOF
 
 # Source before running
 source .env
-gerrit-reporting-tool generate --project test --repos-path ./repos
+project-reporting-tool generate --project test --repos-path ./repos
 
 # Or inline
-env $(cat .env | xargs) gerrit-reporting-tool generate --project test --repos-path ./repos
+env $(cat .env | xargs) project-reporting-tool generate --project test --repos-path ./repos
 ```
 
 Using python-dotenv (if installed):
@@ -880,7 +880,7 @@ Using python-dotenv (if installed):
 from dotenv import load_dotenv
 load_dotenv()
 
-# Now run gerrit-reporting-tool
+# Now run project-reporting-tool
 ```text
 
 ---
@@ -905,7 +905,7 @@ Example retry logic:
 
 ```bash
 for i in 1 2 3; do
-  gerrit-reporting-tool generate --project test --repos-path ./repos
+  project-reporting-tool generate --project test --repos-path ./repos
   CODE=$?
 
   # Success - exit
@@ -937,10 +937,10 @@ Review warnings:
 
 ```bash
 # Check for warnings in output
-gerrit-reporting-tool generate --project test --repos-path ./repos -v 2>&1 | grep -i warn
+project-reporting-tool generate --project test --repos-path ./repos -v 2>&1 | grep -i warn
 
 # In production, log warnings
-gerrit-reporting-tool generate --project test --repos-path ./repos --quiet 2>&1 | tee report.log
+project-reporting-tool generate --project test --repos-path ./repos --quiet 2>&1 | tee report.log
 ```text
 
 ---

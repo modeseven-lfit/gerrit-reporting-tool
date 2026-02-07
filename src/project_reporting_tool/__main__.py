@@ -11,7 +11,7 @@ This provides an alternative to the console script entry point
 and is useful for development and testing.
 """
 
-from gerrit_reporting_tool.cli import cli_main
+from project_reporting_tool.cli import cli_main
 
 if __name__ == "__main__":
     cli_main()

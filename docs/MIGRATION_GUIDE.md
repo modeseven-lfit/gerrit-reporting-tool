@@ -142,7 +142,7 @@ echo $GITHUB_TOKEN  # or $CLASSIC_READ_ONLY_PAT_TOKEN
 
 ```bash
 # Clone modern system to test location
-git clone https://github.com/modeseven-lfit/gerrit-reporting-tool.git test-modern-reporting
+git clone https://github.com/modeseven-lfit/project-reporting-tool.git test-modern-reporting
 cd test-modern-reporting
 
 # Install dependencies
@@ -171,7 +171,7 @@ The modern system uses the same YAML format - configuration files are **100% com
 cp /path/to/legacy/configuration/*.config /path/to/modern/configuration/
 
 # Verify configuration
-uv run gerrit-reporting-tool generate \
+uv run project-reporting-tool generate \
   --project ONAP \
   --repos-path ./gerrit.onap.org \
   --dry-run
@@ -208,7 +208,7 @@ cp reports/ONAP/report.html reports/ONAP/legacy-report.html
 
 # Generate with modern system
 cd /path/to/modern
-uv run gerrit-reporting-tool generate \
+uv run project-reporting-tool generate \
   --project ONAP \
   --repos-path ./gerrit.onap.org
 cp reports/ONAP/report.html reports/ONAP/modern-report.html
@@ -248,7 +248,7 @@ bash testing/compare-production.sh \
 ```bash
 # Clone to production location
 cd /opt/reporting  # or your deployment path
-git clone https://github.com/modeseven-lfit/gerrit-reporting-tool.git modern
+git clone https://github.com/modeseven-lfit/project-reporting-tool.git modern
 cd modern
 
 # Install dependencies
@@ -274,10 +274,10 @@ export CACHE_ENABLED=true
 
 ```bash
 # Test command availability
-uv run gerrit-reporting-tool --help
+uv run project-reporting-tool --help
 
 # Expected output:
-# Usage: gerrit-reporting-tool [OPTIONS] COMMAND [ARGS]...
+# Usage: project-reporting-tool [OPTIONS] COMMAND [ARGS]...
 # ...
 ```
 
@@ -300,7 +300,7 @@ ls -la configuration/
 # Test each project configuration
 for project in ONAP O-RAN-SC OpenDaylight; do
   echo "Testing $project..."
-  uv run gerrit-reporting-tool generate \
+  uv run project-reporting-tool generate \
     --project $project \
     --repos-path ./repos \
     --dry-run
@@ -350,7 +350,7 @@ jobs:
 
       - name: Generate report
         run: |
-          uv run gerrit-reporting-tool generate \
+          uv run project-reporting-tool generate \
             --project ${{ matrix.project }} \
             --repos-path ./gerrit.${{ matrix.project }}.org \
             --cache \
@@ -383,7 +383,7 @@ for project in "${PROJECTS[@]}"; do
 
   cd /opt/reporting/modern
 
-  uv run gerrit-reporting-tool generate \
+  uv run project-reporting-tool generate \
     --project "$project" \
     --repos-path "./repos/gerrit.${project,,}.org" \
     --cache \
@@ -405,7 +405,7 @@ Run both systems in parallel for 1 week:
 ```bash
 # Generate with both systems
 ./legacy/generate_reports.sh
-./modern/gerrit-reporting-tool generate --project ONAP --repos-path ./repos
+./modern/project-reporting-tool generate --project ONAP --repos-path ./repos
 
 # Compare outputs daily
 bash testing/compare-production.sh \
@@ -505,7 +505,7 @@ open reports/ONAP/report.html  # Manual visual inspection
 
 ```bash
 # Time report generation
-time uv run gerrit-reporting-tool generate \
+time uv run project-reporting-tool generate \
   --project ONAP \
   --repos-path ./gerrit.onap.org \
   --cache \
@@ -519,7 +519,7 @@ time uv run gerrit-reporting-tool generate \
 
 ```bash
 # Monitor during generation
-top -p $(pgrep -f gerrit-reporting-tool)
+top -p $(pgrep -f project-reporting-tool)
 
 # Check disk usage
 du -sh reports/
@@ -604,7 +604,7 @@ Configuration files are backward compatible - no changes needed for rollback.
 export CACHE_ENABLED=true
 
 # Or in command:
-gerrit-reporting-tool generate --project ONAP --cache
+project-reporting-tool generate --project ONAP --cache
 ```
 
 #### Tune Parallelism
@@ -614,7 +614,7 @@ gerrit-reporting-tool generate --project ONAP --cache
 export WORKERS=16  # For 16+ core systems
 
 # Or in command:
-gerrit-reporting-tool generate --project ONAP --workers 16
+project-reporting-tool generate --project ONAP --workers 16
 ```
 
 #### INFO.yaml Configuration
@@ -656,7 +656,7 @@ Update internal documentation to reflect new system:
 
 ```bash
 # Debug command
-uv run gerrit-reporting-tool generate \
+uv run project-reporting-tool generate \
   --project ONAP \
   --repos-path ./gerrit.onap.org \
   --verbose
@@ -690,7 +690,7 @@ cat reports/ONAP/config_resolved.json | jq '.sections'
 
 ```bash
 # Optimized command
-uv run gerrit-reporting-tool generate \
+uv run project-reporting-tool generate \
   --project ONAP \
   --repos-path ./gerrit.onap.org \
   --cache \
@@ -710,7 +710,7 @@ uv run gerrit-reporting-tool generate \
 
 ```bash
 # Debug INFO.yaml
-uv run gerrit-reporting-tool generate \
+uv run project-reporting-tool generate \
   --project ONAP \
   --repos-path ./gerrit.onap.org \
   --verbose 2>&1 | grep -i info.yaml
@@ -812,8 +812,8 @@ uv sync  # or pip install --upgrade .
 ### Support
 
 - **Documentation**: [Complete Index](INDEX.md)
-- **Issues**: [GitHub Issues](https://github.com/modeseven-lfit/gerrit-reporting-tool/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/modeseven-lfit/gerrit-reporting-tool/discussions)
+- **Issues**: [GitHub Issues](https://github.com/modeseven-lfit/project-reporting-tool/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/modeseven-lfit/project-reporting-tool/discussions)
 
 ---
 

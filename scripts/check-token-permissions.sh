@@ -253,7 +253,7 @@ fi
 log_section "📋 Summary & Recommendations"
 echo ""
 
-echo "For the gerrit-reporting-tool, you need:"
+echo "For the project-reporting-tool, you need:"
 echo ""
 echo "1. CLASSIC_READ_ONLY_PAT_TOKEN (for report generation):"
 echo "   Minimum scopes:"

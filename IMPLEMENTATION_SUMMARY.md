@@ -13,7 +13,7 @@ improving detection accuracy.
 
 ## Changes Made
 
-### 1. Core Implementation (`src/gerrit_reporting_tool/features/registry.py`)
+### 1. Core Implementation (`src/project_reporting_tool/features/registry.py`)
 
 **Modified**: `_check_g2g()` method (lines 214-347)
 
@@ -199,7 +199,7 @@ features:
 
 ### Modified
 
-1. `src/gerrit_reporting_tool/features/registry.py` - Core implementation
+1. `src/project_reporting_tool/features/registry.py` - Core implementation
 2. `configuration/opendaylight.yaml` - Updated to use regex pattern
 
 ### Created

@@ -18,8 +18,8 @@ from typing import Any
 import pytest
 
 from domain.info_yaml import ProjectInfo
-from gerrit_reporting_tool.collectors.info_yaml import INFOYamlCollector
-from gerrit_reporting_tool.reporter import RepositoryReporter
+from project_reporting_tool.collectors.info_yaml import INFOYamlCollector
+from project_reporting_tool.reporter import RepositoryReporter
 from rendering.info_yaml_renderer import InfoYamlRenderer
 from rendering.renderer import ModernReportRenderer
 

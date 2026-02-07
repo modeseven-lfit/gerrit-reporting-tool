@@ -615,7 +615,7 @@ def create_info_yaml_cache(
     disk_cache = None
     if enable_disk_cache:
         if cache_dir is None:
-            cache_dir = Path.home() / ".cache" / "gerrit-reporting-tool" / "info-yaml"
+            cache_dir = Path.home() / ".cache" / "project-reporting-tool" / "info-yaml"
         disk_cache = PersistentCache(cache_dir, format="pickle")
 
     return MultiLevelCache(memory_cache, disk_cache)

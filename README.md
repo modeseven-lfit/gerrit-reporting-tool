@@ -14,7 +14,7 @@ jobs, GitHub CI/CD workflows, and development practices across repositories.
 
 ## 🗒️ Published Reports
 
-<https://modeseven-lfit.github.io/gerrit-reporting-tool/>
+<https://modeseven-lfit.github.io/project-reporting-tool/>
 
 ## ⚡ Quick Start
 
@@ -23,7 +23,7 @@ jobs, GitHub CI/CD workflows, and development practices across repositories.
 pip install .
 
 # Generate your first report
-gerrit-reporting-tool generate \
+project-reporting-tool generate \
   --project my-project \
   --repos-path ./repos
 ```text
@@ -91,7 +91,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 uv sync
 
 # Run the tool
-uv run gerrit-reporting-tool generate --project my-project --repos-path ./repos
+uv run project-reporting-tool generate --project my-project --repos-path ./repos
 ```text
 
 ### Using pip
@@ -103,7 +103,7 @@ pip install .
 # Run the tool
 # Note: repos-path should match the directory created by gerrit-clone-action
 # which defaults to the Gerrit server hostname (e.g., ./gerrit.o-ran-sc.org)
-gerrit-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org
+project-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org
 ```text
 
 **→ [Detailed Setup Instructions](SETUP.md)**
@@ -114,11 +114,11 @@ gerrit-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc
 
 | Use Case                    | Command                                                                                                    |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| **Basic report (O-RAN-SC)** | `gerrit-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org`                     |
-| **Basic report (ONAP)**     | `gerrit-reporting-tool generate --project ONAP --repos-path ./gerrit.onap.org`                             |
-| **With caching**            | `gerrit-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org --cache --workers 8` |
-| **Check config**            | `gerrit-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org --dry-run`           |
-| **Get help**                | `gerrit-reporting-tool --help`                                                                             |
+| **Basic report (O-RAN-SC)** | `project-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org`                     |
+| **Basic report (ONAP)**     | `project-reporting-tool generate --project ONAP --repos-path ./gerrit.onap.org`                             |
+| **With caching**            | `project-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org --cache --workers 8` |
+| **Check config**            | `project-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org --dry-run`           |
+| **Get help**                | `project-reporting-tool --help`                                                                             |
 
 > **Note:** The `--repos-path` should point to the directory created by `gerrit-clone-action`, which uses the Gerrit server hostname as the directory name (e.g., `./gerrit.o-ran-sc.org` for O-RAN-SC, `./gerrit.onap.org` for ONAP).
 
@@ -145,7 +145,7 @@ reports/
 ```yaml
 - name: Generate Report
   run: |
-    uv run gerrit-reporting-tool generate \
+    uv run project-reporting-tool generate \
       --project "${{ matrix.project }}" \
       --repos-path "./${{ matrix.server }}" \
       --cache \
@@ -182,7 +182,7 @@ export GITHUB_TOKEN=ghp_your_token_here
 export CLASSIC_READ_ONLY_PAT_TOKEN=ghp_your_token_here
 
 # Then run the tool
-gerrit-reporting-tool generate --project my-project --repos-path ./repos
+project-reporting-tool generate --project my-project --repos-path ./repos
 ```text
 
 **Create token:** <https://github.com/settings/tokens>
@@ -204,7 +204,7 @@ export JENKINS_USER="your-username"
 export JENKINS_API_TOKEN="your-api-token"
 
 # Then run the tool
-gerrit-reporting-tool generate --project my-project --repos-path ./repos
+project-reporting-tool generate --project my-project --repos-path ./repos
 ```
 
 **Create token:** Log into your Jenkins instance → Your Username → Configure → API Token
@@ -237,7 +237,7 @@ gerrit-reporting-tool generate --project my-project --repos-path ./repos
 - ⚡ **Slow?** Add `--cache --workers 8` for parallel processing
 - 🐛 **Issues?** Check [Troubleshooting Guide](docs/TROUBLESHOOTING.md)
 - ❓ **Questions?** See [FAQ](docs/FAQ.md)
-- 📖 **Need help?** Run `gerrit-reporting-tool --help`
+- 📖 **Need help?** Run `project-reporting-tool --help`
 - 🔍 **Developing templates?** Run `python scripts/audit_templates.py` to verify all field accesses
 
 ---
@@ -291,7 +291,7 @@ TEMPLATE FIELD ACCESS AUDIT
 ## 🤝 Support
 
 - **Documentation**: [Complete Index](docs/INDEX.md)
-- **Issues**: [GitHub Issues](https://github.com/modeseven-lfit/gerrit-reporting-tool/issues)
+- **Issues**: [GitHub Issues](https://github.com/modeseven-lfit/project-reporting-tool/issues)
 
 ---
 

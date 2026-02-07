@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-Data aggregators for the gerrit-reporting-tool package.
+Data aggregators for the project-reporting-tool package.
 
 This package contains modules for aggregating repository metrics into
 global summaries including:

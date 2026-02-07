@@ -201,7 +201,7 @@ open/read                       6.1s  (Disk I/O)
 # Test multiple values
 for workers in 4 8 12 16; do
   echo "Testing $workers workers..."
-  time gerrit-reporting-tool generate --config config.json --max-workers $workers
+  time project-reporting-tool generate --config config.json --max-workers $workers
 done
 ```
 
@@ -305,7 +305,7 @@ max_workers = min(num_cpus × 2, num_repos, 16)
 rsync -av /mnt/network/repos/ /tmp/local_repos/
 
 # Run analysis on local copy
-gerrit-reporting-tool generate --repos-path /tmp/local_repos
+project-reporting-tool generate --repos-path /tmp/local_repos
 ```text
 
 **Impact**: 2-5x speedup for network-mounted repos
@@ -593,7 +593,7 @@ Workers | Time (s) | Speedup
 ```bash
 # Copy to local disk first
 rsync -av /nfs/repos/ /tmp/repos/
-gerrit-reporting-tool generate --repos-path /tmp/repos
+project-reporting-tool generate --repos-path /tmp/repos
 ```
 
 **Improved Results**:

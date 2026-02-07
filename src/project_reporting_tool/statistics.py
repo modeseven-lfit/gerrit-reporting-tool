@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-API statistics tracking for the gerrit-reporting-tool package.
+API statistics tracking for the project-reporting-tool package.
 
 This module provides statistics tracking for API calls to external services
 (GitHub, Gerrit, Jenkins) including success/error counts and performance metrics.

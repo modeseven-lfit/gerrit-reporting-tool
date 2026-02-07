@@ -26,10 +26,10 @@ import pytest
 from api.gerrit_client import GerritAPIClient
 from api.github_client import GitHubAPIClient
 from api.jenkins_client import JenkinsAPIClient
-from gerrit_reporting_tool.collectors.git import GitDataCollector
-from gerrit_reporting_tool.features.registry import FeatureRegistry
-from gerrit_reporting_tool.main import APIStatistics
-from gerrit_reporting_tool.reporter import RepositoryReporter
+from project_reporting_tool.collectors.git import GitDataCollector
+from project_reporting_tool.features.registry import FeatureRegistry
+from project_reporting_tool.main import APIStatistics
+from project_reporting_tool.reporter import RepositoryReporter
 
 
 class TestAPIStatisticsWiring:
@@ -104,7 +104,7 @@ class TestAPIStatisticsWiring:
         logger = MagicMock()
         api_stats = APIStatistics()
 
-        with patch("gerrit_reporting_tool.collectors.git.GerritAPIClient") as mock_gerrit:
+        with patch("project_reporting_tool.collectors.git.GerritAPIClient") as mock_gerrit:
             mock_instance = MagicMock()
             mock_gerrit.return_value = mock_instance
             mock_instance.get_all_projects.return_value = {"test-project": {"id": "test-project"}}
@@ -128,7 +128,7 @@ class TestAPIStatisticsWiring:
 
         with (
             patch.dict(os.environ, {"JENKINS_HOST": "jenkins.example.org"}),
-            patch("gerrit_reporting_tool.collectors.git.JenkinsAPIClient") as mock_jenkins,
+            patch("project_reporting_tool.collectors.git.JenkinsAPIClient") as mock_jenkins,
         ):
             mock_instance = MagicMock()
             mock_jenkins.return_value = mock_instance
@@ -154,7 +154,7 @@ class TestAPIStatisticsWiring:
         logger = MagicMock()
         api_stats = APIStatistics()
 
-        with patch("gerrit_reporting_tool.collectors.git.JenkinsAPIClient") as mock_jenkins:
+        with patch("project_reporting_tool.collectors.git.JenkinsAPIClient") as mock_jenkins:
             mock_instance = MagicMock()
             mock_jenkins.return_value = mock_instance
             mock_instance.get_all_jobs.return_value = {"jobs": [{"name": "test-job"}]}
@@ -180,7 +180,7 @@ class TestAPIStatisticsWiring:
 
         with (
             patch.dict(os.environ, {"GITHUB_TOKEN": "fake-token"}),
-            patch("gerrit_reporting_tool.features.registry.GitHubAPIClient") as mock_github,
+            patch("project_reporting_tool.features.registry.GitHubAPIClient") as mock_github,
         ):
             mock_instance = MagicMock()
             mock_github.return_value = mock_instance
@@ -431,7 +431,7 @@ class TestAPIStatisticsGuarantees:
         logger = MagicMock()
 
         # Without api_stats - should log warning or fail
-        with patch("gerrit_reporting_tool.collectors.git.GerritAPIClient") as mock_gerrit:
+        with patch("project_reporting_tool.collectors.git.GerritAPIClient") as mock_gerrit:
             mock_instance = MagicMock()
             mock_gerrit.return_value = mock_instance
             mock_instance.get_all_projects.return_value = {"test-project": {"id": "test-project"}}

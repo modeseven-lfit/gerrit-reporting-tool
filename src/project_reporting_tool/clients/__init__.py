@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-API clients for the gerrit-reporting-tool package.
+API clients for the project-reporting-tool package.
 
 This package contains clients for interacting with external APIs:
 - GitHub API (workflow status, repository information)

@@ -28,13 +28,13 @@ import tempfile
 from pathlib import Path
 from typing import Any, Optional, cast
 
-from gerrit_reporting_tool.aggregators import DataAggregator
-from gerrit_reporting_tool.collectors import GitDataCollector, INFOYamlCollector
-from gerrit_reporting_tool.features import FeatureRegistry
+from project_reporting_tool.aggregators import DataAggregator
+from project_reporting_tool.collectors import GitDataCollector, INFOYamlCollector
+from project_reporting_tool.features import FeatureRegistry
 from rendering.renderer import ModernReportRenderer
 from util.git import safe_git_command
 from util.zip_bundle import create_report_bundle
-from gerrit_reporting_tool.config import save_resolved_config
+from project_reporting_tool.config import save_resolved_config
 
 # Global API statistics (imported from main module)
 

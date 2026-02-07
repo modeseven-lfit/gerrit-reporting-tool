@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-Custom exceptions for the gerrit-reporting-tool package.
+Custom exceptions for the project-reporting-tool package.
 
 This module defines all custom exceptions used throughout the reporting tool,
 providing clear error messages and error handling.

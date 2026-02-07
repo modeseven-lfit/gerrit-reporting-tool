@@ -34,7 +34,7 @@ except ImportError:
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
-from gerrit_reporting_tool.features.registry import FeatureRegistry
+from project_reporting_tool.features.registry import FeatureRegistry
 
 
 class GitHubLanguageAnalyzer:
@@ -51,7 +51,7 @@ class GitHubLanguageAnalyzer:
                 "Authorization": f"Bearer {token}",
                 "Accept": "application/vnd.github+json",
                 "X-GitHub-Api-Version": "2022-11-28",
-                "User-Agent": "gerrit-reporting-tool/compare-languages",
+                "User-Agent": "project-reporting-tool/compare-languages",
             },
         )
         self.logger = logging.getLogger(__name__)

@@ -267,7 +267,7 @@ main() {
         log_info "     cd testing && ./local-testing.sh"
         log_info ""
         log_info "  2. Or generate reports directly:"
-        log_info "     uv run gerrit-reporting-tool generate --project ONAP --repos-path /tmp/gerrit.onap.org"
+        log_info "     uv run project-reporting-tool generate --project ONAP --repos-path /tmp/gerrit.onap.org"
     else
         log_warning "No projects were cloned successfully"
     fi

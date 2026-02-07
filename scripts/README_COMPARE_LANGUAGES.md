@@ -188,7 +188,7 @@ The script will:
 
    ```python
    from pathlib import Path
-   from gerrit_reporting_tool.features.registry import FeatureRegistry
+   from project_reporting_tool.features.registry import FeatureRegistry
    import logging
 
    config = {"features": {"enabled": ["project_types"]}}
@@ -349,7 +349,7 @@ Based on ONAP's architecture, you should see:
 pip install httpx
 ```
 
-### "No module named 'gerrit_reporting_tool'"
+### "No module named 'project_reporting_tool'"
 
 ```bash
 pip install -e .

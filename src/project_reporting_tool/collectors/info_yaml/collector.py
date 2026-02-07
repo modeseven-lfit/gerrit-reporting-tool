@@ -13,9 +13,9 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from domain.info_yaml import LifecycleSummary, ProjectInfo
-from gerrit_reporting_tool.collectors.base import BaseCollector
-from gerrit_reporting_tool.collectors.info_yaml.enricher import InfoYamlEnricher
-from gerrit_reporting_tool.collectors.info_yaml.parser import INFOYamlParser
+from project_reporting_tool.collectors.base import BaseCollector
+from project_reporting_tool.collectors.info_yaml.enricher import InfoYamlEnricher
+from project_reporting_tool.collectors.info_yaml.parser import INFOYamlParser
 
 logger = logging.getLogger(__name__)
 
