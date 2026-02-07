@@ -112,8 +112,8 @@ project-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-s
 
 ## 🎯 Common Use Cases
 
-| Use Case                    | Command                                                                                                    |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Use Case                    | Command                                                                                                     |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Basic report (O-RAN-SC)** | `project-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org`                     |
 | **Basic report (ONAP)**     | `project-reporting-tool generate --project ONAP --repos-path ./gerrit.onap.org`                             |
 | **With caching**            | `project-reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org --cache --workers 8` |

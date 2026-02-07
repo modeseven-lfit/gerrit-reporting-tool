@@ -3,7 +3,9 @@
 
 [codespell]
 # Ignore false positives
-ignore-words-list = caf,nd,ect,edn
+# olt = Optical Line Terminal (LF Broadband project)
+# acordion = LF Broadband project name
+ignore-words-list = caf,nd,ect,edn,olt,acordion
 
 # Skip certain files
 skip = .git,*.pyc,*.pyo,__pycache__,*.egg-info,.tox,.pytest_cache,.mypy_cache,node_modules,venv,.venv,dist,build

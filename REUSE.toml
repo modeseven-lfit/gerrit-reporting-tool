@@ -11,7 +11,7 @@ SPDX-License-Identifier = "Apache-2.0"
 SPDX-FileComment = "Test snapshot data files - syrupy requires version marker as first line"
 
 [[annotations]]
-path = ["src/config/schema.json", "src/themes/**/config.json", ".markdownlint.json", "testing/projects.json", "tests/fixtures/minimal_production_data.json"]
+path = ["tests/fixtures/job_attribution/production_data.json", "src/config/schema.json", "src/themes/**/config.json", ".markdownlint.json", "testing/projects.json", "tests/fixtures/minimal_production_data.json"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2025 The Linux Foundation"
 SPDX-License-Identifier = "Apache-2.0"
