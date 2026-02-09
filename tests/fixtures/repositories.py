@@ -52,6 +52,14 @@ def temp_git_repo(tmp_path):
         capture_output=True,
     )
 
+    # Disable GPG signing to prevent Touch ID/keychain prompts during tests
+    run_git_command_safe(
+        ["git", "config", "commit.gpgsign", "false"],
+        cwd=repo_path,
+        check=True,
+        capture_output=True,
+    )
+
     # Create initial commit so HEAD exists
     readme_file = repo_path / "README.md"
     readme_file.write_text("# Test Repository\n\nInitial commit.\n")
@@ -133,6 +141,14 @@ def create_synthetic_repository(
     )
     run_git_command_safe(
         ["git", "config", "user.email", "test@example.com"],
+        cwd=repo_path,
+        check=True,
+        capture_output=True,
+    )
+
+    # Disable GPG signing to prevent Touch ID/keychain prompts during tests
+    run_git_command_safe(
+        ["git", "config", "commit.gpgsign", "false"],
         cwd=repo_path,
         check=True,
         capture_output=True,
@@ -293,6 +309,14 @@ def create_sparse_time_window_repository(
     )
     run_git_command_safe(
         ["git", "config", "user.email", "test@example.com"],
+        cwd=repo_path,
+        check=True,
+        capture_output=True,
+    )
+
+    # Disable GPG signing to prevent Touch ID/keychain prompts during tests
+    run_git_command_safe(
+        ["git", "config", "commit.gpgsign", "false"],
         cwd=repo_path,
         check=True,
         capture_output=True,
