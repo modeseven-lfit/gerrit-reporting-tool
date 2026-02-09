@@ -656,12 +656,20 @@ class JenkinsAPIClient(BaseAPIClient):
             score = 1000
 
         # =================================================================
-        # PATTERN 2: Prefix match - {project}-* (ONAP, ODL style)
+        # PATTERN 2a: Prefix match - {project}-* (ONAP, ODL style)
         # Example: aai-babel-maven-verify-master matches aai/babel
         # =================================================================
         elif job_name_lower.startswith(project_job_name_lower + "-"):
-            match_type = "prefix"
+            match_type = "prefix_hyphen"
             score = 500
+
+        # =================================================================
+        # PATTERN 2b: Prefix match - {project}_* (LF Broadband style)
+        # Example: bbsim_scale_test matches bbsim
+        # =================================================================
+        elif job_name_lower.startswith(project_job_name_lower + "_"):
+            match_type = "prefix_underscore"
+            score = 490
 
         # =================================================================
         # PATTERN 3: Suffix match with underscore - *_{project}
@@ -684,6 +692,47 @@ class JenkinsAPIClient(BaseAPIClient):
         ):
             match_type = "infix_verify"
             score = 400
+
+        # =================================================================
+        # PATTERN 5: Prefix with common job type prefixes
+        # Example: patchset-voltha-* matches voltha
+        # Example: periodic-voltha-* matches voltha
+        # Example: build-voltha-* matches voltha
+        # =================================================================
+        elif any(
+            job_name_lower.startswith(prefix + project_job_name_lower + "-")
+            or job_name_lower == prefix + project_job_name_lower
+            for prefix in ["patchset-", "periodic-", "build-", "release-", "merge-"]
+        ):
+            match_type = "prefixed_project"
+            score = 380
+
+        # =================================================================
+        # PATTERN 6: Infix with underscore delimiters - *_{project}_*
+        # Example: build_berlin-community-pod-1-gpon_1T8GEM_DT_voltha_master matches voltha
+        # Example: verify_berlin-community-pod-1-gpon-adtran_Default_DT_voltha_master_dmi matches voltha
+        # =================================================================
+        elif "_" + project_job_name_lower + "_" in job_name_lower:
+            match_type = "infix_underscore"
+            score = 350
+
+        # =================================================================
+        # PATTERN 7: Infix with hyphen delimiters - *-{project}-*
+        # Example: patchset-voltha-2.14-multiple-olts matches voltha
+        # Example: periodic-voltha-dt-test-bbsim matches voltha
+        # =================================================================
+        elif "-" + project_job_name_lower + "-" in job_name_lower:
+            match_type = "infix_hyphen"
+            score = 300
+
+        # =================================================================
+        # PATTERN 8: Suffix match with hyphen - *-{project}
+        # Example: onos-app-release matches release (if release is a project)
+        # Example: docker-build-voltha matches voltha
+        # =================================================================
+        elif job_name_lower.endswith("-" + project_job_name_lower):
+            match_type = "suffix_hyphen"
+            score = 250
 
         # =================================================================
         # No match found
