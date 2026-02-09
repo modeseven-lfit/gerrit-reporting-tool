@@ -191,7 +191,7 @@ jobs:
 
       - name: "Clone Gerrit repos for ${{ matrix.project }}"
         # yamllint disable-line rule:line-length
-        uses: lfreleng-actions/gerrit-clone-action@c2b3f2427cabb780ece1d4df425a912abc439b5a  # v1.0.0
+        uses: lfreleng-actions/gerrit-clone-action@61649739a768432a7ceac4203a00f61b9be51345  # v1.0.1
         id: clone
         with:
           host: ${{ matrix.gerrit }}
