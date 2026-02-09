@@ -381,6 +381,68 @@ class TestJobMatchingScore:
         )
         assert score1 == score2
 
+    def test_patchset_prefix_pattern(self, jenkins_client):
+        """Test patchset-{project}-* pattern matches."""
+        score = jenkins_client._calculate_job_match_score(
+            "patchset-voltha-2.14-multiple-olts-openonu-go-test-bbsim", "voltha", "voltha"
+        )
+        assert score > 0, "patchset-voltha-* should match voltha"
+
+    def test_periodic_prefix_pattern(self, jenkins_client):
+        """Test periodic-{project}-* pattern matches."""
+        score = jenkins_client._calculate_job_match_score(
+            "periodic-voltha-dt-test-bbsim-master", "voltha", "voltha"
+        )
+        assert score > 0, "periodic-voltha-* should match voltha"
+
+    def test_infix_underscore_pattern(self, jenkins_client):
+        """Test *_{project}_* pattern matches."""
+        score = jenkins_client._calculate_job_match_score(
+            "build_berlin-community-pod-1-gpon_1T8GEM_DT_voltha_master", "voltha", "voltha"
+        )
+        assert score > 0, "job with _voltha_ in middle should match voltha"
+
+    def test_infix_hyphen_pattern(self, jenkins_client):
+        """Test *-{project}-* pattern matches."""
+        score = jenkins_client._calculate_job_match_score(
+            "periodic-voltha-combined-vgc-multi-olt", "voltha", "voltha"
+        )
+        assert score > 0, "job with -voltha- in middle should match voltha"
+
+    def test_verify_infix_pattern(self, jenkins_client):
+        """Test verify_{project}_* pattern matches."""
+        score = jenkins_client._calculate_job_match_score(
+            "verify_berlin-community-pod-1-gpon-adtran_Default_DT_voltha_master_dmi",
+            "voltha",
+            "voltha",
+        )
+        assert score > 0, "verify job with _voltha_ should match voltha"
+
+    def test_pattern_priority_prefix_over_infix(self, jenkins_client):
+        """Test that prefix patterns score higher than infix patterns."""
+        prefix_score = jenkins_client._calculate_job_match_score(
+            "voltha-scale-measurements-master", "voltha", "voltha"
+        )
+        infix_score = jenkins_client._calculate_job_match_score(
+            "periodic-voltha-test-bbsim", "voltha", "voltha"
+        )
+        assert prefix_score > infix_score, "Prefix match should score higher than infix"
+
+    def test_suffix_hyphen_pattern(self, jenkins_client):
+        """Test *-{project} suffix pattern matches."""
+        score = jenkins_client._calculate_job_match_score("docker-build-voltha", "voltha", "voltha")
+        assert score > 0, "job ending with -voltha should match voltha"
+
+    def test_suffix_underscore_pattern(self, jenkins_client):
+        """Test *_{project} suffix pattern matches."""
+        score = jenkins_client._calculate_job_match_score("docker-publish_bbsim", "bbsim", "bbsim")
+        assert score > 0, "job ending with _bbsim should match bbsim"
+
+    def test_prefix_underscore_pattern(self, jenkins_client):
+        """Test {project}_* prefix pattern matches."""
+        score = jenkins_client._calculate_job_match_score("bbsim_scale_test", "bbsim", "bbsim")
+        assert score > 0, "job starting with bbsim_ should match bbsim"
+
 
 # ============================================================================
 # Test get_job_details
