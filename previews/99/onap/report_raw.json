@@ -1,37 +1,37 @@
 {
   "schema_version": "1.5.0",
-  "generated_at": "2026-02-10T11:42:01.570975+00:00",
+  "generated_at": "2026-02-10T14:19:47.328884+00:00",
   "project": "ONAP",
-  "config_digest": "48d0511c059dda25064af170aedc0f7121520b52d2d8af0d1ab33eaeae056d7f",
-  "script_version": "0.1.dev1+g73dc87041",
+  "config_digest": "dcf259015de7c8325e9676563293d152d1bc127acf024980e05c912b6d910e46",
+  "script_version": "0.1.dev1+g385bb643c",
   "time_windows": {
     "last_30": {
       "days": 30,
-      "start": "2026-01-11T11:42:01.571104+00:00",
-      "end": "2026-02-10T11:42:01.571104+00:00",
-      "start_timestamp": 1768131721.571104,
-      "end_timestamp": 1770723721.571104
+      "start": "2026-01-11T14:19:47.329020+00:00",
+      "end": "2026-02-10T14:19:47.329020+00:00",
+      "start_timestamp": 1768141187.32902,
+      "end_timestamp": 1770733187.32902
     },
     "last_90": {
       "days": 90,
-      "start": "2025-11-12T11:42:01.571104+00:00",
-      "end": "2026-02-10T11:42:01.571104+00:00",
-      "start_timestamp": 1762947721.571104,
-      "end_timestamp": 1770723721.571104
+      "start": "2025-11-12T14:19:47.329020+00:00",
+      "end": "2026-02-10T14:19:47.329020+00:00",
+      "start_timestamp": 1762957187.32902,
+      "end_timestamp": 1770733187.32902
     },
     "last_365": {
       "days": 365,
-      "start": "2025-02-10T11:42:01.571104+00:00",
-      "end": "2026-02-10T11:42:01.571104+00:00",
-      "start_timestamp": 1739187721.571104,
-      "end_timestamp": 1770723721.571104
+      "start": "2025-02-10T14:19:47.329020+00:00",
+      "end": "2026-02-10T14:19:47.329020+00:00",
+      "start_timestamp": 1739197187.32902,
+      "end_timestamp": 1770733187.32902
     },
     "last_3_years": {
       "days": 1095,
-      "start": "2023-02-11T11:42:01.571104+00:00",
-      "end": "2026-02-10T11:42:01.571104+00:00",
-      "start_timestamp": 1676115721.571104,
-      "end_timestamp": 1770723721.571104
+      "start": "2023-02-11T14:19:47.329020+00:00",
+      "end": "2026-02-10T14:19:47.329020+00:00",
+      "start_timestamp": 1676125187.32902,
+      "end_timestamp": 1770733187.32902
     }
   },
   "repositories": [],
@@ -130,7 +130,7 @@
         "repositories": [
           "doc"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/doc/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/doc/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -231,7 +231,7 @@
         "repositories": [
           "integration"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -432,7 +432,7 @@
         "repositories": [
           "integration/ieft-actn-tools"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/ieft-actn-tools/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/ieft-actn-tools/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -533,7 +533,7 @@
         "repositories": [
           "integration/onap-component-simulators"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/onap-component-simulators/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/onap-component-simulators/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -704,7 +704,7 @@
         "repositories": [
           "integration/terragrunt"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/terragrunt/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/terragrunt/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -805,7 +805,7 @@
         "repositories": [
           "integration/docker/onap-java11"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/docker/onap-java11/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/docker/onap-java11/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -926,7 +926,7 @@
         "repositories": [
           "integration/docker/onap-python"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/docker/onap-python/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/docker/onap-python/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -1017,7 +1017,7 @@
         "repositories": [
           "integration/xtesting"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/xtesting/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/xtesting/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -1178,7 +1178,7 @@
         "repositories": [
           "integration/usecases/bbs"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/usecases/bbs/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/usecases/bbs/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -1349,7 +1349,7 @@
         "repositories": [
           "integration/usecases/mdons"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/usecases/mdons/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/usecases/mdons/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -1450,7 +1450,7 @@
         "repositories": [
           "integration/usecases/A1-policy-enforcement"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/usecases/A1-policy-enforcement/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/usecases/A1-policy-enforcement/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -1551,7 +1551,7 @@
         "repositories": [
           "integration/usecases/A1-policy-enforcement-r-apps"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/usecases/A1-policy-enforcement-r-apps/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/usecases/A1-policy-enforcement-r-apps/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -1622,7 +1622,7 @@
         "repositories": [
           "integration/gating"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/gating/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/gating/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -1783,7 +1783,7 @@
         "repositories": [
           "integration/onap-component-simulators"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/simulators/onap-component-simulators/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/simulators/onap-component-simulators/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -1964,7 +1964,7 @@
         "repositories": [
           "integration/simulators/masspnf-simulator"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/simulators/masspnf-simulator/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/simulators/masspnf-simulator/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -2135,7 +2135,7 @@
         "repositories": [
           "integration/simulators/dc-simulator"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/simulators/dc-simulator/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/simulators/dc-simulator/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -2286,7 +2286,7 @@
         "repositories": [
           "integration/simulators/core-nssmf-simulator"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/simulators/core-nssmf-simulator/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/simulators/core-nssmf-simulator/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -2417,7 +2417,7 @@
         "repositories": [
           "integration/simulators/ran-nssmf-simulator"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/simulators/ran-nssmf-simulator/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/simulators/ran-nssmf-simulator/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -2538,7 +2538,7 @@
         "repositories": [
           "integration/simulators/pnf-simulator"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/simulators/pnf-simulator/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/simulators/pnf-simulator/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -2639,7 +2639,7 @@
         "repositories": [
           "integration/simulators/ran-app"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/simulators/ran-app/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/simulators/ran-app/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -2740,7 +2740,7 @@
         "repositories": [
           "integration/simulators/A1-policy-enforcement-simulator"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/simulators/A1-policy-enforcement-simulator/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/simulators/A1-policy-enforcement-simulator/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -2841,7 +2841,7 @@
         "repositories": [
           "integration/simulators/ran-simulator"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/simulators/ran-simulator/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/simulators/ran-simulator/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -2942,7 +2942,7 @@
         "repositories": [
           "integration/simulators/nf-simulator"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/simulators/nf-simulator/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/simulators/nf-simulator/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -3043,7 +3043,7 @@
         "repositories": [
           "integration/simulators/nf-simulator/ves-client"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/simulators/nf-simulator/ves-client/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/simulators/nf-simulator/ves-client/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -3144,7 +3144,7 @@
         "repositories": [
           "integration/simulators/nf-simulator/avcn-manager"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/simulators/nf-simulator/avcn-manager/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/simulators/nf-simulator/avcn-manager/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -3245,7 +3245,7 @@
         "repositories": [
           "integration/simulators/nf-simulator/pm-https-server"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/simulators/nf-simulator/pm-https-server/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/simulators/nf-simulator/pm-https-server/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -3346,7 +3346,7 @@
         "repositories": [
           "integration/simulators/nf-simulator/netconf-server"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/simulators/nf-simulator/netconf-server/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/simulators/nf-simulator/netconf-server/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -3447,7 +3447,7 @@
         "repositories": [
           "integration/simulators/5G-core-nf-simulator"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/simulators/5G-core-nf-simulator/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/simulators/5G-core-nf-simulator/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -3618,7 +3618,7 @@
         "repositories": [
           "integration/terraform"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/terraform/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/terraform/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -3719,7 +3719,7 @@
         "repositories": [
           "integration/python-onapsdk"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/python-onapsdk/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/python-onapsdk/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -3840,7 +3840,7 @@
         "repositories": [
           "integration/seccom"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/seccom/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/seccom/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -3971,7 +3971,7 @@
         "repositories": [
           "integration/ietf-actn-tools"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/ietf-actn-tools/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/ietf-actn-tools/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -4132,7 +4132,7 @@
         "repositories": [
           "integration/pipelines/xtesting-onap"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/pipelines/xtesting-onap/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/pipelines/xtesting-onap/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -4233,7 +4233,7 @@
         "repositories": [
           "integration/pipelines/build-integration"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/pipelines/build-integration/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/pipelines/build-integration/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -4334,7 +4334,7 @@
         "repositories": [
           "integration/pipelines/chained-ci"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/pipelines/chained-ci/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/pipelines/chained-ci/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -4495,7 +4495,7 @@
         "repositories": [
           "integration/pipelines/oom-automatic-installation"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/pipelines/oom-automatic-installation/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/pipelines/oom-automatic-installation/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -4596,7 +4596,7 @@
         "repositories": [
           "integration/csit"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/csit/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/csit/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -4697,7 +4697,7 @@
         "repositories": [
           "integration/data-provider"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/integration/data-provider/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/integration/data-provider/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -4838,7 +4838,7 @@
         "repositories": [
           "ci-management"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ci-management/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ci-management/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -4929,7 +4929,7 @@
         "repositories": [
           "msb/apigateway"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/msb/apigateway/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/msb/apigateway/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -5020,7 +5020,7 @@
         "repositories": [
           "msb/service-mesh"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/msb/service-mesh/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/msb/service-mesh/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -5111,7 +5111,7 @@
         "repositories": [
           "msb/java-sdk"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/msb/java-sdk/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/msb/java-sdk/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -5202,7 +5202,7 @@
         "repositories": [
           "msb/discovery"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/msb/discovery/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/msb/discovery/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -5293,7 +5293,7 @@
         "repositories": [
           "msb/swagger-sdk"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/msb/swagger-sdk/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/msb/swagger-sdk/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -5374,7 +5374,7 @@
         "repositories": [
           "cps"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/cps/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/cps/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -5415,7 +5415,7 @@
         "repositories": [
           "cps/cps-temporal"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/cps/cps-temporal/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/cps/cps-temporal/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -5456,7 +5456,7 @@
         "repositories": [
           "cps/cps-tbdmt"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/cps/cps-tbdmt/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/cps/cps-tbdmt/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -5537,7 +5537,7 @@
         "repositories": [
           "cps/ncmp-dmi-plugin"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/cps/ncmp-dmi-plugin/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/cps/ncmp-dmi-plugin/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -5658,7 +5658,7 @@
         "repositories": [
           "logging-analytics"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/logging-analytics/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/logging-analytics/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -5745,7 +5745,7 @@
           "logging-analytics-pomba-pomba-sdc-context-builder",
           "logging-analytics-pomba-pomba-sdnc-context-builder"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/logging-analytics/pomba/pomba-sdc-context-builder/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/logging-analytics/pomba/pomba-sdc-context-builder/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -5832,7 +5832,7 @@
           "logging-analytics-pomba-pomba-sdc-context-builder",
           "logging-analytics-pomba-pomba-sdnc-context-builder"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/logging-analytics/pomba/pomba-audit-common/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/logging-analytics/pomba/pomba-audit-common/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -5919,7 +5919,7 @@
           "logging-analytics-pomba-pomba-sdc-context-builder",
           "logging-analytics-pomba-pomba-sdnc-context-builder"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/logging-analytics/pomba/pomba-sdnc-context-builder/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/logging-analytics/pomba/pomba-sdnc-context-builder/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -6006,7 +6006,7 @@
           "logging-analytics-pomba-pomba-sdc-context-builder",
           "logging-analytics-pomba-pomba-sdnc-context-builder"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/logging-analytics/pomba/pomba-aai-context-builder/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/logging-analytics/pomba/pomba-aai-context-builder/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -6093,7 +6093,7 @@
           "logging-analytics-pomba-pomba-sdc-context-builder",
           "logging-analytics-pomba-pomba-sdnc-context-builder"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/logging-analytics/pomba/pomba-network-discovery-context-builder/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/logging-analytics/pomba/pomba-network-discovery-context-builder/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -6180,7 +6180,7 @@
           "logging-analytics-pomba-pomba-sdc-context-builder",
           "logging-analytics-pomba-pomba-sdnc-context-builder"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/logging-analytics/pomba/pomba-context-aggregator/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/logging-analytics/pomba/pomba-context-aggregator/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -6261,7 +6261,7 @@
         "repositories": [
           "sdc"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdc/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdc/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -6402,7 +6402,7 @@
         "repositories": [
           "sdc/sdc-helm-validator"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdc/sdc-helm-validator/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdc/sdc-helm-validator/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -6483,7 +6483,7 @@
         "repositories": [
           "sdc/sdc-pubsub"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdc/sdc-pubsub/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdc/sdc-pubsub/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -6564,7 +6564,7 @@
         "repositories": [
           "sdc/sdc-tosca"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdc/sdc-tosca/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdc/sdc-tosca/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -6645,7 +6645,7 @@
         "repositories": [
           "sdc/sdc-be-common"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdc/sdc-be-common/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdc/sdc-be-common/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -6726,7 +6726,7 @@
         "repositories": [
           "sdc/onap-ui-angular"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdc/onap-ui-angular/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdc/onap-ui-angular/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -6807,7 +6807,7 @@
         "repositories": [
           "sdc/sdc-distribution-client"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdc/sdc-distribution-client/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdc/sdc-distribution-client/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -6888,7 +6888,7 @@
         "repositories": [
           "sdc/onap-ui-common"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdc/onap-ui-common/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdc/onap-ui-common/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -6989,7 +6989,7 @@
         "repositories": [
           "sdc/dcae-d/dt-be-main"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdc/dcae-d/dt-be-main/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdc/dcae-d/dt-be-main/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -7090,7 +7090,7 @@
         "repositories": [
           "sdc/dcae-d/dt"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdc/dcae-d/dt/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdc/dcae-d/dt/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -7191,7 +7191,7 @@
         "repositories": [
           "sdc/dcae-d/ci"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdc/dcae-d/ci/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdc/dcae-d/ci/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -7292,7 +7292,7 @@
         "repositories": [
           "sdc/dcae-d/dt-be-property"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdc/dcae-d/dt-be-property/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdc/dcae-d/dt-be-property/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -7373,7 +7373,7 @@
         "repositories": [
           "sdc/sdc-workflow-designer"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdc/sdc-workflow-designer/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdc/sdc-workflow-designer/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -7444,7 +7444,7 @@
         "repositories": [
           "sdc/sdc-docker-base"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdc/sdc-docker-base/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdc/sdc-docker-base/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -7505,7 +7505,7 @@
         "repositories": [
           "ccsdk/dashboard"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ccsdk/dashboard/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ccsdk/dashboard/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -7576,7 +7576,7 @@
         "repositories": [
           "ccsdk/utils"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ccsdk/utils/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ccsdk/utils/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -7667,7 +7667,7 @@
         "repositories": [
           "ccsdk/sli"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ccsdk/sli/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ccsdk/sli/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -7778,7 +7778,7 @@
         "repositories": [
           "ccsdk/sli/plugins"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ccsdk/sli/plugins/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ccsdk/sli/plugins/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -7889,7 +7889,7 @@
         "repositories": [
           "ccsdk/sli/core"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ccsdk/sli/core/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ccsdk/sli/core/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -8000,7 +8000,7 @@
         "repositories": [
           "ccsdk/sli/adaptors"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ccsdk/sli/adaptors/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ccsdk/sli/adaptors/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -8111,7 +8111,7 @@
         "repositories": [
           "ccsdk/sli/northbound"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ccsdk/sli/northbound/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ccsdk/sli/northbound/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -8202,7 +8202,7 @@
         "repositories": [
           "ccsdk/apps"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ccsdk/apps/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ccsdk/apps/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -8303,7 +8303,7 @@
         "repositories": [
           "ccsdk/oran"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ccsdk/oran/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ccsdk/oran/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -8394,7 +8394,7 @@
         "repositories": [
           "ccsdk/distribution"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ccsdk/distribution/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ccsdk/distribution/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -8485,7 +8485,7 @@
         "repositories": [
           "ccsdk/cds"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ccsdk/cds/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ccsdk/cds/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -8556,7 +8556,7 @@
         "repositories": [
           "ccsdk/platform/plugins"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ccsdk/platform/plugins/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ccsdk/platform/plugins/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -8647,7 +8647,7 @@
         "repositories": [
           "ccsdk/odl-legacy"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ccsdk/odl-legacy/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ccsdk/odl-legacy/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -8748,7 +8748,7 @@
         "repositories": [
           "ccsdk/parent"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ccsdk/parent/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ccsdk/parent/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -8839,7 +8839,7 @@
         "repositories": [
           "ccsdk/features"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/ccsdk/features/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/ccsdk/features/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -8920,7 +8920,7 @@
         "repositories": [
           "clamp"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/clamp/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/clamp/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -9001,7 +9001,7 @@
         "repositories": [
           "clamp/dashboard"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/clamp/dashboard/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/clamp/dashboard/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -9082,7 +9082,7 @@
         "repositories": [
           "clamp/ui"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/clamp/ui/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/clamp/ui/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -9213,7 +9213,7 @@
         "repositories": [
           ".github"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/.github/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/.github/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -9304,7 +9304,7 @@
         "repositories": [
           "music/distributed-kv-store"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/music/distributed-kv-store/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/music/distributed-kv-store/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -9375,7 +9375,7 @@
         "repositories": [
           "portal"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/portal/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/portal/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -9446,7 +9446,7 @@
         "repositories": [
           "portal/sdk"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/portal/sdk/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/portal/sdk/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -9557,7 +9557,7 @@
         "repositories": [
           "optf/cmso"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/optf/cmso/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/optf/cmso/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -9668,7 +9668,7 @@
         "repositories": [
           "optf/fgps"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/optf/fgps/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/optf/fgps/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -9759,7 +9759,7 @@
         "repositories": [
           "optf/osdf"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/optf/osdf/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/optf/osdf/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -9850,7 +9850,7 @@
         "repositories": [
           "optf/has"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/optf/has/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/optf/has/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -9931,7 +9931,7 @@
         "repositories": [
           "aai/data-router"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/data-router/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/data-router/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -10012,7 +10012,7 @@
         "repositories": [
           "aai/rest-client"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/rest-client/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/rest-client/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -10073,7 +10073,7 @@
         "repositories": [
           "aai/schema-service"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/schema-service/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/schema-service/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -10134,7 +10134,7 @@
         "repositories": [
           "aai/sparky-fe"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/sparky-fe/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/sparky-fe/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -10215,7 +10215,7 @@
         "repositories": [
           "aai/logging-service"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/logging-service/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/logging-service/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -10306,7 +10306,7 @@
         "repositories": [
           "aai/graphgraph"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/graphgraph/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/graphgraph/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -10387,7 +10387,7 @@
         "repositories": [
           "aai/search-data-service"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/search-data-service/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/search-data-service/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -10468,7 +10468,7 @@
         "repositories": [
           "aai/resources"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/resources/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/resources/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -10549,7 +10549,7 @@
         "repositories": [
           "aai/model-loader"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/model-loader/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/model-loader/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -10630,7 +10630,7 @@
         "repositories": [
           "aai/babel"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/babel/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/babel/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -10701,7 +10701,7 @@
         "repositories": [
           "aai/test-config"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/test-config/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/test-config/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -10782,7 +10782,7 @@
         "repositories": [
           "aai/aai-common"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/aai-common/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/aai-common/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -10863,7 +10863,7 @@
         "repositories": [
           "aai/sparky-be"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/sparky-be/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/sparky-be/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -10944,7 +10944,7 @@
         "repositories": [
           "aai/traversal"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/traversal/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/traversal/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -11015,7 +11015,7 @@
         "repositories": [
           "aai/event-client"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/event-client/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/event-client/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -11086,7 +11086,7 @@
         "repositories": [
           "aai/validation"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/validation/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/validation/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -11157,7 +11157,7 @@
         "repositories": [
           "aai/router-core"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/router-core/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/router-core/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -11238,7 +11238,7 @@
         "repositories": [
           "aai/graphadmin"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/graphadmin/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/graphadmin/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -11309,7 +11309,7 @@
         "repositories": [
           "aai/cacher"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aai/cacher/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aai/cacher/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -11400,7 +11400,7 @@
         "repositories": [
           "externalapi/nbi"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/externalapi/nbi/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/externalapi/nbi/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -11451,7 +11451,7 @@
         "repositories": [
           "cli"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/cli/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/cli/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -11612,7 +11612,7 @@
         "repositories": [
           "vnfsdk/pkgtools"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vnfsdk/pkgtools/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vnfsdk/pkgtools/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -11783,7 +11783,7 @@
         "repositories": [
           "vnfsdk/model"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vnfsdk/model/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vnfsdk/model/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -11894,7 +11894,7 @@
         "repositories": [
           "vnfsdk/refrepo"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vnfsdk/refrepo/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vnfsdk/refrepo/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -12045,7 +12045,7 @@
         "repositories": [
           "vnfsdk/ves-agent"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vnfsdk/ves-agent/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vnfsdk/ves-agent/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -12196,7 +12196,7 @@
         "repositories": [
           "vnfsdk/functest"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vnfsdk/functest/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vnfsdk/functest/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -12367,7 +12367,7 @@
         "repositories": [
           "vnfsdk/validation"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vnfsdk/validation/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vnfsdk/validation/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -12438,7 +12438,7 @@
         "repositories": [
           "vvp/documentation"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vvp/documentation/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vvp/documentation/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -12509,7 +12509,7 @@
         "repositories": [
           "vvp/validation-scripts"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vvp/validation-scripts/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vvp/validation-scripts/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -12570,7 +12570,7 @@
         "repositories": [
           "vvp/test-engine"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vvp/test-engine/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vvp/test-engine/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -12641,7 +12641,7 @@
         "repositories": [
           "vvp/regression-tests"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vvp/regression-tests/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vvp/regression-tests/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -12712,7 +12712,7 @@
         "repositories": [
           "vvp/engagementmgr"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vvp/engagementmgr/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vvp/engagementmgr/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -12783,7 +12783,7 @@
         "repositories": [
           "vvp/oom"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vvp/oom/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vvp/oom/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -12844,7 +12844,7 @@
         "repositories": [
           "aaf/certservice"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aaf/certservice/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aaf/certservice/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -12955,7 +12955,7 @@
         "repositories": [
           "aaf/cadi"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aaf/cadi/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aaf/cadi/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -13046,7 +13046,7 @@
         "repositories": [
           "aaf/authz"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aaf/authz/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aaf/authz/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -13157,7 +13157,7 @@
         "repositories": [
           "aaf/sms"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aaf/sms/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aaf/sms/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -13268,7 +13268,7 @@
         "repositories": [
           "aaf/luaplugin"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/aaf/luaplugin/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/aaf/luaplugin/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -13379,7 +13379,7 @@
         "repositories": [
           "oparent"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/oparent/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/oparent/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -13440,7 +13440,7 @@
         "repositories": [
           "sdnc/apps"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdnc/apps/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdnc/apps/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -13501,7 +13501,7 @@
         "repositories": [
           "sdnc/oam"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdnc/oam/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdnc/oam/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -13562,7 +13562,7 @@
         "repositories": [
           "sdnc/northbound"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/sdnc/northbound/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/sdnc/northbound/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -13673,7 +13673,7 @@
         "repositories": [
           "so"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/so/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/so/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -13774,7 +13774,7 @@
         "repositories": [
           "so/so-etsi-nfvo"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/so/so-etsi-nfvo/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/so/so-etsi-nfvo/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -13875,7 +13875,7 @@
         "repositories": [
           "so/adapters/so-nssmf-adapter"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/so/adapters/so-nssmf-adapter/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/so/adapters/so-nssmf-adapter/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -13976,7 +13976,7 @@
         "repositories": [
           "so/adapters/so-etsi-sol003-adapter"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/so/adapters/so-etsi-sol003-adapter/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/so/adapters/so-etsi-sol003-adapter/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -14077,7 +14077,7 @@
         "repositories": [
           "so/adapters/so-oof-adapter"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/so/adapters/so-oof-adapter/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/so/adapters/so-oof-adapter/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -14178,7 +14178,7 @@
         "repositories": [
           "so/adapters/so-etsi-sol005-adapter"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/so/adapters/so-etsi-sol005-adapter/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/so/adapters/so-etsi-sol005-adapter/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -14279,7 +14279,7 @@
         "repositories": [
           "so/adapters/so-cnf-adapter"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/so/adapters/so-cnf-adapter/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/so/adapters/so-cnf-adapter/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -14380,7 +14380,7 @@
         "repositories": [
           "so/so-admin-cockpit"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/so/so-admin-cockpit/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/so/so-admin-cockpit/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -14481,7 +14481,7 @@
         "repositories": [
           "so/libs"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/so/libs/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/so/libs/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -14572,7 +14572,7 @@
         "repositories": [
           "usecase-ui"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/usecase-ui/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/usecase-ui/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -14633,7 +14633,7 @@
         "repositories": [
           "usecase-ui/nlp"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/usecase-ui/nlp/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/usecase-ui/nlp/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -14724,7 +14724,7 @@
         "repositories": [
           "usecase-ui/server"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/usecase-ui/server/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/usecase-ui/server/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -14785,7 +14785,7 @@
         "repositories": [
           "usecase-ui/intent-analysis"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/usecase-ui/intent-analysis/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/usecase-ui/intent-analysis/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -14836,7 +14836,7 @@
         "repositories": [
           "usecase-ui/llm-adaptation"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/usecase-ui/llm-adaptation/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/usecase-ui/llm-adaptation/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -14957,7 +14957,7 @@
         "repositories": [
           "vfc/nfvo/db"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vfc/nfvo/db/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vfc/nfvo/db/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -15218,7 +15218,7 @@
         "repositories": [
           "vfc/nfvo/driver/ems"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vfc/nfvo/driver/ems/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vfc/nfvo/driver/ems/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -15339,7 +15339,7 @@
         "repositories": [
           "vfc/nfvo/driver/vnfm/gvnfm"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vfc/nfvo/driver/vnfm/gvnfm/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vfc/nfvo/driver/vnfm/gvnfm/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -15460,7 +15460,7 @@
         "repositories": [
           "vfc/nfvo/driver/vnfm/svnfm"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vfc/nfvo/driver/vnfm/svnfm/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vfc/nfvo/driver/vnfm/svnfm/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -15581,7 +15581,7 @@
         "repositories": [
           "vfc/nfvo/driver/sfc"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vfc/nfvo/driver/sfc/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vfc/nfvo/driver/sfc/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -15842,7 +15842,7 @@
         "repositories": [
           "vfc/nfvo/wfengine"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vfc/nfvo/wfengine/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vfc/nfvo/wfengine/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -16103,7 +16103,7 @@
         "repositories": [
           "vfc/nfvo/multivimproxy"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vfc/nfvo/multivimproxy/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vfc/nfvo/multivimproxy/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -16224,7 +16224,7 @@
         "repositories": [
           "vfc/nfvo/resmanagement"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vfc/nfvo/resmanagement/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vfc/nfvo/resmanagement/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -16485,7 +16485,7 @@
         "repositories": [
           "vfc/nfvo/catalog"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vfc/nfvo/catalog/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vfc/nfvo/catalog/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -16606,7 +16606,7 @@
         "repositories": [
           "vfc/nfvo/lcm"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vfc/nfvo/lcm/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vfc/nfvo/lcm/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -16727,7 +16727,7 @@
         "repositories": [
           "vfc/gvnfm/vnflcm"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vfc/gvnfm/vnflcm/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vfc/gvnfm/vnflcm/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -16848,7 +16848,7 @@
         "repositories": [
           "vfc/gvnfm/vnfmgr"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vfc/gvnfm/vnfmgr/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vfc/gvnfm/vnfmgr/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -16969,7 +16969,7 @@
         "repositories": [
           "vfc/gvnfm/vnfres"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vfc/gvnfm/vnfres/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vfc/gvnfm/vnfres/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -17090,7 +17090,7 @@
         "repositories": [
           "vfc/oom"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vfc/oom/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vfc/oom/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -17171,7 +17171,7 @@
         "repositories": [
           "vnfrqts/usecases"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vnfrqts/usecases/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vnfrqts/usecases/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -17252,7 +17252,7 @@
         "repositories": [
           "vnfrqts/testcases"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vnfrqts/testcases/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vnfrqts/testcases/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -17333,7 +17333,7 @@
         "repositories": [
           "vnfrqts/guidelines"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vnfrqts/guidelines/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vnfrqts/guidelines/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -17414,7 +17414,7 @@
         "repositories": [
           "vnfrqts/requirements"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vnfrqts/requirements/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vnfrqts/requirements/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -17495,7 +17495,7 @@
         "repositories": [
           "vnfrqts/epics"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vnfrqts/epics/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vnfrqts/epics/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -17586,7 +17586,7 @@
         "repositories": [
           "testsuite"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/testsuite/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/testsuite/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -17677,7 +17677,7 @@
         "repositories": [
           "testsuite/python-testing-utils"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/testsuite/python-testing-utils/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/testsuite/python-testing-utils/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -17858,7 +17858,7 @@
         "repositories": [
           "testsuite/cds-mock-ssh"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/testsuite/cds-mock-ssh/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/testsuite/cds-mock-ssh/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -17969,7 +17969,7 @@
         "repositories": [
           "testsuite/cds"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/testsuite/cds/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/testsuite/cds/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -18070,7 +18070,7 @@
         "repositories": [
           "testsuite/pythonsdk-tests"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/testsuite/pythonsdk-tests/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/testsuite/pythonsdk-tests/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -18161,7 +18161,7 @@
         "repositories": [
           "testsuite/robot-utils"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/testsuite/robot-utils/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/testsuite/robot-utils/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -18272,7 +18272,7 @@
         "repositories": [
           "testsuite/cds-mock-odl"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/testsuite/cds-mock-odl/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/testsuite/cds-mock-odl/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -18453,7 +18453,7 @@
         "repositories": [
           "testsuite/cds-mock-server"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/testsuite/cds-mock-server/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/testsuite/cds-mock-server/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -18604,7 +18604,7 @@
         "repositories": [
           "testsuite/heatbridge"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/testsuite/heatbridge/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/testsuite/heatbridge/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -18695,7 +18695,7 @@
         "repositories": [
           "dcaegen2"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -18786,7 +18786,7 @@
         "repositories": [
           "dcaegen2/utils"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/utils/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/utils/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -18877,7 +18877,7 @@
         "repositories": [
           "dcaegen2/services"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/services/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/services/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -18968,7 +18968,7 @@
         "repositories": [
           "dcaegen2/services/heartbeat"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/services/heartbeat/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/services/heartbeat/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -19059,7 +19059,7 @@
         "repositories": [
           "dcaegen2/services/prh"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/services/prh/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/services/prh/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -19150,7 +19150,7 @@
         "repositories": [
           "dcaegen2/services/mapper"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/services/mapper/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/services/mapper/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -19241,7 +19241,7 @@
         "repositories": [
           "dcaegen2/services/son-handler"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/services/son-handler/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/services/son-handler/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -19332,7 +19332,7 @@
         "repositories": [
           "dcaegen2/services/sdk"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/services/sdk/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/services/sdk/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -19423,7 +19423,7 @@
         "repositories": [
           "dcaegen2/services/pm-mapper"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/services/pm-mapper/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/services/pm-mapper/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -19514,7 +19514,7 @@
         "repositories": [
           "dcaegen2/deployments"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/deployments/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/deployments/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -19605,7 +19605,7 @@
         "repositories": [
           "dcaegen2/platform"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/platform/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/platform/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -19706,7 +19706,7 @@
         "repositories": [
           "dcaegen2/platform/configbinding"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/platform/configbinding/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/platform/configbinding/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -19797,7 +19797,7 @@
         "repositories": [
           "dcaegen2/platform/policy-handler"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/platform/policy-handler/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/platform/policy-handler/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -19888,7 +19888,7 @@
         "repositories": [
           "dcaegen2/platform/deployment-handler"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/platform/deployment-handler/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/platform/deployment-handler/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -19979,7 +19979,7 @@
         "repositories": [
           "dcaegen2/platform/ves-openapi-manager"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/platform/ves-openapi-manager/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/platform/ves-openapi-manager/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -20070,7 +20070,7 @@
         "repositories": [
           "dcaegen2/platform/blueprints"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/platform/blueprints/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/platform/blueprints/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -20181,7 +20181,7 @@
         "repositories": [
           "dcaegen2/platform/cli"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/platform/cli/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/platform/cli/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -20272,7 +20272,7 @@
         "repositories": [
           "dcaegen2/platform/inventory-api"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/platform/inventory-api/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/platform/inventory-api/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -20363,7 +20363,7 @@
         "repositories": [
           "dcaegen2/platform/servicechange-handler"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/platform/servicechange-handler/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/platform/servicechange-handler/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -20464,7 +20464,7 @@
         "repositories": [
           "dcaegen2/platform/plugins"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/platform/plugins/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/platform/plugins/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -20555,7 +20555,7 @@
         "repositories": [
           "dcaegen2/collectors"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/collectors/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/collectors/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -20646,7 +20646,7 @@
         "repositories": [
           "dcaegen2/collectors/snmptrap"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/collectors/snmptrap/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/collectors/snmptrap/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -20737,7 +20737,7 @@
         "repositories": [
           "dcaegen2/collectors/hv-ves"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/collectors/hv-ves/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/collectors/hv-ves/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -20828,7 +20828,7 @@
         "repositories": [
           "dcaegen2/collectors/restconf"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/collectors/restconf/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/collectors/restconf/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -20919,7 +20919,7 @@
         "repositories": [
           "dcaegen2/collectors/ves"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/collectors/ves/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/collectors/ves/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -21010,7 +21010,7 @@
         "repositories": [
           "dcaegen2/collectors/datafile"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/collectors/datafile/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/collectors/datafile/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -21101,7 +21101,7 @@
         "repositories": [
           "dcaegen2/analytics"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/analytics/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/analytics/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -21192,7 +21192,7 @@
         "repositories": [
           "dcaegen2/analytics/tca-gen2"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/analytics/tca-gen2/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/analytics/tca-gen2/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -21283,7 +21283,7 @@
         "repositories": [
           "dcaegen2/analytics/pnda"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/analytics/pnda/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/analytics/pnda/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -21374,7 +21374,7 @@
         "repositories": [
           "dcaegen2/analytics/flink"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/analytics/flink/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/analytics/flink/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -21455,7 +21455,7 @@
         "repositories": [
           "dcaegen2/analytics/tca"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dcaegen2/analytics/tca/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dcaegen2/analytics/tca/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -21576,7 +21576,7 @@
         "repositories": [
           "oom"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/oom/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/oom/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -21707,7 +21707,7 @@
         "repositories": [
           "oom/utils"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/oom/utils/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/oom/utils/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -21848,7 +21848,7 @@
         "repositories": [
           "oom/offline-installer"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/oom/offline-installer/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/oom/offline-installer/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -21979,7 +21979,7 @@
         "repositories": [
           "oom/platform/cert-service"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/oom/platform/cert-service/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/oom/platform/cert-service/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -22090,7 +22090,7 @@
         "repositories": [
           "oom/platform/keycloak"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/oom/platform/keycloak/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/oom/platform/keycloak/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -22161,7 +22161,7 @@
         "repositories": [
           "oom/platform/cert-manager"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/oom/platform/cert-manager/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/oom/platform/cert-manager/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -22272,7 +22272,7 @@
         "repositories": [
           "oom/consul"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/oom/consul/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/oom/consul/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -22363,7 +22363,7 @@
         "repositories": [
           "oom/registrator"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/oom/registrator/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/oom/registrator/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -22474,7 +22474,7 @@
         "repositories": [
           "oom/readiness"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/oom/readiness/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/oom/readiness/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -22535,7 +22535,7 @@
         "repositories": [
           "modeling/etsicatalog"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/modeling/etsicatalog/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/modeling/etsicatalog/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -22586,7 +22586,7 @@
         "repositories": [
           "modeling-genericparser"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/modeling/genericparser/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/modeling/genericparser/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -22647,7 +22647,7 @@
         "repositories": [
           "modeling/yang-kit"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/modeling/yang-kit/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/modeling/yang-kit/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -22758,7 +22758,7 @@
         "repositories": [
           "policy/api"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/policy/api/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/policy/api/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -22869,7 +22869,7 @@
         "repositories": [
           "policy/drools-pdp"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/policy/drools-pdp/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/policy/drools-pdp/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -22980,7 +22980,7 @@
         "repositories": [
           "policy/models"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/policy/models/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/policy/models/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -23091,7 +23091,7 @@
         "repositories": [
           "policy/clamp"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/policy/clamp/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/policy/clamp/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -23202,7 +23202,7 @@
         "repositories": [
           "policy/distribution"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/policy/distribution/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/policy/distribution/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -23313,7 +23313,7 @@
         "repositories": [
           "policy/docker"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/policy/docker/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/policy/docker/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -23424,7 +23424,7 @@
         "repositories": [
           "policy/drools-applications"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/policy/drools-applications/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/policy/drools-applications/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -23525,7 +23525,7 @@
         "repositories": [
           "policy/opa-pdp"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/policy/opa-pdp/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/policy/opa-pdp/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -23636,7 +23636,7 @@
         "repositories": [
           "policy/pap"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/policy/pap/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/policy/pap/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -23737,7 +23737,7 @@
         "repositories": [
           "policy/common"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/policy/common/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/policy/common/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -23848,7 +23848,7 @@
         "repositories": [
           "policy/apex-pdp"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/policy/apex-pdp/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/policy/apex-pdp/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -23939,7 +23939,7 @@
         "repositories": [
           "policy/oom"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/policy/oom/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/policy/oom/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -24050,7 +24050,7 @@
         "repositories": [
           "policy/parent"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/policy/parent/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/policy/parent/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -24141,7 +24141,7 @@
         "repositories": [
           "policy/gui"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/policy/gui/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/policy/gui/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -24252,7 +24252,7 @@
         "repositories": [
           "policy/xacml-pdp"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/policy/xacml-pdp/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/policy/xacml-pdp/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -24343,7 +24343,7 @@
         "repositories": [
           "portal-ng"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/portal-ng/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/portal-ng/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -24434,7 +24434,7 @@
         "repositories": [
           "portal-ng/preferences"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/portal-ng/preferences/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/portal-ng/preferences/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -24525,7 +24525,7 @@
         "repositories": [
           "portal-ng/e2e"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/portal-ng/e2e/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/portal-ng/e2e/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -24616,7 +24616,7 @@
         "repositories": [
           "portal-ng/ui"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/portal-ng/ui/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/portal-ng/ui/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -24707,7 +24707,7 @@
         "repositories": [
           "portal-ng/bff"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/portal-ng/bff/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/portal-ng/bff/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -24798,7 +24798,7 @@
         "repositories": [
           "portal-ng/history"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/portal-ng/history/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/portal-ng/history/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -24859,7 +24859,7 @@
         "repositories": [
           "appc"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/appc/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/appc/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -24920,7 +24920,7 @@
         "repositories": [
           "appc/cdt"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/appc/cdt/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/appc/cdt/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -24981,7 +24981,7 @@
         "repositories": [
           "appc/deployment"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/appc/deployment/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/appc/deployment/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25042,7 +25042,7 @@
         "repositories": [
           "appc/parent"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/appc/parent/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/appc/parent/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25103,7 +25103,7 @@
         "repositories": [
           "dmaap/messagerouter/dmaapclient"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dmaap/messagerouter/dmaapclient/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dmaap/messagerouter/dmaapclient/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25164,7 +25164,7 @@
         "repositories": [
           "dmaap/messagerouter/messageservice"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dmaap/messagerouter/messageservice/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dmaap/messagerouter/messageservice/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25225,7 +25225,7 @@
         "repositories": [
           "dmaap/messagerouter/mirroragent"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dmaap/messagerouter/mirroragent/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dmaap/messagerouter/mirroragent/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25286,7 +25286,7 @@
         "repositories": [
           "dmaap/messagerouter/msgrtr"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dmaap/messagerouter/msgrtr/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dmaap/messagerouter/msgrtr/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25347,7 +25347,7 @@
         "repositories": [
           "dmaap/kafka11aaf"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dmaap/kafka11aaf/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dmaap/kafka11aaf/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25408,7 +25408,7 @@
         "repositories": [
           "dmaap/dbcapi"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dmaap/dbcapi/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dmaap/dbcapi/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25469,7 +25469,7 @@
         "repositories": [
           "dmaap/zookeeper"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dmaap/zookeeper/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dmaap/zookeeper/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25530,7 +25530,7 @@
         "repositories": [
           "dmaap/datarouter"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dmaap/datarouter/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dmaap/datarouter/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25591,7 +25591,7 @@
         "repositories": [
           "dmaap/buscontroller"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/dmaap/buscontroller/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/dmaap/buscontroller/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25682,7 +25682,7 @@
         "repositories": [
           "demo"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/demo/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/demo/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25763,7 +25763,7 @@
         "repositories": [
           "vid"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/vid/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/vid/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25814,7 +25814,7 @@
         "repositories": [
           "holmes/engine-management"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/holmes/engine-management/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/holmes/engine-management/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25865,7 +25865,7 @@
         "repositories": [
           "holmes/rule-management"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/holmes/rule-management/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/holmes/rule-management/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25916,7 +25916,7 @@
         "repositories": [
           "holmes/common"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/holmes/common/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/holmes/common/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -25977,7 +25977,7 @@
         "repositories": [
           "relman"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/relman/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/relman/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -26078,7 +26078,7 @@
         "repositories": [
           "multicloud"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/multicloud/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/multicloud/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -26179,7 +26179,7 @@
         "repositories": [
           "multicloud/framework"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/multicloud/framework/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/multicloud/framework/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -26280,7 +26280,7 @@
         "repositories": [
           "multicloud/azure"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/multicloud/azure/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/multicloud/azure/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -26381,7 +26381,7 @@
         "repositories": [
           "multicloud/k8s"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/multicloud/k8s/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/multicloud/k8s/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -26482,7 +26482,7 @@
         "repositories": [
           "multicloud/openstack"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/multicloud/openstack/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/multicloud/openstack/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -26583,7 +26583,7 @@
         "repositories": [
           "multicloud/openstack/windriver"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/multicloud/openstack/windriver/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/multicloud/openstack/windriver/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -26684,7 +26684,7 @@
         "repositories": [
           "multicloud/openstack/vmware"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/multicloud/openstack/vmware/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/multicloud/openstack/vmware/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -26785,7 +26785,7 @@
         "repositories": [
           "multicloud/oom"
         ],
-        "yaml_file_path": "/tmp/info-master-h0n2b9kv/info-master/gerrit.onap.org/multicloud/oom/INFO.yaml",
+        "yaml_file_path": "/tmp/info-master-fbcz23rl/info-master/gerrit.onap.org/multicloud/oom/INFO.yaml",
         "has_git_data": false,
         "project_days_since_last_commit": null,
         "errors": []
@@ -31558,7 +31558,7 @@
         "name": "dcaegen2-collectors-ves-maven-merge-master",
         "url": "https://jenkins.onap.org/job/dcaegen2-collectors-ves-maven-merge-master/",
         "buildable": true,
-        "color": "red",
+        "color": "blue",
         "disabled": false
       },
       {
@@ -35542,7 +35542,7 @@
         "name": "policy-apex-pdp-paris-project-csit-apex-pdp",
         "url": "https://jenkins.onap.org/job/policy-apex-pdp-paris-project-csit-apex-pdp/",
         "buildable": true,
-        "color": "blue",
+        "color": "blue_anime",
         "disabled": false
       },
       {
@@ -35894,7 +35894,7 @@
         "name": "policy-clamp-master-project-csit-verify-clamp",
         "url": "https://jenkins.onap.org/job/policy-clamp-master-project-csit-verify-clamp/",
         "buildable": true,
-        "color": "blue",
+        "color": "blue_anime",
         "disabled": false
       },
       {
@@ -37214,7 +37214,7 @@
         "name": "policy-opa-pdp-master-project-csit-verify-opa-pdp",
         "url": "https://jenkins.onap.org/job/policy-opa-pdp-master-project-csit-verify-opa-pdp/",
         "buildable": true,
-        "color": "blue",
+        "color": "blue_anime",
         "disabled": false
       },
       {
@@ -37718,7 +37718,7 @@
         "name": "policy-xacml-pdp-master-project-csit-verify-xacml-pdp",
         "url": "https://jenkins.onap.org/job/policy-xacml-pdp-master-project-csit-verify-xacml-pdp/",
         "buildable": true,
-        "color": "blue",
+        "color": "blue_anime",
         "disabled": false
       },
       {
@@ -39190,7 +39190,7 @@
         "name": "sdnc-oam-maven-docker-stage-master",
         "url": "https://jenkins.onap.org/job/sdnc-oam-maven-docker-stage-master/",
         "buildable": true,
-        "color": "red",
+        "color": "blue",
         "disabled": false
       },
       {
@@ -39286,7 +39286,7 @@
         "name": "sdnc-oam-merge-verification-maven-master",
         "url": "https://jenkins.onap.org/job/sdnc-oam-merge-verification-maven-master/",
         "buildable": true,
-        "color": "yellow",
+        "color": "blue",
         "disabled": false
       },
       {
@@ -41004,767 +41004,62 @@
     ]
   },
   "orphaned_jenkins_jobs": {
-    "total_orphaned_jobs": 278,
+    "total_orphaned_jobs": 181,
     "by_state": {
-      "READ_ONLY": 278
+      "READ_ONLY": 181
     },
     "jobs": {
-      "integration-simulators-nf-simulator-pm-https-server-sonar": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "msb-apigateway-release-merge-master": {
-        "project_name": "msb/apigateway",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-intent-analysis-newdelhi-merge-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "portal-ng-preferences-release-verify-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "dcaegen2-analytics-tca-gen2-maven-clm-master": {
+      "dcaegen2-analytics-tca-gen2-sonar": {
         "project_name": "dcaegen2/analytics/tca",
         "state": "READ_ONLY",
         "score": 650
       },
-      "sdc-integration-tests-master-ui-verify-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-nlp-master-docker-java-daily": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "msb-swagger-sdk-maven-stage-master": {
-        "project_name": "msb/swagger-sdk",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-nlp-master-verify-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-nf-simulator-netconf-server-master-csit-testsuites": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "policy-clamp-paris-project-csit-verify-clamp": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "policy-clamp-maven-stage-paris": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "sdc-onap-ui-angular-master-merge-java": {
-        "project_name": "sdc/onap-ui",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-nlp-maven-clm-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-collectors-hv-ves-maven-clm-master": {
+      "dcaegen2-collectors-ves-maven-clm-master": {
         "project_name": "dcaegen2/collectors",
         "state": "READ_ONLY",
         "score": 600
-      },
-      "msb-swagger-sdk-sonar": {
-        "project_name": "msb/swagger-sdk",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "msb-java-sdk-maven-clm-master": {
-        "project_name": "msb/java-sdk",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-intent-analysis-maven-docker-stage-newdelhi": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
       },
       "integration-simulators-nf-simulator-pm-https-server-maven-docker-stage-master": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
-      "dcaegen2-collectors-hv-ves-maven-docker-stage-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-intent-analysis-master-merge-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "msb-apigateway-release-verify-master": {
-        "project_name": "msb/apigateway",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "policy-clamp-release-merge-paris": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-collectors-restconf-maven-clm-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-restconf-release-verify-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-restconf-master-csit-testsuites": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-server-maven-stage-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-nf-simulator-netconf-server-maven-stage-master": {
+      "integration-simulators-A1-policy-enforcement-simulator-master-md-lint": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
-      },
-      "policy-clamp-maven-stage-quebec": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-nf-simulator-avcn-manager-release-merge-master": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-nf-simulator-avcn-manager-master-verify-java": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "policy-clamp-maven-clm-master": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-intent-analysis-release-verify-newdelhi": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "policy-clamp-master-merge-java": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "sdc-onap-ui-common-master-verify-java": {
-        "project_name": "sdc/onap-ui",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-nf-simulator-ves-client-master-verify-java": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "msb-apigateway-maven-clm-master": {
-        "project_name": "msb/apigateway",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-nf-simulator-ves-client-sonar": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-ran-simulator-master-merge-java": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "policy-clamp-quebec-project-csit-verify-clamp": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-nlp-maven-stage-newdelhi": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "msb-discovery-master-verify-java": {
-        "project_name": "msb/discovery",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-nlp-newdelhi-verify-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "portal-ng-preferences-release-merge-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "policy-clamp-quebec-merge-java": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "portal-ng-bff-release-verify-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "sdc-onap-ui-common-montreal-verify-java": {
-        "project_name": "sdc/onap-ui",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-nf-simulator-tox-sonar": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-nf-simulator-ves-client-maven-docker-stage-master": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-A1-policy-enforcement-simulator-master-python-lint": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-intent-analysis-release-merge-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-collectors-ves-maven-merge-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-nf-simulator-netconf-server-release-merge-master": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-A1-policy-enforcement-simulator-master-yml-lint": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "policy-clamp-master-project-csit-clamp": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "policy-clamp-quebec-project-csit-clamp": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "portal-ng-bff-docker-verify-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "dcaegen2-analytics-tca-gen2-release-merge-master": {
-        "project_name": "dcaegen2/analytics/tca",
-        "state": "READ_ONLY",
-        "score": 650
-      },
-      "portal-ng-bff-release-merge-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "usecase-ui-server-release-verify-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
       },
       "integration-simulators-ran-simulator-master-json-lint": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
-      "usecase-ui-llm-adaptation-maven-docker-stage-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "msb-apigateway-master-verify-java": {
-        "project_name": "msb/apigateway",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-nlp-newdelhi-docker-java-daily": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-maven-stage-newdelhi": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "sdc-integration-tests-montreal-ui-verify-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-collectors-datafile-maven-verify-master-mvn35-openjdk11": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-nf-simulator-avcn-manager-master-merge-java": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-platform-ves-openapi-manager-maven-docker-stage-master": {
-        "project_name": "dcaegen2/platform",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "msb-java-sdk-master-verify-java": {
-        "project_name": "msb/java-sdk",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-platform-release-verify-master": {
-        "project_name": "dcaegen2/platform",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "policy-clamp-maven-docker-stage-master": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "msb-apigateway-master-merge-java": {
-        "project_name": "msb/apigateway",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-restconf-maven-merge-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "sdc-onap-ui-common-master-merge-java": {
-        "project_name": "sdc/onap-ui",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-restconf-master-verify-csit-testsuites": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-nf-simulator-netconf-server-master-verify-csit-testsuites": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-hv-ves-release-merge-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "policy-clamp-release-merge-quebec": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-collectors-snmptrap-master-release-version-java-daily": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-datafile-maven-docker-stage-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-hv-ves-maven-merge-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-platform-ves-openapi-manager-maven-stage-master": {
-        "project_name": "dcaegen2/platform",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-hv-ves-release-verify-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-server-newdelhi-docker-java-daily": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-platform-release-merge-master": {
-        "project_name": "dcaegen2/platform",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-nlp-release-merge-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-platform-ves-openapi-manager-maven-verify-master-mvn35-openjdk11": {
-        "project_name": "dcaegen2/platform",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-nf-simulator-avcn-manager-release-verify-master": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "portal-ng-bff-gradle-build-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "usecase-ui-llm-adaptation-release-merge-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "msb-apigateway-sonar": {
-        "project_name": "msb/apigateway",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-restconf-release-merge-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-datafile-master-csit-ManagementInterface-suite": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-server-newdelhi-verify-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-server-master-docker-java-daily": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-intent-analysis-maven-clm-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "sdc-onap-ui-angular-montreal-merge-java": {
-        "project_name": "sdc/onap-ui",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-analytics-tca-gen2-maven-verify-master-mvn35-openjdk11": {
-        "project_name": "dcaegen2/analytics/tca",
-        "state": "READ_ONLY",
-        "score": 650
-      },
-      "usecase-ui-maven-clm-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-A1-policy-enforcement-simulator-master-md-lint": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-master-merge-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "policy-clamp-master-project-csit-verify-clamp": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-nf-simulator-ves-client-master-merge-java": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-platform-ves-openapi-manager-maven-merge-master": {
-        "project_name": "dcaegen2/platform",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-server-master-merge-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "msb-discovery-master-merge-java": {
+      "msb-discovery-release-verify-master": {
         "project_name": "msb/discovery",
         "state": "READ_ONLY",
         "score": 600
       },
-      "dcaegen2-collectors-ves-release-merge-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-server-release-merge-newdelhi": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-collectors-datafile-sonar": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-nf-simulator-avcn-manager-maven-docker-stage-master": {
+      "integration-simulators-nf-simulator-ves-client-maven-stage-master": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
-      },
-      "policy-clamp-maven-docker-stage-quebec": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-server-release-merge-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-nf-simulator-avcn-manager-maven-stage-master": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-ran-nssmf-simulator-master-yml-lint": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-release-verify-newdelhi": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-platform-ves-openapi-manager-release-verify-master": {
-        "project_name": "dcaegen2/platform",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "portal-ng-preferences-docker-merge-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "integration-simulators-nf-simulator-pm-https-server-master-merge-java": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "msb-apigateway-maven-docker-stage-master": {
-        "project_name": "msb/apigateway",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-nf-simulator-avcn-manager-sonar": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-ves-maven-stage-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-server-maven-clm-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
       },
       "integration-simulators-ran-simulator-master-verify-java": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
-      "usecase-ui-server-release-verify-newdelhi": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-nf-simulator-netconf-server-sonar": {
+      "integration-simulators-core-nssmf-simulator-maven-stage-master": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
-      "dcaegen2-platform-cbs-client-pypi-merge-master": {
-        "project_name": "dcaegen2/platform",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-nf-simulator-netconf-server-maven-docker-stage-master": {
+      "integration-simulators-nf-simulator-pm-https-server-release-merge-master": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
-      "integration-onap-component-simulators-clamp-docker-merge-master": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "msb-swagger-sdk-master-verify-java": {
-        "project_name": "msb/swagger-sdk",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-analytics-tca-gen2-maven-merge-master": {
-        "project_name": "dcaegen2/analytics/tca",
-        "state": "READ_ONLY",
-        "score": 650
-      },
-      "usecase-ui-newdelhi-verify-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-core-nssmf-simulator-maven-docker-stage-master": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-analytics-tca-gen2-release-verify-master": {
-        "project_name": "dcaegen2/analytics/tca",
-        "state": "READ_ONLY",
-        "score": 650
-      },
-      "policy-clamp-quebec-verify-java": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-intent-analysis-release-verify-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "policy-clamp-maven-docker-stage-paris": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "portal-ng-history-gradle-build-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "dcaegen2-services-datalake-handler-admin-ui-maven-stage-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-analytics-tca-gen2-maven-stage-master": {
-        "project_name": "dcaegen2/analytics/tca",
-        "state": "READ_ONLY",
-        "score": 650
-      },
-      "portal-ng-preferences-docker-verify-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "usecase-ui-llm-adaptation-release-verify-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-nlp-sonar": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-collectors-datafile-master-csit-Functional-suite": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-llm-adaptation-sonar": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-platform-ves-openapi-manager-sonar": {
-        "project_name": "dcaegen2/platform",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-core-nssmf-simulator-release-merge-master": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "sdc-onap-ui-angular-master-verify-java": {
-        "project_name": "sdc/onap-ui",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-analytics-tca-gen2-sonar": {
-        "project_name": "dcaegen2/analytics/tca",
-        "state": "READ_ONLY",
-        "score": 650
-      },
-      "dcaegen2-collectors-ves-release-verify-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "portal-ng-history-release-verify-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "integration-simulators-ran-nssmf-simulator-master-md-lint": {
+      "integration-simulators-nf-simulator-avcn-manager-master-merge-java": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
@@ -41774,117 +41069,47 @@
         "state": "READ_ONLY",
         "score": 600
       },
-      "portal-ng-ui-release-verify-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "integration-simulators-core-nssmf-simulator-release-verify-master": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-hv-ves-master-csit-testsuites": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
       "dcaegen2-collectors-snmptrap-release-verify-master": {
         "project_name": "dcaegen2/collectors",
         "state": "READ_ONLY",
         "score": 600
       },
-      "dcaegen2-collectors-ves-sonar": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-ves-maven-docker-stage-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-nlp-release-merge-newdelhi": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-server-master-verify-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-services-datalake-handler-admin-ui-maven-docker-stage-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-intent-analysis-maven-stage-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "policy-clamp-release-verify-master": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "policy-clamp-release-merge-master": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-nlp-master-merge-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-platform-ves-openapi-manager-maven-clm-master": {
-        "project_name": "dcaegen2/platform",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "portal-ng-bff-gradle-publish-jar-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "policy-clamp-paris-merge-java": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-collectors-ves-maven-clm-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-llm-adaptation-master-verify-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-intent-analysis-sonar": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-release-merge-newdelhi": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "policy-clamp-paris-project-csit-clamp": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-core-nssmf-simulator-master-verify-java": {
+      "integration-simulators-nf-simulator-netconf-server-master-merge-java": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
-      "integration-simulators-nf-simulator-pm-https-server-release-verify-master": {
+      "dcaegen2-analytics-tca-gen2-release-verify-master": {
+        "project_name": "dcaegen2/analytics/tca",
+        "state": "READ_ONLY",
+        "score": 650
+      },
+      "dcaegen2-platform-cbs-client-pypi-release-verify": {
+        "project_name": "dcaegen2/platform",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-snmptrap-master-release-version-java-daily": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "sdc-onap-ui-common-master-verify-java": {
+        "project_name": "sdc/onap-ui",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-discovery-maven-clm-master": {
+        "project_name": "msb/discovery",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-ran-simulator-master-yaml-lint": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-netconf-server-release-merge-master": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
@@ -41894,38 +41119,33 @@
         "state": "READ_ONLY",
         "score": 600
       },
-      "msb-swagger-sdk-maven-clm-master": {
-        "project_name": "msb/swagger-sdk",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-ves-maven-verify-master-mvn36-openjdk11": {
+      "dcaegen2-collectors-restconf-master-verify-csit-testsuites": {
         "project_name": "dcaegen2/collectors",
         "state": "READ_ONLY",
         "score": 600
       },
-      "dcaegen2-analytics-tca-gen2-maven-docker-stage-master": {
-        "project_name": "dcaegen2/analytics/tca",
-        "state": "READ_ONLY",
-        "score": 650
-      },
-      "integration-simulators-nf-simulator-master-simulator-cli-verify-python": {
-        "project_name": "integration/simulators",
+      "msb-discovery-master-verify-java": {
+        "project_name": "msb/discovery",
         "state": "READ_ONLY",
         "score": 600
       },
-      "dcaegen2-platform-cbs-client-pypi-release-verify": {
+      "dcaegen2-platform-ves-openapi-manager-maven-docker-stage-master": {
         "project_name": "dcaegen2/platform",
         "state": "READ_ONLY",
         "score": 600
       },
-      "dcaegen2-collectors-restconf-maven-verify-master-mvn35-openjdk11": {
-        "project_name": "dcaegen2/collectors",
+      "integration-simulators-ran-nssmf-simulator-master-yml-lint": {
+        "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
-      "dcaegen2-collectors-restconf-sonar": {
-        "project_name": "dcaegen2/collectors",
+      "msb-apigateway-release-merge-master": {
+        "project_name": "msb/apigateway",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-ran-nssmf-simulator-master-md-lint": {
+        "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
@@ -41934,228 +41154,13 @@
         "state": "READ_ONLY",
         "score": 600
       },
-      "usecase-ui-release-verify-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-A1-policy-enforcement-simulator-master-verify-java": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-nf-simulator-pm-https-server-maven-stage-master": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-nlp-maven-stage-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-ran-simulator-release-verify-master": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-newdelhi-docker-java-daily": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-collectors-snmptrap-tox-merge-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "policy-clamp-release-verify-quebec": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "msb-discovery-maven-clm-master": {
-        "project_name": "msb/discovery",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-llm-adaptation-maven-stage-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-onap-component-simulators-clamp-docker-verify-master": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "portal-ng-history-release-merge-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "dcaegen2-platform-cbs-client-pypi-release-merge": {
+      "dcaegen2-platform-ves-openapi-manager-maven-merge-master": {
         "project_name": "dcaegen2/platform",
         "state": "READ_ONLY",
         "score": 600
       },
-      "integration-simulators-nf-simulator-netconf-server-master-verify-java": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-datafile-release-merge-master": {
+      "dcaegen2-collectors-hv-ves-master-verify-csit-testsuites": {
         "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "policy-clamp-maven-stage-master": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-ran-nssmf-simulator-master-yaml-lint": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-maven-stage-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-release-merge-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "portal-ng-ui-docker-verify-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "dcaegen2-collectors-datafile-maven-clm-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-ran-nssmf-simulator-master-python-lint": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "sdc-onap-ui-angular-sonar": {
-        "project_name": "sdc/onap-ui",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-platform-cbs-client-pypi-verify-master": {
-        "project_name": "dcaegen2/platform",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "policy-clamp-sonar": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "policy-clamp-paris-verify-java": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-newdelhi-merge-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "msb-discovery-release-verify-master": {
-        "project_name": "msb/discovery",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "msb-apigateway-maven-stage-master": {
-        "project_name": "msb/apigateway",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-datafile-maven-merge-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "msb-swagger-sdk-master-merge-java": {
-        "project_name": "msb/swagger-sdk",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "usecase-ui-server-sonar": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-nf-simulator-pm-https-server-master-verify-java": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "policy-clamp-release-verify-paris": {
-        "project_name": "clamp",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-nf-simulator-ves-client-release-merge-master": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-nf-simulator-netconf-server-release-verify-master": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-platform-ves-openapi-manager-release-merge-master": {
-        "project_name": "dcaegen2/platform",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-snmptrap-release-merge-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "portal-ng-history-docker-verify-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "dcaegen2-collectors-hv-ves-maven-verify-master-mvn35-openjdk11": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "msb-java-sdk-master-merge-java": {
-        "project_name": "msb/java-sdk",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "msb-discovery-maven-docker-stage-master": {
-        "project_name": "msb/discovery",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-ran-simulator-master-yml-lint": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-ran-simulator-release-merge-master": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "msb-discovery-sonar": {
-        "project_name": "msb/discovery",
         "state": "READ_ONLY",
         "score": 600
       },
@@ -42164,53 +41169,73 @@
         "state": "READ_ONLY",
         "score": 600
       },
-      "portal-ng-history-docker-merge-master": {
+      "dcaegen2-collectors-ves-release-verify-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-hv-ves-maven-verify-master-mvn35-openjdk11": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-hv-ves-maven-merge-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-apigateway-maven-clm-master": {
+        "project_name": "msb/apigateway",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "portal-ng-history-gradle-build-master": {
         "project_name": "portal",
         "state": "READ_ONLY",
         "score": 550
-      },
-      "integration-simulators-core-nssmf-simulator-master-merge-java": {
-        "project_name": "integration/simulators",
-        "state": "READ_ONLY",
-        "score": 600
       },
       "sdc-onap-ui-common-sonar": {
         "project_name": "sdc/onap-ui",
         "state": "READ_ONLY",
         "score": 600
       },
-      "usecase-ui-nlp-release-verify-newdelhi": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-pnf-simulator-master-simulator-cli-tox-verify": {
-        "project_name": "cli",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-collectors-restconf-maven-docker-stage-master": {
+      "dcaegen2-collectors-restconf-release-merge-master": {
         "project_name": "dcaegen2/collectors",
         "state": "READ_ONLY",
         "score": 600
       },
-      "sdc-onap-ui-common-montreal-merge-java": {
-        "project_name": "sdc/onap-ui",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "dcaegen2-collectors-snmptrap-tox-verify-master": {
-        "project_name": "dcaegen2/collectors",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-ran-nssmf-simulator-master-json-lint": {
+      "integration-simulators-nf-simulator-netconf-server-maven-stage-master": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
-      "sdc-onap-ui-angular-montreal-verify-java": {
-        "project_name": "sdc/onap-ui",
+      "dcaegen2-platform-ves-openapi-manager-release-verify-master": {
+        "project_name": "dcaegen2/platform",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-datafile-maven-merge-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-tox-sonar": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-hv-ves-release-verify-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-restconf-maven-clm-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-ves-client-master-verify-java": {
+        "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
@@ -42219,22 +41244,17 @@
         "state": "READ_ONLY",
         "score": 600
       },
-      "dcaegen2-collectors-snmptrap-sonar": {
-        "project_name": "dcaegen2/collectors",
+      "integration-simulators-nf-simulator-pm-https-server-master-merge-java": {
+        "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
-      "usecase-ui-nlp-release-verify-master": {
-        "project_name": "ui",
+      "dcaegen2-platform-ves-openapi-manager-maven-stage-master": {
+        "project_name": "dcaegen2/platform",
         "state": "READ_ONLY",
-        "score": 350
+        "score": 600
       },
-      "usecase-ui-intent-analysis-newdelhi-verify-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "dcaegen2-collectors-hv-ves-maven-stage-master": {
+      "dcaegen2-collectors-restconf-sonar": {
         "project_name": "dcaegen2/collectors",
         "state": "READ_ONLY",
         "score": 600
@@ -42244,37 +41264,67 @@
         "state": "READ_ONLY",
         "score": 550
       },
-      "usecase-ui-server-newdelhi-merge-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "msb-java-sdk-maven-stage-master": {
-        "project_name": "msb/java-sdk",
+      "dcaegen2-platform-cbs-client-pypi-release-merge": {
+        "project_name": "dcaegen2/platform",
         "state": "READ_ONLY",
         "score": 600
       },
-      "integration-simulators-ran-simulator-master-yaml-lint": {
+      "portal-ng-bff-docker-merge-master": {
+        "project_name": "portal",
+        "state": "READ_ONLY",
+        "score": 550
+      },
+      "portal-ng-bff-gradle-publish-jar-master": {
+        "project_name": "portal",
+        "state": "READ_ONLY",
+        "score": 550
+      },
+      "dcaegen2-platform-ves-openapi-manager-maven-clm-master": {
+        "project_name": "dcaegen2/platform",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-netconf-server-sonar": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
-      "usecase-ui-nlp-newdelhi-merge-java": {
-        "project_name": "ui",
+      "portal-ng-preferences-docker-verify-master": {
+        "project_name": "portal",
         "state": "READ_ONLY",
-        "score": 350
+        "score": 550
       },
-      "policy-clamp-sonar-verify": {
-        "project_name": "clamp",
+      "dcaegen2-collectors-restconf-maven-verify-master-mvn35-openjdk11": {
+        "project_name": "dcaegen2/collectors",
         "state": "READ_ONLY",
-        "score": 350
+        "score": 600
       },
-      "usecase-ui-intent-analysis-maven-stage-newdelhi": {
-        "project_name": "ui",
+      "dcaegen2-collectors-ves-release-merge-master": {
+        "project_name": "dcaegen2/collectors",
         "state": "READ_ONLY",
-        "score": 350
+        "score": 600
       },
-      "integration-simulators-nf-simulator-netconf-server-master-merge-java": {
+      "integration-simulators-nf-simulator-avcn-manager-master-verify-java": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-pm-https-server-sonar": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-ves-client-release-merge-master": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-platform-release-verify-master": {
+        "project_name": "dcaegen2/platform",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-ran-simulator-maven-stage-master": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
@@ -42284,63 +41334,318 @@
         "state": "READ_ONLY",
         "score": 600
       },
-      "usecase-ui-server-maven-stage-newdelhi": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-master-verify-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-intent-analysis-master-verify-java": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-core-nssmf-simulator-maven-stage-master": {
+      "integration-simulators-A1-policy-enforcement-simulator-master-json-lint": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
-      "usecase-ui-intent-analysis-maven-docker-stage-master": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "usecase-ui-master-docker-java-daily": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "integration-simulators-ran-simulator-maven-stage-master": {
+      "integration-simulators-nf-simulator-netconf-server-master-verify-csit-testsuites": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
-      "msb-discovery-release-merge-master": {
-        "project_name": "msb/discovery",
+      "portal-ng-preferences-release-verify-master": {
+        "project_name": "portal",
         "state": "READ_ONLY",
-        "score": 600
+        "score": 550
       },
-      "dcaegen2-collectors-hv-ves-master-verify-csit-testsuites": {
+      "dcaegen2-collectors-hv-ves-maven-docker-stage-master": {
         "project_name": "dcaegen2/collectors",
         "state": "READ_ONLY",
         "score": 600
       },
-      "integration-simulators-nf-simulator-pm-https-server-release-merge-master": {
+      "integration-simulators-ran-simulator-master-yml-lint": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
-      "usecase-ui-llm-adaptation-master-merge-java": {
-        "project_name": "ui",
+      "dcaegen2-platform-cbs-client-pypi-merge-master": {
+        "project_name": "dcaegen2/platform",
         "state": "READ_ONLY",
-        "score": 350
+        "score": 600
       },
-      "integration-simulators-nf-simulator-ves-client-maven-stage-master": {
+      "msb-swagger-sdk-maven-stage-master": {
+        "project_name": "msb/swagger-sdk",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-A1-policy-enforcement-simulator-master-yml-lint": {
         "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-discovery-maven-docker-stage-master": {
+        "project_name": "msb/discovery",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-avcn-manager-sonar": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-java-sdk-maven-clm-master": {
+        "project_name": "msb/java-sdk",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-analytics-tca-gen2-release-merge-master": {
+        "project_name": "dcaegen2/analytics/tca",
+        "state": "READ_ONLY",
+        "score": 650
+      },
+      "integration-simulators-nf-simulator-avcn-manager-release-verify-master": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-apigateway-master-merge-java": {
+        "project_name": "msb/apigateway",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-avcn-manager-maven-stage-master": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-apigateway-sonar": {
+        "project_name": "msb/apigateway",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-snmptrap-release-merge-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-pm-https-server-release-verify-master": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-java-sdk-master-merge-java": {
+        "project_name": "msb/java-sdk",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-netconf-server-master-verify-java": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-A1-policy-enforcement-simulator-master-verify-java": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-platform-ves-openapi-manager-maven-verify-master-mvn35-openjdk11": {
+        "project_name": "dcaegen2/platform",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-apigateway-maven-stage-master": {
+        "project_name": "msb/apigateway",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "portal-ng-ui-docker-merge-master": {
+        "project_name": "portal",
+        "state": "READ_ONLY",
+        "score": 550
+      },
+      "dcaegen2-collectors-ves-sonar": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-ran-simulator-release-verify-master": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-ran-nssmf-simulator-master-python-lint": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "portal-ng-bff-release-merge-master": {
+        "project_name": "portal",
+        "state": "READ_ONLY",
+        "score": 550
+      },
+      "portal-ng-history-release-verify-master": {
+        "project_name": "portal",
+        "state": "READ_ONLY",
+        "score": 550
+      },
+      "dcaegen2-analytics-tca-gen2-maven-clm-master": {
+        "project_name": "dcaegen2/analytics/tca",
+        "state": "READ_ONLY",
+        "score": 650
+      },
+      "dcaegen2-collectors-hv-ves-master-csit-testsuites": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-swagger-sdk-master-verify-java": {
+        "project_name": "msb/swagger-sdk",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "portal-ng-ui-release-verify-master": {
+        "project_name": "portal",
+        "state": "READ_ONLY",
+        "score": 550
+      },
+      "integration-simulators-nf-simulator-netconf-server-release-verify-master": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-apigateway-release-verify-master": {
+        "project_name": "msb/apigateway",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "portal-ng-bff-release-verify-master": {
+        "project_name": "portal",
+        "state": "READ_ONLY",
+        "score": 550
+      },
+      "dcaegen2-collectors-datafile-release-merge-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-swagger-sdk-sonar": {
+        "project_name": "msb/swagger-sdk",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-datafile-master-csit-Functional-suite": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-discovery-sonar": {
+        "project_name": "msb/discovery",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-restconf-maven-docker-stage-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-ran-simulator-release-merge-master": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "portal-ng-preferences-docker-merge-master": {
+        "project_name": "portal",
+        "state": "READ_ONLY",
+        "score": 550
+      },
+      "integration-simulators-core-nssmf-simulator-release-merge-master": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-datafile-sonar": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-snmptrap-tox-merge-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-analytics-tca-gen2-maven-docker-stage-master": {
+        "project_name": "dcaegen2/analytics/tca",
+        "state": "READ_ONLY",
+        "score": 650
+      },
+      "msb-java-sdk-maven-stage-master": {
+        "project_name": "msb/java-sdk",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-core-nssmf-simulator-master-merge-java": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-ves-client-sonar": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "sdc-onap-ui-angular-master-merge-java": {
+        "project_name": "sdc/onap-ui",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-ves-maven-stage-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-restconf-maven-merge-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-hv-ves-release-merge-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-discovery-master-merge-java": {
+        "project_name": "msb/discovery",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-ran-nssmf-simulator-master-json-lint": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-swagger-sdk-maven-clm-master": {
+        "project_name": "msb/swagger-sdk",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "portal-ng-bff-docker-verify-master": {
+        "project_name": "portal",
+        "state": "READ_ONLY",
+        "score": 550
+      },
+      "dcaegen2-collectors-snmptrap-sonar": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "sdc-onap-ui-common-master-merge-java": {
+        "project_name": "sdc/onap-ui",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-ves-maven-merge-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-apigateway-master-verify-java": {
+        "project_name": "msb/apigateway",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-apigateway-maven-docker-stage-master": {
+        "project_name": "msb/apigateway",
         "state": "READ_ONLY",
         "score": 600
       },
@@ -42349,13 +41654,198 @@
         "state": "READ_ONLY",
         "score": 600
       },
-      "usecase-ui-llm-adaptation-maven-clm-master": {
-        "project_name": "ui",
+      "integration-simulators-nf-simulator-pm-https-server-master-verify-java": {
+        "project_name": "integration/simulators",
         "state": "READ_ONLY",
-        "score": 350
+        "score": 600
       },
-      "dcaegen2-collectors-hv-ves-sonar": {
+      "dcaegen2-collectors-datafile-maven-verify-master-mvn35-openjdk11": {
         "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-core-nssmf-simulator-release-verify-master": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-master-simulator-cli-verify-python": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-hv-ves-maven-stage-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-datafile-master-csit-ManagementInterface-suite": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-restconf-master-csit-testsuites": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-platform-ves-openapi-manager-release-merge-master": {
+        "project_name": "dcaegen2/platform",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "portal-ng-history-docker-verify-master": {
+        "project_name": "portal",
+        "state": "READ_ONLY",
+        "score": 550
+      },
+      "integration-simulators-nf-simulator-ves-client-master-merge-java": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-ves-client-maven-docker-stage-master": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-pm-https-server-maven-stage-master": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-java-sdk-master-verify-java": {
+        "project_name": "msb/java-sdk",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-discovery-release-merge-master": {
+        "project_name": "msb/discovery",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-hv-ves-maven-clm-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-netconf-server-master-csit-testsuites": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-java-sdk-sonar": {
+        "project_name": "msb/java-sdk",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-analytics-tca-gen2-maven-merge-master": {
+        "project_name": "dcaegen2/analytics/tca",
+        "state": "READ_ONLY",
+        "score": 650
+      },
+      "portal-ng-history-docker-merge-master": {
+        "project_name": "portal",
+        "state": "READ_ONLY",
+        "score": 550
+      },
+      "dcaegen2-analytics-tca-gen2-maven-verify-master-mvn35-openjdk11": {
+        "project_name": "dcaegen2/analytics/tca",
+        "state": "READ_ONLY",
+        "score": 650
+      },
+      "dcaegen2-collectors-ves-maven-verify-master-mvn36-openjdk11": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "portal-ng-history-release-merge-master": {
+        "project_name": "portal",
+        "state": "READ_ONLY",
+        "score": 550
+      },
+      "sdc-onap-ui-angular-montreal-verify-java": {
+        "project_name": "sdc/onap-ui",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-datafile-maven-clm-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-analytics-tca-gen2-maven-stage-master": {
+        "project_name": "dcaegen2/analytics/tca",
+        "state": "READ_ONLY",
+        "score": 650
+      },
+      "portal-ng-preferences-release-merge-master": {
+        "project_name": "portal",
+        "state": "READ_ONLY",
+        "score": 550
+      },
+      "sdc-onap-ui-common-montreal-verify-java": {
+        "project_name": "sdc/onap-ui",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-snmptrap-tox-verify-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-core-nssmf-simulator-maven-docker-stage-master": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-platform-cbs-client-pypi-verify-master": {
+        "project_name": "dcaegen2/platform",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-ves-maven-docker-stage-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-platform-ves-openapi-manager-sonar": {
+        "project_name": "dcaegen2/platform",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-avcn-manager-release-merge-master": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "sdc-onap-ui-angular-montreal-merge-java": {
+        "project_name": "sdc/onap-ui",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-avcn-manager-maven-docker-stage-master": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "sdc-onap-ui-common-montreal-merge-java": {
+        "project_name": "sdc/onap-ui",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "msb-swagger-sdk-master-merge-java": {
+        "project_name": "msb/swagger-sdk",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "sdc-onap-ui-angular-sonar": {
+        "project_name": "sdc/onap-ui",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-core-nssmf-simulator-master-verify-java": {
+        "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
@@ -42364,37 +41854,62 @@
         "state": "READ_ONLY",
         "score": 600
       },
-      "portal-ng-ui-release-merge-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "portal-ng-ui-docker-merge-master": {
-        "project_name": "portal",
-        "state": "READ_ONLY",
-        "score": 550
-      },
-      "usecase-ui-intent-analysis-release-merge-newdelhi": {
-        "project_name": "ui",
-        "state": "READ_ONLY",
-        "score": 350
-      },
-      "msb-java-sdk-sonar": {
-        "project_name": "msb/java-sdk",
-        "state": "READ_ONLY",
-        "score": 600
-      },
-      "integration-simulators-A1-policy-enforcement-simulator-master-json-lint": {
+      "integration-simulators-ran-simulator-master-merge-java": {
         "project_name": "integration/simulators",
         "state": "READ_ONLY",
         "score": 600
       },
-      "policy-clamp-master-verify-java": {
-        "project_name": "clamp",
+      "dcaegen2-platform-release-merge-master": {
+        "project_name": "dcaegen2/platform",
         "state": "READ_ONLY",
-        "score": 350
+        "score": 600
       },
-      "portal-ng-bff-docker-merge-master": {
+      "sdc-onap-ui-angular-master-verify-java": {
+        "project_name": "sdc/onap-ui",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-A1-policy-enforcement-simulator-master-python-lint": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-ran-nssmf-simulator-master-yaml-lint": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "integration-simulators-nf-simulator-netconf-server-maven-docker-stage-master": {
+        "project_name": "integration/simulators",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "portal-ng-ui-docker-verify-master": {
+        "project_name": "portal",
+        "state": "READ_ONLY",
+        "score": 550
+      },
+      "portal-ng-bff-gradle-build-master": {
+        "project_name": "portal",
+        "state": "READ_ONLY",
+        "score": 550
+      },
+      "dcaegen2-collectors-restconf-release-verify-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-hv-ves-sonar": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "dcaegen2-collectors-datafile-maven-docker-stage-master": {
+        "project_name": "dcaegen2/collectors",
+        "state": "READ_ONLY",
+        "score": 600
+      },
+      "portal-ng-ui-release-merge-master": {
         "project_name": "portal",
         "state": "READ_ONLY",
         "score": 550
