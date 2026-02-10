@@ -322,7 +322,7 @@ The workflow includes comprehensive logging and error handling:
 
 ## Migration from Legacy System
 
-If you're migrating from the old system that used a separate `gerrit-reports`
+If you're migrating from the old system that used a separate artifacts
 repository:
 
 **Key changes:**
@@ -365,7 +365,7 @@ schedule:
    (`GITHUB_TOKEN` by default, or `CLASSIC_READ_ONLY_PAT_TOKEN` for CI) exists
    and is a Classic PAT with required scopes: `repo` and `actions:read`
 7. **Report publishing failures**: Check `GERRIT_REPORTS_PAT_TOKEN` exists and has
-   Contents: Read and write permissions for `lfit/gerrit-reports`
+   Contents: Read and write permissions for `modeseven-lfit/project-reporting-artifacts`
 
 ### Debugging
 

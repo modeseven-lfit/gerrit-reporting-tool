@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 #
-# Simple script to copy all workflow artifacts to gerrit-reports repository
+# Simple script to copy all workflow artifacts to project-reporting-artifacts repository
 # Uses git clone/push instead of GitHub API for simplicity and robustness
 #
 # Usage: copy-artifacts-simple.sh <date-folder> <workflow-run-id> <artifacts-dir> <token>
@@ -71,7 +71,7 @@ fi
 ARTIFACTS_DIR=$(cd "$ARTIFACTS_DIR" && pwd)
 
 # Repository details
-REMOTE_REPO="modeseven-lfit/gerrit-reports"
+REMOTE_REPO="modeseven-lfit/project-reporting-artifacts"
 TARGET_PATH="data/artifacts/${DATE_FOLDER}"
 CLONE_DIR=$(mktemp -d)
 

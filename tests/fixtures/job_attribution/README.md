@@ -20,7 +20,7 @@ These fixtures serve three purposes:
 ## Data Source
 
 Fixtures are extracted from actual production reports stored at:
-<https://github.com/modeseven-lfit/gerrit-reports/tree/main/data/artifacts>
+<https://github.com/modeseven-lfit/project-reporting-artifacts/tree/main/data/artifacts>
 
 The extraction process pulls real job-to-project mappings from the report artifacts,
 providing realistic test data that reflects actual usage patterns.
@@ -66,8 +66,8 @@ To update fixtures with new production data:
 
 ```bash
 # Download latest reports
-curl -sL "https://raw.githubusercontent.com/modeseven-lfit/gerrit-reports/main/data/artifacts/YYYY-MM-DD/raw-data-onap/report_raw.json" -o /tmp/onap_report.json
-curl -sL "https://raw.githubusercontent.com/modeseven-lfit/gerrit-reports/main/data/artifacts/YYYY-MM-DD/raw-data-lfbroadband/report_raw.json" -o /tmp/lfbroadband_report.json
+curl -sL "https://raw.githubusercontent.com/modeseven-lfit/project-reporting-artifacts/main/data/artifacts/YYYY-MM-DD/raw-data-onap/report_raw.json" -o /tmp/onap_report.json
+curl -sL "https://raw.githubusercontent.com/modeseven-lfit/project-reporting-artifacts/main/data/artifacts/YYYY-MM-DD/raw-data-lfbroadband/report_raw.json" -o /tmp/lfbroadband_report.json
 
 # Run extraction script (if available) or manually update production_data.json
 ```

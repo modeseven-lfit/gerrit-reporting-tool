@@ -5,13 +5,13 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 # Artifact Archival Setup Guide
 
-This guide explains how to set up and use the automated artifact archival feature that copies report outputs to the `gerrit-reports` repository for long-term storage and analytics.
+This guide explains how to set up and use the automated artifact archival feature that copies report outputs to the `project-reporting-artifacts` repository for long-term storage and analytics.
 
 ---
 
 ## 📋 Overview
 
-The reporting tool now includes an automated archival system that copies all report artifacts to a separate GitHub repository (`modeseven-lfit/gerrit-reports`) after each production run. This enables:
+The reporting tool now includes an automated archival system that copies all report artifacts to a separate GitHub repository (`modeseven-lfit/project-reporting-artifacts`) after each production run. This enables:
 
 - **Long-term storage** of historical report data
 - **Trend analysis** across time periods
@@ -22,7 +22,7 @@ The reporting tool now includes an automated archival system that copies all rep
 
 1. **Scheduled Runs**: Daily at 7:00 AM UTC (CRON schedule)
    - Generates reports for all configured projects
-   - Automatically copies artifacts to `gerrit-reports` repository
+   - Automatically copies artifacts to `project-reporting-artifacts` repository
    - Creates timestamped folders: `data/artifacts/YYYY-MM-DD/`
 
 2. **Manual Runs**: Via workflow dispatch
@@ -36,13 +36,13 @@ The reporting tool now includes an automated archival system that copies all rep
 
 ### Prerequisites
 
-1. Access to the `modeseven-lfit/gerrit-reports` repository
+1. Access to the `modeseven-lfit/project-reporting-artifacts` repository
 2. Permission to create GitHub secrets in the `reporting-tool` repository
 3. A GitHub Personal Access Token (PAT) with appropriate permissions
 
 ### Step 1: Create GitHub Personal Access Token
 
-Create a PAT with the following permissions for the `gerrit-reports` repository:
+Create a PAT with the following permissions for the `project-reporting-artifacts` repository:
 
 **Classic Token:**
 
@@ -54,7 +54,7 @@ Create a PAT with the following permissions for the `gerrit-reports` repository:
 
 **Fine-Grained Token (Recommended):**
 
-- **Repository access**: `modeseven-lfit/gerrit-reports` only
+- **Repository access**: `modeseven-lfit/project-reporting-artifacts` only
 - **Permissions**:
   - Contents: `Read and write`
   - Metadata: `Read-only`
@@ -85,12 +85,12 @@ Add the PAT as a repository secret:
 The workflow is already configured in `.github/workflows/reporting-production.yaml`. Verify the job exists:
 
 ```yaml
-copy-to-gerrit-reports:
-  name: "Copy Artifacts to gerrit-reports Repository"
-  needs: [verify, analyze]
+copy-to-artifacts-repo:
+  name: "Transfer/Copy Artifacts"
+  needs: [validate-secrets, build-matrix, analyze]
   if: |
     always() &&
-    needs.verify.result == 'success' &&
+    needs.validate-secrets.result == 'success' &&
     (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
   runs-on: ubuntu-latest
   # ... rest of configuration
@@ -105,17 +105,17 @@ Test with a manual workflow dispatch:
 3. Select branch: `main`
 4. Click "Run workflow"
 5. Monitor the workflow run
-6. Check the `copy-to-gerrit-reports` job for success
-7. Verify artifacts in `gerrit-reports` repository
+6. Check the `copy-to-artifacts-repo` job for success
+7. Verify artifacts in `project-reporting-artifacts` repository
 
 ---
 
 ## 📂 Output Structure
 
-Artifacts are organized in the `gerrit-reports` repository as follows:
+Artifacts are organized in the `project-reporting-artifacts` repository as follows:
 
 ```text
-gerrit-reports/
+project-reporting-artifacts/
 └── data/
     └── artifacts/
         ├── 2025-01-20/
@@ -160,7 +160,7 @@ Each date folder includes a `README.md` with:
 - Copies artifacts to `data/artifacts/<DATE>/`
 - **Overwrites** existing folder if it exists (unusual but handles edge cases)
 - Creates commit with descriptive message
-- Pushes to `main` branch of `gerrit-reports`
+- Pushes to `main` branch of `project-reporting-artifacts`
 
 ### Manual Dispatch Runs
 
@@ -184,12 +184,12 @@ Each date folder includes a `README.md` with:
 
 1. Go to Actions → "📊 Production Reports"
 2. Click on a workflow run
-3. Expand "Copy Artifacts to gerrit-reports Repository" job
+3. Expand "Transfer/Copy Artifacts" job
 4. Review the output logs
 
 ### Verify Artifacts in Target Repository
 
-1. Navigate to `https://github.com/modeseven-lfit/gerrit-reports`
+1. Navigate to `https://github.com/modeseven-lfit/project-reporting-artifacts`
 2. Browse to `data/artifacts/<DATE>/`
 3. Verify folders exist for each project
 4. Check the `README.md` for summary information
@@ -238,7 +238,7 @@ The workflow provides a job summary with:
 
 **To Force Update**:
 
-1. Manually delete the folder in `gerrit-reports` repository
+1. Manually delete the folder in `project-reporting-artifacts` repository
 2. Re-run the workflow
 
 ### No Files Copied
@@ -289,7 +289,7 @@ The workflow provides a job summary with:
 ### Access Control
 
 - Limit repository access to necessary personnel
-- Use branch protection rules in `gerrit-reports` repository
+- Use branch protection rules in `project-reporting-artifacts` repository
 - Review commit history regularly
 - Enable audit logging for sensitive operations
 
@@ -351,7 +351,7 @@ Machine learning and statistical analysis:
 **Weekly**:
 
 - Review workflow success rates
-- Check storage usage in `gerrit-reports` repository
+- Check storage usage in `project-reporting-artifacts` repository
 
 **Monthly**:
 
@@ -378,7 +378,7 @@ Consider implementing a data retention policy:
 
 **Implementation**:
 
-1. Create a separate workflow in `gerrit-reports` repository
+1. Create a separate workflow in `project-reporting-artifacts` repository
 2. Run monthly to clean up old daily reports
 3. Generate and preserve weekly/monthly summaries
 4. Archive to long-term storage if needed
@@ -409,7 +409,7 @@ Potential improvements to the archival system:
 
 ### Analytics Dashboard
 
-- Build web dashboard in `gerrit-reports` repo
+- Build web dashboard in `project-reporting-artifacts` repo
 - Visualize trends over time
 - Interactive data exploration
 - Export capabilities

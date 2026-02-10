@@ -263,7 +263,7 @@ log_info "   ✓ repo:status - Read commit status (optional)"
 echo ""
 
 echo "2. GERRIT_REPORTS_PAT_TOKEN (for artifact archival):"
-log_info "   ✓ Contents: Read and write (to push to gerrit-reports repo)"
+log_info "   ✓ Contents: Read and write (to push to project-reporting-artifacts repo)"
 log_info "   ✓ Metadata: Read-only"
 echo ""
 

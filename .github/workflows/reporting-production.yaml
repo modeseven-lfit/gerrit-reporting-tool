@@ -850,7 +850,7 @@ jobs:
           echo "::error::No report artifacts were available to publish"
           exit 1
 
-  copy-to-gerrit-reports:
+  copy-to-artifacts-repo:
     name: "Transfer/Copy Artifacts"
     needs: [validate-secrets, build-matrix, analyze]
     # Run if validation succeeded and analyze completed (even with failures)
@@ -922,7 +922,7 @@ jobs:
             exit 1
           fi
 
-      - name: "Copy artifacts to gerrit-reports repository"
+      - name: "Copy artifacts to project-reporting-artifacts repository"
         if: steps.check-artifacts.outputs.count != '0'
         shell: bash
         env:
@@ -956,7 +956,7 @@ jobs:
             echo ""
             echo "**Date Folder:** ${{ steps.date.outputs.folder }}"
             echo "**Workflow Run:** ${{ github.run_id }}"
-            echo "**Target Repository:** modeseven-lfit/gerrit-reports"
+            echo "**Target Repository:** modeseven-lfit/project-reporting-artifacts"
             echo "**Status:** ${status_emoji} ${status}"
             echo "**Artifacts Found:** ${artifact_count:-0}"
             echo ""
@@ -965,7 +965,7 @@ jobs:
             if [ "$artifact_count" -gt 0 ] 2>/dev/null; then
               echo "### 🔗 View in Repository"
               echo ""
-              echo "https://github.com/modeseven-lfit/gerrit-reports/tree/main/data/artifacts/${{ steps.date.outputs.folder }}"
+              echo "https://github.com/modeseven-lfit/project-reporting-artifacts/tree/main/data/artifacts/${{ steps.date.outputs.folder }}"
               echo ""
             else
               echo "### ⚠️ No Artifacts Transferred"
@@ -996,7 +996,7 @@ jobs:
       - build-matrix
       - analyze
       - publish
-      - copy-to-gerrit-reports
+      - copy-to-artifacts-repo
     if: always()
     runs-on: ubuntu-latest
     permissions:
@@ -1043,14 +1043,14 @@ jobs:
             echo "- **Publish:** $(result_emoji \
               '${{ needs.publish.result }}')"
             echo "- **Copy:** $(result_emoji \
-              '${{ needs.copy-to-gerrit-reports.result }}')"
+              '${{ needs.copy-to-artifacts-repo.result }}')"
             echo ""
 
             # Note about failures - partial vs complete failure
             if [ "${{ needs.analyze.result }}" = "failure" ]; then
               # Check if publish also failed (indicates complete failure)
               if [ "${{ needs.publish.result }}" = "failure" ] && \
-                 [ "${{ needs.copy-to-gerrit-reports.result }}" = "failure" ]
+                 [ "${{ needs.copy-to-artifacts-repo.result }}" = "failure" ]
               then
                 echo "### ❌ Complete Matrix Failure"
                 echo ""
@@ -1138,7 +1138,7 @@ jobs:
           validate_result="${{ needs.validate-secrets.result }}"
           analyze_result="${{ needs.analyze.result }}"
           publish_result="${{ needs.publish.result }}"
-          copy_result="${{ needs.copy-to-gerrit-reports.result }}"
+          copy_result="${{ needs.copy-to-artifacts-repo.result }}"
 
           {
             echo "Completed: ${date_completed}"

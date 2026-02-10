@@ -11,18 +11,18 @@ This guide covers the complete setup and migration to the new GitHub Pages-based
 
 ## 🎯 Overview
 
-The new reporting system publishes reports directly to GitHub Pages on this repository, eliminating the need for a separate `gerrit-reports` repository and the associated `GERRIT_REPORTS_PAT_TOKEN`.
+The new reporting system publishes reports directly to GitHub Pages on this repository, eliminating the need for a separate artifacts repository and the associated `GERRIT_REPORTS_PAT_TOKEN`.
 
 ### Key Changes
 
-| Aspect                 | Old System                     | New System                         |
-| ---------------------- | ------------------------------ | ---------------------------------- |
-| **Deployment Target**  | Separate `gerrit-reports` repo | GitHub Pages on same repo          |
-| **Branch**             | `main` in external repo        | `gh-pages` branch                  |
-| **Authentication**     | `GERRIT_REPORTS_PAT_TOKEN`     | Built-in `GITHUB_TOKEN`            |
-| **Production Reports** | Pushed to external repo        | `/production/` on Pages            |
-| **Preview Reports**    | Not available                  | `/pr-preview/<pr-number>/`         |
-| **Workflows**          | Single `reporting.yaml`        | Separate production & PR workflows |
+| Aspect                 | Old System                 | New System                         |
+| ---------------------- | -------------------------- | ---------------------------------- |
+| **Deployment Target**  | Separate artifacts repo    | GitHub Pages on same repo          |
+| **Branch**             | `main` in external repo    | `gh-pages` branch                  |
+| **Authentication**     | `GERRIT_REPORTS_PAT_TOKEN` | Built-in `GITHUB_TOKEN`            |
+| **Production Reports** | Pushed to external repo    | `/production/` on Pages            |
+| **Preview Reports**    | Not available              | `/pr-preview/<pr-number>/`         |
+| **Workflows**          | Single `reporting.yaml`    | Separate production & PR workflows |
 
 ---
 
