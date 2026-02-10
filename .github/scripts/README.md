@@ -54,27 +54,27 @@ Generates HTML index pages for GitHub Pages.
 
 ---
 
-### `copy-to-gerrit-reports.sh`
+### `copy-artifacts-simple.sh`
 
-Copies report artifacts to the gerrit-reports repository for long-term storage and analytics.
+Copies report artifacts to the project-reporting-artifacts repository for long-term storage and analytics.
 
 **Usage:**
 
 ```bash
-./copy-to-gerrit-reports.sh <date-folder> <artifacts-dir> <remote-repo> <token>
+./copy-artifacts-simple.sh <date-folder> <workflow-run-id> <artifacts-dir> <token>
 ```bash
 
 **Arguments:**
 
 - `date-folder`: Date in YYYY-MM-DD format (e.g., `2025-01-20`)
+- `workflow-run-id`: GitHub workflow run ID
 - `artifacts-dir`: Directory containing downloaded artifacts
-- `remote-repo`: Remote repository URL (e.g., `modeseven-lfit/gerrit-reports`)
 - `token`: GitHub PAT token for authentication (from `GERRIT_REPORTS_PAT_TOKEN` secret)
 
 **What it does:**
 
 1. Validates inputs and date format
-2. Clones the target gerrit-reports repository
+2. Clones the target project-reporting-artifacts repository
 3. Creates date-based folder structure: `data/artifacts/YYYY-MM-DD/`
 4. Copies report artifacts and raw JSON data for each project
 5. Checks if target folder already exists:
@@ -88,17 +88,17 @@ Copies report artifacts to the gerrit-reports repository for long-term storage a
 ```bash
 # Copy artifacts for today's date
 export GERRIT_REPORTS_PAT_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-./copy-to-gerrit-reports.sh \
+./copy-artifacts-simple.sh \
   "2025-01-20" \
+  "123456789" \
   "./downloaded-artifacts" \
-  "modeseven-lfit/gerrit-reports" \
   "$GERRIT_REPORTS_PAT_TOKEN"
 ```bash
 
 **Output Structure:**
 
 ```text
-gerrit-reports/
+project-reporting-artifacts/
 └── data/
     └── artifacts/
         └── 2025-01-20/
@@ -122,7 +122,7 @@ gerrit-reports/
 
 **Workflow Integration:**
 
-This script is automatically called by the `copy-to-gerrit-reports` job in the `reporting-production.yaml` workflow when:
+This script is automatically called by the `copy-to-artifacts-repo` job in the `reporting-production.yaml` workflow when:
 
 - CRON schedule triggers the workflow (daily at 7:00 AM UTC)
 - Workflow is manually dispatched (but skips if folder already exists)
@@ -199,7 +199,7 @@ output_dir/
 
 **Status:** ⚠️ Deprecated
 
-This script handled report publishing in the legacy system, pushing reports to a separate `gerrit-reports` repository. The new GitHub Pages publishing logic in the workflows replaces this functionality.
+This script handled report publishing in the legacy system, pushing reports to a separate repository. The new GitHub Pages publishing logic in the workflows replaces this functionality.
 
 **Migration:** See [MIGRATION_CHECKLIST.md](../../docs/MIGRATION_CHECKLIST.md)
 
@@ -304,7 +304,7 @@ apk add --no-cache bash jq curl git findutils coreutils unzip
 - Rotate tokens on a schedule
 - Use fine-grained tokens when possible
 - Limit token scope to required permissions
-- **GERRIT_REPORTS_PAT_TOKEN**: Required for `copy-to-gerrit-reports.sh` - must have write access to target repository
+- **GERRIT_REPORTS_PAT_TOKEN**: Required for `copy-artifacts-simple.sh` - must have write access to target repository
 
 ### Script Safety
 
@@ -439,13 +439,13 @@ When modifying scripts:
 
 - ✨ Added `generate-index.sh` for GitHub Pages
 - ✨ Added `download-artifacts.sh` for meta-reporting
-- ✨ Added `copy-to-gerrit-reports.sh` for automated artifact archival
+- ✨ Added `copy-artifacts-simple.sh` for automated artifact archival
 - ⚠️ Deprecated `publish-reports.sh` (legacy system)
 - 📝 Created comprehensive documentation
 
 ### Version 1.0 (Legacy)
 
-- Initial `publish-reports.sh` for gerrit-reports repository
+- Initial `publish-reports.sh` for legacy repository
 
 ---
 

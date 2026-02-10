@@ -711,19 +711,73 @@ class JenkinsAPIClient(BaseAPIClient):
         # PATTERN 6: Infix with underscore delimiters - *_{project}_*
         # Example: build_berlin-community-pod-1-gpon_1T8GEM_DT_voltha_master matches voltha
         # Example: verify_berlin-community-pod-1-gpon-adtran_Default_DT_voltha_master_dmi matches voltha
+        #
+        # IMPORTANT: Avoid false positives where the project appears as part
+        # of a parent-child pattern. Check that the prefix before the project
+        # doesn't look like a parent project name with hyphen separator.
         # =================================================================
         elif "_" + project_job_name_lower + "_" in job_name_lower:
-            match_type = "infix_underscore"
-            score = 350
+            # Find where the project name appears in the job name
+            infix_pos = job_name_lower.find("_" + project_job_name_lower + "_")
+            prefix_part = job_name_lower[:infix_pos]
+
+            # Check if the prefix ends with a hyphenated version that suggests
+            # this is actually a parent-child prefix pattern like "sdc-tosca"
+            # being matched against standalone "tosca"
+            if prefix_part.endswith("-" + project_job_name_lower):
+                # This looks like parent-child, not a valid infix match
+                pass
+            else:
+                match_type = "infix_underscore"
+                score = 350
 
         # =================================================================
         # PATTERN 7: Infix with hyphen delimiters - *-{project}-*
         # Example: patchset-voltha-2.14-multiple-olts matches voltha
         # Example: periodic-voltha-dt-test-bbsim matches voltha
+        #
+        # IMPORTANT: Avoid false positives where the project appears as part
+        # of a parent-child prefix pattern (e.g., "sdc-tosca-verify" should
+        # NOT match standalone "tosca" because it's actually "sdc/tosca").
+        # We check if the prefix before the project name looks like a known
+        # job-type prefix rather than a parent project name.
         # =================================================================
         elif "-" + project_job_name_lower + "-" in job_name_lower:
-            match_type = "infix_hyphen"
-            score = 300
+            # Find where the project name appears in the job name
+            infix_pos = job_name_lower.find("-" + project_job_name_lower + "-")
+            prefix_part = job_name_lower[:infix_pos]
+
+            # Known job-type prefixes that indicate this is a valid infix match
+            known_job_prefixes = (
+                "patchset",
+                "periodic",
+                "build",
+                "release",
+                "merge",
+                "verify",
+                "test",
+                "deploy",
+                "publish",
+                "docker",
+                "maven",
+            )
+
+            # Check if the prefix is a known job-type prefix or contains one
+            # If not, this might be a parent-child pattern (e.g., sdc-tosca)
+            is_valid_infix = False
+            if prefix_part in known_job_prefixes:
+                is_valid_infix = True
+            elif any(prefix_part.startswith(p + "-") for p in known_job_prefixes):
+                is_valid_infix = True
+            elif any(prefix_part.endswith("-" + p) for p in known_job_prefixes):
+                is_valid_infix = True
+            elif "_" in prefix_part:
+                # Underscore in prefix suggests it's a complex job name, not parent-child
+                is_valid_infix = True
+
+            if is_valid_infix:
+                match_type = "infix_hyphen"
+                score = 300
 
         # =================================================================
         # PATTERN 8: Suffix match with hyphen - *-{project}

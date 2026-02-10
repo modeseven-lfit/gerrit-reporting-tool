@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 #
-# Script to test copy-to-gerrit-reports.sh locally
+# Script to test copy-artifacts-simple.sh locally
 #
 # This creates a mock artifact directory structure and tests the copy script
 # without actually pushing to the remote repository.
@@ -41,13 +41,13 @@ log_section() {
 }
 
 # Check if we're in the right directory
-if [ ! -f ".github/scripts/copy-to-gerrit-reports.sh" ]; then
+if [ ! -f ".github/scripts/copy-artifacts-simple.sh" ]; then
     log_error "This script must be run from the repository root"
     log_info "cd to the reporting-tool directory first"
     exit 1
 fi
 
-log_section "🧪 Test Setup for copy-to-gerrit-reports.sh"
+log_section "🧪 Test Setup for copy-artifacts-simple.sh"
 
 # Create temporary test directory
 TEST_DIR=$(mktemp -d)
@@ -159,7 +159,7 @@ log_info "Total files created: ${TOTAL_FILES}"
 # Create a mock target repository
 log_section "🎯 Creating Mock Target Repository"
 
-MOCK_REPO="${TEST_DIR}/mock-gerrit-reports"
+MOCK_REPO="${TEST_DIR}/mock-project-reporting-artifacts"
 mkdir -p "${MOCK_REPO}"
 cd "${MOCK_REPO}"
 git init --quiet
@@ -168,7 +168,7 @@ git config user.email "test@example.com"
 
 # Create initial structure
 mkdir -p data/artifacts
-echo "# Mock Gerrit Reports Repository" > README.md
+echo "# Mock Project Reporting Artifacts Repository" > README.md
 git add .
 git commit -m "Initial commit" --quiet
 
@@ -179,8 +179,8 @@ cd -
 # Create modified version of script for local testing
 log_section "🔧 Creating Test Version of Script"
 
-TEST_SCRIPT="${TEST_DIR}/copy-to-gerrit-reports-test.sh"
-cp .github/scripts/copy-to-gerrit-reports.sh "${TEST_SCRIPT}"
+TEST_SCRIPT="${TEST_DIR}/copy-artifacts-simple-test.sh"
+cp .github/scripts/copy-artifacts-simple.sh "${TEST_SCRIPT}"
 
 # Modify the script to use local repo instead of GitHub
 # Replace the clone command with local path
@@ -202,7 +202,7 @@ log_section "🚀 Running Copy Script Test"
 echo ""
 
 DATE_FOLDER="2025-01-20"
-REMOTE_REPO="modeseven-lfit/gerrit-reports"
+REMOTE_REPO="modeseven-lfit/project-reporting-artifacts"
 FAKE_TOKEN="test-token-not-used"
 
 log_info "Running: ${TEST_SCRIPT}"

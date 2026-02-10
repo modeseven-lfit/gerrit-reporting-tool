@@ -8,5 +8,5 @@ This package contains test fixtures extracted from production report data
 for testing Jenkins job attribution logic.
 
 Fixtures are sourced from:
-https://github.com/modeseven-lfit/gerrit-reports/tree/main/data/artifacts
+https://github.com/modeseven-lfit/project-reporting-artifacts/tree/main/data/artifacts
 """

@@ -11,7 +11,7 @@ This module provides:
 4. Integration tests - Test with production data fixtures
 
 Test fixtures are extracted from actual production report data at:
-https://github.com/modeseven-lfit/gerrit-reports/tree/main/data/artifacts
+https://github.com/modeseven-lfit/project-reporting-artifacts/tree/main/data/artifacts
 
 Run these tests with:
     pytest tests/unit/test_job_attribution.py -v
