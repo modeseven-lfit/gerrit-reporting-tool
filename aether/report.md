@@ -1,6 +1,6 @@
 # 📊 GitHub Project Analysis Report: Aether
 
-**Generated:** 2026-02-15 07:33:49 UTC
+**Generated:** 2026-02-16 07:48:37 UTC
 **Schema Version:** 1.5.0
 
 ---## Table of Contents
@@ -31,7 +31,7 @@
 | Inactive Repositories | 50 | 72.5% |
 | No Apparent Commits | 0 | 0.0% |
 | Total Commits | 43.6K | - |
-| Total Lines of Code | 115.1K | - |
+| Total Lines of Code | 115.3K | - |
 
 ---
 ## 🏢 Top Organizations
@@ -42,7 +42,7 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | intel.com | 32 | 103 | +3039 | 4334 | +16 | 24 |
+| 1 | intel.com | 32 | 102 | +3023 | 4296 | +17 | 24 |
 | 2 | princeton.edu | 2 | 75 | +1247 | 1865 | +8 | 17 |
 | 3 | gmail.com | 307 | 15 | +96 | 172 | +1 | 48 |
 | 4 | github.com | 48 | 12 | +141 | 220 | +5 | 24 |
@@ -82,7 +82,7 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Contributor | Commits | LOC | Δ LOC | Avg LOC/Commit | Repositories | Organization |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Arrobo, Gabriel | 84 | +2760 | 3867 | +19 | 15 | intel.com |
+| 1 | Arrobo, Gabriel | 83 | +2744 | 3829 | +19 | 15 | intel.com |
 | 2 | Larry Peterson | 75 | +1247 | 1865 | +8 | 16 | princeton.edu |
 | 3 | Marikkannu, Suresh | 19 | +279 | 467 | +4 | 8 | intel.com |
 | 4 | Bilal Saleem | 7 | 0 | 0 | 0 | 8 | gmail.com |
@@ -118,75 +118,75 @@ The data presented in the table below covers the past 365 days.
 
 | Repository | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| [onos](https://github.com/opennetworkinglab/onos) | 15276 | 0 | 0 | 1443 | 2022-03-05 | 🛑 |
-| [neutron](https://github.com/opennetworkinglab/neutron) | 7813 | 0 | 0 | 4078 | 2014-12-16 | 🛑 |
-| [spring-open](https://github.com/opennetworkinglab/spring-open) | 3388 | 0 | 0 | 4077 | 2014-12-17 | 🛑 |
-| [OnosSystemTest](https://github.com/opennetworkinglab/OnosSystemTest) | 3328 | 0 | 0 | 1292 | 2022-08-02 | 🛑 |
-| [grpc-java](https://github.com/opennetworkinglab/grpc-java) | 2931 | 0 | 0 | 3120 | 2017-07-31 | 🛑 |
-| [OpenNetworkLinux](https://github.com/opennetworkinglab/OpenNetworkLinux) | 2267 | 0 | 0 | 1571 | 2021-10-27 | 🛑 |
-| [onos-loxi](https://github.com/opennetworkinglab/onos-loxi) | 1680 | 0 | 0 | 2865 | 2018-04-12 | 🛑 |
-| [flowvisor](https://github.com/opennetworkinglab/flowvisor) | 803 | 0 | 0 | 4551 | 2013-08-30 | 🛑 |
-| [onos-bmv2](https://github.com/opennetworkinglab/onos-bmv2) | 738 | 0 | 0 | 3525 | 2016-06-21 | 🛑 |
-| [trellis-control](https://github.com/opennetworkinglab/trellis-control) | 651 | 0 | 0 | 1374 | 2022-05-12 | 🛑 |
-| [onos-yang-tools](https://github.com/opennetworkinglab/onos-yang-tools) | 561 | 0 | 0 | 2364 | 2019-08-26 | 🛑 |
-| [aether-docs](https://github.com/opennetworkinglab/aether-docs) | 450 | +403 | 4 | 29 | 2026-01-16 | ✅ |
-| [aether-onramp](https://github.com/opennetworkinglab/aether-onramp) | 378 | +1890 | 7 | 3 | 2026-02-11 | ✅ |
-| [aether-5gc](https://github.com/opennetworkinglab/aether-5gc) | 240 | +307 | 5 | 2 | 2026-02-12 | ✅ |
-| [onos-app-samples](https://github.com/opennetworkinglab/onos-app-samples) | 210 | 0 | 0 | 2706 | 2018-09-18 | 🛑 |
-| [gnmi](https://github.com/opennetworkinglab/gnmi) | 179 | 0 | 0 | 1814 | 2021-02-26 | 🛑 |
-| [ngsdn-tutorial](https://github.com/opennetworkinglab/ngsdn-tutorial) | 171 | 0 | 0 | 1612 | 2021-09-17 | 🛑 |
-| [onos-p4-tutorial](https://github.com/opennetworkinglab/onos-p4-tutorial) | 168 | 0 | 0 | 2047 | 2020-07-08 | 🛑 |
-| [smart5g-nonrtric-plt-ranpm](https://github.com/opennetworkinglab/smart5g-nonrtric-plt-ranpm) | 129 | 0 | 0 | 729 | 2024-02-16 | ☑️ |
-| [smart5g-sim-o1-interface](https://github.com/opennetworkinglab/smart5g-sim-o1-interface) | 127 | 0 | 0 | 799 | 2023-12-08 | ☑️ |
-| [fabric-p4test](https://github.com/opennetworkinglab/fabric-p4test) | 112 | 0 | 0 | 1653 | 2021-08-06 | 🛑 |
-| [trellis-t3](https://github.com/opennetworkinglab/trellis-t3) | 111 | 0 | 0 | 1479 | 2022-01-27 | 🛑 |
-| [timesheetsdb](https://github.com/opennetworkinglab/timesheetsdb) | 110 | 0 | 0 | 1559 | 2021-11-08 | 🛑 |
-| [onos-warden](https://github.com/opennetworkinglab/onos-warden) | 108 | 0 | 0 | 2522 | 2019-03-21 | 🛑 |
-| [stratum-onos-demo](https://github.com/opennetworkinglab/stratum-onos-demo) | 106 | 0 | 0 | 2345 | 2019-09-14 | 🛑 |
-| [timesheetsui](https://github.com/opennetworkinglab/timesheetsui) | 101 | 0 | 0 | 1559 | 2021-11-08 | 🛑 |
-| [aether-gnbsim](https://github.com/opennetworkinglab/aether-gnbsim) | 99 | +417 | 3 | 2 | 2026-02-12 | ✅ |
-| [onos-stc](https://github.com/opennetworkinglab/onos-stc) | 99 | 0 | 0 | 1292 | 2022-08-02 | 🛑 |
-| [routing](https://github.com/opennetworkinglab/routing) | 79 | 0 | 0 | 1932 | 2020-10-31 | 🛑 |
-| [aether-amp](https://github.com/opennetworkinglab/aether-amp) | 78 | +11 | 4 | 145 | 2025-09-22 | ✅ |
-| [jdvue](https://github.com/opennetworkinglab/jdvue) | 71 | 0 | 0 | 2020 | 2020-08-04 | 🛑 |
-| [sdfabric-onos](https://github.com/opennetworkinglab/sdfabric-onos) | 70 | 0 | 0 | 1292 | 2022-08-03 | 🛑 |
-| [mibbler](https://github.com/opennetworkinglab/mibbler) | 66 | 0 | 0 | 3401 | 2016-10-23 | 🛑 |
-| [snmp-core](https://github.com/opennetworkinglab/snmp-core) | 65 | 0 | 0 | 3401 | 2016-10-23 | 🛑 |
-| [aether-k8s](https://github.com/opennetworkinglab/aether-k8s) | 62 | +21 | 3 | 11 | 2026-02-03 | ✅ |
-| [aether-ueransim](https://github.com/opennetworkinglab/aether-ueransim) | 62 | +38 | 4 | 310 | 2025-04-10 | ✅ |
-| [aether-jenkins](https://github.com/opennetworkinglab/aether-jenkins) | 52 | +539 | 3 | 116 | 2025-10-21 | ✅ |
-| [tassen](https://github.com/opennetworkinglab/tassen) | 51 | 0 | 0 | 2048 | 2020-07-07 | 🛑 |
-| [ODTN-emulator](https://github.com/opennetworkinglab/ODTN-emulator) | 50 | 0 | 0 | 1949 | 2020-10-14 | 🛑 |
-| [int-host-reporter](https://github.com/opennetworkinglab/int-host-reporter) | 48 | 0 | 0 | 1486 | 2022-01-20 | 🛑 |
-| [cdvue](https://github.com/opennetworkinglab/cdvue) | 47 | 0 | 0 | 3477 | 2016-08-08 | 🛑 |
-| [onos-kubernetes](https://github.com/opennetworkinglab/onos-kubernetes) | 43 | 0 | 0 | 2567 | 2019-02-04 | 🛑 |
-| [plugins_reviewers-by-blame](https://github.com/opennetworkinglab/plugins_reviewers-by-blame) | 43 | 0 | 0 | 3602 | 2016-04-05 | 🛑 |
-| [p4mn-docker](https://github.com/opennetworkinglab/p4mn-docker) | 42 | 0 | 0 | 1328 | 2022-06-27 | 🛑 |
-| [aether-oai](https://github.com/opennetworkinglab/aether-oai) | 37 | +199 | 3 | 10 | 2026-02-04 | ✅ |
-| [cord-config](https://github.com/opennetworkinglab/cord-config) | 37 | 0 | 0 | 3359 | 2016-12-04 | 🛑 |
-| [micro-onos-demo](https://github.com/opennetworkinglab/micro-onos-demo) | 37 | 0 | 0 | 2319 | 2019-10-10 | 🛑 |
-| [aether-4gc](https://github.com/opennetworkinglab/aether-4gc) | 32 | +1 | 2 | 261 | 2025-05-29 | ✅ |
-| [srsRAN-docker](https://github.com/opennetworkinglab/srsRAN-docker) | 24 | +77 | 3 | 83 | 2025-11-24 | ✅ |
-| [moduleowner](https://github.com/opennetworkinglab/moduleowner) | 23 | 0 | 0 | 3643 | 2016-02-24 | 🛑 |
-| [SDKLT](https://github.com/opennetworkinglab/SDKLT) | 21 | 0 | 0 | 1312 | 2022-07-13 | 🛑 |
-| [aether-srsran](https://github.com/opennetworkinglab/aether-srsran) | 19 | +177 | 2 | 11 | 2026-02-03 | ✅ |
-| [aether-sdran](https://github.com/opennetworkinglab/aether-sdran) | 18 | +2 | 1 | 145 | 2025-09-22 | ✅ |
-| [aether-configs](https://github.com/opennetworkinglab/aether-configs) | 18 | 0 | 0 | 1346 | 2022-06-10 | 🛑 |
-| [p4c-docker](https://github.com/opennetworkinglab/p4c-docker) | 17 | 0 | 0 | 1495 | 2022-01-11 | 🛑 |
-| [sdfabric-tutorial](https://github.com/opennetworkinglab/sdfabric-tutorial) | 15 | 0 | 0 | 1349 | 2022-06-06 | 🛑 |
-| [spring-open-cli](https://github.com/opennetworkinglab/spring-open-cli) | 11 | 0 | 0 | 3972 | 2015-04-01 | 🛑 |
-| [fabric-plumber](https://github.com/opennetworkinglab/fabric-plumber) | 9 | 0 | 0 | 2355 | 2019-09-04 | 🛑 |
-| [sdfabric-utils](https://github.com/opennetworkinglab/sdfabric-utils) | 8 | 0 | 0 | 1471 | 2022-02-03 | 🛑 |
-| [mininet](https://github.com/opennetworkinglab/mininet) | 7 | 0 | 0 | 4624 | 2013-06-18 | 🛑 |
-| [onos-operator](https://github.com/opennetworkinglab/onos-operator) | 7 | 0 | 0 | 2588 | 2019-01-14 | 🛑 |
-| [aether-oscric](https://github.com/opennetworkinglab/aether-oscric) | 6 | +564 | 1 | 220 | 2025-07-09 | ✅ |
-| [.github](https://github.com/opennetworkinglab/.github) | 6 | 0 | 0 | 606 | 2024-06-18 | ☑️ |
-| [flowvisor-test](https://github.com/opennetworkinglab/flowvisor-test) | 4 | 0 | 0 | 4894 | 2012-09-21 | 🛑 |
-| [onos-apps-list](https://github.com/opennetworkinglab/onos-apps-list) | 4 | 0 | 0 | 2486 | 2019-04-26 | 🛑 |
-| [aether-packer](https://github.com/opennetworkinglab/aether-packer) | 3 | +1986 | 2 | 325 | 2025-03-26 | ✅ |
-| [aether-sriov](https://github.com/opennetworkinglab/aether-sriov) | 3 | 0 | 0 | 1378 | 2022-05-08 | 🛑 |
-| [onos-config-demo](https://github.com/opennetworkinglab/onos-config-demo) | 3 | 0 | 0 | 2389 | 2019-08-01 | 🛑 |
-| [aether-n3iwf](https://github.com/opennetworkinglab/aether-n3iwf) | 2 | +615 | 1 | 190 | 2025-08-08 | ✅ |
+| [onos](https://github.com/opennetworkinglab/onos) | 15276 | 0 | 0 | 1444 | 2022-03-05 | 🛑 |
+| [neutron](https://github.com/opennetworkinglab/neutron) | 7813 | 0 | 0 | 4079 | 2014-12-16 | 🛑 |
+| [spring-open](https://github.com/opennetworkinglab/spring-open) | 3388 | 0 | 0 | 4078 | 2014-12-17 | 🛑 |
+| [OnosSystemTest](https://github.com/opennetworkinglab/OnosSystemTest) | 3328 | 0 | 0 | 1293 | 2022-08-02 | 🛑 |
+| [grpc-java](https://github.com/opennetworkinglab/grpc-java) | 2931 | 0 | 0 | 3121 | 2017-07-31 | 🛑 |
+| [OpenNetworkLinux](https://github.com/opennetworkinglab/OpenNetworkLinux) | 2267 | 0 | 0 | 1572 | 2021-10-27 | 🛑 |
+| [onos-loxi](https://github.com/opennetworkinglab/onos-loxi) | 1680 | 0 | 0 | 2866 | 2018-04-12 | 🛑 |
+| [flowvisor](https://github.com/opennetworkinglab/flowvisor) | 803 | 0 | 0 | 4552 | 2013-08-30 | 🛑 |
+| [onos-bmv2](https://github.com/opennetworkinglab/onos-bmv2) | 738 | 0 | 0 | 3526 | 2016-06-21 | 🛑 |
+| [trellis-control](https://github.com/opennetworkinglab/trellis-control) | 651 | 0 | 0 | 1375 | 2022-05-12 | 🛑 |
+| [onos-yang-tools](https://github.com/opennetworkinglab/onos-yang-tools) | 561 | 0 | 0 | 2365 | 2019-08-26 | 🛑 |
+| [aether-docs](https://github.com/opennetworkinglab/aether-docs) | 450 | +403 | 4 | 30 | 2026-01-16 | ✅ |
+| [aether-onramp](https://github.com/opennetworkinglab/aether-onramp) | 378 | +1890 | 7 | 4 | 2026-02-11 | ✅ |
+| [aether-5gc](https://github.com/opennetworkinglab/aether-5gc) | 240 | +307 | 5 | 3 | 2026-02-12 | ✅ |
+| [onos-app-samples](https://github.com/opennetworkinglab/onos-app-samples) | 210 | 0 | 0 | 2707 | 2018-09-18 | 🛑 |
+| [gnmi](https://github.com/opennetworkinglab/gnmi) | 179 | 0 | 0 | 1815 | 2021-02-26 | 🛑 |
+| [ngsdn-tutorial](https://github.com/opennetworkinglab/ngsdn-tutorial) | 171 | 0 | 0 | 1613 | 2021-09-17 | 🛑 |
+| [onos-p4-tutorial](https://github.com/opennetworkinglab/onos-p4-tutorial) | 168 | 0 | 0 | 2048 | 2020-07-08 | 🛑 |
+| [smart5g-nonrtric-plt-ranpm](https://github.com/opennetworkinglab/smart5g-nonrtric-plt-ranpm) | 129 | 0 | 0 | 730 | 2024-02-16 | ☑️ |
+| [smart5g-sim-o1-interface](https://github.com/opennetworkinglab/smart5g-sim-o1-interface) | 127 | 0 | 0 | 800 | 2023-12-08 | ☑️ |
+| [fabric-p4test](https://github.com/opennetworkinglab/fabric-p4test) | 112 | 0 | 0 | 1654 | 2021-08-06 | 🛑 |
+| [trellis-t3](https://github.com/opennetworkinglab/trellis-t3) | 111 | 0 | 0 | 1480 | 2022-01-27 | 🛑 |
+| [timesheetsdb](https://github.com/opennetworkinglab/timesheetsdb) | 110 | 0 | 0 | 1560 | 2021-11-08 | 🛑 |
+| [onos-warden](https://github.com/opennetworkinglab/onos-warden) | 108 | 0 | 0 | 2523 | 2019-03-21 | 🛑 |
+| [stratum-onos-demo](https://github.com/opennetworkinglab/stratum-onos-demo) | 106 | 0 | 0 | 2346 | 2019-09-14 | 🛑 |
+| [timesheetsui](https://github.com/opennetworkinglab/timesheetsui) | 101 | 0 | 0 | 1560 | 2021-11-08 | 🛑 |
+| [aether-gnbsim](https://github.com/opennetworkinglab/aether-gnbsim) | 99 | +417 | 3 | 3 | 2026-02-12 | ✅ |
+| [onos-stc](https://github.com/opennetworkinglab/onos-stc) | 99 | 0 | 0 | 1293 | 2022-08-02 | 🛑 |
+| [routing](https://github.com/opennetworkinglab/routing) | 79 | 0 | 0 | 1933 | 2020-10-31 | 🛑 |
+| [aether-amp](https://github.com/opennetworkinglab/aether-amp) | 78 | +11 | 4 | 146 | 2025-09-22 | ✅ |
+| [jdvue](https://github.com/opennetworkinglab/jdvue) | 71 | 0 | 0 | 2021 | 2020-08-04 | 🛑 |
+| [sdfabric-onos](https://github.com/opennetworkinglab/sdfabric-onos) | 70 | 0 | 0 | 1293 | 2022-08-03 | 🛑 |
+| [mibbler](https://github.com/opennetworkinglab/mibbler) | 66 | 0 | 0 | 3402 | 2016-10-23 | 🛑 |
+| [snmp-core](https://github.com/opennetworkinglab/snmp-core) | 65 | 0 | 0 | 3402 | 2016-10-23 | 🛑 |
+| [aether-k8s](https://github.com/opennetworkinglab/aether-k8s) | 62 | +5 | 3 | 12 | 2026-02-03 | ✅ |
+| [aether-ueransim](https://github.com/opennetworkinglab/aether-ueransim) | 62 | +38 | 4 | 311 | 2025-04-10 | ✅ |
+| [aether-jenkins](https://github.com/opennetworkinglab/aether-jenkins) | 52 | +539 | 3 | 117 | 2025-10-21 | ✅ |
+| [tassen](https://github.com/opennetworkinglab/tassen) | 51 | 0 | 0 | 2049 | 2020-07-07 | 🛑 |
+| [ODTN-emulator](https://github.com/opennetworkinglab/ODTN-emulator) | 50 | 0 | 0 | 1950 | 2020-10-14 | 🛑 |
+| [int-host-reporter](https://github.com/opennetworkinglab/int-host-reporter) | 48 | 0 | 0 | 1487 | 2022-01-20 | 🛑 |
+| [cdvue](https://github.com/opennetworkinglab/cdvue) | 47 | 0 | 0 | 3478 | 2016-08-08 | 🛑 |
+| [onos-kubernetes](https://github.com/opennetworkinglab/onos-kubernetes) | 43 | 0 | 0 | 2568 | 2019-02-04 | 🛑 |
+| [plugins_reviewers-by-blame](https://github.com/opennetworkinglab/plugins_reviewers-by-blame) | 43 | 0 | 0 | 3603 | 2016-04-05 | 🛑 |
+| [p4mn-docker](https://github.com/opennetworkinglab/p4mn-docker) | 42 | 0 | 0 | 1329 | 2022-06-27 | 🛑 |
+| [aether-oai](https://github.com/opennetworkinglab/aether-oai) | 37 | +199 | 3 | 11 | 2026-02-04 | ✅ |
+| [cord-config](https://github.com/opennetworkinglab/cord-config) | 37 | 0 | 0 | 3360 | 2016-12-04 | 🛑 |
+| [micro-onos-demo](https://github.com/opennetworkinglab/micro-onos-demo) | 37 | 0 | 0 | 2320 | 2019-10-10 | 🛑 |
+| [aether-4gc](https://github.com/opennetworkinglab/aether-4gc) | 32 | +1 | 2 | 262 | 2025-05-29 | ✅ |
+| [srsRAN-docker](https://github.com/opennetworkinglab/srsRAN-docker) | 24 | +77 | 3 | 84 | 2025-11-24 | ✅ |
+| [moduleowner](https://github.com/opennetworkinglab/moduleowner) | 23 | 0 | 0 | 3644 | 2016-02-24 | 🛑 |
+| [SDKLT](https://github.com/opennetworkinglab/SDKLT) | 21 | 0 | 0 | 1313 | 2022-07-13 | 🛑 |
+| [aether-srsran](https://github.com/opennetworkinglab/aether-srsran) | 19 | +177 | 2 | 12 | 2026-02-03 | ✅ |
+| [aether-sdran](https://github.com/opennetworkinglab/aether-sdran) | 18 | +2 | 1 | 146 | 2025-09-22 | ✅ |
+| [aether-configs](https://github.com/opennetworkinglab/aether-configs) | 18 | 0 | 0 | 1347 | 2022-06-10 | 🛑 |
+| [p4c-docker](https://github.com/opennetworkinglab/p4c-docker) | 17 | 0 | 0 | 1496 | 2022-01-11 | 🛑 |
+| [sdfabric-tutorial](https://github.com/opennetworkinglab/sdfabric-tutorial) | 15 | 0 | 0 | 1350 | 2022-06-06 | 🛑 |
+| [spring-open-cli](https://github.com/opennetworkinglab/spring-open-cli) | 11 | 0 | 0 | 3973 | 2015-04-01 | 🛑 |
+| [fabric-plumber](https://github.com/opennetworkinglab/fabric-plumber) | 9 | 0 | 0 | 2356 | 2019-09-04 | 🛑 |
+| [sdfabric-utils](https://github.com/opennetworkinglab/sdfabric-utils) | 8 | 0 | 0 | 1472 | 2022-02-03 | 🛑 |
+| [mininet](https://github.com/opennetworkinglab/mininet) | 7 | 0 | 0 | 4625 | 2013-06-18 | 🛑 |
+| [onos-operator](https://github.com/opennetworkinglab/onos-operator) | 7 | 0 | 0 | 2589 | 2019-01-14 | 🛑 |
+| [aether-oscric](https://github.com/opennetworkinglab/aether-oscric) | 6 | +564 | 1 | 221 | 2025-07-09 | ✅ |
+| [.github](https://github.com/opennetworkinglab/.github) | 6 | 0 | 0 | 607 | 2024-06-18 | ☑️ |
+| [flowvisor-test](https://github.com/opennetworkinglab/flowvisor-test) | 4 | 0 | 0 | 4895 | 2012-09-21 | 🛑 |
+| [onos-apps-list](https://github.com/opennetworkinglab/onos-apps-list) | 4 | 0 | 0 | 2487 | 2019-04-26 | 🛑 |
+| [aether-packer](https://github.com/opennetworkinglab/aether-packer) | 3 | +1986 | 2 | 326 | 2025-03-26 | ✅ |
+| [aether-sriov](https://github.com/opennetworkinglab/aether-sriov) | 3 | 0 | 0 | 1379 | 2022-05-08 | 🛑 |
+| [onos-config-demo](https://github.com/opennetworkinglab/onos-config-demo) | 3 | 0 | 0 | 2390 | 2019-08-01 | 🛑 |
+| [aether-n3iwf](https://github.com/opennetworkinglab/aether-n3iwf) | 2 | +615 | 1 | 191 | 2025-08-08 | ✅ |
 
 **Total:** 69 repositories
 
@@ -206,9 +206,9 @@ The data presented in the table below covers the past 365 days.
 | ODTN-emulator | Java | Python, Dockerfile, Shell | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | aether-n3iwf | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | aether-docs | Python | HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| aether-oscric | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
-| aether-oai | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | aether-packer | Shell |  | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| aether-oai | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| aether-oscric | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | aether-sdran | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | aether-onramp | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | aether-ueransim | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
@@ -216,9 +216,9 @@ The data presented in the table below covers the past 365 days.
 | aether-sriov | Python |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | cord-config | Shell | HTML | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | cdvue | Java/Maven | JavaScript, HTML | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| fabric-p4test | Shell | Python, Dockerfile | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | fabric-plumber | Java/Maven |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | flowvisor-test | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| fabric-p4test | Shell | Python, Dockerfile | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | jdvue | Java/Maven | JavaScript, Python, HTML | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | flowvisor | Java | Python, Shell, Java/Ant, C, D, PLpgSQL | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | gnmi | Go | Python, Shell | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
@@ -235,28 +235,28 @@ The data presented in the table below covers the past 365 days.
 | mibbler | Java/Maven |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | SDKLT | C | Python, Shell, HTML, CSS | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | onos-loxi | Java | Python, Shell, C, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| onos-stc | Java/Maven | JavaScript, HTML, CSS | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | onos-p4-tutorial | Java | Python | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| onos-stc | Java/Maven | JavaScript, HTML, CSS | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | grpc-java | Java/Gradle | Python, Shell, C++, C, Kotlin, Groovy | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | p4c-docker | Dockerfile |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| onos-warden | Go | JavaScript, Shell, Java, Swift | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| p4mn-docker | Python | Dockerfile | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | onos-config-demo | Python | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| p4mn-docker | Python | Dockerfile | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| onos-warden | Go | JavaScript, Shell, Java, Swift | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | plugins_reviewers-by-blame | Java |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | routing | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | sdfabric-onos | Shell | Dockerfile | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| sdfabric-utils | Python |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | sdfabric-tutorial | Python | Dockerfile, Shell | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| sdfabric-utils | Python |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | snmp-core | Java/Maven | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | smart5g-sim-o1-interface | C | Python, Shell, C++ | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | spring-open-cli | Python | JavaScript, Shell, HTML, CSS | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | smart5g-nonrtric-plt-ranpm | Java | Python, Shell, Go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | srsRAN-docker | Shell |  | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| neutron | Python | JavaScript, Shell, D, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | stratum-onos-demo | Java | Python, Shell | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | tassen | Go | Python, Shell | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| neutron | Python | JavaScript, Shell, D, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| timesheetsdb | TypeScript | JavaScript, Node, PLpgSQL | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | timesheetsui | TypeScript | JavaScript, Node, SCSS, HTML, CSS | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| timesheetsdb | TypeScript | JavaScript, Node, PLpgSQL | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | spring-open | Java/Maven | JavaScript, Python, Shell, C++, Ruby, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | trellis-t3 | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | trellis-control | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
