@@ -1,6 +1,6 @@
 # 📊 GitHub Project Analysis Report: FDio
 
-**Generated:** 2026-02-22 07:31:04 UTC
+**Generated:** 2026-02-23 07:48:39 UTC
 **Schema Version:** 1.5.0
 
 ---## Table of Contents
@@ -31,7 +31,7 @@
 | Inactive Repositories | 3 | 42.9% |
 | No Apparent Commits | 0 | 0.0% |
 | Total Commits | 24.8K | - |
-| Total Lines of Code | 138.6K | - |
+| Total Lines of Code | 137.3K | - |
 
 ---
 ## 🏢 Top Organizations
@@ -42,7 +42,7 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | cisco.com | 158 | 1038 | +121394 | 235229 | +7 | 5 |
+| 1 | cisco.com | 158 | 1040 | +121398 | 235237 | +7 | 5 |
 | 2 | gmail.com | 115 | 244 | +20286 | 28442 | +49 | 5 |
 | 3 | icloud.com | 1 | 155 | +48067 | 89073 | +45 | 4 |
 | 4 | marvell.com | 14 | 23 | +1270 | 1446 | +47 | 3 |
@@ -83,11 +83,11 @@ The data presented in the table below covers the past 365 days.
 | Rank | Contributor | Commits | LOC | Δ LOC | Avg LOC/Commit | Repositories | Organization |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Florin Coras | 218 | +11039 | 15578 | +29 | 3 | cisco.com |
-| 2 | Matus Fabian | 214 | +29524 | 35716 | +109 | 2 | cisco.com |
+| 2 | Matus Fabian | 215 | +29525 | 35718 | +108 | 2 | cisco.com |
 | 3 | Dave Wallace | 194 | +15409 | 21303 | +49 | 5 | gmail.com |
 | 4 | Peter Mikus | 155 | +48067 | 89073 | +45 | 4 | icloud.com |
 | 5 | Damjan Marion | 121 | +25283 | 88244 | -311 | 2 | cisco.com |
-| 6 | Tibor Frank | 120 | +7933 | 17147 | -10 | 3 | cisco.com |
+| 6 | Tibor Frank | 121 | +7936 | 17153 | -10 | 3 | cisco.com |
 | 7 | Adrian Villin | 96 | +14844 | 22670 | +73 | 1 | cisco.com |
 | 8 | Vratko Polak | 73 | +18721 | 36764 | +9 | 4 | cisco.com |
 | 9 | Semir Sionek | 47 | +1986 | 2480 | +31 | 2 | cisco.com |
@@ -118,13 +118,13 @@ The data presented in the table below covers the past 365 days.
 
 | Repository | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| [vpp](https://github.com/gerrit.fd.io/vpp) | 15403 | +149179 | 78 | 1 | 2026-02-21 | ✅ |
-| [csit](https://github.com/gerrit.fd.io/csit) | 6395 | +73803 | 6 | 2 | 2026-02-19 | ✅ |
-| [ci-management](https://github.com/gerrit.fd.io/ci-management) | 2859 | +2610 | 11 | 9 | 2026-02-13 | ✅ |
-| [vppsb](https://github.com/gerrit.fd.io/vppsb) | 88 | 0 | 0 | 2465 | 2019-05-24 | 🛑 |
-| [.github](https://github.com/gerrit.fd.io/.github) | 19 | +3764 | 2 | 22 | 2026-01-30 | ✅ |
-| [main_test](https://github.com/gerrit.fd.io/main_test) | 8 | 0 | 0 | 1940 | 2020-10-30 | 🛑 |
-| [test_injector](https://github.com/gerrit.fd.io/test_injector) | 1 | 0 | 0 | 3462 | 2016-08-30 | 🛑 |
+| [vpp](https://github.com/gerrit.fd.io/vpp) | 15404 | +149180 | 78 | 0 | 2026-02-22 | ✅ |
+| [csit](https://github.com/gerrit.fd.io/csit) | 6396 | +73806 | 6 | 0 | 2026-02-23 | ✅ |
+| [ci-management](https://github.com/gerrit.fd.io/ci-management) | 2859 | +2610 | 11 | 10 | 2026-02-13 | ✅ |
+| [vppsb](https://github.com/gerrit.fd.io/vppsb) | 88 | 0 | 0 | 2466 | 2019-05-24 | 🛑 |
+| [.github](https://github.com/gerrit.fd.io/.github) | 19 | +3764 | 2 | 23 | 2026-01-30 | ✅ |
+| [main_test](https://github.com/gerrit.fd.io/main_test) | 8 | 0 | 0 | 1941 | 2020-10-30 | 🛑 |
+| [test_injector](https://github.com/gerrit.fd.io/test_injector) | 1 | 0 | 0 | 3463 | 2016-08-30 | 🛑 |
 
 **Total:** 7 repositories
 
@@ -133,8 +133,8 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Primary Type | Other Types | Dependabot | Pre-commit | ReadTheDocs | .gitreview | G2G | Status |
 |----------------|--------------|-------------|------------|------------|-------------|------------|-----|--------|
-| main_test | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | test_injector | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| main_test | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vppsb | C | JavaScript, Shell, HTML, CSS, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | .github | Shell | Python | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | ci-management | jjb |  | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
