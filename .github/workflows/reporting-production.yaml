@@ -1199,7 +1199,7 @@ jobs:
       - name: "Send email with dawidd6/action-send-mail"
         if: always() && vars.SEND_EMAIL_NOTIFICATIONS == 'true'
         # yamllint disable-line rule:line-length
-        uses: dawidd6/action-send-mail@62a2d05b79935ad4fb90ce9079928099579c14ac  # v9
+        uses: dawidd6/action-send-mail@7c60f8f904c6667d644b82f6ecb46745f97ee4ce  # v10
         with:
           server_address: ${{ vars.SMTP_SERVER }}
           server_port: 587
