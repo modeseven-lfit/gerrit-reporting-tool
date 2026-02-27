@@ -1,6 +1,6 @@
 # 📊 GitHub Project Analysis Report: FDio
 
-**Generated:** 2026-02-26 10:33:37 UTC
+**Generated:** 2026-02-27 07:41:04 UTC
 **Schema Version:** 1.5.0
 
 ---## Table of Contents
@@ -31,7 +31,7 @@
 | Inactive Repositories | 3 | 42.9% |
 | No Apparent Commits | 0 | 0.0% |
 | Total Commits | 24.8K | - |
-| Total Lines of Code | 143.0K | - |
+| Total Lines of Code | 140.7K | - |
 
 ---
 ## 🏢 Top Organizations
@@ -42,7 +42,7 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | cisco.com | 158 | 1041 | +124364 | 237027 | +11 | 5 |
+| 1 | cisco.com | 158 | 1039 | +124275 | 236909 | +11 | 5 |
 | 2 | gmail.com | 115 | 246 | +20324 | 28486 | +49 | 5 |
 | 3 | icloud.com | 1 | 156 | +48098 | 89140 | +45 | 4 |
 | 4 | marvell.com | 14 | 23 | +1270 | 1446 | +47 | 3 |
@@ -70,8 +70,8 @@ The data presented in the table below covers the past 365 days.
 | 26 | baicells.com | 1 | 1 | +5 | 8 | +2 | 1 |
 | 27 | github.com | 2 | 1 | +1 | 2 | 0 | 2 |
 | 28 | insidepacket.com | 1 | 1 | +5 | 5 | +5 | 1 |
-| 29 | lunn.ch | 1 | 1 | +6 | 14 | -2 | 1 |
-| 30 | mcconnachie.ca | 1 | 1 | +1 | 2 | 0 | 1 |
+| 29 | mcconnachie.ca | 1 | 1 | +1 | 2 | 0 | 1 |
+| 30 | protonmail.ch | 1 | 1 | +3 | 570 | -564 | 2 |
 
 ---
 ## 👥 Top Contributors
@@ -90,8 +90,8 @@ The data presented in the table below covers the past 365 days.
 | 6 | Tibor Frank | 119 | +7933 | 17147 | -10 | 3 | cisco.com |
 | 7 | Adrian Villin | 97 | +14888 | 22734 | +72 | 1 | cisco.com |
 | 8 | Vratko Polak | 72 | +17873 | 34795 | +13 | 4 | cisco.com |
-| 9 | Semir Sionek | 47 | +1986 | 2480 | +31 | 2 | cisco.com |
-| 10 | Benoît Ganne | 37 | +595 | 1004 | +5 | 1 | cisco.com |
+| 9 | Semir Sionek | 46 | +1905 | 2376 | +31 | 2 | cisco.com |
+| 10 | Benoît Ganne | 36 | +587 | 990 | +5 | 1 | cisco.com |
 | 11 | Mohsin KAZMI | 28 | +3252 | 3696 | +100 | 2 | cisco.com |
 | 12 | Mohammed Hawari | 20 | +16355 | 17562 | +757 | 1 | hawari.fr |
 | 13 | Naveen Joy | 17 | +1611 | 3611 | -22 | 3 | cisco.com |
@@ -118,13 +118,13 @@ The data presented in the table below covers the past 365 days.
 
 | Repository | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| [vpp](https://github.com/gerrit.fd.io/vpp) | 15414 | +153030 | 78 | 0 | 2026-02-25 | ✅ |
-| [csit](https://github.com/gerrit.fd.io/csit) | 6398 | +72987 | 7 | 0 | 2026-02-25 | ✅ |
-| [ci-management](https://github.com/gerrit.fd.io/ci-management) | 2859 | +2610 | 11 | 13 | 2026-02-13 | ✅ |
-| [vppsb](https://github.com/gerrit.fd.io/vppsb) | 88 | 0 | 0 | 2469 | 2019-05-24 | 🛑 |
-| [.github](https://github.com/gerrit.fd.io/.github) | 19 | +3764 | 2 | 26 | 2026-01-30 | ✅ |
+| [vpp](https://github.com/gerrit.fd.io/vpp) | 15414 | +152935 | 77 | 1 | 2026-02-25 | ✅ |
+| [csit](https://github.com/gerrit.fd.io/csit) | 6398 | +72987 | 7 | 1 | 2026-02-25 | ✅ |
+| [ci-management](https://github.com/gerrit.fd.io/ci-management) | 2859 | +2610 | 11 | 14 | 2026-02-13 | ✅ |
+| [vppsb](https://github.com/gerrit.fd.io/vppsb) | 88 | 0 | 0 | 2470 | 2019-05-24 | 🛑 |
+| [.github](https://github.com/gerrit.fd.io/.github) | 19 | +3764 | 2 | 27 | 2026-01-30 | ✅ |
 | [main_test](https://github.com/gerrit.fd.io/main_test) | 8 | 0 | 0 | 1945 | 2020-10-30 | 🛑 |
-| [test_injector](https://github.com/gerrit.fd.io/test_injector) | 1 | 0 | 0 | 3466 | 2016-08-30 | 🛑 |
+| [test_injector](https://github.com/gerrit.fd.io/test_injector) | 1 | 0 | 0 | 3467 | 2016-08-30 | 🛑 |
 
 **Total:** 7 repositories
 
