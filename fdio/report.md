@@ -1,6 +1,6 @@
 # 📊 GitHub Project Analysis Report: FDio
 
-**Generated:** 2026-02-28 07:21:09 UTC
+**Generated:** 2026-03-01 07:28:07 UTC
 **Schema Version:** 1.5.0
 
 ---## Table of Contents
@@ -31,7 +31,7 @@
 | Inactive Repositories | 3 | 42.9% |
 | No Apparent Commits | 0 | 0.0% |
 | Total Commits | 24.8K | - |
-| Total Lines of Code | 139.8K | - |
+| Total Lines of Code | 138.8K | - |
 
 ---
 ## 🏢 Top Organizations
@@ -42,7 +42,7 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | cisco.com | 158 | 1031 | +123795 | 236113 | +11 | 5 |
+| 1 | cisco.com | 158 | 1030 | +122848 | 235170 | +10 | 5 |
 | 2 | gmail.com | 115 | 246 | +20324 | 28486 | +49 | 5 |
 | 3 | icloud.com | 1 | 155 | +48095 | 89134 | +45 | 4 |
 | 4 | marvell.com | 14 | 23 | +1270 | 1446 | +47 | 3 |
@@ -83,14 +83,14 @@ The data presented in the table below covers the past 365 days.
 | Rank | Contributor | Commits | LOC | Δ LOC | Avg LOC/Commit | Repositories | Organization |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Florin Coras | 218 | +11055 | 15594 | +29 | 3 | cisco.com |
-| 2 | Matus Fabian | 211 | +29120 | 35218 | +109 | 2 | cisco.com |
+| 2 | Matus Fabian | 210 | +28238 | 34336 | +105 | 2 | cisco.com |
 | 3 | Dave Wallace | 195 | +15441 | 21337 | +48 | 5 | gmail.com |
 | 4 | Peter Mikus | 155 | +48095 | 89134 | +45 | 4 | icloud.com |
 | 5 | Damjan Marion | 124 | +29396 | 92358 | -270 | 2 | cisco.com |
 | 6 | Tibor Frank | 119 | +7933 | 17147 | -10 | 3 | cisco.com |
 | 7 | Adrian Villin | 96 | +14773 | 22593 | +72 | 1 | cisco.com |
 | 8 | Vratko Polak | 70 | +17523 | 34164 | +12 | 4 | cisco.com |
-| 9 | Semir Sionek | 46 | +1905 | 2376 | +31 | 2 | cisco.com |
+| 9 | Semir Sionek | 47 | +1987 | 2462 | +32 | 2 | cisco.com |
 | 10 | Benoît Ganne | 36 | +587 | 990 | +5 | 1 | cisco.com |
 | 11 | Mohsin KAZMI | 28 | +3252 | 3696 | +100 | 2 | cisco.com |
 | 12 | Mohammed Hawari | 20 | +16355 | 17562 | +757 | 1 | hawari.fr |
@@ -118,13 +118,13 @@ The data presented in the table below covers the past 365 days.
 
 | Repository | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| [vpp](https://github.com/gerrit.fd.io/vpp) | 15416 | +152192 | 76 | 0 | 2026-02-27 | ✅ |
-| [csit](https://github.com/gerrit.fd.io/csit) | 6398 | +72634 | 7 | 2 | 2026-02-25 | ✅ |
-| [ci-management](https://github.com/gerrit.fd.io/ci-management) | 2859 | +2610 | 11 | 15 | 2026-02-13 | ✅ |
-| [vppsb](https://github.com/gerrit.fd.io/vppsb) | 88 | 0 | 0 | 2471 | 2019-05-24 | 🛑 |
-| [.github](https://github.com/gerrit.fd.io/.github) | 19 | +3764 | 2 | 28 | 2026-01-30 | ✅ |
-| [main_test](https://github.com/gerrit.fd.io/main_test) | 8 | 0 | 0 | 1946 | 2020-10-30 | 🛑 |
-| [test_injector](https://github.com/gerrit.fd.io/test_injector) | 1 | 0 | 0 | 3468 | 2016-08-30 | 🛑 |
+| [vpp](https://github.com/gerrit.fd.io/vpp) | 15417 | +151245 | 76 | 96 | 2025-11-24 | ✅ |
+| [csit](https://github.com/gerrit.fd.io/csit) | 6398 | +72634 | 7 | 3 | 2026-02-25 | ✅ |
+| [ci-management](https://github.com/gerrit.fd.io/ci-management) | 2859 | +2610 | 11 | 16 | 2026-02-13 | ✅ |
+| [vppsb](https://github.com/gerrit.fd.io/vppsb) | 88 | 0 | 0 | 2472 | 2019-05-24 | 🛑 |
+| [.github](https://github.com/gerrit.fd.io/.github) | 19 | +3764 | 2 | 29 | 2026-01-30 | ✅ |
+| [main_test](https://github.com/gerrit.fd.io/main_test) | 8 | 0 | 0 | 1947 | 2020-10-30 | 🛑 |
+| [test_injector](https://github.com/gerrit.fd.io/test_injector) | 1 | 0 | 0 | 3469 | 2016-08-30 | 🛑 |
 
 **Total:** 7 repositories
 
