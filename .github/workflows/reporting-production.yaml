@@ -514,7 +514,7 @@ jobs:
 
           echo "📂 Using repos path: ${repos_path}"
 
-          uv run project-reporting-tool generate \
+          uv run lf-releng-project-reporting generate \
             --project "$project" \
             --repos-path "${repos_path}" \
             --output-dir "./reports" \
@@ -956,7 +956,7 @@ jobs:
             echo ""
             echo "**Date Folder:** ${{ steps.date.outputs.folder }}"
             echo "**Workflow Run:** ${{ github.run_id }}"
-            echo "**Target Repository:** modeseven-lfit/project-reporting-artifacts"
+            echo "**Target Repository:** lfreleng-actions/project-reporting-artifacts"
             echo "**Status:** ${status_emoji} ${status}"
             echo "**Artifacts Found:** ${artifact_count:-0}"
             echo ""
@@ -965,7 +965,7 @@ jobs:
             if [ "$artifact_count" -gt 0 ] 2>/dev/null; then
               echo "### 🔗 View in Repository"
               echo ""
-              echo "https://github.com/modeseven-lfit/project-reporting-artifacts/tree/main/data/artifacts/${{ steps.date.outputs.folder }}"
+              echo "https://github.com/lfreleng-actions/project-reporting-artifacts/tree/main/data/artifacts/${{ steps.date.outputs.folder }}"
               echo ""
             else
               echo "### ⚠️ No Artifacts Transferred"

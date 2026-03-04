@@ -125,7 +125,7 @@ Expected Job Names (7):
 Run the test script to see the parser in action:
 
 ```bash
-cd project-reporting-tool
+cd lf-releng-project-reporting
 python3 scripts/test_jjb_parser.py
 ```
 

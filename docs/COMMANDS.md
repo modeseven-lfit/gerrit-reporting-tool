@@ -15,16 +15,16 @@ Essential commands for daily use:
 
 ```bash
 # Generate report
-project-reporting-tool generate --project NAME --repos-path PATH
+lf-releng-project-reporting generate --project NAME --repos-path PATH
 
 # With optimization
-project-reporting-tool generate --project NAME --repos-path PATH --cache --workers 8
+lf-releng-project-reporting generate --project NAME --repos-path PATH --cache --workers 8
 
 # Dry run (validate only)
-project-reporting-tool generate --project NAME --repos-path PATH --dry-run
+lf-releng-project-reporting generate --project NAME --repos-path PATH --dry-run
 
 # Show help
-project-reporting-tool --help
+lf-releng-project-reporting --help
 ```
 
 ---
@@ -81,13 +81,13 @@ The Repository Analysis Report Generator is a command-line tool that analyzes Gi
 
 ```bash
 # Basic usage
-project-reporting-tool generate --project my-project --repos-path /path/to/repos
+lf-releng-project-reporting generate --project my-project --repos-path /path/to/repos
 
 # Validate configuration first
-project-reporting-tool generate --project my-project --repos-path /path/to/repos --dry-run
+lf-releng-project-reporting generate --project my-project --repos-path /path/to/repos --dry-run
 
 # Generate with verbose output
-project-reporting-tool generate --project my-project --repos-path /path/to/repos -vv
+lf-releng-project-reporting generate --project my-project --repos-path /path/to/repos -vv
 ```text
 
 ---
@@ -95,7 +95,7 @@ project-reporting-tool generate --project my-project --repos-path /path/to/repos
 ## Command Syntax
 
 ```text
-project-reporting-tool generate [OPTIONS]
+lf-releng-project-reporting generate [OPTIONS]
 ```text
 
 All options can be specified in any order, but `--project` and `--repos-path` are required.
@@ -345,9 +345,9 @@ Verbosity and quiet mode are mutually exclusive.
 Examples:
 
 ```bash
-project-reporting-tool generate --project test --repos-path ./repos -v     # INFO
-project-reporting-tool generate --project test --repos-path ./repos -vv    # DEBUG
-project-reporting-tool generate --project test --repos-path ./repos -vvv   # TRACE
+lf-releng-project-reporting generate --project test --repos-path ./repos -v     # INFO
+lf-releng-project-reporting generate --project test --repos-path ./repos -vv    # DEBUG
+lf-releng-project-reporting generate --project test --repos-path ./repos -vvv   # TRACE
 ```
 
 ```text
@@ -369,7 +369,7 @@ Use Cases:
 Example:
 
 ```bash
-project-reporting-tool generate --project test --repos-path ./repos --quiet
+lf-releng-project-reporting generate --project test --repos-path ./repos --quiet
 ```text
 
 Behavior:
@@ -392,7 +392,7 @@ Behavior:
 Example:
 
 ```bash
-project-reporting-tool generate --project test --repos-path ./repos --dry-run
+lf-releng-project-reporting generate --project test --repos-path ./repos --dry-run
 ```
 
 Validation Checks:
@@ -495,16 +495,16 @@ Performance metrics are automatically collected during report generation and dis
 
 ```bash
 # Basic timing (default)
-project-reporting-tool generate --project test --repos-path ./repos
+lf-releng-project-reporting generate --project test --repos-path ./repos
 
 # Detailed metrics (verbose)
-project-reporting-tool generate --project test --repos-path ./repos -v
+lf-releng-project-reporting generate --project test --repos-path ./repos -v
 
 # Debug-level profiling (very verbose)
-project-reporting-tool generate --project test --repos-path ./repos -vv
+lf-releng-project-reporting generate --project test --repos-path ./repos -vv
 
 # Trace-level profiling (maximum detail)
-project-reporting-tool generate --project test --repos-path ./repos -vvv
+lf-releng-project-reporting generate --project test --repos-path ./repos -vvv
 ```
 
 ### Output Levels
@@ -635,7 +635,7 @@ Usage in Scripts:
 
 ```bash
 #!/bin/bash
-project-reporting-tool generate --project test --repos-path ./repos
+lf-releng-project-reporting generate --project test --repos-path ./repos
 EXIT_CODE=$?
 
 case $EXIT_CODE in
@@ -659,7 +659,7 @@ MAX_RETRIES=3
 RETRY=0
 
 while [ $RETRY -lt $MAX_RETRIES ]; do
-  project-reporting-tool generate --project test --repos-path ./repos
+  lf-releng-project-reporting generate --project test --repos-path ./repos
   EXIT_CODE=$?
 
   case $EXIT_CODE in
@@ -693,7 +693,7 @@ Example:
 
 ```bash
 export GITHUB_TOKEN="ghp_abc123..."
-project-reporting-tool generate --project test --repos-path ./repos
+lf-releng-project-reporting generate --project test --repos-path ./repos
 ```
 
 **Alternative:** Configure in `config/template.config` or `config/{project}.config`
@@ -710,7 +710,7 @@ Example:
 ```bash
 export GERRIT_USERNAME="myuser"
 export GERRIT_PASSWORD="mypass"
-project-reporting-tool generate --project test --repos-path ./repos
+lf-releng-project-reporting generate --project test --repos-path ./repos
 ```text
 
 ---
@@ -723,7 +723,7 @@ project-reporting-tool generate --project test --repos-path ./repos
 Example:
 
 ```bash
-NO_COLOR=1 project-reporting-tool generate --project test --repos-path ./repos
+NO_COLOR=1 lf-releng-project-reporting generate --project test --repos-path ./repos
 ```text
 
 ---
@@ -734,12 +734,12 @@ NO_COLOR=1 project-reporting-tool generate --project test --repos-path ./repos
 
 ```bash
 # Minimal command
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project kubernetes \
   --repos-path /workspace/k8s-repos
 
 # With custom output directory
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project kubernetes \
   --repos-path /workspace/k8s-repos \
   --output-dir /var/reports/k8s
@@ -749,13 +749,13 @@ project-reporting-tool generate \
 
 ```bash
 # Validate configuration
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test \
   --repos-path ./repos \
   --dry-run
 
 # View resolved configuration with dry-run
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test \
   --repos-path ./repos \
   --show-config
@@ -765,19 +765,19 @@ project-reporting-tool generate \
 
 ```bash
 # Enable caching for faster subsequent runs
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test \
   --repos-path ./repos \
   --cache
 
 # Increase parallelism
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test \
   --repos-path ./repos \
   --workers 16
 
 # Both optimizations
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test \
   --repos-path ./repos \
   --cache \
@@ -788,13 +788,13 @@ project-reporting-tool generate \
 
 ```bash
 # Generate only JSON (no HTML/Markdown)
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test \
   --repos-path ./repos \
   --output-format json
 
 # Generate HTML only (no ZIP)
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test \
   --repos-path ./repos \
   --output-format html \
@@ -805,19 +805,19 @@ project-reporting-tool generate \
 
 ```bash
 # Verbose output
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test \
   --repos-path ./repos \
   -vv
 
 # Maximum debug information
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test \
   --repos-path ./repos \
   -vvv
 
 # Single-threaded for easier debugging
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test \
   --repos-path ./repos \
   --workers 1 \
@@ -828,19 +828,19 @@ project-reporting-tool generate \
 
 ```bash
 # Quiet mode for scripts
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test \
   --repos-path ./repos \
   --quiet
 
 # With error handling
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test \
   --repos-path ./repos \
   --quiet || echo "Report generation failed with exit code $?"
 
 # Scheduled report generation
-0 2 * * * cd /workspace && project-reporting-tool generate \
+0 2 * * * cd /workspace && lf-releng-project-reporting generate \
   --project nightly \
   --repos-path ./repos \
   --output-dir /reports/$(date +\%Y-\%m-\%d) \
@@ -851,14 +851,14 @@ project-reporting-tool generate \
 
 ```bash
 # Override specific settings
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test \
   --repos-path ./repos \
   --config-override activity_thresholds.active_days=180 \
   --config-override api.github.enabled=false
 
 # Multiple overrides
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test \
   --repos-path ./repos \
   --config-override activity_thresholds.active_days=90 \
@@ -967,25 +967,25 @@ Solutions:
 Run validation:
 
 ```bash
-project-reporting-tool generate --project test --repos-path ./repos --dry-run
+lf-releng-project-reporting generate --project test --repos-path ./repos --dry-run
 ```
 
 Enable verbose logging:
 
 ```bash
-project-reporting-tool generate --project test --repos-path ./repos -vv
+lf-releng-project-reporting generate --project test --repos-path ./repos -vv
 ```text
 
 Check configuration:
 
 ```bash
-project-reporting-tool generate --project test --repos-path ./repos --show-config
+lf-releng-project-reporting generate --project test --repos-path ./repos --show-config
 ```text
 
 Configuration validation:
 
 ```bash
-project-reporting-tool generate --project test --repos-path ./repos --dry-run
+lf-releng-project-reporting generate --project test --repos-path ./repos --dry-run
 ```
 
 ---

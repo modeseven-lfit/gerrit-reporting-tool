@@ -23,7 +23,7 @@ This document analyzes why this confusion occurred, documents the current state,
 
 ### 1. Legacy System (Currently Active)
 
-**Location:** `src/project_reporting_tool/renderers/report.py`
+**Location:** `src/lf_releng_project_reporting/renderers/report.py`
 **Class:** `ReportRenderer`
 **Status:** ✅ **ACTIVE** - Used by CLI
 **Approach:** Programmatic report generation
@@ -48,8 +48,8 @@ class ReportRenderer:
 
 **Used By:**
 
-- `src/project_reporting_tool/reporter.py` (RepositoryReporter)
-- `src/project_reporting_tool/main.py` (main CLI entry point)
+- `src/lf_releng_project_reporting/reporter.py` (RepositoryReporter)
+- `src/lf_releng_project_reporting/main.py` (main CLI entry point)
 - All current production reports
 
 **Characteristics:**
@@ -122,7 +122,7 @@ The codebase shows evidence of "Phase 8: Renderer Modernization" which introduce
 
 ### 2. Misleading Import
 
-In `src/project_reporting_tool/renderers/report.py`:
+In `src/lf_releng_project_reporting/renderers/report.py`:
 
 ```python
 from rendering.context import RenderContext  # ← IMPORTED BUT NEVER USED!
@@ -349,14 +349,14 @@ PROBLEM: Two parallel systems, only one is active
    ```python
    # In src/rendering/context.py
    # WARNING: This modern rendering system is NOT currently used by the CLI.
-   # The active renderer is src/project_reporting_tool/renderers/report.py
+   # The active renderer is src/lf_releng_project_reporting/renderers/report.py
    # See docs/RENDERING_ARCHITECTURE_ANALYSIS.md for details.
    ```
 
 2. **Mark Legacy System**
 
    ```python
-   # In src/project_reporting_tool/renderers/report.py
+   # In src/lf_releng_project_reporting/renderers/report.py
    # NOTE: This is the LEGACY rendering system, currently active.
    # Phase 8 migration to template-based rendering is incomplete.
    # New features should consider target system (legacy vs. modern).
@@ -388,7 +388,7 @@ PROBLEM: Two parallel systems, only one is active
    src/
    ├── rendering/              # ✅ Modern template-based (Phase 8)
    │   └── README.md          # Status: ACTIVE (after migration)
-   ├── project_reporting_tool/
+   ├── lf_releng_project_reporting/
    │   └── renderers/         # ⚠️ Legacy programmatic
    │       └── README.md      # Status: DEPRECATED
    ```
@@ -502,7 +502,7 @@ The Table of Contents feature wasn't appearing because it was implemented in an 
 
 ## References
 
-- `src/project_reporting_tool/renderers/report.py` - Legacy renderer (active)
+- `src/lf_releng_project_reporting/renderers/report.py` - Legacy renderer (active)
 - `src/rendering/` - Modern renderer system (inactive)
 - `src/templates/` - Jinja2 templates (not used by CLI)
 - `docs/guides/TEMPLATE_DEVELOPMENT.md` - Modern system docs

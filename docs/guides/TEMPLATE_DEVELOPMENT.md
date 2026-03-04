@@ -119,7 +119,7 @@ project-reports/
 
 ```python
 # 2. Use in Python code
-from src.rendering.modern_renderer import ModernReportRenderer
+from rendering.modern_renderer import ModernReportRenderer
 
 renderer = ModernReportRenderer(theme='default')
 html = renderer.render_template(
@@ -408,7 +408,7 @@ The system includes these standard components:
 Data preparers transform raw data into template-ready format:
 
 ```python
-from src.rendering.data_preparers import RepositoryDataPreparer
+from rendering.data_preparers import RepositoryDataPreparer
 
 # Prepare data for template
 preparer = RepositoryDataPreparer()
@@ -425,7 +425,7 @@ html = renderer.render_template('repository.html', template_data)
 ### Creating Custom Data Preparers
 
 ```python
-from src.rendering.data_preparers import BaseDataPreparer
+from rendering.data_preparers import BaseDataPreparer
 from typing import Dict, Any
 
 class CustomReportPreparer(BaseDataPreparer):
@@ -479,7 +479,7 @@ class CustomReportPreparer(BaseDataPreparer):
 ### Data Validation
 
 ```python
-from src.rendering.data_preparers import BaseDataPreparer
+from rendering.data_preparers import BaseDataPreparer
 from typing import Dict, Any, List
 
 class ValidatingDataPreparer(BaseDataPreparer):
@@ -634,7 +634,7 @@ class ValidatingDataPreparer(BaseDataPreparer):
 ```python
 # tests/test_templates.py
 import pytest
-from src.rendering.modern_renderer import ModernReportRenderer
+from rendering.modern_renderer import ModernReportRenderer
 
 def test_repository_template_renders():
     """Test repository template renders correctly."""
@@ -667,7 +667,7 @@ def test_template_handles_missing_data():
 ```python
 def test_full_report_generation():
     """Test complete report generation pipeline."""
-    from src.rendering.data_preparers import RepositoryDataPreparer
+    from rendering.data_preparers import RepositoryDataPreparer
 
     # Prepare data
     preparer = RepositoryDataPreparer()
@@ -713,7 +713,7 @@ def test_theme_rendering():
 
 ```python
 # Add custom Jinja2 filters
-from src.rendering.modern_renderer import ModernReportRenderer
+from rendering.modern_renderer import ModernReportRenderer
 
 def format_number(value):
     """Format number with thousands separator."""

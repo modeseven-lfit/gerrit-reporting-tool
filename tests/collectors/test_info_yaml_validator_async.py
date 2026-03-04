@@ -14,7 +14,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import httpx
 import pytest
 
-from project_reporting_tool.collectors.info_yaml.validator import (
+from lf_releng_project_reporting.collectors.info_yaml.validator import (
     URLValidator,
     validate_urls_async,
     validate_urls_sync,

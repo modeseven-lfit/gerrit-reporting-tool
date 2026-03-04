@@ -1,7 +1,7 @@
 version = 1
-SPDX-PackageName = "project-reporting-tool"
+SPDX-PackageName = "lf-releng-project-reporting"
 SPDX-PackageSupplier = "The Linux Foundation"
-SPDX-PackageDownloadLocation = "https://github.com/modeseven-lfit/project-reporting-tool"
+SPDX-PackageDownloadLocation = "https://github.com/lfreleng-actions/project-reporting-tool"
 
 [[annotations]]
 path = ["tests/regression/snapshots/**", "tests/regression/__snapshots__/**.ambr"]

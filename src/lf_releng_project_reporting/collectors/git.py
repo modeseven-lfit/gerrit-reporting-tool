@@ -168,7 +168,7 @@ class GitDataCollector:
             else:
                 error_msg = "Gerrit is enabled in configuration but no host is specified"
                 self.logger.error(error_msg)
-                from project_reporting_tool.exceptions import ConfigurationError
+                from lf_releng_project_reporting.exceptions import ConfigurationError
                 raise ConfigurationError(error_msg)
 
         # Initialize Jenkins client
@@ -280,7 +280,7 @@ class GitDataCollector:
                 )
                 self.logger.error(error_msg)
                 # Raise exception to stop execution immediately
-                from project_reporting_tool.exceptions import JenkinsAPIError
+                from lf_releng_project_reporting.exceptions import JenkinsAPIError
                 raise JenkinsAPIError(error_msg)
 
             self.logger.info(
@@ -316,7 +316,7 @@ class GitDataCollector:
                     f"Please verify Gerrit configuration and permissions."
                 )
                 self.logger.error(error_msg)
-                from project_reporting_tool.exceptions import GerritAPIError
+                from lf_releng_project_reporting.exceptions import GerritAPIError
                 raise GerritAPIError(error_msg)
 
         except Exception as e:

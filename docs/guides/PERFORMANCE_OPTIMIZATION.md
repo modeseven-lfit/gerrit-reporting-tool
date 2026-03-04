@@ -31,7 +31,7 @@ This quick reference covers performance optimization for the Repository Reportin
 ### 1. Use Concurrent Rendering
 
 ```python
-from src.rendering.modern_renderer import ModernReportRenderer
+from rendering.modern_renderer import ModernReportRenderer
 
 # Enable concurrent rendering (default)
 renderer = ModernReportRenderer(concurrent=True)
@@ -73,7 +73,7 @@ renderer.clear_cache()
 ### Thread Pool Configuration
 
 ```python
-from src.concurrency.adaptive_pool import AdaptiveThreadPool
+from concurrency.adaptive_pool import AdaptiveThreadPool
 
 # Auto-tune based on CPU cores (recommended)
 pool = AdaptiveThreadPool()  # Uses optimal size
@@ -89,7 +89,7 @@ pool = AdaptiveThreadPool(
 ### CPU vs I/O Operations
 
 ```python
-from src.concurrency.hybrid_executor import HybridExecutor
+from concurrency.hybrid_executor import HybridExecutor
 
 # Automatically separates CPU and I/O bound work
 executor = HybridExecutor()
@@ -113,7 +113,7 @@ executor.submit_io_bound(api_call, url)
 ### Data Preparation
 
 ```python
-from src.rendering.data_preparers import RepositoryDataPreparer
+from rendering.data_preparers import RepositoryDataPreparer
 
 # Prepare data once, render many times
 preparer = RepositoryDataPreparer()
@@ -157,7 +157,7 @@ html_dark = renderer.render_template('repo.html', prepared_data)
 ### Batch Processing
 
 ```python
-from src.performance.batch import BatchProcessor
+from performance.batch import BatchProcessor
 
 # Process large datasets in batches
 processor = BatchProcessor(batch_size=100)
@@ -171,7 +171,7 @@ for batch in processor.process(large_dataset):
 
 ```python
 # Set memory limits for concurrent operations
-from src.concurrency.resource_monitor import ResourceMonitor
+from concurrency.resource_monitor import ResourceMonitor
 
 monitor = ResourceMonitor(
     max_memory_percent=80,  # Stop at 80% memory
@@ -190,7 +190,7 @@ with monitor:
 ### Enable Performance Profiling
 
 ```python
-from src.performance.profiler import PerformanceProfiler
+from performance.profiler import PerformanceProfiler
 
 # Profile a specific operation
 with PerformanceProfiler() as profiler:
@@ -203,7 +203,7 @@ print(profiler.get_stats())
 ### Benchmark Rendering
 
 ```python
-from src.benchmarks.rendering import benchmark_renderer
+from benchmarks.rendering import benchmark_renderer
 
 # Run standard benchmarks
 results = benchmark_renderer(
@@ -219,7 +219,7 @@ print(f"95th percentile: {results['p95_ms']}ms")
 ### Monitor Concurrency
 
 ```python
-from src.concurrency.adaptive_pool import AdaptiveThreadPool
+from concurrency.adaptive_pool import AdaptiveThreadPool
 
 pool = AdaptiveThreadPool()
 

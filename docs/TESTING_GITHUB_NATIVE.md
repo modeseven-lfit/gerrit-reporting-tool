@@ -76,14 +76,14 @@ gh auth status
 ### 1. Test Aether Project
 
 ```bash
-cd test-project-reporting-tool/testing
+cd test-lf-releng-project-reporting/testing
 ./local-testing.sh --project Aether
 ```
 
 **Expected output:**
 
 ```text
-[INFO] Testing project-reporting-tool locally
+[INFO] Testing lf-releng-project-reporting locally
 [INFO] Step 1/3: Cloning Repositories
 [INFO] Cloning Aether repositories from GitHub org opennetworkinglab...
 [INFO] Found 45 repositories in opennetworkinglab
@@ -417,7 +417,7 @@ grep "Generated in" testing/reports/Aether/*.log
 
 ### Production Deployment Steps
 
-1. Port changes to `project-reporting-tool` (production repo)
+1. Port changes to `lf-releng-project-reporting` (production repo)
 2. Update production `PROJECTS_JSON` variable
 3. Add Aether to preview workflow first
 4. Monitor preview reports

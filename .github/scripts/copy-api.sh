@@ -38,7 +38,7 @@ if [ $# -ne 4 ]; then
     log_error "Usage: $0 <date-folder> <artifacts-dir> <remote-repo> <token>"
     log_error "  date-folder: Date in YYYY-MM-DD format (e.g., 2025-01-20)"
     log_error "  artifacts-dir: Directory containing downloaded artifacts"
-    log_error "  remote-repo: Remote repository (e.g., modeseven-lfit/project-reporting-artifacts)"
+    log_error "  remote-repo: Remote repository (e.g., lfreleng-actions/project-reporting-artifacts)"
     log_error "  token: GitHub PAT token for authentication"
     exit 1
 fi

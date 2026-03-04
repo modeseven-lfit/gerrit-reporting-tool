@@ -26,7 +26,7 @@ This package provides robust configuration validation using JSON Schema with add
 ### Basic Validation
 
 ```python
-from src.config import validate_config_file, print_validation_result
+from config import validate_config_file, print_validation_result
 from pathlib import Path
 
 # Validate a configuration file
@@ -47,7 +47,7 @@ else:
 ### Programmatic Validation
 
 ```python
-from src.config import ConfigValidator
+from config import ConfigValidator
 
 # Create validator
 validator = ConfigValidator()
@@ -78,7 +78,7 @@ if result.has_warnings:
 ### Command Line Validation
 
 ```python
-from src.config import validate_config_file, print_validation_result
+from config import validate_config_file, print_validation_result
 import sys
 
 result = validate_config_file(Path("config/template.config"))
@@ -325,7 +325,7 @@ class ValidationIssue:
 ### Validate on Startup
 
 ```python
-from src.config import validate_config_file
+from config import validate_config_file
 
 def load_configuration(config_path: Path) -> Dict[str, Any]:
     """Load and validate configuration."""
@@ -359,7 +359,7 @@ if args.validate_only:
 ```python
 # Graceful degradation for missing jsonschema
 try:
-    from src.config import ConfigValidator
+    from config import ConfigValidator
     validator = ConfigValidator()
     result = validator.validate(config)
     if not result.is_valid:
@@ -375,7 +375,7 @@ except ImportError:
 
 ```python
 from pathlib import Path
-from src.config import ConfigValidator
+from config import ConfigValidator
 
 # Use custom schema
 validator = ConfigValidator(
@@ -483,7 +483,7 @@ def load_configuration(config_path):
 ### After (Schema Validation)
 
 ```python
-from src.config import validate_config_file
+from config import validate_config_file
 
 def load_configuration(config_path):
     # Single validation call

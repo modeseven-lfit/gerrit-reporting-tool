@@ -13,7 +13,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 ## Summary
 
 Integrated Simple-DataTables library into the
-project-reporting-tool HTML reports, providing sorting, searching,
+lf-releng-project-reporting HTML reports, providing sorting, searching,
 and pagination features for tables.
 
 ## Issues Resolved

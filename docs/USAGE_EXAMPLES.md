@@ -37,7 +37,7 @@ The fastest way to get started with the reporting system:
 
 ```bash
 # Step 1: Run the interactive wizard
-project-reporting-tool init --project my-first-project
+lf-releng-project-reporting init --project my-first-project
 
 # Follow the prompts:
 # - Repository path: ./repos
@@ -45,7 +45,7 @@ project-reporting-tool init --project my-first-project
 # - Press Enter for other defaults
 
 # Step 2: Generate your first report
-project-reporting-tool generate --project my-first-project --repos-path ./repos
+lf-releng-project-reporting generate --project my-first-project --repos-path ./repos
 
 # Step 3: View the report
 open output/my-first-project_report.html
@@ -67,12 +67,12 @@ For automation or when you don't want prompts:
 
 ```bash
 # Create config from template
-project-reporting-tool init \
+lf-releng-project-reporting init \
   --init-template standard \
   --project quick-start
 
 # Generate report
-project-reporting-tool generate --project quick-start --repos-path ./repos
+lf-releng-project-reporting generate --project quick-start --repos-path ./repos
 ```
 
 Templates:
@@ -92,7 +92,7 @@ Templates:
 Use the wizard for guided setup with validation:
 
 ```bash
-project-reporting-tool init --project production-reports
+lf-releng-project-reporting init --project production-reports
 ```text
 
 Sample interaction:
@@ -135,8 +135,8 @@ Number of parallel workers [auto]: 16
 Next steps:
 
   1. Review: cat config/production-reports.yaml
-  2. Validate: project-reporting-tool generate --project production-reports --repos-path /data/production/repos --dry-run
-  3. Generate: project-reporting-tool generate --project production-reports --repos-path /data/production/repos
+  2. Validate: lf-releng-project-reporting generate --project production-reports --repos-path /data/production/repos --dry-run
+  3. Generate: lf-releng-project-reporting generate --project production-reports --repos-path /data/production/repos
 
 ```text
 
@@ -148,18 +148,18 @@ Quick setup without interaction:
 
 ```bash
 # Minimal (for CI/CD)
-project-reporting-tool init \
+lf-releng-project-reporting init \
   --init-template minimal \
   --project ci-reports \
   --config-output .github/report-config.yaml
 
 # Standard (for most projects)
-project-reporting-tool init \
+lf-releng-project-reporting init \
   --init-template standard \
   --project team-reports
 
 # Full (for complex projects with all options)
-project-reporting-tool init \
+lf-releng-project-reporting init \
   --init-template full \
   --project enterprise-reports
 ```
@@ -177,7 +177,7 @@ When to use each:
 Create config in a specific location:
 
 ```bash
-project-reporting-tool init \
+lf-releng-project-reporting init \
   --init-template standard \
   --project my-project \
   --config-output /etc/reports/custom-config.yaml
@@ -193,7 +193,7 @@ Discover what the reporting system can detect:
 
 ```bash
 # Basic list (24 features)
-project-reporting-tool list-features
+lf-releng-project-reporting list-features
 ```
 
 Output:
@@ -226,15 +226,15 @@ Learn about specific features:
 
 ```bash
 # Learn about Docker detection
-project-reporting-tool list-features --detail docker
+lf-releng-project-reporting list-features --detail docker
 
 # Learn about GitHub Actions
-project-reporting-tool list-features --detail github-actions
+lf-releng-project-reporting list-features --detail github-actions
 
 # Learn about testing features
-project-reporting-tool list-features --detail pytest
-project-reporting-tool list-features --detail junit
-project-reporting-tool list-features --detail coverage
+lf-releng-project-reporting list-features --detail pytest
+lf-releng-project-reporting list-features --detail junit
+lf-releng-project-reporting list-features --detail coverage
 ```text
 
 Example output:
@@ -281,24 +281,24 @@ Related Features:
 
 ```bash
 # List all features with verbose output
-project-reporting-tool list-features -v
+lf-releng-project-reporting list-features -v
 
 # Find CI/CD features
-project-reporting-tool list-features | grep -A 10 "CI/CD"
+lf-releng-project-reporting list-features | grep -A 10 "CI/CD"
 
 # Find testing features
-project-reporting-tool list-features --detail pytest
-project-reporting-tool list-features --detail junit
-project-reporting-tool list-features --detail coverage
+lf-releng-project-reporting list-features --detail pytest
+lf-releng-project-reporting list-features --detail junit
+lf-releng-project-reporting list-features --detail coverage
 
 # Find documentation features
-project-reporting-tool list-features --detail sphinx
-project-reporting-tool list-features --detail mkdocs
-project-reporting-tool list-features --detail readthedocs
+lf-releng-project-reporting list-features --detail sphinx
+lf-releng-project-reporting list-features --detail mkdocs
+lf-releng-project-reporting list-features --detail readthedocs
 
 # Find security features
-project-reporting-tool list-features --detail secrets-detection
-project-reporting-tool list-features --detail security-scanning
+lf-releng-project-reporting list-features --detail secrets-detection
+lf-releng-project-reporting list-features --detail security-scanning
 ```
 
 ---
@@ -321,7 +321,7 @@ cd ~/project-reports
 cp config/template.config.example config/template.config
 
 # Generate report
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project my-first-report \
   --repos-path ~/workspace/repos
 
@@ -336,7 +336,7 @@ open output/my-first-report_report.html
 Before running a full report, validate your setup:
 
 ```bash
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project kubernetes \
   --repos-path /data/k8s-repos \
   --dry-run
@@ -363,7 +363,7 @@ All checks passed! Ready to generate reports.
 Check what configuration will be used:
 
 ```bash
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project kubernetes \
   --repos-path /data/k8s-repos \
   --show-config
@@ -379,7 +379,7 @@ When developing or testing, use caching to speed up iterations:
 
 ```bash
 # First run (slow - analyzes everything)
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project dev-test \
   --repos-path ./test-repos \
   --cache \
@@ -387,7 +387,7 @@ project-reporting-tool generate \
 
 # Subsequent runs (fast - uses cache)
 # Modify templates, config, etc.
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project dev-test \
   --repos-path ./test-repos \
   --cache \
@@ -410,14 +410,14 @@ cp -r repos/important-repo-1 test-repos/
 cp -r repos/important-repo-2 test-repos/
 
 # Run on subset
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test-subset \
   --repos-path test-repos/ \
   --cache \
   -vv
 
 # If successful, run on full set
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project full-report \
   --repos-path repos/ \
   --cache
@@ -431,7 +431,7 @@ When troubleshooting issues:
 
 ```bash
 # Maximum verbosity, single-threaded
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project debug \
   --repos-path ./repos \
   --workers 1 \
@@ -461,7 +461,7 @@ OUTPUT_BASE="/reports/$(date +%Y-%m-%d)"
 for project in "${PROJECTS[@]}"; do
   echo "Generating report for: $project"
 
-  project-reporting-tool generate \
+  lf-releng-project-reporting generate \
     --project "$project" \
     --repos-path "$BASE_REPOS/$project" \
     --output-dir "$OUTPUT_BASE/$project" \
@@ -494,7 +494,7 @@ OUTPUT="/reports/daily/$(date +%Y-%m-%d)"
 ARCHIVE="/reports/archive"
 
 # Generate report
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project "$PROJECT" \
   --repos-path "$REPOS" \
   --output-dir "$OUTPUT" \
@@ -552,7 +552,7 @@ for repo in "$REPOS"/*; do
 done
 
 # Generate comprehensive report
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project "$PROJECT" \
   --repos-path "$REPOS" \
   --output-dir "$OUTPUT" \
@@ -626,7 +626,7 @@ pip install .
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd reporter
-          project-reporting-tool generate \
+          lf-releng-project-reporting generate \
             --project ${{ github.repository }} \
             --repos-path ../repos \
             --output-dir ../output \
@@ -659,7 +659,7 @@ generate-reports:
     - uv sync  # Recommended
 # or
 pip install .
-    - project-reporting-tool generate
+    - lf-releng-project-reporting generate
         --project $CI_PROJECT_NAME
         --repos-path /data/repos
         --output-dir output/
@@ -700,7 +700,7 @@ pip install .'
             steps {
                 withCredentials([string(credentialsId: 'github-token', variable: 'GITHUB_TOKEN')]) {
                     sh '''
-                        project-reporting-tool generate \
+                        lf-releng-project-reporting generate \
                             --project ${JOB_NAME} \
                             --repos-path /data/repos \
                             --output-dir output/ \
@@ -761,7 +761,7 @@ for org in "${ORGS[@]}"; do
   done
 
   # Generate org report
-  project-reporting-tool generate \
+  lf-releng-project-reporting generate \
     --project "$org" \
     --repos-path "$BASE_REPOS/$org" \
     --output-dir "$OUTPUT_BASE/$org" \
@@ -792,7 +792,7 @@ CURRENT_MONTH=$(date +%Y-%m)
 PREV_MONTH=$(date -d "1 month ago" +%Y-%m)
 
 # Generate current report
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project "$PROJECT" \
   --repos-path "$REPOS" \
   --output-dir "/reports/$CURRENT_MONTH" \
@@ -832,7 +832,7 @@ activity_thresholds:
   current_days: 90
 EOF
 
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project quarterly-report \
   --repos-path /data/repos
 ```
@@ -853,7 +853,7 @@ PROJECT="$1"
 RECIPIENTS="team@example.com"
 
 # Generate report
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project "$PROJECT" \
   --repos-path /data/repos \
   --output-dir /tmp/reports \
@@ -885,7 +885,7 @@ OUTPUT_URL="https://reports.example.com/$(date +%Y-%m-%d)"
 SLACK_WEBHOOK="https://hooks.slack.com/services/YOUR/WEBHOOK/URL"
 
 # Generate report
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project "$PROJECT" \
   --repos-path /data/repos \
   --output-dir /var/www/reports/$(date +%Y-%m-%d) \
@@ -965,7 +965,7 @@ for repo in "$REPOS_PATH"/*; do
   cp -r "$repo" "$temp_dir/"
 
   # Try to generate report
-  project-reporting-tool generate \
+  lf-releng-project-reporting generate \
     --project "test-$repo_name" \
     --repos-path "$temp_dir" \
     --output-dir /tmp/test-output \
@@ -993,7 +993,7 @@ Identify performance bottlenecks:
 # profile-performance.sh
 
 # Run with time tracking
-time project-reporting-tool generate \
+time lf-releng-project-reporting generate \
   --project performance-test \
   --repos-path /data/repos \
   --workers 1 \
@@ -1008,7 +1008,7 @@ for workers in 1 4 8 16; do
   echo "Testing with $workers workers..."
 
   start=$(date +%s)
-  project-reporting-tool generate \
+  lf-releng-project-reporting generate \
     --project perf-test \
     --repos-path /data/repos \
     --workers $workers \
@@ -1036,7 +1036,7 @@ for config in "${CONFIGS[@]}"; do
   echo "Testing configuration: $config"
 
   # Validate
-  project-reporting-tool generate \
+  lf-releng-project-reporting generate \
     --project test \
     --repos-path /data/repos \
     --config-dir $(dirname "$config") \
@@ -1107,19 +1107,19 @@ for project in "${PROJECTS[@]}"; do
   echo "Setting up: $project"
 
   # Create config from template
-  project-reporting-tool init \
+  lf-releng-project-reporting init \
     --init-template standard \
     --project "$project" \
     --config-output "config/${project}.yaml"
 
   # Validate
-  project-reporting-tool generate \
+  lf-releng-project-reporting generate \
     --project "$project" \
     --repos-path "/data/repos/$project" \
     --dry-run
 
   # Generate report
-  project-reporting-tool generate \
+  lf-releng-project-reporting generate \
     --project "$project" \
     --repos-path "/data/repos/$project" \
     --cache \
@@ -1135,13 +1135,13 @@ Monitor report generation performance:
 
 ```bash
 # Basic timing
-project-reporting-tool generate --project test --repos-path ./repos
+lf-releng-project-reporting generate --project test --repos-path ./repos
 
 # Detailed metrics
-project-reporting-tool generate --project test --repos-path ./repos -v
+lf-releng-project-reporting generate --project test --repos-path ./repos -v
 
 # Debug profiling
-project-reporting-tool generate --project test --repos-path ./repos -vv
+lf-releng-project-reporting generate --project test --repos-path ./repos -vv
 ```text
 
 Verbose output:
@@ -1179,29 +1179,29 @@ Verbose output:
 
 ```bash
 # First time? Use the wizard!
-project-reporting-tool init --project my-project
+lf-releng-project-reporting init --project my-project
 ```
 
 ### Tip 2: Validate Before Long Runs
 
 ```bash
 # Always dry-run first
-project-reporting-tool generate --project test --repos-path ./repos --dry-run
+lf-releng-project-reporting generate --project test --repos-path ./repos --dry-run
 ```text
 
 ### Tip 3: Use Feature Discovery
 
 ```bash
 # Learn what's available
-project-reporting-tool list-features
-project-reporting-tool list-features --detail <feature-name>
+lf-releng-project-reporting list-features
+lf-releng-project-reporting list-features --detail <feature-name>
 ```
 
 ### Tip 4: Monitor Performance
 
 ```bash
 # Watch metrics to optimize
-project-reporting-tool generate --project test --repos-path ./repos -v
+lf-releng-project-reporting generate --project test --repos-path ./repos -v
 ```text
 
 ### Tip 5: Use Templates in CI/CD
@@ -1242,16 +1242,16 @@ find /reports -type f -mtime +90 -delete
 
 ```bash
 # 1. Learn about features
-project-reporting-tool list-features
+lf-releng-project-reporting list-features
 
 # 2. Create configuration
-project-reporting-tool init --project my-project
+lf-releng-project-reporting init --project my-project
 
 # 3. Validate setup
-project-reporting-tool generate --project my-project --repos-path ./repos --dry-run
+lf-releng-project-reporting generate --project my-project --repos-path ./repos --dry-run
 
 # 4. Generate report
-project-reporting-tool generate --project my-project --repos-path ./repos
+lf-releng-project-reporting generate --project my-project --repos-path ./repos
 
 # 5. View results
 open output/my-project_report.html
@@ -1261,10 +1261,10 @@ open output/my-project_report.html
 
 ```bash
 # Template setup
-project-reporting-tool init --template standard --project prod
+lf-releng-project-reporting init --template standard --project prod
 
 # Optimized generation
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project prod \
   --repos-path /data/repos \
   --cache \
@@ -1313,7 +1313,7 @@ The tool enriches this data with:
 
 ```bash
 # Generate report with INFO.yaml data
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project onap \
   --repos-path ./onap-repos \
   --info-yaml-repo https://gerrit.linuxfoundation.org/infra/info-master
@@ -1355,7 +1355,7 @@ info_yaml:
 
 ```bash
 # Use custom config
-project-reporting-tool generate --project onap --config config/onap.yaml
+lf-releng-project-reporting generate --project onap --config config/onap.yaml
 ```
 
 ### Example 3: Performance-Optimized INFO.yaml
@@ -1370,7 +1370,7 @@ info_yaml:
     max_concurrent_urls: 20       # Concurrent requests
     cache_enabled: true
     cache_ttl: 3600              # 1 hour cache
-    cache_dir: "/var/cache/project-reporting-tool"
+    cache_dir: "/var/cache/lf-releng-project-reporting"
 ```
 
 **Benefits:**
@@ -1439,7 +1439,7 @@ info_yaml:
 git clone https://gerrit.linuxfoundation.org/infra/releng/info-master /data/info-master
 
 # Fast subsequent runs (uses local copy)
-project-reporting-tool generate --project onap --config config/local.yaml
+lf-releng-project-reporting generate --project onap --config config/local.yaml
 ```
 
 ### Example 6: INFO.yaml with CI/CD
@@ -1460,7 +1460,7 @@ jobs:
 
       - name: Generate ONAP Report
         run: |
-          project-reporting-tool generate \
+          lf-releng-project-reporting generate \
             --project onap \
             --repos-path ./repos \
             --config config/onap.yaml \
@@ -1482,7 +1482,7 @@ jobs:
 
 ```bash
 # Generate comprehensive project health report
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project foundation \
   --repos-path ./all-repos \
   --info-yaml-repo https://gerrit.linuxfoundation.org/infra/releng/info-master \
@@ -1502,7 +1502,7 @@ Look for:
 
 ```bash
 # Focus on specific lifecycle states
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project foundation \
   --config config/active-only.yaml
 ```
@@ -1525,7 +1525,7 @@ info_yaml:
 
 ```bash
 # Verify INFO.yaml is enabled
-project-reporting-tool generate --project test --dry-run
+lf-releng-project-reporting generate --project test --dry-run
 
 # Check configuration
 cat config/test.yaml | grep -A 10 "info_yaml:"
@@ -1612,7 +1612,7 @@ info_yaml:
    git clone https://gerrit.linuxfoundation.org/infra/releng/info-master /tmp/info-master
 
    # Use repeatedly
-   project-reporting-tool generate --project test --info-yaml-path /tmp/info-master
+   lf-releng-project-reporting generate --project test --info-yaml-path /tmp/info-master
    ```
 
 ### Advanced Features
@@ -1623,7 +1623,7 @@ The tool collects detailed performance metrics:
 
 ```python
 # Access metrics programmatically
-from src.project_reporting_tool.collectors.info_yaml.metrics import MetricsCollector
+from lf_releng_project_reporting.collectors.info_yaml.metrics import MetricsCollector
 
 collector = MetricsCollector()
 # ... after generation ...

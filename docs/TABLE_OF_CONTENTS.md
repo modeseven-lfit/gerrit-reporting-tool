@@ -41,7 +41,7 @@ By default, all reports generated with schema version 1.2.0+ include a table
 of contents:
 
 ```bash
-project-reporting-tool generate --project my-project --repos-path ./repos
+lf-releng-project-reporting generate --project my-project --repos-path ./repos
 ```
 
 The generated `report.html` and `report.md` will include a TOC after the

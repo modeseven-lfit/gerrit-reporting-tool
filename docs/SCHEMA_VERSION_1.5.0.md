@@ -16,7 +16,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 ## Overview
 
-Schema version 1.5.0 adds support for **GitHub-native projects** that do not have a Gerrit backend. This enhancement allows the project-reporting-tool to analyze and report on projects hosted entirely on GitHub, while maintaining full backward compatibility with existing Gerrit-based projects.
+Schema version 1.5.0 adds support for **GitHub-native projects** that do not have a Gerrit backend. This enhancement allows the lf-releng-project-reporting to analyze and report on projects hosted entirely on GitHub, while maintaining full backward compatibility with existing Gerrit-based projects.
 
 ---
 
@@ -187,13 +187,13 @@ matrix:
 **Configuration & Validation:**
 
 - `src/config/validator.py` - Bumped schema version to 1.5.0
-- `src/project_reporting_tool/main.py` - Updated SCHEMA_VERSION constant
+- `src/lf_releng_project_reporting/main.py` - Updated SCHEMA_VERSION constant
 - `config/default.yaml` - Updated schema_version
 - `configuration/default.yaml` - Updated schema_version
 
 **Core Logic:**
 
-- `src/project_reporting_tool/config.py` - Enhanced auto-derivation logic
+- `src/lf_releng_project_reporting/config.py` - Enhanced auto-derivation logic
 - `src/rendering/context.py` - Added project type detection and terminology
 
 **Templates (4 files):**
@@ -215,7 +215,7 @@ matrix:
 ### Schema Version Check
 
 ```python
-from src.config.validator import ConfigValidator
+from config.validator import ConfigValidator
 
 validator = ConfigValidator()
 assert validator.CURRENT_SCHEMA_VERSION == "1.5.0"

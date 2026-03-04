@@ -35,7 +35,7 @@ The system is **pre-configured with optimal defaults**:
 ### Basic Usage (Recommended)
 
 ```python
-from src.rendering.modern_renderer import ModernReportRenderer
+from rendering.modern_renderer import ModernReportRenderer
 
 # Just use it - defaults are optimized
 renderer = ModernReportRenderer(concurrent=True)
@@ -56,7 +56,7 @@ renderer = ModernReportRenderer(concurrent=False)
 ### Adaptive Thread Pool (Default)
 
 ```python
-from src.concurrency.adaptive_pool import AdaptiveThreadPool
+from concurrency.adaptive_pool import AdaptiveThreadPool
 
 # Auto-configure based on system (recommended)
 pool = AdaptiveThreadPool()
@@ -100,7 +100,7 @@ with ThreadPoolExecutor(max_workers=8) as executor:
 ### Automatic Separation (Default)
 
 ```python
-from src.concurrency.hybrid_executor import HybridExecutor
+from concurrency.hybrid_executor import HybridExecutor
 
 # Automatically uses correct pool type
 executor = HybridExecutor()
@@ -148,7 +148,7 @@ executor.submit_io_bound(
 ### Automatic Retry (Default)
 
 ```python
-from src.concurrency.error_handler import ErrorHandler
+from concurrency.error_handler import ErrorHandler
 
 # Retry with exponential backoff (enabled by default)
 handler = ErrorHandler(
@@ -189,7 +189,7 @@ handler = ErrorHandler(max_retries=0)
 ### Memory Monitoring
 
 ```python
-from src.concurrency.resource_monitor import ResourceMonitor
+from concurrency.resource_monitor import ResourceMonitor
 
 # Stop operations at 80% memory usage
 with ResourceMonitor(max_memory_percent=80) as monitor:
@@ -346,7 +346,7 @@ pool = AdaptiveThreadPool()
 ### Performance Profiling
 
 ```python
-from src.performance.profiler import PerformanceProfiler
+from performance.profiler import PerformanceProfiler
 
 with PerformanceProfiler() as profiler:
     pool = AdaptiveThreadPool()
@@ -404,7 +404,7 @@ with ResourceMonitor(max_memory_percent=70):
 pool = AdaptiveThreadPool(max_workers=4)
 
 # Process in smaller batches
-from src.performance.batch import BatchProcessor
+from performance.batch import BatchProcessor
 for batch in BatchProcessor(batch_size=50).process(data):
     process(batch)
 ```text

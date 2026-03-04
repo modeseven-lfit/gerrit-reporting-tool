@@ -201,7 +201,7 @@ Example:
 @pytest.mark.smoke
 def test_basic_import():
     """Verify core modules can be imported."""
-    from src.performance.cache import CacheManager
+    from performance.cache import CacheManager
     assert CacheManager is not None
 ```
 

@@ -12,7 +12,7 @@ from typing import Any
 
 import pytest
 
-from project_reporting_tool.collectors.info_yaml.matcher import (
+from lf_releng_project_reporting.collectors.info_yaml.matcher import (
     CommitterMatcher,
     match_committer_to_authors,
 )

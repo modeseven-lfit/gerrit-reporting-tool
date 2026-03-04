@@ -13,7 +13,7 @@ from argparse import Namespace
 from pathlib import Path
 from unittest.mock import Mock, patch
 
-from project_reporting_tool.features.registry import FeatureRegistry
+from lf_releng_project_reporting.features.registry import FeatureRegistry
 
 
 class TestGitHubTokenEnvConfiguration:

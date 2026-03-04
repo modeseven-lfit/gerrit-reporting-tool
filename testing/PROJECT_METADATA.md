@@ -348,7 +348,7 @@ sudo dnf install jq
 Ensure you're running the script from the testing directory:
 
 ```bash
-cd project-reporting-tool/testing
+cd lf-releng-project-reporting/testing
 ./local-testing.sh
 ```
 

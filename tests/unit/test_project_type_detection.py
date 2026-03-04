@@ -9,7 +9,7 @@ from pathlib import Path
 
 import pytest
 
-from project_reporting_tool.features.registry import FeatureRegistry
+from lf_releng_project_reporting.features.registry import FeatureRegistry
 
 
 class TestProjectTypeDetection:
