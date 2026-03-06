@@ -41,7 +41,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 """Tests for my_feature module."""
 
 import pytest
-from src.my_module import my_feature
+from my_module import my_feature
 
 
 def test_my_feature_basic_case():
@@ -1039,7 +1039,7 @@ def test_full_analysis(temp_git_repo):
 """Unit tests for formatting utilities."""
 
 import pytest
-from src.util.formatting import format_number
+from util.formatting import format_number
 
 
 class TestFormatNumber:

@@ -12,7 +12,7 @@ Quick Reference for Repository Reporting System Feature Discovery
 > **⚠️ NOTICE:** The `list-features` command described in this guide is **not yet implemented**.
 >
 > Features are automatically detected during report generation and included in the generated reports.
-> To see what features were detected, run `project-reporting-tool generate` and review the output reports.
+> To see what features were detected, run `lf-releng-project-reporting generate` and review the output reports.
 
 ---
 
@@ -28,7 +28,7 @@ The Repository Reporting System automatically detects features in your repositor
 
 ```bash
 # This command is not yet available
-# project-reporting-tool list-features
+# lf-releng-project-reporting list-features
 ```
 
 Would show all available features organized by categories:
@@ -45,7 +45,7 @@ Would show all available features organized by categories:
 
 ```bash
 # This command is not yet available
-# project-reporting-tool list-features --detail <feature-name>
+# lf-releng-project-reporting list-features --detail <feature-name>
 ```
 
 Would display:
@@ -128,10 +128,10 @@ Would display:
 
 ```bash
 # Basic list
-project-reporting-tool list-features
+lf-releng-project-reporting list-features
 
 # With configuration file info
-project-reporting-tool list-features --verbose
+lf-releng-project-reporting list-features --verbose
 ```text
 
 Output:
@@ -156,7 +156,7 @@ Total: 24 features across 7 categories
 ### Example 2: Learn About Dependabot
 
 ```bash
-project-reporting-tool list-features --detail dependabot
+lf-releng-project-reporting list-features --detail dependabot
 ```
 
 Output:
@@ -195,7 +195,7 @@ Feature: dependabot
 ### Example 3: Learn About Docker Feature
 
 ```bash
-project-reporting-tool list-features --detail docker
+lf-releng-project-reporting list-features --detail docker
 ```text
 
 Output:
@@ -240,7 +240,7 @@ Feature: docker
 ### Example 4: Check Unknown Feature
 
 ```bash
-project-reporting-tool list-features --detail unknown-feature
+lf-releng-project-reporting list-features --detail unknown-feature
 ```
 
 Output:
@@ -307,26 +307,26 @@ Each feature includes a real-world configuration example that you can use as a t
 
 ```bash
 # Check what features would help
-project-reporting-tool list-features --detail pytest
-project-reporting-tool list-features --detail pre-commit
-project-reporting-tool list-features --detail coverage
+lf-releng-project-reporting list-features --detail pytest
+lf-releng-project-reporting list-features --detail pre-commit
+lf-releng-project-reporting list-features --detail coverage
 ```text
 
 ### Java Project Example
 
 ```bash
 # Learn about Java features
-project-reporting-tool list-features --detail maven
-project-reporting-tool list-features --detail junit
-project-reporting-tool list-features --detail sonarqube
+lf-releng-project-reporting list-features --detail maven
+lf-releng-project-reporting list-features --detail junit
+lf-releng-project-reporting list-features --detail sonarqube
 ```
 
 ### JavaScript Project Example
 
 ```bash
 # Explore JS/Node features
-project-reporting-tool list-features --detail npm
-project-reporting-tool list-features --detail github-actions
+lf-releng-project-reporting list-features --detail npm
+lf-releng-project-reporting list-features --detail github-actions
 ```text
 
 ---
@@ -355,8 +355,8 @@ Feature discovery commands work without `--project` or `--repos-path`:
 
 ```bash
 # These work without full setup
-project-reporting-tool list-features
-project-reporting-tool list-features --detail docker
+lf-releng-project-reporting list-features
+lf-releng-project-reporting list-features --detail docker
 ```
 
 ---
@@ -394,7 +394,7 @@ Use feature information to plan your repository improvements:
 ### From Python Code
 
 ```python
-from src.cli.features import (
+from cli.features import (
     get_feature_info,
     list_all_features,
     show_feature_details,
@@ -515,7 +515,7 @@ features:
 You can extend the feature registry in your own code:
 
 ```python
-from src.cli.features import AVAILABLE_FEATURES
+from cli.features import AVAILABLE_FEATURES
 
 # Add custom feature
 AVAILABLE_FEATURES['my-custom-feature'] = (
@@ -530,7 +530,7 @@ AVAILABLE_FEATURES['my-custom-feature'] = (
 ### Filtering Features
 
 ```python
-from src.cli.features import get_features_in_category, search_features
+from cli.features import get_features_in_category, search_features
 
 # Get all CI/CD features
 ci_cd = get_features_in_category('CI/CD')

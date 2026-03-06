@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-Report rendering for the project-reporting-tool package.
+Report rendering for the lf-releng-project-reporting package.
 
 This package contains modules for generating reports in multiple formats:
 - JSON output (canonical data format)

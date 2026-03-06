@@ -83,7 +83,7 @@ if [ -z "${GERRIT_REPORTS_PAT_TOKEN:-}" ]; then
     echo "  export GERRIT_REPORTS_PAT_TOKEN=github_pat_xxxxxxxxxxxxx"
     echo ""
     echo "The token needs:"
-    echo "  - Repository access to: modeseven-lfit/project-reporting-artifacts"
+    echo "  - Repository access to: lfreleng-actions/project-reporting-artifacts"
     echo "  - Contents: Read and write"
     echo "  - Metadata: Read-only"
     exit 1
@@ -113,13 +113,13 @@ log_info "Testing repository access..."
 
 REPO_TEST=$(curl -s -H "Authorization: Bearer ${GERRIT_REPORTS_PAT_TOKEN}" \
     -H "Accept: application/vnd.github+json" \
-    https://api.github.com/repos/modeseven-lfit/project-reporting-artifacts)
+    https://api.github.com/repos/lfreleng-actions/project-reporting-artifacts)
 
 if echo "$REPO_TEST" | jq -e '.id' > /dev/null 2>&1; then
     REPO_NAME=$(echo "$REPO_TEST" | jq -r '.full_name')
     log_success "Can access repository: ${REPO_NAME}"
 else
-    log_error "Cannot access modeseven-lfit/project-reporting-artifacts repository"
+    log_error "Cannot access lfreleng-actions/project-reporting-artifacts repository"
     echo "$REPO_TEST" | jq '.message' 2>/dev/null || echo "$REPO_TEST"
     exit 1
 fi
@@ -191,7 +191,7 @@ TEST_DATE="$(date +%Y-%m-%d)"
 log_section "🚀 Running API Upload Script"
 
 log_info "Test date folder: ${TEST_DATE}"
-log_info "Target: modeseven-lfit/project-reporting-artifacts"
+log_info "Target: lfreleng-actions/project-reporting-artifacts"
 log_info "Path: data/artifacts/${TEST_DATE}/"
 echo ""
 
@@ -219,7 +219,7 @@ echo ""
 if ./.github/scripts/copy-api.sh \
     "${TEST_DATE}" \
     "${ARTIFACTS_DIR}" \
-    "modeseven-lfit/project-reporting-artifacts" \
+    "lfreleng-actions/project-reporting-artifacts" \
     "${GERRIT_REPORTS_PAT_TOKEN}"; then
 
     log_section "✅ Test PASSED"
@@ -228,7 +228,7 @@ if ./.github/scripts/copy-api.sh \
     log_success "Files uploaded: ${TOTAL_FILES}"
     echo ""
     log_info "View uploaded files at:"
-    echo "  https://github.com/modeseven-lfit/project-reporting-artifacts/tree/main/data/artifacts/${TEST_DATE}"
+    echo "  https://github.com/lfreleng-actions/project-reporting-artifacts/tree/main/data/artifacts/${TEST_DATE}"
     echo ""
 
     # Test verification - try to fetch the README we created
@@ -238,7 +238,7 @@ if ./.github/scripts/copy-api.sh \
 
     README_CHECK=$(curl -s -H "Authorization: Bearer ${GERRIT_REPORTS_PAT_TOKEN}" \
         -H "Accept: application/vnd.github+json" \
-        "https://api.github.com/repos/modeseven-lfit/project-reporting-artifacts/contents/data/artifacts/${TEST_DATE}/README.md")
+        "https://api.github.com/repos/lfreleng-actions/project-reporting-artifacts/contents/data/artifacts/${TEST_DATE}/README.md")
 
     if echo "$README_CHECK" | jq -e '.sha' > /dev/null 2>&1; then
         log_success "README.md exists in repository!"
@@ -268,7 +268,7 @@ if ./.github/scripts/copy-api.sh \
         log_info "Deleting test folder via API..."
 
         # Get all files in the test folder
-        TREE_URL="https://api.github.com/repos/modeseven-lfit/project-reporting-artifacts/git/trees/main:data/artifacts/${TEST_DATE}?recursive=1"
+        TREE_URL="https://api.github.com/repos/lfreleng-actions/project-reporting-artifacts/git/trees/main:data/artifacts/${TEST_DATE}?recursive=1"
         TREE=$(curl -s -H "Authorization: Bearer ${GERRIT_REPORTS_PAT_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
             "$TREE_URL")
@@ -278,7 +278,7 @@ if ./.github/scripts/copy-api.sh \
             # You'd need to delete each file individually or use git operations
             log_warning "Automatic deletion not implemented (GitHub API limitation)"
             log_info "To clean up, manually delete the folder at:"
-            echo "  https://github.com/modeseven-lfit/project-reporting-artifacts/tree/main/data/artifacts/${TEST_DATE}"
+            echo "  https://github.com/lfreleng-actions/project-reporting-artifacts/tree/main/data/artifacts/${TEST_DATE}"
         fi
     else
         log_info "Test files left in repository"

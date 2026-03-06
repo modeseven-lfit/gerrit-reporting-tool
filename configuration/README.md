@@ -87,7 +87,7 @@ The following files are **NOT** project configurations and are skipped during pr
 4. **Test the configuration**:
 
    ```bash
-   python -m project_reporting_tool.main --project "My Project" --validate-only
+   python -m lf_releng_project_reporting.main --project "My Project" --validate-only
    ```
 
 ## Common Configuration Options
@@ -153,7 +153,7 @@ features:
 All configuration files are validated against the schema. To check if a configuration is valid:
 
 ```bash
-python -m project_reporting_tool.main --project "Your Project" --validate-only
+python -m lf_releng_project_reporting.main --project "Your Project" --validate-only
 ```
 
 ## See Also

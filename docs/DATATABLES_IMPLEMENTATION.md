@@ -12,7 +12,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 ## Overview
 
 This document summarizes the implementation of DataTables integration for
-the test-project-reporting-tool HTML reports. The implementation adds
+the test-lf-releng-project-reporting HTML reports. The implementation adds
 sorting, searching, and pagination features to HTML tables using the
 Simple-DataTables library.
 
@@ -308,7 +308,7 @@ The implementation is backward compatible:
 - [Simple-DataTables
   GitHub](https://github.com/fiduswriter/Simple-DataTables)
 - [DataTables Usage Guide](DATATABLES_USAGE.md)
-- [Legacy Implementation](../../project-reporting-tool/src/project_reporting_tool/renderers/report.py)
+- [Legacy Implementation](../../lf-releng-project-reporting/src/lf_releng_project_reporting/renderers/report.py)
 
 ## Contributors
 

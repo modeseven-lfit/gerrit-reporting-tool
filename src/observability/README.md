@@ -24,7 +24,7 @@ The observability framework enhances the standard Python logging system with:
 Context-propagating logging system that automatically enriches log entries with contextual information:
 
 ```python
-from src.observability import create_structured_logger, LogPhase
+from observability import create_structured_logger, LogPhase
 
 logger = create_structured_logger("my_app")
 
@@ -43,7 +43,7 @@ with logger.context(repository="foo/bar", phase=LogPhase.COLLECTION):
 Comprehensive error taxonomy with automatic severity and category assignment:
 
 ```python
-from src.observability import ErrorTracker, ErrorType, ErrorContext
+from observability import ErrorTracker, ErrorType, ErrorContext
 
 tracker = ErrorTracker()
 
@@ -67,7 +67,7 @@ print(f"By category: {summary['by_category']}")
 Automatic timing of operations with context-aware metrics:
 
 ```python
-from src.observability import create_structured_logger
+from observability import create_structured_logger
 
 logger = create_structured_logger("my_app")
 
@@ -115,7 +115,7 @@ Standard log levels for classification:
 Context information attached to log entries:
 
 ```python
-from src.observability import LogContext, LogPhase
+from observability import LogContext, LogPhase
 
 ctx = LogContext(
     repository="foo/bar",
@@ -134,7 +134,7 @@ context_dict = ctx.to_dict()
 Main logging interface with context management:
 
 ```python
-from src.observability import create_structured_logger, LogPhase
+from observability import create_structured_logger, LogPhase
 
 logger = create_structured_logger("my_app")
 
@@ -160,7 +160,7 @@ summary = logger.get_summary()
 Aggregates log entries for summary reporting:
 
 ```python
-from src.observability import LogAggregator
+from observability import LogAggregator
 
 aggregator = LogAggregator()
 
@@ -269,7 +269,7 @@ Detailed error types (40+ types across all categories):
 Context information for error occurrences:
 
 ```python
-from src.observability import ErrorContext
+from observability import ErrorContext
 
 ctx = ErrorContext(
     repository="foo/bar",
@@ -285,7 +285,7 @@ ctx = ErrorContext(
 A classified error with type, severity, and context:
 
 ```python
-from src.observability import ClassifiedError, ErrorType, ErrorSeverity, ErrorContext
+from observability import ClassifiedError, ErrorType, ErrorSeverity, ErrorContext
 
 error = ClassifiedError(
     error_type=ErrorType.GIT_COMMAND_FAILED,
@@ -304,7 +304,7 @@ error_dict = error.to_dict()
 Tracks and aggregates errors across the reporting process:
 
 ```python
-from src.observability import ErrorTracker, ErrorType, ErrorContext
+from observability import ErrorTracker, ErrorType, ErrorContext
 
 tracker = ErrorTracker()
 
@@ -329,7 +329,7 @@ detailed_report = tracker.get_detailed_report()
 Automatic classification of Python exceptions:
 
 ```python
-from src.observability import classify_exception, ErrorContext
+from observability import classify_exception, ErrorContext
 
 try:
     # Some operation
@@ -346,7 +346,7 @@ except Exception as e:
 ### Basic Structured Logging
 
 ```python
-from src.observability import create_structured_logger, LogPhase
+from observability import create_structured_logger, LogPhase
 
 logger = create_structured_logger("reporting_system")
 
@@ -363,7 +363,7 @@ with logger.context(phase=LogPhase.INITIALIZATION):
 ### Error Tracking and Reporting
 
 ```python
-from src.observability import ErrorTracker, ErrorType, ErrorContext
+from observability import ErrorTracker, ErrorType, ErrorContext
 
 tracker = ErrorTracker()
 
@@ -395,7 +395,7 @@ for item in partial:
 ### Performance Monitoring
 
 ```python
-from src.observability import create_structured_logger, LogPhase
+from observability import create_structured_logger, LogPhase
 
 logger = create_structured_logger("reporting")
 
@@ -417,7 +417,7 @@ if 'performance_by_phase' in summary:
 ### Integrated Logging and Error Tracking
 
 ```python
-from src.observability import (
+from observability import (
     create_structured_logger,
     ErrorTracker,
     ErrorType,
@@ -550,7 +550,7 @@ logger = logging.getLogger(__name__)
 logger.info(f"Processing {repo_name}")
 
 # After
-from src.observability import create_structured_logger
+from observability import create_structured_logger
 
 logger = create_structured_logger(__name__)
 with logger.context(repository=repo_name):

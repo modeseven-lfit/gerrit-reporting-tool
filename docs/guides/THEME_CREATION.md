@@ -100,7 +100,7 @@ Each theme consists of:
 ### Using an Existing Theme
 
 ```python
-from src.rendering.modern_renderer import ModernReportRenderer
+from rendering.modern_renderer import ModernReportRenderer
 
 # Create renderer with theme
 renderer = ModernReportRenderer(theme='dark')
@@ -121,7 +121,7 @@ html = renderer.render_template('repository.html', data)
 
 ```bash
 # Generate report with specific theme
-project-reporting-tool generate --theme dark owner/repo
+lf-releng-project-reporting generate --theme dark owner/repo
 ```
 
 ---
@@ -405,14 +405,14 @@ Adjust CSS variables in `theme.css` to customize:
 
 ```python
 # Test theme loading
-from src.rendering.theme_manager import ThemeManager
+from rendering.theme_manager import ThemeManager
 
 theme_manager = ThemeManager()
 theme = theme_manager.load_theme('my-theme')
 print(theme)
 
 # Test rendering
-from src.rendering.modern_renderer import ModernReportRenderer
+from rendering.modern_renderer import ModernReportRenderer
 
 renderer = ModernReportRenderer(theme='my-theme')
 html = renderer.render_template('repository.html', test_data)
@@ -662,7 +662,7 @@ Test with color blindness simulators:
 
 ```python
 # Test theme loading
-from src.rendering.theme_manager import ThemeManager
+from rendering.theme_manager import ThemeManager
 
 theme_manager = ThemeManager()
 
@@ -684,7 +684,7 @@ print(f"Valid: {is_valid}")
 ```python
 # tests/test_my_theme.py
 import pytest
-from src.rendering.modern_renderer import ModernReportRenderer
+from rendering.modern_renderer import ModernReportRenderer
 
 def test_theme_loads():
     """Test theme loads without errors."""
@@ -701,7 +701,7 @@ def test_theme_renders():
 
 def test_theme_contrast():
     """Test theme meets contrast requirements."""
-    from src.rendering.theme_manager import ThemeManager
+    from rendering.theme_manager import ThemeManager
 
     theme = ThemeManager().load_theme('my-theme')
     contrast = theme.get_contrast_ratio()
@@ -714,7 +714,7 @@ def test_theme_contrast():
 ```bash
 # Generate test reports with all themes
 for theme in default dark minimal my-theme; do
-    project-reporting-tool generate --theme $theme --output test_$theme.html
+    lf-releng-project-reporting generate --theme $theme --output test_$theme.html
 done
 
 # Compare visually or use screenshot tools

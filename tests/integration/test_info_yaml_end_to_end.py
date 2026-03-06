@@ -17,7 +17,7 @@ from pathlib import Path
 import pytest
 
 from domain.info_yaml import ProjectInfo
-from project_reporting_tool.collectors.info_yaml import INFOYamlCollector, InfoYamlEnricher
+from lf_releng_project_reporting.collectors.info_yaml import INFOYamlCollector, InfoYamlEnricher
 from rendering.info_yaml_renderer import InfoYamlRenderer
 
 

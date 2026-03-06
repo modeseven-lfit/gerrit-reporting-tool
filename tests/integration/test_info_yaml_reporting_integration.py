@@ -18,8 +18,8 @@ from typing import Any
 import pytest
 
 from domain.info_yaml import ProjectInfo
-from project_reporting_tool.collectors.info_yaml import INFOYamlCollector
-from project_reporting_tool.reporter import RepositoryReporter
+from lf_releng_project_reporting.collectors.info_yaml import INFOYamlCollector
+from lf_releng_project_reporting.reporter import RepositoryReporter
 from rendering.info_yaml_renderer import InfoYamlRenderer
 from rendering.renderer import ModernReportRenderer
 

@@ -44,7 +44,7 @@ Benefits:
 Recommended: Interactive wizard
 
 ```bash
-project-reporting-tool init
+lf-releng-project-reporting init
 ```text
 
 Follow the prompts to create your configuration. Takes ~2 minutes.
@@ -54,7 +54,7 @@ Follow the prompts to create your configuration. Takes ~2 minutes.
 Quick setup with template
 
 ```bash
-project-reporting-tool init --template standard --project my-project
+lf-releng-project-reporting init --template standard --project my-project
 ```
 
 Creates a configuration in 10 seconds.
@@ -68,7 +68,7 @@ Creates a configuration in 10 seconds.
 Command:
 
 ```bash
-project-reporting-tool init [--config-output PATH]
+lf-releng-project-reporting init [--config-output PATH]
 ```text
 
 When to use:
@@ -87,7 +87,7 @@ When to use:
 Command:
 
 ```bash
-project-reporting-tool init --template TEMPLATE --project NAME [--config-output PATH]
+lf-releng-project-reporting init --template TEMPLATE --project NAME [--config-output PATH]
 ```
 
 When to use:
@@ -128,7 +128,7 @@ Use when:
 Command:
 
 ```bash
-project-reporting-tool init --template minimal --project test-project
+lf-releng-project-reporting init --template minimal --project test-project
 ```text
 
 ---
@@ -160,7 +160,7 @@ Use when:
 Command:
 
 ```bash
-project-reporting-tool init --template standard --project my-project
+lf-releng-project-reporting init --template standard --project my-project
 ```
 
 ---
@@ -187,7 +187,7 @@ Use when:
 Command:
 
 ```bash
-project-reporting-tool init --template full --project production-project
+lf-releng-project-reporting init --template full --project production-project
 ```text
 
 ---
@@ -355,10 +355,10 @@ The wizard shows you what to do next:
    cat config/acme-tools.yaml
 
 2. Validate your setup:
-   project-reporting-tool generate --config config/acme-tools.yaml --dry-run
+   lf-releng-project-reporting generate --config config/acme-tools.yaml --dry-run
 
 3. Generate your first report:
-   project-reporting-tool generate --project acme-tools \
+   lf-releng-project-reporting generate --project acme-tools \
      --config config/acme-tools.yaml \
      --repos-path /path/to/repositories
 
@@ -373,19 +373,19 @@ The wizard shows you what to do next:
 Minimal config:
 
 ```bash
-project-reporting-tool init --template minimal --project my-project
+lf-releng-project-reporting init --template minimal --project my-project
 ```
 
 Standard config:
 
 ```bash
-project-reporting-tool init --template standard --project my-project
+lf-releng-project-reporting init --template standard --project my-project
 ```text
 
 Full config:
 
 ```bash
-project-reporting-tool init --template full --project my-project
+lf-releng-project-reporting init --template full --project my-project
 ```
 
 ---
@@ -395,7 +395,7 @@ project-reporting-tool init --template full --project my-project
 Specify output location:
 
 ```bash
-project-reporting-tool init --template standard \
+lf-releng-project-reporting init --template standard \
   --project my-project \
   --config-output custom/path/config.yaml
 ```text
@@ -439,7 +439,7 @@ print(f"Configuration created: {config_path}")
 
 ```bash
 # Step 1: Run interactive wizard
-project-reporting-tool init
+lf-releng-project-reporting init
 
 # Answer prompts:
 # - Template: 2 (standard)
@@ -452,10 +452,10 @@ project-reporting-tool init
 cat config/acme-tools.yaml
 
 # Step 3: Validate
-project-reporting-tool generate --config config/acme-tools.yaml --dry-run
+lf-releng-project-reporting generate --config config/acme-tools.yaml --dry-run
 
 # Step 4: Generate report
-project-reporting-tool generate --project acme-tools \
+lf-releng-project-reporting generate --project acme-tools \
   --config config/acme-tools.yaml \
   --repos-path /workspace/repos
 ```
@@ -470,10 +470,10 @@ project-reporting-tool generate --project acme-tools \
 
 ```bash
 # Create minimal config (10 seconds)
-project-reporting-tool init --template minimal --project test
+lf-releng-project-reporting init --template minimal --project test
 
 # Generate report immediately
-project-reporting-tool generate --project test \
+lf-releng-project-reporting generate --project test \
   --repos-path /tmp/test-repos \
   --quiet
 ```text
@@ -488,7 +488,7 @@ project-reporting-tool generate --project test \
 
 ```bash
 # Create full config
-project-reporting-tool init --template full \
+lf-releng-project-reporting init --template full \
   --project production \
   --config-output /etc/repo-reports/config.yaml
 
@@ -496,12 +496,12 @@ project-reporting-tool init --template full \
 vim /etc/repo-reports/config.yaml
 
 # Validate configuration
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --config /etc/repo-reports/config.yaml \
   --dry-run
 
 # Generate reports
-project-reporting-tool generate --project production \
+lf-releng-project-reporting generate --project production \
   --config /etc/repo-reports/config.yaml \
   --repos-path /data/repositories \
   --workers 16 \
@@ -530,7 +530,7 @@ jobs:
 
       - name: Create configuration
         run: |
-          project-reporting-tool init --template standard \
+          lf-releng-project-reporting init --template standard \
             --project ${{ github.repository }} \
             --config-output /tmp/config.yaml
 
@@ -538,7 +538,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          project-reporting-tool generate --project ${{ github.repository }} \
+          lf-releng-project-reporting generate --project ${{ github.repository }} \
             --config /tmp/config.yaml \
             --repos-path ./repos \
             --quiet
@@ -559,7 +559,7 @@ jobs:
 ```bash
 # Create configs for each project
 for project in api-gateway user-service data-processor; do
-  project-reporting-tool init --template standard \
+  lf-releng-project-reporting init --template standard \
     --project "$project" \
     --config-output "config/${project}.yaml"
 done
@@ -567,7 +567,7 @@ done
 # Generate reports for all
 for config in config/*.yaml; do
   project=$(basename "$config" .yaml)
-  project-reporting-tool generate --project "$project" \
+  lf-releng-project-reporting generate --project "$project" \
     --config "$config" \
     --repos-path "repos/$project"
 done
@@ -585,7 +585,7 @@ Solution:
 
 ```bash
 # Use template-based creation instead
-project-reporting-tool init --template standard --project my-project
+lf-releng-project-reporting init --template standard --project my-project
 ```text
 
 ---
@@ -604,7 +604,7 @@ export GITHUB_TOKEN=ghp_your_token_here
 set GITHUB_TOKEN=ghp_your_token_here
 
 # Or run without token (public repos only, lower rate limits)
-project-reporting-tool init
+lf-releng-project-reporting init
 ```
 
 ---
@@ -617,12 +617,12 @@ Solution:
 
 ```bash
 # Use a writable directory
-project-reporting-tool init --config-output ~/config.yaml
+lf-releng-project-reporting init --config-output ~/config.yaml
 
 # Or create directory first
 mkdir -p config
 chmod 755 config
-project-reporting-tool init
+lf-releng-project-reporting init
 ```text
 
 ---
@@ -636,11 +636,11 @@ Solution:
 vim config/my-project.yaml
 
 # Option 2: Re-run the wizard
-project-reporting-tool init --config-output config/my-project.yaml
+lf-releng-project-reporting init --config-output config/my-project.yaml
 # (overwrites existing file)
 
 # Option 3: Create new config with different name
-project-reporting-tool init --config-output config/my-project-v2.yaml
+lf-releng-project-reporting init --config-output config/my-project-v2.yaml
 ```
 
 ---
@@ -651,7 +651,7 @@ Solution:
 
 ```bash
 # Use dry-run mode
-project-reporting-tool generate --config config/my-project.yaml --dry-run
+lf-releng-project-reporting generate --config config/my-project.yaml --dry-run
 
 # Shows validation results:
 # ✓ Configuration valid
@@ -675,13 +675,13 @@ project-reporting-tool generate --config config/my-project.yaml --dry-run
 2. **Validate your setup**
 
    ```bash
-   project-reporting-tool generate --config config/my-project.yaml --dry-run
+   lf-releng-project-reporting generate --config config/my-project.yaml --dry-run
    ```
 
 3. **Generate your first report**
 
    ```bash
-   project-reporting-tool generate --project my-project \
+   lf-releng-project-reporting generate --project my-project \
      --config config/my-project.yaml \
      --repos-path /path/to/repos
    ```
@@ -738,7 +738,7 @@ project-reporting-tool generate --config config/my-project.yaml --dry-run
 ### Interactive Mode
 
 ```bash
-project-reporting-tool init [OPTIONS]
+lf-releng-project-reporting init [OPTIONS]
 
 Options:
   --config-output PATH    Output path for config file
@@ -747,7 +747,7 @@ Options:
 ### Template Mode
 
 ```bash
-project-reporting-tool init --template TEMPLATE --project NAME [OPTIONS]
+lf-releng-project-reporting init --template TEMPLATE --project NAME [OPTIONS]
 
 Required:
   --project NAME          Project name
@@ -826,7 +826,7 @@ A: No, you can create config files manually. The wizard just makes it easier.
 Ready to get started?
 
 ```bash
-project-reporting-tool init
+lf-releng-project-reporting init
 ```
 
 ---
@@ -895,7 +895,7 @@ info_yaml:
     max_concurrent_urls: 20  # Concurrent requests
     cache_enabled: true
     cache_ttl: 3600  # Cache lifetime (seconds)
-    cache_dir: "~/.cache/project-reporting-tool/info-yaml"
+    cache_dir: "~/.cache/lf-releng-project-reporting/info-yaml"
     max_cache_entries: 1000
     max_cache_size_mb: 100
 
@@ -998,7 +998,7 @@ info_yaml:
   performance:
     cache_enabled: true
     cache_ttl: 3600  # 1 hour
-    cache_dir: "/var/cache/project-reporting-tool"
+    cache_dir: "/var/cache/lf-releng-project-reporting"
     max_cache_entries: 1000
 ```
 
@@ -1053,7 +1053,7 @@ info_yaml:
 git clone https://gerrit.linuxfoundation.org/infra/releng/info-master /data/info-master
 
 # Fast subsequent runs
-project-reporting-tool generate --config config.yaml
+lf-releng-project-reporting generate --config config.yaml
 ```
 
 ### Environment Variables
@@ -1151,10 +1151,10 @@ Test your configuration before running:
 
 ```bash
 # Dry run to validate config
-project-reporting-tool generate --config config.yaml --dry-run
+lf-releng-project-reporting generate --config config.yaml --dry-run
 
 # Check INFO.yaml-specific config
-project-reporting-tool config show | grep -A 20 "info_yaml:"
+lf-releng-project-reporting config show | grep -A 20 "info_yaml:"
 ```
 
 ### Troubleshooting Configuration
@@ -1233,7 +1233,7 @@ GitHub offers two types of Personal Access Tokens (PAT):
 
 2. **Generate New Token (Classic)**
    - Click "Generate new token (classic)"
-   - Give it a descriptive name: `project-reporting-tool-access`
+   - Give it a descriptive name: `lf-releng-project-reporting-access`
    - Set expiration (recommend 90 days or custom)
 
 3. **Select Scopes**
@@ -1260,7 +1260,7 @@ GitHub offers two types of Personal Access Tokens (PAT):
 export GITHUB_TOKEN=ghp_your_token_here
 
 # Run tool
-project-reporting-tool generate --project my-project --repos-path ./repos
+lf-releng-project-reporting generate --project my-project --repos-path ./repos
 ```
 
 #### Option 2: Configuration File
@@ -1334,7 +1334,7 @@ curl -H "Authorization: token ghp_your_token_here" \
   https://api.github.com/rate_limit
 
 # Test with the tool
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project test \
   --repos-path ./repos \
   --dry-run \
@@ -1554,7 +1554,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          project-reporting-tool generate \
+          lf-releng-project-reporting generate \
             --project my-project \
             --repos-path ./repos
 ```
@@ -1564,7 +1564,7 @@ jobs:
 ```yaml
 generate-report:
   script:
-    - project-reporting-tool generate --project my-project --repos-path ./repos
+    - lf-releng-project-reporting generate --project my-project --repos-path ./repos
   variables:
     GITHUB_TOKEN: $GITHUB_TOKEN
 ```

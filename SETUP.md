@@ -65,10 +65,10 @@ a different environment variable name (e.g., for CI/CD compatibility), use the
 
 ```bash
 # Use default GITHUB_TOKEN
-project-reporting-tool generate --project my-project --repos-path ./repos
+lf-releng-project-reporting generate --project my-project --repos-path ./repos
 
 # Use custom environment variable for CI
-project-reporting-tool generate --project my-project --repos-path ./repos \
+lf-releng-project-reporting generate --project my-project --repos-path ./repos \
   --github-token-env CLASSIC_READ_ONLY_PAT_TOKEN
 ```
 
@@ -218,10 +218,10 @@ Runs automatically on pull requests that modify reporting code.
 
 ## Report Generation
 
-The workflow uses the `project-reporting-tool` CLI to generate comprehensive repository analysis reports:
+The workflow uses the `lf-releng-project-reporting` CLI to generate comprehensive repository analysis reports:
 
 ```bash
-uv run project-reporting-tool generate \
+uv run lf-releng-project-reporting generate \
   --project "$project" \
   --repos-path "./gerrit-server-clone" \
   --config-dir "./configuration" \
@@ -365,7 +365,7 @@ schedule:
    (`GITHUB_TOKEN` by default, or `CLASSIC_READ_ONLY_PAT_TOKEN` for CI) exists
    and is a Classic PAT with required scopes: `repo` and `actions:read`
 7. **Report publishing failures**: Check `GERRIT_REPORTS_PAT_TOKEN` exists and has
-   Contents: Read and write permissions for `modeseven-lfit/project-reporting-artifacts`
+   Contents: Read and write permissions for `lfreleng-actions/project-reporting-artifacts`
 
 ### Debugging
 
@@ -378,7 +378,7 @@ schedule:
    pip install -e .
 
    # Run a test report
-   project-reporting-tool generate \
+   lf-releng-project-reporting generate \
      --project test-project \
      --repos-path ./test-repos \
      --dry-run

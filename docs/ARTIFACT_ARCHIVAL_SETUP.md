@@ -11,7 +11,7 @@ This guide explains how to set up and use the automated artifact archival featur
 
 ## 📋 Overview
 
-The reporting tool now includes an automated archival system that copies all report artifacts to a separate GitHub repository (`modeseven-lfit/project-reporting-artifacts`) after each production run. This enables:
+The reporting tool now includes an automated archival system that copies all report artifacts to a separate GitHub repository (`lfreleng-actions/project-reporting-artifacts`) after each production run. This enables:
 
 - **Long-term storage** of historical report data
 - **Trend analysis** across time periods
@@ -36,7 +36,7 @@ The reporting tool now includes an automated archival system that copies all rep
 
 ### Prerequisites
 
-1. Access to the `modeseven-lfit/project-reporting-artifacts` repository
+1. Access to the `lfreleng-actions/project-reporting-artifacts` repository
 2. Permission to create GitHub secrets in the `reporting-tool` repository
 3. A GitHub Personal Access Token (PAT) with appropriate permissions
 
@@ -54,7 +54,7 @@ Create a PAT with the following permissions for the `project-reporting-artifacts
 
 **Fine-Grained Token (Recommended):**
 
-- **Repository access**: `modeseven-lfit/project-reporting-artifacts` only
+- **Repository access**: `lfreleng-actions/project-reporting-artifacts` only
 - **Permissions**:
   - Contents: `Read and write`
   - Metadata: `Read-only`
@@ -189,7 +189,7 @@ Each date folder includes a `README.md` with:
 
 ### Verify Artifacts in Target Repository
 
-1. Navigate to `https://github.com/modeseven-lfit/project-reporting-artifacts`
+1. Navigate to `https://github.com/lfreleng-actions/project-reporting-artifacts`
 2. Browse to `data/artifacts/<DATE>/`
 3. Verify folders exist for each project
 4. Check the `README.md` for summary information

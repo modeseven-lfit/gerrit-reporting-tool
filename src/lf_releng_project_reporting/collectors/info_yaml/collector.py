@@ -13,9 +13,9 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from domain.info_yaml import LifecycleSummary, ProjectInfo
-from project_reporting_tool.collectors.base import BaseCollector
-from project_reporting_tool.collectors.info_yaml.enricher import InfoYamlEnricher
-from project_reporting_tool.collectors.info_yaml.parser import INFOYamlParser
+from lf_releng_project_reporting.collectors.base import BaseCollector
+from lf_releng_project_reporting.collectors.info_yaml.enricher import InfoYamlEnricher
+from lf_releng_project_reporting.collectors.info_yaml.parser import INFOYamlParser
 
 logger = logging.getLogger(__name__)
 

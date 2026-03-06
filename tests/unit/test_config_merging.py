@@ -9,7 +9,7 @@ to ensure project configurations properly override default values while
 inheriting all non-overridden values.
 """
 
-from project_reporting_tool.config import (
+from lf_releng_project_reporting.config import (
     deep_merge_dicts,
     load_configuration,
 )

@@ -299,7 +299,7 @@ mkdir -p config/production
 
 ```bash
 # Generate configuration template
-project-reporting-tool init --template --project PRODUCTION
+lf-releng-project-reporting init --template --project PRODUCTION
 
 # This creates: config/PRODUCTION.yaml
 ```
@@ -371,7 +371,7 @@ include:
 
 ```bash
 # Test configuration syntax
-project-reporting-tool generate --config config/PRODUCTION.yaml --dry-run
+lf-releng-project-reporting generate --config config/PRODUCTION.yaml --dry-run
 
 # Expected output:
 # ✅ Configuration valid
@@ -445,7 +445,7 @@ git clone https://github.com/octocat/Hello-World.git
 
 # Run report generation
 cd /opt/project-reports
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project TEST \
   --repos-path /tmp/test-repos \
   --output-format text \
@@ -500,7 +500,7 @@ grep -i "error\|failed" TEST-report.txt
 export REPOS_PATH="/data/repositories"
 
 # Run report generation
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project PRODUCTION \
   --repos-path $REPOS_PATH \
   --config config/PRODUCTION.yaml
@@ -571,7 +571,7 @@ cd "$INSTALL_DIR"
 
 # Run report generation
 echo "=== Report Generation Started: $(date) ===" | tee -a "$LOG_FILE"
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project PRODUCTION \
   --config config/PRODUCTION.yaml \
   2>&1 | tee -a "$LOG_FILE"
@@ -847,7 +847,7 @@ jobs:
           PROJECT: ${{ github.event.inputs.project || 'PRODUCTION' }}
           WORKERS: ${{ github.event.inputs.workers || '8' }}
         run: |
-          project-reporting-tool generate \
+          lf-releng-project-reporting generate \
             --project "$PROJECT" \
             --repos-path repos \
             --workers "$WORKERS" \
@@ -1064,13 +1064,13 @@ workers: 8
 
 ```bash
 # Production
-project-reporting-tool generate --config config/PRODUCTION.yaml
+lf-releng-project-reporting generate --config config/PRODUCTION.yaml
 
 # Staging
-project-reporting-tool generate --config config/STAGING.yaml
+lf-releng-project-reporting generate --config config/STAGING.yaml
 
 # Development
-project-reporting-tool generate --config config/development.yaml
+lf-releng-project-reporting generate --config config/development.yaml
 ```text
 
 4. Version Control Configs (Without Secrets)
@@ -1090,7 +1090,7 @@ Validate Before Deployment:
 
 ```bash
 # Dry run
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --config config/PRODUCTION.yaml \
   --dry-run
 
@@ -1180,7 +1180,7 @@ HashiCorp Vault:
 export GITHUB_TOKEN=$(vault kv get -field=token secret/github)
 
 # Use in script
-project-reporting-tool generate ...
+lf-releng-project-reporting generate ...
 ```text
 
 AWS Secrets Manager:
@@ -1196,7 +1196,7 @@ export GITHUB_TOKEN=$(aws secretsmanager get-secret-value \
   --output text)
 
 # Use in script
-project-reporting-tool generate ...
+lf-releng-project-reporting generate ...
 ```
 
 Azure Key Vault:
@@ -1213,7 +1213,7 @@ export GITHUB_TOKEN=$(az keyvault secret show \
   --output tsv)
 
 # Use in script
-project-reporting-tool generate ...
+lf-releng-project-reporting generate ...
 ```text
 
 ### Secret Rotation
@@ -1438,7 +1438,7 @@ python -c "import yaml; yaml.safe_load(open('config/PRODUCTION.yaml'))" || exit 
 echo "✅ Configuration valid YAML"
 
 # Dry run
-project-reporting-tool generate --config config/PRODUCTION.yaml --dry-run || exit 1
+lf-releng-project-reporting generate --config config/PRODUCTION.yaml --dry-run || exit 1
 echo "✅ Configuration accepted"
 
 echo "✅ Configuration validation PASSED"
@@ -1486,7 +1486,7 @@ echo "✅ Test repository cloned"
 
 # Generate report
 cd /opt/project-reports
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project SMOKE_TEST \
   --repos-path /tmp/smoke-test \
   --output-format text \
@@ -1513,7 +1513,7 @@ Test 5: Full Feature Test
 echo "=== Smoke Test 5: Full Features ==="
 
 # Generate all formats
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project FEATURE_TEST \
   --repos-path /tmp/smoke-test \
   --output-format all \
@@ -1932,7 +1932,7 @@ uv sync  # Recommended
 # or: pip install .
 
 # 4. Verify
-project-reporting-tool --version
+lf-releng-project-reporting --version
 ./run-all-smoke-tests.sh
 
 # 5. Restart scheduled jobs
@@ -1948,10 +1948,10 @@ Method 2: Configuration Rollback
 cp config/PRODUCTION.yaml.backup config/PRODUCTION.yaml
 
 # 2. Verify configuration
-project-reporting-tool generate --config config/PRODUCTION.yaml --dry-run
+lf-releng-project-reporting generate --config config/PRODUCTION.yaml --dry-run
 
 # 3. Test
-project-reporting-tool generate --project TEST --repos-path /tmp/test
+lf-releng-project-reporting generate --project TEST --repos-path /tmp/test
 ```
 
 Method 3: GitHub Actions Rollback
@@ -2022,10 +2022,10 @@ Step-by-Step Rollback:
    ./run-all-smoke-tests.sh
 
    # Check version
-   project-reporting-tool --version
+   lf-releng-project-reporting --version
 
    # Test report generation
-   project-reporting-tool generate --project TEST --repos-path /tmp/test
+   lf-releng-project-reporting generate --project TEST --repos-path /tmp/test
    ```
 
 5. **Restore Services**
@@ -2257,7 +2257,7 @@ chmod 755 /data/reports
 
 # Or use different directory
 mkdir -p ~/reports
-project-reporting-tool generate --output-path ~/reports
+lf-releng-project-reporting generate --output-path ~/reports
 ```text
 
 Issue 5: GitHub API Rate Limit
@@ -2286,10 +2286,10 @@ Solution:
 ```bash
 # Wait for reset (shown in rate limit response)
 # Or use caching to reduce API calls
-project-reporting-tool generate --cache-enabled
+lf-releng-project-reporting generate --cache-enabled
 
 # Or reduce workers
-project-reporting-tool generate --workers 4
+lf-releng-project-reporting generate --workers 4
 
 # Check when limit resets
 date -d @$(curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/rate_limit | jq '.rate.reset')
@@ -2323,11 +2323,11 @@ Solution:
 
 ```bash
 # Reduce workers
-project-reporting-tool generate --workers 2
+lf-releng-project-reporting generate --workers 2
 
 # Process in batches
-project-reporting-tool generate --repos-path /data/repos/batch1
-project-reporting-tool generate --repos-path /data/repos/batch2
+lf-releng-project-reporting generate --repos-path /data/repos/batch1
+lf-releng-project-reporting generate --repos-path /data/repos/batch2
 
 # Or increase system memory
 ```text
@@ -2392,10 +2392,10 @@ Application Health:
 
 ```bash
 # Verify installation
-project-reporting-tool --version
+lf-releng-project-reporting --version
 
 # Run dry-run
-project-reporting-tool generate --config config/PRODUCTION.yaml --dry-run
+lf-releng-project-reporting generate --config config/PRODUCTION.yaml --dry-run
 
 # Check dependencies
 pip list
@@ -2433,7 +2433,7 @@ curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/user
 3. Enable Debug Logging:
 
 ```bash
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --log-level DEBUG \
   --project TEST \
   2>&1 | tee debug.log
@@ -2573,7 +2573,7 @@ uv sync  # Recommended
 ./run-all-smoke-tests.sh
 
 # 5. Test with real data
-project-reporting-tool generate --project TEST --repos-path /tmp/test
+lf-releng-project-reporting generate --project TEST --repos-path /tmp/test
 
 # 6. If successful, deploy
 # Restart cron/systemd as needed
@@ -2650,7 +2650,7 @@ tar -xzf /backup/project-reports/backup-20250129_120000.tar.gz
 cp -r backup-20250129_120000/config/* /opt/project-reports/config/
 
 # Verify
-project-reporting-tool generate --config config/PRODUCTION.yaml --dry-run
+lf-releng-project-reporting generate --config config/PRODUCTION.yaml --dry-run
 ```
 
 ---
@@ -2673,7 +2673,7 @@ Group=project-reports
 WorkingDirectory=/opt/project-reports
 Environment="PATH=/opt/project-reports/venv/bin"
 EnvironmentFile=/opt/project-reports/.env
-ExecStart=/opt/project-reports/venv/bin/project-reporting-tool generate --project PRODUCTION --config config/PRODUCTION.yaml
+ExecStart=/opt/project-reports/venv/bin/lf-releng-project-reporting generate --project PRODUCTION --config config/PRODUCTION.yaml
 StandardOutput=append:/opt/project-reports/logs/service.log
 StandardError=append:/opt/project-reports/logs/service.log
 TimeoutSec=3600
@@ -2824,8 +2824,8 @@ export WORKERS=4
 export CACHE_ENABLED=false  # Disable caching if memory-constrained
 
 # Or process in batches
-project-reporting-tool generate --repos-path /data/repos/batch1
-project-reporting-tool generate --repos-path /data/repos/batch2
+lf-releng-project-reporting generate --repos-path /data/repos/batch1
+lf-releng-project-reporting generate --repos-path /data/repos/batch2
 ```
 
 Disk I/O Optimization:

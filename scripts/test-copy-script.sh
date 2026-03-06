@@ -202,7 +202,7 @@ log_section "🚀 Running Copy Script Test"
 echo ""
 
 DATE_FOLDER="2025-01-20"
-REMOTE_REPO="modeseven-lfit/project-reporting-artifacts"
+REMOTE_REPO="lfreleng-actions/project-reporting-artifacts"
 FAKE_TOKEN="test-token-not-used"
 
 log_info "Running: ${TEST_SCRIPT}"

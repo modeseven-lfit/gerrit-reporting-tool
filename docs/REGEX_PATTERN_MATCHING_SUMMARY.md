@@ -32,7 +32,7 @@ Implemented regex pattern matching with the following capabilities:
 
 ### Core Changes
 
-#### 1. Enhanced `_check_g2g` Method (`src/project_reporting_tool/features/registry.py`)
+#### 1. Enhanced `_check_g2g` Method (`src/lf_releng_project_reporting/features/registry.py`)
 
 **Lines Modified**: 214-347
 

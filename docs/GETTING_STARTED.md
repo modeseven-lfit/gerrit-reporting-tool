@@ -40,7 +40,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 uv sync
 
 # Verify installation
-uv run project-reporting-tool --version
+uv run lf-releng-project-reporting --version
 ```
 
 #### Using pip
@@ -50,7 +50,7 @@ uv run project-reporting-tool --version
 pip install .
 
 # Verify installation
-project-reporting-tool --version
+lf-releng-project-reporting --version
 ```
 
 ### Step 2: Setup Configuration
@@ -58,7 +58,7 @@ project-reporting-tool --version
 **Interactive wizard** (easiest for first-time users):
 
 ```bash
-project-reporting-tool init --project my-project
+lf-releng-project-reporting init --project my-project
 ```
 
 Follow the prompts:
@@ -70,7 +70,7 @@ Follow the prompts:
 **Or use a template** (quick setup):
 
 ```bash
-project-reporting-tool init --project my-project --template standard
+lf-releng-project-reporting init --project my-project --template standard
 ```
 
 This creates `config/my-project.yaml` with sensible defaults.
@@ -78,7 +78,7 @@ This creates `config/my-project.yaml` with sensible defaults.
 ### Step 3: Generate Your First Report
 
 ```bash
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project my-project \
   --repos-path ./repos
 ```
@@ -116,7 +116,7 @@ git clone https://github.com/example/my-repo.git
 cd ..
 
 # Generate report
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project my-repo \
   --repos-path ./repos
 ```
@@ -133,7 +133,7 @@ git clone https://github.com/example/repo3.git
 cd ..
 
 # Generate combined report
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project my-organization \
   --repos-path ./repos
 ```
@@ -142,16 +142,16 @@ project-reporting-tool generate \
 
 ```bash
 # Create sample config
-project-reporting-tool init --project sample --template standard
+lf-releng-project-reporting init --project sample --template standard
 
 # Preview configuration (dry run)
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project sample \
   --repos-path ./repos \
   --dry-run
 
 # Generate if looks good
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project sample \
   --repos-path ./repos
 ```
@@ -160,7 +160,7 @@ project-reporting-tool generate \
 
 ```bash
 # Quick analysis with minimal output
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project quick-test \
   --repos-path ./repos \
   --quiet
@@ -204,7 +204,7 @@ github_api:
 ```bash
 # Or pass via environment
 export GITHUB_TOKEN=ghp_your_token_here
-project-reporting-tool generate --project my-project --repos-path ./repos
+lf-releng-project-reporting generate --project my-project --repos-path ./repos
 ```
 
 ### Enable INFO.yaml Reports
@@ -232,7 +232,7 @@ performance:
 
 ```bash
 # Or use command-line flags
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project my-project \
   --repos-path ./repos \
   --cache \
@@ -247,10 +247,10 @@ project-reporting-tool generate \
 
 ```bash
 # Show resolved configuration
-project-reporting-tool config show --project my-project
+lf-releng-project-reporting config show --project my-project
 
 # Validate without generating
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project my-project \
   --repos-path ./repos \
   --dry-run
@@ -260,10 +260,10 @@ project-reporting-tool generate \
 
 ```bash
 # List all features the tool can detect
-project-reporting-tool list-features
+lf-releng-project-reporting list-features
 
 # Check features in your repos
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project my-project \
   --repos-path ./repos \
   --dry-run \
@@ -274,12 +274,12 @@ project-reporting-tool generate \
 
 ```bash
 # General help
-project-reporting-tool --help
+lf-releng-project-reporting --help
 
 # Command-specific help
-project-reporting-tool generate --help
-project-reporting-tool init --help
-project-reporting-tool config --help
+lf-releng-project-reporting generate --help
+lf-releng-project-reporting init --help
+lf-releng-project-reporting config --help
 ```
 
 ---
@@ -323,13 +323,13 @@ Now that you have your first report:
 
 ```bash
 # Enable caching (60-70% faster on subsequent runs)
-project-reporting-tool generate --project my-project --repos-path ./repos --cache
+lf-releng-project-reporting generate --project my-project --repos-path ./repos --cache
 
 # Use parallel processing
-project-reporting-tool generate --project my-project --repos-path ./repos --workers 8
+lf-releng-project-reporting generate --project my-project --repos-path ./repos --workers 8
 
 # Combine both
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project my-project \
   --repos-path ./repos \
   --cache \
@@ -340,7 +340,7 @@ project-reporting-tool generate \
 
 ```bash
 # Minimal output (good for automation)
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project my-project \
   --repos-path ./repos \
   --quiet
@@ -350,7 +350,7 @@ project-reporting-tool generate \
 
 ```bash
 # Detailed output (troubleshooting)
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project my-project \
   --repos-path ./repos \
   --verbose
@@ -360,13 +360,13 @@ project-reporting-tool generate \
 
 ```bash
 # HTML only
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project my-project \
   --repos-path ./repos \
   --output-format html
 
 # JSON only
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project my-project \
   --repos-path ./repos \
   --output-format json
@@ -376,12 +376,12 @@ project-reporting-tool generate \
 
 ## ❓ Troubleshooting
 
-### "Command not found: project-reporting-tool"
+### "Command not found: lf-releng-project-reporting"
 
 **Using UV:**
 
 ```bash
-uv run project-reporting-tool --help
+uv run lf-releng-project-reporting --help
 ```
 
 **Using pip:** Ensure installed correctly:
@@ -403,7 +403,7 @@ ls -la ./repos  # Should show .git directories
 Create configuration first:
 
 ```bash
-project-reporting-tool init --project my-project
+lf-releng-project-reporting init --project my-project
 ```
 
 ### Reports Take Too Long
@@ -411,7 +411,7 @@ project-reporting-tool init --project my-project
 Enable caching and parallel processing:
 
 ```bash
-project-reporting-tool generate \
+lf-releng-project-reporting generate \
   --project my-project \
   --repos-path ./repos \
   --cache \
@@ -422,7 +422,7 @@ project-reporting-tool generate \
 
 - [FAQ](FAQ.md) - Frequently asked questions
 - [Troubleshooting Guide](TROUBLESHOOTING.md) - Common issues
-- [GitHub Issues](https://github.com/modeseven-lfit/project-reporting-tool/issues) - Report bugs
+- [GitHub Issues](https://github.com/lfreleng-actions/project-reporting-tool/issues) - Report bugs
 
 ---
 

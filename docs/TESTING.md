@@ -114,7 +114,7 @@ Example:
 @pytest.mark.smoke
 def test_basic_import():
     """Verify core modules can be imported."""
-    from src.performance.cache import CacheManager
+    from performance.cache import CacheManager
     assert CacheManager is not None
 
 @pytest.mark.smoke
@@ -468,7 +468,7 @@ This module tests all aspects of cache operations including:
 """
 
 import pytest
-from src.performance.cache import CacheManager, CacheKey
+from performance.cache import CacheManager, CacheKey
 
 # Mark all tests in this file as unit tests
 pytestmark = pytest.mark.unit

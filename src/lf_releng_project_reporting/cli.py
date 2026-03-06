@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-Modern CLI interface using Typer for project-reporting-tool.
+Modern CLI interface using Typer for lf-releng-project-reporting.
 
 This module provides a rich, user-friendly command-line interface with:
 - Type-safe argument parsing
@@ -26,7 +26,7 @@ from typing_extensions import Annotated
 
 # Initialize Typer app with rich formatting
 app = typer.Typer(
-    name="project-reporting-tool",
+    name="lf-releng-project-reporting",
     help="📊 Comprehensive Multi-Repository Analysis Tool",
     add_completion=True,
     rich_markup_mode="rich",
@@ -65,8 +65,8 @@ class ExitCode(int, Enum):
 def version_callback(value: bool):
     """Show version and exit."""
     if value:
-        from project_reporting_tool import __version__
-        rprint(f"[bold cyan]project-reporting-tool[/bold cyan] version [green]{__version__}[/green]")
+        from lf_releng_project_reporting import __version__
+        rprint(f"[bold cyan]lf-releng-project-reporting[/bold cyan] version [green]{__version__}[/green]")
         raise typer.Exit()
 
 
@@ -226,25 +226,25 @@ def generate(
     \b
     Examples:
         # Basic usage
-        project-reporting-tool generate --project my-project --repos-path ./repos
+        lf-releng-project-reporting generate --project my-project --repos-path ./repos
 
         # With custom configuration
-        project-reporting-tool generate -p my-project -r ./repos --config-dir ./config
+        lf-releng-project-reporting generate -p my-project -r ./repos --config-dir ./config
 
         # Validate without running
-        project-reporting-tool generate -p my-project -r ./repos --dry-run
+        lf-releng-project-reporting generate -p my-project -r ./repos --dry-run
 
         # Generate only HTML with verbose output
-        project-reporting-tool generate -p my-project -r ./repos -f html -vv
+        lf-releng-project-reporting generate -p my-project -r ./repos -f html -vv
 
         # With caching and parallel processing
-        project-reporting-tool generate -p my-project -r ./repos --cache --workers 8
+        lf-releng-project-reporting generate -p my-project -r ./repos --cache --workers 8
 
         # CI environment with custom token variable
-        project-reporting-tool generate -p my-project -r ./repos --github-token-env CLASSIC_READ_ONLY_PAT_TOKEN
+        lf-releng-project-reporting generate -p my-project -r ./repos --github-token-env CLASSIC_READ_ONLY_PAT_TOKEN
     """
     # Import here to avoid circular imports and speed up CLI loading
-    from project_reporting_tool.main import main as reporting_main
+    from lf_releng_project_reporting.main import main as reporting_main
     from argparse import Namespace
 
     # Validate required arguments
@@ -299,7 +299,7 @@ def generate(
 
 
 # Note: validate command removed - not yet implemented
-# Use 'project-reporting-tool generate --dry-run' for configuration validation
+# Use 'lf-releng-project-reporting generate --dry-run' for configuration validation
 
 
 
@@ -325,7 +325,7 @@ def main(
 
     \b
     🚀 Quick Start:
-        project-reporting-tool generate --project my-project --repos-path ./repos
+        lf-releng-project-reporting generate --project my-project --repos-path ./repos
 
     \b
     📖 Main Command:
@@ -333,7 +333,7 @@ def main(
 
     \b
     🐛 Report Issues:
-        https://github.com/modeseven-lfit/project-reporting-tool/issues
+        https://github.com/lfreleng-actions/lf-releng-project-reporting/issues
     """
     if ctx.invoked_subcommand is None:
         # No subcommand provided, show help

@@ -17,17 +17,17 @@ Key Features:
 
 Usage:
     From command line:
-        $ project-reporting-tool generate --project my-project --repos-path ./repos
+        $ lf-releng-project-reporting generate --project my-project --repos-path ./repos
 
     With configuration:
-        $ project-reporting-tool generate --project my-project --config-dir ./config
+        $ lf-releng-project-reporting generate --project my-project --config-dir ./config
 
 For more information:
-    - GitHub: https://github.com/modeseven-lfit/project-reporting-tool
+    - GitHub: https://github.com/lfreleng-actions/lf-releng-project-reporting
     - License: Apache-2.0
 """
 
-from project_reporting_tool._version import __version__
+from lf_releng_project_reporting._version import __version__
 
 __author__ = "The Linux Foundation"
 __license__ = "Apache-2.0"

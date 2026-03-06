@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-Configuration management for the project-reporting-tool package.
+Configuration management for the lf-releng-project-reporting package.
 
 This module handles:
 - Loading YAML configuration files

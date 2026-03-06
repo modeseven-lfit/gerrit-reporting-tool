@@ -28,13 +28,13 @@ import tempfile
 from pathlib import Path
 from typing import Any, Optional, cast
 
-from project_reporting_tool.aggregators import DataAggregator
-from project_reporting_tool.collectors import GitDataCollector, INFOYamlCollector
-from project_reporting_tool.features import FeatureRegistry
+from lf_releng_project_reporting.aggregators import DataAggregator
+from lf_releng_project_reporting.collectors import GitDataCollector, INFOYamlCollector
+from lf_releng_project_reporting.features import FeatureRegistry
 from rendering.renderer import ModernReportRenderer
 from util.git import safe_git_command
 from util.zip_bundle import create_report_bundle
-from project_reporting_tool.config import save_resolved_config
+from lf_releng_project_reporting.config import save_resolved_config
 
 # Global API statistics (imported from main module)
 

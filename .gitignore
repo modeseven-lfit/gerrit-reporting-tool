@@ -4,7 +4,7 @@
 testing/projects.json
 
 # Auto-generated version file
-src/project_reporting_tool/_version.py
+src/lf_releng_project_reporting/_version.py
 
 testing/ONAP
 testing/reports

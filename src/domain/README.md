@@ -24,7 +24,7 @@ Domain models replace ad-hoc dictionary structures with strongly-typed dataclass
 Represents a named time period for metrics aggregation.
 
 ```python
-from src.domain import TimeWindow
+from domain import TimeWindow
 
 window = TimeWindow(
     name="1y",
@@ -55,7 +55,7 @@ window = TimeWindow.from_dict("1y", {
 Container for metrics aggregated over a time window.
 
 ```python
-from src.domain import TimeWindowStats
+from domain import TimeWindowStats
 
 stats = TimeWindowStats(
     commits=42,
@@ -80,7 +80,7 @@ total = stats1 + stats2
 Metrics for a single repository.
 
 ```python
-from src.domain import RepositoryMetrics
+from domain import RepositoryMetrics
 
 metrics = RepositoryMetrics(
     gerrit_project="foo/bar",
@@ -119,7 +119,7 @@ loc_stats = metrics.get_loc_stats_for_window("1y")
 Statistics for a single contributor.
 
 ```python
-from src.domain import AuthorMetrics
+from domain import AuthorMetrics
 
 author = AuthorMetrics(
     name="John Doe",
@@ -158,7 +158,7 @@ if author.is_affiliated:
 Aggregated statistics for an organization (by email domain).
 
 ```python
-from src.domain import OrganizationMetrics
+from domain import OrganizationMetrics
 
 org = OrganizationMetrics(
     domain="example.com",
@@ -187,7 +187,7 @@ if org.is_known_org:
 CI/CD workflow detection results.
 
 ```python
-from src.domain import WorkflowStatus
+from domain import WorkflowStatus
 
 status = WorkflowStatus(
     has_github_actions=True,

@@ -60,7 +60,7 @@ echo ""
 
 cd "${PROJECT_ROOT}"
 
-if uv run project-reporting-tool generate \
+if uv run lf-releng-project-reporting generate \
     --project "TestProject" \
     --repos-path "${REPOS_DIR}" \
     --output-dir "${OUTPUT_DIR}" \

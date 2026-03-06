@@ -6,16 +6,16 @@ requires = ["hatchling>=1.21.0", "hatch-vcs>=0.3.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "project-reporting-tool"
+name = "lf-releng-project-reporting"
 dynamic = ["version"]
 description = "Comprehensive multi-repository analysis tool for Linux Foundation projects"
 readme = "README.md"
 license = { text = "Apache-2.0" }
 authors = [
-    { name = "The Linux Foundation", email = "info@linuxfoundation.org" },
+    { name = "The Linux Foundation", email = "mwatkins@linuxfoundation.org" },
 ]
 maintainers = [
-    { name = "The Linux Foundation", email = "info@linuxfoundation.org" },
+    { name = "The Linux Foundation", email = "mwatkins@linuxfoundation.org" },
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -27,6 +27,7 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Software Development :: Quality Assurance",
     "Topic :: Software Development :: Version Control :: Git",
     "Typing :: Typed",
@@ -35,10 +36,16 @@ keywords = [
     "repository",
     "analysis",
     "git",
+    "github",
+    "github-actions",
+    "gerrit",
+    "jenkins",
+    "projects",
     "metrics",
     "reporting",
     "ci-cd",
     "linux-foundation",
+    "committers",
 ]
 requires-python = ">=3.10.2"
 dependencies = [
@@ -68,20 +75,20 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/modeseven-lfit/project-reporting-tool"
-Repository = "https://github.com/modeseven-lfit/project-reporting-tool"
-Issues = "https://github.com/modeseven-lfit/project-reporting-tool/issues"
-Changelog = "https://github.com/modeseven-lfit/project-reporting-tool/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/lfreleng-actions/project-reporting-tool"
+Repository = "https://github.com/lfreleng-actions/project-reporting-tool"
+Issues = "https://github.com/lfreleng-actions/project-reporting-tool/issues"
+Changelog = "https://github.com/lfreleng-actions/project-reporting-tool/blob/main/CHANGELOG.md"
 
 [project.scripts]
-project-reporting-tool = "project_reporting_tool.cli:cli_main"
+lf-releng-project-reporting = "lf_releng_project_reporting.cli:cli_main"
 
 # Hatchling configuration
 [tool.hatch.version]
 source = "vcs"
 
 [tool.hatch.build.hooks.vcs]
-version-file = "src/project_reporting_tool/_version.py"
+version-file = "src/lf_releng_project_reporting/_version.py"
 
 [tool.hatch.build.targets.sdist]
 include = [
@@ -111,15 +118,29 @@ exclude = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/project_reporting_tool"]
+packages = [
+    "src/lf_releng_project_reporting",
+    "src/api",
+    "src/cli",
+    "src/concurrency",
+    "src/config",
+    "src/domain",
+    "src/jjb_attribution",
+    "src/observability",
+    "src/performance",
+    "src/rendering",
+    "src/util",
+]
 include = [
     "/config/**/*",
+    "/src/templates/**/*",
+    "/src/themes/**/*",
 ]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"config" = "share/project-reporting-tool/config"
-"examples" = "share/project-reporting-tool/examples"
-"docs" = "share/project-reporting-tool/docs"
+"config" = "share/lf-releng-project-reporting/config"
+"examples" = "share/lf-releng-project-reporting/examples"
+"docs" = "share/lf-releng-project-reporting/docs"
 
 # UV configuration
 [tool.uv]
@@ -281,7 +302,7 @@ ignore = [
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["project_reporting_tool"]
+known-first-party = ["lf_releng_project_reporting"]
 force-single-line = false
 lines-after-imports = 2
 

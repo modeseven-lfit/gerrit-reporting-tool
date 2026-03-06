@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 The Linux Foundation
 
 """
-Data aggregators for the project-reporting-tool package.
+Data aggregators for the lf-releng-project-reporting package.
 
 This package contains modules for aggregating repository metrics into
 global summaries including:
