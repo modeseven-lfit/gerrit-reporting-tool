@@ -1,6 +1,6 @@
 # 📊 GitHub Project Analysis Report: FDio
 
-**Generated:** 2026-03-13 07:18:43 UTC
+**Generated:** 2026-03-14 07:14:55 UTC
 **Schema Version:** 1.5.0
 
 ---## Table of Contents
@@ -31,7 +31,7 @@
 | Inactive Repositories | 3 | 42.9% |
 | No Apparent Commits | 0 | 0.0% |
 | Total Commits | 24.9K | - |
-| Total Lines of Code | 38.4K | - |
+| Total Lines of Code | 39.7K | - |
 
 ---
 ## 🏢 Top Organizations
@@ -42,9 +42,9 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | cisco.com | 158 | 1072 | +132790 | 250971 | +13 | 5 |
-| 2 | gmail.com | 115 | 261 | +20547 | 28891 | +46 | 5 |
-| 3 | icloud.com | 2 | 165 | +50203 | 126152 | -156 | 4 |
+| 1 | cisco.com | 158 | 1075 | +132855 | 251088 | +13 | 5 |
+| 2 | gmail.com | 115 | 266 | +21286 | 29640 | +48 | 5 |
+| 3 | icloud.com | 2 | 167 | +50394 | 126356 | -153 | 4 |
 | 4 | hawari.fr | 1 | 20 | +16355 | 17562 | +757 | 1 |
 | 5 | marvell.com | 14 | 20 | +1072 | 1232 | +45 | 3 |
 | 6 | netgate.com | 14 | 15 | +1070 | 1241 | +59 | 1 |
@@ -82,21 +82,21 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Contributor | Commits | LOC | Δ LOC | Avg LOC/Commit | Repositories | Organization |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Florin Coras | 227 | +10754 | 15412 | +26 | 3 | cisco.com |
-| 2 | Matus Fabian | 220 | +31576 | 40260 | +104 | 2 | cisco.com |
-| 3 | Dave Wallace | 210 | +15678 | 21749 | +45 | 5 | gmail.com |
-| 4 | Peter Mikus | 164 | +50200 | 126147 | -156 | 4 | icloud.com |
+| 1 | Florin Coras | 228 | +10755 | 15414 | +26 | 3 | cisco.com |
+| 2 | Matus Fabian | 224 | +31699 | 40442 | +102 | 2 | cisco.com |
+| 3 | Dave Wallace | 214 | +15692 | 21773 | +44 | 5 | gmail.com |
+| 4 | Peter Mikus | 166 | +50391 | 126351 | -154 | 4 | icloud.com |
 | 5 | Damjan Marion | 133 | +30497 | 95163 | -256 | 2 | cisco.com |
 | 6 | Tibor Frank | 118 | +7929 | 17148 | -10 | 3 | cisco.com |
-| 7 | Adrian Villin | 98 | +14985 | 23005 | +71 | 1 | cisco.com |
+| 7 | Adrian Villin | 97 | +14937 | 22949 | +71 | 1 | cisco.com |
 | 8 | Vratko Polak | 70 | +17523 | 34164 | +12 | 4 | cisco.com |
-| 9 | Semir Sionek | 46 | +1962 | 2434 | +32 | 2 | cisco.com |
+| 9 | Semir Sionek | 45 | +1951 | 2423 | +32 | 2 | cisco.com |
 | 10 | Benoît Ganne | 43 | +1917 | 3306 | +12 | 1 | cisco.com |
 | 11 | Mohsin KAZMI | 28 | +3252 | 3696 | +100 | 2 | cisco.com |
 | 12 | Mohammed Hawari | 20 | +16355 | 17562 | +757 | 1 | hawari.fr |
 | 13 | Hadi Rayan Al-Sandid | 17 | +1423 | 1577 | +74 | 1 | cisco.com |
-| 14 | Steven | 14 | +896 | 1673 | +8 | 3 | cisco.com |
-| 15 | Andrew Yourtchenko | 13 | +1445 | 1461 | +109 | 2 | gmail.com |
+| 14 | Andrew Yourtchenko | 14 | +2170 | 2186 | +153 | 2 | gmail.com |
+| 15 | Steven | 14 | +896 | 1673 | +8 | 3 | cisco.com |
 | 16 | Jerome Tollet | 13 | +4376 | 4524 | +325 | 1 | cisco.com |
 | 17 | Naveen Joy | 13 | +1363 | 3308 | -44 | 3 | cisco.com |
 | 18 | Vanessa Rene Valderrama | 13 | +206 | 463 | -3 | 6 | linuxfoundation.org |
@@ -118,13 +118,13 @@ The data presented in the table below covers the past 365 days.
 
 | Repository | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| [vpp](https://github.com/gerrit.fd.io/vpp) | 15515 | +162388 | 75 | 10 | 2026-03-02 | ✅ |
-| [csit](https://github.com/gerrit.fd.io/csit) | 6417 | +74738 | 7 | 0 | 2026-03-12 | ✅ |
-| [ci-management](https://github.com/gerrit.fd.io/ci-management) | 2859 | +2273 | 10 | 28 | 2026-02-13 | ✅ |
-| [vppsb](https://github.com/gerrit.fd.io/vppsb) | 88 | 0 | 0 | 2484 | 2019-05-24 | 🛑 |
-| [.github](https://github.com/gerrit.fd.io/.github) | 25 | +3867 | 2 | 0 | 2026-03-13 | ✅ |
-| [main_test](https://github.com/gerrit.fd.io/main_test) | 8 | 0 | 0 | 1959 | 2020-10-30 | 🛑 |
-| [test_injector](https://github.com/gerrit.fd.io/test_injector) | 1 | 0 | 0 | 3481 | 2016-08-30 | 🛑 |
+| [vpp](https://github.com/gerrit.fd.io/vpp) | 15526 | +163192 | 75 | 17 | 2026-02-24 | ✅ |
+| [csit](https://github.com/gerrit.fd.io/csit) | 6419 | +74929 | 7 | 0 | 2026-03-13 | ✅ |
+| [ci-management](https://github.com/gerrit.fd.io/ci-management) | 2859 | +2273 | 10 | 29 | 2026-02-13 | ✅ |
+| [vppsb](https://github.com/gerrit.fd.io/vppsb) | 88 | 0 | 0 | 2485 | 2019-05-24 | 🛑 |
+| [.github](https://github.com/gerrit.fd.io/.github) | 25 | +3867 | 2 | 1 | 2026-03-13 | ✅ |
+| [main_test](https://github.com/gerrit.fd.io/main_test) | 8 | 0 | 0 | 1960 | 2020-10-30 | 🛑 |
+| [test_injector](https://github.com/gerrit.fd.io/test_injector) | 1 | 0 | 0 | 3482 | 2016-08-30 | 🛑 |
 
 **Total:** 7 repositories
 
@@ -133,8 +133,8 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Primary Type | Other Types | Dependabot | Pre-commit | ReadTheDocs | .gitreview | G2G | Status |
 |----------------|--------------|-------------|------------|------------|-------------|------------|-----|--------|
-| test_injector | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | main_test | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| test_injector | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | vppsb | C | JavaScript, Shell, HTML, CSS, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | .github | Shell | Python | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | ci-management | jjb |  | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
